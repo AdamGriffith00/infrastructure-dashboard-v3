@@ -1,0 +1,178 @@
+# Infrastructure Dashboard v3
+
+## Project Overview
+UK Infrastructure Dashboard - a web-based visualization tool for tracking infrastructure investment across UK regions, sectors, and disciplines.
+
+## Tech Stack
+- Vanilla JavaScript (ES6 modules)
+- CSS with custom properties
+- Python simple HTTP server for local development
+- GeoJSON for regional maps
+
+## Running the Project
+```bash
+python3 server.py
+# Opens at http://localhost:3000
+```
+
+## Recent Work
+
+### 2026-01-17: Highways Sector Data Deepening
+- Replaced generic "National Highways" entry with regional breakdowns:
+  - **National Highways (RIS3 2025-2030):**
+    - South East (£9bn) - Lower Thames Crossing, M25 enhancements
+    - South West (£5.5bn) - A303 Stonehenge tunnel, A358 dualling
+    - Midlands (£7bn) - M42 J6 HS2 link, A46 Newark
+    - North West (£6bn) - A66 Trans-Pennine, M6 improvements
+    - North East (£4.5bn) - A1 improvements, A19, M62
+    - Eastern (£3.5bn) - A47, A12, A428
+  - **Devolved Trunk Roads:**
+    - Transport Scotland Roads (£4bn) - A9 dualling, A96
+    - Welsh Government Roads (£1.75bn) - A55, network resilience
+    - DfI NI Roads (£1.5bn) - A5 Western Corridor, A6
+  - **City Region CRSTS Highways:**
+    - Greater Manchester (£2bn) - Bee Network roads
+    - West Midlands (£1.75bn) - Sprint BRT, HS2 roads
+    - West Yorkshire (£1.4bn) - Mass Transit corridors
+    - Liverpool City Region (£1bn) - Freeport access
+    - South Yorkshire (£900m) - Tram-train highways
+    - North East (£800m) - Metro integration
+    - TfL Highways (£2.5bn) - Healthy Streets, cycleways
+
+**Highways Sector Total: ~£53bn 10-year**
+
+### 2026-01-17: Maritime Sector Data Deepening
+- Added comprehensive port and coastal data:
+  - **Major Ports:**
+    - Peel Ports Group (£3.5bn) - Liverpool2, Manchester Ship Canal, Clydeport
+    - DP World (£4bn) - London Gateway, Southampton
+    - Port of Felixstowe (£1.8bn) - UK's busiest container port
+    - Associated British Ports (£3bn) - 21 ports including Humber
+    - Forth Ports (£2.5bn) - Tilbury, Leith offshore wind
+    - Bristol Port (£700m) - Automotive and energy
+  - **Freeport/Offshore:**
+    - Teesworks (£2.8bn) - UK's largest Freeport, offshore wind manufacturing
+    - Able Marine Energy Park (£1.2bn) - Purpose-built offshore wind hub
+  - **Coastal:**
+    - Environment Agency Coastal & Flood (£5.2bn) - Thames Barrier, flood defences
+
+**Maritime Sector Total: ~£25bn 10-year**
+
+### 2026-01-16: Aviation Sector Data Deepening
+- Added comprehensive airport data:
+  - **Major Airports:**
+    - Heathrow (£14bn) - Third runway, terminal expansion
+    - Gatwick (£8.5bn) - Northern runway DCO approved
+    - Manchester Airport Group (£4.5bn) - Manchester, Stansted, East Midlands
+  - **Regional Airports:**
+    - Birmingham (£1.5bn) - HS2 connectivity
+    - Edinburgh (£1bn) - terminal expansion
+    - Luton (£2.5bn) - Terminal 2 DCO approved
+    - Glasgow (£600m)
+    - Bristol (£800m)
+    - London City (£500m)
+    - Newcastle (£350m)
+    - Leeds Bradford (£300m)
+    - Belfast (£400m)
+    - Cardiff (£200m)
+  - **Airspace:**
+    - NATS (£2bn) - Airspace modernisation
+
+**Aviation Sector Total: ~£37bn 10-year**
+
+### 2026-01-16: Rail Sector Data Deepening
+- Broke Network Rail into 5 regional routes with CP7 budgets:
+  - Eastern (£9bn) - serves Eastern, East Midlands, Yorkshire, North East
+  - North West & Central (£11bn) - serves Midlands, North West
+  - Scotland (£5.5bn) - serves Scotland
+  - Southern (£10bn) - serves London, South East
+  - Wales & Western (£8.5bn) - serves Wales, South West, London
+- Added/enhanced metro systems:
+  - TfL (£12.8bn) - Piccadilly Line, DLR, Bakerloo extension
+  - TfGM (£2.7bn) - Metrolink expansion
+  - West Midlands Metro (£1.9bn) - HS2 connectivity
+  - Nexus Tyne & Wear Metro (£1.6bn) - new fleet
+  - Merseyrail (£1.3bn) - Liverpool City Region
+  - West Yorkshire Mass Transit (£2.5bn) - new system
+  - South Yorkshire Supertram (£450m)
+  - Nottingham Express Transit (£300m)
+  - Edinburgh Trams (£400m)
+- Added regional rail:
+  - Transport for Wales Rail (£3.2bn) - Core Valley Lines, South Wales Metro
+  - Transport Scotland Rail (£4.2bn) - decarbonisation, EGIP
+  - Translink NI Railways (£1.4bn) - new fleet, Belfast Grand Central
+- HS2 (£45bn) already included with subdivision mapping
+
+**Rail Sector Total: ~£110bn 10-year**
+
+### 2026-01-16: Water Sector Data Deepening
+- Updated all water companies with comprehensive AMP8 data
+- Added: Yorkshire Water, Anglian Water, Wessex Water
+- Enhanced existing entries with:
+  - `subSector`: "water" field
+  - `amp8Total`: Total AMP8 allocation
+  - `programmes`: Breakdown (Base Expenditure, Enhancement)
+  - `keyProjects`: Major schemes
+  - `source`: Data source reference
+- Regional mapping allows viewing by region (e.g., North West shows United Utilities £13.7bn)
+
+**Water Companies AMP8 Totals (2025-2030):**
+| Company | AMP8 Total | Regions |
+|---------|-----------|---------|
+| Thames Water | £19.8bn | London, South East, South West |
+| United Utilities | £13.7bn | North West |
+| Severn Trent | £12.9bn | Midlands, East Midlands, Wales |
+| Anglian Water | £9.5bn | Eastern, East Midlands |
+| Yorkshire Water | £7.8bn | Yorkshire & Humber |
+| Southern Water | £7.4bn | South East |
+| Scottish Water | £6.8bn | Scotland |
+| Welsh Water | £5.1bn | Wales, Midlands |
+| Northumbrian Water | £4.5bn | North East, Eastern |
+| South West Water | £3.2bn | South West |
+| Wessex Water | £2.8bn | South West |
+
+### 2026-01-16: Regional Map Sizing
+- Made regional subdivision maps (London, North West, South West, etc.) larger to fill their containers
+- Changes made:
+  - `css/views.css`: Increased `.region-map-svg` min-height to 500px, max-height to 700px
+  - `css/views.css`: Increased `.region-detail-map-container` min-height to 600px
+  - `css/views.css`: Reduced sidebar panel width from 350px to 280px for more map space
+  - `js/components/region-map.js`: Increased baseSize from 550 to 700 for higher resolution rendering
+
+### 2026-01-19: Pipeline & Timeline View (NEW)
+- Created full pipeline tracking system for opportunities
+- **New Pipeline View** (`js/views/pipeline.js`):
+  - Pipeline KPIs: Total value, In Procurement, High Priority, Upcoming Deadlines
+  - Upcoming Deadlines Alert: Shows bids due in next 30 days with urgency indicators
+  - Pipeline Funnel: Visual breakdown by status (Planning → Pre-Procurement → Procurement → Delivery → Complete)
+  - Contract Timeline: Grouped by quarter showing contract starts
+  - Procurement Stage Breakdown: Cards by stage (Pipeline, Market Engagement, PQQ, ITT, Dialogue, Evaluation, Awarded)
+  - Detailed Table: Filterable opportunity list
+- **Updated opportunities.json** with 20 realistic opportunities including:
+  - status (planning/pre-procurement/procurement/delivery/complete)
+  - procurementStage (Pipeline/Market Engagement/PQQ/ITT/Dialogue/Evaluation/Awarded)
+  - bidDeadline, contractStart, contractEnd, contractDuration
+  - procurementRoute, framework, valueRange, keyContacts, aiInsights
+- **Added pipeline badges** to Overall, Regions, Sectors views
+- **Added procurement counts** to Budget view client list
+
+### 2026-01-18: Data Sources View
+- Created `/sources` view with methodology, sources by sector, key sources grid
+- Added inline source citations to tooltips and client lists
+- Shows where data comes from (government publications, company reports, etc.)
+
+## Next Session - Continue With:
+1. **Intelligence Features**: AI-powered bid insights, competitor analysis, win probability
+2. **Analysis Tools**: Filtering, sorting, export capabilities
+3. **Visualisations**: Gantt chart view, calendar view for deadlines
+4. **Data Enrichment**: Add more clients that match opportunity IDs (hs2, heathrow, tfl, etc.)
+
+## Key Files
+- `js/views/pipeline.js` - Pipeline & Timeline view (NEW)
+- `js/views/sources.js` - Data Sources view
+- `js/views/regions.js` - Regions view with UK map and regional detail pages
+- `js/components/region-map.js` - Regional subdivision map component (boroughs, districts, etc.)
+- `js/components/uk-map.js` - Main UK map component
+- `css/views.css` - View-specific styles including map layouts
+- `css/components.css` - Reusable component styles
+- `data/opportunities.json` - Opportunities with full pipeline data

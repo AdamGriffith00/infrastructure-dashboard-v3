@@ -1,0 +1,80 @@
+{
+  "lastUpdated": "2026-01-14",
+  "sectors": [
+    {
+      "id": "rail",
+      "name": "Rail",
+      "description": "National and regional rail infrastructure including HS2, Network Rail, and light rail systems",
+      "icon": "",
+      "color": "#4CAF50",
+      "budget2026": 20000000000,
+      "budget10Year": 90000000000,
+      "subSectors": [
+        { "id": "mainline", "name": "Mainline OMR", "percentage": 35 },
+        { "id": "enhancements", "name": "Enhancements & IRP", "percentage": 20 },
+        { "id": "metro", "name": "Metro/Light Rail", "percentage": 15 },
+        { "id": "hs2", "name": "HS2", "percentage": 22 },
+        { "id": "rolling-stock", "name": "Rolling Stock & Depots", "percentage": 8 }
+      ]
+    },
+    {
+      "id": "highways",
+      "name": "Highways",
+      "description": "Strategic road network, local authority roads, and smart motorway programmes",
+      "icon": "",
+      "color": "#2196F3",
+      "budget2026": 12000000000,
+      "budget10Year": 80000000000,
+      "subSectors": [
+        { "id": "srn", "name": "Strategic Road Network", "percentage": 50 },
+        { "id": "devolved", "name": "Devolved Trunk Roads", "percentage": 12 },
+        { "id": "local", "name": "Local Authority Networks", "percentage": 28 },
+        { "id": "crsts", "name": "City Region/CRSTS", "percentage": 10 }
+      ]
+    },
+    {
+      "id": "aviation",
+      "name": "Aviation",
+      "description": "Airport infrastructure, terminals, and runway capacity programmes",
+      "icon": "",
+      "color": "#9C27B0",
+      "budget2026": 4000000000,
+      "budget10Year": 35000000000,
+      "subSectors": [
+        { "id": "heathrow", "name": "Heathrow", "percentage": 40 },
+        { "id": "gatwick", "name": "Gatwick", "percentage": 20 },
+        { "id": "regional", "name": "Regional Airports", "percentage": 25 },
+        { "id": "airspace", "name": "Airspace/Systems", "percentage": 15 }
+      ]
+    },
+    {
+      "id": "maritime",
+      "name": "Maritime",
+      "description": "Ports, harbours, and marine infrastructure",
+      "icon": "",
+      "color": "#00BCD4",
+      "budget2026": 3000000000,
+      "budget10Year": 28000000000,
+      "subSectors": [
+        { "id": "major-ports", "name": "Major Ports", "percentage": 45 },
+        { "id": "offshore", "name": "Offshore Support", "percentage": 30 },
+        { "id": "coastal", "name": "Coastal/Flood", "percentage": 25 }
+      ]
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "description": "Water, energy, and telecommunications infrastructure including AMP8 and RIIO programmes",
+      "icon": "",
+      "color": "#FF9800",
+      "budget2026": 25000000000,
+      "budget10Year": 120000000000,
+      "subSectors": [
+        { "id": "water", "name": "Water (AMP8)", "percentage": 45 },
+        { "id": "electricity", "name": "Electricity (RIIO)", "percentage": 35 },
+        { "id": "gas", "name": "Gas Networks", "percentage": 12 },
+        { "id": "telecoms", "name": "Telecoms/Digital", "percentage": 8 }
+      ]
+    }
+  ]
+}

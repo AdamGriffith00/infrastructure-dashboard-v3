@@ -1,0 +1,37 @@
+{
+  "lastUpdated": "2026-01-14",
+  "disciplines": [
+    {
+      "id": "cost-management",
+      "name": "Cost Management",
+      "description": "Quantity surveying, cost planning, and commercial management services",
+      "icon": "",
+      "budget2026": 8000000000,
+      "budget10Year": 45000000000
+    },
+    {
+      "id": "project-management",
+      "name": "Project Management",
+      "description": "Programme and project management, PMO services",
+      "icon": "",
+      "budget2026": 6500000000,
+      "budget10Year": 38000000000
+    },
+    {
+      "id": "project-controls",
+      "name": "Project Controls",
+      "description": "Planning, scheduling, risk management, and reporting",
+      "icon": "",
+      "budget2026": 4500000000,
+      "budget10Year": 28000000000
+    },
+    {
+      "id": "advisory",
+      "name": "Advisory",
+      "description": "Strategic advisory, business cases, and assurance services",
+      "icon": "",
+      "budget2026": 3000000000,
+      "budget10Year": 18000000000
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "lastUpdated": "2026-01-14",
+  "regions": [
+    {
+      "id": "london",
+      "name": "London",
+      "shortName": "LON",
+      "budget2026": 18200000000,
+      "budget10Year": 115000000000,
+      "expectedOpportunities": 45,
+      "strategicFocus": "Major transport hubs, housing delivery, Crossrail 2",
+      "growthAreas": "East London regeneration, Thames Estuary, airport expansion"
+    },
+    {
+      "id": "north-west",
+      "name": "North West",
+      "shortName": "NW",
+      "budget2026": 12800000000,
+      "budget10Year": 95000000000,
+      "expectedOpportunities": 38,
+      "strategicFocus": "Northern Powerhouse Rail, Mass Transit, port expansion",
+      "growthAreas": "Liverpool-Manchester corridor, Preston-Blackpool"
+    },
+    {
+      "id": "scotland",
+      "name": "Scotland",
+      "shortName": "SCO",
+      "budget2026": 8100000000,
+      "budget10Year": 78000000000,
+      "expectedOpportunities": 32,
+      "strategicFocus": "Renewable energy grid, rural connectivity",
+      "growthAreas": "Central Belt, Highlands renewable energy"
+    },
+    {
+      "id": "south-east",
+      "name": "South East",
+      "shortName": "SE",
+      "budget2026": 11400000000,
+      "budget10Year": 102000000000,
+      "expectedOpportunities": 41,
+      "strategicFocus": "Aviation expansion, M25 improvements",
+      "growthAreas": "Thames Gateway, Brighton-Hove corridor"
+    },
+    {
+      "id": "midlands",
+      "name": "Midlands",
+      "shortName": "MID",
+      "budget2026": 9700000000,
+      "budget10Year": 89000000000,
+      "expectedOpportunities": 35,
+      "strategicFocus": "HS2 delivery, manufacturing infrastructure",
+      "growthAreas": "Birmingham-Coventry corridor"
+    },
+    {
+      "id": "wales",
+      "name": "Wales",
+      "shortName": "WAL",
+      "budget2026": 5200000000,
+      "budget10Year": 52000000000,
+      "expectedOpportunities": 24,
+      "strategicFocus": "Rail electrification, renewable energy",
+      "growthAreas": "Cardiff Bay, Swansea Bay, North Wales"
+    },
+    {
+      "id": "north-east",
+      "name": "North East",
+      "shortName": "NE",
+      "budget2026": 4800000000,
+      "budget10Year": 64000000000,
+      "expectedOpportunities": 28,
+      "strategicFocus": "Offshore wind, Tyne & Wear Metro",
+      "growthAreas": "Newcastle-Gateshead, Sunderland, Teesside"
+    },
+    {
+      "id": "south-west",
+      "name": "South West",
+      "shortName": "SW",
+      "budget2026": 6800000000,
+      "budget10Year": 71000000000,
+      "expectedOpportunities": 31,
+      "strategicFocus": "Nuclear energy, marine technology",
+      "growthAreas": "Bristol-Bath, Plymouth marine hub"
+    },
+    {
+      "id": "yorkshire-humber",
+      "name": "Yorkshire & Humber",
+      "shortName": "YH",
+      "budget2026": 6500000000,
+      "budget10Year": 58000000000,
+      "expectedOpportunities": 26,
+      "strategicFocus": "Mass transit, flood resilience",
+      "growthAreas": "Leeds-Sheffield corridor, Humber ports"
+    },
+    {
+      "id": "east-midlands",
+      "name": "East Midlands",
+      "shortName": "EM",
+      "budget2026": 4200000000,
+      "budget10Year": 42000000000,
+      "expectedOpportunities": 18,
+      "strategicFocus": "East Midlands Airport, HS2 hub",
+      "growthAreas": "Nottingham-Derby corridor"
+    },
+    {
+      "id": "eastern",
+      "name": "Eastern",
+      "shortName": "E",
+      "budget2026": 5100000000,
+      "budget10Year": 48000000000,
+      "expectedOpportunities": 22,
+      "strategicFocus": "Cambridge-Oxford Arc, offshore wind",
+      "growthAreas": "Cambridge, Norwich, Ipswich"
+    },
+    {
+      "id": "northern-ireland",
+      "name": "Northern Ireland",
+      "shortName": "NI",
+      "budget2026": 3200000000,
+      "budget10Year": 32000000000,
+      "expectedOpportunities": 14,
+      "strategicFocus": "Cross-border connectivity, renewables",
+      "growthAreas": "Belfast, Derry-Londonderry"
+    }
+  ]
+}
