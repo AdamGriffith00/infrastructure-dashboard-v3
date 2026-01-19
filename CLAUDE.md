@@ -224,19 +224,13 @@ Major update to all city region combined authority transport data with full prog
 1. **Intelligence Features**: AI-powered bid insights, competitor analysis, win probability
 2. **Analysis Tools**: Filtering, sorting, export capabilities
 3. **Visualisations**: Gantt chart view, calendar view for deadlines
-4. **PRIORITY: Comprehensive Data Research** - Deep dive into all UK infrastructure sectors to ensure complete coverage of everything a consultancy would bid for. Include:
-   - All water companies (AMP8 data complete)
-   - All Network Rail routes (CP7 complete)
-   - All National Highways regions (RIS3 complete)
-   - All airport operators (major airports complete)
-   - All port operators (major ports complete)
-   - Energy networks (transmission & distribution)
-   - Nuclear new build and decommissioning
-   - Defence infrastructure (DIO estates)
-   - Education (schools, universities)
-   - Healthcare (NHS Trusts, new hospitals)
-   - Housing (Homes England, housing associations)
-   - Local authority capital programmes
+4. **PRIORITY: Comprehensive Data Research** - Deep dive into core infrastructure sectors to ensure complete coverage. Focus on:
+   - **Rail**: All Network Rail routes, TOCs, metros, trams, light rail (CP7 data mostly complete)
+   - **Highways**: All National Highways regions, local authority major schemes (RIS3 complete)
+   - **Aviation**: All UK airports - regional airports may need more detail
+   - **Maritime**: All major ports, coastal infrastructure, offshore wind ports
+   - **Utilities**: Water (AMP8 complete), energy networks (transmission & distribution), nuclear
+   - **Buses/Coaches**: Bus franchising, depot infrastructure, ZEBRA funding
 
 ## Key Files
 - `js/views/pipeline.js` - Pipeline & Timeline view (NEW)
