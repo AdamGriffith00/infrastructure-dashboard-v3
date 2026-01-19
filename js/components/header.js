@@ -6,13 +6,8 @@ export function renderHeader(container, { lastUpdated, onSearch }) {
   const formattedDate = formatDate(lastUpdated);
 
   container.innerHTML = `
-    <div class="header-brand">
-      <span class="gleeds-logo">gleeds</span>
-    </div>
-    <div class="header-content">
-      <h1 class="header-title">UK Infrastructure Dashboard</h1>
-      <p class="header-subtitle">Addressable Market Analysis by Region, Sector & Discipline</p>
-    </div>
+    <h1 class="header-title">UK Infrastructure Dashboard</h1>
+    <p class="header-subtitle">Addressable Market Analysis by Region, Sector & Discipline</p>
     <div class="header-meta">
       <span class="last-updated">Last Updated: ${formattedDate}</span>
       <div class="search-input" style="min-width: 280px;">
