@@ -46,84 +46,18 @@ export async function renderProjectsView(container, { data, allData, state }) {
       </div>
     </section>
 
-    <!-- Upload & Map Layout -->
-    <div class="projects-layout">
-      <!-- Left: Upload Section -->
-      <div class="projects-upload-section">
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Import Projects</h2>
-            ${projects.length > 0 ? `
-              <button class="btn btn-sm" id="clear-data-btn" style="background: var(--status-low); color: white;">Clear Data</button>
-            ` : ''}
-          </div>
+    <!-- Main Map Section - Hero -->
+    <section class="section projects-hero-section">
+      <div class="projects-hero-layout">
+        <!-- Large Map -->
+        <div class="projects-hero-map">
+          <div id="projects-uk-map"></div>
+        </div>
 
-          <div class="excel-dropzone" id="excel-dropzone">
-            <div class="excel-dropzone-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                <polyline points="14 2 14 8 20 8"></polyline>
-                <line x1="12" y1="18" x2="12" y2="12"></line>
-                <line x1="9" y1="15" x2="15" y2="15"></line>
-              </svg>
-            </div>
-            <div class="excel-dropzone-text">Drop Excel file here or click to upload</div>
-            <div class="excel-dropzone-hint">Supported: .xlsx, .xls, .csv</div>
-            <div class="excel-dropzone-columns">Required columns: Name, Client, Sector, Region</div>
-            <input type="file" id="excel-input" accept=".xlsx,.xls,.csv" style="display: none;" />
-          </div>
-
-          <div id="import-status" class="mt-md"></div>
-
-          ${projects.length > 0 ? `
-            <div class="mt-md">
-              <button class="btn" id="export-btn">Export to CSV</button>
-              <button class="btn ml-sm" id="download-template-btn">Download Template</button>
-            </div>
-          ` : `
-            <div class="mt-md">
-              <button class="btn" id="download-template-btn">Download Template</button>
-            </div>
-          `}
-        </section>
-
-        <!-- Project List -->
-        ${projects.length > 0 ? `
-          <section class="section">
-            <div class="section-header">
-              <h2 class="section-title">Project List</h2>
-              <span class="badge badge-yellow">${projects.length} projects</span>
-            </div>
-            <div class="projects-list-scroll">
-              ${projects.slice(0, 100).map((project, idx) => `
-                <div class="project-item">
-                  <div class="project-item-info">
-                    <div class="project-item-name">${project.name}</div>
-                    <div class="project-item-meta">${project.client || 'Unknown client'} | ${project.sector || 'Unknown sector'}</div>
-                  </div>
-                  <span class="badge">${formatRegionName(project.region)}</span>
-                </div>
-              `).join('')}
-              ${projects.length > 100 ? `
-                <div class="text-muted text-center mt-md">Showing 100 of ${projects.length} projects</div>
-              ` : ''}
-            </div>
-          </section>
-        ` : ''}
-      </div>
-
-      <!-- Right: Map Section -->
-      <div class="projects-map-section">
-        <section class="section">
-          <div class="section-header">
-            <h2 class="section-title">Project Distribution</h2>
-          </div>
-          <div class="projects-map-container">
-            <div id="projects-uk-map"></div>
-          </div>
-
-          <!-- Region Rankings -->
-          <div class="projects-region-list mt-md">
+        <!-- Side Panel with Rankings -->
+        <div class="projects-hero-panel">
+          <div class="projects-hero-panel-title">Projects by Region</div>
+          <div class="projects-region-list">
             ${regionalData
               .filter(r => r.projectCount > 0)
               .sort((a, b) => b.projectCount - a.projectCount)
@@ -133,23 +67,87 @@ export async function renderProjectsView(container, { data, allData, state }) {
                   <span class="projects-region-name">${region.name}</span>
                   <span class="projects-region-count badge badge-yellow">${region.projectCount}</span>
                 </div>
-              `).join('') || '<p class="text-muted">No projects loaded</p>'}
+              `).join('') || '<p class="text-muted">Upload projects to see distribution</p>'}
+          </div>
+          ${projects.length === 0 ? `
+            <div class="projects-hero-empty">
+              <p class="text-muted">No projects loaded yet</p>
+              <p class="text-muted" style="font-size: 0.85rem;">Upload an Excel file below to visualize your portfolio</p>
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    </section>
+
+    <!-- Upload & List Section - Secondary -->
+    <div class="projects-secondary-layout">
+      <!-- Upload Section -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Import Projects</h2>
+          ${projects.length > 0 ? `
+            <button class="btn btn-sm" id="clear-data-btn" style="background: var(--status-low); color: white;">Clear Data</button>
+          ` : ''}
+        </div>
+
+        <div class="excel-dropzone" id="excel-dropzone">
+          <div class="excel-dropzone-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="18" x2="12" y2="12"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+            </svg>
+          </div>
+          <div class="excel-dropzone-text">Drop Excel file here or click to upload</div>
+          <div class="excel-dropzone-hint">Supported: .xlsx, .xls, .csv | Columns: Name, Client, Sector, Region</div>
+          <input type="file" id="excel-input" accept=".xlsx,.xls,.csv" style="display: none;" />
+        </div>
+
+        <div id="import-status" class="mt-md"></div>
+
+        <div class="mt-md flex gap-sm flex-wrap">
+          ${projects.length > 0 ? `<button class="btn" id="export-btn">Export to CSV</button>` : ''}
+          <button class="btn" id="download-template-btn">Download Template</button>
+        </div>
+      </section>
+
+      <!-- Project List -->
+      ${projects.length > 0 ? `
+        <section class="section">
+          <div class="section-header">
+            <h2 class="section-title">Project List</h2>
+            <span class="badge badge-yellow">${projects.length} projects</span>
+          </div>
+          <div class="projects-list-scroll">
+            ${projects.slice(0, 100).map((project, idx) => `
+              <div class="project-item">
+                <div class="project-item-info">
+                  <div class="project-item-name">${project.name}</div>
+                  <div class="project-item-meta">${project.client || 'Unknown client'} | ${project.sector || 'Unknown sector'}</div>
+                </div>
+                <span class="badge">${formatRegionName(project.region)}</span>
+              </div>
+            `).join('')}
+            ${projects.length > 100 ? `
+              <div class="text-muted text-center mt-md">Showing 100 of ${projects.length} projects</div>
+            ` : ''}
           </div>
         </section>
-      </div>
+      ` : ''}
     </div>
   `;
 
-  // Render the UK map
+  // Render the UK map - large for presentations
   const mapContainer = container.querySelector('#projects-uk-map');
   if (mapContainer) {
     await renderUKMap(mapContainer, {
       data: regionalData,
       dataKey: 'projectCount',
-      title: 'Live Projects by Region',
+      title: '',
       colorScheme: 'yellow',
-      width: 400,
-      height: 520,
+      width: 550,
+      height: 700,
       valueFormatter: (val) => `${val} projects`,
       onRegionClick: (regionId) => {
         // Could filter to show only that region's projects

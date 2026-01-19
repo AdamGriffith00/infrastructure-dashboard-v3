@@ -1689,38 +1689,82 @@
    LIVE PROJECTS VIEW
    ======================================== */
 
-.projects-layout {
+/* Hero Section - Map as main focus */
+.projects-hero-section {
+  padding: var(--space-lg);
+}
+
+.projects-hero-layout {
   display: grid;
-  grid-template-columns: 1fr 500px;
-  gap: var(--space-lg);
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-xl);
   align-items: start;
 }
 
-@media (max-width: 1100px) {
-  .projects-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-map-section {
-    order: -1;
-  }
-}
-
-.projects-upload-section {
+.projects-hero-map {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
+  justify-content: center;
+  align-items: center;
+  min-height: 650px;
 }
 
-.projects-map-section .section {
+.projects-hero-map svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-hero-panel {
+  background: var(--bg-darker);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
   position: sticky;
   top: var(--space-lg);
 }
 
-.projects-map-container {
-  display: flex;
-  justify-content: center;
-  min-height: 400px;
+.projects-hero-panel-title {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-md);
+  color: var(--gleeds-yellow);
+}
+
+.projects-hero-empty {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-dark);
+  text-align: center;
+}
+
+/* Secondary layout for upload and list */
+.projects-secondary-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 1200px) {
+  .projects-hero-layout {
+    grid-template-columns: 1fr 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-hero-map {
+    min-height: 500px;
+  }
+
+  .projects-hero-panel {
+    position: static;
+  }
+
+  .projects-secondary-layout {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Excel Dropzone */
