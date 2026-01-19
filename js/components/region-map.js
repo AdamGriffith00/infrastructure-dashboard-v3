@@ -295,7 +295,7 @@ export async function renderRegionSubdivisionMap(container, options = {}) {
             <div class="map-header">
                 <span class="map-title">${mapTitle}</span>
             </div>
-            <svg class="region-map-svg" viewBox="0 0 ${renderWidth} ${renderHeight}" preserveAspectRatio="xMidYMid slice">
+            <svg class="region-map-svg" viewBox="0 0 ${renderWidth} ${renderHeight}" preserveAspectRatio="xMidYMid meet">
                 <defs>
                     <filter id="subdivision-glow" x="-20%" y="-20%" width="140%" height="140%">
                         <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
