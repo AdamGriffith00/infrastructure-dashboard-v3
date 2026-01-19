@@ -23,9 +23,15 @@
   flex-wrap: wrap;
 }
 
+.header-brand {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
-  height: 40px;
+  height: 45px;
   width: auto;
+  object-fit: contain;
 }
 
 .header-title {
