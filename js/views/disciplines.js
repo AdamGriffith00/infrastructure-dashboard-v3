@@ -202,15 +202,9 @@ function calculateDisciplineRegionalData(discipline, disciplineOpportunities, re
   return Object.values(regionMap);
 }
 
-// Get color scheme based on discipline
+// Get color scheme based on discipline - using consistent yellow-orange heatmap
 function getDisciplineColorScheme(disciplineId) {
-  const schemes = {
-    'cost-management': 'yellow',
-    'project-management': 'green',
-    'project-controls': 'blue',
-    'advisory': 'copper'
-  };
-  return schemes[disciplineId] || 'yellow';
+  return 'yellow';
 }
 
 // Render region rankings for the discipline

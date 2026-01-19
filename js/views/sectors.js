@@ -194,16 +194,9 @@ function calculateSectorRegionalData(sector, sectorOpportunities, regions) {
   return Object.values(regionMap);
 }
 
-// Get color scheme based on sector
+// Get color scheme based on sector - using consistent yellow-orange heatmap
 function getSectorColorScheme(sectorId) {
-  const schemes = {
-    'rail': 'green',
-    'highways': 'blue',
-    'aviation': 'yellow',
-    'maritime': 'blue',
-    'utilities': 'yellow'
-  };
-  return schemes[sectorId] || 'yellow';
+  return 'yellow';
 }
 
 // Render region rankings for the sector
