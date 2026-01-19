@@ -206,10 +206,37 @@ Major update to all city region combined authority transport data with full prog
   - **West Midlands CA**: Added subdivisions, programmes (Metro £800m, Sprint BRT £350m), keyProjects
   - **North East CA**: Added subdivisions, programmes (Metro Futures £800m, extensions £400m), keyProjects
 
+### 2026-01-19: Live Projects Excel Upload Feature
+- Rebuilt Live Projects view with Excel upload capability
+- **Features:**
+  - Excel (.xlsx, .xls) and CSV file upload via drag-drop or click
+  - SheetJS library for Excel parsing
+  - Projects displayed on UK map with region counts (same map component)
+  - localStorage persistence - data stays until new file uploaded
+  - KPI cards: Total Projects, Regions Active, Top Region, Data Status
+  - Project list with scrolling, region rankings
+  - Export to CSV, download template functionality
+  - Clear data button to reset
+- **Expected columns:** Name, Client, Sector, Region
+- **Region normalization:** Handles various region name formats (e.g., "North West", "north-west", "Northwest")
+
 ## Next Session - Continue With:
 1. **Intelligence Features**: AI-powered bid insights, competitor analysis, win probability
 2. **Analysis Tools**: Filtering, sorting, export capabilities
 3. **Visualisations**: Gantt chart view, calendar view for deadlines
+4. **PRIORITY: Comprehensive Data Research** - Deep dive into all UK infrastructure sectors to ensure complete coverage of everything a consultancy would bid for. Include:
+   - All water companies (AMP8 data complete)
+   - All Network Rail routes (CP7 complete)
+   - All National Highways regions (RIS3 complete)
+   - All airport operators (major airports complete)
+   - All port operators (major ports complete)
+   - Energy networks (transmission & distribution)
+   - Nuclear new build and decommissioning
+   - Defence infrastructure (DIO estates)
+   - Education (schools, universities)
+   - Healthcare (NHS Trusts, new hospitals)
+   - Housing (Homes England, housing associations)
+   - Local authority capital programmes
 
 ## Key Files
 - `js/views/pipeline.js` - Pipeline & Timeline view (NEW)

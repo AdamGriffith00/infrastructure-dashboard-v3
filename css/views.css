@@ -1684,3 +1684,204 @@
     flex-wrap: wrap;
   }
 }
+
+/* ========================================
+   LIVE PROJECTS VIEW
+   ======================================== */
+
+.projects-layout {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+@media (max-width: 1100px) {
+  .projects-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-map-section {
+    order: -1;
+  }
+}
+
+.projects-upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.projects-map-section .section {
+  position: sticky;
+  top: var(--space-lg);
+}
+
+.projects-map-container {
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+}
+
+/* Excel Dropzone */
+.excel-dropzone {
+  border: 2px dashed var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--bg-darker);
+}
+
+.excel-dropzone:hover {
+  border-color: var(--gleeds-yellow);
+  background: rgba(247, 196, 0, 0.05);
+}
+
+.excel-dropzone.dragover {
+  border-color: var(--gleeds-yellow);
+  background: rgba(247, 196, 0, 0.1);
+  transform: scale(1.01);
+}
+
+.excel-dropzone-icon {
+  color: var(--gleeds-yellow);
+  margin-bottom: var(--space-md);
+}
+
+.excel-dropzone-text {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-sm);
+}
+
+.excel-dropzone-hint {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.excel-dropzone-columns {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-dark);
+}
+
+/* Project List */
+.projects-list-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border-dark);
+  gap: var(--space-md);
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-item:hover {
+  background: var(--bg-darker);
+}
+
+.project-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-item-name {
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-item-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Region Rankings */
+.projects-region-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.projects-region-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+}
+
+.projects-region-rank {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gleeds-yellow);
+  color: var(--text-on-yellow);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-heavy);
+}
+
+.projects-region-item:nth-child(1) .projects-region-rank {
+  background: var(--gleeds-yellow);
+}
+
+.projects-region-item:nth-child(2) .projects-region-rank {
+  background: var(--gleeds-copper);
+  color: var(--text-on-copper);
+}
+
+.projects-region-item:nth-child(3) .projects-region-rank {
+  background: #8B7355;
+}
+
+.projects-region-item:nth-child(n+4) .projects-region-rank {
+  background: var(--bg-card);
+  color: var(--text-muted);
+}
+
+.projects-region-name {
+  flex: 1;
+  font-weight: var(--font-weight-medium);
+}
+
+.projects-region-count {
+  min-width: 30px;
+  text-align: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .projects-layout {
+    gap: var(--space-md);
+  }
+
+  .excel-dropzone {
+    padding: var(--space-lg);
+  }
+
+  .projects-list-scroll {
+    max-height: 300px;
+  }
+}
