@@ -108,6 +108,7 @@
       "id": "hs2",
       "name": "HS2 Ltd",
       "sector": "rail",
+      "subSector": "high-speed",
       "regions": ["london", "midlands", "north-west"],
       "subdivisions": {
         "london": ["Hillingdon", "Ealing", "Brent", "Camden", "City of Westminster"],
@@ -116,7 +117,16 @@
       },
       "budget2026": 8500000000,
       "budget10Year": 45000000000,
-      "notes": "Phase 1 & 2a delivery"
+      "programmes": [
+        { "name": "Phase 1 (London-Birmingham)", "value": 32000000000, "type": "capex" },
+        { "name": "Phase 2a (Birmingham-Crewe)", "value": 8000000000, "type": "capex" },
+        { "name": "Old Oak Common Station", "value": 2800000000, "type": "capex" },
+        { "name": "Birmingham Curzon Street", "value": 1500000000, "type": "capex" },
+        { "name": "Birmingham Interchange", "value": 700000000, "type": "capex" }
+      ],
+      "keyProjects": ["Chiltern tunnels", "Colne Valley Viaduct", "Old Oak Common station", "Birmingham Curzon Street", "Long Itchington Wood tunnel"],
+      "notes": "Phase 1 & 2a delivery. UK's largest infrastructure project. 225mph design speed. Phase 1 opening target 2029-2033.",
+      "source": "HS2 Ltd Corporate Plan 2024"
     },
     {
       "id": "tfl",
@@ -556,12 +566,28 @@
     },
     {
       "id": "scottish-power",
-      "name": "Scottish Power",
+      "name": "SP Energy Networks",
       "sector": "utilities",
-      "regions": ["scotland"],
+      "subSector": "energy-networks",
+      "regions": ["scotland", "north-west", "wales", "midlands"],
+      "subdivisions": {
+        "scotland": ["Glasgow City", "City of Edinburgh", "South Lanarkshire", "North Lanarkshire", "Fife", "Falkirk", "East Ayrshire", "South Ayrshire", "Dumfries and Galloway"],
+        "north-west": ["Liverpool", "Wirral", "Sefton", "St. Helens", "Warrington", "Cheshire West and Chester"],
+        "wales": ["Wrexham", "Flintshire", "Denbighshire", "Conwy", "Gwynedd", "Isle of Anglesey"],
+        "midlands": ["Shropshire", "Telford and Wrekin"]
+      },
       "budget2026": 2400000000,
       "budget10Year": 12000000000,
-      "notes": "Grid reinforcement"
+      "programmes": [
+        { "name": "ScotWind Grid Connections", "value": 4000000000, "type": "capex" },
+        { "name": "RIIO-ED2 Distribution Investment", "value": 3500000000, "type": "capex" },
+        { "name": "RIIO-T2 Transmission Investment", "value": 2500000000, "type": "capex" },
+        { "name": "Green Infrastructure", "value": 1500000000, "type": "capex" },
+        { "name": "Network Digitalisation", "value": 500000000, "type": "capex" }
+      ],
+      "keyProjects": ["ScotWind offshore connections", "Eastern HVDC Link", "Argyll & Kintyre reinforcement", "Merseyside network upgrade", "North Wales grid reinforcement"],
+      "notes": "SP Transmission & SP Distribution. Part of Iberdrola group. Key enabler for ScotWind offshore wind. RIIO-ED2 2023-2028, RIIO-T2 2021-2026.",
+      "source": "SP Energy Networks Business Plans"
     },
     {
       "id": "transport-scotland",
@@ -1236,12 +1262,25 @@
     },
     {
       "id": "west-midlands-ca",
-      "name": "West Midlands Combined Authority",
+      "name": "West Midlands Combined Authority Transport",
       "sector": "rail",
+      "subSector": "integrated-transport",
       "regions": ["midlands"],
+      "subdivisions": {
+        "midlands": ["Birmingham", "Wolverhampton", "Coventry", "Sandwell", "Dudley", "Walsall", "Solihull"]
+      },
       "budget2026": 360000000,
       "budget10Year": 1800000000,
-      "notes": "Metro expansion"
+      "programmes": [
+        { "name": "Metro Extensions", "value": 800000000, "type": "capex" },
+        { "name": "Sprint BRT Network", "value": 350000000, "type": "capex" },
+        { "name": "Rail Station Improvements", "value": 250000000, "type": "capex" },
+        { "name": "Integrated Ticketing", "value": 100000000, "type": "capex" },
+        { "name": "HS2 Connectivity", "value": 300000000, "type": "capex" }
+      ],
+      "keyProjects": ["Wednesbury-Brierley Hill extension", "Birmingham Eastside to HS2", "Sprint A34/A45 corridors", "Perry Barr station", "University station upgrade"],
+      "notes": "CRSTS 2022-2027. Integrated transport authority covering 7 metropolitan boroughs. Key HS2 interchange connectivity.",
+      "source": "WMCA Local Transport Plan"
     },
     {
       "id": "severn-trent",
@@ -1301,12 +1340,25 @@
     },
     {
       "id": "north-east-ca",
-      "name": "North East Combined Authority",
+      "name": "North East Combined Authority Transport",
       "sector": "rail",
+      "subSector": "integrated-transport",
       "regions": ["north-east"],
+      "subdivisions": {
+        "north-east": ["Newcastle upon Tyne", "Gateshead", "North Tyneside", "South Tyneside", "Sunderland", "Durham", "Northumberland"]
+      },
       "budget2026": 380000000,
       "budget10Year": 1900000000,
-      "notes": "Metro extensions"
+      "programmes": [
+        { "name": "Metro Futures", "value": 800000000, "type": "capex" },
+        { "name": "Metro Extensions", "value": 400000000, "type": "capex" },
+        { "name": "Rail Improvements", "value": 300000000, "type": "capex" },
+        { "name": "Bus Network Enhancement", "value": 250000000, "type": "capex" },
+        { "name": "Active Travel", "value": 150000000, "type": "capex" }
+      ],
+      "keyProjects": ["New Metro fleet", "Metro Flow South Shields", "Washington extension", "Leamside Line study", "Central Station upgrade"],
+      "notes": "CRSTS 2022-2027. North of Tyne & North East combined authorities. Metro Futures transformation programme.",
+      "source": "NECA Transport Plan"
     },
     {
       "id": "northumbrian-water",
@@ -1327,12 +1379,25 @@
     },
     {
       "id": "hinkley",
-      "name": "Hinkley Point C",
+      "name": "Hinkley Point C (EDF Energy)",
       "sector": "utilities",
+      "subSector": "nuclear",
       "regions": ["south-west"],
+      "subdivisions": {
+        "south-west": ["Sedgemoor", "West Somerset", "Taunton Deane"]
+      },
       "budget2026": 5600000000,
       "budget10Year": 28000000000,
-      "notes": "Nuclear construction"
+      "programmes": [
+        { "name": "Nuclear Island Construction", "value": 12000000000, "type": "capex" },
+        { "name": "Conventional Island", "value": 5000000000, "type": "capex" },
+        { "name": "Mechanical & Electrical", "value": 6000000000, "type": "capex" },
+        { "name": "Balance of Plant", "value": 3000000000, "type": "capex" },
+        { "name": "Site Infrastructure & Civils", "value": 2000000000, "type": "capex" }
+      ],
+      "keyProjects": ["Unit 1 reactor building", "Unit 2 reactor building", "Turbine hall", "Cooling water systems", "Grid connection", "Marine works"],
+      "notes": "UK's first new nuclear in a generation. 3.2GW capacity (2x EPR reactors). EDF/CGN joint venture. Target operation 2029-2031. £35bn+ estimated final cost.",
+      "source": "EDF HPC Project Updates 2024"
     },
     {
       "id": "south-west-water",

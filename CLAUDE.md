@@ -161,11 +161,18 @@ python3 server.py
 - Added inline source citations to tooltips and client lists
 - Shows where data comes from (government publications, company reports, etc.)
 
+### 2026-01-19: Client Data Enrichment (COMPLETED)
+- Enriched minimal client entries with full data structures:
+  - **HS2 Ltd**: Added programmes (Phase 1 £32bn, Phase 2a £8bn, stations), keyProjects, subSector, source
+  - **SP Energy Networks** (Scottish Power): Added full regional coverage (Scotland, NW, Wales, Midlands), subdivisions, programmes (ScotWind £4bn, RIIO-ED2 £3.5bn), keyProjects
+  - **Hinkley Point C**: Added subdivisions, programmes (Nuclear Island £12bn, M&E £6bn, etc.), keyProjects (Unit 1/2 reactors, grid connection)
+  - **West Midlands CA**: Added subdivisions, programmes (Metro £800m, Sprint BRT £350m), keyProjects
+  - **North East CA**: Added subdivisions, programmes (Metro Futures £800m, extensions £400m), keyProjects
+
 ## Next Session - Continue With:
 1. **Intelligence Features**: AI-powered bid insights, competitor analysis, win probability
 2. **Analysis Tools**: Filtering, sorting, export capabilities
 3. **Visualisations**: Gantt chart view, calendar view for deadlines
-4. **Data Enrichment**: Add more clients that match opportunity IDs (hs2, heathrow, tfl, etc.)
 
 ## Key Files
 - `js/views/pipeline.js` - Pipeline & Timeline view (NEW)
