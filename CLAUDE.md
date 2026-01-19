@@ -161,6 +161,43 @@ python3 server.py
 - Added inline source citations to tooltips and client lists
 - Shows where data comes from (government publications, company reports, etc.)
 
+### 2026-01-19: Comprehensive City Region Transport Update
+Major update to all city region combined authority transport data with full programme breakdowns:
+
+**Greater Manchester - Bee Network (£6.5bn 10-year)**
+- Bus Franchising: £1.2bn operations + £600m fleet/depots (first outside London since 1986)
+- Metrolink: £800m renewals, £1.4bn extensions (Stockport, Airport Western Link)
+- Active Travel: £650m for 1,800 miles of cycling/walking routes
+- Added CRSTS2 allocation: £1.6bn (2027-2032)
+
+**Liverpool City Region (£4.2bn 10-year)**
+- Bus Franchising: £800m + £350m fleet (approved 2024, rollout 2027)
+- Merseyrail: £500m new Class 777 trains (in service), £450m network enhancements
+- Freeport Connectivity: £250m for Liverpool2, Wirral Waters, Parkside
+- Added CRSTS2 allocation: £880m
+
+**West Yorkshire (£5.8bn 10-year)**
+- Mass Transit: £2.5bn for new light rail (UK's largest unfunded scheme)
+- Bus Franchising: £700m (assessment complete 2024)
+- Transforming Cities: £500m corridor improvements
+- Added CRSTS2 allocation: £1.2bn
+
+**South Yorkshire (£2.2bn 10-year)**
+- Supertram Renewal: £500m new fleet and infrastructure
+- Sheffield City Gateway: £250m station and access improvements
+- UK's first tram-train system, now publicly owned
+
+**North East (£3.2bn 10-year)**
+- Metro New Fleet: £600m for 46 Stadler trains with battery capability
+- Metro Extensions: £600m (Washington, Cobalt, Metrocentre studies)
+- Leamside Line: £80m reopening study
+- Added CRSTS2 allocation: £900m
+
+**Lancashire County Council (NEW - £1.2bn 10-year)**
+- Preston Western Distributor: £200m (under construction)
+- South Lancaster Growth: £150m infrastructure
+- Largest shire county not in a combined authority
+
 ### 2026-01-19: Client Data Enrichment (COMPLETED)
 - Enriched minimal client entries with full data structures:
   - **HS2 Ltd**: Added programmes (Phase 1 £32bn, Phase 2a £8bn, stations), keyProjects, subSector, source

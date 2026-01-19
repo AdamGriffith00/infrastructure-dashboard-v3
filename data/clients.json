@@ -188,23 +188,40 @@
     },
     {
       "id": "tfgm",
-      "name": "Transport for Greater Manchester",
+      "name": "Bee Network (Transport for Greater Manchester)",
       "sector": "rail",
-      "subSector": "metro",
+      "subSector": "integrated-transport",
       "regions": ["north-west"],
       "subdivisions": {
         "north-west": ["Manchester", "Salford", "Trafford", "Stockport", "Tameside", "Oldham", "Rochdale", "Bury", "Bolton", "Wigan"]
       },
-      "budget2026": 540000000,
-      "budget10Year": 2700000000,
+      "budget2026": 1200000000,
+      "budget10Year": 6500000000,
       "programmes": [
-        { "name": "Metrolink Renewals", "value": 800000000, "type": "capex" },
-        { "name": "New Metrolink Lines", "value": 1200000000, "type": "capex" },
-        { "name": "Bee Network Rail", "value": 700000000, "type": "capex" }
+        { "name": "Bus Franchising Operations", "value": 1200000000, "type": "opex", "description": "First franchised bus network outside London since 1986. 500+ yellow buses." },
+        { "name": "Bus Fleet & Depots", "value": 600000000, "type": "capex", "description": "New electric bus fleet, depot electrification, charging infrastructure." },
+        { "name": "Metrolink Renewals & Fleet", "value": 800000000, "type": "capex", "description": "27 new Urbos 100 trams, track renewals, power upgrades." },
+        { "name": "Metrolink Extensions", "value": 1400000000, "type": "capex", "description": "Stockport, Oldham town centre, potential Airport Western Link." },
+        { "name": "Active Travel Network", "value": 650000000, "type": "capex", "description": "1,800 miles of cycling/walking routes. Bee Network Cycleway." },
+        { "name": "Rail Integration", "value": 450000000, "type": "capex", "description": "Station improvements, integrated ticketing, rail devolution prep." },
+        { "name": "Interchange & Hubs", "value": 350000000, "type": "capex", "description": "Wythenshawe, Stockport, Bolton interchanges. Park & Ride expansion." },
+        { "name": "Digital & Ticketing", "value": 250000000, "type": "capex", "description": "Integrated ticketing system, real-time info, contactless payments." },
+        { "name": "Streets for All", "value": 400000000, "type": "capex", "description": "Bus priority corridors, traffic management, pedestrianisation." },
+        { "name": "EV Charging Network", "value": 200000000, "type": "capex", "description": "Public charging infrastructure across Greater Manchester." },
+        { "name": "Zero Emission Bus Regional Areas", "value": 200000000, "type": "capex", "description": "ZEBRA funding for 170 electric buses." }
       ],
-      "keyProjects": ["Metrolink Trafford Park extension", "New rolling stock", "Bee Network integration"],
-      "notes": "CRSTS funding 2022-2027. Major network expansion.",
-      "source": "GMCA Transport Strategy"
+      "keyProjects": [
+        "Bus franchising rollout (complete Jan 2025)",
+        "Stockport Metrolink extension",
+        "27 new CAF Urbos trams",
+        "Bee Network Cycleway (1,800 miles)",
+        "Wythenshawe Interchange",
+        "Bolton Interchange redevelopment",
+        "Airport Western Link study",
+        "Oldham Metrolink town centre extension"
+      ],
+      "notes": "UK's largest integrated transport network outside London. Bee Network launched 2024 - first bus franchising since 1986. CRSTS1 £1.07bn (2022-2027), CRSTS2 £1.6bn (2027-2032). Mayor Andy Burnham's flagship project.",
+      "source": "GMCA Bee Network Delivery Plan 2024, CRSTS2 Settlement 2024"
     },
     {
       "id": "west-midlands-metro",
@@ -229,85 +246,147 @@
     },
     {
       "id": "nexus-metro",
-      "name": "Nexus Tyne & Wear Metro",
+      "name": "North East Combined Authority Transport (Nexus)",
       "sector": "rail",
-      "subSector": "metro",
+      "subSector": "integrated-transport",
       "regions": ["north-east"],
       "subdivisions": {
-        "north-east": ["Newcastle upon Tyne", "Gateshead", "North Tyneside", "South Tyneside", "Sunderland"]
+        "north-east": ["Newcastle upon Tyne", "Gateshead", "North Tyneside", "South Tyneside", "Sunderland", "Durham", "Northumberland"]
       },
-      "budget2026": 320000000,
-      "budget10Year": 1600000000,
+      "budget2026": 480000000,
+      "budget10Year": 3200000000,
       "programmes": [
-        { "name": "Metro Flow (South Shields)", "value": 104000000, "type": "capex" },
-        { "name": "New Fleet Programme", "value": 550000000, "type": "capex" },
-        { "name": "Infrastructure Renewal", "value": 450000000, "type": "capex" },
-        { "name": "Metro Extensions", "value": 500000000, "type": "capex" }
+        { "name": "Metro New Fleet", "value": 600000000, "type": "capex", "description": "46 new Stadler trains. Battery capability for extensions beyond current infrastructure." },
+        { "name": "Metro Flow", "value": 120000000, "type": "capex", "description": "Doubled frequency on South Shields line. Complete 2024." },
+        { "name": "Metro Infrastructure Renewal", "value": 500000000, "type": "capex", "description": "Track, signalling, stations, depot modernisation." },
+        { "name": "Metro Extensions", "value": 600000000, "type": "capex", "description": "Washington/Doxford, Cobalt, Metrocentre extensions under development." },
+        { "name": "Bus Network Improvements", "value": 400000000, "type": "capex", "description": "Bus Service Improvement Plan delivery. Enhanced frequencies." },
+        { "name": "Bus Franchising Assessment", "value": 50000000, "type": "capex", "description": "Franchising assessment underway. Decision expected 2025." },
+        { "name": "Active Travel", "value": 250000000, "type": "capex", "description": "Pop-up cycling infrastructure, safe walking routes." },
+        { "name": "Rail Station Upgrades", "value": 300000000, "type": "capex", "description": "Newcastle Central, Sunderland, Durham stations." },
+        { "name": "Zero Emission Buses", "value": 200000000, "type": "capex", "description": "Electric bus rollout across the region." },
+        { "name": "Leamside Line Study", "value": 80000000, "type": "capex", "description": "Reopening study for Tyne & Wear to Durham route." },
+        { "name": "Ferry & River Transport", "value": 100000000, "type": "capex", "description": "Shields Ferry renewal, Tyne river services." }
       ],
-      "keyProjects": ["New Stadler trains", "Metro Flow improvements", "Washington extension study"],
-      "notes": "Metro Futures programme. New fleet arriving 2024-2025.",
-      "source": "Nexus Corporate Plan"
+      "keyProjects": [
+        "Metro new fleet rollout (2024-2025)",
+        "Metro Flow South Shields (complete)",
+        "Washington Metro extension",
+        "Cobalt/Silverlink extension study",
+        "Newcastle Central station upgrade",
+        "Sunderland Station regeneration",
+        "Leamside Line reopening",
+        "Bus franchising assessment"
+      ],
+      "notes": "Mayor Kim McGuinness. Metro Futures transformation. CRSTS1 £563m (2022-2027), CRSTS2 £900m (2027-2032). New trains arriving. Potential bus franchising.",
+      "source": "NECA Transport Plan 2024, Metro Futures, CRSTS2 Settlement"
     },
     {
       "id": "merseyrail",
-      "name": "Merseyrail / Liverpool City Region",
+      "name": "Liverpool City Region Transport",
       "sector": "rail",
-      "subSector": "metro",
+      "subSector": "integrated-transport",
       "regions": ["north-west"],
       "subdivisions": {
-        "north-west": ["Liverpool", "Sefton", "Wirral", "Knowsley", "St. Helens"]
+        "north-west": ["Liverpool", "Sefton", "Wirral", "Knowsley", "St. Helens", "Halton"]
       },
-      "budget2026": 260000000,
-      "budget10Year": 1300000000,
+      "budget2026": 580000000,
+      "budget10Year": 4200000000,
       "programmes": [
-        { "name": "New Rolling Stock", "value": 460000000, "type": "capex" },
-        { "name": "Station Improvements", "value": 280000000, "type": "capex" },
-        { "name": "Liverpool Central upgrade", "value": 180000000, "type": "capex" },
-        { "name": "Headbolt Lane extension", "value": 80000000, "type": "capex" }
+        { "name": "Bus Franchising", "value": 800000000, "type": "capex", "description": "Following GM model. Franchising approved 2024, rollout 2027-2028." },
+        { "name": "Bus Fleet Renewal", "value": 350000000, "type": "capex", "description": "Electric and hydrogen buses. 500+ vehicle fleet renewal." },
+        { "name": "Merseyrail New Fleet", "value": 500000000, "type": "capex", "description": "52 new Stadler Class 777 trains. Battery-electric capability." },
+        { "name": "Merseyrail Network Enhancements", "value": 450000000, "type": "capex", "description": "Headbolt Lane, Kirkby curve, Maghull North services." },
+        { "name": "Liverpool Central Upgrade", "value": 200000000, "type": "capex", "description": "Capacity and accessibility improvements at busiest station." },
+        { "name": "Station Improvements", "value": 350000000, "type": "capex", "description": "Accessibility, passenger facilities, security across network." },
+        { "name": "Birkenhead Central Regeneration", "value": 150000000, "type": "capex", "description": "Station and surrounding area redevelopment." },
+        { "name": "Active Travel", "value": 300000000, "type": "capex", "description": "Pop-up cycle lanes, LCWIP delivery, e-bike schemes." },
+        { "name": "Freeport Connectivity", "value": 250000000, "type": "capex", "description": "Road and rail access to Liverpool Freeport sites." },
+        { "name": "Hydrogen Transport Hub", "value": 180000000, "type": "capex", "description": "Hydrogen production, bus/HGV fuelling infrastructure." },
+        { "name": "Digital & Ticketing", "value": 120000000, "type": "capex", "description": "Integrated ticketing, Walrus card expansion, real-time info." },
+        { "name": "Ferry & Maritime Access", "value": 150000000, "type": "capex", "description": "Mersey Ferries renewal, cruise terminal access." }
       ],
-      "keyProjects": ["New Stadler Class 777 trains", "Liverpool Central capacity", "Headbolt Lane station"],
-      "notes": "Liverpool City Region Combined Authority. New trains in service.",
-      "source": "LCRCA Transport Plan"
+      "keyProjects": [
+        "Bus franchising (approved 2024, rollout 2027)",
+        "Class 777 trains (in service)",
+        "Headbolt Lane station",
+        "Liverpool Central capacity upgrade",
+        "Kirkby to Skelmersdale link study",
+        "St Helens Central regeneration",
+        "Birkenhead Dock Branch reopening study",
+        "Mersey Ferries decarbonisation"
+      ],
+      "notes": "Second city region to approve bus franchising (after GM). CRSTS1 £710m (2022-2027), CRSTS2 £880m (2027-2032). New Merseyrail trains operational. Mayor Steve Rotheram.",
+      "source": "LCRCA Transport Plan 2024, CRSTS2 Settlement"
     },
     {
       "id": "wyca-mass-transit",
-      "name": "West Yorkshire Mass Transit",
+      "name": "West Yorkshire Combined Authority Transport",
       "sector": "rail",
-      "subSector": "metro",
+      "subSector": "integrated-transport",
       "regions": ["yorkshire-humber"],
       "subdivisions": {
         "yorkshire-humber": ["Leeds", "Bradford", "Wakefield", "Kirklees", "Calderdale"]
       },
-      "budget2026": 180000000,
-      "budget10Year": 2500000000,
+      "budget2026": 520000000,
+      "budget10Year": 5800000000,
       "programmes": [
-        { "name": "Mass Transit Network", "value": 2000000000, "type": "capex" },
-        { "name": "Bus & Rail Integration", "value": 300000000, "type": "capex" },
-        { "name": "Station Gateway Improvements", "value": 200000000, "type": "capex" }
+        { "name": "Mass Transit Network", "value": 2500000000, "type": "capex", "description": "New light rail/tram-train system for Leeds and Bradford. UK's largest unfunded transport scheme." },
+        { "name": "Bus Franchising", "value": 700000000, "type": "capex", "description": "Assessment complete 2024. Potential franchising from 2027." },
+        { "name": "Bus Network Enhancement", "value": 400000000, "type": "capex", "description": "Enhanced Partnership improvements, new routes, frequencies." },
+        { "name": "Rail Station Gateways", "value": 450000000, "type": "capex", "description": "Leeds, Bradford Interchange, Huddersfield station upgrades." },
+        { "name": "Active Travel Network", "value": 350000000, "type": "capex", "description": "CityConnect cycleways, walking routes, e-bike schemes." },
+        { "name": "Park & Ride Expansion", "value": 200000000, "type": "capex", "description": "New P&R sites at motorway junctions and rail stations." },
+        { "name": "TransPennine Integration", "value": 300000000, "type": "capex", "description": "Connecting to TRU improvements, new services." },
+        { "name": "Zero Emission Buses", "value": 250000000, "type": "capex", "description": "ZEBRA2 funding for electric and hydrogen buses." },
+        { "name": "Digital Connectivity", "value": 150000000, "type": "capex", "description": "MCard expansion, real-time info, journey planning." },
+        { "name": "Transforming Cities", "value": 500000000, "type": "capex", "description": "TCF programme - corridors, interchanges, bus priority." }
       ],
-      "keyProjects": ["Leeds Mass Transit", "Bradford interchange", "TransPennine integration"],
-      "notes": "New mass transit system in development. CRSTS funded.",
-      "source": "WYCA Connectivity Infrastructure Plan"
+      "keyProjects": [
+        "West Yorkshire Mass Transit",
+        "Leeds Station Gateway",
+        "Bradford Interchange redevelopment",
+        "Bus franchising assessment",
+        "A61 South corridor",
+        "A647 Leeds-Bradford corridor",
+        "Castleford Growth Corridor",
+        "White Rose station"
+      ],
+      "notes": "Mayor Tracy Brabin's flagship mass transit scheme. Bus franchising consultation 2024. CRSTS1 £830m (2022-2027), CRSTS2 £1.2bn (2027-2032). Mass Transit awaiting government funding decision.",
+      "source": "WYCA Transport Strategy 2040, CRSTS2 Settlement 2024"
     },
     {
       "id": "south-yorkshire-supertram",
-      "name": "South Yorkshire Supertram",
+      "name": "South Yorkshire Mayoral Combined Authority Transport",
       "sector": "rail",
-      "subSector": "metro",
+      "subSector": "integrated-transport",
       "regions": ["yorkshire-humber"],
       "subdivisions": {
-        "yorkshire-humber": ["Sheffield", "Rotherham"]
+        "yorkshire-humber": ["Sheffield", "Rotherham", "Doncaster", "Barnsley"]
       },
-      "budget2026": 90000000,
-      "budget10Year": 450000000,
+      "budget2026": 280000000,
+      "budget10Year": 2200000000,
       "programmes": [
-        { "name": "Tram-Train Extension", "value": 75000000, "type": "capex" },
-        { "name": "Fleet Renewal", "value": 180000000, "type": "capex" },
-        { "name": "Infrastructure Upgrades", "value": 120000000, "type": "capex" }
+        { "name": "Supertram Renewal", "value": 500000000, "type": "capex", "description": "New tram fleet, infrastructure modernisation, depot upgrades." },
+        { "name": "Tram-Train Extensions", "value": 200000000, "type": "capex", "description": "Rotherham tram-train service, potential Barnsley extension." },
+        { "name": "Bus Network Improvements", "value": 350000000, "type": "capex", "description": "Enhanced Partnership, frequency improvements, new routes." },
+        { "name": "Rail Station Upgrades", "value": 300000000, "type": "capex", "description": "Sheffield, Doncaster, Rotherham station improvements." },
+        { "name": "Active Travel", "value": 200000000, "type": "capex", "description": "South Yorkshire cycling network, walking routes." },
+        { "name": "Sheffield City Gateway", "value": 250000000, "type": "capex", "description": "Sheffield station and city centre access improvements." },
+        { "name": "Doncaster Sheffield Airport Access", "value": 150000000, "type": "capex", "description": "Improved access (if airport reopens)." },
+        { "name": "Zero Emission Fleet", "value": 250000000, "type": "capex", "description": "Electric and hydrogen buses across South Yorkshire." }
       ],
-      "keyProjects": ["Tram-train to Rotherham", "Fleet replacement programme"],
-      "notes": "SYMCA ownership. Tram-train operational.",
-      "source": "SYMCA Transport Strategy"
+      "keyProjects": [
+        "Supertram fleet renewal",
+        "Tram-train Rotherham expansion",
+        "Sheffield Station Gateway",
+        "Doncaster Interchange",
+        "Barnsley Interchange",
+        "Upper Don Valley corridor",
+        "Dearne Valley improvements"
+      ],
+      "notes": "Mayor Oliver Coppard. CRSTS1 £570m (2022-2027), CRSTS2 £750m (2027-2032). UK's first tram-train system. Supertram publicly owned since 2024.",
+      "source": "SYMCA Transport Strategy 2024, CRSTS2 Settlement"
     },
     {
       "id": "nottingham-net",
@@ -731,6 +810,39 @@
       "source": "National Highways RIS3 Programme"
     },
     {
+      "id": "lancashire-cc",
+      "name": "Lancashire County Council Transport",
+      "sector": "highways",
+      "subSector": "local-major",
+      "regions": ["north-west"],
+      "subdivisions": {
+        "north-west": ["Preston", "Blackpool", "Blackburn with Darwen", "Lancaster", "Burnley", "Pendle", "Chorley", "South Ribble", "West Lancashire", "Fylde", "Wyre", "Rossendale", "Hyndburn", "Ribble Valley"]
+      },
+      "budget2026": 180000000,
+      "budget10Year": 1200000000,
+      "programmes": [
+        { "name": "Preston Western Distributor", "value": 200000000, "type": "capex", "description": "Major new road linking M55 to A583. Under construction." },
+        { "name": "South Lancaster Growth Catalyst", "value": 150000000, "type": "capex", "description": "Infrastructure for major housing and employment growth." },
+        { "name": "East-West Connectivity", "value": 120000000, "type": "capex", "description": "A56/M65 corridor improvements, Burnley-Pendle connectivity." },
+        { "name": "Bus Service Improvement Plan", "value": 100000000, "type": "capex", "description": "BSIP delivery - frequencies, fares, infrastructure." },
+        { "name": "Active Travel Lancashire", "value": 80000000, "type": "capex", "description": "Cycling and walking network expansion." },
+        { "name": "Rail Station Access", "value": 60000000, "type": "capex", "description": "Improvements at Preston, Lancaster, Blackpool stations." },
+        { "name": "Levelling Up Projects", "value": 180000000, "type": "capex", "description": "Town centre regeneration, transport links." },
+        { "name": "Highway Maintenance", "value": 310000000, "type": "opex", "description": "Road repairs, winter maintenance, bridge works." }
+      ],
+      "keyProjects": [
+        "Preston Western Distributor (under construction)",
+        "South Lancaster growth infrastructure",
+        "Skelmersdale rail link study",
+        "Poulton-Fleetwood rail improvements",
+        "Burnley town centre access",
+        "M65 Junction 2 improvements",
+        "Blackpool Tramway upgrades"
+      ],
+      "notes": "Largest shire county by population not in a combined authority. Working with Blackpool and Blackburn as separate unitaries. Potential future Lancashire Combined Authority.",
+      "source": "Lancashire County Council Local Transport Plan 4"
+    },
+    {
       "id": "nh-north-east",
       "name": "National Highways North East",
       "sector": "highways",
@@ -829,24 +941,35 @@
     },
     {
       "id": "gmca-highways",
-      "name": "Greater Manchester Highways (CRSTS)",
+      "name": "Greater Manchester Highways",
       "sector": "highways",
       "subSector": "local-major",
       "regions": ["north-west"],
       "subdivisions": {
         "north-west": ["Manchester", "Salford", "Trafford", "Stockport", "Tameside", "Oldham", "Rochdale", "Bury", "Bolton", "Wigan"]
       },
-      "budget2026": 400000000,
-      "budget10Year": 2000000000,
+      "budget2026": 450000000,
+      "budget10Year": 2500000000,
       "programmes": [
-        { "name": "Bee Network Roads", "value": 800000000, "type": "capex" },
-        { "name": "Active Travel Infrastructure", "value": 400000000, "type": "capex" },
-        { "name": "Quality Bus Transit", "value": 300000000, "type": "capex" },
-        { "name": "Highway Maintenance", "value": 500000000, "type": "opex" }
+        { "name": "Highway Maintenance & Renewal", "value": 800000000, "type": "opex", "description": "Pothole repairs, resurfacing, bridge maintenance across 10 districts." },
+        { "name": "Major Scheme Delivery", "value": 500000000, "type": "capex", "description": "A34 corridor, Stockport town centre, Salford Crescent." },
+        { "name": "Bus Priority Infrastructure", "value": 400000000, "type": "capex", "description": "Bee Network bus lanes, signal priority, shelter upgrades." },
+        { "name": "Traffic Management", "value": 300000000, "type": "capex", "description": "Smart traffic systems, congestion management, Clean Air Zone." },
+        { "name": "Bridge & Structure Works", "value": 250000000, "type": "capex", "description": "Mancunian Way repairs, Barton Bridge, structure maintenance." },
+        { "name": "Winter Resilience", "value": 150000000, "type": "opex", "description": "Gritting, flooding response, emergency repairs." },
+        { "name": "Electric Vehicle Infrastructure", "value": 100000000, "type": "capex", "description": "GM-wide EV charging network rollout." }
       ],
-      "keyProjects": ["Bee Network cycle lanes", "Streets for All programme", "Bus priority corridors", "EV charging network"],
-      "notes": "CRSTS 2022-2027 highways element. Integrated with Bee Network delivery.",
-      "source": "GMCA CRSTS Programme"
+      "keyProjects": [
+        "A34 corridor improvements",
+        "Stockport town centre access",
+        "Salford Crescent gateway",
+        "Mancunian Way structural repairs",
+        "Clean Air Zone infrastructure",
+        "Bee Network bus corridors",
+        "GM EV charging network"
+      ],
+      "notes": "Highways delivered by 10 district councils with GMCA coordination. Integrated with Bee Network. See TfGM for public transport elements.",
+      "source": "GMCA Highway Asset Management Plan"
     },
     {
       "id": "wmca-highways",
@@ -892,24 +1015,31 @@
     },
     {
       "id": "lcrca-highways",
-      "name": "Liverpool City Region Highways (CRSTS)",
+      "name": "Liverpool City Region Highways",
       "sector": "highways",
       "subSector": "local-major",
       "regions": ["north-west"],
       "subdivisions": {
         "north-west": ["Liverpool", "Sefton", "Wirral", "Knowsley", "St. Helens", "Halton"]
       },
-      "budget2026": 200000000,
-      "budget10Year": 1000000000,
+      "budget2026": 280000000,
+      "budget10Year": 1400000000,
       "programmes": [
-        { "name": "Key Route Network", "value": 350000000, "type": "capex" },
-        { "name": "Active Travel", "value": 200000000, "type": "capex" },
-        { "name": "Bus Priority", "value": 150000000, "type": "capex" },
-        { "name": "Maintenance", "value": 300000000, "type": "opex" }
+        { "name": "Key Route Network Upgrades", "value": 400000000, "type": "capex", "description": "Strategic road network improvements across 6 boroughs." },
+        { "name": "Freeport Access Infrastructure", "value": 300000000, "type": "capex", "description": "Road access to Liverpool2, Wirral Waters, Parkside." },
+        { "name": "Bus Priority Corridors", "value": 200000000, "type": "capex", "description": "Bus lanes, signal priority, interchange improvements." },
+        { "name": "Silver Jubilee Bridge Maintenance", "value": 150000000, "type": "capex", "description": "Major refurbishment of Runcorn-Widnes bridge." },
+        { "name": "Highway Maintenance", "value": 350000000, "type": "opex", "description": "Pothole repair, resurfacing, winter maintenance." }
       ],
-      "keyProjects": ["Liverpool-Wirral connectivity", "Mersey Gateway integration", "Freeport access roads", "City centre bus priority"],
-      "notes": "CRSTS 2022-2027. Freeport connectivity priority.",
-      "source": "LCRCA CRSTS Programme"
+      "keyProjects": [
+        "Freeport access roads",
+        "A565 corridor improvements",
+        "Mersey Gateway toll integration",
+        "Liverpool city centre transformation",
+        "Wirral Waters access"
+      ],
+      "notes": "Integrated with LCR Transport Plan. Freeport connectivity is priority. CRSTS highways allocation.",
+      "source": "LCRCA CRSTS Programme 2024"
     },
     {
       "id": "symca-highways",
