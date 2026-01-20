@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-14",
+  "lastUpdated": "2026-01-20",
   "clients": [
     {
       "id": "network-rail-eastern",
@@ -115,18 +115,18 @@
         "midlands": ["Birmingham", "Solihull", "North Warwickshire", "Lichfield", "Tamworth"],
         "north-west": ["Manchester", "Trafford", "Stockport", "Cheshire East", "Crewe and Nantwich"]
       },
-      "budget2026": 8500000000,
-      "budget10Year": 45000000000,
+      "budget2026": 6300000000,
+      "budget10Year": 56000000000,
       "programmes": [
-        { "name": "Phase 1 (London-Birmingham)", "value": 32000000000, "type": "capex" },
-        { "name": "Phase 2a (Birmingham-Crewe)", "value": 8000000000, "type": "capex" },
+        { "name": "Phase 1 (London-Birmingham)", "value": 49000000000, "type": "capex", "description": "London Euston to Birmingham Curzon Street. £40.5bn spent to April 2025, £25.3bn allocated 2026-2030." },
+        { "name": "Euston Station & Approach", "value": 5000000000, "type": "capex", "description": "Tunnelling to Euston confirmed Nov 2024 (not terminating at Old Oak Common)." },
         { "name": "Old Oak Common Station", "value": 2800000000, "type": "capex" },
         { "name": "Birmingham Curzon Street", "value": 1500000000, "type": "capex" },
         { "name": "Birmingham Interchange", "value": 700000000, "type": "capex" }
       ],
-      "keyProjects": ["Chiltern tunnels", "Colne Valley Viaduct", "Old Oak Common station", "Birmingham Curzon Street", "Long Itchington Wood tunnel"],
-      "notes": "Phase 1 & 2a delivery. UK's largest infrastructure project. 225mph design speed. Phase 1 opening target 2029-2033.",
-      "source": "HS2 Ltd Corporate Plan 2024"
+      "keyProjects": ["Chiltern tunnels", "Colne Valley Viaduct", "Old Oak Common station", "Birmingham Curzon Street", "Long Itchington Wood tunnel", "Euston approach tunnels"],
+      "notes": "Phase 1 only (London-Birmingham). Phase 2 to Crewe/Manchester cancelled Oct 2023. UK's largest infrastructure project. 225mph design speed. £40.5bn spent to Apr 2025. Phase 1 opening target 2029-2033. Euston terminus confirmed.",
+      "source": "HS2 Ltd Corporate Plan 2024, HM Treasury Budget Nov 2025, DfT Report July 2025"
     },
     {
       "id": "tfl",
@@ -183,8 +183,8 @@
         { "name": "Sustainability & Net Zero", "value": 1000000000, "type": "capex" }
       ],
       "keyProjects": ["Third runway expansion", "Terminal 2 expansion", "Cargo capacity increase", "Surface access improvements"],
-      "notes": "UK's largest airport. Expansion subject to government approval. 80m passengers/year capacity target.",
-      "source": "Heathrow 2.0 Masterplan"
+      "notes": "UK's largest airport. HAL's third runway proposal confirmed as basis for expansion (Nov 2025). Draft ANPS consultation summer 2026, final ANPS end-2026. DCO process 2027-29. New runway target opening 2035. 80m passengers/year capacity target.",
+      "source": "Heathrow 2.0 Masterplan, DfT ANPS Update Nov 2025"
     },
     {
       "id": "tfgm",
@@ -735,14 +735,14 @@
       "budget2026": 1800000000,
       "budget10Year": 9000000000,
       "programmes": [
-        { "name": "Lower Thames Crossing", "value": 4500000000, "type": "capex" },
+        { "name": "Lower Thames Crossing", "value": 11000000000, "type": "capex", "description": "UK's longest road tunnel. £3.1bn govt funding + £7.5bn private finance (RAB model). DCO granted March 2025, construction 2026, opening ~2030." },
         { "name": "M25 Enhancements", "value": 1200000000, "type": "capex" },
         { "name": "A2/M2 Improvements", "value": 800000000, "type": "capex" },
         { "name": "Operations & Renewals", "value": 2500000000, "type": "opex" }
       ],
       "keyProjects": ["Lower Thames Crossing", "M25 Junction 10", "A2 Bean & Ebbsfleet", "M2 J5 improvements"],
-      "notes": "RIS3 2025-2030. Includes UK's largest road project - Lower Thames Crossing.",
-      "source": "National Highways RIS3 Programme"
+      "notes": "RIS3 2026-2031 (£25bn settlement). Includes UK's largest road project - Lower Thames Crossing. Budget 2025 confirmed £891m additional for LTC.",
+      "source": "National Highways RIS3 Programme, HM Treasury Budget Nov 2025"
     },
     {
       "id": "nh-south-west",
@@ -1121,8 +1121,8 @@
         { "name": "Sustainability Programme", "value": 1000000000, "type": "capex" }
       ],
       "keyProjects": ["Northern runway dual use", "North Terminal expansion", "Station upgrade", "Pier 7 development"],
-      "notes": "UK's second busiest. Northern runway DCO approved 2024. Target 75m passengers.",
-      "source": "Gatwick Airport Masterplan 2024"
+      "notes": "UK's second busiest. Northern runway DCO approved Sept 2025 - £2.2bn privately-financed, runway relocated 12m north for dual simultaneous use. Agreed stricter noise controls and 54% public transport target. Target 75m passengers.",
+      "source": "Gatwick Airport Masterplan 2024, DfT DCO Decision Sept 2025"
     },
     {
       "id": "manchester-airport",
@@ -1249,9 +1249,9 @@
         { "name": "Airfield Capacity", "value": 350000000, "type": "capex" },
         { "name": "Sustainability", "value": 250000000, "type": "capex" }
       ],
-      "keyProjects": ["New Terminal 2 (DCO approved)", "DART people mover", "32m passenger capacity"],
-      "notes": "Luton Rising (council-owned). Major expansion DCO granted 2024.",
-      "source": "London Luton Airport Expansion DCO"
+      "keyProjects": ["New Terminal 2 (DCO approved)", "DART people mover", "32m passenger capacity by 2043"],
+      "notes": "Luton Rising (council-owned). Major expansion DCO granted April 2025 for 32m passengers by 2043 (~double current throughput). DART automated transit operational.",
+      "source": "London Luton Airport Expansion DCO, April 2025"
     },
     {
       "id": "london-city",
@@ -1596,6 +1596,50 @@
       "keyProjects": ["Bristol storm overflows", "Bath network resilience", "Wiltshire growth"],
       "notes": "AMP8 2025-2030. Serves Bristol, Somerset, Dorset, Wiltshire, parts of Gloucestershire.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
+    },
+    {
+      "id": "sizewell-c",
+      "name": "Sizewell C (EDF Energy)",
+      "sector": "utilities",
+      "subSector": "nuclear",
+      "regions": ["eastern"],
+      "subdivisions": {
+        "eastern": ["Suffolk Coastal", "East Suffolk"]
+      },
+      "budget2026": 4000000000,
+      "budget10Year": 40000000000,
+      "programmes": [
+        { "name": "Nuclear Island Construction", "value": 16000000000, "type": "capex", "description": "Twin EPR reactors replicating Hinkley Point C design." },
+        { "name": "Conventional Island", "value": 8000000000, "type": "capex" },
+        { "name": "Mechanical & Electrical", "value": 8000000000, "type": "capex" },
+        { "name": "Balance of Plant", "value": 5000000000, "type": "capex" },
+        { "name": "Site Infrastructure & Marine Works", "value": 3000000000, "type": "capex" }
+      ],
+      "keyProjects": ["Unit 1 EPR reactor", "Unit 2 EPR reactor", "Turbine hall", "Cooling water intake", "Grid connection", "Suffolk coast protection"],
+      "notes": "3.2GW nuclear plant approved June 2025. £14.2bn government funding + private investment under RAB model. Total cost estimated £40bn. Replicates Hinkley Point C twin EPR design with efficiencies. Powers 6 million homes.",
+      "source": "EDF Sizewell C Project Updates, HM Treasury June 2025"
+    },
+    {
+      "id": "east-west-rail",
+      "name": "East West Rail",
+      "sector": "rail",
+      "subSector": "enhancements",
+      "regions": ["eastern", "south-east", "midlands"],
+      "subdivisions": {
+        "eastern": ["Central Bedfordshire", "Bedford"],
+        "south-east": ["Milton Keynes", "Buckinghamshire", "Aylesbury Vale"],
+        "midlands": ["Cherwell", "Oxford"]
+      },
+      "budget2026": 800000000,
+      "budget10Year": 5000000000,
+      "programmes": [
+        { "name": "Western Section (Oxford-Bletchley)", "value": 1800000000, "type": "capex", "description": "Reopening Varsity Line. Services started 2024." },
+        { "name": "Central Section (Bletchley-Bedford)", "value": 2000000000, "type": "capex", "description": "New stations at Wixams and Marston Vale." },
+        { "name": "Eastern Section (Bedford-Cambridge)", "value": 1200000000, "type": "capex", "description": "New twin-track railway. Connects to Cambridge South." }
+      ],
+      "keyProjects": ["Oxford-Bicester-Bletchley line (complete)", "Bletchley-Bedford connection", "Bedford-Cambridge new build", "Cambridge South station link"],
+      "notes": "Strategic east-west corridor connecting Oxford, Milton Keynes, Bedford and Cambridge. Government confirmed continued funding Nov 2025. Western section operational. Central and Eastern sections in development.",
+      "source": "East West Railway Company, HM Treasury Budget Nov 2025"
     }
   ]
 }
