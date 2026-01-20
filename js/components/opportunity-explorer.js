@@ -5,7 +5,7 @@
 
 import { ASSESSMENT_SECTIONS, getAssessmentResult } from '../utils/assessment.js';
 import { calculateBidScore } from '../utils/intelligence.js';
-import { formatCurrency } from '../utils/format.js';
+import { formatCurrency } from '../utils/formatters.js';
 
 // Store current state
 let currentOpportunity = null;
