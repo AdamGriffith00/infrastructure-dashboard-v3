@@ -4,6 +4,8 @@
  */
 
 import { formatCurrency, formatDate, getSectorColor } from '../utils/formatters.js';
+import { renderAnalysisToolbar, setupAnalysisToolbar, applyFilters, sortData } from '../components/analysis-toolbar.js';
+import { exportToCSV, exportToExcel, getOpportunityColumns } from '../utils/export.js';
 
 // Status definitions with colors and order
 const STATUS_CONFIG = {
@@ -140,23 +142,60 @@ export function renderPipelineView(container, { data, allData, filters }) {
     <section class="section">
       <div class="section-header">
         <h2 class="section-title">All Opportunities</h2>
-        <div class="pipeline-filters">
-          <select id="filter-status" class="input" style="width: auto;">
+      </div>
+
+      <!-- Analysis Toolbar -->
+      ${renderAnalysisToolbar({
+        id: 'opp-toolbar',
+        showSearch: true,
+        showValueFilter: true,
+        showDateFilter: true,
+        showExport: true,
+        searchPlaceholder: 'Search opportunities...'
+      })}
+
+      <!-- Additional filters row -->
+      <div class="toolbar-row" style="display: flex; gap: var(--space-md); margin-bottom: var(--space-md);">
+        <div class="toolbar-group">
+          <label class="toolbar-label">Status:</label>
+          <select id="filter-status" class="input toolbar-select">
             <option value="all">All Statuses</option>
             ${Object.entries(STATUS_CONFIG).map(([id, cfg]) =>
               `<option value="${id}">${cfg.label}</option>`
             ).join('')}
           </select>
-          <select id="filter-sector" class="input" style="width: auto;">
+        </div>
+        <div class="toolbar-group">
+          <label class="toolbar-label">Sector:</label>
+          <select id="filter-sector" class="input toolbar-select">
             <option value="all">All Sectors</option>
             ${(allData.sectors || []).map(s =>
               `<option value="${s.id}">${s.name}</option>`
             ).join('')}
           </select>
         </div>
+        <div class="toolbar-group">
+          <label class="toolbar-label">Priority:</label>
+          <select id="filter-priority" class="input toolbar-select">
+            <option value="all">All Priorities</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
       </div>
-      <div class="opportunity-table" id="opportunity-table">
-        ${renderOpportunityTable(opportunities)}
+
+      <!-- Results Summary -->
+      <div class="results-summary" id="results-summary">
+        <span class="results-count">Showing <strong>${opportunities.length}</strong> opportunities</span>
+        <span class="results-value">Total: ${formatCurrency(opportunities.reduce((sum, o) => sum + (o.value || 0), 0))}</span>
+      </div>
+
+      <!-- Sortable Table -->
+      <div class="table-responsive">
+        <div id="opportunity-table">
+          ${renderSortableTable(opportunities)}
+        </div>
       </div>
     </section>
   `;
@@ -707,6 +746,80 @@ function renderOpportunityTable(opportunities, statusFilter = 'all', sectorFilte
   `;
 }
 
+// Sortable table columns configuration
+const TABLE_COLUMNS = [
+  { key: 'title', label: 'Opportunity', sortable: true },
+  { key: 'status', label: 'Status', sortable: true },
+  { key: 'procurementStage', label: 'Stage', sortable: true },
+  { key: 'value', label: 'Value', sortable: true, align: 'right' },
+  { key: 'bidDeadline', label: 'Deadline', sortable: true },
+  { key: 'contractStart', label: 'Contract Start', sortable: true },
+  { key: 'bidRating', label: 'Rating', sortable: true }
+];
+
+function renderSortableTable(opportunities, sortColumn = 'bidDeadline', sortDirection = 'asc') {
+  if (opportunities.length === 0) {
+    return `
+      <div class="empty-state">
+        <div class="empty-state-icon">📋</div>
+        <p>No opportunities match your filters</p>
+        <p class="text-muted">Try adjusting your search or filter criteria</p>
+      </div>
+    `;
+  }
+
+  // Sort icon SVG
+  const sortIcon = `
+    <span class="sort-indicator">
+      <svg class="asc" viewBox="0 0 10 5"><path d="M0 5 L5 0 L10 5 Z" fill="currentColor"/></svg>
+      <svg class="desc" viewBox="0 0 10 5"><path d="M0 0 L5 5 L10 0 Z" fill="currentColor"/></svg>
+    </span>
+  `;
+
+  return `
+    <table class="sortable-table">
+      <thead>
+        <tr>
+          ${TABLE_COLUMNS.map(col => `
+            <th class="${col.sortable ? 'sortable' : ''} ${sortColumn === col.key ? `sorted sorted-${sortDirection}` : ''}"
+                data-column="${col.key}"
+                ${col.align ? `style="text-align: ${col.align}"` : ''}>
+              ${col.label}
+              ${col.sortable ? sortIcon : ''}
+            </th>
+          `).join('')}
+        </tr>
+      </thead>
+      <tbody>
+        ${opportunities.map(opp => {
+          const statusConfig = STATUS_CONFIG[opp.status] || { color: '#888', label: opp.status };
+          const ratingClass = (opp.bidRating || '').toLowerCase() === 'high' ? 'badge-high' :
+                              (opp.bidRating || '').toLowerCase() === 'medium' ? 'badge-medium' : 'badge-low';
+
+          return `
+            <tr data-id="${opp.id || ''}">
+              <td>
+                <div class="cell-title">${opp.title}</div>
+                <div class="cell-subtitle">${opp.sector || ''} ${opp.sector && opp.region ? '|' : ''} ${opp.region || ''}</div>
+              </td>
+              <td>
+                <span class="status-badge" style="background: ${statusConfig.color}20; color: ${statusConfig.color}; border: 1px solid ${statusConfig.color}">
+                  ${statusConfig.label}
+                </span>
+              </td>
+              <td>${opp.procurementStage || '-'}</td>
+              <td class="text-right">${formatCurrency(opp.value)}</td>
+              <td>${opp.bidDeadline ? formatDate(opp.bidDeadline) : '-'}</td>
+              <td>${opp.contractStart || '-'}</td>
+              <td><span class="badge ${ratingClass}">${opp.bidRating || 'TBC'}</span></td>
+            </tr>
+          `;
+        }).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
 function setupEventListeners(container, opportunities, allData) {
   // View toggle buttons (Gantt/Timeline/Calendar)
   const btnGantt = container.querySelector('#btn-view-gantt');
@@ -743,15 +856,11 @@ function setupEventListeners(container, opportunities, allData) {
       btnAll.classList.add('btn-active');
       btn2026.classList.remove('btn-active');
       btn2027.classList.remove('btn-active');
-      // Re-render timeline content (skip the filters div)
-      const content = timelineContainer.querySelector('.timeline-quarter')?.parentElement || timelineContainer;
-      const newContent = renderTimeline(opportunities, 'all');
-      // Find where to insert (after filters)
       const filtersDiv = timelineContainer.querySelector('.timeline-filters');
       if (filtersDiv && filtersDiv.nextSibling) {
         filtersDiv.nextSibling.remove();
       }
-      filtersDiv?.insertAdjacentHTML('afterend', newContent);
+      filtersDiv?.insertAdjacentHTML('afterend', renderTimeline(opportunities, 'all'));
     });
 
     btn2026.addEventListener('click', () => {
@@ -777,17 +886,127 @@ function setupEventListeners(container, opportunities, allData) {
     });
   }
 
-  // Table filters
+  // ==========================================
+  // Enhanced Analysis Toolbar & Sortable Table
+  // ==========================================
+  const tableContainer = container.querySelector('#opportunity-table');
+  const resultsSummary = container.querySelector('#results-summary');
   const filterStatus = container.querySelector('#filter-status');
   const filterSector = container.querySelector('#filter-sector');
-  const tableContainer = container.querySelector('#opportunity-table');
+  const filterPriority = container.querySelector('#filter-priority');
 
-  function updateTable() {
-    const statusVal = filterStatus?.value || 'all';
-    const sectorVal = filterSector?.value || 'all';
-    tableContainer.innerHTML = renderOpportunityTable(opportunities, statusVal, sectorVal);
+  // State for filtering and sorting
+  let currentFilters = {
+    search: '',
+    valueRange: 'all',
+    dateRange: 'all',
+    status: 'all',
+    sector: 'all',
+    priority: 'all'
+  };
+  let currentSort = { column: 'bidDeadline', direction: 'asc' };
+  let filteredData = [...opportunities];
+
+  // Function to apply all filters and update the table
+  function updateTableWithFilters() {
+    // Start with all opportunities
+    let filtered = [...opportunities];
+
+    // Apply analysis toolbar filters (search, value range, date range)
+    filtered = applyFilters(filtered, currentFilters);
+
+    // Apply status filter
+    if (currentFilters.status !== 'all') {
+      filtered = filtered.filter(o => o.status === currentFilters.status);
+    }
+
+    // Apply sector filter
+    if (currentFilters.sector !== 'all') {
+      filtered = filtered.filter(o => o.sector === currentFilters.sector);
+    }
+
+    // Apply priority filter
+    if (currentFilters.priority !== 'all') {
+      filtered = filtered.filter(o =>
+        (o.bidRating || '').toLowerCase() === currentFilters.priority
+      );
+    }
+
+    // Apply sorting
+    filtered = sortData(filtered, currentSort.column, currentSort.direction);
+
+    // Store filtered data for export
+    filteredData = filtered;
+
+    // Update results summary
+    if (resultsSummary) {
+      const totalValue = filtered.reduce((sum, o) => sum + (o.value || 0), 0);
+      resultsSummary.innerHTML = `
+        <span class="results-count">Showing <strong>${filtered.length}</strong> of ${opportunities.length} opportunities</span>
+        <span class="results-value">Total: ${formatCurrency(totalValue)}</span>
+      `;
+    }
+
+    // Update table
+    if (tableContainer) {
+      tableContainer.innerHTML = renderSortableTable(filtered, currentSort.column, currentSort.direction);
+      setupSortableHeaders();
+    }
   }
 
-  if (filterStatus) filterStatus.addEventListener('change', updateTable);
-  if (filterSector) filterSector.addEventListener('change', updateTable);
+  // Setup sortable table headers
+  function setupSortableHeaders() {
+    const headers = tableContainer.querySelectorAll('.sortable-table th.sortable');
+    headers.forEach(th => {
+      th.addEventListener('click', () => {
+        const column = th.dataset.column;
+        if (currentSort.column === column) {
+          // Toggle direction
+          currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+          // New column, default to ascending
+          currentSort.column = column;
+          currentSort.direction = 'asc';
+        }
+        updateTableWithFilters();
+      });
+    });
+  }
+
+  // Setup analysis toolbar
+  const toolbarController = setupAnalysisToolbar(container, {
+    id: 'opp-toolbar',
+    onFilterChange: (filters) => {
+      currentFilters = { ...currentFilters, ...filters };
+      updateTableWithFilters();
+    },
+    getData: () => filteredData,
+    exportFilename: 'pipeline-opportunities',
+    exportColumns: getOpportunityColumns()
+  });
+
+  // Additional filter listeners
+  if (filterStatus) {
+    filterStatus.addEventListener('change', () => {
+      currentFilters.status = filterStatus.value;
+      updateTableWithFilters();
+    });
+  }
+
+  if (filterSector) {
+    filterSector.addEventListener('change', () => {
+      currentFilters.sector = filterSector.value;
+      updateTableWithFilters();
+    });
+  }
+
+  if (filterPriority) {
+    filterPriority.addEventListener('change', () => {
+      currentFilters.priority = filterPriority.value;
+      updateTableWithFilters();
+    });
+  }
+
+  // Initial setup of sortable headers
+  setupSortableHeaders();
 }

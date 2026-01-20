@@ -5,6 +5,7 @@
 
 import { renderUKMap } from '../components/uk-map.js';
 import { formatCurrency } from '../utils/formatters.js';
+import { exportToCSV, exportToExcel, getProjectColumns } from '../utils/export.js';
 
 // Storage key for persistence
 const STORAGE_KEY = 'gleeds_live_projects';
@@ -107,7 +108,25 @@ export async function renderProjectsView(container, { data, allData, state }) {
         <div id="import-status" class="mt-md"></div>
 
         <div class="mt-md flex gap-sm flex-wrap">
-          ${projects.length > 0 ? `<button class="btn" id="export-btn">Export to CSV</button>` : ''}
+          ${projects.length > 0 ? `
+            <button class="btn btn-secondary" id="export-csv-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="12" y1="18" x2="12" y2="12"/>
+                <polyline points="8 16 12 20 16 16"/>
+              </svg>
+              Export CSV
+            </button>
+            <button class="btn btn-secondary" id="export-excel-btn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <path d="M8 13h2l2 3 2-6 2 3h2"/>
+              </svg>
+              Export Excel
+            </button>
+          ` : ''}
           <button class="btn" id="download-template-btn">Download Template</button>
         </div>
       </section>
@@ -268,7 +287,8 @@ function initFileHandling(container, state) {
   const dropzone = container.querySelector('#excel-dropzone');
   const fileInput = container.querySelector('#excel-input');
   const statusDiv = container.querySelector('#import-status');
-  const exportBtn = container.querySelector('#export-btn');
+  const exportCSVBtn = container.querySelector('#export-csv-btn');
+  const exportExcelBtn = container.querySelector('#export-excel-btn');
   const clearBtn = container.querySelector('#clear-data-btn');
   const templateBtn = container.querySelector('#download-template-btn');
 
@@ -303,11 +323,21 @@ function initFileHandling(container, state) {
     }
   });
 
-  // Export button
-  if (exportBtn) {
-    exportBtn.addEventListener('click', () => {
+  // Export CSV button
+  if (exportCSVBtn) {
+    exportCSVBtn.addEventListener('click', () => {
       const projects = loadProjectsFromStorage();
-      exportProjects(projects);
+      const filename = `live-projects-${new Date().toISOString().split('T')[0]}`;
+      exportToCSV(projects, filename, getProjectColumns());
+    });
+  }
+
+  // Export Excel button
+  if (exportExcelBtn) {
+    exportExcelBtn.addEventListener('click', () => {
+      const projects = loadProjectsFromStorage();
+      const filename = `live-projects-${new Date().toISOString().split('T')[0]}`;
+      exportToExcel(projects, filename, getProjectColumns(), 'Projects');
     });
   }
 
