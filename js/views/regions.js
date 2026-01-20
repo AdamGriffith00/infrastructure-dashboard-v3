@@ -5,6 +5,7 @@
 import { formatCurrency, getSectorColor } from '../utils/formatters.js';
 import { renderUKMap } from '../components/uk-map.js';
 import { renderRegionSubdivisionMap } from '../components/region-map.js';
+import { openRegionExplorer } from '../components/region-explorer.js';
 
 export async function renderRegionsView(container, { data, allData, params }) {
   const selectedRegion = params.id ? allData.regions?.find(r => r.id === params.id) : null;
@@ -149,7 +150,13 @@ async function renderRegionDetail(container, region, allData) {
 
   container.innerHTML = `
     <div class="view-header">
-      <a href="#regions" class="btn mb-md">Back to Regions</a>
+      <div class="view-header-actions" style="display: flex; gap: var(--space-md); margin-bottom: var(--space-md);">
+        <a href="#regions" class="btn">← Back to Regions</a>
+        <button class="btn btn-primary" id="btn-explore-region">
+          <span style="margin-right: 6px;">🔍</span>
+          Explore Region
+        </button>
+      </div>
       <h1 class="view-title">${region.name}</h1>
       <p class="view-subtitle">${region.strategicFocus || ''}</p>
     </div>
@@ -270,6 +277,18 @@ async function renderRegionDetail(container, region, allData) {
     height: 450,
     showLegend: true
   });
+
+  // Setup Explore Region button
+  const exploreBtn = container.querySelector('#btn-explore-region');
+  if (exploreBtn) {
+    exploreBtn.addEventListener('click', () => {
+      openRegionExplorer(region, {
+        opportunities,
+        clients,
+        sectorBreakdown
+      });
+    });
+  }
 }
 
 // Get the subdivision type name for a region
