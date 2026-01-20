@@ -6,6 +6,7 @@
 import { formatCurrency, formatDate, getSectorColor } from '../utils/formatters.js';
 import { renderAnalysisToolbar, setupAnalysisToolbar, applyFilters, sortData } from '../components/analysis-toolbar.js';
 import { exportToCSV, exportToExcel, getOpportunityColumns } from '../utils/export.js';
+import { openExplorer } from '../components/opportunity-explorer.js';
 
 // Status definitions with colors and order
 const STATUS_CONFIG = {
@@ -754,7 +755,8 @@ const TABLE_COLUMNS = [
   { key: 'value', label: 'Value', sortable: true, align: 'right' },
   { key: 'bidDeadline', label: 'Deadline', sortable: true },
   { key: 'contractStart', label: 'Contract Start', sortable: true },
-  { key: 'bidRating', label: 'Rating', sortable: true }
+  { key: 'bidRating', label: 'Rating', sortable: true },
+  { key: 'actions', label: 'Action', sortable: false }
 ];
 
 function renderSortableTable(opportunities, sortColumn = 'bidDeadline', sortDirection = 'asc') {
@@ -812,6 +814,12 @@ function renderSortableTable(opportunities, sortColumn = 'bidDeadline', sortDire
               <td>${opp.bidDeadline ? formatDate(opp.bidDeadline) : '-'}</td>
               <td>${opp.contractStart || '-'}</td>
               <td><span class="badge ${ratingClass}">${opp.bidRating || 'TBC'}</span></td>
+              <td>
+                <button class="btn-explore" data-opp-id="${opp.id}">
+                  <span class="btn-explore-icon">🔍</span>
+                  Explore
+                </button>
+              </td>
             </tr>
           `;
         }).join('')}
@@ -1009,4 +1017,28 @@ function setupEventListeners(container, opportunities, allData) {
 
   // Initial setup of sortable headers
   setupSortableHeaders();
+
+  // Setup explore button listeners
+  setupExploreButtons(container, opportunities);
+
+  // Function to setup explore buttons (called after table re-renders)
+  function setupExploreButtons(container, opportunities) {
+    container.querySelectorAll('.btn-explore').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const oppId = btn.dataset.oppId;
+        const opportunity = opportunities.find(o => o.id === oppId);
+        if (opportunity) {
+          openExplorer(opportunity);
+        }
+      });
+    });
+  }
+
+  // Re-attach explore buttons after table updates
+  const originalUpdateTable = updateTableWithFilters;
+  updateTableWithFilters = function() {
+    originalUpdateTable();
+    setupExploreButtons(container, opportunities);
+  };
 }

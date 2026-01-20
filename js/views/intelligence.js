@@ -11,6 +11,7 @@ import {
   getSectorStrengths,
   getAllCompetitors
 } from '../utils/intelligence.js';
+import { openExplorer } from '../components/opportunity-explorer.js';
 
 export function renderIntelligenceView(container, { data, allData, filters }) {
   const opportunities = allData.opportunities || [];
@@ -163,6 +164,13 @@ function renderTopOpportunityCards(opportunities) {
               </div>
             `).join('')}
           </div>
+
+          <div style="margin-top: var(--space-md); text-align: right;">
+            <button class="btn-explore" data-opp-id="${opp.id}">
+              <span class="btn-explore-icon">🔍</span>
+              Explore
+            </button>
+          </div>
         </div>
       </div>
     `;
@@ -199,6 +207,7 @@ function renderIntelligenceTable(opportunities) {
           <th>Win Prob</th>
           <th>Recommendation</th>
           <th>Key Factor</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
@@ -208,7 +217,7 @@ function renderIntelligenceTable(opportunities) {
           const topInsight = intel.strategicInsights[0];
 
           return `
-            <tr data-score="${intel.totalScore}">
+            <tr data-score="${intel.totalScore}" data-opp-id="${opp.id}">
               <td>
                 <span class="intel-score-cell" style="background: ${rec.color}">${intel.totalScore}</span>
               </td>
@@ -227,6 +236,12 @@ function renderIntelligenceTable(opportunities) {
               </td>
               <td>
                 <span class="insight-mini ${topInsight?.type || ''}">${topInsight?.text || '-'}</span>
+              </td>
+              <td>
+                <button class="btn-explore" data-opp-id="${opp.id}">
+                  <span class="btn-explore-icon">🔍</span>
+                  Explore
+                </button>
               </td>
             </tr>
           `;
@@ -331,6 +346,24 @@ function setupIntelligenceListeners(container, intelligence) {
       }
 
       tableContainer.innerHTML = renderIntelligenceTable(filtered);
+      // Re-attach explore button listeners after re-render
+      attachExploreListeners(container, intelligence.opportunities);
     });
   }
+
+  // Attach explore button click handlers
+  attachExploreListeners(container, intelligence.opportunities);
+}
+
+function attachExploreListeners(container, opportunities) {
+  container.querySelectorAll('.btn-explore').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const oppId = btn.dataset.oppId;
+      const opportunity = opportunities.find(o => o.id === oppId);
+      if (opportunity) {
+        openExplorer(opportunity);
+      }
+    });
+  });
 }
