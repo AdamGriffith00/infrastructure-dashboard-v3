@@ -5,6 +5,7 @@
 
 import { REGION_ASSESSMENT_SECTIONS, getRegionAssessmentResult } from '../utils/region-assessment.js';
 import { formatCurrency } from '../utils/formatters.js';
+import { getRegionalInsights } from '../data/regional-insights.js';
 
 // Store current state
 let currentRegion = null;
@@ -155,6 +156,7 @@ function renderProgressNav() {
 function renderWelcomeScreen(region, regionData) {
   const opportunities = regionData.opportunities || [];
   const clients = regionData.clients || [];
+  const insights = getRegionalInsights(region.id);
 
   // Calculate some quick stats
   const highValueOpps = opportunities.filter(o => (o.value || 0) > 10000000).length;
@@ -167,8 +169,60 @@ function renderWelcomeScreen(region, regionData) {
         <p>This assessment will help you determine whether to invest more in this region and how to approach growth.</p>
       </div>
 
+      ${insights ? `
+        <div class="region-market-overview" style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: var(--radius-md); padding: var(--space-lg); margin-bottom: var(--space-lg);">
+          <h4 style="color: var(--gleeds-yellow); margin: 0 0 var(--space-sm) 0;">Market Intelligence</h4>
+          <p style="color: var(--text-secondary); margin: 0 0 var(--space-md) 0; font-size: 0.95rem;">${insights.marketOverview}</p>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); margin-top: var(--space-md);">
+            <div>
+              <h5 style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 var(--space-sm) 0; text-transform: uppercase; letter-spacing: 0.5px;">Key Market Drivers</h5>
+              <ul style="margin: 0; padding-left: var(--space-md); font-size: 0.9rem; color: var(--text-secondary);">
+                ${insights.keyDrivers.slice(0, 3).map(d => `<li style="margin-bottom: 4px;">${d}</li>`).join('')}
+              </ul>
+            </div>
+            <div>
+              <h5 style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 var(--space-sm) 0; text-transform: uppercase; letter-spacing: 0.5px;">Growth Sectors</h5>
+              <div style="display: flex; flex-wrap: wrap; gap: var(--space-xs);">
+                ${insights.growthSectors.map(s => `<span class="badge">${s}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="region-projects-overview" style="background: var(--bg-darker); border-radius: var(--radius-md); padding: var(--space-lg); margin-bottom: var(--space-lg);">
+          <h4 style="color: var(--text-primary); margin: 0 0 var(--space-md) 0;">Major Projects</h4>
+          <div style="display: grid; gap: var(--space-sm);">
+            ${insights.majorProjects.slice(0, 4).map(p => `
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: var(--space-sm) var(--space-md); background: var(--bg-card); border-radius: var(--radius-sm);">
+                <div>
+                  <span style="font-weight: var(--font-weight-medium); color: var(--text-primary);">${p.name}</span>
+                  <span class="badge badge-sm" style="margin-left: var(--space-sm);">${p.status}</span>
+                </div>
+                <span style="color: var(--gleeds-yellow); font-weight: var(--font-weight-bold);">${p.value}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div class="region-quick-tips" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); margin-bottom: var(--space-lg);">
+          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-md); padding: var(--space-md);">
+            <h5 style="color: #10B981; font-size: 0.85rem; margin: 0 0 var(--space-sm) 0;">💡 Quick Wins</h5>
+            <ul style="margin: 0; padding-left: var(--space-md); font-size: 0.85rem; color: var(--text-secondary);">
+              ${insights.quickWins.slice(0, 2).map(w => `<li style="margin-bottom: 4px;">${w}</li>`).join('')}
+            </ul>
+          </div>
+          <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: var(--radius-md); padding: var(--space-md);">
+            <h5 style="color: #EF4444; font-size: 0.85rem; margin: 0 0 var(--space-sm) 0;">⚠️ Key Risks</h5>
+            <ul style="margin: 0; padding-left: var(--space-md); font-size: 0.85rem; color: var(--text-secondary);">
+              ${insights.risks.slice(0, 2).map(r => `<li style="margin-bottom: 4px;">${r}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      ` : ''}
+
       <div class="explorer-ai-analysis">
-        <h4>Regional Overview</h4>
+        <h4>Your Current Position</h4>
         <div class="ai-analysis-grid">
           <div class="ai-analysis-item">
             <span class="ai-label">Budget Scale</span>
@@ -199,9 +253,6 @@ function renderWelcomeScreen(region, regionData) {
             <span class="ai-value">${highValueOpps} opps</span>
           </div>
         </div>
-        ${region.growthAreas ? `
-          <p class="ai-insight"><strong>Growth Areas:</strong> ${region.growthAreas}</p>
-        ` : ''}
       </div>
 
       <div class="explorer-what-next">
@@ -354,6 +405,7 @@ function prevRegionSection() {
 function showRegionResults() {
   assessmentComplete = true;
   const result = getRegionAssessmentResult(currentAnswers, currentRegion, currentRegionData);
+  const insights = getRegionalInsights(currentRegion.id);
   const main = document.getElementById('region-explorer-main');
 
   main.innerHTML = `
@@ -368,6 +420,40 @@ function showRegionResults() {
         <div class="rec-confidence">Confidence: ${result.recommendation.confidence}</div>
         <p class="rec-summary">${result.recommendation.summary}</p>
       </div>
+
+      ${insights ? `
+        <div class="results-section regional-intelligence">
+          <h4>Regional Market Intelligence</h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin-bottom: var(--space-md);">
+            <div style="background: var(--bg-darker); padding: var(--space-md); border-radius: var(--radius-md); border-left: 3px solid var(--gleeds-yellow);">
+              <h5 style="font-size: 0.85rem; color: var(--gleeds-yellow); margin: 0 0 var(--space-sm) 0;">📋 Framework Tip</h5>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">${insights.frameworkTip}</p>
+            </div>
+            <div style="background: var(--bg-darker); padding: var(--space-md); border-radius: var(--radius-md); border-left: 3px solid #8B5CF6;">
+              <h5 style="font-size: 0.85rem; color: #8B5CF6; margin: 0 0 var(--space-sm) 0;">💰 Pricing Insight</h5>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">${insights.pricingInsight}</p>
+            </div>
+          </div>
+          <div style="background: var(--bg-darker); padding: var(--space-md); border-radius: var(--radius-md); margin-bottom: var(--space-md);">
+            <h5 style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 var(--space-sm) 0;">🏢 Competitor Landscape</h5>
+            <p style="margin: 0; font-size: 0.9rem; color: var(--text-secondary);">${insights.competitorLandscape}</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md);">
+            <div>
+              <h5 style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 var(--space-sm) 0;">🎯 Key Clients to Target</h5>
+              <div style="display: flex; flex-wrap: wrap; gap: var(--space-xs);">
+                ${insights.keyClients.map(c => `<span class="badge">${c}</span>`).join('')}
+              </div>
+            </div>
+            <div>
+              <h5 style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 var(--space-sm) 0;">📈 Growth Sectors</h5>
+              <div style="display: flex; flex-wrap: wrap; gap: var(--space-xs);">
+                ${insights.growthSectors.map(s => `<span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #10B981; border-color: #10B981;">${s}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+        </div>
+      ` : ''}
 
       <div class="results-score-overview">
         <div class="score-circle ${getScoreClass(result.score)}">
@@ -474,6 +560,34 @@ function showRegionResults() {
           ` : ''}
         </div>
       </div>
+
+      ${insights ? `
+        <div class="results-section">
+          <h4>Quick Wins for ${currentRegion.name}</h4>
+          <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: var(--radius-md); padding: var(--space-lg);">
+            <ul style="margin: 0; padding-left: var(--space-lg); display: grid; gap: var(--space-sm);">
+              ${insights.quickWins.map(w => `
+                <li style="color: var(--text-secondary);">
+                  <span style="color: #10B981; font-weight: var(--font-weight-medium);">${w}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+        </div>
+
+        <div class="results-section">
+          <h4>Key Risks to Consider</h4>
+          <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: var(--radius-md); padding: var(--space-lg);">
+            <ul style="margin: 0; padding-left: var(--space-lg); display: grid; gap: var(--space-sm);">
+              ${insights.risks.map(r => `
+                <li style="color: var(--text-secondary);">
+                  <span style="color: #EF4444;">${r}</span>
+                </li>
+              `).join('')}
+            </ul>
+          </div>
+        </div>
+      ` : ''}
 
       <div class="results-actions">
         <button class="btn btn-secondary" onclick="window.startRegionAssessment()">
