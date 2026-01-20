@@ -20,6 +20,7 @@ import { renderDisciplinesView } from './views/disciplines.js';
 import { renderProjectsView } from './views/projects.js';
 import { renderSourcesView } from './views/sources.js';
 import { renderPipelineView } from './views/pipeline.js';
+import { renderIntelligenceView } from './views/intelligence.js';
 
 class App {
   constructor() {
@@ -36,7 +37,8 @@ class App {
       'disciplines': renderDisciplinesView,
       'projects': renderProjectsView,
       'sources': renderSourcesView,
-      'pipeline': renderPipelineView
+      'pipeline': renderPipelineView,
+      'intelligence': renderIntelligenceView
     };
   }
 

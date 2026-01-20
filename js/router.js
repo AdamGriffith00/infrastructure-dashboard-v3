@@ -18,7 +18,8 @@ export class Router {
       'disciplines',
       'projects',
       'sources',
-      'pipeline'
+      'pipeline',
+      'intelligence'
     ];
   }
 
