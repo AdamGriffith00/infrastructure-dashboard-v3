@@ -19,7 +19,8 @@ export class Router {
       'projects',
       'sources',
       'pipeline',
-      'intelligence'
+      'intelligence',
+      'events-intel'
     ];
   }
 

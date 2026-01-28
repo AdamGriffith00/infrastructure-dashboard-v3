@@ -7,6 +7,7 @@ const navItems = [
   { id: 'budget', label: 'Budget Summary', icon: '' },
   { id: 'pipeline', label: 'Pipeline', icon: '' },
   { id: 'intelligence', label: 'Bid Intelligence', icon: '' },
+  { id: 'events-intel', label: 'Events & Intel', icon: '' },
   { id: 'sectors', label: 'Sectors', icon: '' },
   { id: 'regions', label: 'Regions', icon: '' },
   { id: 'disciplines', label: 'Disciplines', icon: '' },
