@@ -13,7 +13,6 @@ const EVENT_SECTOR_COLORS = {
   'maritime': '#00ACC1',    // Cyan
   'utilities': '#FB8C00',   // Orange
   'water': '#43A047',       // Green
-  'energy': '#FDD835',      // Yellow
   'multi-sector': '#78909C' // Grey
 };
 
@@ -46,11 +45,6 @@ const INDUSTRY_EVENTS = [
   { id: 'evt-016', name: 'UK Ports Conference 2026', sector: 'maritime', date: '2026-10-08', location: 'London', type: 'Conference', priority: 8, attendees: ['Peel Ports', 'ABP', 'DP World', 'Forth Ports'], url: 'https://ukports.org', cost: 495, description: 'British Ports Association annual conference' },
   { id: 'evt-017', name: 'Seawork 2026', sector: 'maritime', date: '2026-06-24', endDate: '2026-06-26', location: 'Southampton', type: 'Exhibition', priority: 8, attendees: ['Port Operators', 'Marine Industry'], url: 'https://seawork.com', cost: 350, description: 'Commercial marine and workboat exhibition' },
   { id: 'evt-018', name: 'Peel Ports Liverpool Freeport Event', sector: 'maritime', date: '2026-03-18', location: 'Liverpool', type: 'Supplier Day', priority: 9, attendees: ['Peel Ports'], url: null, cost: 0, description: 'Liverpool2 and Freeport investment briefing' },
-
-  // Energy/Utilities Events
-  { id: 'evt-019', name: 'All-Energy 2026', sector: 'energy', date: '2026-05-06', endDate: '2026-05-07', location: 'Glasgow SEC', type: 'Exhibition', priority: 8, attendees: ['SSE', 'ScottishPower', 'National Grid'], url: 'https://all-energy.co.uk', cost: 0, description: 'Renewable energy exhibition and conference' },
-  { id: 'evt-020', name: 'Nuclear New Build Conference', sector: 'energy', date: '2026-09-22', location: 'Bristol', type: 'Conference', priority: 9, attendees: ['EDF', 'Hinkley Point C', 'Sizewell C'], url: null, cost: 550, description: 'Nuclear new build industry conference' },
-  { id: 'evt-021', name: 'Offshore Wind Conference', sector: 'energy', date: '2026-06-03', location: 'Aberdeen', type: 'Conference', priority: 8, attendees: ['ScotWind Developers', 'Crown Estate Scotland'], url: null, cost: 450, description: 'ScotWind and offshore wind industry event' },
 
   // Multi-sector Events
   { id: 'evt-022', name: 'UK Infrastructure Show 2026', sector: 'multi-sector', date: '2026-04-15', location: 'London ExCeL', type: 'Exhibition', priority: 9, attendees: ['IPA', 'DfT', 'Major Project Sponsors'], url: 'https://ukinfrastructureshow.com', cost: 495, description: 'Cross-sector infrastructure exhibition' },
