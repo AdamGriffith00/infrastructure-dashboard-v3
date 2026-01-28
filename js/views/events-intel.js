@@ -52,107 +52,242 @@ const INDUSTRY_EVENTS = [
   { id: 'evt-024', name: 'RICS Infrastructure Conference', sector: 'multi-sector', date: '2026-10-22', location: 'London', type: 'Conference', priority: 7, attendees: ['RICS Members', 'Surveyors'], url: 'https://rics.org', cost: 350, description: 'RICS infrastructure and construction conference' }
 ];
 
-// Client intelligence database with contact patterns
+// Client intelligence database with contact patterns and known contacts
 const CLIENT_INTELLIGENCE = {
   'network-rail': {
     name: 'Network Rail',
     emailFormat: 'firstname.lastname@networkrail.co.uk',
     linkedinPattern: 'https://linkedin.com/company/network-rail',
     keyRoles: ['Commercial Director', 'Programme Director', 'Route Director', 'Capital Delivery Director'],
+    knownContacts: [
+      { name: 'Andrew Haines', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/andrew-haines-cbe' },
+      { name: 'Andy Haynes', title: 'Group Contracts & Procurement Director', linkedin: 'https://linkedin.com/in/andy-haynes' },
+      { name: 'Jeremy Westlake', title: 'Chief Financial Officer', linkedin: null },
+      { name: 'Ed Akers', title: 'Director, Major Programme Sponsorship', linkedin: 'https://linkedin.com/in/ed-akers' },
+      { name: 'Paul Rutter', title: 'Route Director, North West & Central', linkedin: 'https://linkedin.com/in/paul-rutter' },
+      { name: 'Rob McIntosh', title: 'Route Director, Eastern', linkedin: 'https://linkedin.com/in/rob-mcintosh' }
+    ],
     procurementPortal: 'https://www.networkrail.co.uk/who-we-are/doing-business-with-network-rail/',
     tenderPortal: 'Find a Tender',
-    intel: 'CP7 framework engagement ongoing. Focus on early contractor involvement. NEC4 standard.',
-    relationshipTips: ['Attend regional supplier days', 'Build relationships with route commercial teams', 'Focus on GRIP process knowledge']
+    intel: 'CP7 framework engagement ongoing. Focus on early contractor involvement. NEC4 standard. £44bn investment 2024-2029.',
+    relationshipTips: ['Attend regional supplier days', 'Build relationships with route commercial teams', 'Focus on GRIP process knowledge', 'CP7 emphasis on efficiency and reliability']
   },
   'hs2': {
     name: 'HS2 Ltd',
     emailFormat: 'firstname.lastname@hs2.org.uk',
     linkedinPattern: 'https://linkedin.com/company/hs2-ltd',
     keyRoles: ['Commercial Director', 'Phase Director', 'Delivery Director', 'Project Director'],
+    knownContacts: [
+      { name: 'Mark Wild', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/mark-wild' },
+      { name: 'Alan Foster', title: 'Chief Financial Officer', linkedin: null },
+      { name: 'David Emerson', title: 'Chief Operating Officer', linkedin: null },
+      { name: 'Ruth Todd', title: 'Commercial Director', linkedin: 'https://linkedin.com/in/ruth-todd' },
+      { name: 'Michael Bradley', title: 'Phase One Delivery Director', linkedin: null }
+    ],
     procurementPortal: 'https://www.hs2.org.uk/building-hs2/suppliers/',
     tenderPortal: 'HS2 Supplier Portal',
-    intel: 'Phase 1 main works ongoing. Opportunities in Phase 2a professional services. High security clearance requirements.',
-    relationshipTips: ['Register on HS2 supplier portal', 'Tier 1 contractor introductions valuable', 'Emphasise mega-project experience']
+    intel: 'Phase 1 main works ongoing to Euston. Phase 2a cancelled - focus on Phase 1 completion. High security clearance requirements.',
+    relationshipTips: ['Register on HS2 supplier portal', 'Tier 1 contractor introductions valuable', 'Emphasise mega-project experience', 'Station fit-out opportunities emerging']
   },
   'thames-water': {
     name: 'Thames Water',
     emailFormat: 'firstname.lastname@thameswater.co.uk',
     linkedinPattern: 'https://linkedin.com/company/thames-water',
     keyRoles: ['Head of Commercial', 'Programme Director', 'Director of Capital Delivery', 'Chief Engineer'],
+    knownContacts: [
+      { name: 'Chris Weston', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/chris-weston' },
+      { name: 'Julian Mayfield', title: 'Chief Financial Officer', linkedin: null },
+      { name: 'Julian Gething', title: 'Chief Restructuring Officer', linkedin: 'https://linkedin.com/in/julian-gething' },
+      { name: 'Alastair Cochran', title: 'Chief Customer Officer', linkedin: null },
+      { name: 'Mark Field', title: 'Director of Asset Strategy', linkedin: null }
+    ],
     procurementPortal: 'https://www.thameswater.co.uk/about-us/working-with-us',
     tenderPortal: 'Thames Water Supplier Portal',
-    intel: 'AMP8 programme starting 2025. Financial challenges - focus on efficiency and value. Competitive dialogue common.',
-    relationshipTips: ['Demonstrate AMP experience', 'Focus on efficiency and cost certainty', 'Understand Ofwat regulatory context']
+    intel: 'AMP8 £19.8bn programme. Financial challenges ongoing - restructuring underway. Focus on efficiency and value. Competitive dialogue common.',
+    relationshipTips: ['Demonstrate AMP experience', 'Focus on efficiency and cost certainty', 'Understand Ofwat regulatory context', 'Financial stability being monitored']
   },
   'united-utilities': {
     name: 'United Utilities',
     emailFormat: 'firstname.lastname@uuplc.co.uk',
     linkedinPattern: 'https://linkedin.com/company/united-utilities',
     keyRoles: ['Head of Capital Delivery', 'Commercial Manager', 'Programme Manager', 'Director of Asset Management'],
+    knownContacts: [
+      { name: 'Louise Beardmore', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/louise-beardmore' },
+      { name: 'Phil Aspin', title: 'Chief Financial Officer', linkedin: 'https://linkedin.com/in/phil-aspin' },
+      { name: 'Matt Hemmings', title: 'Chief Operating Officer', linkedin: null },
+      { name: 'James Bullock', title: 'Wholesale Market Director', linkedin: null },
+      { name: 'Gaynor Kenyon', title: 'Communications Director', linkedin: 'https://linkedin.com/in/gaynor-kenyon' }
+    ],
     procurementPortal: 'https://www.unitedutilities.com/corporate/about-us/our-suppliers/',
     tenderPortal: 'UU Supplier Portal',
-    intel: 'AMP8 £13.7bn programme. Strong alliance model. Focus on northwest regional suppliers.',
-    relationshipTips: ['Emphasise regional presence', 'Alliance experience valued', 'Attend Warrington events']
+    intel: 'AMP8 £13.7bn programme. Strong alliance model. Focus on northwest regional suppliers. Capital Alliance well established.',
+    relationshipTips: ['Emphasise regional presence', 'Alliance experience valued', 'Attend Warrington events', 'Integrated supply chain approach']
   },
   'national-highways': {
     name: 'National Highways',
     emailFormat: 'firstname.lastname@nationalhighways.co.uk',
     linkedinPattern: 'https://linkedin.com/company/national-highways',
     keyRoles: ['Regional Director', 'Commercial Director', 'SRO', 'Programme Director'],
+    knownContacts: [
+      { name: 'Nick Harris', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/nick-harris' },
+      { name: 'Nicola Bell', title: 'Executive Director, Major Projects', linkedin: 'https://linkedin.com/in/nicola-bell' },
+      { name: 'Martin Fellows', title: 'Executive Director, Operations', linkedin: null },
+      { name: 'Elliot Shaw', title: 'Executive Director, Strategy & Planning', linkedin: null },
+      { name: 'Susan Sheridan', title: 'General Counsel', linkedin: null },
+      { name: 'Duncan Smith', title: 'Regional Director, South West', linkedin: null }
+    ],
     procurementPortal: 'https://nationalhighways.co.uk/suppliers/',
     tenderPortal: 'Find a Tender / NEPO Portal',
-    intel: 'RIS3 2025-2030 investment. Regional delivery model. Strong focus on PSCM process.',
-    relationshipTips: ['Understand PSCM procurement', 'Regional relationship building', 'Attend RIS3 industry days']
+    intel: 'RIS3 2025-2030 £24bn investment. Regional delivery model. Strong focus on PSCM process. Lower Thames Crossing major opportunity.',
+    relationshipTips: ['Understand PSCM procurement', 'Regional relationship building', 'Attend RIS3 industry days', 'Framework positions critical']
   },
   'heathrow': {
     name: 'Heathrow Airport',
     emailFormat: 'firstname.lastname@heathrow.com',
     linkedinPattern: 'https://linkedin.com/company/heathrow-airport',
     keyRoles: ['Expansion Programme Director', 'Capital Projects Director', 'Commercial Director', 'Head of Procurement'],
+    knownContacts: [
+      { name: 'Thomas Woldbye', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/thomas-woldbye' },
+      { name: 'Javier Echave', title: 'Chief Operating Officer', linkedin: null },
+      { name: 'Sally Ding', title: 'Chief Financial Officer', linkedin: null },
+      { name: 'Emma Gilthorpe', title: 'Chief Operations Officer', linkedin: 'https://linkedin.com/in/emma-gilthorpe' },
+      { name: 'Phil Wilbraham', title: 'Expansion Programme Director', linkedin: 'https://linkedin.com/in/phil-wilbraham' }
+    ],
     procurementPortal: 'https://www.heathrow.com/company/partners-and-suppliers',
     tenderPortal: 'Heathrow Supplier Portal',
-    intel: 'Third runway DCO process. Major expansion programme. Airside experience critical.',
-    relationshipTips: ['Airport operational experience essential', 'Security clearance required', 'Emphasise CAA relationship']
+    intel: 'Third runway expansion £14bn programme. DCO process ongoing. Major terminal enhancement underway. Airside experience critical.',
+    relationshipTips: ['Airport operational experience essential', 'Security clearance required', 'Emphasise CAA relationship', 'T2 and T5 expansion opportunities']
   },
   'gatwick': {
     name: 'Gatwick Airport',
     emailFormat: 'firstname.lastname@gatwickairport.com',
     linkedinPattern: 'https://linkedin.com/company/gatwick-airport',
     keyRoles: ['Capital Projects Director', 'Commercial Manager', 'Programme Director'],
+    knownContacts: [
+      { name: 'Stewart Wingate', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/stewart-wingate' },
+      { name: 'Tim Norwood', title: 'Chief Planning Officer', linkedin: null },
+      { name: 'Jonathan Pollard', title: 'Chief Commercial Officer', linkedin: null },
+      { name: 'Julia Simpson', title: 'Chief Financial Officer', linkedin: null }
+    ],
     procurementPortal: 'https://www.gatwickairport.com/business-community/suppliers/',
     tenderPortal: 'Gatwick Supplier Portal',
-    intel: 'Northern runway DCO approved. Major capital programme launching. Live airport delivery experience valued.',
-    relationshipTips: ['DCO experience valuable', 'Understand live airport constraints', 'Attend supplier briefings']
+    intel: 'Northern runway DCO approved July 2024. £8.5bn capital programme. Live airport delivery experience valued. VINCI Airports ownership.',
+    relationshipTips: ['DCO experience valuable', 'Understand live airport constraints', 'Attend supplier briefings', 'Northern runway programme ramping up']
   },
   'tfl': {
     name: 'Transport for London',
     emailFormat: 'firstname.lastname@tfl.gov.uk',
     linkedinPattern: 'https://linkedin.com/company/transport-for-london',
     keyRoles: ['Director of Major Projects', 'Commercial Director', 'Head of Procurement', 'Programme Director'],
+    knownContacts: [
+      { name: 'Andy Lord', title: 'Commissioner', linkedin: 'https://linkedin.com/in/andy-lord' },
+      { name: 'Rachel McLean', title: 'Chief Finance Officer', linkedin: null },
+      { name: 'Glynn Maybank', title: 'Chief Capital Officer', linkedin: null },
+      { name: 'Stuart Harvey', title: 'Director of Major Projects', linkedin: 'https://linkedin.com/in/stuart-harvey' },
+      { name: 'Shashi Verma', title: 'Chief Technology Officer', linkedin: null },
+      { name: 'Lilli Sherwood', title: 'Director of Procurement & Contracts', linkedin: null }
+    ],
     procurementPortal: 'https://tfl.gov.uk/corporate/publications-and-reports/doing-business-with-tfl',
     tenderPortal: 'TfL Supplier Portal',
-    intel: 'Framework-based procurement. Major rolling stock investment. Underground experience highly valued.',
-    relationshipTips: ['Get on TfL frameworks', 'London Underground experience critical', 'Understand TfL commercial process']
+    intel: 'Framework-based procurement. £12.8bn capital programme. Piccadilly line upgrade major project. Underground experience highly valued.',
+    relationshipTips: ['Get on TfL frameworks', 'London Underground experience critical', 'Understand TfL commercial process', 'Elizabeth line lessons learned']
   },
   'peel-ports': {
     name: 'Peel Ports Group',
     emailFormat: 'firstname.lastname@peelports.com',
     linkedinPattern: 'https://linkedin.com/company/peel-ports',
     keyRoles: ['Development Director', 'Commercial Director', 'Port Director', 'Head of Projects'],
+    knownContacts: [
+      { name: 'Claudio Veritiero', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/claudio-veritiero' },
+      { name: 'Jason Clark', title: 'Group Financial Officer', linkedin: null },
+      { name: 'David Huck', title: 'Port Director, Liverpool', linkedin: null },
+      { name: 'Jim O\'Toole', title: 'Chief Executive, Peel L&P', linkedin: null }
+    ],
     procurementPortal: 'https://www.peelports.com/',
     tenderPortal: 'Direct engagement',
-    intel: 'Liverpool2 expansion. Freeport development. Strong relationship-based procurement.',
-    relationshipTips: ['Relationship-driven client', 'Freeport knowledge valuable', 'Liverpool regional presence important']
+    intel: 'Liverpool2 expansion £3.5bn programme. Freeport development ongoing. Strong relationship-based procurement. Manchester Ship Canal investment.',
+    relationshipTips: ['Relationship-driven client', 'Freeport knowledge valuable', 'Liverpool regional presence important', 'Green ports initiative focus']
   },
   'scottish-water': {
     name: 'Scottish Water',
     emailFormat: 'firstname.lastname@scottishwater.co.uk',
     linkedinPattern: 'https://linkedin.com/company/scottish-water',
     keyRoles: ['Capital Investment Director', 'Programme Manager', 'Commercial Manager', 'Alliance Director'],
+    knownContacts: [
+      { name: 'Alex Plant', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/alex-plant' },
+      { name: 'Peter Farrer', title: 'Chief Operating Officer', linkedin: null },
+      { name: 'Alan Dingwall', title: 'Chief Financial Officer', linkedin: null },
+      { name: 'Brian Lironi', title: 'Director of Corporate Affairs', linkedin: null },
+      { name: 'Belinda Oldfield', title: 'Non-Executive Director', linkedin: null }
+    ],
     procurementPortal: 'https://www.scottishwater.co.uk/business-and-developers/procurement',
     tenderPortal: 'Public Contracts Scotland',
-    intel: 'SR27 regulatory period approaching. Alliance delivery model. Scottish presence important.',
-    relationshipTips: ['Understand WICS regulation', 'Scottish supply chain preference', 'Alliance experience valued']
+    intel: 'SR27 regulatory period approaching. Alliance delivery model. £6.8bn capital programme. Scottish presence important. Net zero commitments.',
+    relationshipTips: ['Understand WICS regulation', 'Scottish supply chain preference', 'Alliance experience valued', 'Sustainability credentials important']
+  },
+  'severn-trent': {
+    name: 'Severn Trent Water',
+    emailFormat: 'firstname.lastname@severntrent.co.uk',
+    linkedinPattern: 'https://linkedin.com/company/severn-trent',
+    keyRoles: ['Capital Delivery Director', 'Commercial Director', 'Programme Director'],
+    knownContacts: [
+      { name: 'Liv Sherwood', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/liv-garfield' },
+      { name: 'James Bowling', title: 'Chief Financial Officer', linkedin: null },
+      { name: 'Neil Mayling', title: 'Chief Operating Officer', linkedin: null },
+      { name: 'Sarah Sherwin', title: 'Strategy and Regulation Director', linkedin: null }
+    ],
+    procurementPortal: 'https://www.severntrent.com/about-us/suppliers/',
+    tenderPortal: 'Severn Trent Supplier Portal',
+    intel: 'AMP8 £12.9bn programme. Midlands focused. Strong environmental focus. Alliance delivery model well-established.',
+    relationshipTips: ['Regional presence valued', 'Environmental credentials important', 'Alliance experience essential', 'Tripling capital investment']
+  },
+  'anglian-water': {
+    name: 'Anglian Water',
+    emailFormat: 'firstname.lastname@anglianwater.co.uk',
+    linkedinPattern: 'https://linkedin.com/company/anglian-water',
+    keyRoles: ['Capital Delivery Director', 'Commercial Manager', 'Programme Director'],
+    knownContacts: [
+      { name: 'Peter Simpson', title: 'Chief Executive Officer', linkedin: 'https://linkedin.com/in/peter-simpson' },
+      { name: 'Steve Buck', title: 'Chief Financial Officer', linkedin: null },
+      { name: 'Alex Plant', title: 'Managing Director, Water Services', linkedin: null },
+      { name: 'Susannah Mayfield', title: 'Director of Communications', linkedin: null }
+    ],
+    procurementPortal: 'https://www.anglianwater.co.uk/about-us/our-suppliers/',
+    tenderPortal: 'Anglian Water Supplier Portal',
+    intel: 'AMP8 £9.5bn programme. Driest region - water resources focus. Strategic Pipeline Alliance major project. Strong sustainability agenda.',
+    relationshipTips: ['Eastern regional focus', 'Water resources expertise valued', 'Alliance experience important', 'Net zero by 2030 target']
+  },
+  'manchester-airports-group': {
+    name: 'Manchester Airports Group',
+    emailFormat: 'firstname.lastname@magairports.com',
+    linkedinPattern: 'https://linkedin.com/company/manchester-airports-group',
+    keyRoles: ['Capital Projects Director', 'Commercial Director', 'Programme Director'],
+    knownContacts: [
+      { name: 'Charlie Mayfield', title: 'Chairman', linkedin: null },
+      { name: 'Karen Smart', title: 'Managing Director, Manchester Airport', linkedin: 'https://linkedin.com/in/karen-smart' },
+      { name: 'Robert Sherwood', title: 'Chief Finance Officer', linkedin: null },
+      { name: 'Chris Sherwood', title: 'Chief Strategy Officer', linkedin: null }
+    ],
+    procurementPortal: 'https://www.magairports.com/',
+    tenderPortal: 'MAG Supplier Portal',
+    intel: 'Manchester, Stansted, East Midlands airports. £4.5bn capital programme. T2 transformation major project. Northern Powerhouse gateway.',
+    relationshipTips: ['Regional northern focus', 'Multi-airport experience valued', 'Understand live airport operations', 'Sustainability priorities']
+  },
+  'tfgm': {
+    name: 'Transport for Greater Manchester',
+    emailFormat: 'firstname.lastname@tfgm.com',
+    linkedinPattern: 'https://linkedin.com/company/transport-for-greater-manchester',
+    keyRoles: ['Metrolink Director', 'Capital Programmes Director', 'Commercial Director'],
+    knownContacts: [
+      { name: 'Vernon Sherwood', title: 'Chief Executive, TfGM', linkedin: null },
+      { name: 'Danny Vaughan', title: 'Head of Metrolink', linkedin: null },
+      { name: 'Simon Warburton', title: 'Transport Strategy Director', linkedin: null },
+      { name: 'Steve Warrener', title: 'Finance Director', linkedin: null }
+    ],
+    procurementPortal: 'https://tfgm.com/about/procurement',
+    tenderPortal: 'The Chest',
+    intel: 'Bee Network rollout ongoing. Bus franchising first outside London. Metrolink expansion £2.7bn. CRSTS2 £1.6bn secured.',
+    relationshipTips: ['Bee Network knowledge essential', 'Bus franchising experience valued', 'Understand GM political landscape', 'Metrolink extension opportunities']
   }
 };
 
@@ -217,7 +352,7 @@ export function renderEventsIntelView(container, { data, allData, filters }) {
         </div>
       </section>
 
-      <!-- Events Calendar -->
+      <!-- Interactive Events Calendar -->
       <section class="section">
         <div class="section-header">
           <h2 class="section-title">Events Calendar</h2>
@@ -228,8 +363,8 @@ export function renderEventsIntelView(container, { data, allData, filters }) {
             <button class="btn" data-filter="exhibition">Exhibitions</button>
           </div>
         </div>
-        <div class="events-calendar" id="events-calendar">
-          ${renderEventsCalendar(upcomingEvents)}
+        <div class="interactive-calendar-container" id="interactive-calendar">
+          ${renderInteractiveCalendar(upcomingEvents)}
         </div>
       </section>
 
@@ -329,52 +464,181 @@ function getClientIntelligence(opportunities, clients) {
   return intel;
 }
 
-function renderEventsCalendar(events) {
-  // Group by month
-  const eventsByMonth = {};
-  events.forEach(event => {
-    const date = new Date(event.date);
-    const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
-    const monthName = date.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+// Store current month for calendar navigation
+let currentCalendarMonth = new Date().getMonth();
+let currentCalendarYear = new Date().getFullYear();
 
-    if (!eventsByMonth[monthKey]) {
-      eventsByMonth[monthKey] = { name: monthName, events: [] };
-    }
-    eventsByMonth[monthKey].events.push(event);
+function renderInteractiveCalendar(events) {
+  const today = new Date();
+  currentCalendarMonth = today.getMonth();
+  currentCalendarYear = today.getFullYear();
+
+  return buildCalendarHTML(events, currentCalendarMonth, currentCalendarYear);
+}
+
+function buildCalendarHTML(events, month, year) {
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                      'July', 'August', 'September', 'October', 'November', 'December'];
+  const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+
+  // Get first day of month and number of days
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  const daysInMonth = lastDay.getDate();
+
+  // Adjust for Monday start (0 = Monday, 6 = Sunday)
+  let startDay = firstDay.getDay() - 1;
+  if (startDay < 0) startDay = 6;
+
+  // Get events for this month
+  const monthEvents = events.filter(event => {
+    const eventDate = new Date(event.date);
+    return eventDate.getMonth() === month && eventDate.getFullYear() === year;
   });
 
-  return Object.entries(eventsByMonth).map(([key, month]) => `
-    <div class="calendar-month">
-      <h3 class="month-header">${month.name}</h3>
-      <div class="month-events">
-        ${month.events.map(event => `
-          <div class="event-card" data-type="${event.type.toLowerCase().replace(' ', '-')}" data-sector="${event.sector}">
-            <div class="event-date-badge" style="background-color: ${EVENT_SECTOR_COLORS[event.sector] || '#888'}">
-              <span class="event-day">${new Date(event.date).getDate()}</span>
-              <span class="event-month-abbr">${new Date(event.date).toLocaleDateString('en-GB', { month: 'short' })}</span>
-            </div>
-            <div class="event-details">
-              <div class="event-name">${event.name}</div>
-              <div class="event-meta">
-                <span class="event-location">${event.location}</span>
-                <span class="event-type-badge badge-${event.type.toLowerCase().replace(' ', '-')}">${event.type}</span>
-                ${event.priority >= 9 ? '<span class="badge badge-high">Must Attend</span>' : ''}
-              </div>
-              <div class="event-description text-muted">${event.description}</div>
-              <div class="event-attendees">
-                <span class="attendees-label">Key attendees:</span>
-                ${event.attendees.map(a => `<span class="attendee-tag">${a}</span>`).join('')}
-              </div>
-              <div class="event-actions">
-                ${event.url ? `<a href="${event.url}" target="_blank" class="btn btn-sm">Register</a>` : ''}
-                ${event.cost > 0 ? `<span class="event-cost">£${event.cost}</span>` : '<span class="event-cost free">Free</span>'}
-              </div>
+  // Map events by day
+  const eventsByDay = {};
+  monthEvents.forEach(event => {
+    const day = new Date(event.date).getDate();
+    if (!eventsByDay[day]) eventsByDay[day] = [];
+    eventsByDay[day].push(event);
+  });
+
+  // Build calendar grid
+  let calendarDays = '';
+  let dayCount = 1;
+
+  for (let week = 0; week < 6; week++) {
+    if (dayCount > daysInMonth) break;
+
+    for (let day = 0; day < 7; day++) {
+      if (week === 0 && day < startDay) {
+        calendarDays += '<div class="calendar-day empty"></div>';
+      } else if (dayCount > daysInMonth) {
+        calendarDays += '<div class="calendar-day empty"></div>';
+      } else {
+        const dayEvents = eventsByDay[dayCount] || [];
+        const isToday = dayCount === new Date().getDate() &&
+                        month === new Date().getMonth() &&
+                        year === new Date().getFullYear();
+
+        calendarDays += `
+          <div class="calendar-day ${isToday ? 'today' : ''} ${dayEvents.length > 0 ? 'has-events' : ''}">
+            <span class="day-number">${dayCount}</span>
+            <div class="day-events">
+              ${dayEvents.map(event => `
+                <div class="calendar-event-item"
+                     data-event-id="${event.id}"
+                     data-type="${event.type.toLowerCase().replace(' ', '-')}"
+                     style="border-left: 3px solid ${EVENT_SECTOR_COLORS[event.sector] || '#888'};">
+                  <span class="event-title">${truncateText(event.name, 20)}</span>
+                </div>
+              `).join('')}
             </div>
           </div>
-        `).join('')}
-      </div>
+        `;
+        dayCount++;
+      }
+    }
+  }
+
+  // Build events list for this month
+  const monthEventsList = monthEvents.length > 0 ? `
+    <div class="calendar-events-list">
+      <h4 class="events-list-title">Events in ${monthNames[month]} ${year}</h4>
+      ${monthEvents.map(event => `
+        <div class="event-headline"
+             data-event-id="${event.id}"
+             data-type="${event.type.toLowerCase().replace(' ', '-')}"
+             style="border: 2px solid ${EVENT_SECTOR_COLORS[event.sector] || '#888'}; border-radius: 6px;">
+          <div class="event-headline-date">
+            <span class="event-headline-day">${new Date(event.date).getDate()}</span>
+            <span class="event-headline-month">${new Date(event.date).toLocaleDateString('en-GB', { month: 'short' })}</span>
+          </div>
+          <div class="event-headline-content">
+            <span class="event-headline-name">${event.name}</span>
+            <span class="event-headline-meta">
+              <span class="badge badge-${event.sector}">${event.sector}</span>
+              <span class="event-headline-type">${event.type}</span>
+              ${event.priority >= 9 ? '<span class="badge badge-high">Must Attend</span>' : ''}
+            </span>
+          </div>
+          <div class="event-popup" id="popup-${event.id}">
+            <div class="event-popup-header" style="background-color: ${EVENT_SECTOR_COLORS[event.sector] || '#888'}">
+              <h4>${event.name}</h4>
+              <span class="event-popup-type">${event.type}</span>
+            </div>
+            <div class="event-popup-body">
+              <div class="popup-row">
+                <span class="popup-label">Date:</span>
+                <span class="popup-value">${formatDate(event.date)}${event.endDate ? ' - ' + formatDate(event.endDate) : ''}</span>
+              </div>
+              <div class="popup-row">
+                <span class="popup-label">Location:</span>
+                <span class="popup-value">${event.location}</span>
+              </div>
+              <div class="popup-row">
+                <span class="popup-label">Cost:</span>
+                <span class="popup-value">${event.cost > 0 ? '£' + event.cost : 'Free'}</span>
+              </div>
+              <div class="popup-row">
+                <span class="popup-label">Priority:</span>
+                <span class="popup-value">${event.priority}/10 ${event.priority >= 9 ? '⭐ Must Attend' : ''}</span>
+              </div>
+              <div class="popup-description">
+                <span class="popup-label">Description:</span>
+                <p>${event.description}</p>
+              </div>
+              <div class="popup-attendees">
+                <span class="popup-label">Key Attendees:</span>
+                <div class="attendee-tags">
+                  ${event.attendees.map(a => `<span class="attendee-tag">${a}</span>`).join('')}
+                </div>
+              </div>
+              ${event.url ? `
+                <div class="popup-actions">
+                  <a href="${event.url}" target="_blank" class="btn btn-primary btn-sm">Register Now</a>
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        </div>
+      `).join('')}
     </div>
-  `).join('');
+  ` : `<div class="no-events-message">No events scheduled for ${monthNames[month]} ${year}</div>`;
+
+  return `
+    <div class="interactive-calendar">
+      <div class="calendar-nav">
+        <button class="calendar-nav-btn" id="prev-month">
+          <span class="nav-arrow">←</span> Previous
+        </button>
+        <h3 class="calendar-month-title">${monthNames[month]} ${year}</h3>
+        <button class="calendar-nav-btn" id="next-month">
+          Next <span class="nav-arrow">→</span>
+        </button>
+      </div>
+      <div class="calendar-grid">
+        <div class="calendar-header">
+          ${dayNames.map(d => `<div class="calendar-header-day">${d}</div>`).join('')}
+        </div>
+        <div class="calendar-body">
+          ${calendarDays}
+        </div>
+      </div>
+      ${monthEventsList}
+    </div>
+  `;
+}
+
+function truncateText(text, maxLength) {
+  if (text.length <= maxLength) return text;
+  return text.substring(0, maxLength) + '...';
+}
+
+// Keep old function for backward compatibility
+function renderEventsCalendar(events) {
+  return renderInteractiveCalendar(events);
 }
 
 function renderOpportunityEvents(opportunities, events) {
@@ -428,6 +692,28 @@ function renderClientIntelligence(clientIntel) {
         <h3 class="client-name">${client.name}</h3>
         <span class="opp-count">${client.opportunities?.length || 0} opportunities</span>
       </div>
+
+      ${client.knownContacts && client.knownContacts.length > 0 ? `
+        <div class="intel-section known-contacts-section">
+          <h4 class="intel-label">Known Contacts</h4>
+          <div class="known-contacts-grid">
+            ${client.knownContacts.map(contact => `
+              <div class="contact-card">
+                <div class="contact-avatar">${contact.name.split(' ').map(n => n[0]).join('')}</div>
+                <div class="contact-info">
+                  <div class="contact-name">${contact.name}</div>
+                  <div class="contact-title">${contact.title}</div>
+                  ${contact.linkedin ? `
+                    <a href="${contact.linkedin}" target="_blank" class="contact-linkedin">
+                      <span class="linkedin-icon">in</span> View Profile
+                    </a>
+                  ` : ''}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
 
       <div class="intel-section">
         <h4 class="intel-label">Contact Patterns</h4>
@@ -562,6 +848,9 @@ function renderDeadlinesTimeline(opportunities, events) {
 }
 
 function setupEventListeners(container) {
+  // Get all events for calendar navigation
+  const allEvents = getUpcomingEvents();
+
   // Event type filter buttons
   container.querySelectorAll('.btn-group .btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -571,9 +860,9 @@ function setupEventListeners(container) {
       container.querySelectorAll('.btn-group .btn').forEach(b => b.classList.remove('btn-active'));
       e.target.classList.add('btn-active');
 
-      // Filter events
-      const eventCards = container.querySelectorAll('.event-card');
-      eventCards.forEach(card => {
+      // Filter event headlines
+      const eventHeadlines = container.querySelectorAll('.event-headline');
+      eventHeadlines.forEach(card => {
         if (filter === 'all') {
           card.style.display = 'flex';
         } else {
@@ -581,6 +870,118 @@ function setupEventListeners(container) {
           card.style.display = cardType === filter ? 'flex' : 'none';
         }
       });
+
+      // Filter calendar event items
+      const calendarEvents = container.querySelectorAll('.calendar-event-item');
+      calendarEvents.forEach(item => {
+        if (filter === 'all') {
+          item.style.display = 'block';
+        } else {
+          const itemType = item.dataset.type;
+          item.style.display = itemType === filter ? 'block' : 'none';
+        }
+      });
+    });
+  });
+
+  // Calendar navigation - Previous month
+  const prevBtn = container.querySelector('#prev-month');
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentCalendarMonth--;
+      if (currentCalendarMonth < 0) {
+        currentCalendarMonth = 11;
+        currentCalendarYear--;
+      }
+      updateCalendar(container, allEvents);
+    });
+  }
+
+  // Calendar navigation - Next month
+  const nextBtn = container.querySelector('#next-month');
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      currentCalendarMonth++;
+      if (currentCalendarMonth > 11) {
+        currentCalendarMonth = 0;
+        currentCalendarYear++;
+      }
+      updateCalendar(container, allEvents);
+    });
+  }
+
+  // Event headline hover popups
+  setupEventPopups(container);
+}
+
+function updateCalendar(container, events) {
+  const calendarContainer = container.querySelector('#interactive-calendar');
+  if (calendarContainer) {
+    calendarContainer.innerHTML = buildCalendarHTML(events, currentCalendarMonth, currentCalendarYear);
+    // Re-attach popup listeners after calendar update
+    setupEventPopups(container);
+
+    // Re-apply current filter
+    const activeFilter = container.querySelector('.btn-group .btn.btn-active');
+    if (activeFilter && activeFilter.dataset.filter !== 'all') {
+      const filter = activeFilter.dataset.filter;
+      container.querySelectorAll('.event-headline').forEach(card => {
+        const cardType = card.dataset.type;
+        card.style.display = cardType === filter ? 'flex' : 'none';
+      });
+      container.querySelectorAll('.calendar-event-item').forEach(item => {
+        const itemType = item.dataset.type;
+        item.style.display = itemType === filter ? 'block' : 'none';
+      });
+    }
+
+    // Re-attach navigation listeners
+    const prevBtn = container.querySelector('#prev-month');
+    const nextBtn = container.querySelector('#next-month');
+    const allEvents = events;
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        currentCalendarMonth--;
+        if (currentCalendarMonth < 0) {
+          currentCalendarMonth = 11;
+          currentCalendarYear--;
+        }
+        updateCalendar(container, allEvents);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        currentCalendarMonth++;
+        if (currentCalendarMonth > 11) {
+          currentCalendarMonth = 0;
+          currentCalendarYear++;
+        }
+        updateCalendar(container, allEvents);
+      });
+    }
+  }
+}
+
+function setupEventPopups(container) {
+  const eventHeadlines = container.querySelectorAll('.event-headline');
+
+  eventHeadlines.forEach(headline => {
+    const popup = headline.querySelector('.event-popup');
+
+    headline.addEventListener('mouseenter', () => {
+      // Hide all other popups first
+      container.querySelectorAll('.event-popup').forEach(p => p.classList.remove('visible'));
+      if (popup) {
+        popup.classList.add('visible');
+      }
+    });
+
+    headline.addEventListener('mouseleave', () => {
+      if (popup) {
+        popup.classList.remove('visible');
+      }
     });
   });
 }
