@@ -490,8 +490,8 @@ function buildCalendarHTML(events, month, year) {
   let startDay = firstDay.getDay() - 1;
   if (startDay < 0) startDay = 6;
 
-  // Get events for this month
-  const monthEvents = events.filter(event => {
+  // Get events for this month (include all events, not just upcoming)
+  const monthEvents = INDUSTRY_EVENTS.filter(event => {
     const eventDate = new Date(event.date);
     return eventDate.getMonth() === month && eventDate.getFullYear() === year;
   });
@@ -504,108 +504,62 @@ function buildCalendarHTML(events, month, year) {
     eventsByDay[day].push(event);
   });
 
-  // Build calendar grid
+  // Build calendar grid - always 6 rows for consistent height
   let calendarDays = '';
   let dayCount = 1;
+  const totalCells = 42; // 6 rows x 7 days
 
-  for (let week = 0; week < 6; week++) {
-    if (dayCount > daysInMonth) break;
+  for (let i = 0; i < totalCells; i++) {
+    if (i < startDay) {
+      // Empty cells before month starts
+      calendarDays += '<div class="calendar-day empty"></div>';
+    } else if (dayCount > daysInMonth) {
+      // Empty cells after month ends
+      calendarDays += '<div class="calendar-day empty"></div>';
+    } else {
+      const dayEvents = eventsByDay[dayCount] || [];
+      const isToday = dayCount === new Date().getDate() &&
+                      month === new Date().getMonth() &&
+                      year === new Date().getFullYear();
 
-    for (let day = 0; day < 7; day++) {
-      if (week === 0 && day < startDay) {
-        calendarDays += '<div class="calendar-day empty"></div>';
-      } else if (dayCount > daysInMonth) {
-        calendarDays += '<div class="calendar-day empty"></div>';
-      } else {
-        const dayEvents = eventsByDay[dayCount] || [];
-        const isToday = dayCount === new Date().getDate() &&
-                        month === new Date().getMonth() &&
-                        year === new Date().getFullYear();
-
-        calendarDays += `
-          <div class="calendar-day ${isToday ? 'today' : ''} ${dayEvents.length > 0 ? 'has-events' : ''}">
-            <span class="day-number">${dayCount}</span>
-            <div class="day-events">
-              ${dayEvents.map(event => `
-                <div class="calendar-event-item"
-                     data-event-id="${event.id}"
-                     data-type="${event.type.toLowerCase().replace(' ', '-')}"
-                     style="border-left: 3px solid ${EVENT_SECTOR_COLORS[event.sector] || '#888'};">
-                  <span class="event-title">${truncateText(event.name, 20)}</span>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-        `;
-        dayCount++;
-      }
-    }
-  }
-
-  // Build events list for this month
-  const monthEventsList = monthEvents.length > 0 ? `
-    <div class="calendar-events-list">
-      <h4 class="events-list-title">Events in ${monthNames[month]} ${year}</h4>
-      ${monthEvents.map(event => `
-        <div class="event-headline"
-             data-event-id="${event.id}"
-             data-type="${event.type.toLowerCase().replace(' ', '-')}"
-             style="border: 2px solid ${EVENT_SECTOR_COLORS[event.sector] || '#888'}; border-radius: 6px;">
-          <div class="event-headline-date">
-            <span class="event-headline-day">${new Date(event.date).getDate()}</span>
-            <span class="event-headline-month">${new Date(event.date).toLocaleDateString('en-GB', { month: 'short' })}</span>
-          </div>
-          <div class="event-headline-content">
-            <span class="event-headline-name">${event.name}</span>
-            <span class="event-headline-meta">
-              <span class="badge badge-${event.sector}">${event.sector}</span>
-              <span class="event-headline-type">${event.type}</span>
-              ${event.priority >= 9 ? '<span class="badge badge-high">Must Attend</span>' : ''}
-            </span>
-          </div>
-          <div class="event-popup" id="popup-${event.id}">
-            <div class="event-popup-header" style="background-color: ${EVENT_SECTOR_COLORS[event.sector] || '#888'}">
-              <h4>${event.name}</h4>
-              <span class="event-popup-type">${event.type}</span>
-            </div>
-            <div class="event-popup-body">
-              <div class="popup-row">
-                <span class="popup-label">Date:</span>
-                <span class="popup-value">${formatDate(event.date)}${event.endDate ? ' - ' + formatDate(event.endDate) : ''}</span>
-              </div>
-              <div class="popup-row">
-                <span class="popup-label">Location:</span>
-                <span class="popup-value">${event.location}</span>
-              </div>
-              <div class="popup-row">
-                <span class="popup-label">Cost:</span>
-                <span class="popup-value">${event.cost > 0 ? '£' + event.cost : 'Free'}</span>
-              </div>
-              <div class="popup-row">
-                <span class="popup-label">Priority:</span>
-                <span class="popup-value">${event.priority}/10 ${event.priority >= 9 ? '⭐ Must Attend' : ''}</span>
-              </div>
-              <div class="popup-description">
-                <span class="popup-label">Description:</span>
-                <p>${event.description}</p>
-              </div>
-              <div class="popup-attendees">
-                <span class="popup-label">Key Attendees:</span>
-                <div class="attendee-tags">
-                  ${event.attendees.map(a => `<span class="attendee-tag">${a}</span>`).join('')}
+      calendarDays += `
+        <div class="calendar-day ${isToday ? 'today' : ''} ${dayEvents.length > 0 ? 'has-events' : ''}">
+          <span class="day-number">${dayCount}</span>
+          <div class="day-events">
+            ${dayEvents.map(event => `
+              <div class="calendar-event-item"
+                   data-event-id="${event.id}"
+                   data-type="${event.type.toLowerCase().replace(' ', '-')}"
+                   style="border-left: 3px solid ${EVENT_SECTOR_COLORS[event.sector] || '#888'};">
+                <span class="event-title">${truncateText(event.name, 18)}</span>
+                <div class="calendar-event-popup">
+                  <div class="calendar-popup-header" style="background-color: ${EVENT_SECTOR_COLORS[event.sector] || '#888'}">
+                    <strong>${event.name}</strong>
+                    <span class="popup-type-badge">${event.type}</span>
+                  </div>
+                  <div class="calendar-popup-body">
+                    <div class="popup-info-row"><span class="popup-icon">📅</span> ${formatDate(event.date)}${event.endDate ? ' - ' + formatDate(event.endDate) : ''}</div>
+                    <div class="popup-info-row"><span class="popup-icon">📍</span> ${event.location}</div>
+                    <div class="popup-info-row"><span class="popup-icon">💰</span> ${event.cost > 0 ? '£' + event.cost : 'Free'}</div>
+                    <div class="popup-info-row"><span class="popup-icon">⭐</span> Priority: ${event.priority}/10 ${event.priority >= 9 ? '(Must Attend)' : ''}</div>
+                    <p class="popup-description">${event.description}</p>
+                    <div class="popup-attendees">
+                      <strong>Key Attendees:</strong>
+                      <div class="popup-attendee-tags">
+                        ${event.attendees.map(a => `<span class="popup-attendee-tag">${a}</span>`).join('')}
+                      </div>
+                    </div>
+                    ${event.url ? `<a href="${event.url}" target="_blank" class="popup-register-btn">Register Now</a>` : ''}
+                  </div>
                 </div>
               </div>
-              ${event.url ? `
-                <div class="popup-actions">
-                  <a href="${event.url}" target="_blank" class="btn btn-primary btn-sm">Register Now</a>
-                </div>
-              ` : ''}
-            </div>
+            `).join('')}
           </div>
         </div>
-      `).join('')}
-    </div>
-  ` : `<div class="no-events-message">No events scheduled for ${monthNames[month]} ${year}</div>`;
+      `;
+      dayCount++;
+    }
+  }
 
   return `
     <div class="interactive-calendar">
@@ -626,7 +580,6 @@ function buildCalendarHTML(events, month, year) {
           ${calendarDays}
         </div>
       </div>
-      ${monthEventsList}
     </div>
   `;
 }
@@ -848,9 +801,6 @@ function renderDeadlinesTimeline(opportunities, events) {
 }
 
 function setupEventListeners(container) {
-  // Get all events for calendar navigation
-  const allEvents = getUpcomingEvents();
-
   // Event type filter buttons
   container.querySelectorAll('.btn-group .btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -859,17 +809,6 @@ function setupEventListeners(container) {
       // Update active state
       container.querySelectorAll('.btn-group .btn').forEach(b => b.classList.remove('btn-active'));
       e.target.classList.add('btn-active');
-
-      // Filter event headlines
-      const eventHeadlines = container.querySelectorAll('.event-headline');
-      eventHeadlines.forEach(card => {
-        if (filter === 'all') {
-          card.style.display = 'flex';
-        } else {
-          const cardType = card.dataset.type;
-          card.style.display = cardType === filter ? 'flex' : 'none';
-        }
-      });
 
       // Filter calendar event items
       const calendarEvents = container.querySelectorAll('.calendar-event-item');
@@ -893,7 +832,7 @@ function setupEventListeners(container) {
         currentCalendarMonth = 11;
         currentCalendarYear--;
       }
-      updateCalendar(container, allEvents);
+      updateCalendar(container);
     });
   }
 
@@ -906,29 +845,20 @@ function setupEventListeners(container) {
         currentCalendarMonth = 0;
         currentCalendarYear++;
       }
-      updateCalendar(container, allEvents);
+      updateCalendar(container);
     });
   }
-
-  // Event headline hover popups
-  setupEventPopups(container);
 }
 
-function updateCalendar(container, events) {
+function updateCalendar(container) {
   const calendarContainer = container.querySelector('#interactive-calendar');
   if (calendarContainer) {
-    calendarContainer.innerHTML = buildCalendarHTML(events, currentCalendarMonth, currentCalendarYear);
-    // Re-attach popup listeners after calendar update
-    setupEventPopups(container);
+    calendarContainer.innerHTML = buildCalendarHTML(INDUSTRY_EVENTS, currentCalendarMonth, currentCalendarYear);
 
     // Re-apply current filter
     const activeFilter = container.querySelector('.btn-group .btn.btn-active');
     if (activeFilter && activeFilter.dataset.filter !== 'all') {
       const filter = activeFilter.dataset.filter;
-      container.querySelectorAll('.event-headline').forEach(card => {
-        const cardType = card.dataset.type;
-        card.style.display = cardType === filter ? 'flex' : 'none';
-      });
       container.querySelectorAll('.calendar-event-item').forEach(item => {
         const itemType = item.dataset.type;
         item.style.display = itemType === filter ? 'block' : 'none';
@@ -938,7 +868,6 @@ function updateCalendar(container, events) {
     // Re-attach navigation listeners
     const prevBtn = container.querySelector('#prev-month');
     const nextBtn = container.querySelector('#next-month');
-    const allEvents = events;
 
     if (prevBtn) {
       prevBtn.addEventListener('click', () => {
@@ -947,7 +876,7 @@ function updateCalendar(container, events) {
           currentCalendarMonth = 11;
           currentCalendarYear--;
         }
-        updateCalendar(container, allEvents);
+        updateCalendar(container);
       });
     }
 
@@ -958,30 +887,8 @@ function updateCalendar(container, events) {
           currentCalendarMonth = 0;
           currentCalendarYear++;
         }
-        updateCalendar(container, allEvents);
+        updateCalendar(container);
       });
     }
   }
-}
-
-function setupEventPopups(container) {
-  const eventHeadlines = container.querySelectorAll('.event-headline');
-
-  eventHeadlines.forEach(headline => {
-    const popup = headline.querySelector('.event-popup');
-
-    headline.addEventListener('mouseenter', () => {
-      // Hide all other popups first
-      container.querySelectorAll('.event-popup').forEach(p => p.classList.remove('visible'));
-      if (popup) {
-        popup.classList.add('visible');
-      }
-    });
-
-    headline.addEventListener('mouseleave', () => {
-      if (popup) {
-        popup.classList.remove('visible');
-      }
-    });
-  });
 }
