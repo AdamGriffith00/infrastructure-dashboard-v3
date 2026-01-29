@@ -850,25 +850,8 @@ function setupEventListeners(container) {
 }
 
 function setupCalendarPopups(container) {
-  const eventItems = container.querySelectorAll('.calendar-event-item');
-
-  eventItems.forEach(item => {
-    const popup = item.querySelector('.calendar-event-popup');
-    if (!popup) return;
-
-    item.addEventListener('mouseenter', (e) => {
-      // Center popup on screen
-      const popupWidth = 320;
-      const popupHeight = popup.offsetHeight || 380;
-
-      const left = (window.innerWidth - popupWidth) / 2;
-      const top = (window.innerHeight - popupHeight) / 2;
-
-      popup.style.left = `${left}px`;
-      popup.style.top = `${top}px`;
-      popup.style.width = `${popupWidth}px`;
-    });
-  });
+  // Popups are now centered via CSS (position: fixed + transform)
+  // No JavaScript positioning needed
 }
 
 function updateCalendar(container) {
