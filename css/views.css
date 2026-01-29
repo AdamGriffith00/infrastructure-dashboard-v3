@@ -4395,18 +4395,12 @@
   margin: 0;
 }
 
-/* Calendar Grid */
+/* Calendar Grid - Single unified grid for header and days */
 .calendar-grid {
-  border: 1px solid var(--border-dark);
-  border-radius: var(--radius-md);
-  overflow: visible;
-}
-
-.calendar-header {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  background: var(--bg-darker);
-  border-bottom: 2px solid var(--border-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
 }
 
 .calendar-header-day {
@@ -4417,12 +4411,13 @@
   color: var(--text-muted);
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  background: var(--bg-darker);
+  border-bottom: 2px solid var(--border-dark);
+  border-right: 1px solid var(--border-dark);
 }
 
-.calendar-body {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-rows: 100px;
+.calendar-header-day:last-of-type {
+  border-right: none;
 }
 
 .calendar-day {
@@ -4432,11 +4427,15 @@
   border-bottom: 1px solid var(--border-dark);
   background: var(--bg-card);
   position: relative;
-  overflow: visible;
 }
 
-.calendar-day:nth-child(7n) {
+.calendar-day:nth-child(7n+7) {
   border-right: none;
+}
+
+/* Remove bottom border from last row (cells 43-49 = indices after 7 header + 35 day cells) */
+.calendar-grid > .calendar-day:nth-last-child(-n+7) {
+  border-bottom: none;
 }
 
 .calendar-day.empty {
@@ -4474,16 +4473,7 @@
   flex-direction: column;
   gap: 3px;
   max-height: 68px;
-  overflow-y: auto;
-}
-
-.day-events::-webkit-scrollbar {
-  width: 3px;
-}
-
-.day-events::-webkit-scrollbar-thumb {
-  background: var(--border-dark);
-  border-radius: 3px;
+  overflow: visible;
 }
 
 .calendar-event-item {
@@ -4497,7 +4487,7 @@
 
 .calendar-event-item:hover {
   background: var(--bg-hover);
-  z-index: 100;
+  z-index: 1000;
 }
 
 .calendar-event-item .event-title {
@@ -4511,44 +4501,25 @@
 
 /* Calendar Event Hover Popup */
 .calendar-event-popup {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 280px;
+  position: fixed;
+  width: 300px;
   background: var(--bg-card);
-  border: 1px solid var(--border-dark);
+  border: 1px solid var(--gleeds-yellow);
   border-radius: var(--radius-md);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-5px);
-  transition: all 0.2s ease;
-  z-index: 1000;
+  transform: scale(0.95);
+  transition: all 0.15s ease;
+  z-index: 9999;
   pointer-events: none;
 }
 
 .calendar-event-item:hover .calendar-event-popup {
   opacity: 1;
   visibility: visible;
-  transform: translateY(5px);
+  transform: scale(1);
   pointer-events: auto;
-}
-
-/* Position popup to the right for left-side days */
-.calendar-day:nth-child(7n+1) .calendar-event-popup,
-.calendar-day:nth-child(7n+2) .calendar-event-popup,
-.calendar-day:nth-child(7n+3) .calendar-event-popup {
-  left: 0;
-  right: auto;
-}
-
-/* Position popup to the left for right-side days */
-.calendar-day:nth-child(7n+4) .calendar-event-popup,
-.calendar-day:nth-child(7n+5) .calendar-event-popup,
-.calendar-day:nth-child(7n+6) .calendar-event-popup,
-.calendar-day:nth-child(7n) .calendar-event-popup {
-  left: auto;
-  right: 0;
 }
 
 .calendar-popup-header {

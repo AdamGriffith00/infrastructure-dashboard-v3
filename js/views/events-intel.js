@@ -573,12 +573,8 @@ function buildCalendarHTML(events, month, year) {
         </button>
       </div>
       <div class="calendar-grid">
-        <div class="calendar-header">
-          ${dayNames.map(d => `<div class="calendar-header-day">${d}</div>`).join('')}
-        </div>
-        <div class="calendar-body">
-          ${calendarDays}
-        </div>
+        ${dayNames.map(d => `<div class="calendar-header-day">${d}</div>`).join('')}
+        ${calendarDays}
       </div>
     </div>
   `;
@@ -848,6 +844,46 @@ function setupEventListeners(container) {
       updateCalendar(container);
     });
   }
+
+  // Setup popup positioning for calendar events
+  setupCalendarPopups(container);
+}
+
+function setupCalendarPopups(container) {
+  const eventItems = container.querySelectorAll('.calendar-event-item');
+
+  eventItems.forEach(item => {
+    const popup = item.querySelector('.calendar-event-popup');
+    if (!popup) return;
+
+    item.addEventListener('mouseenter', (e) => {
+      const rect = item.getBoundingClientRect();
+      const popupWidth = 300;
+      const popupHeight = popup.offsetHeight || 350;
+
+      // Position popup below the event, centered or adjusted to fit screen
+      let left = rect.left;
+      let top = rect.bottom + 8;
+
+      // Adjust if popup goes off right edge
+      if (left + popupWidth > window.innerWidth - 20) {
+        left = window.innerWidth - popupWidth - 20;
+      }
+
+      // Adjust if popup goes off left edge
+      if (left < 20) {
+        left = 20;
+      }
+
+      // If popup goes below viewport, show above the event
+      if (top + popupHeight > window.innerHeight - 20) {
+        top = rect.top - popupHeight - 8;
+      }
+
+      popup.style.left = `${left}px`;
+      popup.style.top = `${top}px`;
+    });
+  });
 }
 
 function updateCalendar(container) {
@@ -864,6 +900,9 @@ function updateCalendar(container) {
         item.style.display = itemType === filter ? 'block' : 'none';
       });
     }
+
+    // Re-setup popup positioning for new calendar events
+    setupCalendarPopups(container);
 
     // Re-attach navigation listeners
     const prevBtn = container.querySelector('#prev-month');
