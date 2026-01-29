@@ -4426,6 +4426,11 @@
   border-right: 1px solid var(--border-dark);
   border-bottom: 1px solid var(--border-dark);
   background: var(--bg-card);
+}
+
+/* When hovering an event, lift the entire day above other days */
+.calendar-day:has(.calendar-event-item:hover) {
+  z-index: 10000;
   position: relative;
 }
 
@@ -4514,7 +4519,7 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;
-  z-index: 9999;
+  z-index: 100001;
   pointer-events: none;
 }
 
@@ -4533,8 +4538,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 9998;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100000;
   pointer-events: none;
 }
 
