@@ -857,31 +857,16 @@ function setupCalendarPopups(container) {
     if (!popup) return;
 
     item.addEventListener('mouseenter', (e) => {
-      const rect = item.getBoundingClientRect();
-      const popupWidth = 300;
-      const popupHeight = popup.offsetHeight || 350;
+      // Center popup on screen
+      const popupWidth = 320;
+      const popupHeight = popup.offsetHeight || 380;
 
-      // Position popup below the event, centered or adjusted to fit screen
-      let left = rect.left;
-      let top = rect.bottom + 8;
-
-      // Adjust if popup goes off right edge
-      if (left + popupWidth > window.innerWidth - 20) {
-        left = window.innerWidth - popupWidth - 20;
-      }
-
-      // Adjust if popup goes off left edge
-      if (left < 20) {
-        left = 20;
-      }
-
-      // If popup goes below viewport, show above the event
-      if (top + popupHeight > window.innerHeight - 20) {
-        top = rect.top - popupHeight - 8;
-      }
+      const left = (window.innerWidth - popupWidth) / 2;
+      const top = (window.innerHeight - popupHeight) / 2;
 
       popup.style.left = `${left}px`;
       popup.style.top = `${top}px`;
+      popup.style.width = `${popupWidth}px`;
     });
   });
 }
