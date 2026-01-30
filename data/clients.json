@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-20",
+  "lastUpdated": "2026-01-30",
   "clients": [
     {
       "id": "network-rail-eastern",
@@ -124,9 +124,9 @@
         { "name": "Birmingham Curzon Street", "value": 1500000000, "type": "capex" },
         { "name": "Birmingham Interchange", "value": 700000000, "type": "capex" }
       ],
-      "keyProjects": ["Chiltern tunnels", "Colne Valley Viaduct", "Old Oak Common station", "Birmingham Curzon Street", "Long Itchington Wood tunnel", "Euston approach tunnels"],
-      "notes": "Phase 1 only (London-Birmingham). Phase 2 to Crewe/Manchester cancelled Oct 2023. UK's largest infrastructure project. 225mph design speed. £40.5bn spent to Apr 2025. Phase 1 opening target 2029-2033. Euston terminus confirmed.",
-      "source": "HS2 Ltd Corporate Plan 2024, HM Treasury Budget Nov 2025, DfT Report July 2025"
+      "keyProjects": ["Chiltern tunnels (complete)", "Colne Valley Viaduct", "Old Oak Common station", "Birmingham Curzon Street", "Bromford tunnel (breakthrough May 2025)", "Euston approach tunnels (TBM launch spring 2026)"],
+      "notes": "Phase 1 only (London-Birmingham). All 23 miles deep-bore tunnels excavated. 70% earthworks complete. 350 active worksites. £3bn rail systems contracts awarded Nov 2024. Civil engineering completing 2026, then track/signalling. £10bn economic impact to West Midlands over 10 years.",
+      "source": "HS2 6-Monthly Report to Parliament July 2025, DfT Jan 2026"
     },
     {
       "id": "tfl",
@@ -144,9 +144,9 @@
         { "name": "Track & Signalling Renewals", "value": 2400000000, "type": "capex" },
         { "name": "Elizabeth Line enhancements", "value": 1400000000, "type": "capex" }
       ],
-      "keyProjects": ["Piccadilly Line new trains", "Bank station upgrade", "DLR extension to Thamesmead", "Four Lines Modernisation"],
-      "notes": "TfL Business Plan 2024. Major rolling stock and signalling investment.",
-      "source": "TfL Business Plan 2024/25"
+      "keyProjects": ["Piccadilly Line new trains (H2 2026 entry)", "Bank station upgrade", "DLR extension to Thamesmead (DCO application 2026)", "Four Lines Modernisation", "New tram fleet procurement", "Silvertown Tunnel (opened 2025)"],
+      "notes": "£2.2bn capital settlement 2026-2030 (largest multi-year settlement in decade). Piccadilly Line trains entering service H2 2026. DLR Thamesmead construction from 2027. New signalling on 40% of Tube network.",
+      "source": "TfL Mayor's Budget 2026/27, DfT Spending Review 2025"
     },
     {
       "id": "thames-water",
@@ -182,9 +182,9 @@
         { "name": "Airfield Infrastructure", "value": 1500000000, "type": "capex" },
         { "name": "Sustainability & Net Zero", "value": 1000000000, "type": "capex" }
       ],
-      "keyProjects": ["Third runway expansion", "Terminal 2 expansion", "Cargo capacity increase", "Surface access improvements"],
-      "notes": "UK's largest airport. HAL's third runway proposal confirmed as basis for expansion (Nov 2025). Draft ANPS consultation summer 2026, final ANPS end-2026. DCO process 2027-29. New runway target opening 2035. 80m passengers/year capacity target.",
-      "source": "Heathrow 2.0 Masterplan, DfT ANPS Update Nov 2025"
+      "keyProjects": ["Third runway expansion", "Terminal 4 redevelopment", "Terminal 2 new baggage system", "Surface access improvements", "Multi-storey car park T4"],
+      "notes": "UK's largest airport. £2.3bn accelerated investment 2025-2026 (£1.05bn 2025, £1.29bn 2026) - largest private sector capital investment in UK transport. Third runway confirmed Nov 2025. Draft ANPS summer 2026. DCO 2027-29. New runway 2035. 80m pax target.",
+      "source": "Heathrow Investment Plan Jan 2026, DfT ANPS Update Nov 2025"
     },
     {
       "id": "tfgm",
@@ -220,8 +220,8 @@
         "Airport Western Link study",
         "Oldham Metrolink town centre extension"
       ],
-      "notes": "UK's largest integrated transport network outside London. Bee Network launched 2024 - first bus franchising since 1986. CRSTS1 £1.07bn (2022-2027), CRSTS2 £1.6bn (2027-2032). Mayor Andy Burnham's flagship project.",
-      "source": "GMCA Bee Network Delivery Plan 2024, CRSTS2 Settlement 2024"
+      "notes": "UK's largest integrated transport network outside London. Bee Network launched 2024 - first bus franchising since 1986. CRSTS1 £1.07bn (2022-2027), CRSTS2 £2.5bn (2027-2032). NPR Liverpool-Manchester new line will pass through GM with 3 new stations. £115m Manchester Airport station expansion confirmed.",
+      "source": "GMCA Bee Network Delivery Plan 2024, DfT NPR Announcement Jan 2026"
     },
     {
       "id": "west-midlands-metro",
@@ -278,8 +278,8 @@
         "Leamside Line reopening",
         "Bus franchising assessment"
       ],
-      "notes": "Mayor Kim McGuinness. Metro Futures transformation. CRSTS1 £563m (2022-2027), CRSTS2 £900m (2027-2032). New trains arriving. Potential bus franchising.",
-      "source": "NECA Transport Plan 2024, Metro Futures, CRSTS2 Settlement"
+      "notes": "Mayor Kim McGuinness. Metro Futures transformation. CRSTS1 £563m (2022-2027), CRSTS2 £1.85bn (2027-2032) - includes first new Metro line in 30 years (Washington extension). 46 new Stadler trains delivered. £14bn investment prospectus unveiled May 2025.",
+      "source": "NECA Transport Plan 2024, CRSTS2 Settlement Jan 2026, Mayor's Investment Prospectus"
     },
     {
       "id": "merseyrail",
@@ -352,8 +352,8 @@
         "Castleford Growth Corridor",
         "White Rose station"
       ],
-      "notes": "Mayor Tracy Brabin's flagship mass transit scheme. Bus franchising consultation 2024. CRSTS1 £830m (2022-2027), CRSTS2 £1.2bn (2027-2032). Mass Transit awaiting government funding decision.",
-      "source": "WYCA Transport Strategy 2040, CRSTS2 Settlement 2024"
+      "notes": "Mayor Tracy Brabin. £2.5bn Mass Transit FULLY FUNDED (Jan 2026) - up to 7 lines, Leeds will no longer be largest European city without mass transit. CRSTS1 £830m (2022-2027), CRSTS2 £1.2bn (2027-2032). Bradford Southern Gateway £4.5bn regeneration.",
+      "source": "WYCA Transport Strategy 2040, DfT NPR Announcement Jan 2026"
     },
     {
       "id": "south-yorkshire-supertram",
@@ -385,8 +385,8 @@
         "Upper Don Valley corridor",
         "Dearne Valley improvements"
       ],
-      "notes": "Mayor Oliver Coppard. CRSTS1 £570m (2022-2027), CRSTS2 £750m (2027-2032). UK's first tram-train system. Supertram publicly owned since 2024.",
-      "source": "SYMCA Transport Strategy 2024, CRSTS2 Settlement"
+      "notes": "Mayor Oliver Coppard. CRSTS1 £570m (2022-2027), CRSTS2 £1.5bn (2027-2032) - new tram fleet by 2032, bus/tram modernisation. UK's first tram-train system. Supertram publicly owned since 2024.",
+      "source": "SYMCA Transport Strategy 2024, CRSTS2 Settlement Jan 2026"
     },
     {
       "id": "nottingham-net",
@@ -466,9 +466,9 @@
         { "name": "Great Yarmouth Offshore", "value": 500000000, "type": "capex" },
         { "name": "Sustainability & Net Zero", "value": 500000000, "type": "capex" }
       ],
-      "keyProjects": ["Liverpool2 deep-water berths", "Seaforth expansion", "Freeport status", "Offshore wind hub"],
-      "notes": "UK's second largest port group. Freeport operator. Key offshore wind base.",
-      "source": "Peel Ports Investment Strategy"
+      "keyProjects": ["Liverpool2 deep-water berths", "Seaforth expansion", "Freeport status", "Port of East Anglia offshore wind hub", "Great Yarmouth expansion"],
+      "notes": "UK's second largest port group. £1.5bn invested over past decade. Further £1bn planned over 5 years. £300m announced for Liverpool, Hunterston, Great Yarmouth (2025). Key offshore wind base for ScottishPower East Anglia TWO.",
+      "source": "Peel Ports Investment Strategy 2025"
     },
     {
       "id": "dp-world-london-gateway",
@@ -489,9 +489,9 @@
         { "name": "Automation & Technology", "value": 600000000, "type": "capex" },
         { "name": "Freeport Development", "value": 500000000, "type": "capex" }
       ],
-      "keyProjects": ["London Gateway expansion to 6 berths", "UK's largest logistics park", "Southampton cruise terminal"],
-      "notes": "UK's largest container port operator. Thames Freeport anchor.",
-      "source": "DP World UK Investment Plan"
+      "keyProjects": ["London Gateway expansion to 6 berths", "Two 400m all-electric berths", "Second rail terminal", "UK's largest logistics park", "Southampton cruise terminal"],
+      "notes": "UK's largest container port operator. £1bn expansion underway - 2 new berths, Europe's tallest quay cranes, capacity for 6 of world's largest container ships. Thames Freeport anchor. 1,000 construction jobs + 400 permanent.",
+      "source": "DP World UK Investment Plan, LISW Sept 2025"
     },
     {
       "id": "felixstowe",
@@ -1447,9 +1447,9 @@
         { "name": "North Wales Main Line", "value": 500000000, "type": "capex" },
         { "name": "New Rolling Stock", "value": 700000000, "type": "capex" }
       ],
-      "keyProjects": ["Core Valley Lines electrification", "South Wales Metro", "Class 197 introduction"],
-      "notes": "Welsh Government rail investment. Major metro transformation.",
-      "source": "Transport for Wales Corporate Plan"
+      "keyProjects": ["Core Valley Lines electrification (complete)", "South Wales Metro tram-trains (H2 2026)", "Network North Wales vision", "Llandudno-Liverpool direct service (May 2026)", "Class 197 introduction"],
+      "notes": "South Wales Metro £1.54bn (incl rolling stock) - 170km electrified, tram-trains H2 2026, full Metro 2027. Network North Wales multi-billion pound vision. Stadler trains operational 2024. 4 trains/hr Valleys, 12 trains/hr through Pontypridd.",
+      "source": "Transport for Wales Corporate Plan, Network North Wales Launch 2025"
     },
     {
       "id": "welsh-water",
@@ -1526,8 +1526,8 @@
         { "name": "Site Infrastructure & Civils", "value": 2000000000, "type": "capex" }
       ],
       "keyProjects": ["Unit 1 reactor building", "Unit 2 reactor building", "Turbine hall", "Cooling water systems", "Grid connection", "Marine works"],
-      "notes": "UK's first new nuclear in a generation. 3.2GW capacity (2x EPR reactors). EDF/CGN joint venture. Target operation 2029-2031. £35bn+ estimated final cost.",
-      "source": "EDF HPC Project Updates 2024"
+      "notes": "Europe's largest construction site. 3.2GW capacity (7% UK electricity, 6m homes). EDF/CGN JV. £5bn Apollo debt financing close to completion. £13bn boost to UK economy. Target 2029-2031.",
+      "source": "EDF HPC Project Updates 2025"
     },
     {
       "id": "south-west-water",
@@ -1640,6 +1640,98 @@
       "keyProjects": ["Oxford-Bicester-Bletchley line (complete)", "Bletchley-Bedford connection", "Bedford-Cambridge new build", "Cambridge South station link"],
       "notes": "Strategic east-west corridor connecting Oxford, Milton Keynes, Bedford and Cambridge. Government confirmed continued funding Nov 2025. Western section operational. Central and Eastern sections in development.",
       "source": "East West Railway Company, HM Treasury Budget Nov 2025"
+    },
+    {
+      "id": "northern-powerhouse-rail",
+      "name": "Northern Powerhouse Rail (DfT/TfN)",
+      "sector": "rail",
+      "subSector": "high-speed",
+      "regions": ["north-west", "yorkshire-humber", "north-east"],
+      "subdivisions": {
+        "north-west": ["Liverpool", "Warrington", "Manchester"],
+        "yorkshire-humber": ["Leeds", "Bradford", "Sheffield", "York"],
+        "north-east": ["Newcastle upon Tyne", "Durham"]
+      },
+      "budget2026": 1100000000,
+      "budget10Year": 45000000000,
+      "programmes": [
+        { "name": "Phase 1: Yorkshire Upgrades", "value": 15000000000, "type": "capex", "description": "Leeds-Sheffield, Leeds-York, Leeds-Bradford electrification & upgrades. Delivery 2030s." },
+        { "name": "Phase 2: Liverpool-Manchester", "value": 20000000000, "type": "capex", "description": "New line via Manchester Airport and Warrington. 3 new stations. Delivery 2030s." },
+        { "name": "Phase 3: TransPennine", "value": 10000000000, "type": "capex", "description": "Enhanced Manchester-Leeds-Sheffield-York connectivity." },
+        { "name": "Planning & Development", "value": 1100000000, "type": "capex", "description": "£1.1bn allocated for design and preparatory stages." }
+      ],
+      "keyProjects": ["Liverpool-Manchester new line", "Manchester Airport station (platforms extended, £115m)", "Bradford Station redevelopment", "Leeds Station Gateway", "Sheffield Station improvements", "Warrington Bank Quay Low Level station"],
+      "notes": "£45bn programme announced Jan 2026. Turn-up-and-go railway along Northern Growth Corridor. Unlocks £40bn economic potential. Phase 1 prioritises Yorkshire. Separate from cancelled HS2 Phase 2.",
+      "source": "DfT Northern Powerhouse Rail Announcement Jan 2026, Transport for the North"
+    },
+    {
+      "id": "great-british-energy",
+      "name": "Great British Energy (GBE)",
+      "sector": "utilities",
+      "subSector": "energy",
+      "regions": ["scotland", "north-east", "yorkshire-humber", "eastern", "wales"],
+      "subdivisions": {
+        "scotland": ["Aberdeen City", "Dundee City", "Fife"],
+        "north-east": ["Redcar and Cleveland", "Hartlepool"],
+        "yorkshire-humber": ["East Riding of Yorkshire"],
+        "eastern": ["East Suffolk", "Great Yarmouth"],
+        "wales": ["Pembrokeshire", "Anglesey"]
+      },
+      "budget2026": 1660000000,
+      "budget10Year": 8300000000,
+      "programmes": [
+        { "name": "Offshore Wind Investment", "value": 3000000000, "type": "capex", "description": "Developer, investor and owner stakes in offshore wind projects." },
+        { "name": "Supply Chain Fund", "value": 300000000, "type": "capex", "description": "Grants for domestic manufacturing of wind components." },
+        { "name": "Energy Engineered in UK Programme", "value": 1000000000, "type": "capex", "description": "Clean energy supply chain growth initiative." },
+        { "name": "Community Energy", "value": 500000000, "type": "capex", "description": "Local energy partnerships, rooftop solar, community ownership." },
+        { "name": "Grid & Storage", "value": 2500000000, "type": "capex", "description": "Battery storage, grid reinforcement, smart grid tech." },
+        { "name": "Investment Fund", "value": 1000000000, "type": "capex", "description": "Commercial stakes across clean energy supply chains. Launch summer 2026." }
+      ],
+      "keyProjects": ["Aberdeen HQ establishment", "ScotWind project partnerships", "Floating offshore wind development", "Port infrastructure investment", "Domestic supply chain growth"],
+      "notes": "Publicly-owned clean energy company. £8.3bn capitalised 2025. HQ in Aberdeen. Target 15GW clean energy by 2030, 10,000+ jobs. Sister organisation GBE Nuclear for nuclear projects.",
+      "source": "GBE Strategic Plan 2025, HM Treasury Budget Nov 2025"
+    },
+    {
+      "id": "emcca-transport",
+      "name": "East Midlands Combined County Authority Transport",
+      "sector": "rail",
+      "subSector": "integrated-transport",
+      "regions": ["east-midlands"],
+      "subdivisions": {
+        "east-midlands": ["Nottingham", "Derby", "Derbyshire", "Nottinghamshire"]
+      },
+      "budget2026": 400000000,
+      "budget10Year": 2000000000,
+      "programmes": [
+        { "name": "CRSTS2 Transport", "value": 2000000000, "type": "capex", "description": "£2bn 5-year settlement for Derby, Derbyshire, Nottingham, Nottinghamshire." },
+        { "name": "Bus Network Improvements", "value": 400000000, "type": "capex", "description": "Enhanced services, bus priority, zero emission fleet." },
+        { "name": "Active Travel", "value": 200000000, "type": "capex", "description": "Cycling and walking infrastructure." },
+        { "name": "Rail Station Upgrades", "value": 300000000, "type": "capex", "description": "Derby, Nottingham, Leicester station improvements." },
+        { "name": "Trent Arc Corridor", "value": 600000000, "type": "capex", "description": "Derby-Nottingham connectivity. Supports 40,000 jobs, 30,000 homes." },
+        { "name": "Road Maintenance (£120m/yr)", "value": 500000000, "type": "capex", "description": "Highways authority allocation for local roads." }
+      ],
+      "keyProjects": ["Derby-Nottingham connectivity", "Trent Arc development", "East Midlands Freeport access", "Toton/HS2 legacy site", "Investment Zone infrastructure"],
+      "notes": "New mayoral combined authority. £500m budget 2026/27, 70%+ on transport. CRSTS2 £2bn (2026-2032). Investment Zone £160m over 10 years. STEP Fusion (£2.5bn) at West Burton.",
+      "source": "EMCCA Budget 2026/27, CRSTS2 Settlement"
+    },
+    {
+      "id": "haweswater-aqueduct",
+      "name": "Haweswater Aqueduct Resilience Programme",
+      "sector": "utilities",
+      "subSector": "water",
+      "regions": ["north-west"],
+      "subdivisions": {
+        "north-west": ["South Lakeland", "Eden", "Lancaster", "Ribble Valley", "Rossendale", "Bury"]
+      },
+      "budget2026": 500000000,
+      "budget10Year": 3000000000,
+      "programmes": [
+        { "name": "Tunnel Section Upgrades", "value": 2500000000, "type": "capex", "description": "Six critical tunnel sections of 110km pipeline serving 2.5m people." },
+        { "name": "Haslingden & Walmersley Section", "value": 500000000, "type": "capex", "description": "Largest section, construction 2026." }
+      ],
+      "keyProjects": ["Haslingden & Walmersley tunnel", "Docker tunnel", "Borrowdale tunnel", "Bretherdale tunnel"],
+      "notes": "£3bn programme to upgrade 1930s-era aqueduct. STRABAG UK construction. £300m National Wealth Fund support. 9-year programme. Creates 1,200 jobs at peak.",
+      "source": "United Utilities HARP Programme, National Wealth Fund Jan 2026"
     }
   ]
 }
