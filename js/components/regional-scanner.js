@@ -390,17 +390,40 @@ function renderAreaGrid(opportunities, boroughs, boroughCounts, sectors) {
               }).join('')}
             </div>
             <div class="area-card-projects">
-              ${boroughOpps.slice(0, 5).map(opp => {
-                const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
-                return `
-                  <div class="area-project-item">
-                    <span class="area-project-dot" style="color: ${readiness.color}">●</span>
-                    <span class="area-project-name">${truncate(opp.title, 35)}</span>
-                    <span class="area-project-value">${formatCurrency(opp.value)}</span>
-                  </div>
-                `;
-              }).join('')}
-              ${boroughOpps.length > 5 ? `<div class="area-project-more">+${boroughOpps.length - 5} more projects</div>` : ''}
+              <div class="area-projects-visible">
+                ${boroughOpps.slice(0, 5).map(opp => {
+                  const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
+                  const sector = sectors.find(s => s.id === opp.sector);
+                  return `
+                    <div class="area-project-item">
+                      <span class="area-project-dot" style="color: ${readiness.color}">●</span>
+                      <span class="area-project-name">${truncate(opp.title, 30)}</span>
+                      <span class="area-project-sector" style="border-left: 2px solid ${sector?.color || '#888'}">${sector?.name || opp.sector || 'Unknown'}</span>
+                      <span class="area-project-value">${formatCurrency(opp.value)}</span>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+              ${boroughOpps.length > 5 ? `
+                <div class="area-projects-hidden">
+                  ${boroughOpps.slice(5).map(opp => {
+                    const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
+                    const sector = sectors.find(s => s.id === opp.sector);
+                    return `
+                      <div class="area-project-item">
+                        <span class="area-project-dot" style="color: ${readiness.color}">●</span>
+                        <span class="area-project-name">${truncate(opp.title, 30)}</span>
+                        <span class="area-project-sector" style="border-left: 2px solid ${sector?.color || '#888'}">${sector?.name || opp.sector || 'Unknown'}</span>
+                        <span class="area-project-value">${formatCurrency(opp.value)}</span>
+                      </div>
+                    `;
+                  }).join('')}
+                </div>
+                <button class="area-project-toggle">
+                  <span class="toggle-more">+${boroughOpps.length - 5} more projects</span>
+                  <span class="toggle-less">Show less</span>
+                </button>
+              ` : ''}
             </div>
           </div>
         `;
@@ -709,24 +732,18 @@ function setupTabSwitching(container) {
 }
 
 function setupAreaCardClicks(container, opportunities, sectors) {
-  const areaCards = container.querySelectorAll('.area-card');
+  const toggleButtons = container.querySelectorAll('.area-project-toggle');
 
-  areaCards.forEach(card => {
-    card.addEventListener('click', () => {
-      const borough = card.dataset.borough;
-      if (!borough) return;
-
-      // Toggle expanded state
+  toggleButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const card = btn.closest('.area-card');
       const isExpanded = card.classList.contains('expanded');
 
-      // Collapse all cards first
-      areaCards.forEach(c => c.classList.remove('expanded'));
-
-      if (!isExpanded) {
+      if (isExpanded) {
+        card.classList.remove('expanded');
+      } else {
         card.classList.add('expanded');
-
-        // Scroll card into view
-        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     });
   });
@@ -740,12 +757,20 @@ export function selectBoroughFromMap(container, borough) {
     byAreaTab.click();
   }
 
-  // Find and expand the area card
+  // Find and highlight the area card
   const areaCard = container.querySelector(`.area-card[data-borough="${borough}"]`);
   if (areaCard) {
-    // Collapse all cards first
-    container.querySelectorAll('.area-card').forEach(c => c.classList.remove('expanded'));
-    areaCard.classList.add('expanded');
-    areaCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Expand the card if it has a toggle button
+    const toggleBtn = areaCard.querySelector('.area-project-toggle');
+    if (toggleBtn && !areaCard.classList.contains('expanded')) {
+      areaCard.classList.add('expanded');
+    }
+
+    // Scroll into view with highlight effect
+    areaCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    areaCard.style.outline = '2px solid var(--gleeds-yellow)';
+    setTimeout(() => {
+      areaCard.style.outline = '';
+    }, 2000);
   }
 }

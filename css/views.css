@@ -5442,19 +5442,11 @@
   border: 1px solid var(--border-dark);
   border-radius: var(--radius-md);
   padding: var(--space-md);
-  cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .area-card:hover {
-  border-color: var(--gleeds-yellow);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.area-card.expanded {
-  grid-column: 1 / -1;
-  border-color: var(--gleeds-yellow);
+  border-color: var(--border-light);
 }
 
 .area-card-header {
@@ -5549,6 +5541,17 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.area-project-sector {
+  font-size: 0.7rem;
+  padding: 2px 6px 2px 8px;
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .area-project-value {
@@ -5558,21 +5561,48 @@
   flex-shrink: 0;
 }
 
-.area-project-more {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  text-align: center;
-  padding: var(--space-xs) 0;
-  font-style: italic;
-}
-
-/* Expanded area card shows full project list */
-.area-card.expanded .area-card-projects {
-  max-height: none;
-}
-
-.area-card.expanded .area-project-more {
+/* Hidden projects - collapsed by default */
+.area-projects-hidden {
   display: none;
+}
+
+.area-card.expanded .area-projects-hidden {
+  display: block;
+}
+
+/* Toggle button */
+.area-project-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--space-sm);
+  margin-top: var(--space-xs);
+  background: var(--bg-darker);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  color: var(--gleeds-yellow);
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.area-project-toggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--gleeds-yellow);
+}
+
+.area-project-toggle .toggle-less {
+  display: none;
+}
+
+.area-card.expanded .area-project-toggle .toggle-more {
+  display: none;
+}
+
+.area-card.expanded .area-project-toggle .toggle-less {
+  display: inline;
 }
 
 /* Responsive */
