@@ -258,7 +258,11 @@ function renderTableRows(opportunities, sectors) {
           data-source-type="${opp.sourceType || 'scanner'}">
         <td>
           <div class="project-title-cell">
-            <span class="project-name">${opp.title}</span>
+            ${opp.sourceLink ? `
+              <a href="${opp.sourceLink}" target="_blank" rel="noopener noreferrer" class="project-name project-link" title="${opp.title}">${opp.title}</a>
+            ` : `
+              <a href="https://www.google.com/search?q=${encodeURIComponent(opp.title + ' UK infrastructure')}" target="_blank" rel="noopener noreferrer" class="project-name project-link" title="${opp.title}">${opp.title}</a>
+            `}
             <span class="source-type-badge" style="background: ${sourceType.color}20; color: ${sourceType.color}">${sourceType.label}</span>
           </div>
         </td>
@@ -339,6 +343,29 @@ function renderSectorTrends(trends, sectors) {
   `;
 }
 
+function renderAreaProjectItem(opp, sectors) {
+  const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
+  const sector = sectors.find(s => s.id === opp.sector);
+  const hasLink = opp.sourceLink || opp.source;
+  const linkUrl = opp.sourceLink || '#';
+
+  // Build a search URL as fallback if no direct link
+  const searchQuery = encodeURIComponent(`${opp.title} UK infrastructure`);
+  const fallbackUrl = `https://www.google.com/search?q=${searchQuery}`;
+  const finalUrl = opp.sourceLink || fallbackUrl;
+
+  return `
+    <a href="${finalUrl}" target="_blank" rel="noopener noreferrer"
+       class="area-project-item ${hasLink ? 'has-link' : ''}"
+       title="${opp.title}">
+      <span class="area-project-dot" style="color: ${readiness.color}">●</span>
+      <span class="area-project-name">${truncate(opp.title, 30)}</span>
+      <span class="area-project-sector" style="border-left: 2px solid ${sector?.color || '#888'}">${sector?.name || opp.sector || 'Unknown'}</span>
+      <span class="area-project-value">${formatCurrency(opp.value)}</span>
+    </a>
+  `;
+}
+
 function renderAreaGrid(opportunities, boroughs, boroughCounts, sectors) {
   if (!boroughs.length) {
     return `<p class="text-muted">No area data available.</p>`;
@@ -391,33 +418,11 @@ function renderAreaGrid(opportunities, boroughs, boroughCounts, sectors) {
             </div>
             <div class="area-card-projects">
               <div class="area-projects-visible">
-                ${boroughOpps.slice(0, 5).map(opp => {
-                  const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
-                  const sector = sectors.find(s => s.id === opp.sector);
-                  return `
-                    <div class="area-project-item">
-                      <span class="area-project-dot" style="color: ${readiness.color}">●</span>
-                      <span class="area-project-name">${truncate(opp.title, 30)}</span>
-                      <span class="area-project-sector" style="border-left: 2px solid ${sector?.color || '#888'}">${sector?.name || opp.sector || 'Unknown'}</span>
-                      <span class="area-project-value">${formatCurrency(opp.value)}</span>
-                    </div>
-                  `;
-                }).join('')}
+                ${boroughOpps.slice(0, 5).map(opp => renderAreaProjectItem(opp, sectors)).join('')}
               </div>
               ${boroughOpps.length > 5 ? `
                 <div class="area-projects-hidden">
-                  ${boroughOpps.slice(5).map(opp => {
-                    const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
-                    const sector = sectors.find(s => s.id === opp.sector);
-                    return `
-                      <div class="area-project-item">
-                        <span class="area-project-dot" style="color: ${readiness.color}">●</span>
-                        <span class="area-project-name">${truncate(opp.title, 30)}</span>
-                        <span class="area-project-sector" style="border-left: 2px solid ${sector?.color || '#888'}">${sector?.name || opp.sector || 'Unknown'}</span>
-                        <span class="area-project-value">${formatCurrency(opp.value)}</span>
-                      </div>
-                    `;
-                  }).join('')}
+                  ${boroughOpps.slice(5).map(opp => renderAreaProjectItem(opp, sectors)).join('')}
                 </div>
                 <button class="area-project-toggle">
                   <span class="toggle-more">+${boroughOpps.length - 5} more projects</span>
