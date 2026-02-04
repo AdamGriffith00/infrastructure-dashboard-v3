@@ -120,34 +120,33 @@ function calculateBounds(features) {
  * Uses a bright, clearly visible color scale
  */
 function getIntensityColor(value, maxValue, colorScheme = 'yellow', minValue = 0) {
-    // No data - return dark gray (only for truly empty areas)
-    if (!value || value === 0) return '#4A4A4A';
+    // No data - return a visible muted color (not black!)
+    if (!value || value === 0) return '#5A5040';
 
     // Calculate intensity as percentage between min and max
     const range = maxValue - minValue;
     let intensity = range > 0 ? (value - minValue) / range : 0.5;
-    // Ensure all values are visible - minimum 20% intensity
-    intensity = Math.max(0.2, Math.min(intensity, 1));
+    // Ensure all values are visible - minimum 30% intensity for better visibility
+    intensity = Math.max(0.3, Math.min(intensity, 1));
 
     // Bright color schemes - clearly visible on dark background
+    // Using a warm gradient from tan/gold to bright orange
     const schemes = {
-        // Yellow/gold heatmap - light gold (low) to bright orange (high)
         yellow: [
-            '#8B7355',  // 0 - lowest (clearly visible tan)
-            '#9C8050',  // 1
-            '#AD8D4B',  // 2
-            '#BE9A46',  // 3
-            '#CFA741',  // 4
-            '#E0B43C',  // 5 - middle (bright gold)
-            '#EBB030',  // 6
-            '#F5A825',  // 7
-            '#FF9F1A',  // 8
-            '#FF900F',  // 9
-            '#FF8000',  // 10 - high (bright orange)
+            '#A08050',  // 0.3 - warm tan (lowest visible)
+            '#B08A45',  //
+            '#C0953A',  //
+            '#D0A030',  //
+            '#E0AA25',  // middle gold
+            '#F0B41A',  //
+            '#FFB810',  //
+            '#FFA500',  // bright orange
+            '#FF9000',  //
+            '#FF8000',  // 1.0 - dark orange (highest)
         ],
-        copper: ['#8B6040', '#9B6535', '#AB702A', '#CB7B20', '#EB8515', '#FF9000'],
-        green: ['#5A7B45', '#6A8B3A', '#7A9B30', '#8AAB25', '#9ABB1A', '#AAD010'],
-        blue: ['#4A6585', '#5A7595', '#6A85A5', '#7A95B5', '#8AA5C5', '#9AB5D5']
+        copper: ['#A07050', '#B07040', '#C07030', '#D08020', '#E08510', '#FF9000'],
+        green: ['#607050', '#708545', '#809A3A', '#90AF30', '#A0C425', '#B0D91A'],
+        blue: ['#506080', '#607090', '#7080A0', '#8090B0', '#90A0C0', '#A0B0D0']
     };
 
     const colors = schemes[colorScheme] || schemes.yellow;
@@ -162,9 +161,10 @@ export async function renderRegionSubdivisionMap(container, options = {}) {
     const {
         regionId,
         regionName = 'Region',
-        data = {},  // Object mapping subdivision IDs/names to values
-        regionClients = [],  // Clients serving this region
+        boroughData = {},  // Object mapping subdivision names to { budget, opportunityCount, clientCount, sectors }
+        regionClients = [],  // Clients serving this region (legacy support)
         totalBudget = 0,  // Total budget for this region
+        data = {},  // Legacy: Object mapping subdivision IDs/names to values
         dataKey = 'value',
         valueFormatter = formatCurrency,
         colorScheme = 'yellow',
@@ -195,14 +195,24 @@ export async function renderRegionSubdivisionMap(container, options = {}) {
     }
 
     // Create data lookup - match by name (case-insensitive)
+    // Supports both new format { budget, opportunityCount, ... } and legacy format (plain numbers)
     const dataLookup = {};
-    Object.entries(data).forEach(([key, value]) => {
+    Object.entries(boroughData).forEach(([key, value]) => {
         dataLookup[key.toLowerCase()] = value;
     });
+    // Also add legacy data format
+    Object.entries(data).forEach(([key, value]) => {
+        if (!dataLookup[key.toLowerCase()]) {
+            dataLookup[key.toLowerCase()] = typeof value === 'number' ? { budget: value } : value;
+        }
+    });
 
-    // Calculate max value for color scaling
-    const values = Object.values(data).filter(v => typeof v === 'number' && v > 0);
-    const maxValue = values.length > 0 ? Math.max(...values) : 1;
+    // Calculate max budget value for color scaling
+    const budgetValues = Object.values(dataLookup)
+        .map(v => typeof v === 'number' ? v : (v?.budget || 0))
+        .filter(v => v > 0);
+    const maxValue = budgetValues.length > 0 ? Math.max(...budgetValues) : 1;
+    const minValue = budgetValues.length > 0 ? Math.min(...budgetValues) : 0;
 
     // Calculate bounds
     const bounds = calculateBounds(geoJson.features);
@@ -223,59 +233,30 @@ export async function renderRegionSubdivisionMap(container, options = {}) {
         renderWidth = baseSize * aspectRatio;
     }
 
-    // Helper function to calculate budget for a subdivision
-    function getSubdivisionBudget(subdivisionName) {
-        let total = 0;
-        regionClients.forEach(client => {
-            // If client has no subdivisions defined, they serve whole region
-            if (!client.subdivisions || !client.subdivisions[regionId]) {
-                total += client.budget10Year || 0;
-            } else {
-                // Check if this subdivision is in the client's list
-                const clientSubdivisions = client.subdivisions[regionId] || [];
-                if (clientSubdivisions.some(s => s.toLowerCase() === subdivisionName.toLowerCase())) {
-                    total += client.budget10Year || 0;
-                }
-            }
-        });
-        return total;
-    }
-
-    // Calculate budget for each subdivision to find the min/max for color scaling
-    const subdivisionBudgets = {};
-    geoJson.features.forEach(feature => {
-        const props = feature.properties;
-        const name = props.name || props.LAD13NM || props.LGD14NM || 'Unknown';
-        subdivisionBudgets[name] = getSubdivisionBudget(name);
-    });
-    const budgetValues = Object.values(subdivisionBudgets).filter(v => v > 0);
-    const maxSubdivisionBudget = budgetValues.length > 0 ? Math.max(...budgetValues) : 1;
-    const minSubdivisionBudget = budgetValues.length > 0 ? Math.min(...budgetValues) : 0;
-
-    // Build SVG paths for each subdivision
+    // Build SVG paths for each subdivision using the boroughData
     const subdivisionPaths = geoJson.features.map(feature => {
         const props = feature.properties;
         const name = props.name || props.LAD13NM || props.LGD14NM || 'Unknown';
         const id = props.id || props.LAD13CD || name;
 
-        // Get the calculated budget for this subdivision
-        const subdivisionBudget = subdivisionBudgets[name] || 0;
+        // Try to find data for this subdivision
+        const matchedData = dataLookup[name.toLowerCase()] || dataLookup[id.toLowerCase()];
 
-        // Try to find specific data, otherwise use calculated budget
-        const matchedValue = dataLookup[name.toLowerCase()] ||
-                            dataLookup[id.toLowerCase()] ||
-                            subdivisionBudget;
+        // Extract the budget value for coloring
+        let budgetValue = 0;
+        if (matchedData) {
+            budgetValue = typeof matchedData === 'number' ? matchedData : (matchedData.budget || 0);
+        }
 
-        // Use min/max subdivision budget for color scaling
-        const effectiveMaxValue = regionClients.length > 0 ? maxSubdivisionBudget : maxValue;
-        const effectiveMinValue = regionClients.length > 0 ? minSubdivisionBudget : 0;
-        const color = getIntensityColor(matchedValue, effectiveMaxValue || 1, colorScheme, effectiveMinValue);
+        // Color based on budget, using calculated min/max
+        const color = getIntensityColor(budgetValue, maxValue || 1, colorScheme, minValue);
         const pathD = geometryToPath(feature.geometry, bounds, renderWidth, renderHeight);
 
         return {
             id: id,
             name: name,
-            value: matchedValue,
+            data: matchedData || { budget: 0, opportunityCount: 0, clientCount: 0, sectors: [] },
+            budget: budgetValue,
             color: color,
             path: pathD
         };
@@ -309,7 +290,10 @@ export async function renderRegionSubdivisionMap(container, options = {}) {
                             stroke-width="0.5"
                             data-id="${s.id}"
                             data-name="${s.name}"
-                            data-value="${s.value}"
+                            data-budget="${s.budget}"
+                            data-opportunity-count="${s.data?.opportunityCount || 0}"
+                            data-client-count="${s.data?.clientCount || 0}"
+                            data-sector-count="${s.data?.sectors?.length || 0}"
                         />
                     `).join('')}
                 </g>
@@ -318,46 +302,18 @@ export async function renderRegionSubdivisionMap(container, options = {}) {
                 <div class="map-legend">
                     <div class="legend-bar"></div>
                     <div class="legend-labels">
-                        <span>${valueFormatter(minSubdivisionBudget || 0)}</span>
-                        <span>${valueFormatter(maxSubdivisionBudget || maxValue)}</span>
+                        <span>${valueFormatter(minValue || 0)}</span>
+                        <span>${valueFormatter(maxValue || 0)}</span>
                     </div>
                 </div>
             ` : ''}
         </div>
         <div class="map-tooltip" id="region-map-tooltip-${Date.now()}">
             <div class="tooltip-name"></div>
-            <div class="tooltip-value"></div>
-            <div class="tooltip-clients"></div>
+            <div class="tooltip-budget"></div>
+            <div class="tooltip-counts"></div>
         </div>
     `;
-
-    // Helper function to get clients for a specific subdivision
-    function getClientsForSubdivision(subdivisionName) {
-        return regionClients.filter(client => {
-            // If client has no subdivisions defined, they serve whole region (e.g., water companies)
-            if (!client.subdivisions || !client.subdivisions[regionId]) {
-                return true;
-            }
-            // Check if this subdivision is in the client's list
-            const clientSubdivisions = client.subdivisions[regionId] || [];
-            return clientSubdivisions.some(s =>
-                s.toLowerCase() === subdivisionName.toLowerCase()
-            );
-        });
-    }
-
-    // Helper function to build clients HTML with sources
-    function buildClientsHtml(clients) {
-        if (clients.length === 0) return '';
-        return clients.map(c => {
-            const source = c.source ? `<div class="tooltip-source">${c.source}</div>` : '';
-            return `<div class="tooltip-client">
-                <span class="tooltip-client-name">${c.name}</span>
-                <span class="tooltip-client-value">${valueFormatter(c.budget10Year || 0)}</span>
-                ${source}
-            </div>`;
-        }).join('');
-    }
 
     // Add interactivity
     const svg = container.querySelector('.region-map-svg');
@@ -367,21 +323,28 @@ export async function renderRegionSubdivisionMap(container, options = {}) {
         // Hover effects
         path.addEventListener('mouseenter', (e) => {
             const name = path.dataset.name;
-            const value = parseFloat(path.dataset.value);
+            const budget = parseFloat(path.dataset.budget) || 0;
+            const opportunityCount = parseInt(path.dataset.opportunityCount) || 0;
+            const clientCount = parseInt(path.dataset.clientCount) || 0;
+            const sectorCount = parseInt(path.dataset.sectorCount) || 0;
 
+            // Simplified tooltip: Name, Budget, Opportunities/Clients, Sectors
             tooltip.querySelector('.tooltip-name').textContent = name;
+            tooltip.querySelector('.tooltip-budget').textContent = `Budget: ${valueFormatter(budget)}`;
 
-            // Get clients that serve this specific subdivision
-            const subdivisionClients = getClientsForSubdivision(name);
-
-            if (subdivisionClients.length > 0) {
-                const subdivisionTotal = subdivisionClients.reduce((sum, c) => sum + (c.budget10Year || 0), 0);
-                tooltip.querySelector('.tooltip-value').textContent = `Total: ${valueFormatter(subdivisionTotal)}`;
-                tooltip.querySelector('.tooltip-clients').innerHTML = buildClientsHtml(subdivisionClients);
+            // Show combined opportunities/clients count
+            const totalItems = opportunityCount + clientCount;
+            let countsText = '';
+            if (totalItems > 0) {
+                const parts = [];
+                if (opportunityCount > 0) parts.push(`${opportunityCount} opportunities`);
+                if (clientCount > 0) parts.push(`${clientCount} clients`);
+                countsText = parts.join(', ');
             } else {
-                tooltip.querySelector('.tooltip-value').textContent = value > 0 ? valueFormatter(value) : 'No data';
-                tooltip.querySelector('.tooltip-clients').innerHTML = '';
+                countsText = 'No projects';
             }
+            countsText += sectorCount > 0 ? ` | ${sectorCount} sectors` : '';
+            tooltip.querySelector('.tooltip-counts').textContent = countsText;
 
             tooltip.classList.add('visible');
 

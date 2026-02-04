@@ -49,18 +49,71 @@ export async function loadRegionalOpportunities(regionId) {
 }
 
 export function renderRegionalScanner(container, regionData, options = {}) {
-  const { regionId, sectors = [] } = options;
+  const { regionId, sectors = [], legacyOpportunities = [], clients = [] } = options;
 
-  if (!regionData || !regionData.opportunities.length) {
+  // Combine all data sources into a unified list
+  const scannerOpportunities = regionData?.opportunities || [];
+
+  // Convert legacy opportunities to the scanner format
+  const convertedLegacyOpps = legacyOpportunities.map(opp => ({
+    id: `legacy-${opp.id}`,
+    title: opp.title,
+    sector: opp.sector,
+    region: opp.region,
+    location: { borough: opp.location?.borough || opp.borough, area: opp.location?.area },
+    value: opp.value || 0,
+    status: opp.status || 'planning',
+    procurementStage: opp.procurementStage,
+    readiness: opp.readiness || 'no-money-not-ready',
+    fundingStatus: opp.fundingStatus || 'Unknown',
+    serviceRelevance: opp.serviceRelevance || [],
+    projectType: opp.projectType || 'public',
+    sourceType: 'opportunity'
+  }));
+
+  // Convert clients to opportunity-like format for display
+  const convertedClients = clients.map(client => ({
+    id: `client-${client.id || client.name}`,
+    title: client.name,
+    sector: client.sector,
+    region: regionId,
+    location: { borough: null, area: client.location || null },
+    value: client.budget10Year || 0,
+    status: 'delivery',  // Clients are typically in active delivery
+    procurementStage: client.procurementStage || 'Active',
+    readiness: 'ready-to-buy',  // Clients have committed budgets
+    fundingStatus: client.source || 'Confirmed budget',
+    serviceRelevance: client.services || [],
+    projectType: client.type || 'public',
+    sourceType: 'client'
+  }));
+
+  // Combine all sources - scanner first, then legacy, then clients
+  // Filter out duplicates by title similarity
+  const allItems = [...scannerOpportunities.map(o => ({ ...o, sourceType: 'scanner' }))];
+
+  // Add legacy opportunities if not already present
+  convertedLegacyOpps.forEach(opp => {
+    const exists = allItems.some(o => o.title?.toLowerCase() === opp.title?.toLowerCase());
+    if (!exists) allItems.push(opp);
+  });
+
+  // Add clients if not already present
+  convertedClients.forEach(client => {
+    const exists = allItems.some(o => o.title?.toLowerCase() === client.title?.toLowerCase());
+    if (!exists) allItems.push(client);
+  });
+
+  if (allItems.length === 0) {
     container.innerHTML = `
       <div class="regional-scanner-empty">
-        <p>No regional opportunities data available for this region.</p>
+        <p>No opportunities or clients data available for this region.</p>
       </div>
     `;
     return;
   }
 
-  const opportunities = regionData.opportunities;
+  const opportunities = allItems;
 
   // Calculate summaries
   const totalValue = opportunities.reduce((sum, o) => sum + (o.value || 0), 0);
@@ -190,19 +243,28 @@ function renderTableRows(opportunities, sectors) {
     const sector = sectors.find(s => s.id === opp.sector);
     const sectorColor = sector?.color || '#888888';
 
+    // Source type indicator
+    const sourceTypeConfig = {
+      'scanner': { label: 'Scanned', color: '#8B5CF6' },
+      'opportunity': { label: 'Pipeline', color: '#3B82F6' },
+      'client': { label: 'Client', color: '#10B981' }
+    };
+    const sourceType = sourceTypeConfig[opp.sourceType] || sourceTypeConfig['scanner'];
+
     return `
       <tr class="project-row" data-id="${opp.id}" data-sector="${opp.sector}"
           data-readiness="${opp.readiness}" data-status="${opp.status}"
-          data-value="${opp.value}" data-borough="${opp.location?.borough || ''}">
+          data-value="${opp.value}" data-borough="${opp.location?.borough || ''}"
+          data-source-type="${opp.sourceType || 'scanner'}">
         <td>
           <div class="project-title-cell">
             <span class="project-name">${opp.title}</span>
-            ${opp.projectType ? `<span class="project-type badge-sm">${opp.projectType}</span>` : ''}
+            <span class="source-type-badge" style="background: ${sourceType.color}20; color: ${sourceType.color}">${sourceType.label}</span>
           </div>
         </td>
         <td>
           <span class="sector-badge" style="border-left: 3px solid ${sectorColor}">
-            ${sector?.name || opp.sector}
+            ${sector?.name || opp.sector || 'Unknown'}
           </span>
         </td>
         <td>

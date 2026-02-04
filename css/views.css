@@ -5047,6 +5047,16 @@
   width: fit-content;
 }
 
+.source-type-badge {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+  width: fit-content;
+  letter-spacing: 0.3px;
+}
+
 .sector-badge {
   display: inline-block;
   padding: 4px 8px 4px 10px;

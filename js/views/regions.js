@@ -295,34 +295,25 @@ async function renderRegionDetail(container, region, allData) {
     ` : ''}
   `;
 
-  // Render the regional subdivision map with client data
+  // Render the regional subdivision map with combined data
   const mapContainer = container.querySelector('#region-subdivision-map');
 
   // Calculate total budget for this region from clients (regionClients already defined above)
   const totalRegionBudget = regionClients.reduce((sum, c) => sum + (c.budget10Year || 0), 0);
 
-  // Calculate borough data from scanner opportunities for map coloring
-  let boroughData = {};
-  if (regionalData && regionalData.opportunities) {
-    boroughData = regionalData.opportunities.reduce((acc, opp) => {
-      const borough = opp.location?.borough;
-      if (borough) {
-        if (!acc[borough]) {
-          acc[borough] = { count: 0, value: 0 };
-        }
-        acc[borough].count += 1;
-        acc[borough].value += opp.value || 0;
-      }
-      return acc;
-    }, {});
-  }
+  // Calculate combined borough data from scanner opportunities AND clients
+  // This gives the full picture for heatmap coloring and tooltip display
+  const boroughData = calculateCombinedBoroughData(
+    region.id,
+    regionClients,
+    regionalData?.opportunities || [],
+    allData.sectors || []
+  );
 
-  // We'll pass the region clients to a custom tooltip renderer
   await renderRegionSubdivisionMap(mapContainer, {
     regionId: region.id,
     regionName: region.name,
-    data: boroughData,  // Pass borough data for coloring
-    regionClients: regionClients,  // Pass clients for tooltip display
+    boroughData: boroughData,  // Combined data for coloring and tooltips
     totalBudget: totalRegionBudget,
     title: `${region.name} ${subdivisionType}`,
     colorScheme: 'yellow',
@@ -343,9 +334,12 @@ async function renderRegionDetail(container, region, allData) {
   if (hasScannerData && regionalData) {
     const scannerContainer = container.querySelector('#regional-scanner-container');
     if (scannerContainer) {
+      // Pass all data: scanner opportunities, legacy opportunities, AND clients
       renderRegionalScanner(scannerContainer, regionalData, {
         regionId: region.id,
-        sectors: allData.sectors || []
+        sectors: allData.sectors || [],
+        legacyOpportunities: opportunities,  // From opportunities.json
+        clients: regionClients  // Clients serving this region
       });
     }
   }
@@ -580,4 +574,62 @@ function getStatusBadge(status) {
   const color = STATUS_COLORS[status] || '#888888';
   const label = STATUS_LABELS[status] || status || 'Unknown';
   return `<span class="badge" style="background: ${color}20; color: ${color}; border-color: ${color}">${label}</span>`;
+}
+
+// Calculate combined borough data from clients + scanner opportunities
+// Returns object mapping borough names to { budget, opportunityCount, clientCount, sectors }
+function calculateCombinedBoroughData(regionId, clients, scannerOpportunities, sectors) {
+  const boroughData = {};
+
+  // Helper to initialize or get borough entry
+  function getBorough(name) {
+    if (!boroughData[name]) {
+      boroughData[name] = {
+        budget: 0,
+        opportunityCount: 0,
+        clientCount: 0,
+        sectors: new Set()
+      };
+    }
+    return boroughData[name];
+  }
+
+  // Add client data - clients that serve specific subdivisions
+  clients.forEach(client => {
+    const budget = client.budget10Year || 0;
+    const sectorId = client.sector;
+
+    // Check if client has subdivision-specific mapping
+    if (client.subdivisions && client.subdivisions[regionId]) {
+      // Client serves specific boroughs
+      const boroughs = client.subdivisions[regionId];
+      const perBoroughBudget = budget / boroughs.length;
+
+      boroughs.forEach(boroughName => {
+        const borough = getBorough(boroughName);
+        borough.budget += perBoroughBudget;
+        borough.clientCount += 1;
+        if (sectorId) borough.sectors.add(sectorId);
+      });
+    }
+    // If client has no subdivisions, they serve the whole region - we don't attribute to specific boroughs
+  });
+
+  // Add scanner opportunity data
+  scannerOpportunities.forEach(opp => {
+    const boroughName = opp.location?.borough;
+    if (!boroughName) return;
+
+    const borough = getBorough(boroughName);
+    borough.budget += opp.value || 0;
+    borough.opportunityCount += 1;
+    if (opp.sector) borough.sectors.add(opp.sector);
+  });
+
+  // Convert sets to arrays for serialization
+  Object.values(boroughData).forEach(data => {
+    data.sectors = Array.from(data.sectors);
+  });
+
+  return boroughData;
 }

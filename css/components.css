@@ -393,7 +393,7 @@ select option {
 .legend-bar {
   width: 100%;
   height: 14px;
-  background: linear-gradient(to right, #8B7355, #AD8D4B, #CFA741, #E0B43C, #F5A825, #FF9F1A, #FF900F, #FF8000);
+  background: linear-gradient(to right, #A08050, #B08A45, #D0A030, #E0AA25, #F0B41A, #FFB810, #FFA500, #FF8000);
   border-radius: var(--radius-sm);
 }
 
