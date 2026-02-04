@@ -4848,3 +4848,563 @@
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
+/* ========================================
+   REGIONAL SCANNER
+   ======================================== */
+
+.regional-scanner {
+  margin-top: var(--space-lg);
+}
+
+.regional-scanner .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.scanner-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Scanner Filters */
+.scanner-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.filter-group label {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  min-width: 140px;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--gleeds-yellow);
+}
+
+/* Readiness Summary */
+.readiness-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--bg-darker);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.readiness-chip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 6px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.readiness-chip:hover {
+  border-color: var(--gleeds-yellow);
+  background: var(--bg-hover);
+}
+
+.readiness-dot {
+  font-size: 0.75rem;
+}
+
+.readiness-label {
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.readiness-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Scanner Table */
+.scanner-table-container {
+  overflow-x: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+}
+
+.scanner-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.scanner-table th {
+  text-align: left;
+  padding: var(--space-md);
+  background: var(--bg-darker);
+  color: var(--text-muted);
+  font-weight: var(--font-weight-bold);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.scanner-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.scanner-table th.sortable:hover {
+  color: var(--gleeds-yellow);
+}
+
+.scanner-table th.sortable::after {
+  content: '↕';
+  margin-left: 6px;
+  opacity: 0.4;
+}
+
+.scanner-table th.sort-asc::after {
+  content: '↑';
+  opacity: 1;
+  color: var(--gleeds-yellow);
+}
+
+.scanner-table th.sort-desc::after {
+  content: '↓';
+  opacity: 1;
+  color: var(--gleeds-yellow);
+}
+
+.scanner-table td {
+  padding: var(--space-sm) var(--space-md);
+  border-bottom: 1px solid var(--border-dark);
+  vertical-align: top;
+}
+
+.scanner-table tbody tr {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.scanner-table tbody tr:hover {
+  background: var(--bg-hover);
+}
+
+/* Project cells */
+.project-title-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-name {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+.project-type {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.sector-badge {
+  display: inline-block;
+  padding: 4px 8px 4px 10px;
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+.location-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.location-cell .borough {
+  font-weight: var(--font-weight-medium);
+}
+
+.location-cell .area {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border: 1px solid;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.procurement-stage {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.funding-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  max-width: 200px;
+}
+
+.readiness-indicator {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+}
+
+.funding-text {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+.value-cell {
+  font-weight: var(--font-weight-heavy);
+  color: var(--gleeds-yellow);
+  white-space: nowrap;
+}
+
+.services-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.service-tag {
+  padding: 2px 6px;
+  background: var(--gleeds-yellow);
+  color: var(--bg-dark);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.service-more {
+  padding: 2px 6px;
+  background: var(--bg-darker);
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+}
+
+/* Borough Deep Dive */
+.borough-deep-dive {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.borough-deep-dive .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.borough-deep-dive .section-title {
+  margin: 0;
+}
+
+#borough-selector {
+  min-width: 200px;
+}
+
+.borough-content {
+  min-height: 100px;
+}
+
+.borough-header h4 {
+  font-size: 1.25rem;
+  color: var(--gleeds-yellow);
+  margin-bottom: var(--space-md);
+}
+
+.borough-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.borough-kpi {
+  text-align: center;
+  padding: var(--space-md);
+  background: var(--bg-darker);
+  border-radius: var(--radius-md);
+}
+
+.borough-kpi-value {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-heavy);
+  color: var(--gleeds-yellow);
+}
+
+.borough-kpi-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: var(--space-xs);
+}
+
+.borough-projects {
+  margin-bottom: var(--space-lg);
+}
+
+.borough-projects h5 {
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.borough-project-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.borough-project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--space-sm);
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+}
+
+.borough-project-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.borough-project-name {
+  font-weight: var(--font-weight-medium);
+}
+
+.borough-project-sector {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.borough-project-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.borough-project-value {
+  font-weight: var(--font-weight-heavy);
+  color: var(--gleeds-yellow);
+}
+
+.borough-project-readiness {
+  font-size: 0.75rem;
+}
+
+.borough-sector-breakdown h5 {
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.borough-sector-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.borough-sector-bar {
+  display: grid;
+  grid-template-columns: 120px 1fr 40px;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.borough-sector-label {
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.borough-sector-bar-track {
+  height: 8px;
+  background: var(--bg-darker);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.borough-sector-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transition: width 0.3s ease;
+}
+
+.borough-sector-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+/* Sector Trends */
+.sector-trends {
+  margin-top: var(--space-lg);
+}
+
+.trends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+}
+
+.trend-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+.trend-header {
+  margin-bottom: var(--space-sm);
+}
+
+.trend-sector {
+  font-weight: var(--font-weight-heavy);
+  font-size: 1rem;
+}
+
+.trend-outlook {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--space-sm);
+}
+
+.trend-drivers,
+.trend-risks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  align-items: center;
+  margin-top: var(--space-sm);
+}
+
+.trend-label {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-muted);
+  margin-right: var(--space-xs);
+}
+
+.driver-tag {
+  padding: 2px 8px;
+  background: var(--gleeds-yellow);
+  color: var(--bg-dark);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.risk-tag {
+  padding: 2px 8px;
+  background: #EF444420;
+  color: #EF4444;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Regional Scanner Empty State */
+.regional-scanner-empty {
+  text-align: center;
+  padding: var(--space-2xl);
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scanner-filters {
+    flex-direction: column;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  .readiness-summary {
+    flex-direction: column;
+  }
+
+  .scanner-table {
+    font-size: 0.8rem;
+  }
+
+  .scanner-table th,
+  .scanner-table td {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .borough-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trends-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .borough-sector-bar {
+    grid-template-columns: 100px 1fr 30px;
+  }
+}

@@ -75,6 +75,66 @@
         { "id": "gas", "name": "Gas Networks", "percentage": 12 },
         { "id": "telecoms", "name": "Telecoms/Digital", "percentage": 8 }
       ]
+    },
+    {
+      "id": "real-estate",
+      "name": "Real Estate",
+      "description": "Commercial, residential, and mixed-use development including regeneration schemes",
+      "icon": "",
+      "color": "#E91E63",
+      "budget2026": 15000000000,
+      "budget10Year": 85000000000,
+      "subSectors": [
+        { "id": "commercial", "name": "Commercial/Office", "percentage": 30 },
+        { "id": "residential", "name": "Residential/Housing", "percentage": 35 },
+        { "id": "mixed-use", "name": "Mixed-Use Regeneration", "percentage": 25 },
+        { "id": "retail", "name": "Retail/Leisure", "percentage": 10 }
+      ]
+    },
+    {
+      "id": "defence",
+      "name": "Defence",
+      "description": "Ministry of Defence estate, naval infrastructure, air bases, and support facilities",
+      "icon": "",
+      "color": "#607D8B",
+      "budget2026": 4500000000,
+      "budget10Year": 35000000000,
+      "subSectors": [
+        { "id": "mod-estate", "name": "MOD Estate", "percentage": 40 },
+        { "id": "naval", "name": "Naval Infrastructure", "percentage": 30 },
+        { "id": "air-bases", "name": "Air Bases", "percentage": 20 },
+        { "id": "facilities", "name": "Support Facilities", "percentage": 10 }
+      ]
+    },
+    {
+      "id": "data-centres",
+      "name": "Data Centres",
+      "description": "Hyperscale, colocation, and edge computing facilities",
+      "icon": "",
+      "color": "#3F51B5",
+      "budget2026": 6000000000,
+      "budget10Year": 45000000000,
+      "subSectors": [
+        { "id": "hyperscale", "name": "Hyperscale", "percentage": 55 },
+        { "id": "colocation", "name": "Colocation", "percentage": 35 },
+        { "id": "edge", "name": "Edge/Enterprise", "percentage": 10 }
+      ]
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure",
+      "description": "Flood defence, waste, public realm, education, and healthcare facilities",
+      "icon": "",
+      "color": "#795548",
+      "budget2026": 8000000000,
+      "budget10Year": 55000000000,
+      "subSectors": [
+        { "id": "flood-defence", "name": "Flood Defence", "percentage": 25 },
+        { "id": "waste", "name": "Waste/Circular Economy", "percentage": 20 },
+        { "id": "public-realm", "name": "Public Realm", "percentage": 15 },
+        { "id": "education", "name": "Education", "percentage": 20 },
+        { "id": "healthcare", "name": "Healthcare", "percentage": 20 }
+      ]
     }
   ]
 }

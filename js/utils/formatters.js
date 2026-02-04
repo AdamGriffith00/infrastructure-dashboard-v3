@@ -141,7 +141,11 @@ export function getSectorColor(sectorId) {
     'highways': '#2196F3',
     'aviation': '#9C27B0',
     'maritime': '#00BCD4',
-    'utilities': '#FF9800'
+    'utilities': '#FF9800',
+    'real-estate': '#E91E63',
+    'defence': '#607D8B',
+    'data-centres': '#3F51B5',
+    'infrastructure': '#795548'
   };
   return colors[sectorId] || '#888888';
 }

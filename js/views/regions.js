@@ -6,6 +6,10 @@ import { formatCurrency, getSectorColor } from '../utils/formatters.js';
 import { renderUKMap } from '../components/uk-map.js';
 import { renderRegionSubdivisionMap } from '../components/region-map.js';
 import { openRegionExplorer } from '../components/region-explorer.js';
+import { loadRegionalOpportunities, renderRegionalScanner, selectBoroughFromMap } from '../components/regional-scanner.js';
+
+// Regions that have enhanced scanner data
+const SCANNER_ENABLED_REGIONS = ['london', 'south-east'];
 
 export async function renderRegionsView(container, { data, allData, params }) {
   const selectedRegion = params.id ? allData.regions?.find(r => r.id === params.id) : null;
@@ -148,12 +152,24 @@ async function renderRegionDetail(container, region, allData) {
   // Get subdivision display name
   const subdivisionType = getSubdivisionType(region.id);
 
+  // Check if this region has scanner data
+  const hasScannerData = SCANNER_ENABLED_REGIONS.includes(region.id);
+
+  // Load regional opportunities if available
+  let regionalData = null;
+  if (hasScannerData) {
+    regionalData = await loadRegionalOpportunities(region.id);
+  }
+
+  // Calculate enhanced KPIs if scanner data available
+  const scannerProjectCount = regionalData?.opportunities?.length || 0;
+  const scannerTotalValue = regionalData?.opportunities?.reduce((sum, o) => sum + (o.value || 0), 0) || 0;
+
   container.innerHTML = `
     <div class="view-header">
       <div class="view-header-actions" style="display: flex; gap: var(--space-md); margin-bottom: var(--space-md);">
         <a href="#regions" class="btn">← Back to Regions</a>
         <button class="btn btn-primary" id="btn-explore-region">
-          <span style="margin-right: 6px;">🔍</span>
           Explore Region
         </button>
       </div>
@@ -172,14 +188,25 @@ async function renderRegionDetail(container, region, allData) {
           <div class="kpi-label">2026 Spend</div>
           <div class="kpi-value">${formatCurrency(region.budget2026 || 0)}</div>
         </div>
-        <div class="kpi-card">
-          <div class="kpi-label">Current Opportunities</div>
-          <div class="kpi-value">${opportunities.length}</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-label">Key Clients</div>
-          <div class="kpi-value">${clients.length}</div>
-        </div>
+        ${hasScannerData && scannerProjectCount > 0 ? `
+          <div class="kpi-card">
+            <div class="kpi-label">Scanned Projects</div>
+            <div class="kpi-value">${scannerProjectCount}</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Pipeline Value</div>
+            <div class="kpi-value">${formatCurrency(scannerTotalValue)}</div>
+          </div>
+        ` : `
+          <div class="kpi-card">
+            <div class="kpi-label">Current Opportunities</div>
+            <div class="kpi-value">${opportunities.length}</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Key Clients</div>
+            <div class="kpi-value">${clients.length}</div>
+          </div>
+        `}
       </div>
     </section>
 
@@ -195,11 +222,16 @@ async function renderRegionDetail(container, region, allData) {
         <div class="region-detail-panel">
           <div class="map-panel-title">Sector Breakdown</div>
           <div class="region-sector-breakdown">
-            ${renderSectorBreakdown(sectorBreakdown)}
+            ${hasScannerData && regionalData ?
+              renderScannerSectorBreakdown(regionalData.opportunities, allData.sectors || []) :
+              renderSectorBreakdown(sectorBreakdown)}
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Regional Opportunities Scanner (for London & South East) -->
+    ${hasScannerData ? `<div id="regional-scanner-container"></div>` : ''}
 
     <!-- Growth Areas -->
     ${region.growthAreas ? `
@@ -226,31 +258,33 @@ async function renderRegionDetail(container, region, allData) {
       </div>
     </section>
 
-    <!-- Opportunities -->
-    <section class="section">
-      <h2 class="section-title mb-md">Opportunities (${opportunities.length})</h2>
-      ${opportunities.length ? `
-        <div class="opportunity-list">
-          ${opportunities.slice(0, 10).map(opp => `
-            <div class="card opportunity-card">
-              <div class="opportunity-header">
-                <div>
-                  <div class="opportunity-title">${opp.title}</div>
-                  <div class="opportunity-client">${opp.sector || 'Unknown sector'}</div>
+    <!-- Legacy Opportunities (shown if no scanner data) -->
+    ${!hasScannerData ? `
+      <section class="section">
+        <h2 class="section-title mb-md">Opportunities (${opportunities.length})</h2>
+        ${opportunities.length ? `
+          <div class="opportunity-list">
+            ${opportunities.slice(0, 10).map(opp => `
+              <div class="card opportunity-card">
+                <div class="opportunity-header">
+                  <div>
+                    <div class="opportunity-title">${opp.title}</div>
+                    <div class="opportunity-client">${opp.sector || 'Unknown sector'}</div>
+                  </div>
+                  <span class="badge ${getRatingClass(opp.bidRating)}">${opp.bidRating || 'TBC'}</span>
                 </div>
-                <span class="badge ${getRatingClass(opp.bidRating)}">${opp.bidRating || 'TBC'}</span>
+                <div class="opportunity-meta">
+                  ${getStatusBadge(opp.status)}
+                  ${opp.procurementStage ? `<span class="badge">${opp.procurementStage}</span>` : ''}
+                  <span class="opportunity-value">${formatCurrency(opp.value)}</span>
+                </div>
+                ${opp.bidDeadline ? `<div class="opportunity-deadline">Due: ${new Date(opp.bidDeadline).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</div>` : ''}
               </div>
-              <div class="opportunity-meta">
-                ${getStatusBadge(opp.status)}
-                ${opp.procurementStage ? `<span class="badge">${opp.procurementStage}</span>` : ''}
-                <span class="opportunity-value">${formatCurrency(opp.value)}</span>
-              </div>
-              ${opp.bidDeadline ? `<div class="opportunity-deadline">Due: ${new Date(opp.bidDeadline).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</div>` : ''}
-            </div>
-          `).join('')}
-        </div>
-      ` : '<p class="text-muted">No opportunities in this region</p>'}
-    </section>
+            `).join('')}
+          </div>
+        ` : '<p class="text-muted">No opportunities in this region</p>'}
+      </section>
+    ` : ''}
   `;
 
   // Render the regional subdivision map with client data
@@ -264,19 +298,54 @@ async function renderRegionDetail(container, region, allData) {
   // Calculate total budget for this region from clients
   const totalRegionBudget = regionClients.reduce((sum, c) => sum + (c.budget10Year || 0), 0);
 
+  // Calculate borough data from scanner opportunities for map coloring
+  let boroughData = {};
+  if (regionalData && regionalData.opportunities) {
+    boroughData = regionalData.opportunities.reduce((acc, opp) => {
+      const borough = opp.location?.borough;
+      if (borough) {
+        if (!acc[borough]) {
+          acc[borough] = { count: 0, value: 0 };
+        }
+        acc[borough].count += 1;
+        acc[borough].value += opp.value || 0;
+      }
+      return acc;
+    }, {});
+  }
+
   // We'll pass the region clients to a custom tooltip renderer
   await renderRegionSubdivisionMap(mapContainer, {
     regionId: region.id,
     regionName: region.name,
-    data: {},  // Individual subdivision data if available
+    data: boroughData,  // Pass borough data for coloring
     regionClients: regionClients,  // Pass clients for tooltip display
     totalBudget: totalRegionBudget,
     title: `${region.name} ${subdivisionType}`,
     colorScheme: 'yellow',
     width: 500,
     height: 450,
-    showLegend: true
+    showLegend: true,
+    onSubdivisionClick: hasScannerData ? (subdivisionName) => {
+      // When clicking on map, scroll to and select borough in scanner
+      const scannerContainer = container.querySelector('#regional-scanner-container');
+      if (scannerContainer) {
+        selectBoroughFromMap(scannerContainer, subdivisionName);
+        scannerContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } : null
   });
+
+  // Render the regional scanner if available
+  if (hasScannerData && regionalData) {
+    const scannerContainer = container.querySelector('#regional-scanner-container');
+    if (scannerContainer) {
+      renderRegionalScanner(scannerContainer, regionalData, {
+        regionId: region.id,
+        sectors: allData.sectors || []
+      });
+    }
+  }
 
   // Setup Explore Region button
   const exploreBtn = container.querySelector('#btn-explore-region');
@@ -289,6 +358,30 @@ async function renderRegionDetail(container, region, allData) {
       });
     });
   }
+}
+
+// Render sector breakdown from scanner opportunities
+function renderScannerSectorBreakdown(opportunities, sectors) {
+  const sectorMap = {};
+
+  // Aggregate from scanner opportunities
+  opportunities.forEach(opp => {
+    if (!sectorMap[opp.sector]) {
+      const sector = sectors.find(s => s.id === opp.sector);
+      sectorMap[opp.sector] = {
+        id: opp.sector,
+        name: sector?.name || opp.sector,
+        totalValue: 0,
+        opportunityCount: 0,
+        color: sector?.color || getSectorColor(opp.sector)
+      };
+    }
+    sectorMap[opp.sector].totalValue += opp.value || 0;
+    sectorMap[opp.sector].opportunityCount += 1;
+  });
+
+  const sectorBreakdown = Object.values(sectorMap).filter(s => s.totalValue > 0);
+  return renderSectorBreakdown(sectorBreakdown);
 }
 
 // Get the subdivision type name for a region

@@ -1,0 +1,563 @@
+/**
+ * Regional Opportunities Scanner Component
+ * Displays comprehensive project scanning across sectors for a region
+ */
+
+import { formatCurrency } from '../utils/formatters.js';
+
+const READINESS_CONFIG = {
+  'ready-to-buy': { label: 'Ready to Buy', color: '#10B981', icon: '●' },
+  'has-money-not-ready': { label: 'Has Money, Not Ready', color: '#F59E0B', icon: '●' },
+  'no-money-not-ready': { label: 'No Money, Not Ready', color: '#6B7280', icon: '●' }
+};
+
+const STATUS_CONFIG = {
+  'planning': { label: 'Planning', color: '#6B7280' },
+  'pre-procurement': { label: 'Pre-Procurement', color: '#8B5CF6' },
+  'procurement': { label: 'In Procurement', color: '#F59E0B' },
+  'delivery': { label: 'In Delivery', color: '#10B981' },
+  'complete': { label: 'Complete', color: '#3B82F6' }
+};
+
+export async function loadRegionalOpportunities(regionId) {
+  // Map region IDs to data files
+  const regionMapping = {
+    'london': 'london-south-east',
+    'south-east': 'london-south-east'
+  };
+
+  const dataFile = regionMapping[regionId];
+  if (!dataFile) return null;
+
+  try {
+    const response = await fetch(`data/regional-opportunities/${dataFile}.json`);
+    if (!response.ok) return null;
+    const data = await response.json();
+
+    // Filter opportunities to only this region
+    const filteredOpportunities = data.opportunities.filter(o => o.region === regionId);
+
+    return {
+      ...data,
+      opportunities: filteredOpportunities,
+      allOpportunities: data.opportunities
+    };
+  } catch (err) {
+    console.error('Failed to load regional opportunities:', err);
+    return null;
+  }
+}
+
+export function renderRegionalScanner(container, regionData, options = {}) {
+  const { regionId, sectors = [] } = options;
+
+  if (!regionData || !regionData.opportunities.length) {
+    container.innerHTML = `
+      <div class="regional-scanner-empty">
+        <p>No regional opportunities data available for this region.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const opportunities = regionData.opportunities;
+
+  // Calculate summaries
+  const totalValue = opportunities.reduce((sum, o) => sum + (o.value || 0), 0);
+  const readinessCounts = countByField(opportunities, 'readiness');
+  const sectorCounts = countByField(opportunities, 'sector');
+  const boroughCounts = countByBorough(opportunities);
+
+  // Get unique boroughs for dropdown
+  const boroughs = [...new Set(opportunities.map(o => o.location?.borough).filter(Boolean))].sort();
+
+  container.innerHTML = `
+    <section class="section regional-scanner">
+      <div class="section-header">
+        <h2 class="section-title">Regional Opportunities Scanner</h2>
+        <div class="scanner-meta">
+          Last refreshed: ${formatDate(regionData.lastUpdated)} |
+          ${opportunities.length} projects |
+          ${formatCurrency(totalValue)} total
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="scanner-filters">
+        <div class="filter-group">
+          <label for="filter-sector">Sector</label>
+          <select id="filter-sector" class="filter-select">
+            <option value="">All Sectors</option>
+            ${sectors.map(s => `<option value="${s.id}">${s.name}</option>`).join('')}
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-readiness">Readiness</label>
+          <select id="filter-readiness" class="filter-select">
+            <option value="">All Readiness</option>
+            ${Object.entries(READINESS_CONFIG).map(([k, v]) =>
+              `<option value="${k}">${v.label}</option>`
+            ).join('')}
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-value">Min Value</label>
+          <select id="filter-value" class="filter-select">
+            <option value="0">Any Value</option>
+            <option value="10000000">&gt; 10m</option>
+            <option value="50000000">&gt; 50m</option>
+            <option value="100000000">&gt; 100m</option>
+            <option value="500000000">&gt; 500m</option>
+            <option value="1000000000">&gt; 1bn</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-status">Status</label>
+          <select id="filter-status" class="filter-select">
+            <option value="">All Status</option>
+            ${Object.entries(STATUS_CONFIG).map(([k, v]) =>
+              `<option value="${k}">${v.label}</option>`
+            ).join('')}
+          </select>
+        </div>
+        <button class="btn btn-sm" id="clear-filters">Clear Filters</button>
+      </div>
+
+      <!-- Readiness Summary -->
+      <div class="readiness-summary">
+        ${Object.entries(READINESS_CONFIG).map(([key, config]) => {
+          const count = readinessCounts[key] || 0;
+          return `
+            <div class="readiness-chip" data-readiness="${key}">
+              <span class="readiness-dot" style="color: ${config.color}">${config.icon}</span>
+              <span class="readiness-label">${config.label}</span>
+              <span class="readiness-count">(${count})</span>
+            </div>
+          `;
+        }).join('')}
+      </div>
+
+      <!-- Project Table -->
+      <div class="scanner-table-container">
+        <table class="scanner-table" id="projects-table">
+          <thead>
+            <tr>
+              <th class="sortable" data-sort="title">Project</th>
+              <th class="sortable" data-sort="sector">Sector</th>
+              <th class="sortable" data-sort="location">Location</th>
+              <th class="sortable" data-sort="status">Stage</th>
+              <th>Funding</th>
+              <th class="sortable" data-sort="value">Value</th>
+              <th>Services</th>
+            </tr>
+          </thead>
+          <tbody id="projects-tbody">
+            ${renderTableRows(opportunities, sectors)}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Borough Deep Dive -->
+      <div class="borough-deep-dive" id="borough-deep-dive">
+        <div class="section-header">
+          <h3 class="section-title">Borough Deep Dive</h3>
+          <select id="borough-selector" class="filter-select">
+            <option value="">Select Borough/District</option>
+            ${boroughs.map(b => `<option value="${b}">${b}</option>`).join('')}
+          </select>
+        </div>
+        <div id="borough-content" class="borough-content">
+          <p class="text-muted">Select a borough from the dropdown or click on the map to see detailed information.</p>
+        </div>
+      </div>
+
+      <!-- Sector Trends -->
+      ${regionData.sectorTrends ? renderSectorTrends(regionData.sectorTrends, sectors) : ''}
+    </section>
+  `;
+
+  // Setup event listeners
+  setupFilterListeners(container, opportunities, sectors);
+  setupBoroughSelector(container, opportunities, boroughCounts, sectors);
+  setupTableSorting(container, opportunities, sectors);
+  setupReadinessChips(container, opportunities, sectors);
+}
+
+function renderTableRows(opportunities, sectors) {
+  return opportunities.map(opp => {
+    const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
+    const status = STATUS_CONFIG[opp.status] || STATUS_CONFIG['planning'];
+    const sector = sectors.find(s => s.id === opp.sector);
+    const sectorColor = sector?.color || '#888888';
+
+    return `
+      <tr class="project-row" data-id="${opp.id}" data-sector="${opp.sector}"
+          data-readiness="${opp.readiness}" data-status="${opp.status}"
+          data-value="${opp.value}" data-borough="${opp.location?.borough || ''}">
+        <td>
+          <div class="project-title-cell">
+            <span class="project-name">${opp.title}</span>
+            ${opp.projectType ? `<span class="project-type badge-sm">${opp.projectType}</span>` : ''}
+          </div>
+        </td>
+        <td>
+          <span class="sector-badge" style="border-left: 3px solid ${sectorColor}">
+            ${sector?.name || opp.sector}
+          </span>
+        </td>
+        <td>
+          <div class="location-cell">
+            <span class="borough">${opp.location?.borough || '-'}</span>
+            ${opp.location?.area ? `<span class="area">${opp.location.area}</span>` : ''}
+          </div>
+        </td>
+        <td>
+          <span class="status-badge" style="background: ${status.color}20; color: ${status.color}; border-color: ${status.color}">
+            ${status.label}
+          </span>
+          ${opp.procurementStage ? `<span class="procurement-stage">${opp.procurementStage}</span>` : ''}
+        </td>
+        <td>
+          <div class="funding-cell">
+            <span class="readiness-indicator" style="color: ${readiness.color}">${readiness.icon}</span>
+            <span class="funding-text" title="${opp.fundingStatus || ''}">${truncate(opp.fundingStatus || '-', 30)}</span>
+          </div>
+        </td>
+        <td class="value-cell">
+          ${formatCurrency(opp.value)}
+        </td>
+        <td>
+          <div class="services-cell">
+            ${(opp.serviceRelevance || []).slice(0, 2).map(s =>
+              `<span class="service-tag">${abbreviateService(s)}</span>`
+            ).join('')}
+            ${(opp.serviceRelevance || []).length > 2 ?
+              `<span class="service-more">+${opp.serviceRelevance.length - 2}</span>` : ''}
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+function renderSectorTrends(trends, sectors) {
+  const trendEntries = Object.entries(trends);
+  if (!trendEntries.length) return '';
+
+  return `
+    <div class="sector-trends">
+      <h3 class="section-title mb-md">Sector Investment Outlook</h3>
+      <div class="trends-grid">
+        ${trendEntries.map(([sectorId, trend]) => {
+          const sector = sectors.find(s => s.id === sectorId);
+          const sectorColor = sector?.color || '#888888';
+          return `
+            <div class="trend-card" style="border-left: 4px solid ${sectorColor}">
+              <div class="trend-header">
+                <span class="trend-sector">${sector?.name || sectorId}</span>
+              </div>
+              <p class="trend-outlook">${trend.outlook || ''}</p>
+              ${trend.keyDrivers?.length ? `
+                <div class="trend-drivers">
+                  <span class="trend-label">Key Drivers:</span>
+                  ${trend.keyDrivers.map(d => `<span class="driver-tag">${d}</span>`).join('')}
+                </div>
+              ` : ''}
+              ${trend.risks?.length ? `
+                <div class="trend-risks">
+                  <span class="trend-label">Risks:</span>
+                  ${trend.risks.slice(0, 2).map(r => `<span class="risk-tag">${r}</span>`).join('')}
+                </div>
+              ` : ''}
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderBoroughContent(borough, opportunities, sectors) {
+  const boroughOpps = opportunities.filter(o => o.location?.borough === borough);
+  if (!boroughOpps.length) {
+    return `<p class="text-muted">No projects found in ${borough}.</p>`;
+  }
+
+  const totalValue = boroughOpps.reduce((sum, o) => sum + (o.value || 0), 0);
+  const readyCounts = countByField(boroughOpps, 'readiness');
+  const sectorBreakdown = countByField(boroughOpps, 'sector');
+  const topSector = Object.entries(sectorBreakdown).sort((a, b) => b[1] - a[1])[0];
+  const topSectorInfo = sectors.find(s => s.id === topSector?.[0]);
+
+  return `
+    <div class="borough-header">
+      <h4>${borough}</h4>
+    </div>
+    <div class="borough-kpis">
+      <div class="borough-kpi">
+        <div class="borough-kpi-value">${formatCurrency(totalValue)}</div>
+        <div class="borough-kpi-label">Total Value</div>
+      </div>
+      <div class="borough-kpi">
+        <div class="borough-kpi-value">${boroughOpps.length}</div>
+        <div class="borough-kpi-label">Projects</div>
+      </div>
+      <div class="borough-kpi">
+        <div class="borough-kpi-value">${topSectorInfo?.name || topSector?.[0] || '-'}</div>
+        <div class="borough-kpi-label">Top Sector</div>
+      </div>
+      <div class="borough-kpi">
+        <div class="borough-kpi-value">${readyCounts['ready-to-buy'] || 0}</div>
+        <div class="borough-kpi-label">Ready to Buy</div>
+      </div>
+    </div>
+    <div class="borough-projects">
+      <h5>Projects in ${borough}</h5>
+      <div class="borough-project-list">
+        ${boroughOpps.map(opp => {
+          const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
+          const sector = sectors.find(s => s.id === opp.sector);
+          return `
+            <div class="borough-project-item">
+              <div class="borough-project-main">
+                <span class="borough-project-name">${opp.title}</span>
+                <span class="borough-project-sector">(${sector?.name || opp.sector})</span>
+              </div>
+              <div class="borough-project-meta">
+                <span class="borough-project-value">${formatCurrency(opp.value)}</span>
+                <span class="borough-project-readiness" style="color: ${readiness.color}">${readiness.label}</span>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+    <div class="borough-sector-breakdown">
+      <h5>Sector Breakdown</h5>
+      <div class="borough-sector-bars">
+        ${Object.entries(sectorBreakdown)
+          .sort((a, b) => b[1] - a[1])
+          .map(([sectorId, count]) => {
+            const sector = sectors.find(s => s.id === sectorId);
+            const percentage = (count / boroughOpps.length) * 100;
+            return `
+              <div class="borough-sector-bar">
+                <div class="borough-sector-label">${sector?.name || sectorId}</div>
+                <div class="borough-sector-bar-track">
+                  <div class="borough-sector-bar-fill" style="width: ${percentage}%; background: ${sector?.color || '#888'}"></div>
+                </div>
+                <div class="borough-sector-count">${count}</div>
+              </div>
+            `;
+          }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+// Helper functions
+function countByField(items, field) {
+  return items.reduce((acc, item) => {
+    const value = item[field];
+    if (value) {
+      acc[value] = (acc[value] || 0) + 1;
+    }
+    return acc;
+  }, {});
+}
+
+function countByBorough(items) {
+  return items.reduce((acc, item) => {
+    const borough = item.location?.borough;
+    if (borough) {
+      if (!acc[borough]) {
+        acc[borough] = { count: 0, value: 0 };
+      }
+      acc[borough].count += 1;
+      acc[borough].value += item.value || 0;
+    }
+    return acc;
+  }, {});
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return 'Unknown';
+  const date = new Date(dateStr);
+  return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function truncate(str, len) {
+  if (!str) return '';
+  return str.length > len ? str.substring(0, len) + '...' : str;
+}
+
+function abbreviateService(service) {
+  const abbreviations = {
+    'Cost and Commercial Management': 'CCM',
+    'Project Management': 'PM',
+    'Programme Advisory': 'PA',
+    'P3M': 'P3M',
+    'NEC Supervisor': 'NEC',
+    'NEC Project Manager': 'NEC PM',
+    "Employer's Agent": 'EA'
+  };
+  return abbreviations[service] || service.split(' ').map(w => w[0]).join('');
+}
+
+// Event handlers
+function setupFilterListeners(container, allOpportunities, sectors) {
+  const filterSector = container.querySelector('#filter-sector');
+  const filterReadiness = container.querySelector('#filter-readiness');
+  const filterValue = container.querySelector('#filter-value');
+  const filterStatus = container.querySelector('#filter-status');
+  const clearBtn = container.querySelector('#clear-filters');
+  const tbody = container.querySelector('#projects-tbody');
+
+  function applyFilters() {
+    const sector = filterSector.value;
+    const readiness = filterReadiness.value;
+    const minValue = parseInt(filterValue.value) || 0;
+    const status = filterStatus.value;
+
+    const filtered = allOpportunities.filter(opp => {
+      if (sector && opp.sector !== sector) return false;
+      if (readiness && opp.readiness !== readiness) return false;
+      if (opp.value < minValue) return false;
+      if (status && opp.status !== status) return false;
+      return true;
+    });
+
+    tbody.innerHTML = renderTableRows(filtered, sectors);
+    setupRowClickHandlers(container, filtered, sectors);
+  }
+
+  filterSector.addEventListener('change', applyFilters);
+  filterReadiness.addEventListener('change', applyFilters);
+  filterValue.addEventListener('change', applyFilters);
+  filterStatus.addEventListener('change', applyFilters);
+
+  clearBtn.addEventListener('click', () => {
+    filterSector.value = '';
+    filterReadiness.value = '';
+    filterValue.value = '0';
+    filterStatus.value = '';
+    applyFilters();
+  });
+
+  setupRowClickHandlers(container, allOpportunities, sectors);
+}
+
+function setupRowClickHandlers(container, opportunities, sectors) {
+  const rows = container.querySelectorAll('.project-row');
+  rows.forEach(row => {
+    row.addEventListener('click', () => {
+      const borough = row.dataset.borough;
+      if (borough) {
+        const selector = container.querySelector('#borough-selector');
+        selector.value = borough;
+        selector.dispatchEvent(new Event('change'));
+
+        // Scroll to borough section
+        const boroughSection = container.querySelector('#borough-deep-dive');
+        boroughSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+}
+
+function setupBoroughSelector(container, opportunities, boroughCounts, sectors) {
+  const selector = container.querySelector('#borough-selector');
+  const content = container.querySelector('#borough-content');
+
+  selector.addEventListener('change', () => {
+    const borough = selector.value;
+    if (borough) {
+      content.innerHTML = renderBoroughContent(borough, opportunities, sectors);
+    } else {
+      content.innerHTML = '<p class="text-muted">Select a borough from the dropdown or click on the map to see detailed information.</p>';
+    }
+  });
+}
+
+function setupTableSorting(container, opportunities, sectors) {
+  const headers = container.querySelectorAll('.sortable');
+  let currentSort = { field: null, ascending: true };
+  const tbody = container.querySelector('#projects-tbody');
+
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const field = header.dataset.sort;
+
+      // Toggle direction if same field
+      if (currentSort.field === field) {
+        currentSort.ascending = !currentSort.ascending;
+      } else {
+        currentSort.field = field;
+        currentSort.ascending = true;
+      }
+
+      // Update header styles
+      headers.forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+      header.classList.add(currentSort.ascending ? 'sort-asc' : 'sort-desc');
+
+      // Sort opportunities
+      const sorted = [...opportunities].sort((a, b) => {
+        let aVal, bVal;
+
+        switch (field) {
+          case 'title':
+            aVal = a.title?.toLowerCase() || '';
+            bVal = b.title?.toLowerCase() || '';
+            break;
+          case 'sector':
+            aVal = a.sector || '';
+            bVal = b.sector || '';
+            break;
+          case 'location':
+            aVal = a.location?.borough?.toLowerCase() || '';
+            bVal = b.location?.borough?.toLowerCase() || '';
+            break;
+          case 'status':
+            aVal = a.status || '';
+            bVal = b.status || '';
+            break;
+          case 'value':
+            aVal = a.value || 0;
+            bVal = b.value || 0;
+            break;
+          default:
+            return 0;
+        }
+
+        if (aVal < bVal) return currentSort.ascending ? -1 : 1;
+        if (aVal > bVal) return currentSort.ascending ? 1 : -1;
+        return 0;
+      });
+
+      tbody.innerHTML = renderTableRows(sorted, sectors);
+      setupRowClickHandlers(container, sorted, sectors);
+    });
+  });
+}
+
+function setupReadinessChips(container, opportunities, sectors) {
+  const chips = container.querySelectorAll('.readiness-chip');
+  const filterReadiness = container.querySelector('#filter-readiness');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const readiness = chip.dataset.readiness;
+      filterReadiness.value = readiness;
+      filterReadiness.dispatchEvent(new Event('change'));
+    });
+  });
+}
+
+// Export helper for map integration
+export function selectBoroughFromMap(container, borough) {
+  const selector = container.querySelector('#borough-selector');
+  if (selector) {
+    selector.value = borough;
+    selector.dispatchEvent(new Event('change'));
+  }
+}
