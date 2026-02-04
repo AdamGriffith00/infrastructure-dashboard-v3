@@ -146,8 +146,14 @@ async function renderRegionDetail(container, region, allData) {
     (c.regions || []).includes(region.id) || (c.regions || []).includes('national')
   );
 
-  // Calculate sector breakdown for this region
-  const sectorBreakdown = calculateRegionSectorBreakdown(region, opportunities, allData.sectors || []);
+  // Get all clients for this region (used for sector breakdown)
+  const regionClients = (allData.clients || []).filter(c =>
+    (c.regions || []).includes(region.id)
+  );
+
+  // Calculate sector breakdown from CLIENT BUDGETS (not just opportunities)
+  // This gives the full picture including HS2's £56B, TfL's £12.8B, etc.
+  const sectorBreakdown = calculateClientSectorBreakdown(regionClients, allData.sectors || []);
 
   // Get subdivision display name
   const subdivisionType = getSubdivisionType(region.id);
@@ -220,11 +226,9 @@ async function renderRegionDetail(container, region, allData) {
           <div id="region-subdivision-map"></div>
         </div>
         <div class="region-detail-panel">
-          <div class="map-panel-title">Sector Breakdown</div>
+          <div class="map-panel-title">Sector Investment</div>
           <div class="region-sector-breakdown">
-            ${hasScannerData && regionalData ?
-              renderScannerSectorBreakdown(regionalData.opportunities, allData.sectors || []) :
-              renderSectorBreakdown(sectorBreakdown)}
+            ${renderSectorBreakdown(sectorBreakdown)}
           </div>
         </div>
       </div>
@@ -290,12 +294,7 @@ async function renderRegionDetail(container, region, allData) {
   // Render the regional subdivision map with client data
   const mapContainer = container.querySelector('#region-subdivision-map');
 
-  // Get all clients for this region and calculate total budget
-  const regionClients = (allData.clients || []).filter(c =>
-    (c.regions || []).includes(region.id)
-  );
-
-  // Calculate total budget for this region from clients
+  // Calculate total budget for this region from clients (regionClients already defined above)
   const totalRegionBudget = regionClients.reduce((sum, c) => sum + (c.budget10Year || 0), 0);
 
   // Calculate borough data from scanner opportunities for map coloring
@@ -360,30 +359,6 @@ async function renderRegionDetail(container, region, allData) {
   }
 }
 
-// Render sector breakdown from scanner opportunities
-function renderScannerSectorBreakdown(opportunities, sectors) {
-  const sectorMap = {};
-
-  // Aggregate from scanner opportunities
-  opportunities.forEach(opp => {
-    if (!sectorMap[opp.sector]) {
-      const sector = sectors.find(s => s.id === opp.sector);
-      sectorMap[opp.sector] = {
-        id: opp.sector,
-        name: sector?.name || opp.sector,
-        totalValue: 0,
-        opportunityCount: 0,
-        color: sector?.color || getSectorColor(opp.sector)
-      };
-    }
-    sectorMap[opp.sector].totalValue += opp.value || 0;
-    sectorMap[opp.sector].opportunityCount += 1;
-  });
-
-  const sectorBreakdown = Object.values(sectorMap).filter(s => s.totalValue > 0);
-  return renderSectorBreakdown(sectorBreakdown);
-}
-
 // Get the subdivision type name for a region
 function getSubdivisionType(regionId) {
   const types = {
@@ -403,7 +378,46 @@ function getSubdivisionType(regionId) {
   return types[regionId] || 'Subdivisions';
 }
 
-// Calculate sector breakdown for a region
+// Calculate sector breakdown from CLIENT BUDGETS (gives full investment picture)
+function calculateClientSectorBreakdown(regionClients, sectors) {
+  const sectorMap = {};
+
+  // Initialize all sectors from the sectors data
+  sectors.forEach(sector => {
+    sectorMap[sector.id] = {
+      id: sector.id,
+      name: sector.name,
+      totalValue: 0,
+      clientCount: 0,
+      color: sector.color || getSectorColor(sector.id)
+    };
+  });
+
+  // Aggregate client budgets by sector
+  regionClients.forEach(client => {
+    const sectorId = client.sector;
+    if (sectorId) {
+      // If sector exists in our map, add to it
+      if (sectorMap[sectorId]) {
+        sectorMap[sectorId].totalValue += client.budget10Year || 0;
+        sectorMap[sectorId].clientCount += 1;
+      } else {
+        // Create new sector entry for unmapped sectors
+        sectorMap[sectorId] = {
+          id: sectorId,
+          name: sectorId.charAt(0).toUpperCase() + sectorId.slice(1),
+          totalValue: client.budget10Year || 0,
+          clientCount: 1,
+          color: getSectorColor(sectorId)
+        };
+      }
+    }
+  });
+
+  return Object.values(sectorMap).filter(s => s.totalValue > 0);
+}
+
+// Calculate sector breakdown for a region (from opportunities - legacy)
 function calculateRegionSectorBreakdown(region, regionOpportunities, sectors) {
   const sectorMap = {};
 
@@ -441,6 +455,10 @@ function renderSectorBreakdown(sectorBreakdown) {
 
   return sorted.map(sector => {
     const percentage = ((sector.totalValue / maxValue) * 100).toFixed(0);
+    // Use clientCount if available, otherwise opportunityCount
+    const count = sector.clientCount ?? sector.opportunityCount ?? 0;
+    const countLabel = sector.clientCount !== undefined ? 'clients' : 'opportunities';
+
     return `
       <a href="#sectors/${sector.id}" class="sector-breakdown-item">
         <div class="sector-breakdown-header">
@@ -451,7 +469,7 @@ function renderSectorBreakdown(sectorBreakdown) {
         <div class="sector-breakdown-bar">
           <div class="sector-breakdown-fill" style="width: ${percentage}%; background: ${sector.color}"></div>
         </div>
-        <span class="sector-breakdown-count">${sector.opportunityCount} opportunities</span>
+        <span class="sector-breakdown-count">${count} ${countLabel}</span>
       </a>
     `;
   }).join('');
