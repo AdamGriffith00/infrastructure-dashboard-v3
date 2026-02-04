@@ -151,10 +151,6 @@ async function renderRegionDetail(container, region, allData) {
     (c.regions || []).includes(region.id)
   );
 
-  // Calculate sector breakdown from CLIENT BUDGETS (not just opportunities)
-  // This gives the full picture including HS2's £56B, TfL's £12.8B, etc.
-  const sectorBreakdown = calculateClientSectorBreakdown(regionClients, allData.sectors || []);
-
   // Get subdivision display name
   const subdivisionType = getSubdivisionType(region.id);
 
@@ -170,6 +166,14 @@ async function renderRegionDetail(container, region, allData) {
   // Calculate enhanced KPIs if scanner data available
   const scannerProjectCount = regionalData?.opportunities?.length || 0;
   const scannerTotalValue = regionalData?.opportunities?.reduce((sum, o) => sum + (o.value || 0), 0) || 0;
+
+  // Calculate sector breakdown combining CLIENT BUDGETS + SCANNER OPPORTUNITIES
+  // This gives the full picture: HS2's £56B from clients + Real Estate £53B from scanner
+  const sectorBreakdown = calculateCombinedSectorBreakdown(
+    regionClients,
+    regionalData?.opportunities || [],
+    allData.sectors || []
+  );
 
   container.innerHTML = `
     <div class="view-header">
@@ -378,7 +382,73 @@ function getSubdivisionType(regionId) {
   return types[regionId] || 'Subdivisions';
 }
 
-// Calculate sector breakdown from CLIENT BUDGETS (gives full investment picture)
+// Calculate sector breakdown combining CLIENT BUDGETS + SCANNER OPPORTUNITIES
+// This gives the complete picture: established sectors from clients + new sectors from scanner
+function calculateCombinedSectorBreakdown(regionClients, scannerOpportunities, sectors) {
+  const sectorMap = {};
+
+  // Initialize all sectors from the sectors data
+  sectors.forEach(sector => {
+    sectorMap[sector.id] = {
+      id: sector.id,
+      name: sector.name,
+      clientValue: 0,
+      scannerValue: 0,
+      totalValue: 0,
+      clientCount: 0,
+      projectCount: 0,
+      color: sector.color || getSectorColor(sector.id)
+    };
+  });
+
+  // Add client budgets by sector
+  regionClients.forEach(client => {
+    const sectorId = client.sector;
+    if (sectorId && sectorMap[sectorId]) {
+      sectorMap[sectorId].clientValue += client.budget10Year || 0;
+      sectorMap[sectorId].clientCount += 1;
+    }
+  });
+
+  // Add scanner opportunity values by sector (for sectors not covered by clients)
+  scannerOpportunities.forEach(opp => {
+    const sectorId = opp.sector;
+    if (sectorId) {
+      if (!sectorMap[sectorId]) {
+        // Create entry for sectors not in main sectors list
+        const sector = sectors.find(s => s.id === sectorId);
+        sectorMap[sectorId] = {
+          id: sectorId,
+          name: sector?.name || sectorId.charAt(0).toUpperCase() + sectorId.slice(1).replace(/-/g, ' '),
+          clientValue: 0,
+          scannerValue: 0,
+          totalValue: 0,
+          clientCount: 0,
+          projectCount: 0,
+          color: sector?.color || getSectorColor(sectorId)
+        };
+      }
+      sectorMap[sectorId].scannerValue += opp.value || 0;
+      sectorMap[sectorId].projectCount += 1;
+    }
+  });
+
+  // Calculate totals - use client value if available, otherwise scanner value
+  // This prevents double-counting for sectors that have both
+  Object.values(sectorMap).forEach(sector => {
+    // For sectors with client data, use client budgets (more comprehensive)
+    // For sectors without client data, use scanner project values
+    if (sector.clientValue > 0) {
+      sector.totalValue = sector.clientValue;
+    } else {
+      sector.totalValue = sector.scannerValue;
+    }
+  });
+
+  return Object.values(sectorMap).filter(s => s.totalValue > 0);
+}
+
+// Calculate sector breakdown from CLIENT BUDGETS only (legacy)
 function calculateClientSectorBreakdown(regionClients, sectors) {
   const sectorMap = {};
 
@@ -455,9 +525,16 @@ function renderSectorBreakdown(sectorBreakdown) {
 
   return sorted.map(sector => {
     const percentage = ((sector.totalValue / maxValue) * 100).toFixed(0);
-    // Use clientCount if available, otherwise opportunityCount
-    const count = sector.clientCount ?? sector.opportunityCount ?? 0;
-    const countLabel = sector.clientCount !== undefined ? 'clients' : 'opportunities';
+
+    // Determine what to show: clients (from client data) or projects (from scanner)
+    let countLabel = '';
+    if (sector.clientCount > 0) {
+      countLabel = `${sector.clientCount} clients`;
+    } else if (sector.projectCount > 0) {
+      countLabel = `${sector.projectCount} projects`;
+    } else if (sector.opportunityCount !== undefined) {
+      countLabel = `${sector.opportunityCount} opportunities`;
+    }
 
     return `
       <a href="#sectors/${sector.id}" class="sector-breakdown-item">
@@ -469,7 +546,7 @@ function renderSectorBreakdown(sectorBreakdown) {
         <div class="sector-breakdown-bar">
           <div class="sector-breakdown-fill" style="width: ${percentage}%; background: ${sector.color}"></div>
         </div>
-        <span class="sector-breakdown-count">${count} ${countLabel}</span>
+        ${countLabel ? `<span class="sector-breakdown-count">${countLabel}</span>` : ''}
       </a>
     `;
   }).join('');
