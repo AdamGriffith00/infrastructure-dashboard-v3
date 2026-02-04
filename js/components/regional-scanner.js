@@ -190,38 +190,37 @@ export function renderRegionalScanner(container, regionData, options = {}) {
         }).join('')}
       </div>
 
-      <!-- Project Table -->
-      <div class="scanner-table-container">
-        <table class="scanner-table" id="projects-table">
-          <thead>
-            <tr>
-              <th class="sortable" data-sort="title">Project</th>
-              <th class="sortable" data-sort="sector">Sector</th>
-              <th class="sortable" data-sort="location">Location</th>
-              <th class="sortable" data-sort="status">Stage</th>
-              <th>Funding</th>
-              <th class="sortable" data-sort="value">Value</th>
-              <th>Services</th>
-            </tr>
-          </thead>
-          <tbody id="projects-tbody">
-            ${renderTableRows(opportunities, sectors)}
-          </tbody>
-        </table>
+      <!-- Scanner Tabs -->
+      <div class="scanner-tabs">
+        <button class="scanner-tab active" data-tab="all-projects">All Projects</button>
+        <button class="scanner-tab" data-tab="by-area">By Area</button>
       </div>
 
-      <!-- Borough Deep Dive -->
-      <div class="borough-deep-dive" id="borough-deep-dive">
-        <div class="section-header">
-          <h3 class="section-title">Borough Deep Dive</h3>
-          <select id="borough-selector" class="filter-select">
-            <option value="">Select Borough/District</option>
-            ${boroughs.map(b => `<option value="${b}">${b}</option>`).join('')}
-          </select>
+      <!-- Tab Content: All Projects -->
+      <div class="scanner-tab-content active" id="tab-all-projects">
+        <div class="scanner-table-container">
+          <table class="scanner-table" id="projects-table">
+            <thead>
+              <tr>
+                <th class="sortable" data-sort="title">Project</th>
+                <th class="sortable" data-sort="sector">Sector</th>
+                <th class="sortable" data-sort="location">Location</th>
+                <th class="sortable" data-sort="status">Stage</th>
+                <th>Funding</th>
+                <th class="sortable" data-sort="value">Value</th>
+                <th>Services</th>
+              </tr>
+            </thead>
+            <tbody id="projects-tbody">
+              ${renderTableRows(opportunities, sectors)}
+            </tbody>
+          </table>
         </div>
-        <div id="borough-content" class="borough-content">
-          <p class="text-muted">Select a borough from the dropdown or click on the map to see detailed information.</p>
-        </div>
+      </div>
+
+      <!-- Tab Content: By Area -->
+      <div class="scanner-tab-content" id="tab-by-area">
+        ${renderAreaGrid(opportunities, boroughs, boroughCounts, sectors)}
       </div>
 
       <!-- Sector Trends -->
@@ -231,9 +230,10 @@ export function renderRegionalScanner(container, regionData, options = {}) {
 
   // Setup event listeners
   setupFilterListeners(container, opportunities, sectors);
-  setupBoroughSelector(container, opportunities, boroughCounts, sectors);
   setupTableSorting(container, opportunities, sectors);
   setupReadinessChips(container, opportunities, sectors);
+  setupTabSwitching(container);
+  setupAreaCardClicks(container, opportunities, sectors);
 }
 
 function renderTableRows(opportunities, sectors) {
@@ -335,6 +335,76 @@ function renderSectorTrends(trends, sectors) {
           `;
         }).join('')}
       </div>
+    </div>
+  `;
+}
+
+function renderAreaGrid(opportunities, boroughs, boroughCounts, sectors) {
+  if (!boroughs.length) {
+    return `<p class="text-muted">No area data available.</p>`;
+  }
+
+  // Sort boroughs by total value descending
+  const sortedBoroughs = [...boroughs].sort((a, b) => {
+    const aValue = boroughCounts[a]?.value || 0;
+    const bValue = boroughCounts[b]?.value || 0;
+    return bValue - aValue;
+  });
+
+  return `
+    <div class="area-grid">
+      ${sortedBoroughs.map(borough => {
+        const data = boroughCounts[borough] || { count: 0, value: 0 };
+        const boroughOpps = opportunities.filter(o => o.location?.borough === borough);
+        const sectorBreakdown = countByField(boroughOpps, 'sector');
+        const topSectors = Object.entries(sectorBreakdown)
+          .sort((a, b) => b[1] - a[1])
+          .slice(0, 3);
+        const readinessCounts = countByField(boroughOpps, 'readiness');
+        const readyCount = readinessCounts['ready-to-buy'] || 0;
+
+        return `
+          <div class="area-card" data-borough="${borough}">
+            <div class="area-card-header">
+              <h4 class="area-card-title">${borough}</h4>
+              <span class="area-card-value">${formatCurrency(data.value)}</span>
+            </div>
+            <div class="area-card-stats">
+              <div class="area-stat">
+                <span class="area-stat-value">${data.count}</span>
+                <span class="area-stat-label">Projects</span>
+              </div>
+              <div class="area-stat">
+                <span class="area-stat-value">${readyCount}</span>
+                <span class="area-stat-label">Ready</span>
+              </div>
+              <div class="area-stat">
+                <span class="area-stat-value">${Object.keys(sectorBreakdown).length}</span>
+                <span class="area-stat-label">Sectors</span>
+              </div>
+            </div>
+            <div class="area-card-sectors">
+              ${topSectors.map(([sectorId, count]) => {
+                const sector = sectors.find(s => s.id === sectorId);
+                return `<span class="area-sector-tag" style="border-left: 2px solid ${sector?.color || '#888'}">${sector?.name || sectorId} (${count})</span>`;
+              }).join('')}
+            </div>
+            <div class="area-card-projects">
+              ${boroughOpps.slice(0, 5).map(opp => {
+                const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
+                return `
+                  <div class="area-project-item">
+                    <span class="area-project-dot" style="color: ${readiness.color}">●</span>
+                    <span class="area-project-name">${truncate(opp.title, 35)}</span>
+                    <span class="area-project-value">${formatCurrency(opp.value)}</span>
+                  </div>
+                `;
+              }).join('')}
+              ${boroughOpps.length > 5 ? `<div class="area-project-more">+${boroughOpps.length - 5} more projects</div>` : ''}
+            </div>
+          </div>
+        `;
+      }).join('')}
     </div>
   `;
 }
@@ -615,11 +685,67 @@ function setupReadinessChips(container, opportunities, sectors) {
   });
 }
 
+function setupTabSwitching(container) {
+  const tabs = container.querySelectorAll('.scanner-tab');
+  const tabContents = container.querySelectorAll('.scanner-tab-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetTab = tab.dataset.tab;
+
+      // Update active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Update active content
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+        if (content.id === `tab-${targetTab}`) {
+          content.classList.add('active');
+        }
+      });
+    });
+  });
+}
+
+function setupAreaCardClicks(container, opportunities, sectors) {
+  const areaCards = container.querySelectorAll('.area-card');
+
+  areaCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const borough = card.dataset.borough;
+      if (!borough) return;
+
+      // Toggle expanded state
+      const isExpanded = card.classList.contains('expanded');
+
+      // Collapse all cards first
+      areaCards.forEach(c => c.classList.remove('expanded'));
+
+      if (!isExpanded) {
+        card.classList.add('expanded');
+
+        // Scroll card into view
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
+}
+
 // Export helper for map integration
 export function selectBoroughFromMap(container, borough) {
-  const selector = container.querySelector('#borough-selector');
-  if (selector) {
-    selector.value = borough;
-    selector.dispatchEvent(new Event('change'));
+  // Switch to By Area tab
+  const byAreaTab = container.querySelector('.scanner-tab[data-tab="by-area"]');
+  if (byAreaTab) {
+    byAreaTab.click();
+  }
+
+  // Find and expand the area card
+  const areaCard = container.querySelector(`.area-card[data-borough="${borough}"]`);
+  if (areaCard) {
+    // Collapse all cards first
+    container.querySelectorAll('.area-card').forEach(c => c.classList.remove('expanded'));
+    areaCard.classList.add('expanded');
+    areaCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

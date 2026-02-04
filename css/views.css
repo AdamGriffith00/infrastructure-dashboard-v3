@@ -5379,6 +5379,202 @@
   color: var(--text-muted);
 }
 
+/* Scanner Tabs */
+.scanner-tabs {
+  display: flex;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-dark);
+  padding-bottom: var(--space-xs);
+}
+
+.scanner-tab {
+  padding: var(--space-sm) var(--space-lg);
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.scanner-tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.scanner-tab.active {
+  color: var(--gleeds-yellow);
+  background: var(--bg-card);
+}
+
+.scanner-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gleeds-yellow);
+}
+
+/* Tab Content */
+.scanner-tab-content {
+  display: none;
+}
+
+.scanner-tab-content.active {
+  display: block;
+}
+
+/* Area Grid */
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-md);
+}
+
+.area-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.area-card:hover {
+  border-color: var(--gleeds-yellow);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.area-card.expanded {
+  grid-column: 1 / -1;
+  border-color: var(--gleeds-yellow);
+}
+
+.area-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+}
+
+.area-card-title {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.area-card-value {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--gleeds-yellow);
+}
+
+.area-card-stats {
+  display: flex;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.area-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.area-stat-value {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.area-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.area-card-sectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.area-sector-tag {
+  font-size: 0.75rem;
+  padding: 4px 8px 4px 10px;
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+}
+
+.area-card-projects {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.area-project-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.area-project-item:last-child {
+  border-bottom: none;
+}
+
+.area-project-dot {
+  font-size: 0.6rem;
+  flex-shrink: 0;
+}
+
+.area-project-name {
+  flex: 1;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.area-project-value {
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.area-project-more {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: var(--space-xs) 0;
+  font-style: italic;
+}
+
+/* Expanded area card shows full project list */
+.area-card.expanded .area-card-projects {
+  max-height: none;
+}
+
+.area-card.expanded .area-project-more {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .scanner-filters {
@@ -5416,5 +5612,17 @@
 
   .borough-sector-bar {
     grid-template-columns: 100px 1fr 30px;
+  }
+
+  .area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scanner-tabs {
+    overflow-x: auto;
+  }
+
+  .area-card-stats {
+    gap: var(--space-md);
   }
 }
