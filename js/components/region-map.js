@@ -116,45 +116,38 @@ function calculateBounds(features) {
 }
 
 /**
- * Get color based on value intensity using logarithmic scale
- * This makes smaller differences more visible
+ * Get color based on value intensity
+ * Uses a bright, clearly visible color scale
  */
 function getIntensityColor(value, maxValue, colorScheme = 'yellow', minValue = 0) {
-    // No data - return dark gray
-    if (!value || value === 0) return '#3A3A3A';
+    // No data - return dark gray (only for truly empty areas)
+    if (!value || value === 0) return '#4A4A4A';
 
-    // Use logarithmic scale to better show differences
-    const logMin = minValue > 0 ? Math.log(minValue) : Math.log(1);
-    const logMax = Math.log(Math.max(maxValue, 1));
-    const logValue = Math.log(Math.max(value, 1));
+    // Calculate intensity as percentage between min and max
+    const range = maxValue - minValue;
+    let intensity = range > 0 ? (value - minValue) / range : 0.5;
+    // Ensure all values are visible - minimum 20% intensity
+    intensity = Math.max(0.2, Math.min(intensity, 1));
 
-    // Calculate intensity on log scale
-    let intensity = (logValue - logMin) / (logMax - logMin || 1);
-    // Clamp between 0 and 1, but ensure minimum 0.25 so lowest values are still visible
-    intensity = Math.max(0.25, Math.min(intensity, 1));
-
-    // Color schemes - all start from visible colors (not black)
+    // Bright color schemes - clearly visible on dark background
     const schemes = {
-        // Yellow/gold heatmap - tan (low) to bright orange (high)
+        // Yellow/gold heatmap - light gold (low) to bright orange (high)
         yellow: [
-            '#6B5B3D',  // 0 - lowest (visible tan/brown)
-            '#7A6840',  // 1
-            '#8A7545',  // 2
-            '#9A824A',  // 3
-            '#AA8F50',  // 4
-            '#BA9C55',  // 5
-            '#C9A550',  // 6
-            '#D8A845',  // 7
-            '#E7A535',  // 8
-            '#F59E20',  // 9
-            '#FF9500',  // 10
-            '#FF8500',  // 11
-            '#FF7500',  // 12
-            '#FF6500',  // 13 - highest (bright orange)
+            '#8B7355',  // 0 - lowest (clearly visible tan)
+            '#9C8050',  // 1
+            '#AD8D4B',  // 2
+            '#BE9A46',  // 3
+            '#CFA741',  // 4
+            '#E0B43C',  // 5 - middle (bright gold)
+            '#EBB030',  // 6
+            '#F5A825',  // 7
+            '#FF9F1A',  // 8
+            '#FF900F',  // 9
+            '#FF8000',  // 10 - high (bright orange)
         ],
-        copper: ['#5B4030', '#6B4525', '#7B5020', '#9B5B25', '#BB6530', '#DA4F27'],
-        green: ['#3D5025', '#4D6020', '#5D7020', '#6D8025', '#7D9028', '#4CAF50'],
-        blue: ['#2A4560', '#3A5570', '#4A6580', '#5A7590', '#6A85A0', '#5A9BD4']
+        copper: ['#8B6040', '#9B6535', '#AB702A', '#CB7B20', '#EB8515', '#FF9000'],
+        green: ['#5A7B45', '#6A8B3A', '#7A9B30', '#8AAB25', '#9ABB1A', '#AAD010'],
+        blue: ['#4A6585', '#5A7595', '#6A85A5', '#7A95B5', '#8AA5C5', '#9AB5D5']
     };
 
     const colors = schemes[colorScheme] || schemes.yellow;
