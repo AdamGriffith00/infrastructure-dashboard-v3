@@ -220,24 +220,72 @@ Major update to all city region combined authority transport data with full prog
 - **Expected columns:** Name, Client, Sector, Region
 - **Region normalization:** Handles various region name formats (e.g., "North West", "north-west", "Northwest")
 
+### 2026-02-05: Regional Opportunities Scanner (London & South East)
+Major new feature for comprehensive project scanning across regions:
+
+**New Sectors Added** (`data/sectors.json`):
+- Real Estate (pink) - Commercial, Residential, Mixed-Use, Retail
+- Defence (grey) - MOD Estate, Naval, Air Bases, Facilities
+- Data Centres (indigo) - Hyperscale, Colocation, Edge
+- Infrastructure (brown) - Flood Defence, Waste, Public Realm, Education, Healthcare
+
+**Regional Scanner Component** (`js/components/regional-scanner.js`):
+- 70+ researched projects for London & South East (£3M+ value, 2026-2035)
+- Data stored in `data/regional-opportunities/london-south-east.json`
+- **Scanner Tabs**:
+  - "All Projects" - Filterable table with all opportunities
+  - "By Area" - Borough/district cards grid view
+- **Filters**: Sector, Readiness, Min Value, Status
+- **Readiness indicators**: Ready to Buy (green), Has Money Not Ready (amber), No Money (grey)
+- **Source type badges**: Scanned (purple), Pipeline (blue), Client (green)
+- Combined data sources: scanner opportunities + legacy opportunities + clients
+
+**Area Cards** (By Area tab):
+- Shows each borough with: Total value, Project count, Ready count, Sector count
+- Top 3 sectors with color indicators
+- Top 5 projects with readiness dots
+- "+X more projects" toggle to expand full list
+- Each project shows sector badge
+
+**Opportunity Detail Modal**:
+- Click any opportunity to open detail modal (not external link)
+- Shows everything needed for bid/no-bid decision:
+  - Title, sector, location
+  - Key metrics: Value, Est. Staff (consultancy perspective), Timeline, Readiness
+  - Status badges (procurement stage, project type)
+  - Overview/description
+  - Funding status (highlighted)
+  - Key drivers (tags)
+  - Relevant services (CCM, PM, EA, etc.)
+  - Quick Assessment checklist (Client Ready, In Procurement, Public Tender, Multi-Service)
+  - "View Source" button links to external info
+- Staff estimates based on value: <£50M (2-5), £50-200M (5-15), £200-500M (10-25), £500M-1B (20-50), >£1B (50+)
+- Close with X, click outside, or Escape key
+
+**Heatmap Improvements** (`js/components/region-map.js`):
+- Fixed color scale to use bright warm colors (tan → gold → orange)
+- Simplified tooltips: Budget, Opportunities/Clients count, Sectors count
+- Combined borough data from clients + scanner opportunities for accurate coloring
+
+**Map Integration**:
+- Clicking borough on map switches to "By Area" tab and highlights the card
+- Cards auto-expand when selected from map
+
 ## Next Session - Continue With:
-1. **Intelligence Features**: AI-powered bid insights, competitor analysis, win probability
-2. **Analysis Tools**: Filtering, sorting, export capabilities
-3. **Visualisations**: Gantt chart view, calendar view for deadlines
-4. **PRIORITY: Comprehensive Data Research** - Deep dive into core infrastructure sectors to ensure complete coverage. Focus on:
-   - **Rail**: All Network Rail routes, TOCs, metros, trams, light rail (CP7 data mostly complete)
-   - **Highways**: All National Highways regions, local authority major schemes (RIS3 complete)
-   - **Aviation**: All UK airports - regional airports may need more detail
-   - **Maritime**: All major ports, coastal infrastructure, offshore wind ports
-   - **Utilities**: Water (AMP8 complete), energy networks (transmission & distribution), nuclear
-   - **Buses/Coaches**: Bus franchising, depot infrastructure, ZEBRA funding
+1. **Expand Regional Scanner** to other regions (North West, Midlands, etc.)
+2. **Intelligence Features**: AI-powered bid insights, competitor analysis, win probability
+3. **Analysis Tools**: Filtering, sorting, export capabilities
+4. **Visualisations**: Gantt chart view, calendar view for deadlines
 
 ## Key Files
-- `js/views/pipeline.js` - Pipeline & Timeline view (NEW)
+- `js/views/pipeline.js` - Pipeline & Timeline view
 - `js/views/sources.js` - Data Sources view
 - `js/views/regions.js` - Regions view with UK map and regional detail pages
+- `js/components/regional-scanner.js` - Regional opportunities scanner with tabs, filters, modal (NEW)
 - `js/components/region-map.js` - Regional subdivision map component (boroughs, districts, etc.)
 - `js/components/uk-map.js` - Main UK map component
-- `css/views.css` - View-specific styles including map layouts
+- `css/views.css` - View-specific styles including scanner and modal styles
 - `css/components.css` - Reusable component styles
 - `data/opportunities.json` - Opportunities with full pipeline data
+- `data/regional-opportunities/london-south-east.json` - Scanner data for London & SE (NEW)
+- `data/sectors.json` - Sector definitions including new sectors (NEW)
