@@ -5630,6 +5630,330 @@ a.area-project-item:hover .area-project-name {
   display: inline;
 }
 
+/* Clickable opportunities */
+.clickable-opp {
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.clickable-opp:hover {
+  color: var(--gleeds-yellow) !important;
+}
+
+.area-project-item.clickable-opp {
+  padding: var(--space-xs);
+  margin: 0 calc(-1 * var(--space-xs));
+  border-radius: var(--radius-sm);
+}
+
+.area-project-item.clickable-opp:hover {
+  background: var(--bg-hover);
+}
+
+/* ========================================
+   OPPORTUNITY DETAIL MODAL
+   ======================================== */
+
+.opp-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+
+.opp-modal-overlay.visible {
+  display: flex;
+}
+
+.opp-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-lg);
+  max-width: 550px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+}
+
+.opp-modal-close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: var(--bg-darker);
+  border: 1px solid var(--border-dark);
+  color: var(--text-secondary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  z-index: 1;
+  line-height: 1;
+}
+
+.opp-modal-close:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--gleeds-yellow);
+}
+
+.opp-modal-content {
+  padding: var(--space-lg);
+}
+
+/* Detail Header */
+.opp-detail-header {
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.opp-detail-sector {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.opp-detail-title {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-xs) 0;
+  line-height: 1.3;
+  padding-right: var(--space-xl);
+}
+
+.opp-detail-location {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Key Metrics */
+.opp-detail-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+  padding: var(--space-md);
+  background: var(--bg-darker);
+  border-radius: var(--radius-md);
+}
+
+.opp-metric {
+  text-align: center;
+}
+
+.opp-metric-value {
+  font-size: 0.95rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.opp-metric-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Status Bar */
+.opp-detail-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+}
+
+.opp-status-badge,
+.opp-stage-badge,
+.opp-type-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.opp-stage-badge {
+  background: var(--bg-darker);
+  color: var(--text-secondary);
+}
+
+.opp-type-badge {
+  background: var(--bg-darker);
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+
+/* Detail Sections */
+.opp-detail-section {
+  margin-bottom: var(--space-md);
+}
+
+.opp-detail-section h4 {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 var(--space-xs) 0;
+}
+
+.opp-detail-section p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.opp-funding {
+  padding: var(--space-sm);
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--gleeds-yellow);
+}
+
+.opp-tender-note {
+  margin-top: var(--space-xs) !important;
+  padding: var(--space-sm);
+  background: rgba(245, 158, 11, 0.1);
+  border-radius: var(--radius-sm);
+  color: #F59E0B !important;
+  font-size: 0.85rem !important;
+}
+
+/* Tags */
+.opp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.opp-tag {
+  padding: 4px 10px;
+  background: var(--bg-darker);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+/* Services */
+.opp-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.opp-service {
+  padding: 5px 10px;
+  background: rgba(247, 196, 0, 0.1);
+  border: 1px solid rgba(247, 196, 0, 0.3);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--gleeds-yellow);
+}
+
+/* Quick Assessment */
+.opp-assessment {
+  background: var(--bg-darker);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+}
+
+.opp-assessment h4 {
+  margin-bottom: var(--space-sm) !important;
+}
+
+.opp-assessment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.opp-check {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+.opp-check.yes {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+}
+
+.opp-check.maybe {
+  background: var(--bg-card);
+  color: var(--text-muted);
+}
+
+.opp-check.no {
+  background: rgba(239, 68, 68, 0.1);
+  color: #EF4444;
+}
+
+.check-icon {
+  font-weight: var(--font-weight-bold);
+  width: 16px;
+  text-align: center;
+}
+
+/* Action Buttons */
+.opp-detail-actions {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-dark);
+}
+
+.opp-source-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: var(--space-sm) var(--space-md);
+}
+
+/* Modal Responsive */
+@media (max-width: 550px) {
+  .opp-modal {
+    max-height: 90vh;
+  }
+
+  .opp-detail-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .opp-assessment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .opp-detail-title {
+    font-size: 1.1rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .scanner-filters {

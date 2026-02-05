@@ -226,6 +226,14 @@ export function renderRegionalScanner(container, regionData, options = {}) {
       <!-- Sector Trends -->
       ${regionData.sectorTrends ? renderSectorTrends(regionData.sectorTrends, sectors) : ''}
     </section>
+
+    <!-- Opportunity Detail Modal -->
+    <div class="opp-modal-overlay" id="opp-modal-overlay">
+      <div class="opp-modal" id="opp-modal">
+        <button class="opp-modal-close" id="opp-modal-close">&times;</button>
+        <div class="opp-modal-content" id="opp-modal-content"></div>
+      </div>
+    </div>
   `;
 
   // Setup event listeners
@@ -234,6 +242,7 @@ export function renderRegionalScanner(container, regionData, options = {}) {
   setupReadinessChips(container, opportunities, sectors);
   setupTabSwitching(container);
   setupAreaCardClicks(container, opportunities, sectors);
+  setupOpportunityModal(container, opportunities, sectors);
 }
 
 function renderTableRows(opportunities, sectors) {
@@ -258,11 +267,7 @@ function renderTableRows(opportunities, sectors) {
           data-source-type="${opp.sourceType || 'scanner'}">
         <td>
           <div class="project-title-cell">
-            ${opp.sourceLink ? `
-              <a href="${opp.sourceLink}" target="_blank" rel="noopener noreferrer" class="project-name project-link" title="${opp.title}">${opp.title}</a>
-            ` : `
-              <a href="https://www.google.com/search?q=${encodeURIComponent(opp.title + ' UK infrastructure')}" target="_blank" rel="noopener noreferrer" class="project-name project-link" title="${opp.title}">${opp.title}</a>
-            `}
+            <span class="project-name clickable-opp" data-opp-id="${opp.id}" title="${opp.title}">${opp.title}</span>
             <span class="source-type-badge" style="background: ${sourceType.color}20; color: ${sourceType.color}">${sourceType.label}</span>
           </div>
         </td>
@@ -346,23 +351,14 @@ function renderSectorTrends(trends, sectors) {
 function renderAreaProjectItem(opp, sectors) {
   const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
   const sector = sectors.find(s => s.id === opp.sector);
-  const hasLink = opp.sourceLink || opp.source;
-  const linkUrl = opp.sourceLink || '#';
-
-  // Build a search URL as fallback if no direct link
-  const searchQuery = encodeURIComponent(`${opp.title} UK infrastructure`);
-  const fallbackUrl = `https://www.google.com/search?q=${searchQuery}`;
-  const finalUrl = opp.sourceLink || fallbackUrl;
 
   return `
-    <a href="${finalUrl}" target="_blank" rel="noopener noreferrer"
-       class="area-project-item ${hasLink ? 'has-link' : ''}"
-       title="${opp.title}">
+    <div class="area-project-item clickable-opp" data-opp-id="${opp.id}" title="${opp.title}">
       <span class="area-project-dot" style="color: ${readiness.color}">●</span>
       <span class="area-project-name">${truncate(opp.title, 30)}</span>
       <span class="area-project-sector" style="border-left: 2px solid ${sector?.color || '#888'}">${sector?.name || opp.sector || 'Unknown'}</span>
       <span class="area-project-value">${formatCurrency(opp.value)}</span>
-    </a>
+    </div>
   `;
 }
 
@@ -752,6 +748,189 @@ function setupAreaCardClicks(container, opportunities, sectors) {
       }
     });
   });
+}
+
+function setupOpportunityModal(container, opportunities, sectors) {
+  const overlay = container.querySelector('#opp-modal-overlay');
+  const modal = container.querySelector('#opp-modal');
+  const content = container.querySelector('#opp-modal-content');
+  const closeBtn = container.querySelector('#opp-modal-close');
+
+  if (!overlay || !modal || !content || !closeBtn) return;
+
+  // Close modal handlers
+  closeBtn.addEventListener('click', () => {
+    overlay.classList.remove('visible');
+  });
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove('visible');
+    }
+  });
+
+  // Escape key to close
+  const escHandler = (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('visible')) {
+      overlay.classList.remove('visible');
+    }
+  };
+  document.addEventListener('keydown', escHandler);
+
+  // Click handlers for opportunities
+  container.addEventListener('click', (e) => {
+    const clickableOpp = e.target.closest('.clickable-opp');
+    if (!clickableOpp) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    const oppId = clickableOpp.dataset.oppId;
+    const opp = opportunities.find(o => o.id === oppId);
+
+    if (opp) {
+      content.innerHTML = renderOpportunityDetail(opp, sectors);
+      overlay.classList.add('visible');
+    }
+  });
+}
+
+function renderOpportunityDetail(opp, sectors) {
+  const readiness = READINESS_CONFIG[opp.readiness] || READINESS_CONFIG['no-money-not-ready'];
+  const status = STATUS_CONFIG[opp.status] || STATUS_CONFIG['planning'];
+  const sector = sectors.find(s => s.id === opp.sector);
+
+  // Estimate staff based on value (rough heuristic)
+  const valueInMillions = (opp.value || 0) / 1000000;
+  let staffEstimate = '';
+  if (valueInMillions < 50) {
+    staffEstimate = '2-5';
+  } else if (valueInMillions < 200) {
+    staffEstimate = '5-15';
+  } else if (valueInMillions < 500) {
+    staffEstimate = '10-25';
+  } else if (valueInMillions < 1000) {
+    staffEstimate = '20-50';
+  } else {
+    staffEstimate = '50+';
+  }
+
+  // Calculate timeline
+  const timeline = opp.estimatedStart && opp.estimatedEnd
+    ? `${opp.estimatedStart} - ${opp.estimatedEnd}`
+    : opp.estimatedStart || 'TBC';
+
+  // Build search URL as fallback
+  const searchQuery = encodeURIComponent(`${opp.title} UK infrastructure`);
+  const searchUrl = `https://www.google.com/search?q=${searchQuery}`;
+  const sourceUrl = opp.sourceLink || searchUrl;
+
+  return `
+    <div class="opp-detail">
+      <!-- Header -->
+      <div class="opp-detail-header">
+        <div class="opp-detail-sector" style="background: ${sector?.color || '#888'}20; color: ${sector?.color || '#888'}; border-color: ${sector?.color || '#888'}">
+          ${sector?.name || opp.sector || 'Unknown'}
+        </div>
+        <h2 class="opp-detail-title">${opp.title}</h2>
+        <div class="opp-detail-location">
+          ${opp.location?.borough || ''}${opp.location?.area ? `, ${opp.location.area}` : ''}
+        </div>
+      </div>
+
+      <!-- Key Metrics -->
+      <div class="opp-detail-metrics">
+        <div class="opp-metric">
+          <div class="opp-metric-value">${formatCurrency(opp.value)}</div>
+          <div class="opp-metric-label">Value</div>
+        </div>
+        <div class="opp-metric">
+          <div class="opp-metric-value">${staffEstimate}</div>
+          <div class="opp-metric-label">Est. Staff</div>
+        </div>
+        <div class="opp-metric">
+          <div class="opp-metric-value">${timeline}</div>
+          <div class="opp-metric-label">Timeline</div>
+        </div>
+        <div class="opp-metric">
+          <div class="opp-metric-value" style="color: ${readiness.color}">${readiness.label.split(',')[0]}</div>
+          <div class="opp-metric-label">Readiness</div>
+        </div>
+      </div>
+
+      <!-- Status -->
+      <div class="opp-detail-status">
+        <span class="opp-status-badge" style="background: ${status.color}20; color: ${status.color}">${status.label}</span>
+        ${opp.procurementStage ? `<span class="opp-stage-badge">${opp.procurementStage}</span>` : ''}
+        ${opp.projectType ? `<span class="opp-type-badge">${opp.projectType}</span>` : ''}
+      </div>
+
+      <!-- Description -->
+      ${opp.description ? `
+        <div class="opp-detail-section">
+          <h4>Overview</h4>
+          <p>${opp.description}</p>
+        </div>
+      ` : ''}
+
+      <!-- Funding -->
+      <div class="opp-detail-section">
+        <h4>Funding</h4>
+        <p class="opp-funding">${opp.fundingStatus || 'Not specified'}</p>
+        ${opp.externalTenderNote ? `<p class="opp-tender-note">⚠️ ${opp.externalTenderNote}</p>` : ''}
+      </div>
+
+      <!-- Key Drivers -->
+      ${opp.keyDrivers?.length ? `
+        <div class="opp-detail-section">
+          <h4>Key Drivers</h4>
+          <div class="opp-tags">
+            ${opp.keyDrivers.map(d => `<span class="opp-tag">${d}</span>`).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      <!-- Services -->
+      ${opp.serviceRelevance?.length ? `
+        <div class="opp-detail-section">
+          <h4>Relevant Services</h4>
+          <div class="opp-services">
+            ${opp.serviceRelevance.map(s => `<span class="opp-service">${s}</span>`).join('')}
+          </div>
+        </div>
+      ` : ''}
+
+      <!-- Quick Assessment -->
+      <div class="opp-detail-section opp-assessment">
+        <h4>Quick Assessment</h4>
+        <div class="opp-assessment-grid">
+          <div class="opp-check ${opp.readiness === 'ready-to-buy' ? 'yes' : opp.readiness === 'has-money-not-ready' ? 'maybe' : 'no'}">
+            <span class="check-icon">${opp.readiness === 'ready-to-buy' ? '✓' : opp.readiness === 'has-money-not-ready' ? '○' : '✗'}</span>
+            <span>Client Ready</span>
+          </div>
+          <div class="opp-check ${opp.status === 'procurement' || opp.status === 'pre-procurement' ? 'yes' : 'maybe'}">
+            <span class="check-icon">${opp.status === 'procurement' ? '✓' : '○'}</span>
+            <span>In Procurement</span>
+          </div>
+          <div class="opp-check ${opp.projectType === 'public' ? 'yes' : 'maybe'}">
+            <span class="check-icon">${opp.projectType === 'public' ? '✓' : '○'}</span>
+            <span>Public Tender</span>
+          </div>
+          <div class="opp-check ${opp.serviceRelevance?.length >= 2 ? 'yes' : 'maybe'}">
+            <span class="check-icon">${opp.serviceRelevance?.length >= 2 ? '✓' : '○'}</span>
+            <span>Multi-Service</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action -->
+      <div class="opp-detail-actions">
+        <a href="${sourceUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary opp-source-btn">
+          ${opp.sourceLink ? 'View Source' : 'Search Online'} →
+        </a>
+      </div>
+    </div>
+  `;
 }
 
 // Export helper for map integration
