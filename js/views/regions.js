@@ -165,14 +165,17 @@ async function renderRegionDetail(container, region, allData) {
 
   // Calculate enhanced KPIs if scanner data available
   const scannerProjectCount = regionalData?.opportunities?.length || 0;
-  const scannerTotalValue = regionalData?.opportunities?.reduce((sum, o) => sum + (o.value || 0), 0) || 0;
+  const scannerOpps = regionalData?.opportunities || [];
+  const allSectors = allData.sectors || [];
 
   // Calculate sector breakdown combining CLIENT BUDGETS + SCANNER OPPORTUNITIES
   // This gives the full picture: HS2's £56B from clients + Real Estate £53B from scanner
-  const sectorBreakdown = calculateCombinedSectorBreakdown(
+  let currentTimeframe = '10year';
+  let sectorBreakdown = calculateCombinedSectorBreakdown(
     regionClients,
-    regionalData?.opportunities || [],
-    allData.sectors || []
+    scannerOpps,
+    allSectors,
+    currentTimeframe
   );
 
   container.innerHTML = `
@@ -187,36 +190,32 @@ async function renderRegionDetail(container, region, allData) {
       <p class="view-subtitle">${region.strategicFocus || ''}</p>
     </div>
 
-    <!-- Region KPIs -->
+    <!-- Region KPIs with Timeframe Toggle -->
     <section class="section">
-      <div class="kpi-grid">
-        <div class="kpi-card">
-          <div class="kpi-label">10-Year Budget</div>
-          <div class="kpi-value">${formatCurrency(region.budget10Year || 0)}</div>
+      <div class="region-kpi-bar">
+        <div class="btn-group region-timeframe-toggle">
+          <button class="btn" data-timeframe="2026">2026</button>
+          <button class="btn" data-timeframe="5year">5-Year</button>
+          <button class="btn btn-active" data-timeframe="10year">10-Year</button>
         </div>
-        <div class="kpi-card">
-          <div class="kpi-label">2026 Spend</div>
-          <div class="kpi-value">${formatCurrency(region.budget2026 || 0)}</div>
+        <div class="kpi-grid" id="region-kpis">
+          <div class="kpi-card">
+            <div class="kpi-label">Total Spend</div>
+            <div class="kpi-value" id="kpi-total-spend">${formatCurrency(sectorBreakdown.reduce((sum, s) => sum + s.totalValue, 0))}</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Projects</div>
+            <div class="kpi-value">${scannerProjectCount || opportunities.length}</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Active Clients</div>
+            <div class="kpi-value">${regionClients.length}</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">Sectors</div>
+            <div class="kpi-value" id="kpi-sectors">${sectorBreakdown.length}</div>
+          </div>
         </div>
-        ${hasScannerData && scannerProjectCount > 0 ? `
-          <div class="kpi-card">
-            <div class="kpi-label">Scanned Projects</div>
-            <div class="kpi-value">${scannerProjectCount}</div>
-          </div>
-          <div class="kpi-card">
-            <div class="kpi-label">Pipeline Value</div>
-            <div class="kpi-value">${formatCurrency(scannerTotalValue)}</div>
-          </div>
-        ` : `
-          <div class="kpi-card">
-            <div class="kpi-label">Current Opportunities</div>
-            <div class="kpi-value">${opportunities.length}</div>
-          </div>
-          <div class="kpi-card">
-            <div class="kpi-label">Key Clients</div>
-            <div class="kpi-value">${clients.length}</div>
-          </div>
-        `}
       </div>
     </section>
 
@@ -344,6 +343,39 @@ async function renderRegionDetail(container, region, allData) {
     }
   }
 
+  // Setup timeframe toggle
+  const timeframeBtns = container.querySelectorAll('.region-timeframe-toggle .btn');
+  timeframeBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const timeframe = btn.dataset.timeframe;
+      if (timeframe === currentTimeframe) return;
+      currentTimeframe = timeframe;
+
+      // Update active button
+      timeframeBtns.forEach(b => b.classList.remove('btn-active'));
+      btn.classList.add('btn-active');
+
+      // Recalculate sector breakdown with new timeframe
+      sectorBreakdown = calculateCombinedSectorBreakdown(
+        regionClients,
+        scannerOpps,
+        allSectors,
+        currentTimeframe
+      );
+
+      // Update KPIs
+      const totalSpend = sectorBreakdown.reduce((sum, s) => sum + s.totalValue, 0);
+      container.querySelector('#kpi-total-spend').textContent = formatCurrency(totalSpend);
+      container.querySelector('#kpi-sectors').textContent = sectorBreakdown.length;
+
+      // Re-render sector breakdown sidebar
+      const sectorContainer = container.querySelector('.region-sector-breakdown');
+      if (sectorContainer) {
+        sectorContainer.innerHTML = renderSectorBreakdown(sectorBreakdown);
+      }
+    });
+  });
+
   // Setup Explore Region button
   const exploreBtn = container.querySelector('#btn-explore-region');
   if (exploreBtn) {
@@ -376,9 +408,25 @@ function getSubdivisionType(regionId) {
   return types[regionId] || 'Subdivisions';
 }
 
+// Get client budget for a given timeframe
+function getTimeframeValue(client, timeframe) {
+  if (timeframe === '2026') return client.budget2026 || 0;
+  if (timeframe === '5year') return (client.budget10Year || 0) * 0.5;
+  return client.budget10Year || 0; // 10year default
+}
+
+// Get scanner opportunity value pro-rated for a given timeframe
+function getOppTimeframeValue(opp, timeframe) {
+  const totalValue = opp.value || 0;
+  const duration = Math.max(1, (parseInt(opp.estimatedEnd) || 2030) - (parseInt(opp.estimatedStart) || 2025));
+  if (timeframe === '2026') return totalValue / duration;  // 1 year
+  if (timeframe === '5year') return Math.min(totalValue, (totalValue / duration) * 5);
+  return totalValue; // 10year = full value
+}
+
 // Calculate sector breakdown combining CLIENT BUDGETS + SCANNER OPPORTUNITIES
 // This gives the complete picture: established sectors from clients + new sectors from scanner
-function calculateCombinedSectorBreakdown(regionClients, scannerOpportunities, sectors) {
+function calculateCombinedSectorBreakdown(regionClients, scannerOpportunities, sectors, timeframe = '10year') {
   const sectorMap = {};
 
   // Initialize all sectors from the sectors data
@@ -399,7 +447,7 @@ function calculateCombinedSectorBreakdown(regionClients, scannerOpportunities, s
   regionClients.forEach(client => {
     const sectorId = client.sector;
     if (sectorId && sectorMap[sectorId]) {
-      sectorMap[sectorId].clientValue += client.budget10Year || 0;
+      sectorMap[sectorId].clientValue += getTimeframeValue(client, timeframe);
       sectorMap[sectorId].clientCount += 1;
     }
   });
@@ -422,7 +470,7 @@ function calculateCombinedSectorBreakdown(regionClients, scannerOpportunities, s
           color: sector?.color || getSectorColor(sectorId)
         };
       }
-      sectorMap[sectorId].scannerValue += opp.value || 0;
+      sectorMap[sectorId].scannerValue += getOppTimeframeValue(opp, timeframe);
       sectorMap[sectorId].projectCount += 1;
     }
   });

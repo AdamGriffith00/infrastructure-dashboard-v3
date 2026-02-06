@@ -482,6 +482,17 @@
   overflow-y: auto;
 }
 
+/* Region KPI Bar with Timeframe Toggle */
+.region-kpi-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.region-kpi-bar .region-timeframe-toggle {
+  align-self: flex-start;
+}
+
 /* Region Detail Map Layout */
 .region-detail-map-layout {
   display: grid;
