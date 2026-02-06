@@ -23,7 +23,10 @@ export async function loadRegionalOpportunities(regionId) {
   // Map region IDs to data files
   const regionMapping = {
     'london': 'london-south-east',
-    'south-east': 'london-south-east'
+    'south-east': 'london-south-east',
+    'north-west': 'north-west',
+    'north-east': 'north-east',
+    'yorkshire-humber': 'yorkshire-humber'
   };
 
   const dataFile = regionMapping[regionId];

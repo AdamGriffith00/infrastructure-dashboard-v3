@@ -9,7 +9,7 @@ import { openRegionExplorer } from '../components/region-explorer.js';
 import { loadRegionalOpportunities, renderRegionalScanner, selectBoroughFromMap } from '../components/regional-scanner.js';
 
 // Regions that have enhanced scanner data
-const SCANNER_ENABLED_REGIONS = ['london', 'south-east'];
+const SCANNER_ENABLED_REGIONS = ['london', 'south-east', 'north-west', 'north-east', 'yorkshire-humber'];
 
 export async function renderRegionsView(container, { data, allData, params }) {
   const selectedRegion = params.id ? allData.regions?.find(r => r.id === params.id) : null;
