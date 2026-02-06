@@ -22,19 +22,104 @@ export async function renderRegionsView(container, { data, allData, params }) {
 }
 
 async function renderRegionGrid(container, allData) {
-  // Sort regions by budget
-  const sortedRegions = [...(allData.regions || [])].sort((a, b) =>
-    (b.budget10Year || 0) - (a.budget10Year || 0)
-  );
+  const regions = allData.regions || [];
+  const clients = allData.clients || [];
+  const opportunities = allData.opportunities || [];
 
-  // Calculate opportunity counts for each region
-  const regionsWithOpps = (allData.regions || []).map(region => {
-    const opps = (allData.opportunities || []).filter(o => o.region === region.id);
-    return {
+  // Load all scanner data upfront
+  const scannerDataByRegion = {};
+  await Promise.all(regions.map(async (region) => {
+    if (SCANNER_ENABLED_REGIONS.includes(region.id)) {
+      const data = await loadRegionalOpportunities(region.id);
+      scannerDataByRegion[region.id] = data?.opportunities || [];
+    } else {
+      scannerDataByRegion[region.id] = [];
+    }
+  }));
+
+  // Compute real budget for a region at a given timeframe
+  function getRegionBudget(regionId, timeframe) {
+    const regionClients = clients.filter(c => (c.regions || []).includes(regionId));
+    const scannerOpps = scannerDataByRegion[regionId] || [];
+    let clientTotal = 0;
+    regionClients.forEach(c => { clientTotal += getTimeframeValue(c, timeframe); });
+    // Add scanner value for sectors not covered by clients
+    const clientSectors = new Set(regionClients.map(c => c.sector).filter(Boolean));
+    scannerOpps.forEach(opp => {
+      if (opp.sector && !clientSectors.has(opp.sector)) {
+        clientTotal += getOppTimeframeValue(opp, timeframe);
+      }
+    });
+    return clientTotal;
+  }
+
+  // Compute project count for a region at a given timeframe
+  function getRegionProjectCount(regionId, timeframe) {
+    const scannerOpps = scannerDataByRegion[regionId] || [];
+    const legacyOpps = opportunities.filter(o => o.region === regionId);
+    if (!scannerOpps.length) return legacyOpps.length;
+    if (timeframe === '10year') return scannerOpps.length;
+    const endYear = timeframe === '2026' ? 2027 : 2030;
+    const startYear = timeframe === '2026' ? 2026 : 2025;
+    const count = scannerOpps.filter(opp => {
+      const oppStart = parseInt(opp.estimatedStart) || 2025;
+      const oppEnd = parseInt(opp.estimatedEnd) || 2030;
+      return oppStart < endYear && oppEnd > startYear;
+    }).length;
+    return count || legacyOpps.length;
+  }
+
+  // Compute client count for a region at a given timeframe
+  function getRegionClientCount(regionId, timeframe) {
+    const regionClients = clients.filter(c => (c.regions || []).includes(regionId));
+    if (timeframe === '2026') return regionClients.filter(c => (c.budget2026 || 0) > 0).length;
+    return regionClients.length;
+  }
+
+  // Build enriched region data for a timeframe
+  function buildRegionData(timeframe) {
+    return regions.map(region => ({
       ...region,
-      opportunityCount: opps.length
-    };
-  });
+      computedBudget: getRegionBudget(region.id, timeframe),
+      projectCount: getRegionProjectCount(region.id, timeframe),
+      clientCount: getRegionClientCount(region.id, timeframe)
+    })).sort((a, b) => b.computedBudget - a.computedBudget);
+  }
+
+  const TIMEFRAME_LABELS = { '2026': '2026', '5year': '5-Year', '10year': '10-Year' };
+  let currentTimeframe = '2026';
+  let enrichedRegions = buildRegionData(currentTimeframe);
+
+  function renderRankings(data) {
+    const maxBudget = data[0]?.computedBudget || 1;
+    return data.map((region, index) => {
+      const percentage = ((region.computedBudget / maxBudget) * 100).toFixed(0);
+      return `
+        <a href="#regions/${region.id}" class="region-rank-item" data-region="${region.id}">
+          <div class="rank-header">
+            <span class="rank-number">${index + 1}</span>
+            <span class="rank-name">${region.name}</span>
+            <span class="rank-value">${formatCurrency(region.computedBudget)}</span>
+          </div>
+          <div class="rank-bar">
+            <div class="rank-bar-fill" style="width: ${percentage}%"></div>
+          </div>
+          <div class="rank-meta">${region.projectCount} projects · ${region.clientCount} clients</div>
+        </a>
+      `;
+    }).join('');
+  }
+
+  function renderCards(data) {
+    return data.map(region => `
+      <a href="#regions/${region.id}" class="card card-clickable region-card">
+        <div class="card-title">${region.name}</div>
+        <div class="region-budget">${formatCurrency(region.computedBudget)}</div>
+        <div class="region-opportunities">${region.projectCount} projects · ${region.clientCount} clients</div>
+        <p class="text-muted mt-sm">${region.strategicFocus || ''}</p>
+      </a>
+    `).join('');
+  }
 
   container.innerHTML = `
     <div class="view-header">
@@ -45,9 +130,10 @@ async function renderRegionGrid(container, allData) {
     <section class="section">
       <div class="section-header">
         <h2 class="section-title">Regional Investment Map</h2>
-        <div class="btn-group">
-          <button class="btn btn-active" id="btn-regions-10year">10-Year</button>
-          <button class="btn" id="btn-regions-2026">2026</button>
+        <div class="btn-group region-grid-timeframe-toggle">
+          <button class="btn btn-active" data-timeframe="2026">2026</button>
+          <button class="btn" data-timeframe="5year">5-Year</button>
+          <button class="btn" data-timeframe="10year">10-Year</button>
         </div>
       </div>
       <div class="region-map-layout">
@@ -58,27 +144,9 @@ async function renderRegionGrid(container, allData) {
 
         <!-- Region Rankings Panel -->
         <div class="region-map-panel">
-          <div class="map-panel-title">10-Year Budget Rankings</div>
-          <div class="region-rankings">
-            ${sortedRegions.map((region, index) => {
-              const opps = (allData.opportunities || []).filter(o => o.region === region.id);
-              const maxBudget = sortedRegions[0].budget10Year || 1;
-              const percentage = ((region.budget10Year || 0) / maxBudget * 100).toFixed(0);
-
-              return `
-                <a href="#regions/${region.id}" class="region-rank-item" data-region="${region.id}">
-                  <div class="rank-header">
-                    <span class="rank-number">${index + 1}</span>
-                    <span class="rank-name">${region.name}</span>
-                    <span class="rank-value">${formatCurrency(region.budget10Year || 0)}</span>
-                  </div>
-                  <div class="rank-bar">
-                    <div class="rank-bar-fill" style="width: ${percentage}%"></div>
-                  </div>
-                  <div class="rank-meta">${opps.length} opportunities</div>
-                </a>
-              `;
-            }).join('')}
+          <div class="map-panel-title" id="rankings-title">${TIMEFRAME_LABELS[currentTimeframe]} Budget Rankings</div>
+          <div class="region-rankings" id="region-rankings">
+            ${renderRankings(enrichedRegions)}
           </div>
         </div>
       </div>
@@ -87,19 +155,8 @@ async function renderRegionGrid(container, allData) {
     <!-- Region Cards Grid -->
     <section class="section">
       <h2 class="section-title mb-md">All Regions</h2>
-      <div class="region-grid">
-        ${(allData.regions || []).map(region => {
-          const opps = (allData.opportunities || []).filter(o => o.region === region.id);
-
-          return `
-            <a href="#regions/${region.id}" class="card card-clickable region-card">
-              <div class="card-title">${region.name}</div>
-              <div class="region-budget">${formatCurrency(region.budget10Year || 0)}</div>
-              <div class="region-opportunities">${opps.length} opportunities | ${region.expectedOpportunities || 0} expected</div>
-              <p class="text-muted mt-sm">${region.strategicFocus || ''}</p>
-            </a>
-          `;
-        }).join('')}
+      <div class="region-grid" id="region-cards-grid">
+        ${renderCards(enrichedRegions)}
       </div>
     </section>
   `;
@@ -107,11 +164,11 @@ async function renderRegionGrid(container, allData) {
   // Render the UK map
   const mapContainer = container.querySelector('#regions-uk-map');
 
-  async function updateRegionsMap(budgetKey) {
+  async function updateRegionsMap(data) {
     await renderUKMap(mapContainer, {
-      data: regionsWithOpps,
-      dataKey: budgetKey,
-      title: budgetKey === 'budget10Year' ? '10-Year Regional Budget' : '2026 Regional Budget',
+      data: data,
+      dataKey: 'computedBudget',
+      title: `${TIMEFRAME_LABELS[currentTimeframe]} Regional Budget`,
       width: 500,
       height: 650,
       onRegionClick: (regionId) => {
@@ -121,22 +178,33 @@ async function renderRegionGrid(container, allData) {
   }
 
   // Initial render
-  await updateRegionsMap('budget10Year');
+  await updateRegionsMap(enrichedRegions);
 
   // Toggle buttons
-  const btn10Year = container.querySelector('#btn-regions-10year');
-  const btn2026 = container.querySelector('#btn-regions-2026');
+  const timeframeBtns = container.querySelectorAll('.region-grid-timeframe-toggle .btn');
+  timeframeBtns.forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const timeframe = btn.dataset.timeframe;
+      if (timeframe === currentTimeframe) return;
+      currentTimeframe = timeframe;
 
-  btn10Year.addEventListener('click', async () => {
-    btn10Year.classList.add('btn-active');
-    btn2026.classList.remove('btn-active');
-    await updateRegionsMap('budget10Year');
-  });
+      // Update active button
+      timeframeBtns.forEach(b => b.classList.remove('btn-active'));
+      btn.classList.add('btn-active');
 
-  btn2026.addEventListener('click', async () => {
-    btn2026.classList.add('btn-active');
-    btn10Year.classList.remove('btn-active');
-    await updateRegionsMap('budget2026');
+      // Recompute
+      enrichedRegions = buildRegionData(currentTimeframe);
+
+      // Update rankings
+      container.querySelector('#rankings-title').textContent = `${TIMEFRAME_LABELS[currentTimeframe]} Budget Rankings`;
+      container.querySelector('#region-rankings').innerHTML = renderRankings(enrichedRegions);
+
+      // Update cards
+      container.querySelector('#region-cards-grid').innerHTML = renderCards(enrichedRegions);
+
+      // Update map
+      await updateRegionsMap(enrichedRegions);
+    });
   });
 }
 
