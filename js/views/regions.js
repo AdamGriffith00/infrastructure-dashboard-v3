@@ -164,13 +164,31 @@ async function renderRegionDetail(container, region, allData) {
   }
 
   // Calculate enhanced KPIs if scanner data available
-  const scannerProjectCount = regionalData?.opportunities?.length || 0;
   const scannerOpps = regionalData?.opportunities || [];
   const allSectors = allData.sectors || [];
 
+  // Timeframe-aware project count: filter scanner opps active in the window
+  function getProjectCount(timeframe) {
+    if (!scannerOpps.length) return opportunities.length;
+    if (timeframe === '10year') return scannerOpps.length;
+    const endYear = timeframe === '2026' ? 2027 : 2030; // 2026 = single year, 5year = 2025-2030
+    const startYear = timeframe === '2026' ? 2026 : 2025;
+    return scannerOpps.filter(opp => {
+      const oppStart = parseInt(opp.estimatedStart) || 2025;
+      const oppEnd = parseInt(opp.estimatedEnd) || 2030;
+      return oppStart < endYear && oppEnd > startYear; // overlaps the window
+    }).length || opportunities.length;
+  }
+
+  // Timeframe-aware client count: for 2026, only clients with a 2026 budget
+  function getClientCount(timeframe) {
+    if (timeframe === '2026') return regionClients.filter(c => (c.budget2026 || 0) > 0).length;
+    return regionClients.length;
+  }
+
   // Calculate sector breakdown combining CLIENT BUDGETS + SCANNER OPPORTUNITIES
   // This gives the full picture: HS2's £56B from clients + Real Estate £53B from scanner
-  let currentTimeframe = '10year';
+  let currentTimeframe = '2026';
   let sectorBreakdown = calculateCombinedSectorBreakdown(
     regionClients,
     scannerOpps,
@@ -194,9 +212,9 @@ async function renderRegionDetail(container, region, allData) {
     <section class="section">
       <div class="region-kpi-bar">
         <div class="btn-group region-timeframe-toggle">
-          <button class="btn" data-timeframe="2026">2026</button>
+          <button class="btn btn-active" data-timeframe="2026">2026</button>
           <button class="btn" data-timeframe="5year">5-Year</button>
-          <button class="btn btn-active" data-timeframe="10year">10-Year</button>
+          <button class="btn" data-timeframe="10year">10-Year</button>
         </div>
         <div class="kpi-grid" id="region-kpis">
           <div class="kpi-card">
@@ -205,11 +223,11 @@ async function renderRegionDetail(container, region, allData) {
           </div>
           <div class="kpi-card">
             <div class="kpi-label">Projects</div>
-            <div class="kpi-value">${scannerProjectCount || opportunities.length}</div>
+            <div class="kpi-value" id="kpi-projects">${getProjectCount(currentTimeframe)}</div>
           </div>
           <div class="kpi-card">
             <div class="kpi-label">Active Clients</div>
-            <div class="kpi-value">${regionClients.length}</div>
+            <div class="kpi-value" id="kpi-clients">${getClientCount(currentTimeframe)}</div>
           </div>
           <div class="kpi-card">
             <div class="kpi-label">Sectors</div>
@@ -363,9 +381,11 @@ async function renderRegionDetail(container, region, allData) {
         currentTimeframe
       );
 
-      // Update KPIs
+      // Update all KPIs
       const totalSpend = sectorBreakdown.reduce((sum, s) => sum + s.totalValue, 0);
       container.querySelector('#kpi-total-spend').textContent = formatCurrency(totalSpend);
+      container.querySelector('#kpi-projects').textContent = getProjectCount(currentTimeframe);
+      container.querySelector('#kpi-clients').textContent = getClientCount(currentTimeframe);
       container.querySelector('#kpi-sectors').textContent = sectorBreakdown.length;
 
       // Re-render sector breakdown sidebar
