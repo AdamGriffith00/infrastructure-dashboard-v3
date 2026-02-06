@@ -12,11 +12,7 @@ import { renderFilters } from './components/filters.js';
 import { renderFooter } from './components/footer.js';
 
 // Import views
-import { renderOverallView } from './views/overall.js';
-import { renderBudgetView } from './views/budget.js';
-import { renderSectorsView } from './views/sectors.js';
 import { renderRegionsView } from './views/regions.js';
-import { renderDisciplinesView } from './views/disciplines.js';
 import { renderProjectsView } from './views/projects.js';
 import { renderSourcesView } from './views/sources.js';
 import { renderPipelineView } from './views/pipeline.js';
@@ -31,11 +27,7 @@ class App {
 
     // View renderers
     this.views = {
-      'overall': renderOverallView,
-      'budget': renderBudgetView,
-      'sectors': renderSectorsView,
       'regions': renderRegionsView,
-      'disciplines': renderDisciplinesView,
       'projects': renderProjectsView,
       'sources': renderSourcesView,
       'pipeline': renderPipelineView,
@@ -140,7 +132,7 @@ class App {
 
   async renderView(route, params = {}) {
     const container = document.getElementById('view-container');
-    const viewRenderer = this.views[route] || this.views['overall'];
+    const viewRenderer = this.views[route] || this.views['regions'];
     const data = this.state.get('data');
     const filters = this.state.get('filters');
 

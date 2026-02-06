@@ -668,7 +668,7 @@ function renderSectorBreakdown(sectorBreakdown) {
     }
 
     return `
-      <a href="#sectors/${sector.id}" class="sector-breakdown-item">
+      <div class="sector-breakdown-item">
         <div class="sector-breakdown-header">
           <div class="sector-indicator" style="background: ${sector.color}"></div>
           <span class="sector-breakdown-name">${sector.name}</span>
@@ -678,7 +678,7 @@ function renderSectorBreakdown(sectorBreakdown) {
           <div class="sector-breakdown-fill" style="width: ${percentage}%; background: ${sector.color}"></div>
         </div>
         ${countLabel ? `<span class="sector-breakdown-count">${countLabel}</span>` : ''}
-      </a>
+      </div>
     `;
   }).join('');
 }
