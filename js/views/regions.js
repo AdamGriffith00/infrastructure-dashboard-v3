@@ -315,37 +315,35 @@ async function renderRegionDetail(container, region, allData) {
   // Render the regional subdivision map with combined data
   const mapContainer = container.querySelector('#region-subdivision-map');
 
-  // Calculate total budget for this region from clients (regionClients already defined above)
-  const totalRegionBudget = regionClients.reduce((sum, c) => sum + (c.budget10Year || 0), 0);
+  const subdivisionClickHandler = hasScannerData ? (subdivisionName) => {
+    const scannerContainer = container.querySelector('#regional-scanner-container');
+    if (scannerContainer) {
+      selectBoroughFromMap(scannerContainer, subdivisionName);
+      scannerContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  } : null;
 
-  // Calculate combined borough data from scanner opportunities AND clients
-  // This gives the full picture for heatmap coloring and tooltip display
-  const boroughData = calculateCombinedBoroughData(
-    region.id,
-    regionClients,
-    regionalData?.opportunities || [],
-    allData.sectors || []
-  );
+  // Function to render/re-render the map for a given timeframe
+  async function renderMapForTimeframe(timeframe) {
+    const totalBudget = regionClients.reduce((sum, c) => sum + getTimeframeValue(c, timeframe), 0);
+    const boroughData = calculateCombinedBoroughData(
+      region.id, regionClients, scannerOpps, allSectors, timeframe
+    );
+    await renderRegionSubdivisionMap(mapContainer, {
+      regionId: region.id,
+      regionName: region.name,
+      boroughData,
+      totalBudget,
+      title: `${region.name} ${subdivisionType}`,
+      colorScheme: 'yellow',
+      width: 500,
+      height: 450,
+      showLegend: true,
+      onSubdivisionClick: subdivisionClickHandler
+    });
+  }
 
-  await renderRegionSubdivisionMap(mapContainer, {
-    regionId: region.id,
-    regionName: region.name,
-    boroughData: boroughData,  // Combined data for coloring and tooltips
-    totalBudget: totalRegionBudget,
-    title: `${region.name} ${subdivisionType}`,
-    colorScheme: 'yellow',
-    width: 500,
-    height: 450,
-    showLegend: true,
-    onSubdivisionClick: hasScannerData ? (subdivisionName) => {
-      // When clicking on map, scroll to and select borough in scanner
-      const scannerContainer = container.querySelector('#regional-scanner-container');
-      if (scannerContainer) {
-        selectBoroughFromMap(scannerContainer, subdivisionName);
-        scannerContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    } : null
-  });
+  await renderMapForTimeframe(currentTimeframe);
 
   // Render the regional scanner if available
   if (hasScannerData && regionalData) {
@@ -393,6 +391,9 @@ async function renderRegionDetail(container, region, allData) {
       if (sectorContainer) {
         sectorContainer.innerHTML = renderSectorBreakdown(sectorBreakdown);
       }
+
+      // Re-render the subdivision map with updated values
+      renderMapForTimeframe(currentTimeframe);
     });
   });
 
@@ -646,7 +647,7 @@ function getStatusBadge(status) {
 
 // Calculate combined borough data from clients + scanner opportunities
 // Returns object mapping borough names to { budget, opportunityCount, clientCount, sectors }
-function calculateCombinedBoroughData(regionId, clients, scannerOpportunities, sectors) {
+function calculateCombinedBoroughData(regionId, clients, scannerOpportunities, sectors, timeframe = '10year') {
   const boroughData = {};
 
   // Helper to initialize or get borough entry
@@ -664,7 +665,7 @@ function calculateCombinedBoroughData(regionId, clients, scannerOpportunities, s
 
   // Add client data - clients that serve specific subdivisions
   clients.forEach(client => {
-    const budget = client.budget10Year || 0;
+    const budget = getTimeframeValue(client, timeframe);
     const sectorId = client.sector;
 
     // Check if client has subdivision-specific mapping
@@ -689,7 +690,7 @@ function calculateCombinedBoroughData(regionId, clients, scannerOpportunities, s
     if (!boroughName) return;
 
     const borough = getBorough(boroughName);
-    borough.budget += opp.value || 0;
+    borough.budget += getOppTimeframeValue(opp, timeframe);
     borough.opportunityCount += 1;
     if (opp.sector) borough.sectors.add(opp.sector);
   });
