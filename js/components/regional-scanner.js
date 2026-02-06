@@ -26,7 +26,14 @@ export async function loadRegionalOpportunities(regionId) {
     'south-east': 'london-south-east',
     'north-west': 'north-west',
     'north-east': 'north-east',
-    'yorkshire-humber': 'yorkshire-humber'
+    'yorkshire-humber': 'yorkshire-humber',
+    'midlands': 'midlands',
+    'east-midlands': 'east-midlands',
+    'eastern': 'eastern',
+    'south-west': 'south-west',
+    'scotland': 'scotland',
+    'wales': 'wales',
+    'northern-ireland': 'northern-ireland'
   };
 
   const dataFile = regionMapping[regionId];
