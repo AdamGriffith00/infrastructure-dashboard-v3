@@ -12,7 +12,7 @@ import {
   getAllCompetitors
 } from '../utils/intelligence.js';
 import { openExplorer } from '../components/opportunity-explorer.js';
-import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
+import { getInfoButtonHTML, setupInfoPopup, buildSourcesFromClients } from '../components/data-info.js';
 
 export function renderIntelligenceView(container, { data, allData, filters }) {
   const opportunities = allData.opportunities || [];
@@ -108,13 +108,14 @@ export function renderIntelligenceView(container, { data, allData, filters }) {
     </section>
   `;
 
-  // Setup info popup
+  // Setup info popup — show reports relevant to scored opportunities
+  const oppClientIds = new Set(opportunities.map(o => o.client).filter(Boolean));
+  const intelClients = clients.filter(c => oppClientIds.has(c.id));
+  const intelReports = buildSourcesFromClients(intelClients.length ? intelClients : clients);
   setupInfoPopup(container, {
     title: 'Bid Intelligence',
-    sources: [
-      { name: 'Opportunities', file: 'opportunities.json', description: `pipeline opportunities scored for bid/no-bid`, count: opportunities.length },
-      { name: 'Client Data', file: 'clients.json', description: `clients for relationship scoring`, count: clients.length }
-    ],
+    reports: intelReports,
+    summary: `${intelReports.length} sources \u00b7 ${opportunities.length} opportunities scored`,
     lastUpdated: allData.lastUpdated || '17 January 2026'
   });
 

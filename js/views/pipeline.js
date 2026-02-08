@@ -7,7 +7,7 @@ import { formatCurrency, formatDate, getSectorColor } from '../utils/formatters.
 import { renderAnalysisToolbar, setupAnalysisToolbar, applyFilters, sortData } from '../components/analysis-toolbar.js';
 import { exportToCSV, exportToExcel, getOpportunityColumns } from '../utils/export.js';
 import { openExplorer } from '../components/opportunity-explorer.js';
-import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
+import { getInfoButtonHTML, setupInfoPopup, buildSourcesFromClients } from '../components/data-info.js';
 
 // Status definitions with colors and order
 const STATUS_CONFIG = {
@@ -202,12 +202,15 @@ export function renderPipelineView(container, { data, allData, filters }) {
     </section>
   `;
 
-  // Setup info popup
+  // Setup info popup — show reports relevant to pipeline opportunities
+  const clients = allData.clients || [];
+  const oppClientIds = new Set(opportunities.map(o => o.client).filter(Boolean));
+  const pipelineClients = clients.filter(c => oppClientIds.has(c.id));
+  const pipelineReports = buildSourcesFromClients(pipelineClients.length ? pipelineClients : clients);
   setupInfoPopup(container, {
     title: 'Pipeline & Timeline',
-    sources: [
-      { name: 'Opportunities', file: 'opportunities.json', description: `pipeline opportunities worth ${formatCurrency(stats.totalValue)}`, count: opportunities.length }
-    ],
+    reports: pipelineReports,
+    summary: `${pipelineReports.length} sources \u00b7 ${opportunities.length} opportunities \u00b7 ${formatCurrency(stats.totalValue)} pipeline`,
     lastUpdated: allData.lastUpdated || '17 January 2026'
   });
 

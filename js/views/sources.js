@@ -5,7 +5,7 @@
  */
 
 import { formatCurrency } from '../utils/formatters.js';
-import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
+import { SOURCE_LINKS } from '../components/data-info.js';
 
 // Scanner region files mapping
 const SCANNER_REGION_FILES = [
@@ -53,16 +53,8 @@ export async function renderSourcesView(container, { data, allData }) {
     return totalB - totalA;
   });
 
-  // Source links
-  const sourceLinks = {
-    'Ofwat PR24 Final Determination Dec 2024': 'https://www.ofwat.gov.uk/regulated-companies/price-review/2024-price-review/final-determinations/',
-    'Network Rail CP7 Delivery Plan': 'https://www.networkrail.co.uk/who-we-are/publications-and-resources/our-delivery-plan-for-2024-2029/',
-    'TfL Business Plan 2024/25': 'https://tfl.gov.uk/corporate/publications-and-reports/business-plan',
-    'National Highways RIS3 Programme': 'https://nationalhighways.co.uk/our-roads/our-road-investment-strategy/',
-    'Transport Scotland STPR2': 'https://www.transport.gov.scot/our-approach/strategy/strategic-transport-projects-review-2/',
-    'Heathrow 2.0 Masterplan': 'https://www.heathrow.com/company/about-heathrow/expansion',
-    'Gatwick Airport Masterplan 2024': 'https://www.gatwickairport.com/business-community/future-plans/',
-  };
+  // Use canonical source links from data-info component
+  const sourceLinks = SOURCE_LINKS;
 
   // Load all scanner data
   const scannerByRegion = {};
@@ -129,7 +121,7 @@ export async function renderSourcesView(container, { data, allData }) {
 
   container.innerHTML = `
     <div class="view-header">
-      <h1 class="view-title">Data Sources ${getInfoButtonHTML()}</h1>
+      <h1 class="view-title">Data Sources</h1>
       <p class="view-subtitle">All data sources used in this dashboard with citations and methodology</p>
     </div>
 
@@ -298,18 +290,7 @@ export async function renderSourcesView(container, { data, allData }) {
     </section>
   `;
 
-  // Setup info popup
-  setupInfoPopup(container, {
-    title: 'Data Sources',
-    sources: [
-      { name: 'Client Data', file: 'clients.json', description: `clients with 10-year budgets and sector attribution`, count: clients.length },
-      { name: 'Scanner Opportunities', file: 'regional-opportunities/*.json', description: `scanned projects across ${Object.keys(scannerByRegion).length} regions`, count: totalScannerOpps },
-      { name: 'Pipeline Opportunities', file: 'opportunities.json', description: `tracked pipeline opportunities`, count: opportunities.length },
-      { name: 'Sector Definitions', file: 'sectors.json', description: `sector definitions with colour coding`, count: sectors.length },
-      { name: 'Region Definitions', file: 'regions.json', description: `UK regions with metadata`, count: regions.length }
-    ],
-    lastUpdated: formatDate(lastUpdated)
-  });
+  // No info popup needed — this page IS the data sources reference
 }
 
 function formatDate(dateStr) {

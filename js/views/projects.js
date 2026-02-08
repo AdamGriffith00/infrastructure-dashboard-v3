@@ -176,13 +176,14 @@ export async function renderProjectsView(container, { data, allData, state }) {
     });
   }
 
-  // Setup info popup
+  // Setup info popup — user-uploaded data, no external reports
   setupInfoPopup(container, {
     title: 'Live Projects',
-    sources: [
-      { name: 'User-Uploaded Data', file: 'localStorage', description: `projects from uploaded Excel/CSV files`, count: projects.length },
-      { name: 'Region Definitions', file: 'regions.json', description: `UK regions for mapping`, count: (allData.regions || []).length }
-    ]
+    reports: [],
+    summary: projects.length > 0
+      ? `${projects.length} projects imported from your uploaded Excel/CSV file`
+      : 'No data imported yet — upload an Excel or CSV file to get started',
+    note: 'Live Projects data is stored locally in your browser. It persists until you upload a new file or clear data.'
   });
 
   // Initialize file handling

@@ -4,7 +4,7 @@
  */
 
 import { formatCurrency, formatDate, getSectorColor } from '../utils/formatters.js';
-import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
+import { getInfoButtonHTML, setupInfoPopup, buildSourcesFromClients } from '../components/data-info.js';
 
 // Sector color mapping for events (user requested rail = red)
 const EVENT_SECTOR_COLORS = {
@@ -402,14 +402,15 @@ export function renderEventsIntelView(container, { data, allData, filters }) {
     </div>
   `;
 
-  // Setup info popup
+  // Setup info popup — show reports + events note
+  const allClients = allData.clients || [];
+  const eventsReports = buildSourcesFromClients(allClients);
   setupInfoPopup(container, {
     title: 'Events & Client Intelligence',
-    sources: [
-      { name: 'Industry Events', file: 'Built-in database', description: `upcoming industry events, supplier days, and conferences`, count: INDUSTRY_EVENTS.length },
-      { name: 'Client Intelligence', file: 'Built-in database', description: `client contact patterns and relationship data`, count: Object.keys(CLIENT_INTELLIGENCE).length },
-      { name: 'Opportunities', file: 'opportunities.json', description: `pipeline opportunities for client matching`, count: opportunities.length }
-    ]
+    reports: eventsReports,
+    summary: `${eventsReports.length} sources \u00b7 ${INDUSTRY_EVENTS.length} industry events \u00b7 ${Object.keys(CLIENT_INTELLIGENCE).length} client profiles`,
+    note: `Events database includes ${INDUSTRY_EVENTS.length} industry events, supplier days, and conferences compiled from public event listings and client engagement calendars.`,
+    lastUpdated: allData.lastUpdated || '17 January 2026'
   });
 
   setupEventListeners(container);
