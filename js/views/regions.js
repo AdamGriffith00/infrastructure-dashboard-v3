@@ -281,7 +281,7 @@ async function renderRegionDetail(container, region, allData) {
           Explore Region
         </button>
       </div>
-      <h1 class="view-title">${region.name}</h1>
+      <h1 class="view-title">${region.name} ${getInfoButtonHTML()}</h1>
       <p class="view-subtitle">${region.strategicFocus || ''}</p>
     </div>
 
@@ -388,6 +388,15 @@ async function renderRegionDetail(container, region, allData) {
       </section>
     ` : ''}
   `;
+
+  // Setup info popup — show reports backing this region's data
+  const regionReports = buildSourcesFromClients(regionClients);
+  setupInfoPopup(container, {
+    title: region.name,
+    reports: regionReports,
+    summary: `${regionReports.length} sources \u00b7 ${regionClients.length} clients`,
+    lastUpdated: allData.lastUpdated || '17 January 2026'
+  });
 
   // Render the regional subdivision map with combined data
   const mapContainer = container.querySelector('#region-subdivision-map');
