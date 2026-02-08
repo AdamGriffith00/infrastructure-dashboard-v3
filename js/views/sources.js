@@ -1,26 +1,44 @@
 /**
  * Data Sources View
  * Lists all data sources used in the dashboard with citations and links
+ * Dynamically pulls from clients, scanner opportunities, and pipeline data
  */
 
 import { formatCurrency } from '../utils/formatters.js';
+import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
 
-export function renderSourcesView(container, { data, allData }) {
-  // Group clients by sector and extract sources
-  const sourcesBySector = {};
+// Scanner region files mapping
+const SCANNER_REGION_FILES = [
+  { file: 'london-south-east', regions: ['london', 'south-east'] },
+  { file: 'north-west', regions: ['north-west'] },
+  { file: 'north-east', regions: ['north-east'] },
+  { file: 'yorkshire-humber', regions: ['yorkshire-humber'] },
+  { file: 'midlands', regions: ['midlands'] },
+  { file: 'east-midlands', regions: ['east-midlands'] },
+  { file: 'eastern', regions: ['eastern'] },
+  { file: 'south-west', regions: ['south-west'] },
+  { file: 'scotland', regions: ['scotland'] },
+  { file: 'wales', regions: ['wales'] },
+  { file: 'northern-ireland', regions: ['northern-ireland'] }
+];
+
+export async function renderSourcesView(container, { data, allData }) {
+  const clients = allData.clients || [];
+  const opportunities = allData.opportunities || [];
+  const sectors = allData.sectors || [];
+  const regions = allData.regions || [];
+
+  // Build sector/region name lookups
   const sectorNames = {};
-
-  // Build sector name lookup
-  (allData.sectors || []).forEach(sector => {
-    sectorNames[sector.id] = sector.name;
-  });
+  sectors.forEach(s => { sectorNames[s.id] = s.name; });
+  const regionNames = {};
+  regions.forEach(r => { regionNames[r.id] = r.name; });
 
   // Group clients by sector
-  (allData.clients || []).forEach(client => {
+  const sourcesBySector = {};
+  clients.forEach(client => {
     const sector = client.sector || 'other';
-    if (!sourcesBySector[sector]) {
-      sourcesBySector[sector] = [];
-    }
+    if (!sourcesBySector[sector]) sourcesBySector[sector] = [];
     sourcesBySector[sector].push({
       name: client.name,
       source: client.source || 'Company reports',
@@ -29,14 +47,13 @@ export function renderSourcesView(container, { data, allData }) {
     });
   });
 
-  // Sort sectors by total budget
   const sectorOrder = Object.keys(sourcesBySector).sort((a, b) => {
     const totalA = sourcesBySector[a].reduce((sum, c) => sum + c.budget10Year, 0);
     const totalB = sourcesBySector[b].reduce((sum, c) => sum + c.budget10Year, 0);
     return totalB - totalA;
   });
 
-  // Define source links where available
+  // Source links
   const sourceLinks = {
     'Ofwat PR24 Final Determination Dec 2024': 'https://www.ofwat.gov.uk/regulated-companies/price-review/2024-price-review/final-determinations/',
     'Network Rail CP7 Delivery Plan': 'https://www.networkrail.co.uk/who-we-are/publications-and-resources/our-delivery-plan-for-2024-2029/',
@@ -47,39 +64,97 @@ export function renderSourcesView(container, { data, allData }) {
     'Gatwick Airport Masterplan 2024': 'https://www.gatwickairport.com/business-community/future-plans/',
   };
 
-  // Calculate totals
-  const totalClients = allData.clients?.length || 0;
-  const totalBudget = (allData.clients || []).reduce((sum, c) => sum + (c.budget10Year || 0), 0);
+  // Load all scanner data
+  const scannerByRegion = {};
+  let totalScannerOpps = 0;
+  let totalScannerValue = 0;
+
+  await Promise.all(SCANNER_REGION_FILES.map(async ({ file, regions: regionIds }) => {
+    try {
+      const resp = await fetch(`data/regional-opportunities/${file}.json`);
+      if (!resp.ok) return;
+      const data = await resp.json();
+      const opps = data.opportunities || [];
+      // Split by region
+      for (const regionId of regionIds) {
+        const regionOpps = opps.filter(o => o.region === regionId);
+        scannerByRegion[regionId] = regionOpps;
+        totalScannerOpps += regionOpps.length;
+        totalScannerValue += regionOpps.reduce((sum, o) => sum + (o.value || 0), 0);
+      }
+    } catch (e) { /* skip missing files */ }
+  }));
+
+  // Pipeline stats
+  const pipelineValue = opportunities.reduce((sum, o) => sum + (o.value || 0), 0);
+  const pipelineByStatus = {};
+  opportunities.forEach(o => {
+    const status = o.status || 'unknown';
+    if (!pipelineByStatus[status]) pipelineByStatus[status] = { count: 0, value: 0 };
+    pipelineByStatus[status].count++;
+    pipelineByStatus[status].value += o.value || 0;
+  });
+
+  const statusLabels = {
+    'planning': 'Planning',
+    'pre-procurement': 'Pre-Procurement',
+    'procurement': 'In Procurement',
+    'delivery': 'In Delivery',
+    'complete': 'Complete'
+  };
+  const statusColors = {
+    'planning': '#6B7280',
+    'pre-procurement': '#8B5CF6',
+    'procurement': '#F59E0B',
+    'delivery': '#10B981',
+    'complete': '#3B82F6'
+  };
+
+  // Totals
+  const totalClientBudget = clients.reduce((sum, c) => sum + (c.budget10Year || 0), 0);
+  const totalDataPoints = clients.length + totalScannerOpps + opportunities.length;
+  const dataFiles = 3 + Object.keys(scannerByRegion).length; // clients + opps + sectors + scanner files
   const lastUpdated = allData.lastUpdated || '2026-01-17';
+
+  // Build dynamic primary sources from client source fields
+  const primarySources = {};
+  clients.forEach(c => {
+    const src = c.source || 'Company reports';
+    if (!primarySources[src]) primarySources[src] = { clients: [], totalBudget: 0 };
+    primarySources[src].clients.push(c.name);
+    primarySources[src].totalBudget += c.budget10Year || 0;
+  });
+  const sortedPrimarySources = Object.entries(primarySources)
+    .sort((a, b) => b[1].totalBudget - a[1].totalBudget);
 
   container.innerHTML = `
     <div class="view-header">
-      <h1 class="view-title">Data Sources</h1>
+      <h1 class="view-title">Data Sources ${getInfoButtonHTML()}</h1>
       <p class="view-subtitle">All data sources used in this dashboard with citations and methodology</p>
     </div>
 
-    <!-- Overview -->
+    <!-- Overview KPIs -->
     <section class="section">
       <div class="kpi-grid">
         <div class="kpi-card">
           <div class="kpi-label">Total Data Points</div>
-          <div class="kpi-value">${totalClients}</div>
-          <div class="kpi-note">Clients & organisations</div>
+          <div class="kpi-value">${totalDataPoints.toLocaleString()}</div>
+          <div class="kpi-note">${clients.length} clients + ${totalScannerOpps} scanner + ${opportunities.length} pipeline</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Total Pipeline Value</div>
-          <div class="kpi-value">${formatCurrency(totalBudget)}</div>
-          <div class="kpi-note">10-year investment</div>
+          <div class="kpi-value">${formatCurrency(totalClientBudget + totalScannerValue)}</div>
+          <div class="kpi-note">Clients + scanner opportunities</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Data Files</div>
+          <div class="kpi-value">${dataFiles}</div>
+          <div class="kpi-note">JSON data sources</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Last Updated</div>
           <div class="kpi-value">${formatDate(lastUpdated)}</div>
           <div class="kpi-note">Data refresh date</div>
-        </div>
-        <div class="kpi-card">
-          <div class="kpi-label">Sectors Covered</div>
-          <div class="kpi-value">${sectorOrder.length}</div>
-          <div class="kpi-note">Infrastructure sectors</div>
         </div>
       </div>
     </section>
@@ -109,22 +184,62 @@ export function renderSourcesView(container, { data, allData }) {
       </div>
     </section>
 
+    <!-- Scanner Opportunities by Region -->
+    <section class="section">
+      <h2 class="section-title">Scanner Opportunities by Region</h2>
+      <p class="text-muted mb-md">${totalScannerOpps.toLocaleString()} scanned projects worth ${formatCurrency(totalScannerValue)} across ${Object.keys(scannerByRegion).length} regions</p>
+      <div class="scanner-region-grid">
+        ${Object.entries(scannerByRegion)
+          .sort((a, b) => b[1].reduce((s, o) => s + (o.value || 0), 0) - a[1].reduce((s, o) => s + (o.value || 0), 0))
+          .map(([regionId, opps]) => {
+            const regionValue = opps.reduce((sum, o) => sum + (o.value || 0), 0);
+            const regionSectors = new Set(opps.map(o => o.sector).filter(Boolean));
+            return `
+              <div class="scanner-region-card card">
+                <h4>${regionNames[regionId] || capitalise(regionId)}</h4>
+                <div class="scanner-region-stats">
+                  <span><strong>${opps.length}</strong> projects</span>
+                  <span><strong>${formatCurrency(regionValue)}</strong></span>
+                </div>
+                <div class="scanner-region-stats" style="margin-top: 4px;">
+                  <span>${regionSectors.size} sectors</span>
+                </div>
+              </div>
+            `;
+          }).join('')}
+      </div>
+    </section>
+
+    <!-- Pipeline Opportunities -->
+    <section class="section">
+      <h2 class="section-title">Pipeline Opportunities</h2>
+      <p class="text-muted mb-md">${opportunities.length} tracked opportunities worth ${formatCurrency(pipelineValue)}</p>
+      <div class="pipeline-status-grid">
+        ${Object.entries(pipelineByStatus)
+          .sort((a, b) => (statusLabels[a[0]] ? Object.keys(statusLabels).indexOf(a[0]) : 99) - (statusLabels[b[0]] ? Object.keys(statusLabels).indexOf(b[0]) : 99))
+          .map(([status, data]) => `
+            <div class="pipeline-status-item" style="border-left: 3px solid ${statusColors[status] || '#6B7280'}">
+              <div class="status-count">${data.count}</div>
+              <div class="status-label">${statusLabels[status] || capitalise(status)}</div>
+              <div class="text-muted" style="font-size: 0.8rem; margin-top: 2px;">${formatCurrency(data.value)}</div>
+            </div>
+          `).join('')}
+      </div>
+    </section>
+
     <!-- Sources by Sector -->
     <section class="section">
       <h2 class="section-title">Sources by Sector</h2>
       <div class="sources-list">
         ${sectorOrder.map(sectorId => {
-          const clients = sourcesBySector[sectorId];
+          const sectorClients = sourcesBySector[sectorId];
           const sectorName = sectorNames[sectorId] || capitalise(sectorId);
-          const sectorTotal = clients.reduce((sum, c) => sum + c.budget10Year, 0);
+          const sectorTotal = sectorClients.reduce((sum, c) => sum + c.budget10Year, 0);
 
-          // Group by source
           const bySource = {};
-          clients.forEach(c => {
+          sectorClients.forEach(c => {
             const src = c.source;
-            if (!bySource[src]) {
-              bySource[src] = { clients: [], total: 0 };
-            }
+            if (!bySource[src]) bySource[src] = { clients: [], total: 0 };
             bySource[src].clients.push(c.name);
             bySource[src].total += c.budget10Year;
           });
@@ -137,15 +252,15 @@ export function renderSourcesView(container, { data, allData }) {
                 <span class="source-sector-total">${formatCurrency(sectorTotal)}</span>
               </div>
               <div class="source-sector-body">
-                ${Object.entries(bySource).map(([source, data]) => {
+                ${Object.entries(bySource).map(([source, srcData]) => {
                   const link = sourceLinks[source];
                   return `
                     <div class="source-item">
                       <div class="source-name">
                         ${link ? `<a href="${link}" target="_blank" rel="noopener">${source} ↗</a>` : source}
                       </div>
-                      <div class="source-clients">${data.clients.join(', ')}</div>
-                      <div class="source-value">${formatCurrency(data.total)}</div>
+                      <div class="source-clients">${srcData.clients.join(', ')}</div>
+                      <div class="source-value">${formatCurrency(srcData.total)}</div>
                     </div>
                   `;
                 }).join('')}
@@ -156,40 +271,21 @@ export function renderSourcesView(container, { data, allData }) {
       </div>
     </section>
 
-    <!-- Key Sources Summary -->
+    <!-- Primary Data Sources (dynamic) -->
     <section class="section">
       <h2 class="section-title">Primary Data Sources</h2>
-      <div class="key-sources-grid">
-        <a href="https://www.ofwat.gov.uk/regulated-companies/price-review/2024-price-review/" target="_blank" rel="noopener" class="key-source-card card card-clickable">
-          <div class="key-source-name">Ofwat</div>
-          <div class="key-source-desc">Water sector regulator - PR24 Final Determinations for AMP8 (2025-2030)</div>
-          <div class="key-source-sector">Utilities (Water)</div>
-        </a>
-        <a href="https://www.networkrail.co.uk/" target="_blank" rel="noopener" class="key-source-card card card-clickable">
-          <div class="key-source-name">Network Rail</div>
-          <div class="key-source-desc">CP7 Control Period delivery plans and regional strategic plans</div>
-          <div class="key-source-sector">Rail</div>
-        </a>
-        <a href="https://nationalhighways.co.uk/" target="_blank" rel="noopener" class="key-source-card card card-clickable">
-          <div class="key-source-name">National Highways</div>
-          <div class="key-source-desc">Road Investment Strategy 3 (RIS3) programme and regional schemes</div>
-          <div class="key-source-sector">Highways</div>
-        </a>
-        <a href="https://www.gov.uk/government/organisations/department-for-transport" target="_blank" rel="noopener" class="key-source-card card card-clickable">
-          <div class="key-source-name">Department for Transport</div>
-          <div class="key-source-desc">CRSTS settlements, aviation policy, rail funding</div>
-          <div class="key-source-sector">Multiple</div>
-        </a>
-        <a href="https://www.caa.co.uk/" target="_blank" rel="noopener" class="key-source-card card card-clickable">
-          <div class="key-source-name">CAA / Airport Operators</div>
-          <div class="key-source-desc">Airport masterplans, DCO applications, capital programmes</div>
-          <div class="key-source-sector">Aviation</div>
-        </a>
-        <a href="https://www.britishports.org.uk/" target="_blank" rel="noopener" class="key-source-card card card-clickable">
-          <div class="key-source-name">Port Operators</div>
-          <div class="key-source-desc">Published investment plans, freeport programmes</div>
-          <div class="key-source-sector">Maritime</div>
-        </a>
+      <p class="text-muted mb-md">${sortedPrimarySources.length} unique sources extracted from client data</p>
+      <div class="dynamic-sources-grid">
+        ${sortedPrimarySources.map(([sourceName, srcData]) => {
+          const link = sourceLinks[sourceName];
+          return `
+            <div class="dynamic-source-card card${link ? ' card-clickable' : ''}" ${link ? `onclick="window.open('${link}', '_blank')"` : ''}>
+              <h4>${sourceName}</h4>
+              <div class="source-card-meta">${srcData.clients.length} client${srcData.clients.length !== 1 ? 's' : ''}</div>
+              <div class="source-card-value">${formatCurrency(srcData.totalBudget)}</div>
+            </div>
+          `;
+        }).join('')}
       </div>
     </section>
 
@@ -201,6 +297,19 @@ export function renderSourcesView(container, { data, allData }) {
       </div>
     </section>
   `;
+
+  // Setup info popup
+  setupInfoPopup(container, {
+    title: 'Data Sources',
+    sources: [
+      { name: 'Client Data', file: 'clients.json', description: `clients with 10-year budgets and sector attribution`, count: clients.length },
+      { name: 'Scanner Opportunities', file: 'regional-opportunities/*.json', description: `scanned projects across ${Object.keys(scannerByRegion).length} regions`, count: totalScannerOpps },
+      { name: 'Pipeline Opportunities', file: 'opportunities.json', description: `tracked pipeline opportunities`, count: opportunities.length },
+      { name: 'Sector Definitions', file: 'sectors.json', description: `sector definitions with colour coding`, count: sectors.length },
+      { name: 'Region Definitions', file: 'regions.json', description: `UK regions with metadata`, count: regions.length }
+    ],
+    lastUpdated: formatDate(lastUpdated)
+  });
 }
 
 function formatDate(dateStr) {

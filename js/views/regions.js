@@ -7,6 +7,7 @@ import { renderUKMap } from '../components/uk-map.js';
 import { renderRegionSubdivisionMap } from '../components/region-map.js';
 import { openRegionExplorer } from '../components/region-explorer.js';
 import { loadRegionalOpportunities, renderRegionalScanner, selectBoroughFromMap } from '../components/regional-scanner.js';
+import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
 
 // Regions that have enhanced scanner data
 const SCANNER_ENABLED_REGIONS = ['london', 'south-east', 'north-west', 'north-east', 'yorkshire-humber', 'midlands', 'east-midlands', 'eastern', 'south-west', 'scotland', 'wales', 'northern-ireland'];
@@ -123,7 +124,7 @@ async function renderRegionGrid(container, allData) {
 
   container.innerHTML = `
     <div class="view-header">
-      <h1 class="view-title">Regions</h1>
+      <h1 class="view-title">Regions ${getInfoButtonHTML()}</h1>
       <p class="view-subtitle">UK infrastructure investment by region - click a region on the map to explore</p>
     </div>
 
@@ -160,6 +161,19 @@ async function renderRegionGrid(container, allData) {
       </div>
     </section>
   `;
+
+  // Setup info popup
+  const totalScannerOpps = Object.values(scannerDataByRegion).reduce((sum, opps) => sum + opps.length, 0);
+  setupInfoPopup(container, {
+    title: 'Regions',
+    sources: [
+      { name: 'Client Data', file: 'clients.json', description: `clients with budgets, sectors, and regional attribution`, count: clients.length },
+      { name: 'Scanner Opportunities', file: 'regional-opportunities/*.json', description: `scanned projects across ${SCANNER_ENABLED_REGIONS.length} regions`, count: totalScannerOpps },
+      { name: 'Region Definitions', file: 'regions.json', description: `UK regions with metadata`, count: regions.length },
+      { name: 'Sector Definitions', file: 'sectors.json', description: `sector definitions with colour coding`, count: (allData.sectors || []).length }
+    ],
+    lastUpdated: allData.lastUpdated || '17 January 2026'
+  });
 
   // Render the UK map
   const mapContainer = container.querySelector('#regions-uk-map');

@@ -12,6 +12,7 @@ import {
   getAllCompetitors
 } from '../utils/intelligence.js';
 import { openExplorer } from '../components/opportunity-explorer.js';
+import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
 
 export function renderIntelligenceView(container, { data, allData, filters }) {
   const opportunities = allData.opportunities || [];
@@ -27,7 +28,7 @@ export function renderIntelligenceView(container, { data, allData, filters }) {
 
   container.innerHTML = `
     <div class="view-header">
-      <h1 class="view-title">Bid Intelligence</h1>
+      <h1 class="view-title">Bid Intelligence ${getInfoButtonHTML()}</h1>
       <p class="view-subtitle">AI-powered insights, win probability analysis, and competitive positioning</p>
     </div>
 
@@ -106,6 +107,16 @@ export function renderIntelligenceView(container, { data, allData, filters }) {
       </div>
     </section>
   `;
+
+  // Setup info popup
+  setupInfoPopup(container, {
+    title: 'Bid Intelligence',
+    sources: [
+      { name: 'Opportunities', file: 'opportunities.json', description: `pipeline opportunities scored for bid/no-bid`, count: opportunities.length },
+      { name: 'Client Data', file: 'clients.json', description: `clients for relationship scoring`, count: clients.length }
+    ],
+    lastUpdated: allData.lastUpdated || '17 January 2026'
+  });
 
   // Setup event listeners
   setupIntelligenceListeners(container, intelligence);

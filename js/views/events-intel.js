@@ -4,6 +4,7 @@
  */
 
 import { formatCurrency, formatDate, getSectorColor } from '../utils/formatters.js';
+import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
 
 // Sector color mapping for events (user requested rail = red)
 const EVENT_SECTOR_COLORS = {
@@ -309,7 +310,7 @@ export function renderEventsIntelView(container, { data, allData, filters }) {
   container.innerHTML = `
     <div class="events-intel-view">
       <div class="view-header">
-        <h1 class="view-title">Events & Client Intelligence</h1>
+        <h1 class="view-title">Events & Client Intelligence ${getInfoButtonHTML()}</h1>
         <p class="view-subtitle">Industry events calendar and client relationship intelligence to help win work</p>
       </div>
 
@@ -400,6 +401,16 @@ export function renderEventsIntelView(container, { data, allData, filters }) {
       </section>
     </div>
   `;
+
+  // Setup info popup
+  setupInfoPopup(container, {
+    title: 'Events & Client Intelligence',
+    sources: [
+      { name: 'Industry Events', file: 'Built-in database', description: `upcoming industry events, supplier days, and conferences`, count: INDUSTRY_EVENTS.length },
+      { name: 'Client Intelligence', file: 'Built-in database', description: `client contact patterns and relationship data`, count: Object.keys(CLIENT_INTELLIGENCE).length },
+      { name: 'Opportunities', file: 'opportunities.json', description: `pipeline opportunities for client matching`, count: opportunities.length }
+    ]
+  });
 
   setupEventListeners(container);
 }

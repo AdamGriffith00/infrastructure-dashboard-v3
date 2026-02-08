@@ -7,6 +7,7 @@ import { formatCurrency, formatDate, getSectorColor } from '../utils/formatters.
 import { renderAnalysisToolbar, setupAnalysisToolbar, applyFilters, sortData } from '../components/analysis-toolbar.js';
 import { exportToCSV, exportToExcel, getOpportunityColumns } from '../utils/export.js';
 import { openExplorer } from '../components/opportunity-explorer.js';
+import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
 
 // Status definitions with colors and order
 const STATUS_CONFIG = {
@@ -45,7 +46,7 @@ export function renderPipelineView(container, { data, allData, filters }) {
 
   container.innerHTML = `
     <div class="view-header">
-      <h1 class="view-title">Pipeline & Timeline</h1>
+      <h1 class="view-title">Pipeline & Timeline ${getInfoButtonHTML()}</h1>
       <p class="view-subtitle">Track opportunities through procurement stages and delivery timeline</p>
     </div>
 
@@ -200,6 +201,15 @@ export function renderPipelineView(container, { data, allData, filters }) {
       </div>
     </section>
   `;
+
+  // Setup info popup
+  setupInfoPopup(container, {
+    title: 'Pipeline & Timeline',
+    sources: [
+      { name: 'Opportunities', file: 'opportunities.json', description: `pipeline opportunities worth ${formatCurrency(stats.totalValue)}`, count: opportunities.length }
+    ],
+    lastUpdated: allData.lastUpdated || '17 January 2026'
+  });
 
   // Add event listeners
   setupEventListeners(container, opportunities, allData);

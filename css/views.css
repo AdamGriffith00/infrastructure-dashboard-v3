@@ -6016,3 +6016,251 @@ a.area-project-item:hover .area-project-name {
     gap: var(--space-md);
   }
 }
+
+/* ========================================
+   INFO BUTTON & MODAL
+   ======================================== */
+
+.info-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--border-dark);
+  background: var(--bg-darker);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-bold);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  margin-left: var(--space-sm);
+  vertical-align: middle;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.info-btn:hover {
+  border-color: var(--gleeds-yellow);
+  color: var(--gleeds-yellow);
+  background: rgba(247, 196, 0, 0.1);
+}
+
+.info-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+
+.info-modal-overlay.visible {
+  display: flex;
+}
+
+.info-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-lg);
+  max-width: 480px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+}
+
+.info-modal-close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: var(--bg-darker);
+  border: 1px solid var(--border-dark);
+  color: var(--text-secondary);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  z-index: 1;
+  line-height: 1;
+}
+
+.info-modal-close:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--gleeds-yellow);
+}
+
+.info-modal-content {
+  padding: var(--space-lg);
+}
+
+.info-modal-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-dark);
+  padding-right: var(--space-xl);
+}
+
+.info-modal-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(247, 196, 0, 0.15);
+  border: 1px solid rgba(247, 196, 0, 0.4);
+  color: var(--gleeds-yellow);
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-bold);
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-modal-header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.info-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.info-source-item {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.info-source-item:last-child {
+  border-bottom: none;
+}
+
+.info-source-file {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.info-source-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.info-source-desc strong {
+  color: var(--text-primary);
+}
+
+.info-modal-footer {
+  margin-top: var(--space-md);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--border-dark);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Scanner Region Cards (Data Sources page) */
+.scanner-region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--space-md);
+}
+
+.scanner-region-card {
+  padding: var(--space-md);
+}
+
+.scanner-region-card h4 {
+  margin: 0 0 var(--space-xs) 0;
+  font-size: 0.95rem;
+}
+
+.scanner-region-card .scanner-region-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.scanner-region-card .scanner-region-stats strong {
+  color: var(--text-primary);
+}
+
+/* Dynamic Primary Sources grid */
+.dynamic-sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+.dynamic-source-card {
+  padding: var(--space-md);
+}
+
+.dynamic-source-card h4 {
+  margin: 0 0 var(--space-xs) 0;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.dynamic-source-card .source-card-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.dynamic-source-card .source-card-value {
+  font-size: 0.95rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--gleeds-yellow);
+}
+
+/* Pipeline status breakdown on sources page */
+.pipeline-status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--space-sm);
+}
+
+.pipeline-status-item {
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-darker);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.pipeline-status-item .status-count {
+  font-size: 1.3rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.pipeline-status-item .status-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

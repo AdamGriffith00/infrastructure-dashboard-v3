@@ -6,6 +6,7 @@
 import { renderUKMap } from '../components/uk-map.js';
 import { formatCurrency } from '../utils/formatters.js';
 import { exportToCSV, exportToExcel, getProjectColumns } from '../utils/export.js';
+import { getInfoButtonHTML, setupInfoPopup } from '../components/data-info.js';
 
 // Storage key for persistence
 const STORAGE_KEY = 'gleeds_live_projects';
@@ -21,7 +22,7 @@ export async function renderProjectsView(container, { data, allData, state }) {
 
   container.innerHTML = `
     <div class="view-header">
-      <h1 class="view-title">Live Projects</h1>
+      <h1 class="view-title">Live Projects ${getInfoButtonHTML()}</h1>
       <p class="view-subtitle">Your current project portfolio across UK regions</p>
     </div>
 
@@ -174,6 +175,15 @@ export async function renderProjectsView(container, { data, allData, state }) {
       }
     });
   }
+
+  // Setup info popup
+  setupInfoPopup(container, {
+    title: 'Live Projects',
+    sources: [
+      { name: 'User-Uploaded Data', file: 'localStorage', description: `projects from uploaded Excel/CSV files`, count: projects.length },
+      { name: 'Region Definitions', file: 'regions.json', description: `UK regions for mapping`, count: (allData.regions || []).length }
+    ]
+  });
 
   // Initialize file handling
   initFileHandling(container, state);
