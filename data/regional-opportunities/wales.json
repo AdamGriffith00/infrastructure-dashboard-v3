@@ -1,37 +1,101 @@
 {
   "lastUpdated": "2026-02-05",
   "lastResearched": "2026-02-05",
-  "regions": ["wales"],
+  "regions": [
+    "wales"
+  ],
   "sectorTrends": {
     "real-estate": {
       "outlook": "Cardiff Central regeneration driving investment. Swansea city centre transformation well advanced. Newport growing with semiconductor investment. North Wales growth deal bringing regional investment.",
-      "keyDrivers": ["Cardiff Metro", "City Deals", "Town centre renewal", "Tourism"],
-      "investmentDrivers": ["Welsh Government", "City Deals", "Town Deals", "Private sector"],
-      "risks": ["Market depth", "Planning complexity", "Construction costs"]
+      "keyDrivers": [
+        "Cardiff Metro",
+        "City Deals",
+        "Town centre renewal",
+        "Tourism"
+      ],
+      "investmentDrivers": [
+        "Welsh Government",
+        "City Deals",
+        "Town Deals",
+        "Private sector"
+      ],
+      "risks": [
+        "Market depth",
+        "Planning complexity",
+        "Construction costs"
+      ]
     },
     "rail": {
       "outlook": "Transport for Wales Rail transformation with South Wales Metro and Core Valley Lines electrification. North Wales Main Line improvements. TfW managing rail network modernisation.",
-      "keyDrivers": ["South Wales Metro", "Core Valley Lines", "North Wales connectivity"],
-      "investmentDrivers": ["Welsh Government", "UK Government", "TfW budget"],
-      "risks": ["Budget pressures", "CVL delivery complexity", "Rural routes viability"]
+      "keyDrivers": [
+        "South Wales Metro",
+        "Core Valley Lines",
+        "North Wales connectivity"
+      ],
+      "investmentDrivers": [
+        "Welsh Government",
+        "UK Government",
+        "TfW budget"
+      ],
+      "risks": [
+        "Budget pressures",
+        "CVL delivery complexity",
+        "Rural routes viability"
+      ]
     },
     "utilities": {
-      "outlook": "Welsh Water (Dwr Cymru) delivering £5.1bn AMP8. Western Power Distribution and SP Energy Networks grid investment. Tidal energy and floating wind potential in Celtic Sea.",
-      "keyDrivers": ["AMP8 investment", "Grid reinforcement", "Celtic Sea energy", "Net Zero Wales"],
-      "investmentDrivers": ["Ofwat AMP8", "RIIO-ED2", "Marine energy"],
-      "risks": ["Rural delivery", "Grid capacity", "Technology maturity"]
+      "outlook": "Welsh Water (Dwr Cymru) delivering \u00a35.1bn AMP8. Western Power Distribution and SP Energy Networks grid investment. Tidal energy and floating wind potential in Celtic Sea.",
+      "keyDrivers": [
+        "AMP8 investment",
+        "Grid reinforcement",
+        "Celtic Sea energy",
+        "Net Zero Wales"
+      ],
+      "investmentDrivers": [
+        "Ofwat AMP8",
+        "RIIO-ED2",
+        "Marine energy"
+      ],
+      "risks": [
+        "Rural delivery",
+        "Grid capacity",
+        "Technology maturity"
+      ]
     },
     "infrastructure": {
       "outlook": "Major investment in flood defence across Welsh valleys and coast. NHS Wales estate modernisation. 21st Century Schools programme. A55 resilience investment.",
-      "keyDrivers": ["Climate adaptation", "NHS capacity", "Education", "Transport resilience"],
-      "investmentDrivers": ["Welsh Government capital", "NRW flood programme", "NHS Wales"],
-      "risks": ["Welsh Government budget", "Rural accessibility", "Skills"]
+      "keyDrivers": [
+        "Climate adaptation",
+        "NHS capacity",
+        "Education",
+        "Transport resilience"
+      ],
+      "investmentDrivers": [
+        "Welsh Government capital",
+        "NRW flood programme",
+        "NHS Wales"
+      ],
+      "risks": [
+        "Welsh Government budget",
+        "Rural accessibility",
+        "Skills"
+      ]
     },
     "defence": {
       "outlook": "MOD St Athan super-garrison development. RAF Valley training capability. Defence training estate investment in Wales.",
-      "keyDrivers": ["Army basing", "Training capability", "Estate modernisation"],
-      "investmentDrivers": ["MOD budget", "DIO programmes"],
-      "risks": ["Programme timelines", "Remote locations"]
+      "keyDrivers": [
+        "Army basing",
+        "Training capability",
+        "Estate modernisation"
+      ],
+      "investmentDrivers": [
+        "MOD budget",
+        "DIO programmes"
+      ],
+      "risks": [
+        "Programme timelines",
+        "Remote locations"
+      ]
     }
   },
   "opportunities": [
@@ -50,14 +114,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Welsh Government, UK Government",
-      "keyDrivers": ["Valley connectivity", "Electrification", "Frequency improvement"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Valley connectivity",
+        "Electrification",
+        "Frequency improvement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://tfw.wales/projects/south-wales-metro",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2019",
       "estimatedEnd": "2029",
-      "description": "Core Valley Lines transformation. Electrification, new stations, new fleet, increased frequencies."
+      "description": "Core Valley Lines transformation. Electrification, new stations, new fleet, increased frequencies.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
     },
     {
       "id": "reg-wa-002",
@@ -74,14 +160,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Rightacres, Cardiff Council, WG",
-      "keyDrivers": ["City centre expansion", "Station quarter", "Housing delivery"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "City centre expansion",
+        "Station quarter",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.cardiff.gov.uk/ENG/resident/Planning/Central-Square/Pages/default.aspx",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2018",
       "estimatedEnd": "2035",
-      "description": "Major regeneration south of Cardiff Central. Central Quay 10,000 homes, commercial, and public realm."
+      "description": "Major regeneration south of Cardiff Central. Central Quay 10,000 homes, commercial, and public realm.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-wa-003",
@@ -98,14 +206,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Swansea Council, WG, developers",
-      "keyDrivers": ["City centre transformation", "Arena", "Digital district"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "City centre transformation",
+        "Arena",
+        "Digital district"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.swansea.gov.uk/swanseacentralphase1",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2019",
       "estimatedEnd": "2028",
-      "description": "City centre regeneration. Swansea Arena complete, 71/72 The Kingsway, residential and digital district."
+      "description": "City centre regeneration. Swansea Arena complete, 71/72 The Kingsway, residential and digital district.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-wa-004",
@@ -122,14 +251,38 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofwat AMP8",
-      "keyDrivers": ["Storm overflows", "Water quality", "Bathing waters", "Resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor", "Programme Advisory"],
+      "keyDrivers": [
+        "Storm overflows",
+        "Water quality",
+        "Bathing waters",
+        "Resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
       "sourceLink": "https://www.dwrcymru.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "Major AMP8 programme. Storm overflow reduction, water treatment, and network investment across Wales."
+      "description": "Major AMP8 programme. Storm overflow reduction, water treatment, and network investment across Wales.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-005",
@@ -146,14 +299,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - UK Semiconductor Strategy, Welsh Government, private",
-      "keyDrivers": ["Semiconductor strategy", "Compound semiconductors", "R&D"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Semiconductor strategy",
+        "Compound semiconductors",
+        "R&D"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/national-semiconductor-strategy",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Compound semiconductor cluster. CSconnected, IQE, SPTS, and Catapult expansion."
+      "description": "Compound semiconductor cluster. CSconnected, IQE, SPTS, and Catapult expansion.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-006",
@@ -170,14 +344,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Welsh Government trunk road programme",
-      "keyDrivers": ["Network resilience", "Safety", "Economic connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Network resilience",
+        "Safety",
+        "Economic connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.wales/a55-resilience-programme",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Resilience improvements along A55 North Wales Expressway. Tunnel refurbishment and junction improvements."
+      "description": "Resilience improvements along A55 North Wales Expressway. Tunnel refurbishment and junction improvements.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-007",
@@ -194,14 +390,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - DIO Army basing programme",
-      "keyDrivers": ["Army basing", "Wales garrison consolidation", "Accommodation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Army basing",
+        "Wales garrison consolidation",
+        "Accommodation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "Super-garrison development at MOD St Athan. New SLA, training facilities, and infrastructure."
+      "description": "Super-garrison development at MOD St Athan. New SLA, training facilities, and infrastructure.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-wa-008",
@@ -218,14 +436,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - UK Government, Welsh Government, local authorities",
-      "keyDrivers": ["Regional economic growth", "Innovation", "Digital", "Tourism"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Regional economic growth",
+        "Innovation",
+        "Digital",
+        "Tourism"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://ambition.north.wales",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Growth Deal projects including digital, innovation, land and property, and low carbon energy."
+      "description": "Growth Deal projects including digital, innovation, land and property, and low carbon energy.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-009",
@@ -241,20 +481,42 @@
       "status": "delivery",
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
-      "fundingStatus": "Part funded - UK Government £500m, Tata Steel",
-      "keyDrivers": ["Green steel transition", "Electric arc furnace", "Decarbonisation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "fundingStatus": "Part funded - UK Government \u00a3500m, Tata Steel",
+      "keyDrivers": [
+        "Green steel transition",
+        "Electric arc furnace",
+        "Decarbonisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.tatasteeleurope.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2024",
       "estimatedEnd": "2028",
-      "description": "Transition from blast furnaces to electric arc furnace. UK Government £500m support. Major construction programme."
+      "description": "Transition from blast furnaces to electric arc furnace. UK Government \u00a3500m support. Major construction programme.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-wa-010",
       "title": "SP Energy Networks RIIO-ED2 Wales",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "wales",
       "location": {
@@ -266,14 +528,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - RIIO-ED2",
-      "keyDrivers": ["Net Zero", "EV infrastructure", "Renewable connections"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Net Zero",
+        "EV infrastructure",
+        "Renewable connections"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.spenergynetworks.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "ED2 programme for SP Manweb Wales area. Grid reinforcement for renewables and electrification."
+      "description": "ED2 programme for SP Manweb Wales area. Grid reinforcement for renewables and electrification.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-wa-011",
@@ -290,14 +573,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MOD training estate",
-      "keyDrivers": ["Fast jet training", "Hawk fleet", "Operational readiness"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Fast jet training",
+        "Hawk fleet",
+        "Operational readiness"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2022",
       "estimatedEnd": "2028",
-      "description": "Training facilities and accommodation at RAF Valley fast jet training base."
+      "description": "Training facilities and accommodation at RAF Valley fast jet training base.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-wa-012",
@@ -314,14 +618,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Welsh Government, TfW",
-      "keyDrivers": ["Station improvements", "Fleet modernisation", "Accessibility"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Station improvements",
+        "Fleet modernisation",
+        "Accessibility"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://tfw.wales",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Station upgrades, new fleet introduction, and network improvements across Wales."
+      "description": "Station upgrades, new fleet introduction, and network improvements across Wales.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-013",
@@ -338,14 +663,43 @@
       "procurementStage": "Expression of Interest",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Cardiff Council, Robertson Group, WG",
-      "keyDrivers": ["Indoor arena", "Waterfront development", "Tourism"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Indoor arena",
+        "Waterfront development",
+        "Tourism"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.cardiff.gov.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "15,000-capacity arena, hotel, residential, and commercial at Atlantic Wharf."
+      "description": "15,000-capacity arena, hotel, residential, and commercial at Atlantic Wharf.",
+      "tenderDate": "2024-Q3",
+      "pqqDeadline": "2024-Q4",
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2024-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-wa-014",
@@ -362,14 +716,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - NRW, Welsh Government",
-      "keyDrivers": ["Storm Dennis legacy", "Climate adaptation", "Valley communities"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Storm Dennis legacy",
+        "Climate adaptation",
+        "Valley communities"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://naturalresources.wales/flooding/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Flood defence improvements across South Wales valleys following Storm Dennis. NRW delivery."
+      "description": "Flood defence improvements across South Wales valleys following Storm Dennis. NRW delivery.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-015",
@@ -386,14 +762,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Welsh Government capital programme",
-      "keyDrivers": ["NHS Wales capacity", "Estate condition", "Specialist services"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS Wales capacity",
+        "Estate condition",
+        "Specialist services"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.gov.wales/nhs-wales-infrastructure",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2022",
       "estimatedEnd": "2032",
-      "description": "Hospital modernisation including Velindre Cancer Centre, Grange University Hospital expansion, and primary care."
+      "description": "Hospital modernisation including Velindre Cancer Centre, Grange University Hospital expansion, and primary care.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
     },
     {
       "id": "reg-wa-016",
@@ -410,14 +808,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Welsh Government, local authorities",
-      "keyDrivers": ["School condition", "Net Zero schools", "Welsh medium"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "School condition",
+        "Net Zero schools",
+        "Welsh medium"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.gov.wales/21st-century-schools-programme",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2030",
-      "description": "21st Century Schools Band C programme. Net zero carbon schools across Wales."
+      "description": "21st Century Schools Band C programme. Net zero carbon schools across Wales.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-017",
@@ -434,19 +854,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Wrexham CBC, Levelling Up Fund, Town Deal",
-      "keyDrivers": ["City status", "Football investment", "University growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "City status",
+        "Football investment",
+        "University growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.wrexham.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Town centre and gateway regeneration. Football stadium improvements, university campus, and housing."
+      "description": "Town centre and gateway regeneration. Football stadium improvements, university campus, and housing.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-wa-018",
       "title": "Celtic Sea Floating Offshore Wind - Welsh Ports",
-      "sector": "maritime",
+      "sector": "energy",
       "subSector": "freeport-offshore",
       "region": "wales",
       "location": {
@@ -458,14 +899,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to Celtic Sea leasing round and port investment",
-      "keyDrivers": ["Celtic Sea floating wind", "Port capability", "Energy transition"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Celtic Sea floating wind",
+        "Port capability",
+        "Energy transition"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.thecrownestate.co.uk/our-business/marine/celtic-sea",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Port infrastructure for Celtic Sea floating offshore wind. Milford Haven and Swansea Bay ports."
+      "description": "Port infrastructure for Celtic Sea floating offshore wind. Milford Haven and Swansea Bay ports.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-wa-019",
@@ -482,14 +953,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to developer selection",
-      "keyDrivers": ["Industrial land reuse", "Advanced manufacturing", "Employment"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Industrial land reuse",
+        "Advanced manufacturing",
+        "Employment"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.bridgend.gov.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2032",
-      "description": "Redevelopment of former Ford engine plant. Advanced manufacturing and employment site."
+      "description": "Redevelopment of former Ford engine plant. Advanced manufacturing and employment site.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-wa-020",
@@ -506,14 +1006,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - RIIO-ED2",
-      "keyDrivers": ["Net Zero", "EV charging", "Grid reinforcement"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Net Zero",
+        "EV charging",
+        "Grid reinforcement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.nationalgrid.co.uk/electricity-distribution",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "ED2 capital programme for South Wales distribution network."
+      "description": "ED2 capital programme for South Wales distribution network.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     }
   ]
 }

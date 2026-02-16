@@ -1,37 +1,104 @@
 {
   "lastUpdated": "2026-02-05",
   "lastResearched": "2026-02-05",
-  "regions": ["east-midlands"],
+  "regions": [
+    "east-midlands"
+  ],
   "sectorTrends": {
     "real-estate": {
       "outlook": "Nottingham and Leicester city centres seeing significant investment. East Midlands Development Corporation unlocking strategic sites. East Midlands Freeport catalysing logistics and manufacturing investment.",
-      "keyDrivers": ["Development Corporation", "Freeport status", "Housing targets", "City centre renewal"],
-      "investmentDrivers": ["EMDC powers", "Freeport incentives", "Homes England", "Levelling Up"],
-      "risks": ["Market depth", "Infrastructure constraints", "Developer confidence"]
+      "keyDrivers": [
+        "Development Corporation",
+        "Freeport status",
+        "Housing targets",
+        "City centre renewal"
+      ],
+      "investmentDrivers": [
+        "EMDC powers",
+        "Freeport incentives",
+        "Homes England",
+        "Levelling Up"
+      ],
+      "risks": [
+        "Market depth",
+        "Infrastructure constraints",
+        "Developer confidence"
+      ]
     },
     "rail": {
       "outlook": "Midland Main Line electrification completed to Market Harborough. HS2 Eastern Leg cancellation redirected to Network North. East Midlands Parkway and Hub station investment.",
-      "keyDrivers": ["MML electrification", "Network North legacy", "EMCRP connectivity"],
-      "investmentDrivers": ["Network Rail CP7", "DfT", "EMDC transport budget"],
-      "risks": ["Post-HS2 uncertainty", "Funding gaps", "Delivery timelines"]
+      "keyDrivers": [
+        "MML electrification",
+        "Network North legacy",
+        "EMCRP connectivity"
+      ],
+      "investmentDrivers": [
+        "Network Rail CP7",
+        "DfT",
+        "EMDC transport budget"
+      ],
+      "risks": [
+        "Post-HS2 uncertainty",
+        "Funding gaps",
+        "Delivery timelines"
+      ]
     },
     "utilities": {
       "outlook": "Severn Trent AMP8 covering western East Midlands. Anglian Water AMP8 covering eastern areas. National Grid and Western Power Distribution major grid investment.",
-      "keyDrivers": ["AMP8 cycles", "Grid reinforcement", "Freeport power needs", "Data centre demand"],
-      "investmentDrivers": ["Ofwat AMP8", "RIIO-ED2", "Connection charges"],
-      "risks": ["Split regulatory areas", "Grid capacity", "Labour shortages"]
+      "keyDrivers": [
+        "AMP8 cycles",
+        "Grid reinforcement",
+        "Freeport power needs",
+        "Data centre demand"
+      ],
+      "investmentDrivers": [
+        "Ofwat AMP8",
+        "RIIO-ED2",
+        "Connection charges"
+      ],
+      "risks": [
+        "Split regulatory areas",
+        "Grid capacity",
+        "Labour shortages"
+      ]
     },
     "infrastructure": {
       "outlook": "East Midlands Freeport driving logistics infrastructure. NHS estate investment at key hospitals. School rebuilding active. Flood defence along Trent catchment.",
-      "keyDrivers": ["Freeport infrastructure", "NHS capacity", "Flood risk", "Logistics growth"],
-      "investmentDrivers": ["Freeport retained rates", "NHP", "EA programme", "DfE"],
-      "risks": ["Public funding constraints", "Contractor availability", "Inflation"]
+      "keyDrivers": [
+        "Freeport infrastructure",
+        "NHS capacity",
+        "Flood risk",
+        "Logistics growth"
+      ],
+      "investmentDrivers": [
+        "Freeport retained rates",
+        "NHP",
+        "EA programme",
+        "DfE"
+      ],
+      "risks": [
+        "Public funding constraints",
+        "Contractor availability",
+        "Inflation"
+      ]
     },
     "data-centres": {
       "outlook": "East Midlands emerging as data centre location due to power availability and central UK position. M1 corridor attracting interest from hyperscale operators.",
-      "keyDrivers": ["Grid capacity", "Central UK location", "M1 connectivity", "Lower costs"],
-      "investmentDrivers": ["Tech company capex", "Infrastructure funds"],
-      "risks": ["Power connections timeline", "Planning", "Skills availability"]
+      "keyDrivers": [
+        "Grid capacity",
+        "Central UK location",
+        "M1 connectivity",
+        "Lower costs"
+      ],
+      "investmentDrivers": [
+        "Tech company capex",
+        "Infrastructure funds"
+      ],
+      "risks": [
+        "Power connections timeline",
+        "Planning",
+        "Skills availability"
+      ]
     }
   },
   "opportunities": [
@@ -50,14 +117,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to EMDC investment framework and CPO powers",
-      "keyDrivers": ["Development Corporation powers", "Strategic housing", "Economic growth"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Development Corporation powers",
+        "Strategic housing",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.emdevocorp.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2040",
-      "description": "Multiple strategic sites under East Midlands Development Corporation. Toton, Ratcliffe-on-Soar, East Midlands Airport area."
+      "description": "Multiple strategic sites under East Midlands Development Corporation. Toton, Ratcliffe-on-Soar, East Midlands Airport area.",
+      "tenderDate": "2025-Q1",
+      "pqqDeadline": "2025-Q3",
+      "ittDeadline": "2025-Q4",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-002",
@@ -74,19 +171,41 @@
       "procurementStage": "Dialogue",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Nottingham CC, Levelling Up Fund, developer partner",
-      "keyDrivers": ["City centre transformation", "Former shopping centre site", "Housing delivery"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "City centre transformation",
+        "Former shopping centre site",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.nottinghamcity.gov.uk/broadmarsh",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2035",
-      "description": "Major regeneration of former Broadmarsh shopping centre. Green space, residential, cultural, and commercial uses."
+      "description": "Major regeneration of former Broadmarsh shopping centre. Green space, residential, cultural, and commercial uses.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-003",
       "title": "East Midlands Freeport - Ratcliffe Gateway",
-      "sector": "real-estate",
+      "sector": "energy",
       "subSector": "commercial",
       "region": "east-midlands",
       "location": {
@@ -98,14 +217,44 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Freeport incentives, Uniper site, EMDC",
-      "keyDrivers": ["Freeport tax zone", "Former power station site", "Green energy hub"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Freeport tax zone",
+        "Former power station site",
+        "Green energy hub"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.emfreeport.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2035",
-      "description": "Redevelopment of Ratcliffe-on-Soar power station site. Advanced manufacturing, green energy, and innovation campus."
+      "description": "Redevelopment of Ratcliffe-on-Soar power station site. Advanced manufacturing, green energy, and innovation campus.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-004",
@@ -122,14 +271,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Leicester CC, Keepmoat Homes, Homes England",
-      "keyDrivers": ["City centre living", "Waterfront regeneration", "Housing delivery"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "City centre living",
+        "Waterfront regeneration",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.leicester.gov.uk/planning-and-building/regeneration-projects/waterside/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2018",
       "estimatedEnd": "2030",
-      "description": "3,000 homes along River Soar. Multiple phases with Keepmoat and other developers."
+      "description": "3,000 homes along River Soar. Multiple phases with Keepmoat and other developers.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-005",
@@ -146,14 +316,44 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to Network North / CP8 decisions",
-      "keyDrivers": ["Electrification", "Journey times", "Decarbonisation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Electrification",
+        "Journey times",
+        "Decarbonisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.networkrail.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2029",
       "estimatedEnd": "2035",
-      "description": "Continuation of MML electrification northward from Market Harborough. Subject to funding decisions."
+      "description": "Continuation of MML electrification northward from Market Harborough. Subject to funding decisions.",
+      "tenderDate": "2028-Q1",
+      "pqqDeadline": "2028-Q3",
+      "ittDeadline": "2028-Q4",
+      "contractAward": "2029-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2028-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2028-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2028-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2029-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-006",
@@ -170,14 +370,44 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to DfT funding and business case",
-      "keyDrivers": ["Network expansion", "Housing growth", "Modal shift"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Network expansion",
+        "Housing growth",
+        "Modal shift"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.thetram.net",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2029",
       "estimatedEnd": "2035",
-      "description": "Proposed tram extensions to EM Parkway, Gedling, and other corridors. Subject to business case."
+      "description": "Proposed tram extensions to EM Parkway, Gedling, and other corridors. Subject to business case.",
+      "tenderDate": "2028-Q1",
+      "pqqDeadline": "2028-Q3",
+      "ittDeadline": "2028-Q4",
+      "contractAward": "2029-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2028-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2028-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2028-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2029-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-007",
@@ -194,14 +424,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Derby CC, St James Securities, Homes England",
-      "keyDrivers": ["City centre renewal", "Performance venue", "Housing delivery"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "City centre renewal",
+        "Performance venue",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.becketwell.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2021",
       "estimatedEnd": "2028",
-      "description": "City centre regeneration with 3,500-seat performance venue, residential, and commercial. Performance venue under construction."
+      "description": "City centre regeneration with 3,500-seat performance venue, residential, and commercial. Performance venue under construction.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-em-008",
@@ -218,14 +470,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MAG corporate (Manchester Airports Group)",
-      "keyDrivers": ["Cargo growth", "Passenger capacity", "Freeport"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Cargo growth",
+        "Passenger capacity",
+        "Freeport"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.eastmidlandsairport.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2026",
       "estimatedEnd": "2032",
-      "description": "Cargo and passenger terminal expansion. UK's largest pure cargo airport. Freeport connectivity."
+      "description": "Cargo and passenger terminal expansion. UK's largest pure cargo airport. Freeport connectivity.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-009",
@@ -242,14 +523,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofwat AMP8",
-      "keyDrivers": ["Storm overflows", "Water quality", "Resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Storm overflows",
+        "Water quality",
+        "Resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.severntrent.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "Combined AMP8 programmes from Severn Trent (west) and Anglian Water (east) across East Midlands."
+      "description": "Combined AMP8 programmes from Severn Trent (west) and Anglian Water (east) across East Midlands.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-010",
@@ -266,14 +569,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Lincolnshire CC, HIF, developers",
-      "keyDrivers": ["Traffic relief", "Housing delivery", "Economic growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Traffic relief",
+        "Housing delivery",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.lincolnshire.gov.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "Eastern bypass and associated housing growth infrastructure. Bypass open, housing delivery ongoing."
+      "description": "Eastern bypass and associated housing growth infrastructure. Bypass open, housing delivery ongoing.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-em-011",
@@ -290,14 +615,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - WNC, Enterprise Zone, developers",
-      "keyDrivers": ["Enterprise Zone incentives", "Town centre renewal", "University growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Enterprise Zone incentives",
+        "Town centre renewal",
+        "University growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.northampton.gov.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2018",
       "estimatedEnd": "2030",
-      "description": "Enterprise Zone regeneration with office, university campus, and residential development."
+      "description": "Enterprise Zone regeneration with office, university campus, and residential development.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-012",
@@ -314,14 +660,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - New Hospital Programme",
-      "keyDrivers": ["NHS capacity", "Estate condition", "Population growth"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS capacity",
+        "Estate condition",
+        "Population growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.england.nhs.uk/new-hospital-programme/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Hospital improvements including QMC Nottingham, Leicester Royal Infirmary, and Lincoln County Hospital."
+      "description": "Hospital improvements including QMC Nottingham, Leicester Royal Infirmary, and Lincoln County Hospital.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-013",
@@ -338,14 +714,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to operator investment and grid connection",
-      "keyDrivers": ["Power availability", "Central UK location", "M1 connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Power availability",
+        "Central UK location",
+        "M1 connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2027",
       "estimatedEnd": "2031",
-      "description": "Proposed hyperscale data centre campus in M1 corridor. Grid connection secured."
+      "description": "Proposed hyperscale data centre campus in M1 corridor. Grid connection secured.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-014",
@@ -362,14 +767,35 @@
       "procurementStage": "ITT",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - DfE capital programme",
-      "keyDrivers": ["RAAC remediation", "School condition"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "RAAC remediation",
+        "School condition"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/school-rebuilding-programme",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2030",
-      "description": "Multiple school rebuilds across East Midlands. DfE framework procurement."
+      "description": "Multiple school rebuilds across East Midlands. DfE framework procurement.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2024-Q1",
+      "contractAward": "2024-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-015",
@@ -386,19 +812,48 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Network North allocation",
-      "keyDrivers": ["HS2 rolling stock depot", "Rail connectivity", "Regeneration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "HS2 rolling stock depot",
+        "Rail connectivity",
+        "Regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.chesterfield.gov.uk/living-here/staveley-works-regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2033",
-      "description": "HS2 rolling stock depot at Staveley and associated regeneration. Gateway to Barrow Hill."
+      "description": "HS2 rolling stock depot at Staveley and associated regeneration. Gateway to Barrow Hill.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-016",
       "title": "Western Power Distribution ED2 East Midlands",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "east-midlands",
       "location": {
@@ -410,14 +865,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - RIIO-ED2 allowances",
-      "keyDrivers": ["Net Zero", "EV charging", "Grid reinforcement"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Net Zero",
+        "EV charging",
+        "Grid reinforcement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.nationalgrid.co.uk/electricity-distribution",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "ED2 capital programme for East Midlands distribution. Substations, reinforcement, smart grid."
+      "description": "ED2 capital programme for East Midlands distribution. Substations, reinforcement, smart grid.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-em-017",
@@ -434,14 +910,44 @@
       "procurementStage": "PQQ",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - National Highways RIS3",
-      "keyDrivers": ["Strategic connectivity", "Congestion relief", "Housing growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Strategic connectivity",
+        "Congestion relief",
+        "Housing growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://nationalhighways.co.uk/our-roads/east-midlands/a46-newark-bypass/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2026",
       "estimatedEnd": "2031",
-      "description": "Major upgrade of A46 at Newark. New bypass and junction improvements."
+      "description": "Major upgrade of A46 at Newark. New bypass and junction improvements.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-018",
@@ -458,14 +964,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Environment Agency",
-      "keyDrivers": ["Climate adaptation", "Fluvial flood risk", "Community protection"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Climate adaptation",
+        "Fluvial flood risk",
+        "Community protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/environment-agency",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Flood defence improvements across Trent catchment including Nottingham Left Bank and Derby."
+      "description": "Flood defence improvements across Trent catchment including Nottingham Left Bank and Derby.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-019",
@@ -482,14 +1010,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Freeport incentives, MAG, logistics operators",
-      "keyDrivers": ["Freeport customs zone", "Air cargo", "Logistics growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Freeport customs zone",
+        "Air cargo",
+        "Logistics growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.emfreeport.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2023",
       "estimatedEnd": "2030",
-      "description": "Logistics and distribution hub around East Midlands Airport Freeport zone. Amazon, DHL, UPS presence."
+      "description": "Logistics and distribution hub around East Midlands Airport Freeport zone. Amazon, DHL, UPS presence.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-020",
@@ -505,15 +1054,36 @@
       "status": "delivery",
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
-      "fundingStatus": "Part funded - WNC, Town Deal £24.9M, Future High Streets Fund",
-      "keyDrivers": ["Town centre renewal", "University of Northampton expansion", "West Northamptonshire growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "fundingStatus": "Part funded - WNC, Town Deal \u00a324.9M, Future High Streets Fund",
+      "keyDrivers": [
+        "Town centre renewal",
+        "University of Northampton expansion",
+        "West Northamptonshire growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.westnorthants.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Major town centre regeneration including Four Waterside, St James gateway, Greyfriars redevelopment, and university quarter expansion."
+      "description": "Major town centre regeneration including Four Waterside, St James gateway, Greyfriars redevelopment, and university quarter expansion.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-021",
@@ -529,15 +1099,36 @@
       "status": "delivery",
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
-      "fundingStatus": "Part funded - MDC, Town Deal £62.6m",
-      "keyDrivers": ["Town centre renewal", "Heritage", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "fundingStatus": "Part funded - MDC, Town Deal \u00a362.6m",
+      "keyDrivers": [
+        "Town centre renewal",
+        "Heritage",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.mansfield.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2022",
       "estimatedEnd": "2028",
-      "description": "Town centre regeneration including White Hart transformation, market hall, and public realm."
+      "description": "Town centre regeneration including White Hart transformation, market hall, and public realm.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-em-022",
@@ -554,14 +1145,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to RIS3 and local major scheme funding",
-      "keyDrivers": ["Congestion relief", "Housing delivery", "Economic connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Congestion relief",
+        "Housing delivery",
+        "Economic connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://nationalhighways.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2028",
       "estimatedEnd": "2033",
-      "description": "A52 capacity improvements serving Nottingham growth areas."
+      "description": "A52 capacity improvements serving Nottingham growth areas.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-em-023",
@@ -578,14 +1198,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - NNC, developers, Homes England",
-      "keyDrivers": ["Population growth", "Town centre diversification", "Rail connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Population growth",
+        "Town centre diversification",
+        "Rail connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.northnorthants.gov.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Town centre expansion with housing, retail, and leisure. UK's fastest growing town."
+      "description": "Town centre expansion with housing, retail, and leisure. UK's fastest growing town.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-024",
@@ -602,19 +1243,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Derby CC, Enterprise Zone, Rolls-Royce",
-      "keyDrivers": ["Aerospace cluster", "Rolls-Royce supply chain", "Innovation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Aerospace cluster",
+        "Rolls-Royce supply chain",
+        "Innovation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.infinityparkderby.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2016",
       "estimatedEnd": "2030",
-      "description": "Enterprise Zone for advanced manufacturing. Rolls-Royce test facilities, research, and supply chain."
+      "description": "Enterprise Zone for advanced manufacturing. Rolls-Royce test facilities, research, and supply chain.",
+      "contractAward": "2016-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2016-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-em-025",
       "title": "Boston & South Lincolnshire Flood Programme",
-      "sector": "infrastructure",
+      "sector": "energy",
       "subSector": "flood-defence",
       "region": "east-midlands",
       "location": {
@@ -626,14 +1288,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Environment Agency, Boston Barrier",
-      "keyDrivers": ["Tidal flood risk", "Boston Barrier", "Agricultural protection"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Tidal flood risk",
+        "Boston Barrier",
+        "Agricultural protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/environment-agency",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2019",
       "estimatedEnd": "2028",
-      "description": "Boston Barrier tidal flood defence and wider Lincolnshire coast protection schemes."
+      "description": "Boston Barrier tidal flood defence and wider Lincolnshire coast protection schemes.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     }
   ]
 }

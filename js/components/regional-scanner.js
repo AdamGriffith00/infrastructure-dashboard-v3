@@ -218,6 +218,7 @@ export function renderRegionalScanner(container, regionData, options = {}) {
                 <th class="sortable" data-sort="status">Stage</th>
                 <th>Funding</th>
                 <th class="sortable" data-sort="value">Value</th>
+                <th>Next Date</th>
                 <th>Services</th>
               </tr>
             </thead>
@@ -306,6 +307,9 @@ function renderTableRows(opportunities, sectors) {
         </td>
         <td class="value-cell">
           ${formatCurrency(opp.value)}
+        </td>
+        <td>
+          ${renderNextDate(opp)}
         </td>
         <td>
           <div class="services-cell">
@@ -555,6 +559,64 @@ function formatDate(dateStr) {
 function truncate(str, len) {
   if (!str) return '';
   return str.length > len ? str.substring(0, len) + '...' : str;
+}
+
+function getNextKeyDate(opp) {
+  const now = new Date();
+  const currentQ = `${now.getFullYear()}-Q${Math.ceil((now.getMonth() + 1) / 3)}`;
+
+  const dates = [
+    { label: 'Tender', date: opp.tenderDate },
+    { label: 'PQQ', date: opp.pqqDeadline },
+    { label: 'ITT', date: opp.ittDeadline },
+    { label: 'Award', date: opp.contractAward }
+  ].filter(d => d.date && d.date >= currentQ);
+
+  dates.sort((a, b) => a.date.localeCompare(b.date));
+  return dates[0] || null;
+}
+
+function renderNextDate(opp) {
+  const next = getNextKeyDate(opp);
+  if (!next) return '<span class="text-muted">-</span>';
+  return `
+    <div class="next-date-cell">
+      <span class="next-date-label">${next.label}</span>
+      <span class="next-date-value">${next.date}</span>
+    </div>
+  `;
+}
+
+function renderKeyDatesSection(opp) {
+  const dates = opp.keyDates;
+  if (!dates || !dates.length) return '';
+
+  const now = new Date();
+  const currentQ = `${now.getFullYear()}-Q${Math.ceil((now.getMonth() + 1) / 3)}`;
+
+  return `
+    <div class="opp-key-dates">
+      <h4>Key Dates</h4>
+      <div class="key-dates-timeline">
+        ${dates.map(d => {
+          let cls = 'future';
+          if (d.date < currentQ) cls = 'past';
+          else if (d.date <= currentQ) cls = 'upcoming';
+          else {
+            // Check if this is the next upcoming date
+            const nextDate = getNextKeyDate(opp);
+            if (nextDate && d.date === nextDate.date) cls = 'upcoming';
+          }
+          return `
+            <div class="key-date-item ${cls}">
+              <span class="key-date-label">${d.label}</span>
+              <span class="key-date-value">${d.date}</span>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
 }
 
 function abbreviateService(service) {
@@ -874,6 +936,9 @@ function renderOpportunityDetail(opp, sectors) {
         ${opp.procurementStage ? `<span class="opp-stage-badge">${opp.procurementStage}</span>` : ''}
         ${opp.projectType ? `<span class="opp-type-badge">${opp.projectType}</span>` : ''}
       </div>
+
+      <!-- Key Dates -->
+      ${renderKeyDatesSection(opp)}
 
       <!-- Description -->
       ${opp.description ? `

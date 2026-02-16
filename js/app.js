@@ -199,10 +199,127 @@ class App {
   }
 }
 
+// Password gate
+const ACCESS_HASH = 'f08ddba4';
+
+function simpleHash(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash |= 0;
+  }
+  return (hash >>> 0).toString(16).slice(0, 8);
+}
+
+function showLoginScreen() {
+  const app = document.getElementById('app');
+  app.innerHTML = `
+    <div class="login-screen">
+      <div class="login-card">
+        <h1 class="login-title">UK Infrastructure Dashboard</h1>
+        <p class="login-subtitle">Enter your access code to continue</p>
+        <form id="login-form" class="login-form">
+          <input type="password" id="login-password" class="login-input" placeholder="Access code" autocomplete="off" autofocus>
+          <button type="submit" class="login-btn">Enter</button>
+        </form>
+        <p class="login-error" id="login-error"></p>
+      </div>
+    </div>
+    <style>
+      .login-screen {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-darker);
+      }
+      .login-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border-dark);
+        border-radius: 12px;
+        padding: 48px 40px;
+        max-width: 400px;
+        width: 90%;
+        text-align: center;
+      }
+      .login-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--gleeds-yellow);
+        margin-bottom: 8px;
+      }
+      .login-subtitle {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-bottom: 32px;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .login-input {
+        background: var(--bg-input);
+        border: 1px solid var(--border-dark);
+        border-radius: 8px;
+        padding: 12px 16px;
+        font-size: 1rem;
+        color: var(--text-primary);
+        text-align: center;
+        letter-spacing: 2px;
+        outline: none;
+        transition: border-color 0.2s;
+      }
+      .login-input:focus {
+        border-color: var(--gleeds-yellow);
+      }
+      .login-btn {
+        background: var(--gleeds-yellow);
+        color: var(--text-on-yellow);
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .login-btn:hover {
+        opacity: 0.9;
+      }
+      .login-error {
+        color: var(--status-low);
+        font-size: 0.85rem;
+        margin-top: 16px;
+        min-height: 1.2em;
+      }
+    </style>
+  `;
+
+  document.getElementById('login-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const password = document.getElementById('login-password').value;
+    if (simpleHash(password) === ACCESS_HASH) {
+      sessionStorage.setItem('dashboard_auth', 'true');
+      const dashApp = new App();
+      dashApp.init();
+    } else {
+      document.getElementById('login-error').textContent = 'Incorrect access code';
+      document.getElementById('login-password').value = '';
+      document.getElementById('login-password').focus();
+    }
+  });
+}
+
 // Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  const app = new App();
-  app.init();
+  if (sessionStorage.getItem('dashboard_auth') === 'true') {
+    const app = new App();
+    app.init();
+  } else {
+    showLoginScreen();
+  }
 });
 
 // Export for debugging

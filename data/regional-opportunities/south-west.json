@@ -1,37 +1,102 @@
 {
   "lastUpdated": "2026-02-05",
   "lastResearched": "2026-02-05",
-  "regions": ["south-west"],
+  "regions": [
+    "south-west"
+  ],
   "sectorTrends": {
     "real-estate": {
       "outlook": "Bristol leading South West regeneration with Temple Quarter and Western Harbour. Plymouth and Exeter growing city centres. Bath and Bournemouth attracting institutional investment. Housing delivery pressure across region.",
-      "keyDrivers": ["Bristol Temple Quarter", "City centre renewal", "Housing delivery", "Tourism"],
-      "investmentDrivers": ["WECA funding", "Homes England", "Town Deals", "Private developers"],
-      "risks": ["Planning sensitivity", "Heritage constraints", "Construction costs"]
+      "keyDrivers": [
+        "Bristol Temple Quarter",
+        "City centre renewal",
+        "Housing delivery",
+        "Tourism"
+      ],
+      "investmentDrivers": [
+        "WECA funding",
+        "Homes England",
+        "Town Deals",
+        "Private developers"
+      ],
+      "risks": [
+        "Planning sensitivity",
+        "Heritage constraints",
+        "Construction costs"
+      ]
     },
     "utilities": {
       "outlook": "South West Water and Wessex Water AMP8 programmes. National Grid upgrading for Hinkley Point C grid connection. Western Power Distribution major investment. Severn Trent covering parts of region.",
-      "keyDrivers": ["AMP8 investment", "Hinkley grid", "Bathing water quality", "Storm overflows"],
-      "investmentDrivers": ["Ofwat AMP8", "RIIO-T2/ED2", "Nuclear connection"],
-      "risks": ["Water company financial health", "Rural delivery challenges"]
+      "keyDrivers": [
+        "AMP8 investment",
+        "Hinkley grid",
+        "Bathing water quality",
+        "Storm overflows"
+      ],
+      "investmentDrivers": [
+        "Ofwat AMP8",
+        "RIIO-T2/ED2",
+        "Nuclear connection"
+      ],
+      "risks": [
+        "Water company financial health",
+        "Rural delivery challenges"
+      ]
     },
     "defence": {
       "outlook": "HMNB Devonport largest naval base in Western Europe. Babcock major submarine refit programme. RNAS Yeovilton investment. MOD Boscombe Down testing capability.",
-      "keyDrivers": ["Type 31 frigate", "Submarine refit", "Operational capability"],
-      "investmentDrivers": ["MOD Shipbuilding Strategy", "Defence Command Paper", "DIO"],
-      "risks": ["Programme timelines", "Skills shortages", "Budget pressures"]
+      "keyDrivers": [
+        "Type 31 frigate",
+        "Submarine refit",
+        "Operational capability"
+      ],
+      "investmentDrivers": [
+        "MOD Shipbuilding Strategy",
+        "Defence Command Paper",
+        "DIO"
+      ],
+      "risks": [
+        "Programme timelines",
+        "Skills shortages",
+        "Budget pressures"
+      ]
     },
     "infrastructure": {
       "outlook": "Hinkley Point C transformational for Somerset. South West flood and coastal defence investment significant. NHS hospital programmes. School rebuilding active.",
-      "keyDrivers": ["Hinkley C", "Coastal flood risk", "NHS capacity", "Tourism economy"],
-      "investmentDrivers": ["Nuclear new build", "EA programme", "NHP"],
-      "risks": ["Hinkley timeline", "Remote locations", "Contractor availability"]
+      "keyDrivers": [
+        "Hinkley C",
+        "Coastal flood risk",
+        "NHS capacity",
+        "Tourism economy"
+      ],
+      "investmentDrivers": [
+        "Nuclear new build",
+        "EA programme",
+        "NHP"
+      ],
+      "risks": [
+        "Hinkley timeline",
+        "Remote locations",
+        "Contractor availability"
+      ]
     },
     "rail": {
       "outlook": "A303 Stonehenge tunnel progressing. Network Rail CP7 Great Western programme. MetroWest Bristol suburban rail. South West mainline resilience at Dawlish.",
-      "keyDrivers": ["South West connectivity", "Resilience", "Suburban rail", "GWR electrification"],
-      "investmentDrivers": ["Network Rail CP7", "DfT", "WECA"],
-      "risks": ["Dawlish resilience costs", "Funding gaps"]
+      "keyDrivers": [
+        "South West connectivity",
+        "Resilience",
+        "Suburban rail",
+        "GWR electrification"
+      ],
+      "investmentDrivers": [
+        "Network Rail CP7",
+        "DfT",
+        "WECA"
+      ],
+      "risks": [
+        "Dawlish resilience costs",
+        "Funding gaps"
+      ]
     }
   },
   "opportunities": [
@@ -50,19 +115,41 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Bristol CC, UoB, Homes England, private developers",
-      "keyDrivers": ["Station quarter", "University campus", "Housing delivery"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Station quarter",
+        "University campus",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.bristoltemplequarter.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2019",
       "estimatedEnd": "2040",
-      "description": "130-acre regeneration around Temple Meads. University of Bristol new campus, 10,000 homes, commercial."
+      "description": "130-acre regeneration around Temple Meads. University of Bristol new campus, 10,000 homes, commercial.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2040"
+        }
+      ]
     },
     {
       "id": "reg-sw-002",
       "title": "Hinkley Point C Nuclear Power Station",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "south-west",
       "location": {
@@ -74,14 +161,37 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - EDF / CGN",
-      "keyDrivers": ["Energy security", "Net Zero", "Baseload generation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M", "NEC Supervisor"],
+      "keyDrivers": [
+        "Energy security",
+        "Net Zero",
+        "Baseload generation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.edfenergy.com/energy/nuclear-new-build-projects/hinkley-point-c",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2017",
       "estimatedEnd": "2031",
-      "description": "Twin EPR nuclear reactors. 3.2GW capacity. Major construction underway. Unit 1 reactor building progressing."
+      "description": "Twin EPR nuclear reactors. 3.2GW capacity. Major construction underway. Unit 1 reactor building progressing.",
+      "contractAward": "2017-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2017-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2031"
+        }
+      ]
     },
     {
       "id": "reg-sw-003",
@@ -98,19 +208,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Freeport incentives, Plymouth CC, private",
-      "keyDrivers": ["Freeport status", "Marine industries", "Naval supply chain"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Freeport status",
+        "Marine industries",
+        "Naval supply chain"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.plymouthfreeport.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2022",
       "estimatedEnd": "2032",
-      "description": "Marine enterprise zone. Oceansgate innovation hub, South Yard regeneration, and Freeport customs zones."
+      "description": "Marine enterprise zone. Oceansgate innovation hub, South Yard regeneration, and Freeport customs zones.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
     },
     {
       "id": "reg-sw-004",
       "title": "HMNB Devonport Infrastructure Programme",
-      "sector": "defence",
+      "sector": "energy",
       "subSector": "naval",
       "region": "south-west",
       "location": {
@@ -122,14 +253,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MOD Submarine Delivery Agency",
-      "keyDrivers": ["Submarine refit", "Nuclear deterrent", "Base infrastructure"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Submarine refit",
+        "Nuclear deterrent",
+        "Base infrastructure"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.babcockinternational.com",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "Babcock-operated naval base. Submarine refit and maintenance, dock infrastructure, nuclear facilities."
+      "description": "Babcock-operated naval base. Submarine refit and maintenance, dock infrastructure, nuclear facilities.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-sw-005",
@@ -146,14 +299,36 @@
       "procurementStage": "ITT",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - National Highways RIS2/RIS3",
-      "keyDrivers": ["Strategic connectivity", "Heritage protection", "South West access"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Strategic connectivity",
+        "Heritage protection",
+        "South West access"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://nationalhighways.co.uk/our-roads/south-west/a303-stonehenge/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2025",
       "estimatedEnd": "2032",
-      "description": "2-mile bored tunnel past Stonehenge World Heritage Site. DCO granted. Construction procurement."
+      "description": "2-mile bored tunnel past Stonehenge World Heritage Site. DCO granted. Construction procurement.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-006",
@@ -170,14 +345,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofwat AMP8",
-      "keyDrivers": ["Bathing water quality", "Storm overflows", "Resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Bathing water quality",
+        "Storm overflows",
+        "Resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.southwestwater.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "AMP8 capital programme for Devon and Cornwall. Major storm overflow improvements."
+      "description": "AMP8 capital programme for Devon and Cornwall. Major storm overflow improvements.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sw-007",
@@ -194,14 +391,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofwat AMP8",
-      "keyDrivers": ["Storm overflows", "Water quality", "Network resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Storm overflows",
+        "Water quality",
+        "Network resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.wessexwater.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "AMP8 programme for Bath, Somerset, Dorset, and Wiltshire. Storm overflows and water treatment."
+      "description": "AMP8 programme for Bath, Somerset, Dorset, and Wiltshire. Storm overflows and water treatment.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sw-008",
@@ -218,14 +437,43 @@
       "procurementStage": "Expression of Interest",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - DCC/ECC, Network Rail, developers",
-      "keyDrivers": ["Station gateway", "City centre growth", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Station gateway",
+        "City centre growth",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.exeter.gov.uk/liveable-exeter/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Station area regeneration, Liveable Exeter housing sites, and city centre improvements."
+      "description": "Station area regeneration, Liveable Exeter housing sites, and city centre improvements.",
+      "tenderDate": "2026-Q3",
+      "pqqDeadline": "2026-Q4",
+      "ittDeadline": "2027-Q1",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-009",
@@ -242,14 +490,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to planning and developer selection",
-      "keyDrivers": ["Waterfront regeneration", "Housing delivery", "Transport"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Waterfront regeneration",
+        "Housing delivery",
+        "Transport"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.bristol.gov.uk/planning-and-building-regulations/western-harbour",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2040",
-      "description": "Major waterfront regeneration at Cumberland Basin. 3,500 homes and new transport infrastructure."
+      "description": "Major waterfront regeneration at Cumberland Basin. 3,500 homes and new transport infrastructure.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-010",
@@ -266,14 +544,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Network Rail CP6/CP7",
-      "keyDrivers": ["Climate resilience", "Mainline protection", "South West connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Climate resilience",
+        "Mainline protection",
+        "South West connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.networkrail.co.uk/running-the-railway/our-routes/western/dawlish/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2019",
       "estimatedEnd": "2030",
-      "description": "Coastal defence and rail resilience at Dawlish. Sea wall, cliff stabilisation, and structures."
+      "description": "Coastal defence and rail resilience at Dawlish. Sea wall, cliff stabilisation, and structures.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sw-011",
@@ -290,19 +590,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - BCP Council, private developers, Town Deal",
-      "keyDrivers": ["Tourism economy", "Town centre diversification", "Student accommodation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Tourism economy",
+        "Town centre diversification",
+        "Student accommodation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.bcpcouncil.gov.uk/Regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Town centre transformation including Bournemouth International Centre, Winter Gardens, and residential towers."
+      "description": "Town centre transformation including Bournemouth International Centre, Winter Gardens, and residential towers.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sw-012",
       "title": "Cornwall Spaceport & Offshore Wind",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "south-west",
       "location": {
@@ -314,14 +635,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Government grants, Celtic Sea leasing",
-      "keyDrivers": ["Celtic Sea floating wind", "Space launch", "Clean energy"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Celtic Sea floating wind",
+        "Space launch",
+        "Clean energy"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://spaceportcornwall.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Spaceport Cornwall operations and Celtic Sea floating offshore wind supply chain development."
+      "description": "Spaceport Cornwall operations and Celtic Sea floating offshore wind supply chain development.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-013",
@@ -338,14 +688,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - DIO estate programme",
-      "keyDrivers": ["Commando helicopter force", "Wildcat fleet", "Training"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Commando helicopter force",
+        "Wildcat fleet",
+        "Training"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2022",
       "estimatedEnd": "2029",
-      "description": "Infrastructure and facilities improvements at RNAS Yeovilton. Hangars and accommodation."
+      "description": "Infrastructure and facilities improvements at RNAS Yeovilton. Hangars and accommodation.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
     },
     {
       "id": "reg-sw-014",
@@ -362,14 +733,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - PCC, British Land, Town Deal",
-      "keyDrivers": ["City centre renewal", "Leisure quarter", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "City centre renewal",
+        "Leisure quarter",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.plymouth.gov.uk/planning-and-building-control/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2019",
       "estimatedEnd": "2028",
-      "description": "City centre regeneration including Drake Circus Leisure, Colin Campbell Court, and residential."
+      "description": "City centre regeneration including Drake Circus Leisure, Colin Campbell Court, and residential.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-sw-015",
@@ -386,14 +778,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - WECA, Network Rail, DfT",
-      "keyDrivers": ["Suburban rail", "Modal shift", "Housing growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Suburban rail",
+        "Modal shift",
+        "Housing growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://travelwest.info/projects/metrowest",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "Suburban rail improvements including Portishead reopening, Henbury loop, and frequency improvements."
+      "description": "Suburban rail improvements including Portishead reopening, Henbury loop, and frequency improvements.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-sw-016",
@@ -410,14 +823,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Swindon BC, Town Deal, Future High Streets",
-      "keyDrivers": ["Town centre revival", "Heritage quarter", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Town centre revival",
+        "Heritage quarter",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.swindon.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2033",
-      "description": "Town centre regeneration including railway heritage quarter, Kimmerfields, and town centre living."
+      "description": "Town centre regeneration including railway heritage quarter, Kimmerfields, and town centre living.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-017",
@@ -434,14 +876,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Environment Agency",
-      "keyDrivers": ["Climate adaptation", "Coastal erosion", "Community protection"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Climate adaptation",
+        "Coastal erosion",
+        "Community protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/environment-agency",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Multiple coastal and river flood defence schemes across Devon, Cornwall, Somerset, and Dorset."
+      "description": "Multiple coastal and river flood defence schemes across Devon, Cornwall, Somerset, and Dorset.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sw-018",
@@ -458,14 +922,35 @@
       "procurementStage": "ITT",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - DfE",
-      "keyDrivers": ["RAAC", "School condition"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "RAAC",
+        "School condition"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/school-rebuilding-programme",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2030",
-      "description": "Multiple school rebuilds across South West. DfE framework."
+      "description": "Multiple school rebuilds across South West. DfE framework.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2024-Q1",
+      "contractAward": "2024-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-019",
@@ -482,14 +967,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - New Hospital Programme",
-      "keyDrivers": ["NHS capacity", "Estate condition"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS capacity",
+        "Estate condition"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.england.nhs.uk/new-hospital-programme/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Hospital improvements including Torbay, Musgrove Park Taunton, and Bristol Royal Infirmary."
+      "description": "Hospital improvements including Torbay, Musgrove Park Taunton, and Bristol Royal Infirmary.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-020",
@@ -506,14 +1020,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - B&NES, Enterprise Zone, developers",
-      "keyDrivers": ["Enterprise Zone", "Office demand", "Heritage city growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Enterprise Zone",
+        "Office demand",
+        "Heritage city growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.bathnes.gov.uk/bath-quays",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2018",
       "estimatedEnd": "2028",
-      "description": "Enterprise Zone with Grade A offices, hotel, and public realm. Bath Quays North and South."
+      "description": "Enterprise Zone with Grade A offices, hotel, and public realm. Bath Quays North and South.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-sw-021",
@@ -530,14 +1065,43 @@
       "procurementStage": "Expression of Interest",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Torbay Council, Town Deal, Levelling Up Fund",
-      "keyDrivers": ["Tourism economy", "Town centre diversification", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Tourism economy",
+        "Town centre diversification",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.torbay.gov.uk/council/policies/planning/regeneration/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2032",
-      "description": "Town centre regeneration including Torquay harbourside, Paignton Picture House, and town centre living."
+      "description": "Town centre regeneration including Torquay harbourside, Paignton Picture House, and town centre living.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-022",
@@ -554,14 +1118,44 @@
       "procurementStage": "PQQ",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - National Highways RIS2/RIS3",
-      "keyDrivers": ["Strategic connectivity", "A303 corridor completion", "Safety"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Strategic connectivity",
+        "A303 corridor completion",
+        "Safety"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://nationalhighways.co.uk/our-roads/south-west/a358-taunton-to-southfields/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2026",
       "estimatedEnd": "2031",
-      "description": "Dualling A358 between M5 Taunton and A303. Part of strategic South West corridor."
+      "description": "Dualling A358 between M5 Taunton and A303. Part of strategic South West corridor.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sw-023",
@@ -578,14 +1172,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - GCC, Reef Group, Future High Streets",
-      "keyDrivers": ["City centre renewal", "Station quarter", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "City centre renewal",
+        "Station quarter",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gloucester.gov.uk/planning-development/regeneration/kings-quarter/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "City centre regeneration with bus station, retail, office, and residential around Kings Quarter."
+      "description": "City centre regeneration with bus station, retail, office, and residential around Kings Quarter.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-sw-024",
@@ -602,14 +1217,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MOD / QinetiQ",
-      "keyDrivers": ["Test and evaluation", "DSTL capability", "Estate modernisation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Test and evaluation",
+        "DSTL capability",
+        "Estate modernisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Infrastructure at Boscombe Down test facility and Porton Down DSTL campus."
+      "description": "Infrastructure at Boscombe Down test facility and Porton Down DSTL campus.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sw-025",
@@ -626,14 +1262,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Bristol Port Company",
-      "keyDrivers": ["Automotive", "Cargo capacity", "Energy"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Automotive",
+        "Cargo capacity",
+        "Energy"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.bristolport.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Port infrastructure investment. Avonmouth logistics, automotive imports, and energy handling."
+      "description": "Port infrastructure investment. Avonmouth logistics, automotive imports, and energy handling.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     }
   ]
 }

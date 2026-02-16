@@ -1,44 +1,112 @@
 {
   "lastUpdated": "2026-02-05",
   "lastResearched": "2026-02-05",
-  "regions": ["scotland"],
+  "regions": [
+    "scotland"
+  ],
   "sectorTrends": {
     "utilities": {
-      "outlook": "Scottish Water delivering £6.8bn investment programme. SP Energy Networks major ScotWind grid connection investment. SSEN Transmission £20bn+ for north Scotland renewables. Green hydrogen emerging at scale.",
-      "keyDrivers": ["ScotWind connections", "Scottish Water investment", "Green hydrogen", "Net Zero Scotland 2045"],
-      "investmentDrivers": ["Ofwat/WICS", "RIIO-T2/ED2", "ScotWind leasing", "Hydrogen strategy"],
-      "risks": ["Grid connection timelines", "Supply chain", "Consenting"]
+      "outlook": "Scottish Water delivering \u00a36.8bn investment programme. SP Energy Networks major ScotWind grid connection investment. SSEN Transmission \u00a320bn+ for north Scotland renewables. Green hydrogen emerging at scale.",
+      "keyDrivers": [
+        "ScotWind connections",
+        "Scottish Water investment",
+        "Green hydrogen",
+        "Net Zero Scotland 2045"
+      ],
+      "investmentDrivers": [
+        "Ofwat/WICS",
+        "RIIO-T2/ED2",
+        "ScotWind leasing",
+        "Hydrogen strategy"
+      ],
+      "risks": [
+        "Grid connection timelines",
+        "Supply chain",
+        "Consenting"
+      ]
     },
     "real-estate": {
       "outlook": "Edinburgh and Glasgow city centres seeing significant investment. Edinburgh St James complete, Glasgow Barras and Buchanan Wharf progressing. Dundee waterfront transformation continuing. Aberdeen diversifying from oil & gas.",
-      "keyDrivers": ["City centre renewal", "Student accommodation", "Housing delivery", "Tourism"],
-      "investmentDrivers": ["City Deal funding", "Scottish Government", "Private developers"],
-      "risks": ["Market depth", "Construction costs", "Planning system"]
+      "keyDrivers": [
+        "City centre renewal",
+        "Student accommodation",
+        "Housing delivery",
+        "Tourism"
+      ],
+      "investmentDrivers": [
+        "City Deal funding",
+        "Scottish Government",
+        "Private developers"
+      ],
+      "risks": [
+        "Market depth",
+        "Construction costs",
+        "Planning system"
+      ]
     },
     "rail": {
       "outlook": "Transport Scotland major investment in rail decarbonisation and electrification. Edinburgh-Glasgow Improvement Programme complete. Highland Main Line and Aberdeen-Central Belt improvements.",
-      "keyDrivers": ["Decarbonisation", "Electrification", "Highland connectivity", "Metro aspirations"],
-      "investmentDrivers": ["Transport Scotland budget", "Network Rail Scotland CP7", "City Region Deals"],
-      "risks": ["Budget pressures", "Remote location challenges", "Weather"]
+      "keyDrivers": [
+        "Decarbonisation",
+        "Electrification",
+        "Highland connectivity",
+        "Metro aspirations"
+      ],
+      "investmentDrivers": [
+        "Transport Scotland budget",
+        "Network Rail Scotland CP7",
+        "City Region Deals"
+      ],
+      "risks": [
+        "Budget pressures",
+        "Remote location challenges",
+        "Weather"
+      ]
     },
     "defence": {
       "outlook": "HMNB Clyde (Faslane) major nuclear deterrent investment. RAF Lossiemouth Typhoon/P-8 capability. DIO estate modernisation across Scottish bases.",
-      "keyDrivers": ["Nuclear deterrent", "NATO commitments", "P-8 Poseidon", "Submarine base"],
-      "investmentDrivers": ["MOD budget", "AUKUS", "Defence Command Paper"],
-      "risks": ["Programme timelines", "Remote locations", "Skills"]
+      "keyDrivers": [
+        "Nuclear deterrent",
+        "NATO commitments",
+        "P-8 Poseidon",
+        "Submarine base"
+      ],
+      "investmentDrivers": [
+        "MOD budget",
+        "AUKUS",
+        "Defence Command Paper"
+      ],
+      "risks": [
+        "Programme timelines",
+        "Remote locations",
+        "Skills"
+      ]
     },
     "maritime": {
       "outlook": "ScotWind driving massive port investment for floating offshore wind. Nigg, Ardersier, and Methil as fabrication ports. Firth of Forth and Cromarty Firth clusters emerging.",
-      "keyDrivers": ["ScotWind 25GW", "Floating offshore wind", "Oil & gas transition", "Port infrastructure"],
-      "investmentDrivers": ["Crown Estate Scotland", "Green Freeport incentives", "Private sector"],
-      "risks": ["Floating wind technology maturity", "Supply chain readiness", "Grid connections"]
+      "keyDrivers": [
+        "ScotWind 25GW",
+        "Floating offshore wind",
+        "Oil & gas transition",
+        "Port infrastructure"
+      ],
+      "investmentDrivers": [
+        "Crown Estate Scotland",
+        "Green Freeport incentives",
+        "Private sector"
+      ],
+      "risks": [
+        "Floating wind technology maturity",
+        "Supply chain readiness",
+        "Grid connections"
+      ]
     }
   },
   "opportunities": [
     {
       "id": "reg-sc-001",
       "title": "ScotWind Offshore Wind - Port Infrastructure",
-      "sector": "maritime",
+      "sector": "energy",
       "subSector": "freeport-offshore",
       "region": "scotland",
       "location": {
@@ -50,14 +118,44 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Crown Estate Scotland, SOWEC, private developers",
-      "keyDrivers": ["ScotWind 25GW", "Floating offshore wind", "Port capability"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "ScotWind 25GW",
+        "Floating offshore wind",
+        "Port capability"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.crownestatescotland.com/scotwind",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2025",
       "estimatedEnd": "2035",
-      "description": "Major port infrastructure for ScotWind floating offshore wind manufacturing and assembly. Nigg, Ardersier, and Methil."
+      "description": "Major port infrastructure for ScotWind floating offshore wind manufacturing and assembly. Nigg, Ardersier, and Methil.",
+      "tenderDate": "2024-Q3",
+      "pqqDeadline": "2024-Q4",
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2024-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sc-002",
@@ -74,14 +172,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MOD nuclear deterrent programme",
-      "keyDrivers": ["Nuclear deterrent", "Dreadnought-class basing", "AUKUS"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Nuclear deterrent",
+        "Dreadnought-class basing",
+        "AUKUS"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "Major infrastructure for Dreadnought-class submarine programme. Ship lift, explosives handling, accommodation."
+      "description": "Major infrastructure for Dreadnought-class submarine programme. Ship lift, explosives handling, accommodation.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-sc-003",
@@ -98,14 +218,38 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - WICS regulatory settlement",
-      "keyDrivers": ["Water quality", "Storm overflows", "Net Zero", "Growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor", "Programme Advisory"],
+      "keyDrivers": [
+        "Water quality",
+        "Storm overflows",
+        "Net Zero",
+        "Growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
       "sourceLink": "https://www.scottishwater.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "Largest ever Scottish Water investment programme. Water treatment, wastewater, and network improvements."
+      "description": "Largest ever Scottish Water investment programme. Water treatment, wastewater, and network improvements.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-004",
@@ -122,14 +266,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - CEC, Edinburgh St James, developers",
-      "keyDrivers": ["Tourism growth", "City centre living", "World Heritage"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Tourism growth",
+        "City centre living",
+        "World Heritage"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.edinburgh.gov.uk/cityplan2030",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2018",
       "estimatedEnd": "2030",
-      "description": "Multiple city centre developments including West End, Fountainbridge, and Granton Waterfront."
+      "description": "Multiple city centre developments including West End, Fountainbridge, and Granton Waterfront.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-005",
@@ -146,19 +312,41 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - GCC, Homes for Scotland, developers",
-      "keyDrivers": ["Commonwealth Games legacy", "East End regeneration", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Commonwealth Games legacy",
+        "East End regeneration",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.glasgow.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "East End regeneration continuing CWG legacy. Housing, cultural venues, and public realm."
+      "description": "East End regeneration continuing CWG legacy. Housing, cultural venues, and public realm.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-006",
       "title": "SSEN Transmission Pathway to 2030",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "scotland",
       "location": {
@@ -170,14 +358,38 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofgem RIIO-T2 and Accelerated Strategic Transmission Investment",
-      "keyDrivers": ["ScotWind connections", "Net Zero", "Renewable integration", "Grid capacity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M", "NEC Supervisor"],
+      "keyDrivers": [
+        "ScotWind connections",
+        "Net Zero",
+        "Renewable integration",
+        "Grid capacity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.ssen-transmission.co.uk/projects/pathway-to-2030/",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2030",
-      "description": "Massive grid upgrade for ScotWind. Subsea cables, onshore substations, overhead lines across north Scotland."
+      "description": "Massive grid upgrade for ScotWind. Subsea cables, onshore substations, overhead lines across north Scotland.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-007",
@@ -194,14 +406,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Transport Scotland",
-      "keyDrivers": ["Highland connectivity", "Safety", "Economic growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Highland connectivity",
+        "Safety",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.transport.gov.scot/projects/a9-dualling-perth-to-inverness/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2018",
       "estimatedEnd": "2035",
-      "description": "Dualling remaining sections of A9 between Perth and Inverness. Multiple scheme sections."
+      "description": "Dualling remaining sections of A9 between Perth and Inverness. Multiple scheme sections.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-sc-008",
@@ -218,14 +452,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - CEC",
-      "keyDrivers": ["Network completion", "Leith regeneration", "Modal shift"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Network completion",
+        "Leith regeneration",
+        "Modal shift"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.edinburghtrams.com",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2019",
       "estimatedEnd": "2027",
-      "description": "Tram extension from York Place to Newhaven. Opened 2023, further improvements and depot works."
+      "description": "Tram extension from York Place to Newhaven. Opened 2023, further improvements and depot works.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-sc-009",
@@ -242,14 +497,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - DCC, Tay Cities Deal, developers",
-      "keyDrivers": ["V&A Dundee success", "Waterfront completion", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "V&A Dundee success",
+        "Waterfront completion",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.dundeewaterfront.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Continued waterfront regeneration. Hotel, residential, office, and public realm building on V&A success."
+      "description": "Continued waterfront regeneration. Hotel, residential, office, and public realm building on V&A success.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-010",
@@ -266,14 +542,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Scottish Government, UK Government, ETZ Ltd",
-      "keyDrivers": ["Oil & gas transition", "Renewable energy", "Skills transfer"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Oil & gas transition",
+        "Renewable energy",
+        "Skills transfer"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.energytransitionzone.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Purpose-built zone for energy transition. Innovation hub, fabrication, and skills training."
+      "description": "Purpose-built zone for energy transition. Innovation hub, fabrication, and skills training.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-011",
@@ -290,14 +587,44 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to Scottish Government and UK Government funding",
-      "keyDrivers": ["City connectivity", "Modal shift", "Economic growth"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "City connectivity",
+        "Modal shift",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.spt.co.uk/vision/clyde-metro/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2030",
       "estimatedEnd": "2040",
-      "description": "Proposed rapid transit network for Greater Glasgow. Multiple routes under strategic business case."
+      "description": "Proposed rapid transit network for Greater Glasgow. Multiple routes under strategic business case.",
+      "tenderDate": "2029-Q1",
+      "pqqDeadline": "2029-Q3",
+      "ittDeadline": "2029-Q4",
+      "contractAward": "2030-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2029-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2029-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2029-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2030-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sc-012",
@@ -314,19 +641,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MOD",
-      "keyDrivers": ["P-8 Poseidon capability", "Typhoon operations", "NATO northern flank"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "P-8 Poseidon capability",
+        "Typhoon operations",
+        "NATO northern flank"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2019",
       "estimatedEnd": "2028",
-      "description": "P-8 Poseidon maritime patrol facility. New hangar, operations centre, and accommodation."
+      "description": "P-8 Poseidon maritime patrol facility. New hangar, operations centre, and accommodation.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-sc-013",
       "title": "SP Energy Networks ScotWind Grid",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "scotland",
       "location": {
@@ -338,14 +686,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofgem RIIO-T2",
-      "keyDrivers": ["ScotWind grid connections", "Net Zero", "Renewable integration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "ScotWind grid connections",
+        "Net Zero",
+        "Renewable integration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.spenergynetworks.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2030",
-      "description": "Major transmission and distribution upgrades for South Scotland ScotWind connections."
+      "description": "Major transmission and distribution upgrades for South Scotland ScotWind connections.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-014",
@@ -362,14 +732,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Transport Scotland, Network Rail Scotland CP7",
-      "keyDrivers": ["Decarbonisation", "Electrification", "Reliability"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Decarbonisation",
+        "Electrification",
+        "Reliability"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.transport.gov.scot",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2035",
-      "description": "Rail decarbonisation programme. Electrification, battery trains, and infrastructure upgrades."
+      "description": "Rail decarbonisation programme. Electrification, battery trains, and infrastructure upgrades.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-sc-015",
@@ -386,19 +778,41 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - CEC, developers, Edinburgh Living",
-      "keyDrivers": ["Housing delivery", "Waterfront regeneration", "Net Zero neighbourhood"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Housing delivery",
+        "Waterfront regeneration",
+        "Net Zero neighbourhood"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.edinburgh.gov.uk/granton-waterfront",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "3,500 homes net zero waterfront neighbourhood. Council-led with Edinburgh Living."
+      "description": "3,500 homes net zero waterfront neighbourhood. Council-led with Edinburgh Living.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-sc-016",
       "title": "Forth Ports Leith Green Port",
-      "sector": "maritime",
+      "sector": "energy",
       "subSector": "freeport-offshore",
       "region": "scotland",
       "location": {
@@ -410,14 +824,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Green Freeport incentives, Forth Ports",
-      "keyDrivers": ["Green Freeport", "Offshore wind", "ScotWind supply chain"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Green Freeport",
+        "Offshore wind",
+        "ScotWind supply chain"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.forthports.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Green Freeport at Leith. Offshore wind marshalling, manufacturing, and logistics."
+      "description": "Green Freeport at Leith. Offshore wind marshalling, manufacturing, and logistics.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-017",
@@ -434,14 +869,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to developer selection - GCC",
-      "keyDrivers": ["City centre renewal", "Queen Street station", "Housing"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "City centre renewal",
+        "Queen Street station",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.glasgow.gov.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Major mixed-use development around Buchanan Galleries site. Residential, commercial, and public realm."
+      "description": "Major mixed-use development around Buchanan Galleries site. Residential, commercial, and public realm.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sc-018",
@@ -458,14 +922,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Scottish Government capital programme",
-      "keyDrivers": ["NHS Scotland capacity", "Estate condition", "Elective recovery"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS Scotland capacity",
+        "Estate condition",
+        "Elective recovery"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.gov.scot/policies/health-facilities/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2023",
       "estimatedEnd": "2032",
-      "description": "Multiple hospital improvements including National Treatment Centres and acute capacity."
+      "description": "Multiple hospital improvements including National Treatment Centres and acute capacity.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
     },
     {
       "id": "reg-sc-019",
@@ -482,14 +968,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to Transport Scotland review",
-      "keyDrivers": ["Strategic connectivity", "Safety", "Economic growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Strategic connectivity",
+        "Safety",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.transport.gov.scot/projects/a96-dualling-inverness-to-aberdeen/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Dualling programme for A96 Aberdeen to Inverness. Under strategic review."
+      "description": "Dualling programme for A96 Aberdeen to Inverness. Under strategic review.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sc-020",
@@ -506,19 +1021,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - City Region Deal, Highland Council, private",
-      "keyDrivers": ["Highland capital growth", "Tourism", "Innovation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Highland capital growth",
+        "Tourism",
+        "Innovation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.highland.gov.uk/cityregiondeal",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "City Region Deal projects including Science Skills Academy, digital infrastructure, and housing."
+      "description": "City Region Deal projects including Science Skills Academy, digital infrastructure, and housing.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-021",
       "title": "Fife Green Freeport & Methil",
-      "sector": "maritime",
+      "sector": "energy",
       "subSector": "freeport-offshore",
       "region": "scotland",
       "location": {
@@ -530,14 +1066,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Green Freeport incentives",
-      "keyDrivers": ["Offshore wind manufacturing", "Green Freeport", "Industrial growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Offshore wind manufacturing",
+        "Green Freeport",
+        "Industrial growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.investinfife.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2025",
       "estimatedEnd": "2032",
-      "description": "Green Freeport sites at Methil and Rosyth. Offshore wind fabrication and manufacturing."
+      "description": "Green Freeport sites at Methil and Rosyth. Offshore wind fabrication and manufacturing.",
+      "tenderDate": "2024-Q3",
+      "pqqDeadline": "2024-Q4",
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2024-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-sc-022",
@@ -554,14 +1119,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Scottish Government, local authorities",
-      "keyDrivers": ["School condition", "RAAC", "Population change"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "School condition",
+        "RAAC",
+        "Population change"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.gov.scot/policies/schools/school-buildings/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2023",
       "estimatedEnd": "2030",
-      "description": "Learning estate investment programme. Multiple school rebuilds across Scotland."
+      "description": "Learning estate investment programme. Multiple school rebuilds across Scotland.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-sc-023",
@@ -578,14 +1165,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Aberdeen Harbour Board",
-      "keyDrivers": ["Energy sector", "Cruise", "Decommissioning"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Energy sector",
+        "Cruise",
+        "Decommissioning"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.aberdeen-harbour.co.uk/south-harbour/",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2017",
       "estimatedEnd": "2027",
-      "description": "New South Harbour at Nigg Bay. Deep water berths for energy sector and cruise. Near completion."
+      "description": "New South Harbour at Nigg Bay. Deep water berths for energy sector and cruise. Near completion.",
+      "contractAward": "2017-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2017-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-sc-024",
@@ -602,14 +1210,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - City Region Deal",
-      "keyDrivers": ["Innovation", "Culture", "Digital"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Innovation",
+        "Culture",
+        "Digital"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.stirling.gov.uk/council-democracy/information-performance-statistics/stirling-and-clackmannanshire-city-region-deal/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2021",
       "estimatedEnd": "2028",
-      "description": "City Region Deal projects including international environment centre, digital district, and culture programme."
+      "description": "City Region Deal projects including international environment centre, digital district, and culture programme.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-sc-025",
@@ -626,14 +1255,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Scottish Government, local authorities",
-      "keyDrivers": ["Climate adaptation", "Fluvial and coastal flood risk"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Climate adaptation",
+        "Fluvial and coastal flood risk"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.sepa.org.uk/environment/water/flooding/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Multiple flood protection schemes across Scotland. SEPA regulated programme."
+      "description": "Multiple flood protection schemes across Scotland. SEPA regulated programme.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     }
   ]
 }

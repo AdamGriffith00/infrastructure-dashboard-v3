@@ -64,16 +64,31 @@
     {
       "id": "utilities",
       "name": "Utilities",
-      "description": "Water, energy, and telecommunications infrastructure including AMP8 and RIIO programmes",
+      "description": "Water and wastewater infrastructure including AMP8 investment programmes and telecoms",
       "icon": "",
       "color": "#FF9800",
-      "budget2026": 25000000000,
-      "budget10Year": 120000000000,
+      "budget2026": 18000000000,
+      "budget10Year": 88000000000,
       "subSectors": [
-        { "id": "water", "name": "Water (AMP8)", "percentage": 45 },
-        { "id": "electricity", "name": "Electricity (RIIO)", "percentage": 35 },
-        { "id": "gas", "name": "Gas Networks", "percentage": 12 },
-        { "id": "telecoms", "name": "Telecoms/Digital", "percentage": 8 }
+        { "id": "water", "name": "Water (AMP8)", "percentage": 65 },
+        { "id": "wastewater", "name": "Wastewater & Drainage", "percentage": 20 },
+        { "id": "telecoms", "name": "Telecoms/Digital", "percentage": 15 }
+      ]
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "description": "Nuclear, offshore wind, grid and transmission, hydrogen, CCUS, and battery storage infrastructure",
+      "icon": "",
+      "color": "#F57C00",
+      "budget2026": 15000000000,
+      "budget10Year": 95000000000,
+      "subSectors": [
+        { "id": "nuclear", "name": "Nuclear", "percentage": 35 },
+        { "id": "offshore-wind", "name": "Offshore Wind", "percentage": 25 },
+        { "id": "grid-transmission", "name": "Grid/Transmission", "percentage": 20 },
+        { "id": "hydrogen-ccus", "name": "Hydrogen & CCUS", "percentage": 12 },
+        { "id": "battery-storage", "name": "Battery Storage", "percentage": 8 }
       ]
     },
     {

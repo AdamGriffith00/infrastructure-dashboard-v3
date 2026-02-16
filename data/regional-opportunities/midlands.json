@@ -1,37 +1,103 @@
 {
   "lastUpdated": "2026-02-05",
   "lastResearched": "2026-02-05",
-  "regions": ["midlands"],
+  "regions": [
+    "midlands"
+  ],
   "sectorTrends": {
     "real-estate": {
       "outlook": "Birmingham and Coventry leading West Midlands regeneration. HS2 Curzon Street quarter driving major development. Wolverhampton and Stoke-on-Trent town centre transformations underway. Strong BTR and student accommodation markets.",
-      "keyDrivers": ["HS2 arrival", "Commonwealth Games legacy", "Devolution", "Housing targets"],
-      "investmentDrivers": ["WMCA funding", "Levelling Up", "Institutional BTR", "Town Deals"],
-      "risks": ["Construction cost inflation", "Market depth outside Birmingham", "HS2 programme risk"]
+      "keyDrivers": [
+        "HS2 arrival",
+        "Commonwealth Games legacy",
+        "Devolution",
+        "Housing targets"
+      ],
+      "investmentDrivers": [
+        "WMCA funding",
+        "Levelling Up",
+        "Institutional BTR",
+        "Town Deals"
+      ],
+      "risks": [
+        "Construction cost inflation",
+        "Market depth outside Birmingham",
+        "HS2 programme risk"
+      ]
     },
     "rail": {
       "outlook": "HS2 Phase 1 construction driving massive investment. West Midlands Metro extensions progressing. Sprint BRT network expanding. Midlands Rail Hub capacity improvements planned.",
-      "keyDrivers": ["HS2 Phase 1 delivery", "Metro extensions", "Sprint BRT", "Midlands Connect"],
-      "investmentDrivers": ["HS2 budget", "CRSTS2", "Network Rail CP7", "DfT major schemes"],
-      "risks": ["HS2 cost pressures", "Construction disruption", "Funding gaps"]
+      "keyDrivers": [
+        "HS2 Phase 1 delivery",
+        "Metro extensions",
+        "Sprint BRT",
+        "Midlands Connect"
+      ],
+      "investmentDrivers": [
+        "HS2 budget",
+        "CRSTS2",
+        "Network Rail CP7",
+        "DfT major schemes"
+      ],
+      "risks": [
+        "HS2 cost pressures",
+        "Construction disruption",
+        "Funding gaps"
+      ]
     },
     "utilities": {
-      "outlook": "Severn Trent delivering £12.9bn AMP8. Western Power Distribution major grid reinforcement for EV and heat pumps. Significant investment in water quality and storm overflows.",
-      "keyDrivers": ["AMP8 investment", "Grid reinforcement", "Net Zero", "Storm overflow targets"],
-      "investmentDrivers": ["Ofwat AMP8", "RIIO-ED2", "Connection charges"],
-      "risks": ["Regulatory uncertainty", "Supply chain", "Labour availability"]
+      "outlook": "Severn Trent delivering \u00a312.9bn AMP8. Western Power Distribution major grid reinforcement for EV and heat pumps. Significant investment in water quality and storm overflows.",
+      "keyDrivers": [
+        "AMP8 investment",
+        "Grid reinforcement",
+        "Net Zero",
+        "Storm overflow targets"
+      ],
+      "investmentDrivers": [
+        "Ofwat AMP8",
+        "RIIO-ED2",
+        "Connection charges"
+      ],
+      "risks": [
+        "Regulatory uncertainty",
+        "Supply chain",
+        "Labour availability"
+      ]
     },
     "defence": {
       "outlook": "MOD Donnington and defence logistics hub investment. RAF Cosford training capability. DIO estate improvements across Midlands bases.",
-      "keyDrivers": ["Defence logistics modernisation", "Training capability", "Estate rationalisation"],
-      "investmentDrivers": ["MOD budget settlements", "DIO frameworks"],
-      "risks": ["Budget pressures", "Programme delays"]
+      "keyDrivers": [
+        "Defence logistics modernisation",
+        "Training capability",
+        "Estate rationalisation"
+      ],
+      "investmentDrivers": [
+        "MOD budget settlements",
+        "DIO frameworks"
+      ],
+      "risks": [
+        "Budget pressures",
+        "Programme delays"
+      ]
     },
     "infrastructure": {
       "outlook": "Major hospital rebuilds and NHS estate investment. School rebuilding programme active. Flood defence along Severn and Trent catchments. Waste and circular economy programmes.",
-      "keyDrivers": ["NHS capacity", "RAAC schools", "Climate adaptation", "Circular economy"],
-      "investmentDrivers": ["NHP allocation", "DfE capital", "EA flood programme"],
-      "risks": ["Public funding constraints", "Contractor capacity", "Inflation"]
+      "keyDrivers": [
+        "NHS capacity",
+        "RAAC schools",
+        "Climate adaptation",
+        "Circular economy"
+      ],
+      "investmentDrivers": [
+        "NHP allocation",
+        "DfE capital",
+        "EA flood programme"
+      ],
+      "risks": [
+        "Public funding constraints",
+        "Contractor capacity",
+        "Inflation"
+      ]
     }
   },
   "opportunities": [
@@ -50,14 +116,44 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Birmingham CC, HS2 Growth Strategy, private developers",
-      "keyDrivers": ["HS2 station arrival", "City centre expansion", "Economic growth"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "HS2 station arrival",
+        "City centre expansion",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.birmingham.gov.uk/info/20054/developing_birmingham/2048/hs2_curzon",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2040",
-      "description": "Major regeneration around HS2 Curzon Street terminus. 4,000 homes, 600,000 sqm commercial space, public realm."
+      "description": "Major regeneration around HS2 Curzon Street terminus. 4,000 homes, 600,000 sqm commercial space, public realm.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-002",
@@ -74,14 +170,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - WMCA, DfT, CRSTS",
-      "keyDrivers": ["Metro network expansion", "Black Country connectivity", "Regeneration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Metro network expansion",
+        "Black Country connectivity",
+        "Regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.metroalliance.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "11km metro extension through Dudley and Sandwell. Under construction with phased opening."
+      "description": "11km metro extension through Dudley and Sandwell. Under construction with phased opening.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-mid-003",
@@ -98,14 +216,36 @@
       "procurementStage": "Dialogue",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Coventry CC, developer partner, Homes England",
-      "keyDrivers": ["City of Culture legacy", "City centre transformation", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "City of Culture legacy",
+        "City centre transformation",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.coventry.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2035",
-      "description": "Major mixed-use regeneration of city centre south. 1,500 homes, retail, leisure, and public realm."
+      "description": "Major mixed-use regeneration of city centre south. 1,500 homes, retail, leisure, and public realm.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-004",
@@ -122,14 +262,38 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofwat AMP8 Final Determination",
-      "keyDrivers": ["Storm overflow reduction", "Water quality", "Network resilience", "Net Zero"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor", "Programme Advisory"],
+      "keyDrivers": [
+        "Storm overflow reduction",
+        "Water quality",
+        "Network resilience",
+        "Net Zero"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
       "sourceLink": "https://www.severntrent.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "Largest ever AMP8 programme. Storm overflow improvements, wastewater treatment, water network investment across Midlands."
+      "description": "Largest ever AMP8 programme. Storm overflow improvements, wastewater treatment, water network investment across Midlands.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-mid-005",
@@ -146,14 +310,44 @@
       "procurementStage": "Expression of Interest",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to developer selection - Birmingham CC",
-      "keyDrivers": ["City centre expansion", "Markets relocation", "HS2 connectivity"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "City centre expansion",
+        "Markets relocation",
+        "HS2 connectivity"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.birminghamsmithfield.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "17-acre site formerly home to Bull Ring Markets. 2,000 homes, leisure, cultural venues, public realm."
+      "description": "17-acre site formerly home to Bull Ring Markets. 2,000 homes, leisure, cultural venues, public realm.",
+      "tenderDate": "2026-Q3",
+      "pqqDeadline": "2026-Q4",
+      "ittDeadline": "2027-Q1",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-006",
@@ -170,14 +364,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Wolverhampton CC, Levelling Up Fund, Town Deal, WMCA",
-      "keyDrivers": ["Metro connectivity", "City centre renewal", "Housing delivery"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Metro connectivity",
+        "City centre renewal",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.wolverhampton.gov.uk/business/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Multi-scheme regeneration including Interchange, Westside, and city centre living. Metro extension catalyst."
+      "description": "Multi-scheme regeneration including Interchange, Westside, and city centre living. Metro extension catalyst.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-mid-007",
@@ -194,14 +410,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - WMCA, CRSTS",
-      "keyDrivers": ["Rapid transit", "HS2 connectivity", "Air quality"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Rapid transit",
+        "HS2 connectivity",
+        "Air quality"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.tfwm.org.uk/sprint",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "Bus Rapid Transit routes connecting key corridors. A34 and A45 routes operational. Further routes in development."
+      "description": "Bus Rapid Transit routes connecting key corridors. A34 and A45 routes operational. Further routes in development.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-mid-008",
@@ -217,20 +454,42 @@
       "status": "procurement",
       "procurementStage": "ITT",
       "readiness": "ready-to-buy",
-      "fundingStatus": "Part funded - Stoke CC, Levelling Up Fund £56m, developer partner",
-      "keyDrivers": ["Town centre transformation", "Housing delivery", "Cultural investment"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "fundingStatus": "Part funded - Stoke CC, Levelling Up Fund \u00a356m, developer partner",
+      "keyDrivers": [
+        "Town centre transformation",
+        "Housing delivery",
+        "Cultural investment"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.stoke.gov.uk/info/20004/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2025",
       "estimatedEnd": "2032",
-      "description": "Major city centre regeneration. Hilton Hotel, residential, retail, and public realm on former bus station site."
+      "description": "Major city centre regeneration. Hilton Hotel, residential, retail, and public realm on former bus station site.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-009",
       "title": "Western Power Distribution ED2 Midlands",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "midlands",
       "location": {
@@ -242,14 +501,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - RIIO-ED2 allowances (National Grid ED)",
-      "keyDrivers": ["Net Zero", "EV infrastructure", "Heat electrification", "Grid resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Net Zero",
+        "EV infrastructure",
+        "Heat electrification",
+        "Grid resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.nationalgrid.co.uk/electricity-distribution",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "ED2 capital programme for West Midlands distribution network. Substations, reinforcement, smart grid."
+      "description": "ED2 capital programme for West Midlands distribution network. Substations, reinforcement, smart grid.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-mid-010",
@@ -266,14 +547,37 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - HS2 Phase 1 budget",
-      "keyDrivers": ["HS2 delivery", "Airport connectivity", "NEC access"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M", "NEC Supervisor"],
+      "keyDrivers": [
+        "HS2 delivery",
+        "Airport connectivity",
+        "NEC access"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.hs2.org.uk/stations/interchange-station/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "HS2 Interchange station near Birmingham Airport and NEC. Construction progressing."
+      "description": "HS2 Interchange station near Birmingham Airport and NEC. Construction progressing.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-mid-011",
@@ -290,14 +594,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Network Rail CP7 settlement",
-      "keyDrivers": ["Network reliability", "HS2 integration", "Performance"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Network reliability",
+        "HS2 integration",
+        "Performance"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.networkrail.co.uk/running-the-railway/our-routes/north-west-and-central/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2029",
-      "description": "CP7 renewals and enhancements across North West & Central route Midlands sections."
+      "description": "CP7 renewals and enhancements across North West & Central route Midlands sections.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
     },
     {
       "id": "reg-mid-012",
@@ -314,14 +640,44 @@
       "procurementStage": "PQQ",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - DIO logistics programme",
-      "keyDrivers": ["Defence logistics modernisation", "Warehouse automation", "Estate improvement"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Defence logistics modernisation",
+        "Warehouse automation",
+        "Estate improvement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2026",
       "estimatedEnd": "2031",
-      "description": "Modernisation of MOD Donnington logistics depot. Warehouse automation, infrastructure upgrades."
+      "description": "Modernisation of MOD Donnington logistics depot. Warehouse automation, infrastructure upgrades.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-013",
@@ -338,14 +694,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MOD training estate",
-      "keyDrivers": ["Engineering training", "RAF Museum", "Operational capability"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Engineering training",
+        "RAF Museum",
+        "Operational capability"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2023",
       "estimatedEnd": "2029",
-      "description": "Training facilities modernisation at RAF Cosford. Engineering school, accommodation, and museum expansion."
+      "description": "Training facilities modernisation at RAF Cosford. Engineering school, accommodation, and museum expansion.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
     },
     {
       "id": "reg-mid-014",
@@ -362,14 +739,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to HS2 delivery and developer interest",
-      "keyDrivers": ["HS2 Interchange station", "Airport growth", "NEC masterplan"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "HS2 Interchange station",
+        "Airport growth",
+        "NEC masterplan"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.solihull.gov.uk/ukcentral",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2040",
-      "description": "Major development around HS2 Interchange. Commercial, residential, and leisure. Linked to airport and NEC."
+      "description": "Major development around HS2 Interchange. Commercial, residential, and leisure. Linked to airport and NEC.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-015",
@@ -386,14 +793,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Birmingham CC, Homes England, CWG legacy",
-      "keyDrivers": ["Commonwealth Games legacy", "Housing delivery", "Sprint BRT"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Commonwealth Games legacy",
+        "Housing delivery",
+        "Sprint BRT"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.birmingham.gov.uk/perrbarr",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2019",
       "estimatedEnd": "2030",
-      "description": "Commonwealth Games Athletes' Village conversion to 5,000 homes. Further phases underway."
+      "description": "Commonwealth Games Athletes' Village conversion to 5,000 homes. Further phases underway.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-mid-016",
@@ -410,14 +838,44 @@
       "procurementStage": "Expression of Interest",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - New Hospital Programme",
-      "keyDrivers": ["NHS capacity", "Estate condition", "RAAC"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS capacity",
+        "Estate condition",
+        "RAAC"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.england.nhs.uk/new-hospital-programme/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2026",
       "estimatedEnd": "2035",
-      "description": "Hospital rebuilds and improvements including Midland Metropolitan, Shrewsbury, and others."
+      "description": "Hospital rebuilds and improvements including Midland Metropolitan, Shrewsbury, and others.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-017",
@@ -434,14 +892,36 @@
       "procurementStage": "ITT",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - DfE capital programme",
-      "keyDrivers": ["RAAC remediation", "School condition", "Net Zero schools"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "RAAC remediation",
+        "School condition",
+        "Net Zero schools"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/school-rebuilding-programme",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2030",
-      "description": "Multiple school rebuilds across West Midlands. DfE framework procurement."
+      "description": "Multiple school rebuilds across West Midlands. DfE framework procurement.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2024-Q1",
+      "contractAward": "2024-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-018",
@@ -458,14 +938,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - National Highways RIS2",
-      "keyDrivers": ["Strategic connectivity", "Congestion relief", "i54 access"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Strategic connectivity",
+        "Congestion relief",
+        "i54 access"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://nationalhighways.co.uk/our-roads/west-midlands/m54-to-m6-link-road/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2022",
       "estimatedEnd": "2028",
-      "description": "New link road connecting M54 to M6/M6 Toll. Improved access to i54 Business Park."
+      "description": "New link road connecting M54 to M6/M6 Toll. Improved access to i54 Business Park.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-mid-019",
@@ -482,14 +984,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Severn Trent Green Bond",
-      "keyDrivers": ["River quality", "Biodiversity", "Storm overflow"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "River quality",
+        "Biodiversity",
+        "Storm overflow"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.severntrent.com/about-us/our-plans/green-recovery/",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "Nature-based solutions and green infrastructure for water quality improvement across Midlands catchments."
+      "description": "Nature-based solutions and green infrastructure for water quality improvement across Midlands catchments.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-mid-020",
@@ -506,14 +1029,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Walsall Council, Town Deal, Levelling Up Fund",
-      "keyDrivers": ["Town centre renewal", "Metro connectivity", "Housing delivery"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Town centre renewal",
+        "Metro connectivity",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.walsall.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2032",
-      "description": "Town centre transformation including Station Gateway, Crown Wharf, and residential development."
+      "description": "Town centre transformation including Station Gateway, Crown Wharf, and residential development.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-021",
@@ -530,14 +1082,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Environment Agency capital programme",
-      "keyDrivers": ["Climate adaptation", "Fluvial flood risk", "Community protection"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Climate adaptation",
+        "Fluvial flood risk",
+        "Community protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/environment-agency",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Multiple flood defence schemes across Severn and Trent catchments including Shrewsbury, Worcester, and Hereford."
+      "description": "Multiple flood defence schemes across Severn and Trent catchments including Shrewsbury, Worcester, and Hereford.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-mid-022",
@@ -554,14 +1128,43 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to DfT major scheme funding",
-      "keyDrivers": ["Congestion", "Air quality", "Economic growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Congestion",
+        "Air quality",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.herefordshire.gov.uk/transport",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2028",
       "estimatedEnd": "2033",
-      "description": "Transport improvements including bypass options and active travel. Subject to business case."
+      "description": "Transport improvements including bypass options and active travel. Subject to business case.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-023",
@@ -578,19 +1181,48 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to operator investment decision",
-      "keyDrivers": ["Regional digital infrastructure", "Financial services", "HS2 connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Regional digital infrastructure",
+        "Financial services",
+        "HS2 connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2027",
       "estimatedEnd": "2030",
-      "description": "Proposed multi-hall data centre campus in Birmingham. Central UK location for low-latency services."
+      "description": "Proposed multi-hall data centre campus in Birmingham. Central UK location for low-latency services.",
+      "tenderDate": "2026-Q3",
+      "pqqDeadline": "2026-Q4",
+      "ittDeadline": "2027-Q1",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-024",
       "title": "Coventry Gigafactory Site",
-      "sector": "real-estate",
+      "sector": "energy",
       "subSector": "commercial",
       "region": "midlands",
       "location": {
@@ -602,14 +1234,43 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to battery manufacturer commitment",
-      "keyDrivers": ["EV transition", "Automotive heritage", "Gigafactory strategy"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "EV transition",
+        "Automotive heritage",
+        "Gigafactory strategy"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.coventry.gov.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2033",
-      "description": "Potential gigafactory site at former Coventry Airport. Subject to manufacturer investment decision."
+      "description": "Potential gigafactory site at former Coventry Airport. Subject to manufacturer investment decision.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-025",
@@ -626,14 +1287,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Dudley MBC, Towns Fund, WMCA",
-      "keyDrivers": ["Metro extension arrival", "Town centre revival", "Very Light Rail innovation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Metro extension arrival",
+        "Town centre revival",
+        "Very Light Rail innovation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.dudley.gov.uk/residents/regeneration-projects/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Town centre regeneration including DY1 development, Institute of Technology, and Metro-linked development."
+      "description": "Town centre regeneration including DY1 development, Institute of Technology, and Metro-linked development.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-mid-026",
@@ -650,14 +1332,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - WMCA, CRSTS, HS2 connectivity",
-      "keyDrivers": ["HS2 station access", "City centre connectivity", "Eastside regeneration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "HS2 station access",
+        "City centre connectivity",
+        "Eastside regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.metroalliance.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2022",
       "estimatedEnd": "2027",
-      "description": "Metro extension to HS2 Curzon Street via Digbeth. Under construction."
+      "description": "Metro extension to HS2 Curzon Street via Digbeth. Under construction.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-mid-027",
@@ -674,14 +1377,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Wolverhampton CC, South Staffs DC, LEP",
-      "keyDrivers": ["Advanced manufacturing", "JLR supply chain", "Enterprise Zone"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Advanced manufacturing",
+        "JLR supply chain",
+        "Enterprise Zone"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.i54.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "Extension of i54 business park. JLR, Moog, ISP. New plots for advanced manufacturing."
+      "description": "Extension of i54 business park. JLR, Moog, ISP. New plots for advanced manufacturing.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-mid-028",
@@ -698,14 +1422,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Telford & Wrekin Council, Town Deal, private developers",
-      "keyDrivers": ["Town centre diversification", "Housing growth", "Transport investment"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Town centre diversification",
+        "Housing growth",
+        "Transport investment"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.telford.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Town centre regeneration, Station Quarter development, and strategic housing sites."
+      "description": "Town centre regeneration, Station Quarter development, and strategic housing sites.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-mid-029",
@@ -722,14 +1467,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Local authority budgets, private operators",
-      "keyDrivers": ["Circular economy targets", "Waste reduction", "Energy from waste"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Circular economy targets",
+        "Waste reduction",
+        "Energy from waste"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2032",
-      "description": "New waste processing and recycling facilities across West Midlands authorities."
+      "description": "New waste processing and recycling facilities across West Midlands authorities.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-mid-030",
@@ -746,14 +1520,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to RIS3 pipeline decisions",
-      "keyDrivers": ["Strategic corridor", "JLR logistics", "Trans-Midlands connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Strategic corridor",
+        "JLR logistics",
+        "Trans-Midlands connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://nationalhighways.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2028",
       "estimatedEnd": "2033",
-      "description": "A46 improvements through Warwickshire. Part of wider A46 Trans-Midlands Trade Corridor."
+      "description": "A46 improvements through Warwickshire. Part of wider A46 Trans-Midlands Trade Corridor.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     }
   ]
 }

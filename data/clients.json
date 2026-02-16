@@ -646,8 +646,8 @@
     {
       "id": "scottish-power",
       "name": "SP Energy Networks",
-      "sector": "utilities",
-      "subSector": "energy-networks",
+      "sector": "energy",
+      "subSector": "grid-transmission",
       "regions": ["scotland", "north-west", "wales", "midlands"],
       "subdivisions": {
         "scotland": ["Glasgow City", "City of Edinburgh", "South Lanarkshire", "North Lanarkshire", "Fife", "Falkirk", "East Ayrshire", "South Ayrshire", "Dumfries and Galloway"],
@@ -1510,7 +1510,7 @@
     {
       "id": "hinkley",
       "name": "Hinkley Point C (EDF Energy)",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "nuclear",
       "regions": ["south-west"],
       "subdivisions": {
@@ -1600,7 +1600,7 @@
     {
       "id": "sizewell-c",
       "name": "Sizewell C (EDF Energy)",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "nuclear",
       "regions": ["eastern"],
       "subdivisions": {
@@ -1667,8 +1667,8 @@
     {
       "id": "great-british-energy",
       "name": "Great British Energy (GBE)",
-      "sector": "utilities",
-      "subSector": "energy",
+      "sector": "energy",
+      "subSector": "offshore-wind",
       "regions": ["scotland", "north-east", "yorkshire-humber", "eastern", "wales"],
       "subdivisions": {
         "scotland": ["Aberdeen City", "Dundee City", "Fife"],

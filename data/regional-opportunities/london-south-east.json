@@ -1,37 +1,107 @@
 {
   "lastUpdated": "2026-02-04",
   "lastResearched": "2026-02-04",
-  "regions": ["london", "south-east"],
+  "regions": [
+    "london",
+    "south-east"
+  ],
   "sectorTrends": {
     "real-estate": {
       "outlook": "Strong growth driven by housing crisis and institutional investment in Build-to-Rent. Office market recovering with flight to quality. Mixed-use regeneration schemes active around transport hubs.",
-      "keyDrivers": ["Housing shortage", "Build-to-rent demand", "Transport-oriented development", "Net Zero retrofitting"],
-      "investmentDrivers": ["Institutional capital", "PRS funds", "Overseas investment", "LGPS allocations"],
-      "risks": ["Planning delays", "Construction cost inflation", "Interest rate sensitivity", "Labour shortages"]
+      "keyDrivers": [
+        "Housing shortage",
+        "Build-to-rent demand",
+        "Transport-oriented development",
+        "Net Zero retrofitting"
+      ],
+      "investmentDrivers": [
+        "Institutional capital",
+        "PRS funds",
+        "Overseas investment",
+        "LGPS allocations"
+      ],
+      "risks": [
+        "Planning delays",
+        "Construction cost inflation",
+        "Interest rate sensitivity",
+        "Labour shortages"
+      ]
     },
     "energy": {
       "outlook": "Major grid reinforcement needed to support electrification and data centre growth. London Power Tunnels 2 progressing. Offshore wind connections landing in South East.",
-      "keyDrivers": ["Net Zero 2050", "EV infrastructure", "Heat pump rollout", "Data centre power demand"],
-      "investmentDrivers": ["RIIO-ED2 allowances", "Connection charges", "Green financing"],
-      "risks": ["Grid capacity constraints", "Consenting timelines", "Supply chain"]
+      "keyDrivers": [
+        "Net Zero 2050",
+        "EV infrastructure",
+        "Heat pump rollout",
+        "Data centre power demand"
+      ],
+      "investmentDrivers": [
+        "RIIO-ED2 allowances",
+        "Connection charges",
+        "Green financing"
+      ],
+      "risks": [
+        "Grid capacity constraints",
+        "Consenting timelines",
+        "Supply chain"
+      ]
     },
     "defence": {
       "outlook": "Estate optimisation continuing with investment in key strategic sites. RAF Northolt modernisation, Aldershot regeneration. Focus on sustainability and operational efficiency.",
-      "keyDrivers": ["Defence estate strategy", "Net Zero commitments", "Operational readiness"],
-      "investmentDrivers": ["MOD budget settlements", "Private finance initiatives", "DIO frameworks"],
-      "risks": ["Budget pressures", "Security requirements", "Planning complexity"]
+      "keyDrivers": [
+        "Defence estate strategy",
+        "Net Zero commitments",
+        "Operational readiness"
+      ],
+      "investmentDrivers": [
+        "MOD budget settlements",
+        "Private finance initiatives",
+        "DIO frameworks"
+      ],
+      "risks": [
+        "Budget pressures",
+        "Security requirements",
+        "Planning complexity"
+      ]
     },
     "data-centres": {
       "outlook": "Explosive growth with London as Europe's largest market. Slough corridor expansion continuing. New hyperscale developments in West London and Thames Valley. Power availability becoming critical constraint.",
-      "keyDrivers": ["Cloud computing growth", "AI compute demand", "Digital sovereignty", "Edge computing"],
-      "investmentDrivers": ["Tech company capex", "REIT investment", "Infrastructure funds"],
-      "risks": ["Power availability", "Planning restrictions", "Water cooling capacity", "Grid connections"]
+      "keyDrivers": [
+        "Cloud computing growth",
+        "AI compute demand",
+        "Digital sovereignty",
+        "Edge computing"
+      ],
+      "investmentDrivers": [
+        "Tech company capex",
+        "REIT investment",
+        "Infrastructure funds"
+      ],
+      "risks": [
+        "Power availability",
+        "Planning restrictions",
+        "Water cooling capacity",
+        "Grid connections"
+      ]
     },
     "infrastructure": {
       "outlook": "Significant flood defence investment in Thames Estuary. School rebuilding programme active. NHS estate modernisation. Waste infrastructure for circular economy.",
-      "keyDrivers": ["Climate adaptation", "School condition", "NHS capacity", "Circular economy targets"],
-      "investmentDrivers": ["Government capital programmes", "Local authority budgets", "Levelling Up Fund"],
-      "risks": ["Public sector funding constraints", "Inflation", "Contractor capacity"]
+      "keyDrivers": [
+        "Climate adaptation",
+        "School condition",
+        "NHS capacity",
+        "Circular economy targets"
+      ],
+      "investmentDrivers": [
+        "Government capital programmes",
+        "Local authority budgets",
+        "Levelling Up Fund"
+      ],
+      "risks": [
+        "Public sector funding constraints",
+        "Inflation",
+        "Contractor capacity"
+      ]
     }
   },
   "opportunities": [
@@ -50,19 +120,41 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Canary Wharf Group private investment",
-      "keyDrivers": ["Housing delivery targets", "East London regeneration", "Transport connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Housing delivery targets",
+        "East London regeneration",
+        "Transport connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://group.canarywharf.com/what-we-do/development/wood-wharf/",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2024",
       "estimatedEnd": "2028",
-      "description": "Continuation of Wood Wharf development with residential towers, retail, and public realm. 3,600 homes across multiple buildings."
+      "description": "Continuation of Wood Wharf development with residential towers, retail, and public realm. 3,600 homes across multiple buildings.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-002",
       "title": "Battersea Power Station Phase 4",
-      "sector": "real-estate",
+      "sector": "energy",
       "subSector": "mixed-use",
       "region": "london",
       "location": {
@@ -74,14 +166,34 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Malaysian consortium",
-      "keyDrivers": ["Northern Line Extension connectivity", "Nine Elms regeneration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Northern Line Extension connectivity",
+        "Nine Elms regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://batterseapowerstation.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "Final phase of Battersea Power Station redevelopment including residential, office, and retail space."
+      "description": "Final phase of Battersea Power Station redevelopment including residential, office, and retail space.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-003",
@@ -98,14 +210,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - OPDC and developer contributions",
-      "keyDrivers": ["HS2 station delivery", "Housing targets", "Industrial land release"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "HS2 station delivery",
+        "Housing targets",
+        "Industrial land release"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.london.gov.uk/programmes-strategies/planning/implementing-london-plan/opportunity-areas/old-oak-and-park-royal",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Major regeneration around HS2 Old Oak Common station. 25,500 homes and 65,000 jobs planned. Multiple development parcels."
+      "description": "Major regeneration around HS2 Old Oak Common station. 25,500 homes and 65,000 jobs planned. Multiple development parcels.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-004",
@@ -122,14 +264,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - LLDC, GLA, government",
-      "keyDrivers": ["Olympic legacy", "Cultural infrastructure", "East London growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Olympic legacy",
+        "Cultural infrastructure",
+        "East London growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.queenelizabetholympicpark.co.uk/east-bank",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2018",
       "estimatedEnd": "2027",
-      "description": "V&A East, Sadler's Wells East, BBC Music Studios, UAL London College of Fashion. Construction ongoing."
+      "description": "V&A East, Sadler's Wells East, BBC Music Studios, UAL London College of Fashion. Construction ongoing.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-lon-005",
@@ -146,14 +309,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Knight Dragon private",
-      "keyDrivers": ["Housing delivery", "Elizabeth Line connectivity", "Brownfield development"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Housing delivery",
+        "Elizabeth Line connectivity",
+        "Brownfield development"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://greenwichpeninsula.co.uk",
       "externalTenderNote": "May not go to external tender - in-house delivery",
       "projectType": "private",
       "estimatedStart": "2015",
       "estimatedEnd": "2035",
-      "description": "17,000 homes masterplan continuing delivery. Multiple phases under construction and in planning."
+      "description": "17,000 homes masterplan continuing delivery. Multiple phases under construction and in planning.",
+      "contractAward": "2015-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2015-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-lon-006",
@@ -170,14 +354,33 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Google corporate",
-      "keyDrivers": ["Tech sector growth", "Flight to quality office"],
-      "serviceRelevance": ["Cost and Commercial Management"],
+      "keyDrivers": [
+        "Tech sector growth",
+        "Flight to quality office"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://about.google/intl/en_uk/",
       "externalTenderNote": "In-house Google procurement",
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2027",
-      "description": "1 million sq ft headquarters building. Under construction with expected completion 2027."
+      "description": "1 million sq ft headquarters building. Under construction with expected completion 2027.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-lon-007",
@@ -194,19 +397,49 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Lendlease JV with GLA",
-      "keyDrivers": ["Royal Docks Enterprise Zone", "Elizabeth Line connectivity", "Housing delivery"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Royal Docks Enterprise Zone",
+        "Elizabeth Line connectivity",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.london.gov.uk/programmes-strategies/planning/implementing-london-plan/opportunity-areas/royal-docks",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2035",
-      "description": "Major mixed-use development. 7 million sq ft including 3,000 homes, offices, retail, and creative workspace."
+      "description": "Major mixed-use development. 7 million sq ft including 3,000 homes, offices, retail, and creative workspace.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-008",
       "title": "London Power Tunnels 2",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "london",
       "location": {
@@ -218,19 +451,41 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - National Grid RIIO",
-      "keyDrivers": ["Grid resilience", "Electrification", "Capacity enhancement"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Grid resilience",
+        "Electrification",
+        "Capacity enhancement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.nationalgrid.com/electricity-transmission/network-and-infrastructure/london-power-tunnels",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2021",
       "estimatedEnd": "2027",
-      "description": "32.5km deep tunnel carrying 400kV cables across South London. TBM tunnelling underway."
+      "description": "32.5km deep tunnel carrying 400kV cables across South London. TBM tunnelling underway.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-lon-009",
       "title": "UK Power Networks ED2 London Programme",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "london",
       "location": {
@@ -242,14 +497,37 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - RIIO-ED2 allowances",
-      "keyDrivers": ["Net Zero", "EV charging", "Heat electrification", "Network reinforcement"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Programme Advisory"],
+      "keyDrivers": [
+        "Net Zero",
+        "EV charging",
+        "Heat electrification",
+        "Network reinforcement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Programme Advisory"
+      ],
       "sourceLink": "https://www.ukpowernetworks.co.uk/riio-ed2",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "ED2 capital programme for London distribution network. Substations, reinforcement, smart grid."
+      "description": "ED2 capital programme for London distribution network. Substations, reinforcement, smart grid.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-010",
@@ -266,14 +544,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Tideway Infrastructure Ltd",
-      "keyDrivers": ["Combined sewer overflow", "Thames pollution", "Regulatory compliance"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Combined sewer overflow",
+        "Thames pollution",
+        "Regulatory compliance"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.tideway.london",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2016",
       "estimatedEnd": "2026",
-      "description": "25km super sewer tunnelling complete. Final commissioning and connection works 2025-2026."
+      "description": "25km super sewer tunnelling complete. Final commissioning and connection works 2025-2026.",
+      "contractAward": "2016-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2016-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2026"
+        }
+      ]
     },
     {
       "id": "reg-lon-011",
@@ -290,14 +589,44 @@
       "procurementStage": "PQQ",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Funded - MOD estate programme",
-      "keyDrivers": ["Operational capability", "Estate rationalisation", "Net Zero defence"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Operational capability",
+        "Estate rationalisation",
+        "Net Zero defence"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2026",
       "estimatedEnd": "2030",
-      "description": "Runway and infrastructure upgrades at RAF Northolt. Hangar modernisation, operations facilities."
+      "description": "Runway and infrastructure upgrades at RAF Northolt. Hangar modernisation, operations facilities.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-012",
@@ -314,14 +643,43 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to disposal proceeds",
-      "keyDrivers": ["Estate optimisation", "Housing delivery", "Heritage regeneration"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Estate optimisation",
+        "Housing delivery",
+        "Heritage regeneration"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/collections/defence-estate-optimisation",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Mixed-use regeneration of historic barracks site. Subject to MOD disposal decisions."
+      "description": "Mixed-use regeneration of historic barracks site. Subject to MOD disposal decisions.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-013",
@@ -338,14 +696,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - ST Telemedia / Virtus",
-      "keyDrivers": ["Cloud demand", "London proximity", "Power availability"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Cloud demand",
+        "London proximity",
+        "Power availability"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.virtusdatacentres.com",
       "externalTenderNote": "Procurement through VIRTUS framework",
       "projectType": "private",
       "estimatedStart": "2024",
       "estimatedEnd": "2027",
-      "description": "Multiple data halls expansion in Slough. 100MW+ total capacity planned."
+      "description": "Multiple data halls expansion in Slough. 100MW+ total capacity planned.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-lon-014",
@@ -362,14 +741,34 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Equinix corporate",
-      "keyDrivers": ["Financial services proximity", "Network connectivity", "Low latency"],
-      "serviceRelevance": ["Cost and Commercial Management"],
+      "keyDrivers": [
+        "Financial services proximity",
+        "Network connectivity",
+        "Low latency"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.equinix.co.uk",
       "externalTenderNote": "Equinix corporate procurement",
       "projectType": "private",
       "estimatedStart": "2024",
       "estimatedEnd": "2026",
-      "description": "New colocation facility in Docklands. Financial services and enterprise focus."
+      "description": "New colocation facility in Docklands. Financial services and enterprise focus.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2026"
+        }
+      ]
     },
     {
       "id": "reg-lon-015",
@@ -386,14 +785,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Funded - Tech company capex (undisclosed)",
-      "keyDrivers": ["AI compute demand", "Cloud growth", "UK data sovereignty"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "AI compute demand",
+        "Cloud growth",
+        "UK data sovereignty"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": null,
       "externalTenderNote": "May not go to external tender - confidential tech company",
       "projectType": "private",
       "estimatedStart": "2027",
       "estimatedEnd": "2030",
-      "description": "Major hyperscale campus. Planning stage. Power connection secured."
+      "description": "Major hyperscale campus. Planning stage. Power connection secured.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-016",
@@ -410,14 +839,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Environment Agency",
-      "keyDrivers": ["Climate adaptation", "Sea level rise", "Flood risk reduction"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Climate adaptation",
+        "Sea level rise",
+        "Flood risk reduction"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/thames-estuary-2100-te2100",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "Long-term flood defence programme. Multiple phases of wall raising and barrier improvements."
+      "description": "Long-term flood defence programme. Multiple phases of wall raising and barrier improvements.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-lon-017",
@@ -434,14 +885,36 @@
       "procurementStage": "ITT",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - DfE capital programme",
-      "keyDrivers": ["RAAC remediation", "School condition", "Net Zero schools"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "RAAC remediation",
+        "School condition",
+        "Net Zero schools"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/school-rebuilding-programme",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2030",
-      "description": "50+ school rebuilds in London. Includes RAAC affected schools. DfE framework procurement."
+      "description": "50+ school rebuilds in London. Includes RAAC affected schools. DfE framework procurement.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2024-Q1",
+      "contractAward": "2024-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-018",
@@ -458,14 +931,44 @@
       "procurementStage": "Expression of Interest",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - New Hospital Programme allocation",
-      "keyDrivers": ["NHS capacity", "Estate backlog", "Net Zero NHS"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS capacity",
+        "Estate backlog",
+        "Net Zero NHS"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.england.nhs.uk/new-hospital-programme/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2025",
       "estimatedEnd": "2035",
-      "description": "Multiple hospital and health facility projects across London NHS Trusts."
+      "description": "Multiple hospital and health facility projects across London NHS Trusts.",
+      "tenderDate": "2024-Q3",
+      "pqqDeadline": "2024-Q4",
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2024-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-019",
@@ -482,14 +985,36 @@
       "procurementStage": "Dialogue",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - Enfield Council, HIF funding",
-      "keyDrivers": ["Housing delivery", "Industrial regeneration", "Crossrail 2 safeguarded"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Housing delivery",
+        "Industrial regeneration",
+        "Crossrail 2 safeguarded"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.meridianwater.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2026",
       "estimatedEnd": "2035",
-      "description": "10,000 homes masterplan. Phase 1 complete. Developer selection for Phase 2 underway."
+      "description": "10,000 homes masterplan. Phase 1 complete. Developer selection for Phase 2 underway.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-020",
@@ -506,14 +1031,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Berkeley Group",
-      "keyDrivers": ["Elizabeth Line connectivity", "Housing delivery", "Brownfield development"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Elizabeth Line connectivity",
+        "Housing delivery",
+        "Brownfield development"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.berkeleygroup.co.uk/developments/london/ealing/the-green-quarter",
       "externalTenderNote": "Berkeley Group in-house delivery",
       "projectType": "private",
       "estimatedStart": "2019",
       "estimatedEnd": "2032",
-      "description": "3,750 homes on former gasworks site. Multiple phases under construction."
+      "description": "3,750 homes on former gasworks site. Multiple phases under construction.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
     },
     {
       "id": "reg-se-021",
@@ -530,14 +1076,44 @@
       "procurementStage": "PIN Issued",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - VINCI Airports",
-      "keyDrivers": ["Capacity expansion", "DCO approved", "Economic growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Project Manager"],
+      "keyDrivers": [
+        "Capacity expansion",
+        "DCO approved",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Project Manager"
+      ],
       "sourceLink": "https://www.gatwickairport.com/business-community/future-plans/northern-runway/",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2026",
       "estimatedEnd": "2032",
-      "description": "Northern runway project following DCO approval. Dual runway operations."
+      "description": "Northern runway project following DCO approval. Dual runway operations.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-022",
@@ -554,14 +1130,37 @@
       "procurementStage": "Dialogue",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - National Highways RIS3",
-      "keyDrivers": ["Dartford capacity", "Economic connectivity", "Road resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M", "NEC Supervisor"],
+      "keyDrivers": [
+        "Dartford capacity",
+        "Economic connectivity",
+        "Road resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://nationalhighways.co.uk/our-roads/lower-thames-crossing/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2026",
       "estimatedEnd": "2034",
-      "description": "14.3 mile road tunnel under Thames. UK's largest road project. DCO decision 2024."
+      "description": "14.3 mile road tunnel under Thames. UK's largest road project. DCO decision 2024.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-023",
@@ -578,14 +1177,43 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to government commitment - Arc spatial framework",
-      "keyDrivers": ["Economic growth", "Innovation corridor", "Housing targets"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Economic growth",
+        "Innovation corridor",
+        "Housing targets"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/oxford-cambridge-arc",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2040",
-      "description": "Long-term development corridor. Multiple sites subject to spatial framework delivery."
+      "description": "Long-term development corridor. Multiple sites subject to spatial framework delivery.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-024",
@@ -602,14 +1230,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Lincoln MGT",
-      "keyDrivers": ["Elizabeth Line terminus", "Office demand", "Urban regeneration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Elizabeth Line terminus",
+        "Office demand",
+        "Urban regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.stationhillreading.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2018",
       "estimatedEnd": "2028",
-      "description": "Major office-led mixed-use development at Reading station. Multiple phases."
+      "description": "Major office-led mixed-use development at Reading station. Multiple phases.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-se-025",
@@ -626,14 +1275,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Funded - DP World investment",
-      "keyDrivers": ["Container capacity", "Shipping routes", "Freeport status"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Container capacity",
+        "Shipping routes",
+        "Freeport status"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.dpworldsouthampton.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2026",
       "estimatedEnd": "2030",
-      "description": "Container terminal expansion and modernisation. Automation and capacity increase."
+      "description": "Container terminal expansion and modernisation. Automation and capacity increase.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-026",
@@ -650,14 +1328,44 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to CP7 funding decisions",
-      "keyDrivers": ["Capacity", "Reliability", "Coastal connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Capacity",
+        "Reliability",
+        "Coastal connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.networkrail.co.uk/running-the-railway/our-routes/southern/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Capacity and reliability improvements on Brighton Main Line. Signal and junction upgrades."
+      "description": "Capacity and reliability improvements on Brighton Main Line. Signal and junction upgrades.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-027",
@@ -674,14 +1382,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Related Argent / Barnet Council",
-      "keyDrivers": ["Thameslink station", "Housing delivery", "Town centre regeneration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Thameslink station",
+        "Housing delivery",
+        "Town centre regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.brentcrosstown.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "6,700 homes and new town centre around new Brent Cross West station."
+      "description": "6,700 homes and new town centre around new Brent Cross West station.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-lon-028",
@@ -698,14 +1428,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to HS2 Euston approach decisions",
-      "keyDrivers": ["HS2 terminus", "Over-station development", "Housing delivery"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "HS2 terminus",
+        "Over-station development",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.hs2.org.uk/stations/euston-station/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Over-station development at Euston. Subject to HS2 programme decisions."
+      "description": "Over-station development at Euston. Subject to HS2 programme decisions.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-029",
@@ -722,14 +1482,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Peabody housing association",
-      "keyDrivers": ["Housing delivery", "Elizabeth Line extension safeguarded", "Estate renewal"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Housing delivery",
+        "Elizabeth Line extension safeguarded",
+        "Estate renewal"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.thamesmeadnow.org.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "11,500 new and refurbished homes. Long-term neighbourhood regeneration by Peabody."
+      "description": "11,500 new and refurbished homes. Long-term neighbourhood regeneration by Peabody.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-lon-030",
@@ -746,14 +1527,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - British Land",
-      "keyDrivers": ["Jubilee Line connectivity", "Housing delivery", "Town centre creation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Jubilee Line connectivity",
+        "Housing delivery",
+        "Town centre creation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.canadawatermasterplan.com",
       "externalTenderNote": "British Land in-house delivery",
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "53-acre masterplan with 3,000+ homes, workspace, retail, and leisure. Multiple phases."
+      "description": "53-acre masterplan with 3,000+ homes, workspace, retail, and leisure. Multiple phases.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-se-031",
@@ -770,14 +1572,43 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to planning and investment - DCO withdrawn 2022, revised plans",
-      "keyDrivers": ["Tourism", "Leisure investment", "Regeneration"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Tourism",
+        "Leisure investment",
+        "Regeneration"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://londonresort.info",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Major theme park resort. DCO withdrawn and revised plans being developed."
+      "description": "Major theme park resort. DCO withdrawn and revised plans being developed.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-032",
@@ -794,19 +1625,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple developers",
-      "keyDrivers": ["Housing targets", "East-West Rail connectivity", "MK growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Housing targets",
+        "East-West Rail connectivity",
+        "MK growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.milton-keynes.gov.uk/planning-and-building/planning-policy",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "Strategic expansion area with 5,000+ homes. Multiple housebuilders delivering."
+      "description": "Strategic expansion area with 5,000+ homes. Multiple housebuilders delivering.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-se-033",
       "title": "Littlebrook Data Centre Campus",
-      "sector": "data-centres",
+      "sector": "energy",
       "subSector": "hyperscale",
       "region": "south-east",
       "location": {
@@ -818,14 +1670,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Ark Data Centres",
-      "keyDrivers": ["Power availability", "London proximity", "Data demand"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Power availability",
+        "London proximity",
+        "Data demand"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://arkdatacentres.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "Hyperscale campus on former power station site. Direct grid connection."
+      "description": "Hyperscale campus on former power station site. Direct grid connection.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-034",
@@ -842,14 +1715,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Lendlease",
-      "keyDrivers": ["Thames riverside", "Housing delivery", "Waterfront regeneration"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Thames riverside",
+        "Housing delivery",
+        "Waterfront regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.lendlease.com/uk/",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "1,100 homes on former Convoys Wharf site. Riverside mixed-use development."
+      "description": "1,100 homes on former Convoys Wharf site. Riverside mixed-use development.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-035",
@@ -866,14 +1760,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to planning - Earls Court Development Company",
-      "keyDrivers": ["Tube connectivity", "Central London location", "Housing delivery"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Tube connectivity",
+        "Central London location",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.earlscourtplan.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2027",
       "estimatedEnd": "2040",
-      "description": "Major regeneration of former exhibition centre site. New neighbourhood with 4,000+ homes."
+      "description": "Major regeneration of former exhibition centre site. New neighbourhood with 4,000+ homes.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-036",
@@ -890,19 +1814,40 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Yoo Capital / Deutsche Finance",
-      "keyDrivers": ["Events destination", "Creative hub", "West London revival"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Events destination",
+        "Creative hub",
+        "West London revival"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://olympia.london",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2027",
-      "description": "Transformation of historic exhibition centre. New theatre, hotel, co-working, music venue."
+      "description": "Transformation of historic exhibition centre. New theatre, hotel, co-working, music venue.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-lon-037",
       "title": "Nine Elms Battersea Power Station - Remaining Phases",
-      "sector": "real-estate",
+      "sector": "energy",
       "subSector": "mixed-use",
       "region": "london",
       "location": {
@@ -914,14 +1859,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Malaysian consortium",
-      "keyDrivers": ["Northern Line Extension", "Destination creation", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Northern Line Extension",
+        "Destination creation",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://batterseapowerstation.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2030",
-      "description": "Remaining residential phases surrounding Power Station. Apple UK HQ complete."
+      "description": "Remaining residential phases surrounding Power Station. Apple UK HQ complete.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-lon-038",
@@ -938,19 +1904,48 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to council financial position and partner selection",
-      "keyDrivers": ["Town centre revival", "Housing delivery", "Tram connectivity"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Town centre revival",
+        "Housing delivery",
+        "Tram connectivity"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.croydon.gov.uk/planning-and-regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Multiple sites in Croydon town centre. Subject to council delivery approach."
+      "description": "Multiple sites in Croydon town centre. Subject to council delivery approach.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-039",
       "title": "Barking Riverside",
-      "sector": "real-estate",
+      "sector": "energy",
       "subSector": "residential",
       "region": "london",
       "location": {
@@ -962,14 +1957,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - L&Q / GLA",
-      "keyDrivers": ["Overground extension", "Affordable housing", "Riverside development"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Overground extension",
+        "Affordable housing",
+        "Riverside development"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://bfrb.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2010",
       "estimatedEnd": "2035",
-      "description": "10,800 homes on former power station site. Overground extension opened 2022. Ongoing phases."
+      "description": "10,800 homes on former power station site. Overground extension opened 2022. Ongoing phases.",
+      "contractAward": "2010-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2010-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-lon-040",
@@ -986,14 +2002,35 @@
       "procurementStage": "Awarded",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - ABP (China) / GLA",
-      "keyDrivers": ["Asian investment gateway", "Elizabeth Line", "Enterprise Zone"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Asian investment gateway",
+        "Elizabeth Line",
+        "Enterprise Zone"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.abp-london.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2017",
       "estimatedEnd": "2030",
-      "description": "Business and commercial district. Phase 1 buildings complete. Ongoing phases."
+      "description": "Business and commercial district. Phase 1 buildings complete. Ongoing phases.",
+      "contractAward": "2017-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2017-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-se-041",
@@ -1010,14 +2047,42 @@
       "procurementStage": "Market Engagement",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Macquarie",
-      "keyDrivers": ["Business aviation demand", "Capacity constraints elsewhere"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Business aviation demand",
+        "Capacity constraints elsewhere"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.farnboroughairport.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2026",
       "estimatedEnd": "2029",
-      "description": "Hangar and facilities expansion for business aviation."
+      "description": "Hangar and facilities expansion for business aviation.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-042",
@@ -1034,14 +2099,41 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to Stobart Group investment decisions",
-      "keyDrivers": ["Low-cost carrier growth", "Greater Anglia connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management"],
+      "keyDrivers": [
+        "Low-cost carrier growth",
+        "Greater Anglia connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://southendairport.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2027",
       "estimatedEnd": "2030",
-      "description": "Terminal and apron enhancements for capacity increase."
+      "description": "Terminal and apron enhancements for capacity increase.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-043",
@@ -1058,14 +2150,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - GIP / Oaktree",
-      "keyDrivers": ["Business travel recovery", "Terminal capacity", "CADP implementation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Business travel recovery",
+        "Terminal capacity",
+        "CADP implementation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.londoncityairport.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2028",
-      "description": "Terminal expansion and airfield improvements under City Airport Development Programme."
+      "description": "Terminal expansion and airfield improvements under City Airport Development Programme.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-044",
@@ -1082,14 +2195,42 @@
       "procurementStage": "Pipeline",
       "readiness": "no-money-not-ready",
       "fundingStatus": "Subject to government funding decision",
-      "keyDrivers": ["Long-term capacity", "Connectivity", "Housing growth"],
-      "serviceRelevance": ["Programme Advisory"],
+      "keyDrivers": [
+        "Long-term capacity",
+        "Connectivity",
+        "Housing growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory"
+      ],
       "sourceLink": "https://crossrail2.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2030",
       "estimatedEnd": "2040",
-      "description": "Safeguarding and enabling works for Crossrail 2. Main construction subject to funding."
+      "description": "Safeguarding and enabling works for Crossrail 2. Main construction subject to funding.",
+      "tenderDate": "2029-Q1",
+      "pqqDeadline": "2029-Q3",
+      "ittDeadline": "2029-Q4",
+      "contractAward": "2030-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2029-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2029-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2029-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2030-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-045",
@@ -1106,14 +2247,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - TfL Business Plan",
-      "keyDrivers": ["East London growth", "Capacity", "Thamesmead extension"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "East London growth",
+        "Capacity",
+        "Thamesmead extension"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://tfl.gov.uk/modes/dlr/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "DLR capacity improvements and potential Thamesmead extension. Subject to TfL funding."
+      "description": "DLR capacity improvements and potential Thamesmead extension. Subject to TfL funding.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-046",
@@ -1130,14 +2301,44 @@
       "procurementStage": "Expression of Interest",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MOD Shipbuilding Strategy",
-      "keyDrivers": ["Type 31 frigate support", "Carrier fleet", "Estate modernisation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Type 31 frigate support",
+        "Carrier fleet",
+        "Estate modernisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.royalnavy.mod.uk/the-equipment/bases-and-stations/naval-base/hmnb-portsmouth",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2025",
       "estimatedEnd": "2032",
-      "description": "Infrastructure upgrades for carrier operations and frigate programme support."
+      "description": "Infrastructure upgrades for carrier operations and frigate programme support.",
+      "tenderDate": "2024-Q3",
+      "pqqDeadline": "2024-Q4",
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2024-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-047",
@@ -1154,14 +2355,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - DIO estate programme",
-      "keyDrivers": ["Estate rationalisation", "Accommodation improvement", "Training facilities"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Estate rationalisation",
+        "Accommodation improvement",
+        "Training facilities"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/defence-infrastructure-organisation",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2027",
       "estimatedEnd": "2032",
-      "description": "Accommodation and training facility improvements at Aldershot Garrison."
+      "description": "Accommodation and training facility improvements at Aldershot Garrison.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-se-048",
@@ -1178,14 +2408,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to New Hospital Programme",
-      "keyDrivers": ["NHS capacity", "Estate condition", "Population growth"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS capacity",
+        "Estate condition",
+        "Population growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.england.nhs.uk/new-hospital-programme/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Major hospital development or refurbishment. Subject to NHP allocations."
+      "description": "Major hospital development or refurbishment. Subject to NHP allocations.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-049",
@@ -1202,14 +2462,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Hutchison Property",
-      "keyDrivers": ["Riverside development", "Housing delivery", "Maritime heritage"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent", "P3M"],
+      "keyDrivers": [
+        "Riverside development",
+        "Housing delivery",
+        "Maritime heritage"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent",
+        "P3M"
+      ],
       "sourceLink": "https://convoyswharf.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "Former naval dockyard redevelopment. 3,500 homes and commercial space."
+      "description": "Former naval dockyard redevelopment. 3,500 homes and commercial space.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-lon-050",
@@ -1226,14 +2508,34 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Vauxhall Sky Gardens Ltd",
-      "keyDrivers": ["Vauxhall regeneration", "Northern Line", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management"],
+      "keyDrivers": [
+        "Vauxhall regeneration",
+        "Northern Line",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2027",
-      "description": "Residential towers in Vauxhall cluster. Multiple buildings under construction."
+      "description": "Residential towers in Vauxhall cluster. Multiple buildings under construction.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
     },
     {
       "id": "reg-se-051",
@@ -1250,14 +2552,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple developers / Homes England",
-      "keyDrivers": ["Housing delivery", "HS1 connectivity", "Garden City principles"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Housing delivery",
+        "HS1 connectivity",
+        "Garden City principles"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://ebbsfleetdc.org.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2015",
       "estimatedEnd": "2035",
-      "description": "15,000 homes garden city development. Multiple phases under delivery by various housebuilders."
+      "description": "15,000 homes garden city development. Multiple phases under delivery by various housebuilders.",
+      "contractAward": "2015-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2015-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-se-052",
@@ -1274,14 +2597,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - University of Reading",
-      "keyDrivers": ["Life sciences growth", "Innovation corridor", "University partnership"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Life sciences growth",
+        "Innovation corridor",
+        "University partnership"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.tvsp.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2028",
-      "description": "Science park expansion with new lab and office buildings for life sciences tenants."
+      "description": "Science park expansion with new lab and office buildings for life sciences tenants.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-se-053",
@@ -1298,14 +2642,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Environment Agency capital programme",
-      "keyDrivers": ["Climate adaptation", "Sea level rise", "Coastal communities protection"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Climate adaptation",
+        "Sea level rise",
+        "Coastal communities protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/environment-agency",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Multiple flood defence schemes across South East. EA framework delivery."
+      "description": "Multiple flood defence schemes across South East. EA framework delivery.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-se-054",
@@ -1322,14 +2688,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - RIIO-ED2",
-      "keyDrivers": ["Net Zero", "EV charging", "Network reinforcement"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Net Zero",
+        "EV charging",
+        "Network reinforcement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.ssen.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "ED2 capital programme for southern England distribution network."
+      "description": "ED2 capital programme for southern England distribution network.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-055",
@@ -1346,14 +2733,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - St James / Berkeley",
-      "keyDrivers": ["BBC Media Village", "Imperial College partnership", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "BBC Media Village",
+        "Imperial College partnership",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.whitecityliving.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2017",
       "estimatedEnd": "2028",
-      "description": "Residential development adjacent to Television Centre. Multiple phases."
+      "description": "Residential development adjacent to Television Centre. Multiple phases.",
+      "contractAward": "2017-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2017-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-056",
@@ -1370,14 +2778,34 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Lendlease",
-      "keyDrivers": ["Estate regeneration", "Zone 1 location", "Bakerloo extension"],
-      "serviceRelevance": ["Cost and Commercial Management"],
+      "keyDrivers": [
+        "Estate regeneration",
+        "Zone 1 location",
+        "Bakerloo extension"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.elephantpark.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2014",
       "estimatedEnd": "2028",
-      "description": "Final phases of Heygate Estate regeneration. 3,000 homes total."
+      "description": "Final phases of Heygate Estate regeneration. 3,000 homes total.",
+      "contractAward": "2014-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2014-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-057",
@@ -1394,14 +2822,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Quintain",
-      "keyDrivers": ["Stadium connectivity", "Build-to-Rent", "Destination creation"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Stadium connectivity",
+        "Build-to-Rent",
+        "Destination creation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.wembleypark.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2010",
       "estimatedEnd": "2030",
-      "description": "8,000+ homes around Wembley Stadium. BTR and for-sale mix. Multiple phases."
+      "description": "8,000+ homes around Wembley Stadium. BTR and for-sale mix. Multiple phases.",
+      "contractAward": "2010-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2010-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-lon-058",
@@ -1418,14 +2867,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple developers / Haringey Council",
-      "keyDrivers": ["Victoria Line connectivity", "Lea Valley regeneration", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Victoria Line connectivity",
+        "Lea Valley regeneration",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.haringey.gov.uk/regeneration/tottenham",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2018",
       "estimatedEnd": "2030",
-      "description": "5,000 homes across multiple sites. Station gyratory improvements complete."
+      "description": "5,000 homes across multiple sites. Station gyratory improvements complete.",
+      "contractAward": "2018-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2018-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-se-059",
@@ -1442,14 +2912,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofwat AMP8 determination",
-      "keyDrivers": ["Storm overflows", "Water quality", "Resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Storm overflows",
+        "Water quality",
+        "Resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.southernwater.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "AMP8 capital programme including major storm overflow improvements."
+      "description": "AMP8 capital programme including major storm overflow improvements.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-lon-060",
@@ -1466,14 +2958,36 @@
       "procurementStage": "Awarded",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to Thames Water financial restructuring",
-      "keyDrivers": ["Leakage reduction", "Storm overflows", "Network resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Programme Advisory"],
+      "keyDrivers": [
+        "Leakage reduction",
+        "Storm overflows",
+        "Network resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Programme Advisory"
+      ],
       "sourceLink": "https://www.thameswater.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "London portion of Thames Water AMP8. Subject to company financial position."
+      "description": "London portion of Thames Water AMP8. Subject to company financial position.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-se-061",
@@ -1490,14 +3004,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Port of Dover",
-      "keyDrivers": ["Cargo capacity", "Cruise terminal", "Border infrastructure"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Cargo capacity",
+        "Cruise terminal",
+        "Border infrastructure"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.doverport.co.uk/dwdr/",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2019",
       "estimatedEnd": "2028",
-      "description": "Western Docks Revival - cargo pier, marina, and waterfront development."
+      "description": "Western Docks Revival - cargo pier, marina, and waterfront development.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-se-062",
@@ -1514,14 +3049,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - HIF, multiple developers",
-      "keyDrivers": ["Lower Thames Crossing", "Ebbsfleet connectivity", "Housing"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Lower Thames Crossing",
+        "Ebbsfleet connectivity",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2040",
-      "description": "Multiple sites benefiting from Lower Thames Crossing and Ebbsfleet infrastructure."
+      "description": "Multiple sites benefiting from Lower Thames Crossing and Ebbsfleet infrastructure.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-063",
@@ -1538,14 +3102,43 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to developer selection - Newham Council",
-      "keyDrivers": ["District Line", "Town centre renewal", "Housing"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "District Line",
+        "Town centre renewal",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.newham.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Town centre regeneration around West Ham station. Multiple sites."
+      "description": "Town centre regeneration around West Ham station. Multiple sites.",
+      "tenderDate": "2026-Q3",
+      "pqqDeadline": "2026-Q4",
+      "ittDeadline": "2027-Q1",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-064",
@@ -1562,14 +3155,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple developers",
-      "keyDrivers": ["Elizabeth Line terminus", "Housing opportunity", "Brownfield"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Elizabeth Line terminus",
+        "Housing opportunity",
+        "Brownfield"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Multiple residential schemes around Elizabeth Line Abbey Wood station."
+      "description": "Multiple residential schemes around Elizabeth Line Abbey Wood station.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-se-065",
@@ -1586,14 +3200,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to HIF and developer interest",
-      "keyDrivers": ["Heritage regeneration", "Housing growth", "HS1 proximity"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Heritage regeneration",
+        "Housing growth",
+        "HS1 proximity"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.medway.gov.uk/info/200177/major_regeneration_projects",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Waterfront regeneration across multiple sites in Chatham and Rochester."
+      "description": "Waterfront regeneration across multiple sites in Chatham and Rochester.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-lon-066",
@@ -1610,14 +3253,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Redrow",
-      "keyDrivers": ["Northern Line", "Housing delivery", "Former RAF site"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Northern Line",
+        "Housing delivery",
+        "Former RAF site"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.redrow.co.uk/developments/colindale-gardens-london-nw9",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2016",
       "estimatedEnd": "2028",
-      "description": "2,900 homes on former Peel Centre site. Final phases completing."
+      "description": "2,900 homes on former Peel Centre site. Final phases completing.",
+      "contractAward": "2016-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2016-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-067",
@@ -1634,14 +3298,33 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - Berkeley / Countryside",
-      "keyDrivers": ["Estate regeneration", "Housing delivery"],
-      "serviceRelevance": ["Cost and Commercial Management"],
+      "keyDrivers": [
+        "Estate regeneration",
+        "Housing delivery"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.kidbrookevillage.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2012",
       "estimatedEnd": "2028",
-      "description": "Final phases of Ferrier Estate regeneration. 4,800 homes total."
+      "description": "Final phases of Ferrier Estate regeneration. 4,800 homes total.",
+      "contractAward": "2012-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2012-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-lon-068",
@@ -1658,14 +3341,34 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple developers",
-      "keyDrivers": ["Elizabeth Line", "Crossrail Place", "Town centre"],
-      "serviceRelevance": ["Cost and Commercial Management"],
+      "keyDrivers": [
+        "Elizabeth Line",
+        "Crossrail Place",
+        "Town centre"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2028",
-      "description": "Developments around Woolwich Elizabeth Line station and town centre."
+      "description": "Developments around Woolwich Elizabeth Line station and town centre.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-se-069",
@@ -1682,14 +3385,34 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple developers / RBWM",
-      "keyDrivers": ["Elizabeth Line western terminus", "Town centre renewal"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Elizabeth Line western terminus",
+        "Town centre renewal"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2019",
       "estimatedEnd": "2030",
-      "description": "Town centre regeneration schemes around Elizabeth Line station."
+      "description": "Town centre regeneration schemes around Elizabeth Line station.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-lon-070",
@@ -1706,14 +3429,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to planning - Hadley Property Group",
-      "keyDrivers": ["Riverside location", "DLR / Elizabeth Line", "Housing"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Riverside location",
+        "DLR / Elizabeth Line",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Major riverside development opportunity. Planning application submitted."
+      "description": "Major riverside development opportunity. Planning application submitted.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     }
   ]
 }

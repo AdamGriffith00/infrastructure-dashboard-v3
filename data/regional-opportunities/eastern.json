@@ -1,44 +1,112 @@
 {
   "lastUpdated": "2026-02-05",
   "lastResearched": "2026-02-05",
-  "regions": ["eastern"],
+  "regions": [
+    "eastern"
+  ],
   "sectorTrends": {
     "real-estate": {
       "outlook": "Cambridge life sciences cluster driving premium commercial development. Luton and Stevenage town centre transformations. Major housing delivery sites across Hertfordshire and Essex. Ipswich and Norwich waterfront regeneration.",
-      "keyDrivers": ["Cambridge Biomedical Campus", "Stansted corridor growth", "Housing delivery", "Town centre renewal"],
-      "investmentDrivers": ["Life sciences investment", "Homes England", "Town Deals", "Institutional capital"],
-      "risks": ["Planning constraints", "Green Belt sensitivity", "Water scarcity", "Construction costs"]
+      "keyDrivers": [
+        "Cambridge Biomedical Campus",
+        "Stansted corridor growth",
+        "Housing delivery",
+        "Town centre renewal"
+      ],
+      "investmentDrivers": [
+        "Life sciences investment",
+        "Homes England",
+        "Town Deals",
+        "Institutional capital"
+      ],
+      "risks": [
+        "Planning constraints",
+        "Green Belt sensitivity",
+        "Water scarcity",
+        "Construction costs"
+      ]
     },
     "utilities": {
-      "outlook": "Anglian Water delivering £9.5bn AMP8 with major focus on water resources and storm overflows. UK Power Networks ED2 investment. Sizewell C nuclear construction bringing massive infrastructure investment.",
-      "keyDrivers": ["AMP8 investment", "Sizewell C", "Water resources", "Grid reinforcement"],
-      "investmentDrivers": ["Ofwat AMP8", "RIIO-ED2", "Nuclear new build"],
-      "risks": ["Water stress", "Grid capacity", "Sizewell C programme risk"]
+      "outlook": "Anglian Water delivering \u00a39.5bn AMP8 with major focus on water resources and storm overflows. UK Power Networks ED2 investment. Sizewell C nuclear construction bringing massive infrastructure investment.",
+      "keyDrivers": [
+        "AMP8 investment",
+        "Sizewell C",
+        "Water resources",
+        "Grid reinforcement"
+      ],
+      "investmentDrivers": [
+        "Ofwat AMP8",
+        "RIIO-ED2",
+        "Nuclear new build"
+      ],
+      "risks": [
+        "Water stress",
+        "Grid capacity",
+        "Sizewell C programme risk"
+      ]
     },
     "data-centres": {
       "outlook": "Hertfordshire and Essex corridor expanding from London data centre market. Luton and Harlow emerging locations. Power and connectivity driving site selection.",
-      "keyDrivers": ["London overflow", "Power availability", "Fibre connectivity"],
-      "investmentDrivers": ["Tech capex", "Infrastructure funds", "REIT investment"],
-      "risks": ["Power grid constraints", "Planning", "Water cooling"]
+      "keyDrivers": [
+        "London overflow",
+        "Power availability",
+        "Fibre connectivity"
+      ],
+      "investmentDrivers": [
+        "Tech capex",
+        "Infrastructure funds",
+        "REIT investment"
+      ],
+      "risks": [
+        "Power grid constraints",
+        "Planning",
+        "Water cooling"
+      ]
     },
     "infrastructure": {
       "outlook": "Sizewell C bringing generational investment to Suffolk. Major flood defence along East Anglian coast. School rebuilding active. NHS estate investment.",
-      "keyDrivers": ["Sizewell C", "Coastal flood risk", "NHS capacity", "Education"],
-      "investmentDrivers": ["Nuclear new build", "EA programme", "NHP", "DfE"],
-      "risks": ["Sizewell programme timeline", "Contractor capacity", "Inflation"]
+      "keyDrivers": [
+        "Sizewell C",
+        "Coastal flood risk",
+        "NHS capacity",
+        "Education"
+      ],
+      "investmentDrivers": [
+        "Nuclear new build",
+        "EA programme",
+        "NHP",
+        "DfE"
+      ],
+      "risks": [
+        "Sizewell programme timeline",
+        "Contractor capacity",
+        "Inflation"
+      ]
     },
     "rail": {
       "outlook": "East West Rail progressing from Oxford to Cambridge. ECML digital signalling. Stansted Airport accessibility improvements. Greater Anglia network enhancements.",
-      "keyDrivers": ["East West Rail", "ECML upgrades", "Airport connectivity"],
-      "investmentDrivers": ["DfT major schemes", "Network Rail CP7", "MAG investment"],
-      "risks": ["East West Rail cost", "Funding uncertainty", "Construction complexity"]
+      "keyDrivers": [
+        "East West Rail",
+        "ECML upgrades",
+        "Airport connectivity"
+      ],
+      "investmentDrivers": [
+        "DfT major schemes",
+        "Network Rail CP7",
+        "MAG investment"
+      ],
+      "risks": [
+        "East West Rail cost",
+        "Funding uncertainty",
+        "Construction complexity"
+      ]
     }
   },
   "opportunities": [
     {
       "id": "reg-ea-001",
       "title": "Sizewell C Nuclear Power Station",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "eastern",
       "location": {
@@ -50,14 +118,38 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Government RAB model, EDF, investors",
-      "keyDrivers": ["Energy security", "Net Zero", "Baseload generation", "Jobs"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M", "NEC Supervisor"],
+      "keyDrivers": [
+        "Energy security",
+        "Net Zero",
+        "Baseload generation",
+        "Jobs"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.edfenergy.com/energy/nuclear-new-build-projects/sizewell-c",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2024",
       "estimatedEnd": "2035",
-      "description": "Twin EPR nuclear reactors. 3.2GW capacity. Major construction phase commencing. Associated development sites across Suffolk."
+      "description": "Twin EPR nuclear reactors. 3.2GW capacity. Major construction phase commencing. Associated development sites across Suffolk.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-ea-002",
@@ -74,14 +166,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - AstraZeneca, Cambridge University, multiple investors",
-      "keyDrivers": ["Life sciences cluster", "AstraZeneca expansion", "Research excellence"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Life sciences cluster",
+        "AstraZeneca expansion",
+        "Research excellence"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://cambridge-biomedical.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Europe's largest biomedical campus. AstraZeneca R&D centre, Royal Papworth, hospital expansion."
+      "description": "Europe's largest biomedical campus. AstraZeneca R&D centre, Royal Papworth, hospital expansion.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-003",
@@ -98,14 +212,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - DfT, subject to full business case",
-      "keyDrivers": ["Oxford-Cambridge connectivity", "Housing growth", "Innovation corridor"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "Oxford-Cambridge connectivity",
+        "Housing growth",
+        "Innovation corridor"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://eastwestrail.co.uk",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "New railway connecting Bedford to Cambridge. Subject to route decision and full business case."
+      "description": "New railway connecting Bedford to Cambridge. Subject to route decision and full business case.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-004",
@@ -122,14 +266,38 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Ofwat AMP8 Final Determination",
-      "keyDrivers": ["Water resources", "Storm overflows", "Growth", "Resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor", "Programme Advisory"],
+      "keyDrivers": [
+        "Water resources",
+        "Storm overflows",
+        "Growth",
+        "Resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
       "sourceLink": "https://www.anglianwater.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2025",
       "estimatedEnd": "2030",
-      "description": "Major AMP8 programme. Water resources, storm overflow reduction, and growth infrastructure across East of England."
+      "description": "Major AMP8 programme. Water resources, storm overflow reduction, and growth infrastructure across East of England.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-005",
@@ -146,14 +314,44 @@
       "procurementStage": "Market Engagement",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to DCO and investment - Luton Rising",
-      "keyDrivers": ["Passenger capacity", "DCO approved", "Economic growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "P3M"],
+      "keyDrivers": [
+        "Passenger capacity",
+        "DCO approved",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.lutonrising.org.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "New Terminal 2 with capacity to 32m passengers. DCO approved 2024. DART transit extension."
+      "description": "New Terminal 2 with capacity to 32m passengers. DCO approved 2024. DART transit extension.",
+      "tenderDate": "2026-Q3",
+      "pqqDeadline": "2026-Q4",
+      "ittDeadline": "2027-Q1",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-006",
@@ -170,14 +368,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - IBC, Towns Fund, developers",
-      "keyDrivers": ["Town centre renewal", "Waterfront development", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Town centre renewal",
+        "Waterfront development",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.ipswich.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Waterfront regeneration and town centre improvements including Cornhill Quarter and Upper Orwell Crossings."
+      "description": "Waterfront regeneration and town centre improvements including Cornhill Quarter and Upper Orwell Crossings.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-007",
@@ -194,19 +414,48 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to developer selection and masterplan",
-      "keyDrivers": ["Housing delivery", "Brownfield regeneration", "City growth"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management"],
+      "keyDrivers": [
+        "Housing delivery",
+        "Brownfield regeneration",
+        "City growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
       "sourceLink": "https://www.norwich.gov.uk/eastnorwich",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "4,000 homes on brownfield sites including Carrow Works, Deal Ground, and Utilities Site."
+      "description": "4,000 homes on brownfield sites including Carrow Works, Deal Ground, and Utilities Site.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-008",
       "title": "UK Power Networks ED2 Eastern Programme",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "eastern",
       "location": {
@@ -218,14 +467,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - RIIO-ED2 allowances",
-      "keyDrivers": ["Net Zero", "EV infrastructure", "Heat pumps", "Grid resilience"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Net Zero",
+        "EV infrastructure",
+        "Heat pumps",
+        "Grid resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.ukpowernetworks.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2023",
       "estimatedEnd": "2028",
-      "description": "ED2 capital programme for Eastern distribution network. Major grid reinforcement."
+      "description": "ED2 capital programme for Eastern distribution network. Major grid reinforcement.",
+      "contractAward": "2023-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2023-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-ea-009",
@@ -242,14 +513,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - SBC, Mace, Town Deal",
-      "keyDrivers": ["New town renewal", "Station Gateway", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "New town renewal",
+        "Station Gateway",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.stevenage.gov.uk/regeneration",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "SG1 town centre regeneration. New leisure centre, bus interchange, housing, and commercial. Mace as development partner."
+      "description": "SG1 town centre regeneration. New leisure centre, bus interchange, housing, and commercial. Mace as development partner.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-ea-010",
@@ -266,14 +559,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple housebuilders, Homes England, HIF",
-      "keyDrivers": ["Garden Town designation", "Housing delivery", "Infrastructure"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Garden Town designation",
+        "Housing delivery",
+        "Infrastructure"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.harlowandgilstongardentown.co.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2019",
       "estimatedEnd": "2040",
-      "description": "16,500 homes garden town across multiple sites. Schools, healthcare, and transport infrastructure."
+      "description": "16,500 homes garden town across multiple sites. Schools, healthcare, and transport infrastructure.",
+      "contractAward": "2019-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2019-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2040"
+        }
+      ]
     },
     {
       "id": "reg-ea-011",
@@ -290,14 +604,43 @@
       "procurementStage": "PQQ",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Private data centre operators",
-      "keyDrivers": ["London proximity", "Power availability", "M25 connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "London proximity",
+        "Power availability",
+        "M25 connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2026",
       "estimatedEnd": "2029",
-      "description": "Multiple data centre developments in Hertfordshire M25 corridor. Expanding from London market."
+      "description": "Multiple data centre developments in Hertfordshire M25 corridor. Expanding from London market.",
+      "tenderDate": "2025-Q3",
+      "pqqDeadline": "2025-Q4",
+      "ittDeadline": "2026-Q1",
+      "contractAward": "2026-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2025-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2026-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-012",
@@ -314,14 +657,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - National Highways RIS2/RIS3",
-      "keyDrivers": ["Strategic connectivity", "Safety", "Economic growth"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Strategic connectivity",
+        "Safety",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://nationalhighways.co.uk/our-roads/east/a47-improvement-programme/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2029",
-      "description": "Multiple dualling and junction improvements on A47 between Peterborough and Great Yarmouth."
+      "description": "Multiple dualling and junction improvements on A47 between Peterborough and Great Yarmouth.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
     },
     {
       "id": "reg-ea-013",
@@ -338,14 +703,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - CK Hutchison / Felixstowe Dock",
-      "keyDrivers": ["Container capacity", "Automation", "Freeport East"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Container capacity",
+        "Automation",
+        "Freeport East"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.portoffelixstowe.co.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "UK's busiest container port. Berth deepening, automation, and Freeport East logistics park."
+      "description": "UK's busiest container port. Berth deepening, automation, and Freeport East logistics park.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-014",
@@ -362,14 +748,36 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Environment Agency",
-      "keyDrivers": ["Coastal erosion", "Sea level rise", "Community protection"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Coastal erosion",
+        "Sea level rise",
+        "Community protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://www.gov.uk/government/organisations/environment-agency",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2021",
       "estimatedEnd": "2030",
-      "description": "Coastal defence and erosion management across Norfolk and Suffolk coast."
+      "description": "Coastal defence and erosion management across Norfolk and Suffolk coast.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-015",
@@ -386,14 +794,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - MAG corporate",
-      "keyDrivers": ["Passenger growth", "43m capacity", "Terminal improvements"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Passenger growth",
+        "43m capacity",
+        "Terminal improvements"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.stanstedairport.com",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Terminal improvements and airfield upgrades to deliver 43m passenger capacity. MAG investment programme."
+      "description": "Terminal improvements and airfield upgrades to deliver 43m passenger capacity. MAG investment programme.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-016",
@@ -410,14 +839,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - CCC, developers, sport England",
-      "keyDrivers": ["Sport and leisure", "Housing delivery", "Town expansion"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Sport and leisure",
+        "Housing delivery",
+        "Town expansion"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.colchester.gov.uk/northern-gateway/",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2017",
       "estimatedEnd": "2028",
-      "description": "Mixed-use development with stadium, arena, leisure, and 1,600 homes."
+      "description": "Mixed-use development with stadium, arena, leisure, and 1,600 homes.",
+      "contractAward": "2017-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2017-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     },
     {
       "id": "reg-ea-017",
@@ -434,14 +884,35 @@
       "procurementStage": "ITT",
       "readiness": "ready-to-buy",
       "fundingStatus": "Fully funded - DfE",
-      "keyDrivers": ["RAAC remediation", "School condition"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "Employer's Agent"],
+      "keyDrivers": [
+        "RAAC remediation",
+        "School condition"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.gov.uk/government/publications/school-rebuilding-programme",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2024",
       "estimatedEnd": "2030",
-      "description": "Multiple school rebuilds across Eastern region. DfE framework."
+      "description": "Multiple school rebuilds across Eastern region. DfE framework.",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": "2024-Q1",
+      "contractAward": "2024-Q1",
+      "keyDates": [
+        {
+          "label": "ITT Deadline",
+          "date": "2024-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2024-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-018",
@@ -458,14 +929,44 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Part funded - New Hospital Programme",
-      "keyDrivers": ["NHS capacity", "Estate condition", "Population growth"],
-      "serviceRelevance": ["Programme Advisory", "Cost and Commercial Management", "P3M"],
+      "keyDrivers": [
+        "NHS capacity",
+        "Estate condition",
+        "Population growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
       "sourceLink": "https://www.england.nhs.uk/new-hospital-programme/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2027",
       "estimatedEnd": "2035",
-      "description": "Hospital improvements including West Suffolk, James Paget, and Princess Alexandra Harlow."
+      "description": "Hospital improvements including West Suffolk, James Paget, and Princess Alexandra Harlow.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-019",
@@ -482,14 +983,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Freeport incentives, DP World, Forth Ports",
-      "keyDrivers": ["Freeport status", "London Gateway", "Tilbury expansion"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Freeport status",
+        "London Gateway",
+        "Tilbury expansion"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.thamesfreeport.com",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2022",
       "estimatedEnd": "2030",
-      "description": "Thames Freeport across London Gateway, Tilbury, and Ford Dagenham. Logistics and manufacturing growth."
+      "description": "Thames Freeport across London Gateway, Tilbury, and Ford Dagenham. Logistics and manufacturing growth.",
+      "contractAward": "2022-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2022-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-020",
@@ -506,14 +1028,44 @@
       "procurementStage": "PQQ",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - National Highways RIS2/RIS3",
-      "keyDrivers": ["Strategic connectivity", "Housing delivery", "Safety"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management", "NEC Supervisor"],
+      "keyDrivers": [
+        "Strategic connectivity",
+        "Housing delivery",
+        "Safety"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
       "sourceLink": "https://nationalhighways.co.uk/our-roads/east/a12-chelmsford-to-a120-widening/",
       "externalTenderNote": null,
       "projectType": "public",
       "estimatedStart": "2025",
       "estimatedEnd": "2031",
-      "description": "Widening 15 miles of A12 between Chelmsford and Colchester. DCO granted."
+      "description": "Widening 15 miles of A12 between Chelmsford and Colchester. DCO granted.",
+      "tenderDate": "2024-Q3",
+      "pqqDeadline": "2024-Q4",
+      "ittDeadline": "2025-Q1",
+      "contractAward": "2025-Q1",
+      "keyDates": [
+        {
+          "label": "Tender Published",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2024-Q4"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2025-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-021",
@@ -530,19 +1082,48 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to East West Rail and developer interest",
-      "keyDrivers": ["East West Rail junction", "Town centre renewal", "Housing"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "East West Rail junction",
+        "Town centre renewal",
+        "Housing"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.bedford.gov.uk",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2028",
       "estimatedEnd": "2035",
-      "description": "Station area and town centre development benefiting from East West Rail. Multiple sites."
+      "description": "Station area and town centre development benefiting from East West Rail. Multiple sites.",
+      "tenderDate": "2027-Q1",
+      "pqqDeadline": "2027-Q3",
+      "ittDeadline": "2027-Q4",
+      "contractAward": "2028-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2027-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2027-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2027-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2028-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-022",
       "title": "Great Yarmouth Energy Hub",
-      "sector": "utilities",
+      "sector": "energy",
       "subSector": "electricity",
       "region": "eastern",
       "location": {
@@ -554,14 +1135,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Part funded - Multiple operators, Enterprise Zone",
-      "keyDrivers": ["Offshore wind O&M", "Energy transition", "Jobs"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "Offshore wind O&M",
+        "Energy transition",
+        "Jobs"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": "https://www.great-yarmouth.gov.uk/energy-sector",
       "externalTenderNote": null,
       "projectType": "ppp",
       "estimatedStart": "2020",
       "estimatedEnd": "2030",
-      "description": "Offshore wind operations and maintenance hub. Equinor, Vattenfall, and other operators. Enterprise Zone."
+      "description": "Offshore wind operations and maintenance hub. Equinor, Vattenfall, and other operators. Enterprise Zone.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
     },
     {
       "id": "reg-ea-023",
@@ -578,14 +1180,43 @@
       "procurementStage": "Pipeline",
       "readiness": "has-money-not-ready",
       "fundingStatus": "Subject to operator investment",
-      "keyDrivers": ["London overflow", "Power availability", "A127 connectivity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Project Management"],
+      "keyDrivers": [
+        "London overflow",
+        "Power availability",
+        "A127 connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2027",
       "estimatedEnd": "2030",
-      "description": "Proposed data centre campus in Basildon Enterprise Corridor. A127 access."
+      "description": "Proposed data centre campus in Basildon Enterprise Corridor. A127 access.",
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": "2026-Q3",
+      "ittDeadline": "2026-Q4",
+      "contractAward": "2027-Q1",
+      "keyDates": [
+        {
+          "label": "Expected Tender",
+          "date": "2026-Q1"
+        },
+        {
+          "label": "PQQ Deadline",
+          "date": "2026-Q3"
+        },
+        {
+          "label": "ITT Deadline",
+          "date": "2026-Q4"
+        },
+        {
+          "label": "Contract Award",
+          "date": "2027-Q1"
+        }
+      ]
     },
     {
       "id": "reg-ea-024",
@@ -602,14 +1233,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Multiple housebuilders, HIF",
-      "keyDrivers": ["Housing delivery", "Garden Community", "Infrastructure"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Housing delivery",
+        "Garden Community",
+        "Infrastructure"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": "https://www.chelmsford.gov.uk",
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2020",
       "estimatedEnd": "2035",
-      "description": "3,600 homes garden community with new schools, healthcare, and transport infrastructure."
+      "description": "3,600 homes garden community with new schools, healthcare, and transport infrastructure.",
+      "contractAward": "2020-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2020-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2035"
+        }
+      ]
     },
     {
       "id": "reg-ea-025",
@@ -626,14 +1278,35 @@
       "procurementStage": "Awarded",
       "readiness": "ready-to-buy",
       "fundingStatus": "Funded - Private developers",
-      "keyDrivers": ["Logistics demand", "A1/ECML connectivity", "Freeport proximity"],
-      "serviceRelevance": ["Cost and Commercial Management", "Employer's Agent"],
+      "keyDrivers": [
+        "Logistics demand",
+        "A1/ECML connectivity",
+        "Freeport proximity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
       "sourceLink": null,
       "externalTenderNote": null,
       "projectType": "private",
       "estimatedStart": "2021",
       "estimatedEnd": "2028",
-      "description": "Major logistics and distribution park. Amazon, Bole Hills, and other occupiers."
+      "description": "Major logistics and distribution park. Amazon, Bole Hills, and other occupiers.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Contract Award",
+          "date": "2021-Q1"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
     }
   ]
 }
