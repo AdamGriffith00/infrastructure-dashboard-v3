@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "north-east"
   ],
@@ -1812,6 +1812,655 @@
         {
           "label": "Contract Award",
           "date": "2026-Q1"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-036",
+      "title": "SeAH Wind XXXL Monopile Factory (Teesworks)",
+      "sector": "energy",
+      "subSector": "offshore-wind-supply-chain",
+      "region": "north-east",
+      "location": {
+        "borough": "Redcar and Cleveland",
+        "area": "South Bank, Teesworks"
+      },
+      "value": 900000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured (private) \u2014 SeAH Wind / Teesworks JV",
+      "keyDrivers": [
+        "Offshore wind supply chain",
+        "Export potential",
+        "Jobs and regeneration",
+        "Net Zero"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Programme Advisory",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.offshorewind.biz/2025/07/30/hornsea-3-monopile-production-begins-at-seah-winds-new-uk-facility/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2030",
+      "description": "World's largest monopile manufacturing facility at Teesworks. Purpose-built 90,000m\u00b2 factory producing XXXL monopiles for Hornsea 3 and future offshore wind farms. Live production began 2025.",
+      "contractAward": "2023-Q3",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Production Start",
+          "date": "2025-Q1"
+        },
+        {
+          "label": "Full Capacity",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-037",
+      "title": "Cambois AI Data Centre Campus (QTS / Blackstone)",
+      "sector": "data-centres",
+      "subSector": "hyperscale",
+      "region": "north-east",
+      "location": {
+        "borough": "Northumberland",
+        "area": "Cambois"
+      },
+      "value": 10000000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured Phase 1 (private) \u2014 QTS/Blackstone. Up to 720MW programme.",
+      "keyDrivers": [
+        "AI Growth Zone designation",
+        "Hyperscale compute demand",
+        "Local jobs",
+        "Grid capacity"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.datacenterdynamics.com/en/news/approval-given-to-first-phase-of-10bn-data-center-in-northumberland-england/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2035",
+      "description": "Up to 720MW hyperscale AI data centre campus at Cambois, Northumberland. Phase 1 planning approved. One of the largest data centre developments in the UK, part of Northumberland AI Growth Zone. QTS/Blackstone backed.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Phase 1 Planning Approved",
+          "date": "2025"
+        },
+        {
+          "label": "Programme Completion",
+          "date": "2035"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-038",
+      "title": "Teesworks AI Data Centre Campus",
+      "sector": "data-centres",
+      "subSector": "hyperscale",
+      "region": "north-east",
+      "location": {
+        "borough": "Redcar and Cleveland",
+        "area": "Teesworks"
+      },
+      "value": 0,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 government-backed AI Growth Zone aspirations",
+      "keyDrivers": [
+        "AI compute capacity",
+        "Brownfield regeneration",
+        "Energy infrastructure",
+        "Jobs"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.datacenterdynamics.com/en/news/uk-government-eyes-teesside-as-second-ai-data-center-hub-report/",
+      "externalTenderNote": null,
+      "projectType": "ppp",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2035",
+      "description": "Proposed AI data centre campus at Teesworks spanning up to 500,000m\u00b2. UK government has identified Teesside as a second AI data centre hub following Cambois. BP withdrawal from hydrogen plant opened site.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Feasibility",
+          "date": "2026"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-039",
+      "title": "Stellium Data Centres \u2014 Cobalt Park Campus Expansion",
+      "sector": "data-centres",
+      "subSector": "colocation",
+      "region": "north-east",
+      "location": {
+        "borough": "Newcastle upon Tyne",
+        "area": "Cobalt Business Park"
+      },
+      "value": 150000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured (private) \u2014 Stellium ongoing phased expansion",
+      "keyDrivers": [
+        "AI/HPC workloads",
+        "Subsea cable connectivity (NO-UK, NCL-IX)",
+        "AI Growth Zone",
+        "Digital infrastructure"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://www.computeforecast.com/news/stellium-datacenters-to-support-ai-growth-zone-in-north-east-uk/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2023",
+      "estimatedEnd": "2028",
+      "description": "Multi-phase colocation data centre expansion at Cobalt Park. Stellium supports AI Growth Zone and benefits from subsea cable connectivity. Ongoing expansion phases with live procurement.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Ongoing Phases",
+          "date": "2025-2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-040",
+      "title": "Northumberland Line Reopening (Newcastle\u2013Ashington)",
+      "sector": "rail",
+      "subSector": "regional-rail",
+      "region": "north-east",
+      "location": {
+        "borough": "Northumberland",
+        "area": "Ashington / Bedlington / Newsham"
+      },
+      "value": 300000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 DfT / Levelling Up Fund",
+      "keyDrivers": [
+        "Levelling Up",
+        "Access to employment",
+        "Education connectivity",
+        "Modal shift"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Programme Advisory",
+        "P3M"
+      ],
+      "sourceLink": "https://railwaynews.net/northumberland-line-reopens-a-rail-revolution.html",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2021",
+      "estimatedEnd": "2025",
+      "description": "Reopening of the Northumberland Line linking Ashington, Bedlington, and Newsham to Newcastle. Opened December 2024. Ongoing station enhancements and passenger services ramp-up. Extension feasibility underway.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Line Opened",
+          "date": "2024-Q4"
+        },
+        {
+          "label": "Full Services",
+          "date": "2025"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-041",
+      "title": "Northumberland Line Extension to Newbiggin-by-the-Sea",
+      "sector": "rail",
+      "subSector": "regional-rail",
+      "region": "north-east",
+      "location": {
+        "borough": "Northumberland",
+        "area": "Newbiggin-by-the-Sea"
+      },
+      "value": 0,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 OBC funding request submitted to DfT",
+      "keyDrivers": [
+        "Growth and connectivity",
+        "Place-making",
+        "Community access",
+        "Post-line-opening momentum"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://www.railmagazine.com/news/request-for-funding-for-northumberland-line-extension-after-hugely-successful-year",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2031",
+      "description": "Proposed extension of the Northumberland Line from Ashington to Newbiggin-by-the-Sea. OBC funding request submitted following successful opening. Council cabinet approved extension plan.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "OBC Submitted",
+          "date": "2025"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-042",
+      "title": "Leamside Line Full Reopening Feasibility (Pelaw\u2013Tursdale)",
+      "sector": "rail",
+      "subSector": "regional-rail",
+      "region": "north-east",
+      "location": {
+        "borough": "Tyne and Wear / County Durham",
+        "area": "Pelaw to Tursdale"
+      },
+      "value": 0,
+      "status": "planning",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 North East CA feasibility funding allocated",
+      "keyDrivers": [
+        "ECML capacity relief",
+        "Local rail services",
+        "Growth corridor",
+        "County Durham connectivity"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://www.northeast-ca.gov.uk/news/transport/contractor-appointed-to-leamside-line-project",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2029",
+      "estimatedEnd": "2035",
+      "description": "Full reopening feasibility of the Leamside Line between Pelaw and Tursdale. Contractor appointed by North East CA for feasibility study. Would relieve ECML congestion and create new local rail corridor through County Durham.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Feasibility Contract Awarded",
+          "date": "2025"
+        },
+        {
+          "label": "Report Expected",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-043",
+      "title": "A19 Moor Farm & Seaton Burn Junction Upgrades",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "north-east",
+      "location": {
+        "borough": "Northumberland / North Tyneside",
+        "area": "A19 Corridor"
+      },
+      "value": 537500000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Unfunded \u2014 under review for RIS3 2026\u201330 consideration",
+      "keyDrivers": [
+        "Congestion relief",
+        "Data centre campus traffic",
+        "Growth corridor",
+        "Safety"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.highwaysindustry.com/north-east-roundabouts-reaching-breaking-point-as-calls-for-a19-upgrades-intensify/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2033",
+      "description": "Upgrades to Moor Farm and Seaton Burn roundabout junctions on the A19. Options range \u00a3300m\u2013\u00a3775m. Increased urgency due to Cambois data centre campus traffic forecasts. Mayor lobbying DfT for inclusion in RIS3.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "RIS3 Decision Expected",
+          "date": "2026"
+        },
+        {
+          "label": "Anticipated Start (if funded)",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-044",
+      "title": "Middlesbrough Station Upgrade \u2014 New Platform 3",
+      "sector": "rail",
+      "subSector": "stations",
+      "region": "north-east",
+      "location": {
+        "borough": "Middlesbrough",
+        "area": "Middlesbrough City Centre"
+      },
+      "value": 45000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 design phase 3 underway",
+      "keyDrivers": [
+        "Increased capacity",
+        "New platform",
+        "Passenger experience",
+        "TPE service improvements"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.find-tender.service.gov.uk/Notice/004244-2025",
+      "externalTenderNote": "Tender notice published on Find a Tender Service",
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2028",
+      "description": "Upgrade of Middlesbrough Station including new Platform 3. Design phase 3 currently underway. Tender activity visible on Find a Tender Service. Aims to improve capacity and operational resilience for TransPennine Express services.",
+      "contractAward": null,
+      "tenderDate": "2026-Q1",
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Design Phase 3",
+          "date": "2025"
+        },
+        {
+          "label": "Anticipated Construction Start",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-045",
+      "title": "Teesside International Airport \u2014 Cargo Hub Development",
+      "sector": "aviation",
+      "subSector": "cargo",
+      "region": "north-east",
+      "location": {
+        "borough": "Stockton-on-Tees",
+        "area": "Durham Tees Valley Airport"
+      },
+      "value": 12500000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Approved \u2014 operational cargo facility open",
+      "keyDrivers": [
+        "Economic growth",
+        "Cargo capacity",
+        "Security upgrades",
+        "Net Zero transition"
+      ],
+      "serviceRelevance": [
+        "Project Management",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.teessideinternational.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2026",
+      "description": "New cargo handling facility at Teesside International Airport. Facility opened for business with ongoing development phases. Supports regional freight growth and airport economic recovery programme.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Cargo Facility Open",
+          "date": "2025"
+        },
+        {
+          "label": "Further Phases",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-046",
+      "title": "Port of Blyth \u2014 Offshore Wind Operations Base",
+      "sector": "maritime",
+      "subSector": "offshore-wind",
+      "region": "north-east",
+      "location": {
+        "borough": "Northumberland",
+        "area": "Blyth"
+      },
+      "value": 50000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Crown Estate grant + private investment",
+      "keyDrivers": [
+        "Net Zero commitments",
+        "Offshore wind O&M hub",
+        "Supply chain localisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://portofblyth.co.uk/port-of-blyth-awarded-275000-from-the-crown-estate-to-expand-battleship-wharf-terminal-and-strengthen-uk-offshore-wind-supply-chain/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2027",
+      "description": "Expansion of Battleship Wharf Terminal at Port of Blyth. Crown Estate grant awarded to strengthen offshore wind supply chain. Positions Blyth as key O&M base for North Sea wind farms.",
+      "contractAward": "2024-Q2",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Crown Estate Award",
+          "date": "2024"
+        },
+        {
+          "label": "Terminal Expansion Complete",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-047",
+      "title": "Seaham Harbour \u2014 Marina Development",
+      "sector": "maritime",
+      "subSector": "marina",
+      "region": "north-east",
+      "location": {
+        "borough": "County Durham",
+        "area": "Seaham"
+      },
+      "value": 35000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Levelling Up / regeneration funding",
+      "keyDrivers": [
+        "Levelling Up",
+        "Coastal regeneration",
+        "Tourism",
+        "Place-making"
+      ],
+      "serviceRelevance": [
+        "Project Management",
+        "Cost and Commercial Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": null,
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2029",
+      "description": "Marina development and waterfront regeneration at Seaham Harbour. Part of ongoing coastal regeneration investment in County Durham. Exact funding route under development.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Anticipated Start",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-048",
+      "title": "Environment Agency \u2014 Tees Barrage Flood Defence",
+      "sector": "utilities",
+      "subSector": "flood-defence",
+      "region": "north-east",
+      "location": {
+        "borough": "Stockton-on-Tees",
+        "area": "Tees Barrage"
+      },
+      "value": 30000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 Environment Agency / DEFRA",
+      "keyDrivers": [
+        "Flood risk reduction",
+        "Environmental improvement",
+        "Nature recovery",
+        "Climate resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.gov.uk/government/news/tees-programme-launched-to-reduce-flood-risk-and-boost-nature",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2027",
+      "description": "Tees programme to reduce flood risk and boost nature around the Tees Barrage. EA-led programme covering flood defence upgrades, habitat creation and river resilience improvements.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Programme Start",
+          "date": "2025"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-ne-049",
+      "title": "Cadent Gas \u2014 North East Network Modernisation",
+      "sector": "utilities",
+      "subSector": "gas-networks",
+      "region": "north-east",
+      "location": {
+        "borough": "North East (wide)",
+        "area": "North East Gas Distribution Zone"
+      },
+      "value": 180000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 Ofgem regulated RIIO-GD2 (2021\u20132026)",
+      "keyDrivers": [
+        "Energy security",
+        "Pipe replacement",
+        "Low-carbon fuel readiness",
+        "Ofgem compliance"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://cadentgas.com",
+      "externalTenderNote": null,
+      "projectType": "regulated",
+      "estimatedStart": "2021",
+      "estimatedEnd": "2026",
+      "description": "Ongoing RIIO-GD2 regulated investment programme replacing ageing iron mains and preparing the North East gas distribution network for lower-carbon fuels. Covers mains replacement, pressure management, and network modernisation.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "RIIO-GD2 Period",
+          "date": "2021\u20132026"
+        },
+        {
+          "label": "RIIO-GD3 Start",
+          "date": "2026"
         }
       ]
     }

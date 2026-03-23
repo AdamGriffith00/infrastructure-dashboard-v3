@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "northern-ireland"
   ],
@@ -961,6 +961,436 @@
           "date": "2026-Q1"
         }
       ]
+    },
+    {
+      "id": "reg-ni-019",
+      "title": "Belfast Grand Central Station (Translink)",
+      "sector": "rail",
+      "subSector": "stations",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Belfast",
+        "area": "Europa Bus Centre Site"
+      },
+      "value": 350000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Translink / DfI NI / Belfast City Deal",
+      "keyDrivers": [
+        "Integrated transport hub",
+        "City centre regeneration",
+        "Bus-rail interchange",
+        "Weavers Cross"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://www.translink.co.uk/services/grand-central-station",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2022",
+      "estimatedEnd": "2025",
+      "description": "New integrated transport hub replacing Europa Bus Centre. Phase 1 opened September 2024. UK's largest transport hub outside London. Train, bus, and cross-border services. Part of Weavers Cross masterplan.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Phase 1 Opened",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "Full Completion",
+          "date": "2025"
+        }
+      ]
+    },
+    {
+      "id": "reg-ni-020",
+      "title": "Casement Park Stadium Rebuild \u2014 GAA",
+      "sector": "infrastructure",
+      "subSector": "sports-stadia",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Belfast",
+        "area": "Andersonstown"
+      },
+      "value": 120000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 GAA / DfC NI / UEFA Euro 2028",
+      "keyDrivers": [
+        "UEFA Euro 2028 host venue",
+        "Community sports",
+        "West Belfast regeneration",
+        "GAA"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.gaa.ie/casement-park",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2028",
+      "description": "Rebuild of Casement Park GAA stadium to 34,500 capacity. Selected as UEFA Euro 2028 host venue. Planning approved after lengthy process. Construction procurement imminent.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Planning Approved",
+          "date": "2024"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2025"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-ni-021",
+      "title": "Magee University Campus Expansion \u2014 Derry/Londonderry",
+      "sector": "infrastructure",
+      "subSector": "higher-education",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Derry City & Strabane",
+        "area": "Magee Campus"
+      },
+      "value": 250000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Ulster University / DfE NI / City Deal",
+      "keyDrivers": [
+        "Medical school",
+        "City Deal",
+        "Derry growth",
+        "Graduate retention"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": "https://www.ulster.ac.uk/campuses/magee",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Major expansion of Ulster University Magee campus in Derry. New medical school, engineering faculty, student accommodation, and city centre integration. Supported by Derry/Londonderry & Strabane City Deal.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "City Deal Funding",
+          "date": "2025"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        },
+        {
+          "label": "Phase 1 Complete",
+          "date": "2029"
+        }
+      ]
+    },
+    {
+      "id": "reg-ni-022",
+      "title": "Belfast Harbour \u2014 Titanic Maritime Mile Infrastructure",
+      "sector": "maritime",
+      "subSector": "waterfront",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Belfast",
+        "area": "Lagan Waterfront"
+      },
+      "value": 200000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Belfast Harbour / Belfast City Deal / private",
+      "keyDrivers": [
+        "Tourism",
+        "Port heritage",
+        "Waterfront living",
+        "Creative quarter"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": "https://www.belfast-harbour.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2032",
+      "description": "Maritime Mile public realm, mixed-use development and waterfront activation along Belfast Lagan. Belfast Harbour Commission programme linked to City Deal. Includes new cruise terminal infrastructure.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ni-023",
+      "title": "Lough Neagh Water Treatment \u2014 Emergency Infrastructure",
+      "sector": "utilities",
+      "subSector": "water-treatment",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Mid Ulster / Antrim",
+        "area": "Lough Neagh"
+      },
+      "value": 300000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 NI Water / DAERA NI \u2014 blue-green algae crisis response",
+      "keyDrivers": [
+        "Water quality",
+        "Environmental emergency",
+        "Public health",
+        "Nutrient pollution"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.niwater.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2030",
+      "description": "Major water treatment and nutrient reduction infrastructure programme in response to Lough Neagh blue-green algae crisis. NI Water and DAERA-led. Urgently needed capital investment.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Emergency Response",
+          "date": "2024"
+        },
+        {
+          "label": "Capital Programme",
+          "date": "2025\u20132030"
+        }
+      ]
+    },
+    {
+      "id": "reg-ni-024",
+      "title": "South West Acute Hospital \u2014 Enniskillen",
+      "sector": "infrastructure",
+      "subSector": "nhs-hospitals",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Fermanagh & Omagh",
+        "area": "Enniskillen"
+      },
+      "value": 300000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 DoH NI / NHSE NI \u2014 major capital project",
+      "keyDrivers": [
+        "Rural healthcare",
+        "Hospital modernisation",
+        "Cross-border health",
+        "Population access"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.westerntrust.hscni.net",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Proposed new South West Acute Hospital to replace existing aging facilities in Enniskillen. Western Trust scheme. Major capital investment for rural healthcare in Fermanagh and Omagh.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "OBC Development",
+          "date": "2025"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-ni-025",
+      "title": "A2 Shore Road & North Belfast Growth Corridor",
+      "sector": "highways",
+      "subSector": "local-roads",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Belfast / Antrim",
+        "area": "Shore Road Corridor"
+      },
+      "value": 150000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 DfI Roads / Belfast City Council",
+      "keyDrivers": [
+        "North Belfast growth",
+        "Housing access",
+        "Congestion relief",
+        "Cross-harbour connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.infrastructure-ni.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2031",
+      "description": "A2 Shore Road improvements to support North Belfast housing growth and improve connectivity from Newtownabbey to the city centre. DfI Roads scheme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ni-026",
+      "title": "North West Gateway \u2014 A6 & Derry City Infrastructure",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Derry City & Strabane",
+        "area": "A6 Corridor"
+      },
+      "value": 180000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 DfI Roads NI",
+      "keyDrivers": [
+        "City access",
+        "Cross-border connectivity",
+        "Derry growth",
+        "Road safety"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://www.infrastructure-ni.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2029",
+      "description": "Remaining A6 Dungiven to Drumahoe dualling and Derry city access improvements. Extends the completed Londonderry to Dungiven section towards the city.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ni-027",
+      "title": "Mid South West City Deal \u2014 Infrastructure Programme",
+      "sector": "real-estate",
+      "subSector": "city-deal",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Armagh / Derry / Fermanagh",
+        "area": "Mid South West NI"
+      },
+      "value": 200000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 HM Government / NI Executive City Deal",
+      "keyDrivers": [
+        "Regional growth",
+        "Cross-border economy",
+        "Infrastructure investment",
+        "Digital connectivity"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.mswcitydeal.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2032",
+      "description": "Mid South West Regional City Deal infrastructure programme. Covers Armagh, Dungannon, Derry and surrounding areas. Digital infrastructure, innovation centres, and transport investment.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ni-028",
+      "title": "Belfast Harbour Power & Energy Hub",
+      "sector": "energy",
+      "subSector": "renewable-energy",
+      "region": "northern-ireland",
+      "location": {
+        "borough": "Belfast",
+        "area": "Belfast Harbour"
+      },
+      "value": 200000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Belfast Harbour / private",
+      "keyDrivers": [
+        "Port electrification",
+        "Offshore wind O&M",
+        "Green hydrogen",
+        "Energy transition"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.belfast-harbour.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Belfast Harbour energy hub development including shore power for ships, offshore wind operations base, and green hydrogen production. Belfast Harbour Commission-led programme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
     }
   ]
 }

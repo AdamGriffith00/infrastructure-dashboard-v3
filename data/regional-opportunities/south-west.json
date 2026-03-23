@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "south-west"
   ],
@@ -1291,6 +1291,429 @@
           "date": "2030"
         }
       ]
+    },
+    {
+      "id": "reg-sw-026",
+      "title": "Gravity Enterprise Zone \u2014 Somerset",
+      "sector": "real-estate",
+      "subSector": "enterprise-zone",
+      "region": "south-west",
+      "location": {
+        "borough": "Sedgemoor / Somerset",
+        "area": "Gravity, Puriton"
+      },
+      "value": 150000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Gravity / private / Somerset Council",
+      "keyDrivers": [
+        "EV battery supply chain",
+        "Advanced manufacturing",
+        "Clean energy",
+        "Hinkley supply chain"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://www.gravitysite.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2032",
+      "description": "Gravity is a 400-acre enterprise zone in Somerset aimed at EV, clean energy, and advanced manufacturing. Directly adjacent to Hinkley Point C. Multiple occupants being developed.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "First Occupants",
+          "date": "2024"
+        },
+        {
+          "label": "Phased Development",
+          "date": "2025\u20132032"
+        }
+      ]
+    },
+    {
+      "id": "reg-sw-027",
+      "title": "Somerset Levels & Moors \u2014 Flood Resilience Programme",
+      "sector": "utilities",
+      "subSector": "flood-defence",
+      "region": "south-west",
+      "location": {
+        "borough": "Somerset",
+        "area": "Somerset Levels"
+      },
+      "value": 300000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Environment Agency / DEFRA / Somerset Council",
+      "keyDrivers": [
+        "Climate resilience",
+        "Agriculture",
+        "Biodiversity",
+        "Community protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.gov.uk/government/collections/managing-flood-risk-in-somerset",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2020",
+      "estimatedEnd": "2030",
+      "description": "Long-term Somerset Levels flood resilience programme. Pumping stations, channel works, and managed realignment. Ongoing active investment following 2014 floods legacy.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Ongoing Programme",
+          "date": "2020\u20132030"
+        }
+      ]
+    },
+    {
+      "id": "reg-sw-028",
+      "title": "Bristol Airport \u2014 Expansion DCO",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "south-west",
+      "location": {
+        "borough": "North Somerset",
+        "area": "Bristol Airport"
+      },
+      "value": 800000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Bristol Airport Ltd. DCO resubmission.",
+      "keyDrivers": [
+        "South West connectivity",
+        "Capacity growth",
+        "Economic impact",
+        "Tourism"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.bristolairport.co.uk/about/development/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2033",
+      "description": "Bristol Airport capacity expansion from 10m to 12m passengers. First DCO refused 2020, second approved then appealed. Awaiting definitive consent route. Major programme on approval.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "DCO Process",
+          "date": "2024\u20132026"
+        },
+        {
+          "label": "Anticipated Construction",
+          "date": "2027"
+        },
+        {
+          "label": "Completion",
+          "date": "2033"
+        }
+      ]
+    },
+    {
+      "id": "reg-sw-029",
+      "title": "Nuclear Decommissioning Authority \u2014 Berkeley & Oldbury",
+      "sector": "energy",
+      "subSector": "nuclear-decommissioning",
+      "region": "south-west",
+      "location": {
+        "borough": "Gloucestershire",
+        "area": "Berkeley / Oldbury"
+      },
+      "value": 2000000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 NDA / Magnox Ltd",
+      "keyDrivers": [
+        "Nuclear decommissioning",
+        "National safety",
+        "Environmental restoration",
+        "Decades-long"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.magnoxsites.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2020",
+      "estimatedEnd": "2100",
+      "description": "Decommissioning of Berkeley and Oldbury nuclear power stations in Gloucestershire. Magnox Ltd / NDA programme. Active construction and engineering contracts for waste retrieval, containment, and demolition.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Ongoing Programme",
+          "date": "2020\u20132100"
+        }
+      ]
+    },
+    {
+      "id": "reg-sw-030",
+      "title": "Avonmouth Severnside Enterprise Zone \u2014 Infrastructure",
+      "sector": "real-estate",
+      "subSector": "enterprise-zone",
+      "region": "south-west",
+      "location": {
+        "borough": "Bristol / South Gloucestershire",
+        "area": "Avonmouth"
+      },
+      "value": 400000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 WECA / private investment",
+      "keyDrivers": [
+        "Logistics",
+        "Food production",
+        "Clean energy",
+        "Port access"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.weca.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2020",
+      "estimatedEnd": "2030",
+      "description": "Major enterprise zone at Avonmouth with enabling infrastructure. New roads, utilities, and employment land. Amazon, hydrogen projects, and food processing occupiers. Active development.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-sw-031",
+      "title": "MetroWest Phase 2 \u2014 Bristol Suburban Rail",
+      "sector": "rail",
+      "subSector": "commuter-rail",
+      "region": "south-west",
+      "location": {
+        "borough": "Bristol City Region",
+        "area": "Bristol / Bath / Weston"
+      },
+      "value": 300000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 WECA / Network Rail / DfT",
+      "keyDrivers": [
+        "Bristol suburban rail",
+        "Decarbonisation",
+        "Modal shift",
+        "New stations"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://www.travelwest.info/metrowest",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2032",
+      "description": "MetroWest Phase 2 extension of Bristol's commuter rail network. New stations and service frequency improvements on Portishead, Henbury, and Yate lines.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "OBC",
+          "date": "2025"
+        },
+        {
+          "label": "Procurement",
+          "date": "2027"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
+    },
+    {
+      "id": "reg-sw-032",
+      "title": "Falmouth Port & Fal Estuary Marine Energy Hub",
+      "sector": "maritime",
+      "subSector": "offshore-energy",
+      "region": "south-west",
+      "location": {
+        "borough": "Cornwall",
+        "area": "Falmouth / Fal Estuary"
+      },
+      "value": 250000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Cornwall Council / Crown Estate / private",
+      "keyDrivers": [
+        "Tidal energy",
+        "Wave energy",
+        "Marine services",
+        "Offshore wind O&M"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.peninnovation.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Fal Estuary strategic marine energy hub. Combining deep-water port facilities at Falmouth, marine energy testing, and offshore wind O&M. Cornwall Energy Investment Zone aspiration.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-sw-033",
+      "title": "Swindon BRT \u2014 Sprint Rapid Transit",
+      "sector": "rail",
+      "subSector": "bus-rapid-transit",
+      "region": "south-west",
+      "location": {
+        "borough": "Swindon",
+        "area": "Swindon"
+      },
+      "value": 150000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Swindon BC / West of England CA / DfT",
+      "keyDrivers": [
+        "Housing growth",
+        "BANES connectivity",
+        "Sustainable travel",
+        "Congestion reduction"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://www.swindon.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2030",
+      "description": "Bus Rapid Transit scheme for Swindon connecting major growth areas to the town centre and rail station. Supports major housing delivery to the north and west of Swindon.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-sw-034",
+      "title": "A30 / A38 Cornwall & Devon Highway Improvements",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "south-west",
+      "location": {
+        "borough": "Cornwall / Devon",
+        "area": "A30 / A38 Corridor"
+      },
+      "value": 600000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 National Highways / RIS2",
+      "keyDrivers": [
+        "Safety",
+        "Tourism connectivity",
+        "Resilience",
+        "Economic access"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://nationalhighways.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2022",
+      "estimatedEnd": "2030",
+      "description": "Multiple A30 and A38 improvement schemes in Cornwall and Devon. Hayle bypass, Dobwalls bypass, and further A30 dualling. Live construction and further procurement.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-sw-035",
+      "title": "Combined Sea Wall & Coastal Resilience \u2014 Dorset",
+      "sector": "infrastructure",
+      "subSector": "coastal-flood",
+      "region": "south-west",
+      "location": {
+        "borough": "Dorset",
+        "area": "Jurassic Coast"
+      },
+      "value": 200000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 EA / Dorset Council",
+      "keyDrivers": [
+        "Coastal erosion",
+        "Climate resilience",
+        "Tourism assets",
+        "Heritage protection"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.dorsetcoast.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2023",
+      "estimatedEnd": "2030",
+      "description": "Programme of coastal flood and erosion defences along the Dorset / Jurassic Coast. Multiple schemes from Bournemouth to Weymouth. Environment Agency and Dorset Council programme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
     }
   ]
 }

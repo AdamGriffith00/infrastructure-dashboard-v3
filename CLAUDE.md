@@ -271,21 +271,98 @@ Major new feature for comprehensive project scanning across regions:
 - Clicking borough on map switches to "By Area" tab and highlights the card
 - Cards auto-expand when selected from map
 
+### 2026-02-06: Regional Scanner Rollout + Region Detail Overhaul
+
+**Regional Scanner expanded to all UK regions:**
+- North West, North East, Yorkshire & Humber (first expansion batch)
+- East Midlands, Eastern, Midlands, Northern Ireland, Scotland, South West, Wales (full rollout)
+- All regions now have `data/regional-opportunities/<region>.json` files
+- Fixed missing Suffolk districts in Eastern GeoJSON
+
+**Region Detail KPI Timeframe Toggle:**
+- Added 2026 / 5-Year / 10-Year toggle to region detail pages
+- All KPIs (budget, project count, etc.) update dynamically with selected timeframe
+- Regional subdivision map updates to reflect selected timeframe
+- Defaults to 2026 tab
+- Real region budgets computed from clients + scanner data (not hardcoded)
+
+**Nav Cleanup:**
+- Removed Overall, Budget Summary, Sectors, and Disciplines tabs from navigation
+- Streamlined to core views: Regions, Pipeline, Projects, Intelligence, Events & Intel, Sources
+
+### 2026-02-08: Info Popups + Data Sources Rebuild
+
+**Info Popup Component** (`js/components/data-info.js`):
+- Added ⓘ info popup to all views (Regions, Pipeline, Projects, Intelligence, Events & Intel, Sources)
+- Popups show real reports, publications, and regulatory determinations for each view
+- Reworked to link to actual source documents (Ofwat, ORR, DfT, etc.)
+- Info popup added to individual region detail pages
+
+**Data Sources View Rebuild** (`js/views/sources.js`):
+- Rebuilt as fully dynamic page driven by data
+- Shows methodology and sources by sector with live links
+
+### 2026-02-16: Password Gate + Procurement Key Dates + Energy Sector Split
+
+**Password Landing Page:**
+- Added password-protected landing page before dashboard access
+- Cache-busted `js/app.js` (v=30) to force reload of password gate for existing users
+
+**Procurement Key Dates:**
+- Added procurement key dates feature to relevant views
+
+**Energy Sector:**
+- Separated Energy into its own distinct sector (previously grouped)
+- Updated `data/sectors.json` and `data/clients.json`
+- Expanded regional opportunity data across all regions with energy projects
+
+### 2026-03-23: Regional Data Enrichment + Upload Feature
+
+**Regional opportunity data enriched across all 11 regions:**
+- Yorkshire & Humber: 40 → 57 (+17) — BESS projects, hydrogen, A66, Doncaster Airport, Immingham, Grimsby, Cadent Gas, Leeds Flood Alleviation
+- North East: 35 → 49 (+14) — SeAH Wind Factory, Cambois DC Campus (£10bn), Teesworks AI DC, Stellium, Northumberland Line, Leamside Line, Middlesbrough Station, Port of Blyth
+- East Midlands: 25 → 35 (+10) — Toton Hub, Ratcliffe Energy Park, Nottingham Island Quarter, STEP Fusion, Rolls-Royce, HNRFI, Grantham Relief Road
+- Eastern: 25 → 35 (+10) — Cambridge South Station, EA Four offshore wind, Freeport East, A428, National Grid HNDP, Peterborough Gateway
+- Midlands: 30 → 38 (+8) — Birmingham Airport, JLR EV transition, Coventry VLR, Warwickshire AM Cluster, Eastside Metro, Black Country Gigafactory
+- North West: 50 → 58 (+8) — Sellafield Decommissioning (£22bn), Eden Project North, Stellantis Ellesmere Port, Barrow Town Deal, Carlisle SLR, Mersey Tidal
+- Northern Ireland: 18 → 28 (+10) — Grand Central Station, Casement Park, Magee University, Maritime Mile, Lough Neagh, South West Acute Hospital
+- Scotland: 25 → 35 (+10) — Acorn CCS, Nigg Energy Park, Edinburgh Airport, Dundee Green Freeport, Clyde Metro, Orkney Hydrogen, Forth Ports Grangemouth
+- South West: 25 → 35 (+10) — Gravity EZ, Somerset Levels, Bristol Airport, NDA Berkeley/Oldbury, Avonmouth EZ, MetroWest Phase 2, Falmouth Marine
+- Wales: 20 → 32 (+12) — Wylfa Newydd, Celtic Freeport, HyNet, Holyhead Port, A465 completion, Velindre Cancer Centre, Pembroke Dock Marine
+- London & South East: 70 (not re-researched this session)
+- **Total: 472 opportunities across all regions**
+
+**Regional Submission Upload Feature** (`js/components/regional-scanner.js`):
+- Added "+ Submit Missing Projects" button to every region's scanner header
+- Collapsible upload panel with drag-drop / click file input
+- Accepts Excel (.xlsx/.xls) or CSV in YNE review spreadsheet format
+- Columns: Project Name, Client, Sector, Location, Stage, Funding Status, Estimated Value (£), Key Drivers, Readiness, Source link
+- Parses and normalises readiness, status, sector from freetext
+- Merges with JSON data — user submissions persist in localStorage per region
+- Shows submission count badge in scanner header
+- Clear submissions button to reset
+- Template CSV download per region
+- localStorage key: `gleeds_region_submissions_{regionId}`
+
 ## Next Session - Continue With:
-1. **Expand Regional Scanner** to other regions (North West, Midlands, etc.)
-2. **Intelligence Features**: AI-powered bid insights, competitor analysis, win probability
-3. **Analysis Tools**: Filtering, sorting, export capabilities
-4. **Visualisations**: Gantt chart view, calendar view for deadlines
+1. **London & South East data review** — apply same spreadsheet review process to LSE (70 opps but also dated to Feb)
+2. **Intelligence Features** - AI-powered bid insights, competitor analysis, win probability
+3. **Visualisations** - Gantt chart improvements, calendar view polish
+4. **Password gate** - review UX and whether it's working as intended
 
 ## Key Files
+- `js/app.js` - App bootstrap, routing, password gate (v=30)
+- `js/views/regions.js` - Regions view with UK map, regional detail, timeframe toggle
 - `js/views/pipeline.js` - Pipeline & Timeline view
-- `js/views/sources.js` - Data Sources view
-- `js/views/regions.js` - Regions view with UK map and regional detail pages
-- `js/components/regional-scanner.js` - Regional opportunities scanner with tabs, filters, modal (NEW)
-- `js/components/region-map.js` - Regional subdivision map component (boroughs, districts, etc.)
+- `js/views/sources.js` - Data Sources view (dynamic)
+- `js/views/intelligence.js` - Bid intelligence and competitor analysis
+- `js/views/events-intel.js` - Events & client intelligence with calendar
+- `js/components/regional-scanner.js` - Regional opportunities scanner (all UK regions)
+- `js/components/data-info.js` - Info popup component used across all views
+- `js/components/region-map.js` - Regional subdivision map (boroughs, districts)
 - `js/components/uk-map.js` - Main UK map component
-- `css/views.css` - View-specific styles including scanner and modal styles
-- `css/components.css` - Reusable component styles
+- `css/views.css` - View-specific styles including scanner, modal, and popup styles
 - `data/opportunities.json` - Opportunities with full pipeline data
-- `data/regional-opportunities/london-south-east.json` - Scanner data for London & SE (NEW)
-- `data/sectors.json` - Sector definitions including new sectors (NEW)
+- `data/regional-opportunities/` - Scanner data for all 11 UK regions
+- `data/sectors.json` - Sector definitions (now includes Energy as standalone)
+- `data/clients.json` - Client/programme data

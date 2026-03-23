@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "yorkshire-humber"
   ],
@@ -2067,6 +2067,788 @@
         {
           "label": "Contract Award",
           "date": "2026-Q1"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-041",
+      "title": "Dogger Bank Wind Farm \u2014 Onshore Connection Works",
+      "sector": "energy",
+      "subSector": "offshore-wind",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "East Riding of Yorkshire / Teesside",
+        "area": "Creyke Beck & Lackenby"
+      },
+      "value": 500000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Equinor / SSE / V\u00e5rgr\u00f8nn JV",
+      "keyDrivers": [
+        "Net Zero electricity",
+        "Grid capacity",
+        "World's largest offshore wind farm",
+        "Energy security"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://doggerbank.com/construction/onshore/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2020",
+      "estimatedEnd": "2027",
+      "description": "Onshore connection and substation works for Dogger Bank A/B/C (3.6GW total). World's largest offshore wind farm. Onshore works at Creyke Beck (East Riding) and Lackenby substation (Teesside). Connected to grid 2024.",
+      "contractAward": "2020-Q2",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Grid Connection",
+          "date": "2024"
+        },
+        {
+          "label": "Full Output",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-042",
+      "title": "H2H Saltend \u2014 Low-Carbon Hydrogen & CCS (600MW)",
+      "sector": "energy",
+      "subSector": "hydrogen",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "East Riding of Yorkshire",
+        "area": "Saltend Chemicals Park"
+      },
+      "value": 0,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Track-1 expansion pathway (Equinor / bp)",
+      "keyDrivers": [
+        "Industrial decarbonisation",
+        "Hydrogen economy",
+        "Humber zero carbon cluster",
+        "CCS"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.equinor.com/energy/h2h-saltend",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2032",
+      "description": "600MW low-carbon hydrogen production facility with CCS at Saltend Chemicals Park. Planning permission granted 2024. Track-1 expansion pathway project. Equinor-led, part of Humber Zero carbon cluster.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Planning Approved",
+          "date": "2024"
+        },
+        {
+          "label": "FID Expected",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-043",
+      "title": "Humber Hydrogen Hub \u2014 Pipeline, Storage & Distribution",
+      "sector": "energy",
+      "subSector": "hydrogen",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Humber (both banks)",
+        "area": "North & South Humber"
+      },
+      "value": 0,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Humber Hydrogen Pipeline consortium",
+      "keyDrivers": [
+        "Hydrogen production and storage",
+        "Distribution infrastructure",
+        "Industrial decarbonisation",
+        "Energy resilience"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.humberhydrogenpipeline.com/humber-hydrogen-hub",
+      "externalTenderNote": null,
+      "projectType": "ppp",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2035",
+      "description": "Integrated hydrogen system for the Humber covering Aldbrough storage, Easington connection, and cross-Humber pipeline. Would underpin industrial decarbonisation of the Humber cluster.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Anticipated Development Start",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-044",
+      "title": "Thorpe Marsh Battery Energy Storage System (1.45GW)",
+      "sector": "energy",
+      "subSector": "battery-storage",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Doncaster",
+        "area": "Thorpe Marsh"
+      },
+      "value": 435000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured (private)",
+      "keyDrivers": [
+        "Grid stability",
+        "Renewables integration",
+        "Balancing services",
+        "Net Zero"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://barbour-abi.com/top-construction-projects-yorkshire-the-humber/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2029",
+      "description": "1.45GW battery energy storage system at former Thorpe Marsh power station site, Doncaster. One of the largest BESS projects in the UK. Supports grid stability and renewable energy integration.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Anticipated Construction Start",
+          "date": "2026"
+        },
+        {
+          "label": "Operational",
+          "date": "2029"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-045",
+      "title": "Eggborough Battery Energy Storage System (500MW)",
+      "sector": "energy",
+      "subSector": "battery-storage",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "North Yorkshire",
+        "area": "Selby (Eggborough)"
+      },
+      "value": 150000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 SSE",
+      "keyDrivers": [
+        "Grid stability",
+        "Renewables integration",
+        "Former power station site reuse"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://barbour-abi.com/top-construction-projects-yorkshire-the-humber/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2029",
+      "description": "500MW BESS project at the former Eggborough power station site, Selby. SSE-led. Brownfield reuse of former coal power station for grid-scale battery storage.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Anticipated Start",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-046",
+      "title": "Third Energy \u2014 Ryedale Battery Energy Storage (100MW)",
+      "sector": "energy",
+      "subSector": "battery-storage",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "North Yorkshire",
+        "area": "Ryedale"
+      },
+      "value": 300000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned",
+      "keyDrivers": [
+        "Grid flexibility",
+        "Decarbonisation",
+        "Rural grid resilience"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://barbour-abi.com/top-construction-projects-yorkshire-the-humber/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2029",
+      "description": "100MW battery energy storage facility in Ryedale, North Yorkshire. Third Energy project supporting grid flexibility and decarbonisation targets.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Anticipated Start",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-047",
+      "title": "LNER \u2014 Hull Paragon Interchange Enhancements",
+      "sector": "rail",
+      "subSector": "stations",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Kingston upon Hull",
+        "area": "Hull City Centre"
+      },
+      "value": 160000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 LNER / Hull City Council joint investment",
+      "keyDrivers": [
+        "Passenger experience",
+        "Heritage building revitalisation",
+        "Bus-side enhancements",
+        "City centre regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://news.hull.gov.uk/24/09/2025/council-welcomes-award-that-highlights-hull-paragon-interchange-improvements/",
+      "externalTenderNote": null,
+      "projectType": "ppp",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2027",
+      "description": "Regeneration and enhancement of Hull Paragon Interchange. Revitalising unused floor space, new heritage bar, bus-side enhancements, and public realm improvements. Award-winning project 2025.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Regeneration Phase Start",
+          "date": "2024"
+        },
+        {
+          "label": "Completion",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-048",
+      "title": "A66 Northern Trans-Pennine Dualling",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "North Yorkshire / Cumbria",
+        "area": "Penrith to Scotch Corner"
+      },
+      "value": 1500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 National Highways / RIS2",
+      "keyDrivers": [
+        "Safety improvement",
+        "Freight connectivity",
+        "Trans-Pennine resilience",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "P3M"
+      ],
+      "sourceLink": "https://nationalhighways.co.uk/our-roads/a66-northern-trans-pennine/latest-updates/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2033",
+      "description": "Dualling of the A66 between Penrith and Scotch Corner (~55 miles). Major National Highways RIS2 scheme. Reprieved after earlier pause. Procurement underway. Key freight and commuter route across Northern Pennines.",
+      "contractAward": null,
+      "tenderDate": "2026-Q2",
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Procurement Launch",
+          "date": "2026"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2027"
+        },
+        {
+          "label": "Completion",
+          "date": "2033"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-049",
+      "title": "A629 WYCA Halifax\u2013Huddersfield Corridor",
+      "sector": "highways",
+      "subSector": "local-roads",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Calderdale / Kirklees",
+        "area": "Halifax to Huddersfield"
+      },
+      "value": 150000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 West Yorkshire CA CRSTS",
+      "keyDrivers": [
+        "Strategic connectivity",
+        "Sustainable transport",
+        "Net Zero alignment",
+        "Regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.kirklees.gov.uk/beta/transport-roads-and-parking/A629-halifax-huddersfield.aspx",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2029",
+      "description": "A629 corridor improvements between Halifax and Huddersfield. West Yorkshire CA CRSTS-funded. Pre-construction development phase. Focuses on improved journey times, active travel integration, and congestion reduction.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Pre-Construction Design",
+          "date": "2025\u20132026"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-050",
+      "title": "A1(M) Junction 42 Upgrade (Leeds West / South Milford)",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Leeds / North Yorkshire",
+        "area": "South Milford"
+      },
+      "value": 200000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Under review",
+      "keyDrivers": [
+        "Journey time reliability",
+        "Safety improvements",
+        "Freight route capacity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Programme Advisory",
+        "NEC Supervisor"
+      ],
+      "sourceLink": null,
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2031",
+      "description": "Upgrade of A1(M) Junction 42 to improve safety, reduce journey times, and increase reliability for freight and commuter traffic. Under National Highways development. Funding route to be confirmed.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Anticipated Start (if funded)",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-051",
+      "title": "A64 York\u2013Scarborough Dualling Upgrade",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "North Yorkshire",
+        "area": "York to Scarborough"
+      },
+      "value": 275000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Unfunded \u2014 under review for RIS3 2026\u201330",
+      "keyDrivers": [
+        "Safety",
+        "Congestion relief",
+        "Tourism connectivity",
+        "North Yorkshire growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.yorkshirepost.co.uk/news/transport/decision-expected-next-year-on-a64-upgrade-in-north-yorkshire-5363532",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2029",
+      "estimatedEnd": "2034",
+      "description": "Proposed dualling of A64 between York and Scarborough. North Yorkshire Council hybrid planning submitted. Unfunded and under review for RIS3. Decision on funding expected 2026.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Hybrid Planning Submitted",
+          "date": "2025"
+        },
+        {
+          "label": "RIS3 Decision",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-052",
+      "title": "Doncaster Sheffield Airport \u2014 Reopening & Development",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Doncaster",
+        "area": "Finningley"
+      },
+      "value": 85000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured / Planned \u2014 Doncaster MBC and private investor",
+      "keyDrivers": [
+        "Economic growth",
+        "Passenger capacity",
+        "EV infrastructure",
+        "Net Zero"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://www.yorkshirepost.co.uk/news/transport/doncaster-sheffield-airport-increase-in-package-holiday-bookings-5461289",
+      "externalTenderNote": null,
+      "projectType": "ppp",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2029",
+      "description": "Redevelopment and reopening of Doncaster Sheffield Airport following closure in 2022. Doncaster MBC working with private investors to reopen with enhanced facilities, new terminal investment, and net zero infrastructure.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Development Programme Start",
+          "date": "2026"
+        },
+        {
+          "label": "Anticipated Reopening",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-053",
+      "title": "Immingham Container Terminal \u2014 Stena Line / ABP Upgrade",
+      "sector": "maritime",
+      "subSector": "container-ports",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "North East Lincolnshire",
+        "area": "Immingham"
+      },
+      "value": 200000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Stena Line / ABP joint investment",
+      "keyDrivers": [
+        "Freight growth",
+        "Supply chain resilience",
+        "Decarbonisation",
+        "Port modernisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.abports.co.uk/news-and-media/latest-news/2025/stena-line-and-associated-british-ports-to-begin-work-on-new-multi-million-pound-immingham-terminal/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2028",
+      "description": "New multi-million pound freight terminal at Port of Immingham. Stena Line and ABP joint investment. Construction commenced 2025. Modernises UK's busiest port by tonnage for ro-ro and container freight.",
+      "contractAward": "2025-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Construction Start",
+          "date": "2025"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-054",
+      "title": "Grimsby Port \u2014 Offshore Wind Operations Base (RWE)",
+      "sector": "maritime",
+      "subSector": "offshore-wind",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "North East Lincolnshire",
+        "area": "Grimsby"
+      },
+      "value": 300000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 RWE private investment",
+      "keyDrivers": [
+        "Offshore wind O&M",
+        "Proximity to wind farms",
+        "Long-term developer commitment",
+        "Local supply chain"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.offshorewind.biz/2025/07/11/rwe-opens-grimsby-hub-for-offshore-wind-operations-and-maintenance/",
+      "externalTenderNote": null,
+      "projectType": "private",
+      "estimatedStart": "2023",
+      "estimatedEnd": "2026",
+      "description": "RWE offshore wind operations and maintenance hub at Grimsby. Hub opened 2025. Strategic location adjacent to major North Sea wind farms. Supports long-term O&M requirements for Humber offshore wind cluster.",
+      "contractAward": "2023-Q2",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Hub Opened",
+          "date": "2025"
+        },
+        {
+          "label": "Full Operations",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-055",
+      "title": "Goole Port \u2014 Inland Waterways Development (Humber Freeport)",
+      "sector": "maritime",
+      "subSector": "inland-ports",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "East Riding of Yorkshire",
+        "area": "Goole"
+      },
+      "value": 50000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Humber Freeport / private investment",
+      "keyDrivers": [
+        "Humber Freeport",
+        "Renewable energy hub",
+        "Inland waterway logistics",
+        "Clean growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://humberfreeport.org",
+      "externalTenderNote": null,
+      "projectType": "ppp",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2027",
+      "description": "Inland waterways investment and expansion at Goole Port as part of Humber Freeport programme. Goole is a Humber Freeport tax site. Investment in port infrastructure to support renewable energy and clean growth logistics.",
+      "contractAward": "2024-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Freeport Operations",
+          "date": "2024"
+        },
+        {
+          "label": "Investment Complete",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-056",
+      "title": "Cadent Gas \u2014 Yorkshire Network Modernisation",
+      "sector": "utilities",
+      "subSector": "gas-networks",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Yorkshire (wide)",
+        "area": "Yorkshire Gas Distribution Zone"
+      },
+      "value": 250000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 Ofgem regulated RIIO-GD2 (2021\u20132026)",
+      "keyDrivers": [
+        "Pipe replacement",
+        "Low-carbon fuel readiness",
+        "Energy security",
+        "Ofgem compliance"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://cadentgas.com",
+      "externalTenderNote": null,
+      "projectType": "regulated",
+      "estimatedStart": "2021",
+      "estimatedEnd": "2026",
+      "description": "RIIO-GD2 regulated investment replacing old iron mains and preparing the Yorkshire gas distribution network for lower-carbon fuels. Ongoing mains replacement programme across the Yorkshire distribution zone.",
+      "contractAward": "2021-Q1",
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "RIIO-GD2 Period",
+          "date": "2021\u20132026"
+        },
+        {
+          "label": "RIIO-GD3 Start",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-yh-057",
+      "title": "Leeds Flood Alleviation Scheme \u2014 Phase 2",
+      "sector": "utilities",
+      "subSector": "flood-defence",
+      "region": "yorkshire-humber",
+      "location": {
+        "borough": "Leeds",
+        "area": "River Aire Corridor"
+      },
+      "value": 150000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 Environment Agency / Leeds City Council / WYCA",
+      "keyDrivers": [
+        "Flood alleviation",
+        "Climate resilience",
+        "City centre protection",
+        "Development enablement"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://www.arup.com/projects/leeds-flood-alleviation-scheme/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2030",
+      "description": "Phase 2 of the Leeds Flood Alleviation Scheme along the River Aire. Extends upstream of Phase 1. Protects homes, businesses, and enables city centre development. Arup-designed scheme with Environment Agency delivery.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Procurement Start",
+          "date": "2026"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
         }
       ]
     }

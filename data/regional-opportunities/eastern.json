@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "eastern"
   ],
@@ -1307,6 +1307,424 @@
           "date": "2028"
         }
       ]
+    },
+    {
+      "id": "reg-ea-026",
+      "title": "Cambridge South Station \u2014 New Station Construction",
+      "sector": "rail",
+      "subSector": "stations",
+      "region": "eastern",
+      "location": {
+        "borough": "Cambridge",
+        "area": "Cambridge Biomedical Campus"
+      },
+      "value": 225000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Network Rail / Cambridge City Council / Biomedical Campus",
+      "keyDrivers": [
+        "Biomedical Campus access",
+        "Housing growth",
+        "Rail capacity",
+        "Cycling integration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.networkrail.co.uk/running-the-railway/our-routes/anglia/cambridge-south/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2023",
+      "estimatedEnd": "2025",
+      "description": "New railway station serving Cambridge Biomedical Campus \u2014 one of Europe's largest. Network Rail construction ongoing, expected opening 2025. Addresses massive growth in life sciences employment.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Construction Start",
+          "date": "2023"
+        },
+        {
+          "label": "Opening",
+          "date": "2025-Q3"
+        }
+      ]
+    },
+    {
+      "id": "reg-ea-027",
+      "title": "East Anglia FOUR Offshore Wind \u2014 Onshore Works (Vattenfall)",
+      "sector": "energy",
+      "subSector": "offshore-wind",
+      "region": "eastern",
+      "location": {
+        "borough": "Norfolk / Suffolk",
+        "area": "Friston & Norwich Main"
+      },
+      "value": 3000000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Vattenfall. DCO granted.",
+      "keyDrivers": [
+        "Net Zero electricity",
+        "Largest wind farm planned",
+        "Grid connection",
+        "Supply chain"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.vattenfall.co.uk/east-anglia-hub/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "3.1GW offshore wind farm \u2014 part of Vattenfall's East Anglia Hub. DCO granted. Onshore substation at Friston (Suffolk) and Norwich Main grid connection. Major procurement packages for civils, M&E, and cabling.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "DCO Granted",
+          "date": "2024"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        },
+        {
+          "label": "Operational",
+          "date": "2032"
+        }
+      ]
+    },
+    {
+      "id": "reg-ea-028",
+      "title": "Freeport East \u2014 Harwich & Felixstowe Tax Sites",
+      "sector": "maritime",
+      "subSector": "freeport",
+      "region": "eastern",
+      "location": {
+        "borough": "Tendring / Suffolk Coastal",
+        "area": "Harwich / Felixstowe"
+      },
+      "value": 600000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Freeport East / DfT / private investors",
+      "keyDrivers": [
+        "Freeport investment",
+        "Port modernisation",
+        "Clean energy supply chain",
+        "Logistics jobs"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://freeporteast.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2022",
+      "estimatedEnd": "2035",
+      "description": "Freeport East covering Harwich International Port and Port of Felixstowe tax sites. Infrastructure investment across customs zone, port facilities, and logistics park. Active procurement.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ea-029",
+      "title": "A428 Black Cat to Caxton Gibbet \u2014 Dualling",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "eastern",
+      "location": {
+        "borough": "Central Bedfordshire / South Cambridgeshire",
+        "area": "A428 Corridor"
+      },
+      "value": 1400000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 National Highways / RIS2",
+      "keyDrivers": [
+        "East West Rail connectivity",
+        "Growth corridor",
+        "Safety",
+        "Cambridge tech cluster access"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "P3M"
+      ],
+      "sourceLink": "https://nationalhighways.co.uk/our-roads/a428-black-cat-to-caxton-gibbet/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2029",
+      "description": "Dualling of A428 between Black Cat roundabout and Caxton Gibbet. Major RIS2 scheme connecting to East West Rail. \u00a31.4bn programme, construction underway.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Construction Start",
+          "date": "2024"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
+    },
+    {
+      "id": "reg-ea-030",
+      "title": "National Grid \u2014 East Anglia Grid Reinforcement (HNDP)",
+      "sector": "energy",
+      "subSector": "electricity-transmission",
+      "region": "eastern",
+      "location": {
+        "borough": "Suffolk / Norfolk / Essex",
+        "area": "Bramford to Twinstead"
+      },
+      "value": 1200000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 National Grid NGET / Ofgem RIIO-T2",
+      "keyDrivers": [
+        "Offshore wind grid connection",
+        "Holistic Network Design",
+        "Net Zero 2030 target",
+        "East Anglia hub"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.nationalgrid.com/electricity-transmission",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2032",
+      "description": "Major transmission reinforcement to connect East Anglia offshore wind. Bramford to Twinstead new 400kV overhead line. Part of Holistic Network Design to unlock 2030 offshore wind capacity.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "RIIO-T2 Start",
+          "date": "2025"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
+    },
+    {
+      "id": "reg-ea-031",
+      "title": "Peterborough Station Gateway \u2014 Regeneration",
+      "sector": "real-estate",
+      "subSector": "mixed-use",
+      "region": "eastern",
+      "location": {
+        "borough": "Peterborough",
+        "area": "City Centre"
+      },
+      "value": 300000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Peterborough City Council / HMG Levelling Up",
+      "keyDrivers": [
+        "Station gateway",
+        "City centre living",
+        "East West Rail connectivity",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": "https://www.peterborough.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Comprehensive regeneration of Peterborough Station Gateway ahead of East West Rail arrival. New hotel, residential, commercial space, and improved public realm.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ea-032",
+      "title": "Norwich Airport \u2014 Terminal & Infrastructure Investment",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "eastern",
+      "location": {
+        "borough": "Norwich",
+        "area": "Norwich Airport"
+      },
+      "value": 150000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Norfolk CC / Airport operator",
+      "keyDrivers": [
+        "Regional connectivity",
+        "Tourism",
+        "Business aviation",
+        "Post-Brexit growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.norwichairport.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2029",
+      "description": "Investment in Norwich Airport terminal and infrastructure to improve regional connectivity. Supports business and leisure travel for East Anglia.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ea-033",
+      "title": "Thetford & Brandon Growth Programme \u2014 New Communities",
+      "sector": "real-estate",
+      "subSector": "housing",
+      "region": "eastern",
+      "location": {
+        "borough": "Breckland / West Suffolk",
+        "area": "Thetford"
+      },
+      "value": 350000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Suffolk / Norfolk CC / Homes England",
+      "keyDrivers": [
+        "Housing growth",
+        "Cambridge overspill",
+        "Infrastructure first",
+        "Levelling Up"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.breckland.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2035",
+      "description": "Significant housing-led growth in Thetford and Brandon to absorb Cambridge/London overspill. Infrastructure-first approach with new roads, schools and healthcare.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ea-034",
+      "title": "Bury St Edmunds Western Relief Road",
+      "sector": "highways",
+      "subSector": "local-roads",
+      "region": "eastern",
+      "location": {
+        "borough": "West Suffolk",
+        "area": "Bury St Edmunds"
+      },
+      "value": 180000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 Suffolk CC / Growth Fund",
+      "keyDrivers": [
+        "Congestion relief",
+        "Growth enablement",
+        "Freight bypass",
+        "Town centre environment"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.suffolk.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2029",
+      "description": "Relief road to the west of Bury St Edmunds to relieve congestion and enable housing/employment growth. Suffolk CC scheme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-ea-035",
+      "title": "Haven Gateway Ports \u2014 Harwich & Ipswich Investment",
+      "sector": "maritime",
+      "subSector": "ports",
+      "region": "eastern",
+      "location": {
+        "borough": "Tendring / Ipswich",
+        "area": "Harwich / Ipswich"
+      },
+      "value": 250000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 private port operators / Freeport East",
+      "keyDrivers": [
+        "Port capacity",
+        "Ro-ro freight",
+        "Offshore wind supply chain",
+        "Cross-Channel"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.havegatewaypartnership.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2030",
+      "description": "Port investment across Harwich and Ipswich as part of Haven Gateway strategy and Freeport East. Infrastructure for ro-ro freight, offshore wind supply chain and passenger services.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
     }
   ]
 }

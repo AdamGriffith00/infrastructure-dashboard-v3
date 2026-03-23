@@ -19,6 +19,115 @@ const STATUS_CONFIG = {
   'complete': { label: 'Complete', color: '#3B82F6' }
 };
 
+const SUBMISSION_STORAGE_PREFIX = 'gleeds_region_submissions_';
+
+function loadUserSubmissions(regionId) {
+  try {
+    const stored = localStorage.getItem(SUBMISSION_STORAGE_PREFIX + regionId);
+    return stored ? JSON.parse(stored) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveUserSubmissions(regionId, submissions) {
+  try {
+    localStorage.setItem(SUBMISSION_STORAGE_PREFIX + regionId, JSON.stringify(submissions));
+  } catch (e) {
+    console.warn('Could not save submissions:', e);
+  }
+}
+
+function clearUserSubmissions(regionId) {
+  try {
+    localStorage.removeItem(SUBMISSION_STORAGE_PREFIX + regionId);
+  } catch (e) {}
+}
+
+function normalizeReadiness(str) {
+  if (!str) return 'no-money-not-ready';
+  const s = str.toLowerCase();
+  if (s.includes('ready to buy') || s === 'ready-to-buy') return 'ready-to-buy';
+  if (s.includes('has money') || s.includes('not ready') && s.includes('money')) return 'has-money-not-ready';
+  return 'no-money-not-ready';
+}
+
+function parseSubmissionRows(rows, regionId) {
+  // Expects rows from XLSX.utils.sheet_to_json or CSV parse
+  // Columns: Project Name, Client, Sector, Location, Stage, Funding Status, Estimated Value (£), Key Drivers, Readiness, Source link
+  return rows.map((row, idx) => {
+    const title = row['Project Name'] || row['Name'] || row['project name'] || row['name'];
+    if (!title || String(title).trim() === '') return null;
+
+    const rawValue = row['Estimated Value (£)'] || row['Value'] || row['value'] || '';
+    const valueStr = String(rawValue).replace(/[£,~\s]/g, '').replace('TBC','0');
+    const value = parseFloat(valueStr) || 0;
+
+    const location = row['Location'] || row['location'] || '';
+    const borough = location ? String(location).split(/[,/]/)[0].trim() : null;
+
+    const driversRaw = row['Key Drivers'] || row['key drivers'] || '';
+    const drivers = driversRaw ? String(driversRaw).split(/[,;]/).map(d => d.trim()).filter(Boolean) : [];
+
+    const sectorRaw = row['Sector'] || row['sector'] || '';
+    const sectorMap = {
+      'rail': 'rail', 'railway': 'rail',
+      'highways': 'highways', 'highway': 'highways', 'road': 'highways',
+      'energy': 'energy', 'offshore wind': 'energy', 'hydrogen': 'energy', 'battery storage': 'energy', 'bess': 'energy',
+      'water': 'utilities', 'utilities': 'utilities', 'flood': 'utilities',
+      'real estate': 'real-estate', 'housing': 'real-estate', 'mixed': 'real-estate', 'regeneration': 'real-estate',
+      'data centre': 'data-centres', 'data center': 'data-centres',
+      'aviation': 'aviation', 'airport': 'aviation',
+      'maritime': 'maritime', 'port': 'maritime',
+      'defence': 'defence', 'defense': 'defence',
+      'infrastructure': 'infrastructure',
+      'industrial': 'energy',
+    };
+    const sectorLower = String(sectorRaw).toLowerCase();
+    let sector = 'infrastructure';
+    for (const [key, val] of Object.entries(sectorMap)) {
+      if (sectorLower.includes(key)) { sector = val; break; }
+    }
+
+    const stageRaw = String(row['Stage'] || row['stage'] || 'planning').toLowerCase();
+    let status = 'planning';
+    if (stageRaw.includes('current') || stageRaw.includes('delivery') || stageRaw.includes('construction')) status = 'delivery';
+    else if (stageRaw.includes('future') || stageRaw.includes('planned')) status = 'planning';
+    else if (stageRaw.includes('procurement') || stageRaw.includes('tender')) status = 'procurement';
+    else if (stageRaw.includes('design') || stageRaw.includes('pre')) status = 'pre-procurement';
+    else if (stageRaw.includes('complet')) status = 'complete';
+
+    return {
+      id: `user-${regionId}-${Date.now()}-${idx}`,
+      title: String(title).trim(),
+      sector,
+      subSector: sectorRaw,
+      region: regionId,
+      location: { borough: borough || String(location).trim() || null, area: String(location).trim() || null },
+      value,
+      status,
+      procurementStage: row['Stage'] ? String(row['Stage']).trim() : 'Pipeline',
+      readiness: normalizeReadiness(row['Readiness'] || row['readiness'] || ''),
+      fundingStatus: row['Funding Status'] || row['funding status'] || 'Unknown',
+      keyDrivers: drivers,
+      serviceRelevance: [],
+      sourceLink: row['Source link'] || row['source link'] || row['Source'] || null,
+      externalTenderNote: null,
+      projectType: 'public',
+      estimatedStart: null,
+      estimatedEnd: null,
+      description: drivers.join(', ') || String(title).trim(),
+      contractAward: null,
+      tenderDate: null,
+      pqqDeadline: null,
+      ittDeadline: null,
+      keyDates: [],
+      sourceType: 'user-submitted',
+      client: row['Client'] || row['client'] || null,
+    };
+  }).filter(Boolean);
+}
+
 export async function loadRegionalOpportunities(regionId) {
   // Map region IDs to data files
   const regionMapping = {
@@ -47,10 +156,15 @@ export async function loadRegionalOpportunities(regionId) {
     // Filter opportunities to only this region
     const filteredOpportunities = data.opportunities.filter(o => o.region === regionId);
 
+    // Merge user-submitted opportunities from localStorage
+    const userSubmissions = loadUserSubmissions(regionId);
+    const allOpps = [...filteredOpportunities, ...userSubmissions];
+
     return {
       ...data,
-      opportunities: filteredOpportunities,
-      allOpportunities: data.opportunities
+      opportunities: allOpps,
+      allOpportunities: data.opportunities,
+      userSubmissionCount: userSubmissions.length
     };
   } catch (err) {
     console.error('Failed to load regional opportunities:', err);
@@ -134,14 +248,52 @@ export function renderRegionalScanner(container, regionData, options = {}) {
   // Get unique boroughs for dropdown
   const boroughs = [...new Set(opportunities.map(o => o.location?.borough).filter(Boolean))].sort();
 
+  const userSubmissionCount = regionData.userSubmissionCount || 0;
+
   container.innerHTML = `
     <section class="section regional-scanner">
       <div class="section-header">
         <h2 class="section-title">Regional Opportunities Scanner</h2>
-        <div class="scanner-meta">
-          Last refreshed: ${formatDate(regionData.lastUpdated)} |
-          ${opportunities.length} projects |
-          ${formatCurrency(totalValue)} total
+        <div class="scanner-header-right">
+          <div class="scanner-meta">
+            Last refreshed: ${formatDate(regionData.lastUpdated)} |
+            ${opportunities.length} projects |
+            ${formatCurrency(totalValue)} total
+            ${userSubmissionCount > 0 ? `| <span class="submission-badge">${userSubmissionCount} submitted</span>` : ''}
+          </div>
+          <button class="btn btn-sm scanner-upload-toggle" id="scanner-upload-toggle">
+            + Submit Missing Projects
+          </button>
+        </div>
+      </div>
+
+      <!-- Upload Panel (collapsed by default) -->
+      <div class="scanner-upload-panel" id="scanner-upload-panel" style="display:none">
+        <div class="scanner-upload-inner">
+          <div class="scanner-upload-header">
+            <h3>Submit Missing Projects</h3>
+            <p class="text-muted">Upload an Excel or CSV file using the same column format as the regional review template. Projects will be added to this region's scanner view and saved in your browser.</p>
+          </div>
+          <div class="scanner-upload-body">
+            <div class="excel-dropzone scanner-dropzone" id="scanner-dropzone">
+              <div class="excel-dropzone-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="12" y1="18" x2="12" y2="12"></line>
+                  <line x1="9" y1="15" x2="15" y2="15"></line>
+                </svg>
+              </div>
+              <div class="excel-dropzone-text">Drop Excel or CSV here, or click to upload</div>
+              <div class="excel-dropzone-hint">Columns: Project Name, Client, Sector, Location, Stage, Funding Status, Estimated Value (£), Key Drivers, Readiness, Source link</div>
+              <input type="file" id="scanner-file-input" accept=".xlsx,.xls,.csv" style="display:none" />
+            </div>
+            <div id="scanner-upload-status" class="mt-sm"></div>
+            <div class="scanner-upload-actions mt-sm">
+              <button class="btn" id="scanner-template-btn">Download Template</button>
+              ${userSubmissionCount > 0 ? `<button class="btn" id="scanner-clear-submissions" style="background:var(--status-low);color:white;">Clear ${userSubmissionCount} Submitted</button>` : ''}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -254,6 +406,7 @@ export function renderRegionalScanner(container, regionData, options = {}) {
   setupTabSwitching(container);
   setupAreaCardClicks(container, opportunities, sectors);
   setupOpportunityModal(container, opportunities, sectors);
+  setupUploadPanel(container, regionId);
 }
 
 function renderTableRows(opportunities, sectors) {
@@ -1006,6 +1159,143 @@ function renderOpportunityDetail(opp, sectors) {
       </div>
     </div>
   `;
+}
+
+function setupUploadPanel(container, regionId) {
+  const toggleBtn = container.querySelector('#scanner-upload-toggle');
+  const panel = container.querySelector('#scanner-upload-panel');
+  const dropzone = container.querySelector('#scanner-dropzone');
+  const fileInput = container.querySelector('#scanner-file-input');
+  const statusDiv = container.querySelector('#scanner-upload-status');
+  const templateBtn = container.querySelector('#scanner-template-btn');
+  const clearBtn = container.querySelector('#scanner-clear-submissions');
+
+  if (!toggleBtn || !panel) return;
+
+  // Toggle panel open/close
+  toggleBtn.addEventListener('click', () => {
+    const isOpen = panel.style.display !== 'none';
+    panel.style.display = isOpen ? 'none' : 'block';
+    toggleBtn.textContent = isOpen ? '+ Submit Missing Projects' : '✕ Close';
+  });
+
+  if (!dropzone || !fileInput) return;
+
+  // Click to open file picker
+  dropzone.addEventListener('click', () => fileInput.click());
+
+  // Drag & drop
+  dropzone.addEventListener('dragover', (e) => { e.preventDefault(); dropzone.classList.add('dragover'); });
+  dropzone.addEventListener('dragleave', () => dropzone.classList.remove('dragover'));
+  dropzone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropzone.classList.remove('dragover');
+    if (e.dataTransfer.files.length > 0) handleSubmissionFile(e.dataTransfer.files[0], statusDiv, regionId);
+  });
+
+  fileInput.addEventListener('change', (e) => {
+    if (e.target.files.length > 0) handleSubmissionFile(e.target.files[0], statusDiv, regionId);
+  });
+
+  // Template download
+  if (templateBtn) {
+    templateBtn.addEventListener('click', () => downloadSubmissionTemplate(regionId));
+  }
+
+  // Clear submissions
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      if (confirm('Clear all submitted projects for this region?')) {
+        clearUserSubmissions(regionId);
+        location.reload();
+      }
+    });
+  }
+}
+
+function handleSubmissionFile(file, statusDiv, regionId) {
+  const fileName = file.name.toLowerCase();
+  if (!fileName.endsWith('.xlsx') && !fileName.endsWith('.xls') && !fileName.endsWith('.csv')) {
+    statusDiv.innerHTML = '<p style="color:var(--status-low)">Please upload .xlsx, .xls, or .csv</p>';
+    return;
+  }
+
+  statusDiv.innerHTML = '<p class="text-muted">Processing file...</p>';
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      let rows = [];
+      if (fileName.endsWith('.csv')) {
+        rows = parseCSVToRows(e.target.result);
+      } else {
+        const data = new Uint8Array(e.target.result);
+        const wb = XLSX.read(data, { type: 'array' });
+        const ws = wb.Sheets[wb.SheetNames[0]];
+        rows = XLSX.utils.sheet_to_json(ws);
+      }
+
+      const submissions = parseSubmissionRows(rows, regionId);
+      if (submissions.length === 0) {
+        statusDiv.innerHTML = '<p style="color:var(--status-low)">No valid rows found. Check column headers match the template.</p>';
+        return;
+      }
+
+      // Merge with any existing submissions
+      const existing = loadUserSubmissions(regionId);
+      const merged = [...existing, ...submissions];
+      saveUserSubmissions(regionId, merged);
+
+      statusDiv.innerHTML = `<p style="color:var(--status-high)">Added ${submissions.length} project${submissions.length !== 1 ? 's' : ''}! Refreshing...</p>`;
+      setTimeout(() => location.reload(), 1000);
+    } catch (err) {
+      console.error('Submission parse error:', err);
+      statusDiv.innerHTML = `<p style="color:var(--status-low)">Error: ${err.message}</p>`;
+    }
+  };
+
+  if (fileName.endsWith('.csv')) {
+    reader.readAsText(file);
+  } else {
+    reader.readAsArrayBuffer(file);
+  }
+}
+
+function parseCSVToRows(csv) {
+  const lines = csv.split('\n').filter(l => l.trim());
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(',').map(h => h.replace(/^"|"$/g, '').trim());
+  return lines.slice(1).map(line => {
+    const vals = line.split(',').map(v => v.replace(/^"|"$/g, '').trim());
+    const row = {};
+    headers.forEach((h, i) => { row[h] = vals[i] || ''; });
+    return row;
+  });
+}
+
+function downloadSubmissionTemplate(regionId) {
+  const regionLabel = regionId.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const headers = ['Project Name','Client','Sector','Location','Stage','Funding Status','Estimated Value (£)','Key Drivers','Readiness','Source link'];
+  const example = [
+    `Example Project — ${regionLabel}`,
+    'Example Client Ltd',
+    'Infrastructure / Rail',
+    `${regionLabel} (City Centre)`,
+    'Current',
+    'Secured',
+    '150000000',
+    'Growth, Safety, Net Zero',
+    'Ready to Buy',
+    'https://example.com'
+  ];
+  const csv = [headers.join(','), example.map(v => `"${v}"`).join(',')].join('\n');
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${regionId}-missing-projects-template.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
 }
 
 // Export helper for map integration

@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "north-west"
   ],
@@ -2545,6 +2545,366 @@
           "date": "2026-Q1"
         }
       ]
+    },
+    {
+      "id": "reg-nw-051",
+      "title": "Sellafield Nuclear Decommissioning Programme",
+      "sector": "energy",
+      "subSector": "nuclear-decommissioning",
+      "region": "north-west",
+      "location": {
+        "borough": "Copeland",
+        "area": "Sellafield"
+      },
+      "value": 22000000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 NDA / HM Government (\u00a322bn over 10 years)",
+      "keyDrivers": [
+        "Nuclear decommissioning",
+        "National security",
+        "Environmental protection",
+        "Decades-long programme"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.sellafieldsites.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2020",
+      "estimatedEnd": "2120",
+      "description": "UK's most complex nuclear site. Annual spend ~\u00a32bn. Decommissioning of legacy ponds, silos, and waste retrieval. Multiple active NEC contracts for civils, M&E, and specialist nuclear work. Critical national infrastructure.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Ongoing",
+          "date": "2020\u20132120"
+        }
+      ]
+    },
+    {
+      "id": "reg-nw-052",
+      "title": "Eden Project North \u2014 Morecambe Bay",
+      "sector": "real-estate",
+      "subSector": "leisure-culture",
+      "region": "north-west",
+      "location": {
+        "borough": "Lancaster",
+        "area": "Morecambe"
+      },
+      "value": 125000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Eden Project / Levelling Up \u00a350m / private",
+      "keyDrivers": [
+        "Levelling Up",
+        "Tourism",
+        "Tidal energy education",
+        "Regional regeneration"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": "https://www.edenprojectnorth.org",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2028",
+      "description": "Eden Project North at Morecambe Bay \u2014 world-class visitor attraction inspired by the tidal ecosystem. \u00a350m Levelling Up grant secured. Planning approved. Construction procurement underway.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Planning Approved",
+          "date": "2024"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        },
+        {
+          "label": "Opening",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-nw-053",
+      "title": "Stellantis / Vauxhall \u2014 Ellesmere Port EV Factory",
+      "sector": "energy",
+      "subSector": "ev-manufacturing",
+      "region": "north-west",
+      "location": {
+        "borough": "Cheshire West",
+        "area": "Ellesmere Port"
+      },
+      "value": 100000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Stellantis / ATFP \u00a3100m grant",
+      "keyDrivers": [
+        "UK EV manufacturing",
+        "Supply chain jobs",
+        "Green manufacturing",
+        "Battery vehicle production"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://media.stellantis.com/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2022",
+      "estimatedEnd": "2030",
+      "description": "First purpose-converted EV factory in the UK at Ellesmere Port. Producing Vauxhall Combo Electric and Peugeot e-Partner. ATFP-backed. Ongoing capital investment in factory systems and logistics.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Production Start",
+          "date": "2023"
+        },
+        {
+          "label": "Investment Programme",
+          "date": "2024\u20132030"
+        }
+      ]
+    },
+    {
+      "id": "reg-nw-054",
+      "title": "Barrow-in-Furness Town Deal & Devo Infrastructure",
+      "sector": "real-estate",
+      "subSector": "regeneration",
+      "region": "north-west",
+      "location": {
+        "borough": "Barrow-in-Furness",
+        "area": "Barrow Town Centre"
+      },
+      "value": 180000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Town Deal / Barrow BC / WBC linked to BAE",
+      "keyDrivers": [
+        "AUKUS submarine programme",
+        "Worker housing",
+        "Town centre regeneration",
+        "BAE supply chain"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": "https://www.barrowtowndeal.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2022",
+      "estimatedEnd": "2028",
+      "description": "Town Deal investment linked to AUKUS submarine programme at BAE Barrow. New housing, town centre improvements, skills hub, and infrastructure to support 10,000+ BAE workforce.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-nw-055",
+      "title": "Carlisle Southern Link Road \u2014 Phase 1",
+      "sector": "highways",
+      "subSector": "local-roads",
+      "region": "north-west",
+      "location": {
+        "borough": "Carlisle",
+        "area": "South Carlisle"
+      },
+      "value": 225000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Cumbria CC / HMG / Cumberland CA",
+      "keyDrivers": [
+        "Congestion relief",
+        "Growth enablement",
+        "Carlisle South housing",
+        "M6 connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.cumbria.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2029",
+      "description": "New southern relief road for Carlisle connecting the A595/A6 to M6 J42/43. Unlocks major housing development to the south of Carlisle. Funding secured, procurement underway.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Procurement",
+          "date": "2025"
+        },
+        {
+          "label": "Construction",
+          "date": "2026"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
+    },
+    {
+      "id": "reg-nw-056",
+      "title": "East Lancashire NHS Hospitals \u2014 New Build Programme",
+      "sector": "infrastructure",
+      "subSector": "nhs-hospitals",
+      "region": "north-west",
+      "location": {
+        "borough": "Burnley / Blackburn",
+        "area": "East Lancashire"
+      },
+      "value": 600000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 NHSE New Hospital Programme (NHP)",
+      "keyDrivers": [
+        "New Hospital Programme",
+        "Health infrastructure",
+        "Population growth",
+        "Modern facilities"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.elht.nhs.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2034",
+      "description": "New Hospital Programme schemes for East Lancashire covering Royal Blackburn and Burnley General. NHSE NHP list scheme. Business case development ongoing.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "OBC Expected",
+          "date": "2026"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-nw-057",
+      "title": "Mersey Tidal Power Project",
+      "sector": "energy",
+      "subSector": "tidal-energy",
+      "region": "north-west",
+      "location": {
+        "borough": "Liverpool City Region",
+        "area": "River Mersey"
+      },
+      "value": 2000000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Planned \u2014 Liverpool City Region CA / Crown Estate / private",
+      "keyDrivers": [
+        "Tidal renewable energy",
+        "River Mersey",
+        "Community energy",
+        "Net Zero 2038 LCR target"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.liverpoolcityregion-ca.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2035",
+      "description": "Liverpool City Region ambition for tidal barrage or tidal energy infrastructure on the Mersey. Crown Estate engagement. Would generate up to 700MW. Long-term development.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Feasibility",
+          "date": "2026"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-nw-058",
+      "title": "Oldham & Rochdale Metrolink Extension",
+      "sector": "rail",
+      "subSector": "light-rail",
+      "region": "north-west",
+      "location": {
+        "borough": "Oldham / Rochdale",
+        "area": "Town Centres"
+      },
+      "value": 350000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Planned \u2014 TfGM / GMCA CRSTS2",
+      "keyDrivers": [
+        "Levelling Up",
+        "Deprived area connectivity",
+        "Metrolink expansion",
+        "Mode shift"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.tfgm.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2029",
+      "estimatedEnd": "2034",
+      "description": "Proposed Metrolink extensions to Oldham and Rochdale town centres beyond current terminuses. CRSTS2 funded aspiration. Business case development.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
     }
   ]
 }

@@ -4877,9 +4877,60 @@
   margin-bottom: var(--space-md);
 }
 
+.scanner-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-sm);
+}
+
 .scanner-meta {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.submission-badge {
+  color: var(--gleeds-yellow);
+  font-weight: 600;
+}
+
+.scanner-upload-toggle {
+  white-space: nowrap;
+  font-size: 0.85rem;
+}
+
+/* Upload panel */
+.scanner-upload-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+  overflow: hidden;
+}
+
+.scanner-upload-inner {
+  padding: var(--space-lg);
+}
+
+.scanner-upload-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  color: var(--text-primary);
+}
+
+.scanner-upload-body {
+  margin-top: var(--space-md);
+}
+
+.scanner-dropzone {
+  padding: var(--space-lg);
+}
+
+.scanner-upload-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
 }
 
 /* Scanner Filters */

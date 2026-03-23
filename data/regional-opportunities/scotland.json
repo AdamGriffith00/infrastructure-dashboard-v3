@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "scotland"
   ],
@@ -1282,6 +1282,463 @@
         {
           "label": "Completion",
           "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-026",
+      "title": "Acorn CCS \u2014 St Fergus Carbon Capture Cluster",
+      "sector": "energy",
+      "subSector": "ccus",
+      "region": "scotland",
+      "location": {
+        "borough": "Aberdeenshire",
+        "area": "St Fergus"
+      },
+      "value": 3000000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Storegga / Shell / North Sea Transition Deal",
+      "keyDrivers": [
+        "Industrial decarbonisation",
+        "North Sea CCS",
+        "Energy transition",
+        "Scottish cluster"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.aceacorn.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2040",
+      "description": "Acorn CCS project at St Fergus \u2014 Track 2 carbon capture and storage cluster approved. CO2 transport and storage infrastructure for North Sea. Offshore pipeline to depleted reservoirs. Major procurement packages.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Track 2 Approval",
+          "date": "2025"
+        },
+        {
+          "label": "FID Expected",
+          "date": "2027"
+        },
+        {
+          "label": "Operations Start",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-027",
+      "title": "Nigg Energy Park \u2014 Offshore Wind Fabrication Hub",
+      "sector": "energy",
+      "subSector": "offshore-wind",
+      "region": "scotland",
+      "location": {
+        "borough": "Highland",
+        "area": "Nigg"
+      },
+      "value": 400000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Global Energy Group / private",
+      "keyDrivers": [
+        "ScotWind fabrication",
+        "Floating offshore wind",
+        "Decommissioning",
+        "Energy transition"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.globalenergygroup.co.uk/nigg-energy-park",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2023",
+      "estimatedEnd": "2030",
+      "description": "Nigg Energy Park expanding as a key ScotWind fabrication hub. Facilities for offshore wind jacket structures, floating wind, and decommissioning. Active programme of capital investment.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Expansion Phase",
+          "date": "2024"
+        },
+        {
+          "label": "Full Capacity",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-028",
+      "title": "Edinburgh Airport \u2014 Terminal & Airside Expansion",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "scotland",
+      "location": {
+        "borough": "Edinburgh",
+        "area": "Edinburgh Airport"
+      },
+      "value": 500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Edinburgh Airport Ltd private",
+      "keyDrivers": "Capacity growth,International routes,Tram connectivity,Net Zero",
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.edinburghairport.com/about-us/expansion",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Edinburgh Airport terminal and airside expansion to handle growing passenger numbers. Edinburgh Trams now directly connected. Investment in new gates, terminal extension, and infrastructure.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Planning Submission",
+          "date": "2025"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2027"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-029",
+      "title": "Dundee Green Freeport \u2014 Port & Industrial Development",
+      "sector": "maritime",
+      "subSector": "freeport",
+      "region": "scotland",
+      "location": {
+        "borough": "Dundee",
+        "area": "Port of Dundee"
+      },
+      "value": 500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Scottish Green Freeports programme",
+      "keyDrivers": [
+        "Offshore wind supply chain",
+        "Floating wind",
+        "Port development",
+        "Jobs and investment"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.dundeegreenfreport.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2035",
+      "description": "Dundee Green Freeport \u2014 one of two Scottish Green Freeports. Port of Dundee infrastructure for floating offshore wind assembly, fabrication, and O&M. Active capital investment programme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Designation Confirmed",
+          "date": "2023"
+        },
+        {
+          "label": "Capital Programme",
+          "date": "2024\u20132035"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-030",
+      "title": "Glasgow / Clyde Metro \u2014 New Mass Transit System",
+      "sector": "rail",
+      "subSector": "metro",
+      "region": "scotland",
+      "location": {
+        "borough": "Glasgow City Region",
+        "area": "Greater Glasgow"
+      },
+      "value": 2000000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Planned \u2014 Scottish Government / Glasgow City Region",
+      "keyDrivers": [
+        "Regional connectivity",
+        "Economic productivity",
+        "Net Zero transport",
+        "City region growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://www.sptatransport.scot/clyde-metro",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2030",
+      "estimatedEnd": "2040",
+      "description": "New Clyde Metro/Glasgow Metro mass transit system. Scottish Government and SPT-led. Feasibility and preliminary design underway. Would extend light rail and heavy rail services across the city region.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Feasibility",
+          "date": "2025"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-031",
+      "title": "Orkney & Shetland \u2014 Green Hydrogen Flagship Projects",
+      "sector": "energy",
+      "subSector": "hydrogen",
+      "region": "scotland",
+      "location": {
+        "borough": "Orkney / Shetland",
+        "area": "Northern Isles"
+      },
+      "value": 400000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Highlands & Islands Enterprise / private / IETF",
+      "keyDrivers": [
+        "Renewable hydrogen",
+        "Island energy systems",
+        "Export potential",
+        "Net Zero"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.hie.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Green hydrogen production and export projects on Orkney (BIG HIT project) and Shetland. Leveraging excess renewable energy for electrolysis. Island test-bed for hydrogen economy.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Pilot Projects",
+          "date": "2025"
+        },
+        {
+          "label": "Commercial Scale",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-032",
+      "title": "Aberdeen International Airport \u2014 Modernisation Programme",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "scotland",
+      "location": {
+        "borough": "Aberdeen City",
+        "area": "Aberdeen Airport"
+      },
+      "value": 150000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 AGS Airports / Aberdeen CC",
+      "keyDrivers": [
+        "Energy transition connectivity",
+        "Business aviation",
+        "Oil and gas transition",
+        "International routes"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.aberdeenairport.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2030",
+      "description": "Modernisation of Aberdeen International Airport terminal and facilities. Critical for oil/gas transition and energy sector connectivity. AGS Airports-led capital programme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-sc-033",
+      "title": "Forth Ports \u2014 Grangemouth Green Freeport",
+      "sector": "maritime",
+      "subSector": "freeport",
+      "region": "scotland",
+      "location": {
+        "borough": "Falkirk",
+        "area": "Grangemouth"
+      },
+      "value": 800000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Scottish Green Freeports / Forth Ports / INEOS",
+      "keyDrivers": [
+        "Port decarbonisation",
+        "Green hydrogen",
+        "Chemical industry transition",
+        "Freeport investment"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.forthports.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2035",
+      "description": "Grangemouth Green Freeport \u2014 Scotland's largest industrial port and chemical complex. Forth Ports and INEOS JV. Hydrogen production, carbon capture, and industrial decarbonisation investment.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Designation Confirmed",
+          "date": "2023"
+        },
+        {
+          "label": "Investment Programme",
+          "date": "2024\u20132035"
+        }
+      ]
+    },
+    {
+      "id": "reg-sc-034",
+      "title": "Highland & Islands Transport Investment Programme",
+      "sector": "highways",
+      "subSector": "roads",
+      "region": "scotland",
+      "location": {
+        "borough": "Highland",
+        "area": "A9/A82/A96 Corridors"
+      },
+      "value": 1500000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Transport Scotland / HMG",
+      "keyDrivers": [
+        "Tourism connectivity",
+        "Economic access",
+        "Safety",
+        "Resilience"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.transport.gov.scot",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2022",
+      "estimatedEnd": "2035",
+      "description": "Combined transport investment for A9 dualling (continuing), A82 fort william improvements, and A96 development. Transport Scotland active programme with multiple live contracts.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-sc-035",
+      "title": "ScotWind Floating Wind \u2014 Pilot Array Developments",
+      "sector": "energy",
+      "subSector": "floating-offshore-wind",
+      "region": "scotland",
+      "location": {
+        "borough": "Aberdeenshire / Highland",
+        "area": "North Sea"
+      },
+      "value": 3000000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 multiple developers (Hexicon, BlueFloat, Simply Blue)",
+      "keyDrivers": [
+        "Floating wind pioneers",
+        "ScotWind leases",
+        "Net Zero",
+        "Deepwater wind"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.gov.scot/policies/renewable-and-low-carbon-energy/offshore-wind/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2040",
+      "description": "Multiple ScotWind floating offshore wind array developments in deeper Scottish waters. Pilot projects progressing to commercial. Requires new port infrastructure and supply chain investment.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Developer Selections",
+          "date": "2023"
+        },
+        {
+          "label": "Pilot Arrays",
+          "date": "2028"
+        },
+        {
+          "label": "Commercial Scale",
+          "date": "2035"
         }
       ]
     }

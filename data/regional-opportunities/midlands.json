@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "midlands"
   ],
@@ -1557,6 +1557,346 @@
           "date": "2028-Q1"
         }
       ]
+    },
+    {
+      "id": "reg-mid-031",
+      "title": "Birmingham Airport \u2014 Runway Extension & Terminal Investment",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "midlands",
+      "location": {
+        "borough": "Solihull",
+        "area": "Birmingham Airport"
+      },
+      "value": 500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 BHAX / Birmingham Airport Ltd private",
+      "keyDrivers": [
+        "HS2 connectivity",
+        "Capacity growth",
+        "International routes",
+        "Net Zero"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.birminghamairport.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2033",
+      "description": "Long runway extension and terminal investment at Birmingham Airport. HS2 Interchange station adjacent will drive passenger growth. Business case development ongoing.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "HS2 Interchange Opens",
+          "date": "2030"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-mid-032",
+      "title": "JLR / Tata Motors \u2014 Halewood EV Factory (Jaguar Reimagined)",
+      "sector": "energy",
+      "subSector": "ev-manufacturing",
+      "region": "midlands",
+      "location": {
+        "borough": "Solihull / Halewood",
+        "area": "Castle Bromwich & Halewood"
+      },
+      "value": 4000000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Tata Motors / JLR private",
+      "keyDrivers": [
+        "EV transition",
+        "Gigafactory supply",
+        "UK auto sector",
+        "Net Zero manufacturing"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.jaguarlandrover.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2030",
+      "description": "JLR's major transformation to electric vehicles. Wolverhampton engine plant conversion, Castle Bromwich/Halewood retooling, and Tata's Bridgwater gigafactory (feeding Midlands plants). Multiple active supply chain packages.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Transformation Start",
+          "date": "2024"
+        },
+        {
+          "label": "Full EV Production",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-mid-033",
+      "title": "Coventry Very Light Rail \u2014 Prototype to City Deployment",
+      "sector": "rail",
+      "subSector": "light-rail",
+      "region": "midlands",
+      "location": {
+        "borough": "Coventry",
+        "area": "City Centre"
+      },
+      "value": 250000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Coventry CC / WM CA / Innovate UK",
+      "keyDrivers": [
+        "Zero emission transit",
+        "City centre connectivity",
+        "HS2 integration",
+        "Prototype proven"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://www.coventry.gov.uk/very-light-rail",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2031",
+      "description": "World-first very light rail system. Prototype proven in Coventry. Route development and procurement for city-wide deployment. Zero emissions, rubber-tyred.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-mid-034",
+      "title": "Warwickshire / WMG Advanced Manufacturing Cluster",
+      "sector": "real-estate",
+      "subSector": "enterprise-zone",
+      "region": "midlands",
+      "location": {
+        "borough": "Warwick / Coventry",
+        "area": "Stoneleigh Park / WMG"
+      },
+      "value": 400000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 WCC / UKRI / Coventry University",
+      "keyDrivers": [
+        "EV supply chain",
+        "Battery testing",
+        "Advanced materials",
+        "University spin-out"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.wmg.warwick.ac.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2032",
+      "description": "Advanced manufacturing cluster around Warwick Manufacturing Group and Stoneleigh Park. Battery testing facilities, EV supply chain labs, and enterprise space for spin-out companies.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-mid-035",
+      "title": "Birmingham Eastside Metro \u2014 Digbeth Delivery Phase",
+      "sector": "rail",
+      "subSector": "metro",
+      "region": "midlands",
+      "location": {
+        "borough": "Birmingham",
+        "area": "Digbeth / Eastside"
+      },
+      "value": 250000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 WM CA / WMCA CRSTS",
+      "keyDrivers": [
+        "HS2 interchange connectivity",
+        "Birmingham growth",
+        "Digbeth creative quarter",
+        "Modal shift"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.wmca.org.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2030",
+      "description": "West Midlands Metro extension to Birmingham Eastside and Digbeth. Connects to HS2 Curzon Street and unlocks the Digbeth creative quarter for development.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Procurement",
+          "date": "2025"
+        },
+        {
+          "label": "Construction",
+          "date": "2026"
+        },
+        {
+          "label": "Opening",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-mid-036",
+      "title": "Black Country Gigafactory \u2014 Wolverhampton / West Bromwich Site",
+      "sector": "energy",
+      "subSector": "ev-manufacturing",
+      "region": "midlands",
+      "location": {
+        "borough": "Wolverhampton / Sandwell",
+        "area": "Black Country"
+      },
+      "value": 1000000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Planned \u2014 WM CA / investor sought",
+      "keyDrivers": [
+        "Battery manufacturing",
+        "EV supply chain",
+        "Black Country regeneration",
+        "Advanced manufacturing"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.wmca.org.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2035",
+      "description": "Aspirational gigafactory site for the Black Country serving West Midlands automotive supply chain. WM CA site-ready programme. Investor sought following Stellantis Ellesmere Port model.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Site Assembly",
+          "date": "2026"
+        },
+        {
+          "label": "Investor FID",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-mid-037",
+      "title": "Worcestershire Investment Zone \u2014 Advanced Manufacturing",
+      "sector": "real-estate",
+      "subSector": "enterprise-zone",
+      "region": "midlands",
+      "location": {
+        "borough": "Worcestershire",
+        "area": "Worcestershire"
+      },
+      "value": 300000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 HMRC Investment Zone / Worcestershire LEP",
+      "keyDrivers": [
+        "Advanced manufacturing",
+        "Cyber and defence",
+        "Life sciences",
+        "Growth enablement"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.worcestershire.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2032",
+      "description": "Investment Zone for Worcestershire targeting advanced manufacturing, cyber/defence and life sciences sectors. Sites at Malvern Hills Science Park, Worcester Six, and Warndon.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-mid-038",
+      "title": "Stoke-on-Trent i54 Extension & Advanced Manufacturing Park",
+      "sector": "real-estate",
+      "subSector": "enterprise-zone",
+      "region": "midlands",
+      "location": {
+        "borough": "Stoke-on-Trent",
+        "area": "i54 South Staffordshire"
+      },
+      "value": 350000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Part funded \u2014 SSDC / Staffs CC / private",
+      "keyDrivers": [
+        "Advanced manufacturing expansion",
+        "Jobs",
+        "Industrial estate",
+        "Automotive supply"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.i54.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2030",
+      "description": "Expansion of i54 South Staffordshire and new advanced manufacturing park serving North Staffordshire. Active site with occupants including Jaguar Land Rover. Further phases planned.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "wales"
   ],
@@ -1035,6 +1035,527 @@
           "date": "2028"
         }
       ]
+    },
+    {
+      "id": "reg-wa-021",
+      "title": "Wylfa Newydd Nuclear Power Station \u2014 Anglesey",
+      "sector": "energy",
+      "subSector": "nuclear-new-build",
+      "region": "wales",
+      "location": {
+        "borough": "Isle of Anglesey",
+        "area": "Wylfa, Holyhead"
+      },
+      "value": 25000000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Planned \u2014 UK Government / Horizon Nuclear / new developer sought",
+      "keyDrivers": [
+        "Net Zero baseload",
+        "Energy security",
+        "North Wales economy",
+        "Nuclear jobs"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.gov.uk/government/collections/wylfa-newydd-nuclear-power-station",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2030",
+      "estimatedEnd": "2050",
+      "description": "Wylfa Newydd \u2014 potential site for new nuclear power station on Anglesey. Horizon Nuclear (Hitachi) withdrew 2020. UK Government seeking new developer under Great British Nuclear programme. 3GW+ potential.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Developer Sought",
+          "date": "2024"
+        },
+        {
+          "label": "Anticipated Construction",
+          "date": "2030"
+        },
+        {
+          "label": "Operations",
+          "date": "2040+"
+        }
+      ]
+    },
+    {
+      "id": "reg-wa-022",
+      "title": "Celtic Freeport \u2014 Port Talbot & Milford Haven",
+      "sector": "maritime",
+      "subSector": "freeport",
+      "region": "wales",
+      "location": {
+        "borough": "Neath Port Talbot / Pembrokeshire",
+        "area": "Port Talbot / Milford Haven"
+      },
+      "value": 1000000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Celtic Freeport / HM Government / Welsh Government",
+      "keyDrivers": [
+        "Floating offshore wind",
+        "Hydrogen",
+        "Steel transition",
+        "Freeport investment"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://celticfreeport.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2035",
+      "description": "Celtic Freeport covering Milford Haven and Port Talbot. Focused on floating offshore wind, green hydrogen, and steel transition. Active development of tax sites and infrastructure.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Designation",
+          "date": "2023"
+        },
+        {
+          "label": "Capital Programme",
+          "date": "2024\u20132035"
+        }
+      ]
+    },
+    {
+      "id": "reg-wa-023",
+      "title": "HyNet North West \u2014 Welsh Hydrogen Pipeline",
+      "sector": "energy",
+      "subSector": "hydrogen",
+      "region": "wales",
+      "location": {
+        "borough": "Flintshire / Wrexham",
+        "area": "North East Wales"
+      },
+      "value": 400000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 HyNet / Cadent / private \u2014 Track-1 CCS/H2 cluster",
+      "keyDrivers": [
+        "Industrial decarbonisation",
+        "Hydrogen distribution",
+        "North Wales industry",
+        "HyNet cluster"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://hynet.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2032",
+      "description": "HyNet North West hydrogen and CCS cluster extension into North East Wales. Pipeline infrastructure connecting Welsh industrial users to the HyNet hydrogen network. Flintshire and Wrexham industries.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-wa-024",
+      "title": "Holyhead Port \u2014 DP World / Stena Investment",
+      "sector": "maritime",
+      "subSector": "ports",
+      "region": "wales",
+      "location": {
+        "borough": "Isle of Anglesey",
+        "area": "Holyhead"
+      },
+      "value": 250000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 DP World / Stena Line / Welsh Government",
+      "keyDrivers": [
+        "Irish Sea connectivity",
+        "Ro-ro freight",
+        "Freeport linkage",
+        "Port modernisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.holyhead.dpworld.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2029",
+      "description": "Major infrastructure investment at Holyhead \u2014 UK's busiest ferry port for Irish trade. DP World and Stena Line investment in berths, handling facilities, and logistics.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Investment Start",
+          "date": "2024"
+        },
+        {
+          "label": "Phase 1 Complete",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-wa-025",
+      "title": "A465 Heads of the Valleys \u2014 Remaining Sections Dualling",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "wales",
+      "location": {
+        "borough": "Rhondda Cynon Taf / Merthyr / Blaenau Gwent",
+        "area": "A465 Corridor"
+      },
+      "value": 600000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Welsh Government Roads",
+      "keyDrivers": [
+        "South Wales Valleys connectivity",
+        "Economic development",
+        "Safety",
+        "Decarbonisation"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://www.gov.wales/a465-heads-valleys-road-improvements",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2020",
+      "estimatedEnd": "2029",
+      "description": "Remaining sections of A465 Heads of Valleys dualling from Hirwaun to Dowlais. Welsh Government programme with live construction. Multiple NEC contracts.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Live Construction",
+          "date": "2023"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
+    },
+    {
+      "id": "reg-wa-026",
+      "title": "Velindre Cancer Centre \u2014 New Build Cardiff",
+      "sector": "infrastructure",
+      "subSector": "nhs-hospitals",
+      "region": "wales",
+      "location": {
+        "borough": "Cardiff",
+        "area": "North Cardiff"
+      },
+      "value": 250000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Velindre NHS Trust / Welsh Government",
+      "keyDrivers": [
+        "Cancer care",
+        "NHS Wales modernisation",
+        "Research and innovation",
+        "Cardiff health cluster"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.velindrecc.wales.nhs.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2031",
+      "description": "New Velindre Cancer Centre in North Cardiff replacing the existing facility. Major capital investment in Welsh cancer care infrastructure. Business case development ongoing.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "FBC Expected",
+          "date": "2025"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-wa-027",
+      "title": "Cardiff Airport \u2014 Development & Route Investment",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "wales",
+      "location": {
+        "borough": "Vale of Glamorgan",
+        "area": "Cardiff Airport"
+      },
+      "value": 100000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Welsh Government (owner) / TNLEG",
+      "keyDrivers": [
+        "Welsh connectivity",
+        "International routes",
+        "Airport modernisation",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.cardiff-airport.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2030",
+      "description": "Welsh Government-owned Cardiff Airport terminal and infrastructure investment. New routes, terminal improvements, and passenger facilities. Critical for Welsh economic connectivity.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-wa-028",
+      "title": "Swansea Bay City Deal \u2014 Infrastructure Tranche",
+      "sector": "real-estate",
+      "subSector": "city-deal",
+      "region": "wales",
+      "location": {
+        "borough": "Swansea / Neath Port Talbot / Carmarthenshire / Pembrokeshire",
+        "area": "Swansea Bay Region"
+      },
+      "value": 700000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Swansea Bay City Deal / HM Government / Welsh Government",
+      "keyDrivers": [
+        "Innovation",
+        "Digital economy",
+        "Energy",
+        "Place-making"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.swanseabaycitydeal.wales",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2020",
+      "estimatedEnd": "2033",
+      "description": "\u00a31.3bn Swansea Bay City Deal major infrastructure and economic projects. Campuses, digital infrastructure, wave energy lagoon feasibility, and advanced manufacturing. Active programme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Deal Signed",
+          "date": "2020"
+        },
+        {
+          "label": "Programme",
+          "date": "2020\u20132033"
+        }
+      ]
+    },
+    {
+      "id": "reg-wa-029",
+      "title": "Pembroke Dock Marine \u2014 Floating Offshore Wind Hub",
+      "sector": "maritime",
+      "subSector": "offshore-wind",
+      "region": "wales",
+      "location": {
+        "borough": "Pembrokeshire",
+        "area": "Pembroke Dock"
+      },
+      "value": 300000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Celtic Freeport / Crown Estate / private",
+      "keyDrivers": [
+        "Celtic Sea floating wind",
+        "Fabrication hub",
+        "O&M base",
+        "Energy transition"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.pembroke-dock-marine.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2033",
+      "description": "Pembroke Dock Marine \u2014 purpose-built hub for Celtic Sea floating offshore wind. Manufacturing, assembly, O&M, and testing facilities. Celtic Freeport tax site.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Development Start",
+          "date": "2026"
+        },
+        {
+          "label": "Operational",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-wa-030",
+      "title": "North Wales Metro \u2014 Rail & Bus Integration",
+      "sector": "rail",
+      "subSector": "regional-rail",
+      "region": "wales",
+      "location": {
+        "borough": "North Wales (wide)",
+        "area": "Wrexham / Flint / Bangor"
+      },
+      "value": 400000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Welsh Government / TfW / North Wales Growth Deal",
+      "keyDrivers": [
+        "Regional connectivity",
+        "Decarbonisation",
+        "Tourism",
+        "Cross-border with North West England"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://www.tfw.wales",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2035",
+      "description": "North Wales Metro \u2014 integrated rail and bus network improvement for North Wales. New stations, service frequencies, and active travel connections. TfW programme backed by North Wales Growth Deal.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-wa-031",
+      "title": "Anglesey Freeport \u2014 Energy Island Programme",
+      "sector": "energy",
+      "subSector": "renewable-energy",
+      "region": "wales",
+      "location": {
+        "borough": "Isle of Anglesey",
+        "area": "Anglesey"
+      },
+      "value": 500000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Anglesey CC / Welsh Government / private",
+      "keyDrivers": [
+        "Tidal energy",
+        "Hydrogen",
+        "Offshore wind",
+        "Nuclear adjacent (Wylfa)"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.anglesey.gov.wales",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2035",
+      "description": "Anglesey Energy Island programme \u2014 integrated energy hub combining tidal energy, hydrogen, offshore wind connections, and (future) nuclear. Freeport aspirations linked to Celtic Freeport.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-wa-032",
+      "title": "Mid Wales Renewable Energy \u2014 Grid Connection Programme",
+      "sector": "energy",
+      "subSector": "electricity-transmission",
+      "region": "wales",
+      "location": {
+        "borough": "Powys / Ceredigion",
+        "area": "Mid Wales"
+      },
+      "value": 1500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 SSEN / SP Transmission / Ofgem RIIO-T3",
+      "keyDrivers": [
+        "Onshore wind transmission",
+        "Renewable export",
+        "Mid Wales energy",
+        "Grid reinforcement"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.ssen-transmission.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2035",
+      "description": "Major grid reinforcement to export Mid Wales onshore wind energy. New overhead lines and substations across Powys. SSEN and SP Transmission joint programme linked to RIIO-T3.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
     }
   ]
 }

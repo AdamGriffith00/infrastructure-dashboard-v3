@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-05",
-  "lastResearched": "2026-02-05",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "east-midlands"
   ],
@@ -1318,6 +1318,422 @@
           "date": "2028"
         }
       ]
+    },
+    {
+      "id": "reg-em-026",
+      "title": "East Midlands Freeport \u2014 Toton HS2 Hub & Rail Gateway",
+      "sector": "rail",
+      "subSector": "hs2-stations",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Broxtowe / Erewash",
+        "area": "Toton"
+      },
+      "value": 2000000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Midlands Connect / HS2 Ltd / DLUHC",
+      "keyDrivers": [
+        "HS2 connectivity",
+        "East Midlands growth",
+        "Rail freight",
+        "Freeport anchor"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.eastmidlandsfreeport.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2035",
+      "description": "HS2 Toton station area \u2014 the anchor development for East Midlands Freeport. Combines rail interchange, logistics hub, and new employment land. Business case development underway with DLUHC and HS2 Ltd.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-em-027",
+      "title": "Ratcliffe-on-Soar Energy Park \u2014 Power Station Redevelopment",
+      "sector": "energy",
+      "subSector": "energy-transition",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Rushcliffe",
+        "area": "Ratcliffe-on-Soar"
+      },
+      "value": 1500000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 E.ON / private investment consortium",
+      "keyDrivers": [
+        "Industrial decarbonisation",
+        "Green hydrogen",
+        "Data centres",
+        "Battery storage",
+        "Net Zero"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.eon.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2040",
+      "description": "E.ON's Ratcliffe-on-Soar power station closed September 2024 \u2014 last coal plant in UK. 900-acre site now being master-planned for energy park including green hydrogen, BESS, data centres and advanced manufacturing.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Power Station Closed",
+          "date": "2024-Q3"
+        },
+        {
+          "label": "Masterplan",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-em-028",
+      "title": "Nottingham Island Quarter \u2014 Phase 1 to 4 Mixed Use",
+      "sector": "real-estate",
+      "subSector": "mixed-use",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Nottingham",
+        "area": "City Centre"
+      },
+      "value": 1500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Conygar / Nottingham City Council",
+      "keyDrivers": [
+        "City centre regeneration",
+        "Homes",
+        "Office",
+        "Hotel",
+        "Students"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Employer's Agent",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.theislandquarter.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2035",
+      "description": "64-acre city centre regeneration replacing former island site. Phase 1 hotel and office complete. Phases 2-4 include 2,000+ homes, commercial space, and public realm. Conygar/NCC partnership.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-em-029",
+      "title": "STEP Fusion Programme \u2014 West Burton C (UKAEA)",
+      "sector": "energy",
+      "subSector": "fusion",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Bassetlaw",
+        "area": "West Burton"
+      },
+      "value": 2000000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 UKRI / UKAEA / HM Government",
+      "keyDrivers": [
+        "Nuclear fusion",
+        "Net Zero",
+        "R&D infrastructure",
+        "High-tech jobs"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://step.ukaea.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2040",
+      "description": "Spherical Tokamak for Energy Production (STEP) \u2014 UK's prototype fusion power plant at West Burton C. UKAEA leading. First fusion power plant designed to put electricity on the grid. Major procurement programme underway.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Site Confirmed",
+          "date": "2024"
+        },
+        {
+          "label": "Procurement Programme",
+          "date": "2027"
+        }
+      ]
+    },
+    {
+      "id": "reg-em-030",
+      "title": "Rolls-Royce Derby \u2014 Aerospace & SMR Campus Investment",
+      "sector": "energy",
+      "subSector": "nuclear",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Derby",
+        "area": "Sinfin / Raynesway"
+      },
+      "value": 1000000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 private / ATFP government grants",
+      "keyDrivers": [
+        "SMR nuclear programme",
+        "Aerospace R&D",
+        "Advanced manufacturing",
+        "Jobs"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.rolls-royce.com",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2035",
+      "description": "Rolls-Royce Derby campus investment across SMR factory (Sinfin) and aerospace manufacturing (Raynesway). ATFP-backed advanced manufacturing expansion. Multiple active procurement packages.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-em-031",
+      "title": "Hinckley National Rail Freight Interchange (HNRFI)",
+      "sector": "rail",
+      "subSector": "rail-freight",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Hinckley and Bosworth",
+        "area": "Hinckley"
+      },
+      "value": 600000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Tritax Symmetry / private",
+      "keyDrivers": [
+        "Rail freight growth",
+        "Logistics decarbonisation",
+        "Regional employment",
+        "M69 connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.tritaxsymmetry.com/portfolio/hnrfi/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2030",
+      "description": "Nationally Significant Infrastructure Project \u2014 843-acre strategic rail freight interchange at Hinckley. DCO granted. Major logistics hub linking West Coast Main Line. Tritax Symmetry developing.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "DCO Granted",
+          "date": "2024"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "id": "reg-em-032",
+      "title": "Derby City Centre West \u2014 Station Quarter Masterplan",
+      "sector": "real-estate",
+      "subSector": "mixed-use",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Derby",
+        "area": "City Centre West"
+      },
+      "value": 400000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Derby City Council / Levelling Up",
+      "keyDrivers": [
+        "City centre living",
+        "Station connectivity",
+        "Commercial regeneration",
+        "HS2 legacy"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": "https://www.derby.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Comprehensive masterplan for Derby City Centre West linking the railway station to the city centre. Hotel, residential, office, and public realm investment supported by Levelling Up and city council.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-em-033",
+      "title": "Grantham Southern Relief Road",
+      "sector": "highways",
+      "subSector": "local-roads",
+      "region": "east-midlands",
+      "location": {
+        "borough": "South Kesteven",
+        "area": "Grantham"
+      },
+      "value": 220000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Part funded \u2014 Lincolnshire CC / HMG growth funding",
+      "keyDrivers": [
+        "Growth enablement",
+        "Congestion relief",
+        "GSTC housing delivery",
+        "Industrial access"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.lincolnshire.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2029",
+      "description": "Relief road to the south of Grantham enabling major housing growth and relieving the A1/A52 junction. Lincolnshire County Council scheme backed by growth funding.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Procurement",
+          "date": "2026"
+        },
+        {
+          "label": "Completion",
+          "date": "2029"
+        }
+      ]
+    },
+    {
+      "id": "reg-em-034",
+      "title": "East Midlands Investment Zone \u2014 Advanced Manufacturing",
+      "sector": "real-estate",
+      "subSector": "enterprise-zone",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Derby / Nottingham",
+        "area": "M1 Corridor"
+      },
+      "value": 500000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 HMRC Investment Zone designation",
+      "keyDrivers": [
+        "Advanced manufacturing",
+        "Life sciences",
+        "Net Zero industry",
+        "EV supply chain"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://www.gov.uk/government/publications/investment-zones",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2035",
+      "description": "Government Investment Zone for East Midlands focused on advanced manufacturing and clean energy along the M1 corridor. Covers sites at Derby, Nottingham and Chesterfield.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-em-035",
+      "title": "A1 Peterborough to Blyth \u2014 Missing Links & Widening",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "east-midlands",
+      "location": {
+        "borough": "Nottinghamshire / Lincolnshire",
+        "area": "A1 Corridor"
+      },
+      "value": 800000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Unfunded \u2014 under review for RIS3",
+      "keyDrivers": [
+        "Safety",
+        "Freight reliability",
+        "Connectivity",
+        "Economic growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management"
+      ],
+      "sourceLink": "https://nationalhighways.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2028",
+      "estimatedEnd": "2034",
+      "description": "Major gaps in A1 dualling/widening between Peterborough and Blyth. National Highways assessment ongoing. Key freight corridor with known safety and capacity constraints. RIS3 consideration.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
     }
   ]
 }
