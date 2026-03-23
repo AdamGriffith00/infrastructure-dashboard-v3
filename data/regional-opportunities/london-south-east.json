@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-04",
-  "lastResearched": "2026-02-04",
+  "lastUpdated": "2026-03-23",
+  "lastResearched": "2026-03-23",
   "regions": [
     "london",
     "south-east"
@@ -3464,6 +3464,741 @@
         {
           "label": "Contract Award",
           "date": "2027-Q1"
+        }
+      ]
+    },
+    {
+      "id": "reg-lon-071",
+      "title": "HS2 Old Oak Common \u2014 Station & Above-Station Development",
+      "sector": "rail",
+      "subSector": "hs2-stations",
+      "region": "london",
+      "location": {
+        "borough": "Hammersmith and Fulham",
+        "area": "Old Oak Common"
+      },
+      "value": 4500000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 HS2 Ltd / OPDC",
+      "keyDrivers": [
+        "HS2 Phase 1",
+        "UK's largest new station",
+        "Old Oak regeneration",
+        "Crossrail interchange"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://oldoakpark.london.gov.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2021",
+      "estimatedEnd": "2030",
+      "description": "HS2 Old Oak Common station \u2014 the UK's largest new station, serving 250,000 passengers daily. Active construction. Interchange with Crossrail/Elizabeth Line, Chiltern, and GWR. Above-station development platform by OPDC.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Station Excavation",
+          "date": "2024"
+        },
+        {
+          "label": "Station Opening",
+          "date": "2028"
+        },
+        {
+          "label": "Above-Station Dev",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-lon-072",
+      "title": "TfL Piccadilly Line Upgrade (PLU)",
+      "sector": "rail",
+      "subSector": "metro",
+      "region": "london",
+      "location": {
+        "borough": "Multiple",
+        "area": "Piccadilly Line"
+      },
+      "value": 900000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 TfL / DfT Mayor's Settlement",
+      "keyDrivers": [
+        "Capacity uplift",
+        "New trains",
+        "CBTC signalling",
+        "Heathrow connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://tfl.gov.uk/modes/tube/piccadilly-line",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2030",
+      "description": "Piccadilly Line Upgrade: 94 new Siemens Inspiro trains replacing 1970s stock, CBTC moving-block signalling. Active delivery. 60% capacity uplift. Heathrow Terminal 5 and major London nodes.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "First Trains Delivered",
+          "date": "2025"
+        },
+        {
+          "label": "Full Fleet",
+          "date": "2029"
+        },
+        {
+          "label": "CBTC Live",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-lon-073",
+      "title": "Bakerloo Line Extension \u2014 Lewisham & Bromley",
+      "sector": "rail",
+      "subSector": "metro",
+      "region": "london",
+      "location": {
+        "borough": "Lewisham / Bromley",
+        "area": "Elephant & Castle to Lewisham"
+      },
+      "value": 5000000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "no-money-not-ready",
+      "fundingStatus": "Planned \u2014 TfL / GLA. Unfunded. Safeguarding maintained.",
+      "keyDrivers": [
+        "South London regeneration",
+        "Housing unlocking",
+        "Lewisham connectivity",
+        "TfL growth"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Transport Planning"
+      ],
+      "sourceLink": "https://tfl.gov.uk/travel-information/improvements-and-projects/bakerloo-line-extension",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2030",
+      "estimatedEnd": "2038",
+      "description": "Bakerloo Line Extension from Elephant & Castle to New Cross Gate and Lewisham. TfL safeguarding maintained. Awaiting funding agreement with DfT. Would unlock 25,000+ new homes.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Funding Decision Needed",
+          "date": "2027"
+        },
+        {
+          "label": "Anticipated Start",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-074",
+      "title": "Gatwick Airport \u2014 Northern Runway Construction Programme",
+      "sector": "aviation",
+      "subSector": "regional-airports",
+      "region": "south-east",
+      "location": {
+        "borough": "Crawley",
+        "area": "Gatwick Airport"
+      },
+      "value": 2500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Gatwick Airport Ltd (private). DCO approved Sept 2025.",
+      "keyDrivers": [
+        "Second runway",
+        "Capacity",
+        "South East connectivity",
+        "Jobs"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.gatwickairport.com/northernrunway",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2034",
+      "description": "Northern Runway major construction programme following DCO approval September 2025. Major civils, airside infrastructure, new terminal capacity. Peak spend \u00a3400m/year during construction.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "DCO Approved",
+          "date": "2025-Q3"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        },
+        {
+          "label": "Operational",
+          "date": "2034"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-075",
+      "title": "Thames Valley Data Centre Corridor \u2014 Microsoft & Hyperscale",
+      "sector": "data-centres",
+      "subSector": "hyperscale",
+      "region": "south-east",
+      "location": {
+        "borough": "Slough / Windsor / Reading",
+        "area": "Thames Valley"
+      },
+      "value": 3000000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Microsoft, AWS, CyrusOne, Vantage (private)",
+      "keyDrivers": [
+        "AI compute",
+        "Cloud infrastructure",
+        "Thames Valley power demand",
+        "Grid reinforcement"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.datacentermap.com/united-kingdom/slough/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2023",
+      "estimatedEnd": "2030",
+      "description": "Concentration of hyperscale data centres in the Thames Valley corridor. Microsoft Azure, AWS, CyrusOne, and Vantage all expanding. Power demand driving major grid reinforcement by UKPN. Multiple active construction phases.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Multiple Phases Active",
+          "date": "2024\u20132030"
+        }
+      ]
+    },
+    {
+      "id": "reg-lon-076",
+      "title": "King's Cross & Euston Data Centre & Digital Infrastructure",
+      "sector": "data-centres",
+      "subSector": "colocation",
+      "region": "london",
+      "location": {
+        "borough": "Camden",
+        "area": "King's Cross / Euston"
+      },
+      "value": 600000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 private operators / Network Rail",
+      "keyDrivers": [
+        "AI growth",
+        "HS2 Euston proximity",
+        "Urban DC density",
+        "Subsea cables"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.kcxi.london",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2030",
+      "description": "Data centre and digital infrastructure investment in the King's Cross/Euston corridor. HS2 Euston proximity driving tech cluster. Multiple colocation operators expanding capacity.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-se-077",
+      "title": "Kent & Sussex Data Centre Expansion \u2014 Colt/Ark Novatech",
+      "sector": "data-centres",
+      "subSector": "colocation",
+      "region": "south-east",
+      "location": {
+        "borough": "Tonbridge / Crawley",
+        "area": "Kent & West Sussex"
+      },
+      "value": 400000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 private operators",
+      "keyDrivers": [
+        "AI workloads",
+        "Low-latency London edge",
+        "Renewable energy access",
+        "Campus expansion"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.arkdatacentres.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2024",
+      "estimatedEnd": "2028",
+      "description": "Data centre campus expansion at Tonbridge (Colt) and Crawley (Ark Novatech). London edge computing driving demand. Renewable energy sourcing and campus infrastructure investment.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-se-078",
+      "title": "M25 Junction 10 Improvements \u2014 A3 Wisley Interchange",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "south-east",
+      "location": {
+        "borough": "Surrey",
+        "area": "Wisley / Ripley"
+      },
+      "value": 260000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 National Highways RIS3",
+      "keyDrivers": [
+        "Congestion relief",
+        "Safety",
+        "South East growth",
+        "A3 corridor"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor",
+        "Programme Advisory"
+      ],
+      "sourceLink": "https://nationalhighways.co.uk/our-roads/m25-junction-10/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2028",
+      "description": "Major redesign of M25 Junction 10 at A3 Wisley \u2014 one of the most congested junctions in the UK. National Highways RIS3 scheme. Procurement underway.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Procurement Launch",
+          "date": "2025"
+        },
+        {
+          "label": "Construction",
+          "date": "2026"
+        },
+        {
+          "label": "Completion",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-079",
+      "title": "A21 Tonbridge to Pembury Dualling",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "south-east",
+      "location": {
+        "borough": "Tunbridge Wells",
+        "area": "A21 Corridor"
+      },
+      "value": 250000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 National Highways RIS3",
+      "keyDrivers": [
+        "Safety",
+        "Capacity",
+        "Kent growth",
+        "Tunbridge Wells connectivity"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://nationalhighways.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2030",
+      "description": "Dualling of the A21 between Tonbridge and Pembury. National Highways RIS3 scheme addressing a longstanding single-carriageway bottleneck on a major Kent arterial route.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Construction Start",
+          "date": "2026"
+        },
+        {
+          "label": "Completion",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-080",
+      "title": "Lower Thames Crossing \u2014 Southern Approach Roads (A2/M2)",
+      "sector": "highways",
+      "subSector": "trunk-roads",
+      "region": "south-east",
+      "location": {
+        "borough": "Gravesham / Medway",
+        "area": "A2 / M2 Corridor"
+      },
+      "value": 800000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 National Highways (part of LTC programme)",
+      "keyDrivers": [
+        "Freight connectivity",
+        "Port access",
+        "Kent growth",
+        "M2/A2 relief"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://nationalhighways.co.uk/our-roads/lower-thames-crossing/",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2032",
+      "description": "Southern approach roads and A2/M2 connections for the Lower Thames Crossing. Integral to the LTC DCO programme. Major civils and junction upgrades on the Kent side.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "DCO Decision Expected",
+          "date": "2026"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2027"
+        },
+        {
+          "label": "Completion",
+          "date": "2032"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-081",
+      "title": "National Grid \u2014 South East Transmission Reinforcement (SETR)",
+      "sector": "energy",
+      "subSector": "electricity-transmission",
+      "region": "south-east",
+      "location": {
+        "borough": "Surrey / Kent / East Sussex",
+        "area": "SE Transmission Corridor"
+      },
+      "value": 1500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Secured \u2014 National Grid RIIO-T2/T3 / Ofgem",
+      "keyDrivers": [
+        "Offshore wind connection",
+        "Data centre demand",
+        "EV charging",
+        "Net Zero 2030"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.nationalgrid.com/electricity-transmission",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2032",
+      "description": "South East transmission reinforcement to handle growing demand from data centres, EVs, and heat pumps, plus offshore wind export from the North Sea. NGET RIIO-T2 and start of T3 programme.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-lon-082",
+      "title": "UK Power Networks \u2014 London RIIO-ED2 Smart Grid Programme",
+      "sector": "energy",
+      "subSector": "electricity-distribution",
+      "region": "london",
+      "location": {
+        "borough": "Multiple (London-wide)",
+        "area": "London Distribution Network"
+      },
+      "value": 4500000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Ofgem RIIO-ED2 Final Determination 2022",
+      "keyDrivers": [
+        "EV charging infrastructure",
+        "Heat pump demand",
+        "Solar connections",
+        "Network resilience"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "P3M"
+      ],
+      "sourceLink": "https://www.ukpowernetworks.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2023",
+      "estimatedEnd": "2028",
+      "description": "UKPN RIIO-ED2 London distribution programme. \u00a34.5bn over 2023-2028. Major EV infrastructure rollout, network reinforcement, smart grid upgrades. Multiple NEC-based supply chain contracts active.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "RIIO-ED2 Start",
+          "date": "2023"
+        },
+        {
+          "label": "Midpoint Review",
+          "date": "2026"
+        },
+        {
+          "label": "Period End",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-083",
+      "title": "Southern Water \u2014 AMP8 South East Priority Schemes",
+      "sector": "utilities",
+      "subSector": "water",
+      "region": "south-east",
+      "location": {
+        "borough": "Sussex / Hampshire / Kent",
+        "area": "Southern Water AMP8"
+      },
+      "value": 2500000000,
+      "status": "delivery",
+      "procurementStage": "Awarded",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Ofwat PR24 Final Determination Dec 2024",
+      "keyDrivers": [
+        "Storm overflow compliance",
+        "Water quality",
+        "Reservoir resilience",
+        "Environmental targets"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.southernwater.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2030",
+      "description": "Southern Water AMP8 priority schemes in South East England. Focus on storm overflow reduction, bathing water quality, and network resilience. Multiple active supply chain procurement packages under Ofwat PR24.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "AMP8 Start",
+          "date": "2025-Q2"
+        },
+        {
+          "label": "Period End",
+          "date": "2030"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-084",
+      "title": "Thameslink Programme \u2014 Southern Enhancements Phase 2",
+      "sector": "rail",
+      "subSector": "commuter-rail",
+      "region": "south-east",
+      "location": {
+        "borough": "Multiple (Kent / Sussex / Surrey)",
+        "area": "Thameslink Corridor"
+      },
+      "value": 500000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 Network Rail CP7 / DfT",
+      "keyDrivers": [
+        "Capacity",
+        "Journey time",
+        "Cross-London services",
+        "Southern franchises"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Programme Advisory",
+        "NEC Supervisor"
+      ],
+      "sourceLink": "https://www.networkrail.co.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2026",
+      "estimatedEnd": "2030",
+      "description": "Phase 2 enhancements to the Thameslink network serving Kent, Sussex, and Surrey into London. Network Rail CP7 programme including station works, track renewals, and control systems.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": []
+    },
+    {
+      "id": "reg-se-085",
+      "title": "NHS Kent & Medway \u2014 New Hospital Programme",
+      "sector": "infrastructure",
+      "subSector": "nhs-hospitals",
+      "region": "south-east",
+      "location": {
+        "borough": "Medway / Canterbury",
+        "area": "Kent & Medway"
+      },
+      "value": 900000000,
+      "status": "planning",
+      "procurementStage": "Pipeline",
+      "readiness": "has-money-not-ready",
+      "fundingStatus": "Planned \u2014 NHSE New Hospital Programme (NHP)",
+      "keyDrivers": [
+        "New Hospital Programme",
+        "Medway growth",
+        "Modern facilities",
+        "Healthcare capacity"
+      ],
+      "serviceRelevance": [
+        "Programme Advisory",
+        "Cost and Commercial Management",
+        "Project Management"
+      ],
+      "sourceLink": "https://www.kmhealthcare.nhs.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2027",
+      "estimatedEnd": "2033",
+      "description": "New Hospital Programme schemes for Kent & Medway. Includes Medway Maritime Hospital replacement and Canterbury facilities. NHSE NHP list. OBC development ongoing.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "OBC Expected",
+          "date": "2026"
+        },
+        {
+          "label": "Construction Start",
+          "date": "2028"
+        }
+      ]
+    },
+    {
+      "id": "reg-se-086",
+      "title": "Ebbsfleet Garden City \u2014 Phase 2 Infrastructure",
+      "sector": "real-estate",
+      "subSector": "housing",
+      "region": "south-east",
+      "location": {
+        "borough": "Gravesham / Dartford",
+        "area": "Ebbsfleet"
+      },
+      "value": 800000000,
+      "status": "pre-procurement",
+      "procurementStage": "Market Engagement",
+      "readiness": "ready-to-buy",
+      "fundingStatus": "Secured \u2014 Ebbsfleet Development Corporation / Homes England",
+      "keyDrivers": [
+        "Housing delivery",
+        "HS1 connectivity",
+        "Lower Thames Crossing proximity",
+        "New community"
+      ],
+      "serviceRelevance": [
+        "Cost and Commercial Management",
+        "Project Management",
+        "Employer's Agent"
+      ],
+      "sourceLink": "https://www.ebbsfleetdc.org.uk",
+      "externalTenderNote": null,
+      "projectType": "public",
+      "estimatedStart": "2025",
+      "estimatedEnd": "2035",
+      "description": "Phase 2 infrastructure delivery for Ebbsfleet Garden City \u2014 15,000 homes target. EDC-led enabling infrastructure: roads, utilities, schools, healthcare. Homes England backed.",
+      "contractAward": null,
+      "tenderDate": null,
+      "pqqDeadline": null,
+      "ittDeadline": null,
+      "keyDates": [
+        {
+          "label": "Phase 2 Infrastructure",
+          "date": "2025\u20132030"
+        },
+        {
+          "label": "Homes Target",
+          "date": "2035"
         }
       ]
     }

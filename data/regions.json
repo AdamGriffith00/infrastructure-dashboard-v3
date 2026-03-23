@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-01-14",
+  "lastUpdated": "2026-03-23",
   "regions": [
     {
       "id": "london",
       "name": "London",
       "shortName": "LON",
-      "budget2026": 18200000000,
-      "budget10Year": 115000000000,
+      "budget2026": 22000000000,
+      "budget10Year": 130000000000,
       "expectedOpportunities": 45,
-      "strategicFocus": "Major transport hubs, housing delivery, Crossrail 2",
-      "growthAreas": "East London regeneration, Thames Estuary, airport expansion"
+      "strategicFocus": "Elizabeth Line impacts, housing delivery, data centre growth, Heathrow expansion",
+      "growthAreas": "East London regeneration, Old Oak Common HS2 hub, Thames Estuary, Canary Wharf evolution"
     },
     {
       "id": "north-west",
@@ -18,8 +18,8 @@
       "budget2026": 12800000000,
       "budget10Year": 95000000000,
       "expectedOpportunities": 38,
-      "strategicFocus": "Northern Powerhouse Rail, Mass Transit, port expansion",
-      "growthAreas": "Liverpool-Manchester corridor, Preston-Blackpool"
+      "strategicFocus": "Bee Network mass transit, Sellafield decommissioning, United Utilities AMP8, HS2 Crewe Hub",
+      "growthAreas": "Greater Manchester Bee Network, Liverpool City Region Freeport, Barrow AUKUS, Cumbria energy"
     },
     {
       "id": "scotland",
@@ -28,8 +28,8 @@
       "budget2026": 8100000000,
       "budget10Year": 78000000000,
       "expectedOpportunities": 32,
-      "strategicFocus": "Renewable energy grid, rural connectivity",
-      "growthAreas": "Central Belt, Highlands renewable energy"
+      "strategicFocus": "ScotWind offshore wind, SSEN \u00a320bn grid upgrade, Green Freeports, Acorn CCS cluster",
+      "growthAreas": "Forth & Clyde Green Freeports, Aberdeen energy transition, Highland renewables, HMNB Clyde"
     },
     {
       "id": "south-east",
@@ -38,8 +38,8 @@
       "budget2026": 11400000000,
       "budget10Year": 102000000000,
       "expectedOpportunities": 41,
-      "strategicFocus": "Aviation expansion, M25 improvements",
-      "growthAreas": "Thames Gateway, Brighton-Hove corridor"
+      "strategicFocus": "Gatwick Northern Runway, Lower Thames Crossing, data centres, Southern Water AMP8",
+      "growthAreas": "Thames Gateway, Lower Thames Crossing corridor, Gatwick Diamond, M25 tech corridor"
     },
     {
       "id": "midlands",
@@ -48,8 +48,8 @@
       "budget2026": 9700000000,
       "budget10Year": 89000000000,
       "expectedOpportunities": 35,
-      "strategicFocus": "HS2 delivery, manufacturing infrastructure",
-      "growthAreas": "Birmingham-Coventry corridor"
+      "strategicFocus": "HS2 Phase 1 Birmingham delivery, EV manufacturing transition, West Midlands devolution",
+      "growthAreas": "Birmingham Curzon Street HS2 quarter, JLR EV transformation, Coventry-Solihull corridor, Black Country"
     },
     {
       "id": "wales",
@@ -58,8 +58,8 @@
       "budget2026": 5200000000,
       "budget10Year": 52000000000,
       "expectedOpportunities": 24,
-      "strategicFocus": "Rail electrification, renewable energy",
-      "growthAreas": "Cardiff Bay, Swansea Bay, North Wales"
+      "strategicFocus": "Celtic Freeport floating offshore wind, South Wales Metro, Tata Steel transition, Welsh Water AMP8",
+      "growthAreas": "Celtic Freeport (Port Talbot/Milford Haven), Cardiff regeneration, North Wales growth deal, Anglesey energy"
     },
     {
       "id": "north-east",
@@ -68,8 +68,8 @@
       "budget2026": 4800000000,
       "budget10Year": 64000000000,
       "expectedOpportunities": 28,
-      "strategicFocus": "Offshore wind, Tyne & Wear Metro",
-      "growthAreas": "Newcastle-Gateshead, Sunderland, Teesside"
+      "strategicFocus": "Teesworks Freeport, offshore wind supply chain, AI data centres, Metro modernisation",
+      "growthAreas": "Teesworks (SeAH Wind, Net Zero Teesside), Cambois AI campus, Newcastle innovation, County Durham"
     },
     {
       "id": "south-west",
@@ -78,8 +78,8 @@
       "budget2026": 6800000000,
       "budget10Year": 71000000000,
       "expectedOpportunities": 31,
-      "strategicFocus": "Nuclear energy, marine technology",
-      "growthAreas": "Bristol-Bath, Plymouth marine hub"
+      "strategicFocus": "Hinkley Point C nuclear, NDA decommissioning, Plymouth Freeport, Bristol regeneration",
+      "growthAreas": "Hinkley/Gravity Somerset cluster, Bristol Temple Quarter, Plymouth marine, Avonmouth enterprise zone"
     },
     {
       "id": "yorkshire-humber",
@@ -88,8 +88,8 @@
       "budget2026": 6500000000,
       "budget10Year": 58000000000,
       "expectedOpportunities": 26,
-      "strategicFocus": "Mass transit, flood resilience",
-      "growthAreas": "Leeds-Sheffield corridor, Humber ports"
+      "strategicFocus": "Humber offshore wind & hydrogen, battery storage cluster, West Yorkshire Mass Transit",
+      "growthAreas": "Humber Green Port, Dogger Bank supply chain, West Yorkshire Mass Transit, Leeds South Bank"
     },
     {
       "id": "east-midlands",
@@ -98,8 +98,8 @@
       "budget2026": 4200000000,
       "budget10Year": 42000000000,
       "expectedOpportunities": 18,
-      "strategicFocus": "East Midlands Airport, HS2 hub",
-      "growthAreas": "Nottingham-Derby corridor"
+      "strategicFocus": "East Midlands Freeport, Ratcliffe Energy Park, STEP Fusion, Rolls-Royce Derby investment",
+      "growthAreas": "Toton HS2 Hub & EM Freeport, Ratcliffe-on-Soar energy park, Nottingham Island Quarter, Derby"
     },
     {
       "id": "eastern",
@@ -108,8 +108,8 @@
       "budget2026": 5100000000,
       "budget10Year": 48000000000,
       "expectedOpportunities": 22,
-      "strategicFocus": "Cambridge-Oxford Arc, offshore wind",
-      "growthAreas": "Cambridge, Norwich, Ipswich"
+      "strategicFocus": "Sizewell C nuclear, East Anglia offshore wind, East West Rail, Cambridge life sciences",
+      "growthAreas": "Cambridge Biomedical Campus, Sizewell C (Suffolk), EA FOUR offshore wind, Freeport East"
     },
     {
       "id": "northern-ireland",
@@ -118,8 +118,8 @@
       "budget2026": 3200000000,
       "budget10Year": 32000000000,
       "expectedOpportunities": 14,
-      "strategicFocus": "Cross-border connectivity, renewables",
-      "growthAreas": "Belfast, Derry-Londonderry"
+      "strategicFocus": "Belfast Grand Central Station, City Deals infrastructure, A5/A6 dualling, NI Water AMP",
+      "growthAreas": "Belfast Weavers Cross, Derry/Londonderry Magee expansion, Casement Park, Mid South West City Deal"
     }
   ]
 }

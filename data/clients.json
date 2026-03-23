@@ -1,21 +1,46 @@
 {
-  "lastUpdated": "2026-01-30",
+  "lastUpdated": "2026-03-23",
   "clients": [
     {
       "id": "network-rail-eastern",
       "name": "Network Rail Eastern",
       "sector": "rail",
       "subSector": "mainline",
-      "regions": ["eastern", "east-midlands", "yorkshire-humber", "north-east"],
+      "regions": [
+        "eastern",
+        "east-midlands",
+        "yorkshire-humber",
+        "north-east"
+      ],
       "budget2026": 1800000000,
       "budget10Year": 9000000000,
       "programmes": [
-        { "name": "East Coast Main Line", "value": 3200000000, "type": "capex" },
-        { "name": "Anglia Route", "value": 2100000000, "type": "capex" },
-        { "name": "East Midlands Route", "value": 1800000000, "type": "capex" },
-        { "name": "Operations & Maintenance", "value": 1900000000, "type": "opex" }
+        {
+          "name": "East Coast Main Line",
+          "value": 3200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Anglia Route",
+          "value": 2100000000,
+          "type": "capex"
+        },
+        {
+          "name": "East Midlands Route",
+          "value": 1800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Maintenance",
+          "value": 1900000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["ECML digital signalling", "Ely area capacity", "Midland Main Line electrification"],
+      "keyProjects": [
+        "ECML digital signalling",
+        "Ely area capacity",
+        "Midland Main Line electrification"
+      ],
       "notes": "CP7 2024-2029. Covers East Anglia, East Midlands, North & East routes.",
       "source": "Network Rail CP7 Delivery Plan"
     },
@@ -24,20 +49,60 @@
       "name": "Network Rail North West & Central",
       "sector": "rail",
       "subSector": "mainline",
-      "regions": ["midlands", "north-west", "north-east"],
+      "regions": [
+        "midlands",
+        "north-west",
+        "north-east"
+      ],
       "subdivisions": {
-        "midlands": ["Birmingham", "Wolverhampton", "Coventry", "Stoke-on-Trent", "Stafford"],
-        "north-west": ["Manchester", "Liverpool", "Preston", "Blackpool", "Lancaster", "Carlisle", "Crewe", "Warrington", "Chester"]
+        "midlands": [
+          "Birmingham",
+          "Wolverhampton",
+          "Coventry",
+          "Stoke-on-Trent",
+          "Stafford"
+        ],
+        "north-west": [
+          "Manchester",
+          "Liverpool",
+          "Preston",
+          "Blackpool",
+          "Lancaster",
+          "Carlisle",
+          "Crewe",
+          "Warrington",
+          "Chester"
+        ]
       },
       "budget2026": 2200000000,
       "budget10Year": 11000000000,
       "programmes": [
-        { "name": "West Coast Main Line", "value": 4500000000, "type": "capex" },
-        { "name": "West Midlands Route", "value": 2800000000, "type": "capex" },
-        { "name": "North West Route", "value": 2200000000, "type": "capex" },
-        { "name": "Operations & Maintenance", "value": 1500000000, "type": "opex" }
+        {
+          "name": "West Coast Main Line",
+          "value": 4500000000,
+          "type": "capex"
+        },
+        {
+          "name": "West Midlands Route",
+          "value": 2800000000,
+          "type": "capex"
+        },
+        {
+          "name": "North West Route",
+          "value": 2200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Maintenance",
+          "value": 1500000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Transpennine Route Upgrade", "West Coast partnership works", "Manchester rail hub"],
+      "keyProjects": [
+        "Transpennine Route Upgrade",
+        "West Coast partnership works",
+        "Manchester rail hub"
+      ],
       "notes": "CP7 2024-2029. Major HS2 interface works.",
       "source": "Network Rail CP7 Delivery Plan"
     },
@@ -46,16 +111,38 @@
       "name": "Network Rail Scotland",
       "sector": "rail",
       "subSector": "mainline",
-      "regions": ["scotland"],
+      "regions": [
+        "scotland"
+      ],
       "budget2026": 1100000000,
       "budget10Year": 5500000000,
       "programmes": [
-        { "name": "ScotRail Infrastructure", "value": 2800000000, "type": "capex" },
-        { "name": "Highland Main Line", "value": 800000000, "type": "capex" },
-        { "name": "Edinburgh-Glasgow improvements", "value": 1200000000, "type": "capex" },
-        { "name": "Operations & Maintenance", "value": 700000000, "type": "opex" }
+        {
+          "name": "ScotRail Infrastructure",
+          "value": 2800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Highland Main Line",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Edinburgh-Glasgow improvements",
+          "value": 1200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Maintenance",
+          "value": 700000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Levenmouth reopening", "East Kilbride enhancement", "Inverness-Aberdeen improvements"],
+      "keyProjects": [
+        "Levenmouth reopening",
+        "East Kilbride enhancement",
+        "Inverness-Aberdeen improvements"
+      ],
       "notes": "CP7 2024-2029. Devolved funding via Transport Scotland.",
       "source": "Network Rail Scotland Route Strategic Plan"
     },
@@ -64,20 +151,68 @@
       "name": "Network Rail Southern",
       "sector": "rail",
       "subSector": "mainline",
-      "regions": ["london", "south-east"],
+      "regions": [
+        "london",
+        "south-east"
+      ],
       "subdivisions": {
-        "london": ["Southwark", "Lambeth", "Lewisham", "Greenwich", "Bromley", "Croydon", "Wandsworth", "City of Westminster", "Tower Hamlets"],
-        "south-east": ["Brighton and Hove", "Worthing", "Eastbourne", "Hastings", "Ashford", "Canterbury", "Dover", "Maidstone", "Tunbridge Wells", "Guildford", "Woking", "Southampton", "Portsmouth", "Basingstoke"]
+        "london": [
+          "Southwark",
+          "Lambeth",
+          "Lewisham",
+          "Greenwich",
+          "Bromley",
+          "Croydon",
+          "Wandsworth",
+          "City of Westminster",
+          "Tower Hamlets"
+        ],
+        "south-east": [
+          "Brighton and Hove",
+          "Worthing",
+          "Eastbourne",
+          "Hastings",
+          "Ashford",
+          "Canterbury",
+          "Dover",
+          "Maidstone",
+          "Tunbridge Wells",
+          "Guildford",
+          "Woking",
+          "Southampton",
+          "Portsmouth",
+          "Basingstoke"
+        ]
       },
       "budget2026": 2000000000,
       "budget10Year": 10000000000,
       "programmes": [
-        { "name": "Sussex Route", "value": 2800000000, "type": "capex" },
-        { "name": "Kent Route", "value": 2500000000, "type": "capex" },
-        { "name": "Wessex Route", "value": 2200000000, "type": "capex" },
-        { "name": "Operations & Maintenance", "value": 2500000000, "type": "opex" }
+        {
+          "name": "Sussex Route",
+          "value": 2800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Kent Route",
+          "value": 2500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Wessex Route",
+          "value": 2200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Maintenance",
+          "value": 2500000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Brighton Main Line upgrade", "Croydon area remodelling", "Southampton capacity"],
+      "keyProjects": [
+        "Brighton Main Line upgrade",
+        "Croydon area remodelling",
+        "Southampton capacity"
+      ],
       "notes": "CP7 2024-2029. Dense commuter network.",
       "source": "Network Rail CP7 Delivery Plan"
     },
@@ -86,21 +221,64 @@
       "name": "Network Rail Wales & Western",
       "sector": "rail",
       "subSector": "mainline",
-      "regions": ["wales", "south-west", "london"],
+      "regions": [
+        "wales",
+        "south-west",
+        "london"
+      ],
       "subdivisions": {
-        "london": ["Ealing", "Hillingdon", "Hounslow", "City of Westminster"],
-        "south-west": ["Bristol, City of", "Bath and North East Somerset", "Plymouth", "Exeter", "Swindon", "Taunton Deane"],
-        "wales": ["Cardiff", "Newport", "Swansea", "Bridgend", "Rhondda Cynon Taf", "Wrexham"]
+        "london": [
+          "Ealing",
+          "Hillingdon",
+          "Hounslow",
+          "City of Westminster"
+        ],
+        "south-west": [
+          "Bristol, City of",
+          "Bath and North East Somerset",
+          "Plymouth",
+          "Exeter",
+          "Swindon",
+          "Taunton Deane"
+        ],
+        "wales": [
+          "Cardiff",
+          "Newport",
+          "Swansea",
+          "Bridgend",
+          "Rhondda Cynon Taf",
+          "Wrexham"
+        ]
       },
       "budget2026": 1700000000,
       "budget10Year": 8500000000,
       "programmes": [
-        { "name": "Great Western Main Line", "value": 3200000000, "type": "capex" },
-        { "name": "Wales Route", "value": 2100000000, "type": "capex" },
-        { "name": "Western Route", "value": 1800000000, "type": "capex" },
-        { "name": "Operations & Maintenance", "value": 1400000000, "type": "opex" }
+        {
+          "name": "Great Western Main Line",
+          "value": 3200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Wales Route",
+          "value": 2100000000,
+          "type": "capex"
+        },
+        {
+          "name": "Western Route",
+          "value": 1800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Maintenance",
+          "value": 1400000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Bristol East Junction", "Cardiff area signalling", "Devon resilience"],
+      "keyProjects": [
+        "Bristol East Junction",
+        "Cardiff area signalling",
+        "Devon resilience"
+      ],
       "notes": "CP7 2024-2029. Key GWR franchise interface.",
       "source": "Network Rail CP7 Delivery Plan"
     },
@@ -109,43 +287,128 @@
       "name": "HS2 Ltd",
       "sector": "rail",
       "subSector": "high-speed",
-      "regions": ["london", "midlands", "north-west"],
-      "subdivisions": {
-        "london": ["Hillingdon", "Ealing", "Brent", "Camden", "City of Westminster"],
-        "midlands": ["Birmingham", "Solihull", "North Warwickshire", "Lichfield", "Tamworth"],
-        "north-west": ["Manchester", "Trafford", "Stockport", "Cheshire East", "Crewe and Nantwich"]
-      },
-      "budget2026": 6300000000,
-      "budget10Year": 56000000000,
-      "programmes": [
-        { "name": "Phase 1 (London-Birmingham)", "value": 49000000000, "type": "capex", "description": "London Euston to Birmingham Curzon Street. £40.5bn spent to April 2025, £25.3bn allocated 2026-2030." },
-        { "name": "Euston Station & Approach", "value": 5000000000, "type": "capex", "description": "Tunnelling to Euston confirmed Nov 2024 (not terminating at Old Oak Common)." },
-        { "name": "Old Oak Common Station", "value": 2800000000, "type": "capex" },
-        { "name": "Birmingham Curzon Street", "value": 1500000000, "type": "capex" },
-        { "name": "Birmingham Interchange", "value": 700000000, "type": "capex" }
+      "regions": [
+        "london",
+        "midlands",
+        "north-west"
       ],
-      "keyProjects": ["Chiltern tunnels (complete)", "Colne Valley Viaduct", "Old Oak Common station", "Birmingham Curzon Street", "Bromford tunnel (breakthrough May 2025)", "Euston approach tunnels (TBM launch spring 2026)"],
-      "notes": "Phase 1 only (London-Birmingham). All 23 miles deep-bore tunnels excavated. 70% earthworks complete. 350 active worksites. £3bn rail systems contracts awarded Nov 2024. Civil engineering completing 2026, then track/signalling. £10bn economic impact to West Midlands over 10 years.",
-      "source": "HS2 6-Monthly Report to Parliament July 2025, DfT Jan 2026"
+      "subdivisions": {
+        "london": [
+          "Hillingdon",
+          "Ealing",
+          "Brent",
+          "Camden",
+          "City of Westminster"
+        ],
+        "midlands": [
+          "Birmingham",
+          "Solihull",
+          "North Warwickshire",
+          "Lichfield",
+          "Tamworth"
+        ],
+        "north-west": [
+          "Manchester",
+          "Trafford",
+          "Stockport",
+          "Cheshire East",
+          "Crewe and Nantwich"
+        ]
+      },
+      "budget2026": 5000000000,
+      "budget10Year": 37000000000,
+      "programmes": [
+        {
+          "name": "Phase 1 (London-Birmingham)",
+          "value": 49000000000,
+          "type": "capex",
+          "description": "London Euston to Birmingham Curzon Street. \u00a340.5bn spent to April 2025, \u00a325.3bn allocated 2026-2030."
+        },
+        {
+          "name": "Euston Station & Approach",
+          "value": 5000000000,
+          "type": "capex",
+          "description": "Tunnelling to Euston confirmed Nov 2024 (not terminating at Old Oak Common)."
+        },
+        {
+          "name": "Old Oak Common Station",
+          "value": 2800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Birmingham Curzon Street",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Birmingham Interchange",
+          "value": 700000000,
+          "type": "capex"
+        }
+      ],
+      "keyProjects": [
+        "Chiltern tunnels (complete)",
+        "Colne Valley Viaduct",
+        "Old Oak Common station",
+        "Birmingham Curzon Street",
+        "Bromford tunnel (breakthrough May 2025)",
+        "Euston approach tunnels (TBM launch spring 2026)"
+      ],
+      "notes": "Phase 1 only (London-Birmingham). All 23 miles deep-bore tunnels excavated. 70% earthworks complete. 350 active worksites. \u00a33bn rail systems contracts awarded Nov 2024. Civil engineering completing 2026, then track/signalling. \u00a310bn economic impact to West Midlands over 10 years.",
+      "source": "HS2 Ltd Phase 1 Spending Review Settlement 2025, DfT Jan 2026 \u2013 Phase 1 only (London\u2013Old Oak Common\u2013Birmingham Curzon Street\u2013Birmingham Interchange). Phase 2 Eastern Leg and Manchester cancelled Nov 2023.",
+      "description": "HS2 Phase 1 only. Active construction from Euston/Old Oak Common to Birmingham Curzon Street and Birmingham Interchange. Peak construction spend 2025-2028."
     },
     {
       "id": "tfl",
       "name": "Transport for London",
       "sector": "rail",
       "subSector": "metro",
-      "regions": ["london"],
+      "regions": [
+        "london"
+      ],
       "budget2026": 2560000000,
       "budget10Year": 12800000000,
       "programmes": [
-        { "name": "Piccadilly Line Upgrade", "value": 2900000000, "type": "capex" },
-        { "name": "DLR Rolling Stock", "value": 800000000, "type": "capex" },
-        { "name": "Bakerloo Line Extension", "value": 3500000000, "type": "capex" },
-        { "name": "Station Upgrades", "value": 1800000000, "type": "capex" },
-        { "name": "Track & Signalling Renewals", "value": 2400000000, "type": "capex" },
-        { "name": "Elizabeth Line enhancements", "value": 1400000000, "type": "capex" }
+        {
+          "name": "Piccadilly Line Upgrade",
+          "value": 2900000000,
+          "type": "capex"
+        },
+        {
+          "name": "DLR Rolling Stock",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Bakerloo Line Extension",
+          "value": 3500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Station Upgrades",
+          "value": 1800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Track & Signalling Renewals",
+          "value": 2400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Elizabeth Line enhancements",
+          "value": 1400000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Piccadilly Line new trains (H2 2026 entry)", "Bank station upgrade", "DLR extension to Thamesmead (DCO application 2026)", "Four Lines Modernisation", "New tram fleet procurement", "Silvertown Tunnel (opened 2025)"],
-      "notes": "£2.2bn capital settlement 2026-2030 (largest multi-year settlement in decade). Piccadilly Line trains entering service H2 2026. DLR Thamesmead construction from 2027. New signalling on 40% of Tube network.",
+      "keyProjects": [
+        "Piccadilly Line new trains (H2 2026 entry)",
+        "Bank station upgrade",
+        "DLR extension to Thamesmead (DCO application 2026)",
+        "Four Lines Modernisation",
+        "New tram fleet procurement",
+        "Silvertown Tunnel (opened 2025)"
+      ],
+      "notes": "\u00a32.2bn capital settlement 2026-2030 (largest multi-year settlement in decade). Piccadilly Line trains entering service H2 2026. DLR Thamesmead construction from 2027. New signalling on 40% of Tube network.",
       "source": "TfL Mayor's Budget 2026/27, DfT Spending Review 2025"
     },
     {
@@ -153,15 +416,31 @@
       "name": "Thames Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["london", "south-east", "south-west"],
+      "regions": [
+        "london",
+        "south-east",
+        "south-west"
+      ],
       "budget2026": 3960000000,
       "budget10Year": 19800000000,
       "amp8Total": 19800000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 9200000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 10600000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 9200000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 10600000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Tideway completion", "London Ring Main", "Storm overflow improvements"],
+      "keyProjects": [
+        "Tideway completion",
+        "London Ring Main",
+        "Storm overflow improvements"
+      ],
       "notes": "AMP8 2025-2030. Largest water company by customer base.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -170,20 +449,47 @@
       "name": "Heathrow Airport",
       "sector": "aviation",
       "subSector": "major-airports",
-      "regions": ["london"],
+      "regions": [
+        "london"
+      ],
       "subdivisions": {
-        "london": ["Hillingdon", "Hounslow"]
+        "london": [
+          "Hillingdon",
+          "Hounslow"
+        ]
       },
       "budget2026": 1400000000,
       "budget10Year": 14000000000,
       "programmes": [
-        { "name": "Third Runway (R3)", "value": 8000000000, "type": "capex" },
-        { "name": "Terminal Development", "value": 3500000000, "type": "capex" },
-        { "name": "Airfield Infrastructure", "value": 1500000000, "type": "capex" },
-        { "name": "Sustainability & Net Zero", "value": 1000000000, "type": "capex" }
+        {
+          "name": "Third Runway (R3)",
+          "value": 8000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Terminal Development",
+          "value": 3500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Infrastructure",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability & Net Zero",
+          "value": 1000000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Third runway expansion", "Terminal 4 redevelopment", "Terminal 2 new baggage system", "Surface access improvements", "Multi-storey car park T4"],
-      "notes": "UK's largest airport. £2.3bn accelerated investment 2025-2026 (£1.05bn 2025, £1.29bn 2026) - largest private sector capital investment in UK transport. Third runway confirmed Nov 2025. Draft ANPS summer 2026. DCO 2027-29. New runway 2035. 80m pax target.",
+      "keyProjects": [
+        "Third runway expansion",
+        "Terminal 4 redevelopment",
+        "Terminal 2 new baggage system",
+        "Surface access improvements",
+        "Multi-storey car park T4"
+      ],
+      "notes": "UK's largest airport. \u00a32.3bn accelerated investment 2025-2026 (\u00a31.05bn 2025, \u00a31.29bn 2026) - largest private sector capital investment in UK transport. Third runway confirmed Nov 2025. Draft ANPS summer 2026. DCO 2027-29. New runway 2035. 80m pax target.",
       "source": "Heathrow Investment Plan Jan 2026, DfT ANPS Update Nov 2025"
     },
     {
@@ -191,24 +497,92 @@
       "name": "Bee Network (Transport for Greater Manchester)",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "subdivisions": {
-        "north-west": ["Manchester", "Salford", "Trafford", "Stockport", "Tameside", "Oldham", "Rochdale", "Bury", "Bolton", "Wigan"]
+        "north-west": [
+          "Manchester",
+          "Salford",
+          "Trafford",
+          "Stockport",
+          "Tameside",
+          "Oldham",
+          "Rochdale",
+          "Bury",
+          "Bolton",
+          "Wigan"
+        ]
       },
       "budget2026": 1200000000,
       "budget10Year": 6500000000,
       "programmes": [
-        { "name": "Bus Franchising Operations", "value": 1200000000, "type": "opex", "description": "First franchised bus network outside London since 1986. 500+ yellow buses." },
-        { "name": "Bus Fleet & Depots", "value": 600000000, "type": "capex", "description": "New electric bus fleet, depot electrification, charging infrastructure." },
-        { "name": "Metrolink Renewals & Fleet", "value": 800000000, "type": "capex", "description": "27 new Urbos 100 trams, track renewals, power upgrades." },
-        { "name": "Metrolink Extensions", "value": 1400000000, "type": "capex", "description": "Stockport, Oldham town centre, potential Airport Western Link." },
-        { "name": "Active Travel Network", "value": 650000000, "type": "capex", "description": "1,800 miles of cycling/walking routes. Bee Network Cycleway." },
-        { "name": "Rail Integration", "value": 450000000, "type": "capex", "description": "Station improvements, integrated ticketing, rail devolution prep." },
-        { "name": "Interchange & Hubs", "value": 350000000, "type": "capex", "description": "Wythenshawe, Stockport, Bolton interchanges. Park & Ride expansion." },
-        { "name": "Digital & Ticketing", "value": 250000000, "type": "capex", "description": "Integrated ticketing system, real-time info, contactless payments." },
-        { "name": "Streets for All", "value": 400000000, "type": "capex", "description": "Bus priority corridors, traffic management, pedestrianisation." },
-        { "name": "EV Charging Network", "value": 200000000, "type": "capex", "description": "Public charging infrastructure across Greater Manchester." },
-        { "name": "Zero Emission Bus Regional Areas", "value": 200000000, "type": "capex", "description": "ZEBRA funding for 170 electric buses." }
+        {
+          "name": "Bus Franchising Operations",
+          "value": 1200000000,
+          "type": "opex",
+          "description": "First franchised bus network outside London since 1986. 500+ yellow buses."
+        },
+        {
+          "name": "Bus Fleet & Depots",
+          "value": 600000000,
+          "type": "capex",
+          "description": "New electric bus fleet, depot electrification, charging infrastructure."
+        },
+        {
+          "name": "Metrolink Renewals & Fleet",
+          "value": 800000000,
+          "type": "capex",
+          "description": "27 new Urbos 100 trams, track renewals, power upgrades."
+        },
+        {
+          "name": "Metrolink Extensions",
+          "value": 1400000000,
+          "type": "capex",
+          "description": "Stockport, Oldham town centre, potential Airport Western Link."
+        },
+        {
+          "name": "Active Travel Network",
+          "value": 650000000,
+          "type": "capex",
+          "description": "1,800 miles of cycling/walking routes. Bee Network Cycleway."
+        },
+        {
+          "name": "Rail Integration",
+          "value": 450000000,
+          "type": "capex",
+          "description": "Station improvements, integrated ticketing, rail devolution prep."
+        },
+        {
+          "name": "Interchange & Hubs",
+          "value": 350000000,
+          "type": "capex",
+          "description": "Wythenshawe, Stockport, Bolton interchanges. Park & Ride expansion."
+        },
+        {
+          "name": "Digital & Ticketing",
+          "value": 250000000,
+          "type": "capex",
+          "description": "Integrated ticketing system, real-time info, contactless payments."
+        },
+        {
+          "name": "Streets for All",
+          "value": 400000000,
+          "type": "capex",
+          "description": "Bus priority corridors, traffic management, pedestrianisation."
+        },
+        {
+          "name": "EV Charging Network",
+          "value": 200000000,
+          "type": "capex",
+          "description": "Public charging infrastructure across Greater Manchester."
+        },
+        {
+          "name": "Zero Emission Bus Regional Areas",
+          "value": 200000000,
+          "type": "capex",
+          "description": "ZEBRA funding for 170 electric buses."
+        }
       ],
       "keyProjects": [
         "Bus franchising rollout (complete Jan 2025)",
@@ -220,7 +594,7 @@
         "Airport Western Link study",
         "Oldham Metrolink town centre extension"
       ],
-      "notes": "UK's largest integrated transport network outside London. Bee Network launched 2024 - first bus franchising since 1986. CRSTS1 £1.07bn (2022-2027), CRSTS2 £2.5bn (2027-2032). NPR Liverpool-Manchester new line will pass through GM with 3 new stations. £115m Manchester Airport station expansion confirmed.",
+      "notes": "UK's largest integrated transport network outside London. Bee Network launched 2024 - first bus franchising since 1986. CRSTS1 \u00a31.07bn (2022-2027), CRSTS2 \u00a32.5bn (2027-2032). NPR Liverpool-Manchester new line will pass through GM with 3 new stations. \u00a3115m Manchester Airport station expansion confirmed.",
       "source": "GMCA Bee Network Delivery Plan 2024, DfT NPR Announcement Jan 2026"
     },
     {
@@ -228,19 +602,48 @@
       "name": "West Midlands Metro",
       "sector": "rail",
       "subSector": "metro",
-      "regions": ["midlands"],
+      "regions": [
+        "midlands"
+      ],
       "subdivisions": {
-        "midlands": ["Birmingham", "Wolverhampton", "Sandwell", "Dudley", "Walsall", "Solihull"]
+        "midlands": [
+          "Birmingham",
+          "Wolverhampton",
+          "Sandwell",
+          "Dudley",
+          "Walsall",
+          "Solihull"
+        ]
       },
       "budget2026": 380000000,
       "budget10Year": 1900000000,
       "programmes": [
-        { "name": "Wednesbury-Brierley Hill Extension", "value": 450000000, "type": "capex" },
-        { "name": "Birmingham Eastside Extension", "value": 280000000, "type": "capex" },
-        { "name": "Fleet Expansion", "value": 150000000, "type": "capex" },
-        { "name": "HS2 Interchange connectivity", "value": 520000000, "type": "capex" }
+        {
+          "name": "Wednesbury-Brierley Hill Extension",
+          "value": 450000000,
+          "type": "capex"
+        },
+        {
+          "name": "Birmingham Eastside Extension",
+          "value": 280000000,
+          "type": "capex"
+        },
+        {
+          "name": "Fleet Expansion",
+          "value": 150000000,
+          "type": "capex"
+        },
+        {
+          "name": "HS2 Interchange connectivity",
+          "value": 520000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Wednesbury to Brierley Hill", "Eastside extension to HS2", "Network electrification"],
+      "keyProjects": [
+        "Wednesbury to Brierley Hill",
+        "Eastside extension to HS2",
+        "Network electrification"
+      ],
       "notes": "CRSTS funding. Key HS2 interchange connectivity.",
       "source": "WMCA Transport Delivery Plan"
     },
@@ -249,24 +652,89 @@
       "name": "North East Combined Authority Transport (Nexus)",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["north-east"],
+      "regions": [
+        "north-east"
+      ],
       "subdivisions": {
-        "north-east": ["Newcastle upon Tyne", "Gateshead", "North Tyneside", "South Tyneside", "Sunderland", "Durham", "Northumberland"]
+        "north-east": [
+          "Newcastle upon Tyne",
+          "Gateshead",
+          "North Tyneside",
+          "South Tyneside",
+          "Sunderland",
+          "Durham",
+          "Northumberland"
+        ]
       },
       "budget2026": 480000000,
       "budget10Year": 3200000000,
       "programmes": [
-        { "name": "Metro New Fleet", "value": 600000000, "type": "capex", "description": "46 new Stadler trains. Battery capability for extensions beyond current infrastructure." },
-        { "name": "Metro Flow", "value": 120000000, "type": "capex", "description": "Doubled frequency on South Shields line. Complete 2024." },
-        { "name": "Metro Infrastructure Renewal", "value": 500000000, "type": "capex", "description": "Track, signalling, stations, depot modernisation." },
-        { "name": "Metro Extensions", "value": 600000000, "type": "capex", "description": "Washington/Doxford, Cobalt, Metrocentre extensions under development." },
-        { "name": "Bus Network Improvements", "value": 400000000, "type": "capex", "description": "Bus Service Improvement Plan delivery. Enhanced frequencies." },
-        { "name": "Bus Franchising Assessment", "value": 50000000, "type": "capex", "description": "Franchising assessment underway. Decision expected 2025." },
-        { "name": "Active Travel", "value": 250000000, "type": "capex", "description": "Pop-up cycling infrastructure, safe walking routes." },
-        { "name": "Rail Station Upgrades", "value": 300000000, "type": "capex", "description": "Newcastle Central, Sunderland, Durham stations." },
-        { "name": "Zero Emission Buses", "value": 200000000, "type": "capex", "description": "Electric bus rollout across the region." },
-        { "name": "Leamside Line Study", "value": 80000000, "type": "capex", "description": "Reopening study for Tyne & Wear to Durham route." },
-        { "name": "Ferry & River Transport", "value": 100000000, "type": "capex", "description": "Shields Ferry renewal, Tyne river services." }
+        {
+          "name": "Metro New Fleet",
+          "value": 600000000,
+          "type": "capex",
+          "description": "46 new Stadler trains. Battery capability for extensions beyond current infrastructure."
+        },
+        {
+          "name": "Metro Flow",
+          "value": 120000000,
+          "type": "capex",
+          "description": "Doubled frequency on South Shields line. Complete 2024."
+        },
+        {
+          "name": "Metro Infrastructure Renewal",
+          "value": 500000000,
+          "type": "capex",
+          "description": "Track, signalling, stations, depot modernisation."
+        },
+        {
+          "name": "Metro Extensions",
+          "value": 600000000,
+          "type": "capex",
+          "description": "Washington/Doxford, Cobalt, Metrocentre extensions under development."
+        },
+        {
+          "name": "Bus Network Improvements",
+          "value": 400000000,
+          "type": "capex",
+          "description": "Bus Service Improvement Plan delivery. Enhanced frequencies."
+        },
+        {
+          "name": "Bus Franchising Assessment",
+          "value": 50000000,
+          "type": "capex",
+          "description": "Franchising assessment underway. Decision expected 2025."
+        },
+        {
+          "name": "Active Travel",
+          "value": 250000000,
+          "type": "capex",
+          "description": "Pop-up cycling infrastructure, safe walking routes."
+        },
+        {
+          "name": "Rail Station Upgrades",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Newcastle Central, Sunderland, Durham stations."
+        },
+        {
+          "name": "Zero Emission Buses",
+          "value": 200000000,
+          "type": "capex",
+          "description": "Electric bus rollout across the region."
+        },
+        {
+          "name": "Leamside Line Study",
+          "value": 80000000,
+          "type": "capex",
+          "description": "Reopening study for Tyne & Wear to Durham route."
+        },
+        {
+          "name": "Ferry & River Transport",
+          "value": 100000000,
+          "type": "capex",
+          "description": "Shields Ferry renewal, Tyne river services."
+        }
       ],
       "keyProjects": [
         "Metro new fleet rollout (2024-2025)",
@@ -278,7 +746,7 @@
         "Leamside Line reopening",
         "Bus franchising assessment"
       ],
-      "notes": "Mayor Kim McGuinness. Metro Futures transformation. CRSTS1 £563m (2022-2027), CRSTS2 £1.85bn (2027-2032) - includes first new Metro line in 30 years (Washington extension). 46 new Stadler trains delivered. £14bn investment prospectus unveiled May 2025.",
+      "notes": "Mayor Kim McGuinness. Metro Futures transformation. CRSTS1 \u00a3563m (2022-2027), CRSTS2 \u00a31.85bn (2027-2032) - includes first new Metro line in 30 years (Washington extension). 46 new Stadler trains delivered. \u00a314bn investment prospectus unveiled May 2025.",
       "source": "NECA Transport Plan 2024, CRSTS2 Settlement Jan 2026, Mayor's Investment Prospectus"
     },
     {
@@ -286,25 +754,94 @@
       "name": "Liverpool City Region Transport",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "subdivisions": {
-        "north-west": ["Liverpool", "Sefton", "Wirral", "Knowsley", "St. Helens", "Halton"]
+        "north-west": [
+          "Liverpool",
+          "Sefton",
+          "Wirral",
+          "Knowsley",
+          "St. Helens",
+          "Halton"
+        ]
       },
       "budget2026": 580000000,
       "budget10Year": 4200000000,
       "programmes": [
-        { "name": "Bus Franchising", "value": 800000000, "type": "capex", "description": "Following GM model. Franchising approved 2024, rollout 2027-2028." },
-        { "name": "Bus Fleet Renewal", "value": 350000000, "type": "capex", "description": "Electric and hydrogen buses. 500+ vehicle fleet renewal." },
-        { "name": "Merseyrail New Fleet", "value": 500000000, "type": "capex", "description": "52 new Stadler Class 777 trains. Battery-electric capability." },
-        { "name": "Merseyrail Network Enhancements", "value": 450000000, "type": "capex", "description": "Headbolt Lane, Kirkby curve, Maghull North services." },
-        { "name": "Liverpool Central Upgrade", "value": 200000000, "type": "capex", "description": "Capacity and accessibility improvements at busiest station." },
-        { "name": "Station Improvements", "value": 350000000, "type": "capex", "description": "Accessibility, passenger facilities, security across network." },
-        { "name": "Birkenhead Central Regeneration", "value": 150000000, "type": "capex", "description": "Station and surrounding area redevelopment." },
-        { "name": "Active Travel", "value": 300000000, "type": "capex", "description": "Pop-up cycle lanes, LCWIP delivery, e-bike schemes." },
-        { "name": "Freeport Connectivity", "value": 250000000, "type": "capex", "description": "Road and rail access to Liverpool Freeport sites." },
-        { "name": "Hydrogen Transport Hub", "value": 180000000, "type": "capex", "description": "Hydrogen production, bus/HGV fuelling infrastructure." },
-        { "name": "Digital & Ticketing", "value": 120000000, "type": "capex", "description": "Integrated ticketing, Walrus card expansion, real-time info." },
-        { "name": "Ferry & Maritime Access", "value": 150000000, "type": "capex", "description": "Mersey Ferries renewal, cruise terminal access." }
+        {
+          "name": "Bus Franchising",
+          "value": 800000000,
+          "type": "capex",
+          "description": "Following GM model. Franchising approved 2024, rollout 2027-2028."
+        },
+        {
+          "name": "Bus Fleet Renewal",
+          "value": 350000000,
+          "type": "capex",
+          "description": "Electric and hydrogen buses. 500+ vehicle fleet renewal."
+        },
+        {
+          "name": "Merseyrail New Fleet",
+          "value": 500000000,
+          "type": "capex",
+          "description": "52 new Stadler Class 777 trains. Battery-electric capability."
+        },
+        {
+          "name": "Merseyrail Network Enhancements",
+          "value": 450000000,
+          "type": "capex",
+          "description": "Headbolt Lane, Kirkby curve, Maghull North services."
+        },
+        {
+          "name": "Liverpool Central Upgrade",
+          "value": 200000000,
+          "type": "capex",
+          "description": "Capacity and accessibility improvements at busiest station."
+        },
+        {
+          "name": "Station Improvements",
+          "value": 350000000,
+          "type": "capex",
+          "description": "Accessibility, passenger facilities, security across network."
+        },
+        {
+          "name": "Birkenhead Central Regeneration",
+          "value": 150000000,
+          "type": "capex",
+          "description": "Station and surrounding area redevelopment."
+        },
+        {
+          "name": "Active Travel",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Pop-up cycle lanes, LCWIP delivery, e-bike schemes."
+        },
+        {
+          "name": "Freeport Connectivity",
+          "value": 250000000,
+          "type": "capex",
+          "description": "Road and rail access to Liverpool Freeport sites."
+        },
+        {
+          "name": "Hydrogen Transport Hub",
+          "value": 180000000,
+          "type": "capex",
+          "description": "Hydrogen production, bus/HGV fuelling infrastructure."
+        },
+        {
+          "name": "Digital & Ticketing",
+          "value": 120000000,
+          "type": "capex",
+          "description": "Integrated ticketing, Walrus card expansion, real-time info."
+        },
+        {
+          "name": "Ferry & Maritime Access",
+          "value": 150000000,
+          "type": "capex",
+          "description": "Mersey Ferries renewal, cruise terminal access."
+        }
       ],
       "keyProjects": [
         "Bus franchising (approved 2024, rollout 2027)",
@@ -316,7 +853,7 @@
         "Birkenhead Dock Branch reopening study",
         "Mersey Ferries decarbonisation"
       ],
-      "notes": "Second city region to approve bus franchising (after GM). CRSTS1 £710m (2022-2027), CRSTS2 £880m (2027-2032). New Merseyrail trains operational. Mayor Steve Rotheram.",
+      "notes": "Second city region to approve bus franchising (after GM). CRSTS1 \u00a3710m (2022-2027), CRSTS2 \u00a3880m (2027-2032). New Merseyrail trains operational. Mayor Steve Rotheram.",
       "source": "LCRCA Transport Plan 2024, CRSTS2 Settlement"
     },
     {
@@ -324,23 +861,81 @@
       "name": "West Yorkshire Combined Authority Transport",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["yorkshire-humber"],
+      "regions": [
+        "yorkshire-humber"
+      ],
       "subdivisions": {
-        "yorkshire-humber": ["Leeds", "Bradford", "Wakefield", "Kirklees", "Calderdale"]
+        "yorkshire-humber": [
+          "Leeds",
+          "Bradford",
+          "Wakefield",
+          "Kirklees",
+          "Calderdale"
+        ]
       },
       "budget2026": 520000000,
       "budget10Year": 5800000000,
       "programmes": [
-        { "name": "Mass Transit Network", "value": 2500000000, "type": "capex", "description": "New light rail/tram-train system for Leeds and Bradford. UK's largest unfunded transport scheme." },
-        { "name": "Bus Franchising", "value": 700000000, "type": "capex", "description": "Assessment complete 2024. Potential franchising from 2027." },
-        { "name": "Bus Network Enhancement", "value": 400000000, "type": "capex", "description": "Enhanced Partnership improvements, new routes, frequencies." },
-        { "name": "Rail Station Gateways", "value": 450000000, "type": "capex", "description": "Leeds, Bradford Interchange, Huddersfield station upgrades." },
-        { "name": "Active Travel Network", "value": 350000000, "type": "capex", "description": "CityConnect cycleways, walking routes, e-bike schemes." },
-        { "name": "Park & Ride Expansion", "value": 200000000, "type": "capex", "description": "New P&R sites at motorway junctions and rail stations." },
-        { "name": "TransPennine Integration", "value": 300000000, "type": "capex", "description": "Connecting to TRU improvements, new services." },
-        { "name": "Zero Emission Buses", "value": 250000000, "type": "capex", "description": "ZEBRA2 funding for electric and hydrogen buses." },
-        { "name": "Digital Connectivity", "value": 150000000, "type": "capex", "description": "MCard expansion, real-time info, journey planning." },
-        { "name": "Transforming Cities", "value": 500000000, "type": "capex", "description": "TCF programme - corridors, interchanges, bus priority." }
+        {
+          "name": "Mass Transit Network",
+          "value": 2500000000,
+          "type": "capex",
+          "description": "New light rail/tram-train system for Leeds and Bradford. UK's largest unfunded transport scheme."
+        },
+        {
+          "name": "Bus Franchising",
+          "value": 700000000,
+          "type": "capex",
+          "description": "Assessment complete 2024. Potential franchising from 2027."
+        },
+        {
+          "name": "Bus Network Enhancement",
+          "value": 400000000,
+          "type": "capex",
+          "description": "Enhanced Partnership improvements, new routes, frequencies."
+        },
+        {
+          "name": "Rail Station Gateways",
+          "value": 450000000,
+          "type": "capex",
+          "description": "Leeds, Bradford Interchange, Huddersfield station upgrades."
+        },
+        {
+          "name": "Active Travel Network",
+          "value": 350000000,
+          "type": "capex",
+          "description": "CityConnect cycleways, walking routes, e-bike schemes."
+        },
+        {
+          "name": "Park & Ride Expansion",
+          "value": 200000000,
+          "type": "capex",
+          "description": "New P&R sites at motorway junctions and rail stations."
+        },
+        {
+          "name": "TransPennine Integration",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Connecting to TRU improvements, new services."
+        },
+        {
+          "name": "Zero Emission Buses",
+          "value": 250000000,
+          "type": "capex",
+          "description": "ZEBRA2 funding for electric and hydrogen buses."
+        },
+        {
+          "name": "Digital Connectivity",
+          "value": 150000000,
+          "type": "capex",
+          "description": "MCard expansion, real-time info, journey planning."
+        },
+        {
+          "name": "Transforming Cities",
+          "value": 500000000,
+          "type": "capex",
+          "description": "TCF programme - corridors, interchanges, bus priority."
+        }
       ],
       "keyProjects": [
         "West Yorkshire Mass Transit",
@@ -352,7 +947,7 @@
         "Castleford Growth Corridor",
         "White Rose station"
       ],
-      "notes": "Mayor Tracy Brabin. £2.5bn Mass Transit FULLY FUNDED (Jan 2026) - up to 7 lines, Leeds will no longer be largest European city without mass transit. CRSTS1 £830m (2022-2027), CRSTS2 £1.2bn (2027-2032). Bradford Southern Gateway £4.5bn regeneration.",
+      "notes": "Mayor Tracy Brabin. \u00a32.5bn Mass Transit FULLY FUNDED (Jan 2026) - up to 7 lines, Leeds will no longer be largest European city without mass transit. CRSTS1 \u00a3830m (2022-2027), CRSTS2 \u00a31.2bn (2027-2032). Bradford Southern Gateway \u00a34.5bn regeneration.",
       "source": "WYCA Transport Strategy 2040, DfT NPR Announcement Jan 2026"
     },
     {
@@ -360,21 +955,68 @@
       "name": "South Yorkshire Mayoral Combined Authority Transport",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["yorkshire-humber"],
+      "regions": [
+        "yorkshire-humber"
+      ],
       "subdivisions": {
-        "yorkshire-humber": ["Sheffield", "Rotherham", "Doncaster", "Barnsley"]
+        "yorkshire-humber": [
+          "Sheffield",
+          "Rotherham",
+          "Doncaster",
+          "Barnsley"
+        ]
       },
       "budget2026": 280000000,
       "budget10Year": 2200000000,
       "programmes": [
-        { "name": "Supertram Renewal", "value": 500000000, "type": "capex", "description": "New tram fleet, infrastructure modernisation, depot upgrades." },
-        { "name": "Tram-Train Extensions", "value": 200000000, "type": "capex", "description": "Rotherham tram-train service, potential Barnsley extension." },
-        { "name": "Bus Network Improvements", "value": 350000000, "type": "capex", "description": "Enhanced Partnership, frequency improvements, new routes." },
-        { "name": "Rail Station Upgrades", "value": 300000000, "type": "capex", "description": "Sheffield, Doncaster, Rotherham station improvements." },
-        { "name": "Active Travel", "value": 200000000, "type": "capex", "description": "South Yorkshire cycling network, walking routes." },
-        { "name": "Sheffield City Gateway", "value": 250000000, "type": "capex", "description": "Sheffield station and city centre access improvements." },
-        { "name": "Doncaster Sheffield Airport Access", "value": 150000000, "type": "capex", "description": "Improved access (if airport reopens)." },
-        { "name": "Zero Emission Fleet", "value": 250000000, "type": "capex", "description": "Electric and hydrogen buses across South Yorkshire." }
+        {
+          "name": "Supertram Renewal",
+          "value": 500000000,
+          "type": "capex",
+          "description": "New tram fleet, infrastructure modernisation, depot upgrades."
+        },
+        {
+          "name": "Tram-Train Extensions",
+          "value": 200000000,
+          "type": "capex",
+          "description": "Rotherham tram-train service, potential Barnsley extension."
+        },
+        {
+          "name": "Bus Network Improvements",
+          "value": 350000000,
+          "type": "capex",
+          "description": "Enhanced Partnership, frequency improvements, new routes."
+        },
+        {
+          "name": "Rail Station Upgrades",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Sheffield, Doncaster, Rotherham station improvements."
+        },
+        {
+          "name": "Active Travel",
+          "value": 200000000,
+          "type": "capex",
+          "description": "South Yorkshire cycling network, walking routes."
+        },
+        {
+          "name": "Sheffield City Gateway",
+          "value": 250000000,
+          "type": "capex",
+          "description": "Sheffield station and city centre access improvements."
+        },
+        {
+          "name": "Doncaster Sheffield Airport Access",
+          "value": 150000000,
+          "type": "capex",
+          "description": "Improved access (if airport reopens)."
+        },
+        {
+          "name": "Zero Emission Fleet",
+          "value": 250000000,
+          "type": "capex",
+          "description": "Electric and hydrogen buses across South Yorkshire."
+        }
       ],
       "keyProjects": [
         "Supertram fleet renewal",
@@ -385,7 +1027,7 @@
         "Upper Don Valley corridor",
         "Dearne Valley improvements"
       ],
-      "notes": "Mayor Oliver Coppard. CRSTS1 £570m (2022-2027), CRSTS2 £1.5bn (2027-2032) - new tram fleet by 2032, bus/tram modernisation. UK's first tram-train system. Supertram publicly owned since 2024.",
+      "notes": "Mayor Oliver Coppard. CRSTS1 \u00a3570m (2022-2027), CRSTS2 \u00a31.5bn (2027-2032) - new tram fleet by 2032, bus/tram modernisation. UK's first tram-train system. Supertram publicly owned since 2024.",
       "source": "SYMCA Transport Strategy 2024, CRSTS2 Settlement Jan 2026"
     },
     {
@@ -393,18 +1035,39 @@
       "name": "Nottingham Express Transit",
       "sector": "rail",
       "subSector": "metro",
-      "regions": ["east-midlands"],
+      "regions": [
+        "east-midlands"
+      ],
       "subdivisions": {
-        "east-midlands": ["Nottingham", "Broxtowe", "Gedling"]
+        "east-midlands": [
+          "Nottingham",
+          "Broxtowe",
+          "Gedling"
+        ]
       },
       "budget2026": 60000000,
       "budget10Year": 300000000,
       "programmes": [
-        { "name": "Line Extensions", "value": 150000000, "type": "capex" },
-        { "name": "Fleet & Infrastructure", "value": 100000000, "type": "capex" },
-        { "name": "HS2 Toton connectivity", "value": 50000000, "type": "capex" }
+        {
+          "name": "Line Extensions",
+          "value": 150000000,
+          "type": "capex"
+        },
+        {
+          "name": "Fleet & Infrastructure",
+          "value": 100000000,
+          "type": "capex"
+        },
+        {
+          "name": "HS2 Toton connectivity",
+          "value": 50000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Potential Toton HS2 link", "Network expansion studies"],
+      "keyProjects": [
+        "Potential Toton HS2 link",
+        "Network expansion studies"
+      ],
       "notes": "Tramlink Nottingham. Potential HS2 eastern leg connection.",
       "source": "Nottingham City Council Transport Plan"
     },
@@ -413,18 +1076,37 @@
       "name": "Edinburgh Trams",
       "sector": "rail",
       "subSector": "metro",
-      "regions": ["scotland"],
+      "regions": [
+        "scotland"
+      ],
       "subdivisions": {
-        "scotland": ["City of Edinburgh"]
+        "scotland": [
+          "City of Edinburgh"
+        ]
       },
       "budget2026": 80000000,
       "budget10Year": 400000000,
       "programmes": [
-        { "name": "Newhaven Extension", "value": 207000000, "type": "capex" },
-        { "name": "Fleet Expansion", "value": 80000000, "type": "capex" },
-        { "name": "Future Extensions", "value": 113000000, "type": "capex" }
+        {
+          "name": "Newhaven Extension",
+          "value": 207000000,
+          "type": "capex"
+        },
+        {
+          "name": "Fleet Expansion",
+          "value": 80000000,
+          "type": "capex"
+        },
+        {
+          "name": "Future Extensions",
+          "value": 113000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Newhaven line (complete)", "Granton extension study"],
+      "keyProjects": [
+        "Newhaven line (complete)",
+        "Granton extension study"
+      ],
       "notes": "City of Edinburgh Council. Newhaven extension operational 2023.",
       "source": "Edinburgh Tram Strategic Plan"
     },
@@ -433,15 +1115,29 @@
       "name": "United Utilities",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "budget2026": 2740000000,
       "budget10Year": 13700000000,
       "amp8Total": 13700000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 5800000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 7900000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 5800000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 7900000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Manchester Ship Canal improvements", "Lake District resilience", "Combined sewer overflows"],
+      "keyProjects": [
+        "Manchester Ship Canal improvements",
+        "Lake District resilience",
+        "Combined sewer overflows"
+      ],
       "notes": "AMP8 2025-2030. Serves North West England including Manchester, Liverpool, Cumbria.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -450,24 +1146,68 @@
       "name": "Peel Ports Group",
       "sector": "maritime",
       "subSector": "major-ports",
-      "regions": ["north-west", "scotland", "eastern"],
+      "regions": [
+        "north-west",
+        "scotland",
+        "eastern"
+      ],
       "subdivisions": {
-        "north-west": ["Liverpool", "Sefton", "Wirral", "Salford"],
-        "scotland": ["Glasgow City", "Inverclyde"],
-        "eastern": ["King's Lynn and West Norfolk"]
+        "north-west": [
+          "Liverpool",
+          "Sefton",
+          "Wirral",
+          "Salford"
+        ],
+        "scotland": [
+          "Glasgow City",
+          "Inverclyde"
+        ],
+        "eastern": [
+          "King's Lynn and West Norfolk"
+        ]
       },
       "budget2026": 500000000,
       "budget10Year": 3500000000,
       "programmes": [
-        { "name": "Liverpool2 Expansion", "value": 1000000000, "type": "capex" },
-        { "name": "Port of Liverpool Development", "value": 800000000, "type": "capex" },
-        { "name": "Manchester Ship Canal", "value": 400000000, "type": "capex" },
-        { "name": "Clydeport Investment", "value": 300000000, "type": "capex" },
-        { "name": "Great Yarmouth Offshore", "value": 500000000, "type": "capex" },
-        { "name": "Sustainability & Net Zero", "value": 500000000, "type": "capex" }
+        {
+          "name": "Liverpool2 Expansion",
+          "value": 1000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Port of Liverpool Development",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Manchester Ship Canal",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Clydeport Investment",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Great Yarmouth Offshore",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability & Net Zero",
+          "value": 500000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Liverpool2 deep-water berths", "Seaforth expansion", "Freeport status", "Port of East Anglia offshore wind hub", "Great Yarmouth expansion"],
-      "notes": "UK's second largest port group. £1.5bn invested over past decade. Further £1bn planned over 5 years. £300m announced for Liverpool, Hunterston, Great Yarmouth (2025). Key offshore wind base for ScottishPower East Anglia TWO.",
+      "keyProjects": [
+        "Liverpool2 deep-water berths",
+        "Seaforth expansion",
+        "Freeport status",
+        "Port of East Anglia offshore wind hub",
+        "Great Yarmouth expansion"
+      ],
+      "notes": "UK's second largest port group. \u00a31.5bn invested over past decade. Further \u00a31bn planned over 5 years. \u00a3300m announced for Liverpool, Hunterston, Great Yarmouth (2025). Key offshore wind base for ScottishPower East Anglia TWO.",
       "source": "Peel Ports Investment Strategy 2025"
     },
     {
@@ -475,22 +1215,56 @@
       "name": "DP World (London Gateway & Southampton)",
       "sector": "maritime",
       "subSector": "major-ports",
-      "regions": ["eastern", "south-east"],
+      "regions": [
+        "eastern",
+        "south-east"
+      ],
       "subdivisions": {
-        "eastern": ["Thurrock"],
-        "south-east": ["Southampton", "Eastleigh"]
+        "eastern": [
+          "Thurrock"
+        ],
+        "south-east": [
+          "Southampton",
+          "Eastleigh"
+        ]
       },
       "budget2026": 600000000,
       "budget10Year": 4000000000,
       "programmes": [
-        { "name": "London Gateway Berths 4-6", "value": 1500000000, "type": "capex" },
-        { "name": "London Gateway Logistics Park", "value": 800000000, "type": "capex" },
-        { "name": "Southampton Upgrades", "value": 600000000, "type": "capex" },
-        { "name": "Automation & Technology", "value": 600000000, "type": "capex" },
-        { "name": "Freeport Development", "value": 500000000, "type": "capex" }
+        {
+          "name": "London Gateway Berths 4-6",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "London Gateway Logistics Park",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Southampton Upgrades",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "Automation & Technology",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "Freeport Development",
+          "value": 500000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["London Gateway expansion to 6 berths", "Two 400m all-electric berths", "Second rail terminal", "UK's largest logistics park", "Southampton cruise terminal"],
-      "notes": "UK's largest container port operator. £1bn expansion underway - 2 new berths, Europe's tallest quay cranes, capacity for 6 of world's largest container ships. Thames Freeport anchor. 1,000 construction jobs + 400 permanent.",
+      "keyProjects": [
+        "London Gateway expansion to 6 berths",
+        "Two 400m all-electric berths",
+        "Second rail terminal",
+        "UK's largest logistics park",
+        "Southampton cruise terminal"
+      ],
+      "notes": "UK's largest container port operator. \u00a31bn expansion underway - 2 new berths, Europe's tallest quay cranes, capacity for 6 of world's largest container ships. Thames Freeport anchor. 1,000 construction jobs + 400 permanent.",
       "source": "DP World UK Investment Plan, LISW Sept 2025"
     },
     {
@@ -498,20 +1272,49 @@
       "name": "Port of Felixstowe (Hutchison Ports)",
       "sector": "maritime",
       "subSector": "major-ports",
-      "regions": ["eastern"],
+      "regions": [
+        "eastern"
+      ],
       "subdivisions": {
-        "eastern": ["Suffolk Coastal", "Ipswich"]
+        "eastern": [
+          "Suffolk Coastal",
+          "Ipswich"
+        ]
       },
       "budget2026": 250000000,
       "budget10Year": 1800000000,
       "programmes": [
-        { "name": "Berth Upgrades", "value": 600000000, "type": "capex" },
-        { "name": "Landside Expansion", "value": 400000000, "type": "capex" },
-        { "name": "Rail Terminal Enhancement", "value": 300000000, "type": "capex" },
-        { "name": "Automation", "value": 300000000, "type": "capex" },
-        { "name": "Freeport East Development", "value": 200000000, "type": "capex" }
+        {
+          "name": "Berth Upgrades",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "Landside Expansion",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Rail Terminal Enhancement",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Automation",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Freeport East Development",
+          "value": 200000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Berth 9 deepening", "Rail freight growth", "Freeport East"],
+      "keyProjects": [
+        "Berth 9 deepening",
+        "Rail freight growth",
+        "Freeport East"
+      ],
       "notes": "UK's busiest container port. 4m TEU capacity. Freeport East anchor.",
       "source": "Port of Felixstowe Masterplan"
     },
@@ -520,23 +1323,69 @@
       "name": "Associated British Ports",
       "sector": "maritime",
       "subSector": "major-ports",
-      "regions": ["yorkshire-humber", "south-east", "south-west", "wales"],
+      "regions": [
+        "yorkshire-humber",
+        "south-east",
+        "south-west",
+        "wales"
+      ],
       "subdivisions": {
-        "yorkshire-humber": ["East Riding of Yorkshire", "North East Lincolnshire", "North Lincolnshire", "Kingston upon Hull"],
-        "south-east": ["Southampton", "Portsmouth"],
-        "south-west": ["Plymouth", "South Hams"],
-        "wales": ["Newport", "Cardiff", "Swansea", "Neath Port Talbot"]
+        "yorkshire-humber": [
+          "East Riding of Yorkshire",
+          "North East Lincolnshire",
+          "North Lincolnshire",
+          "Kingston upon Hull"
+        ],
+        "south-east": [
+          "Southampton",
+          "Portsmouth"
+        ],
+        "south-west": [
+          "Plymouth",
+          "South Hams"
+        ],
+        "wales": [
+          "Newport",
+          "Cardiff",
+          "Swansea",
+          "Neath Port Talbot"
+        ]
       },
       "budget2026": 400000000,
       "budget10Year": 3000000000,
       "programmes": [
-        { "name": "Humber Ports Investment", "value": 1200000000, "type": "capex" },
-        { "name": "Southampton Enhancement", "value": 600000000, "type": "capex" },
-        { "name": "South Wales Ports", "value": 400000000, "type": "capex" },
-        { "name": "Green Port Hull", "value": 500000000, "type": "capex" },
-        { "name": "Offshore Wind Support", "value": 300000000, "type": "capex" }
+        {
+          "name": "Humber Ports Investment",
+          "value": 1200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Southampton Enhancement",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "South Wales Ports",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Green Port Hull",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Offshore Wind Support",
+          "value": 300000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Immingham Eastern Ro-Ro", "Green Port Hull", "Southampton cruise", "Humber Freeport"],
+      "keyProjects": [
+        "Immingham Eastern Ro-Ro",
+        "Green Port Hull",
+        "Southampton cruise",
+        "Humber Freeport"
+      ],
       "notes": "UK's largest port operator by locations. 21 ports. Humber Freeport anchor.",
       "source": "ABP Strategic Investment Plan"
     },
@@ -545,21 +1394,55 @@
       "name": "Forth Ports",
       "sector": "maritime",
       "subSector": "major-ports",
-      "regions": ["scotland", "eastern"],
+      "regions": [
+        "scotland",
+        "eastern"
+      ],
       "subdivisions": {
-        "scotland": ["City of Edinburgh", "Fife", "Falkirk", "East Lothian"],
-        "eastern": ["Tilbury"]
+        "scotland": [
+          "City of Edinburgh",
+          "Fife",
+          "Falkirk",
+          "East Lothian"
+        ],
+        "eastern": [
+          "Tilbury"
+        ]
       },
       "budget2026": 350000000,
       "budget10Year": 2500000000,
       "programmes": [
-        { "name": "Port of Tilbury Expansion", "value": 1000000000, "type": "capex" },
-        { "name": "Tilbury2 Development", "value": 500000000, "type": "capex" },
-        { "name": "Leith Offshore Renewables", "value": 400000000, "type": "capex" },
-        { "name": "Grangemouth Decarbonisation", "value": 350000000, "type": "capex" },
-        { "name": "Freeport Operations", "value": 250000000, "type": "capex" }
+        {
+          "name": "Port of Tilbury Expansion",
+          "value": 1000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Tilbury2 Development",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Leith Offshore Renewables",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Grangemouth Decarbonisation",
+          "value": 350000000,
+          "type": "capex"
+        },
+        {
+          "name": "Freeport Operations",
+          "value": 250000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Tilbury2 opened 2024", "Leith offshore wind hub", "Forth Green Freeport"],
+      "keyProjects": [
+        "Tilbury2 opened 2024",
+        "Leith offshore wind hub",
+        "Forth Green Freeport"
+      ],
       "notes": "Major East Coast operator. Thames & Forth Freeport anchor. Offshore wind focus.",
       "source": "Forth Ports Investment Plan"
     },
@@ -568,19 +1451,44 @@
       "name": "Bristol Port Company",
       "sector": "maritime",
       "subSector": "major-ports",
-      "regions": ["south-west"],
+      "regions": [
+        "south-west"
+      ],
       "subdivisions": {
-        "south-west": ["Bristol, City of", "North Somerset"]
+        "south-west": [
+          "Bristol, City of",
+          "North Somerset"
+        ]
       },
       "budget2026": 100000000,
       "budget10Year": 700000000,
       "programmes": [
-        { "name": "Royal Portbury Expansion", "value": 300000000, "type": "capex" },
-        { "name": "Avonmouth Development", "value": 200000000, "type": "capex" },
-        { "name": "Automotive Terminal", "value": 100000000, "type": "capex" },
-        { "name": "Sustainability", "value": 100000000, "type": "capex" }
+        {
+          "name": "Royal Portbury Expansion",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Avonmouth Development",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Automotive Terminal",
+          "value": 100000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability",
+          "value": 100000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Deep-sea container capability", "Automotive hub expansion", "Renewable energy imports"],
+      "keyProjects": [
+        "Deep-sea container capability",
+        "Automotive hub expansion",
+        "Renewable energy imports"
+      ],
       "notes": "Key South West gateway. Automotive and energy focus.",
       "source": "Bristol Port Masterplan"
     },
@@ -589,19 +1497,47 @@
       "name": "Teesworks (PD Ports & Freeport)",
       "sector": "maritime",
       "subSector": "major-ports",
-      "regions": ["north-east"],
+      "regions": [
+        "north-east"
+      ],
       "subdivisions": {
-        "north-east": ["Redcar and Cleveland", "Middlesbrough", "Stockton-on-Tees", "Hartlepool"]
+        "north-east": [
+          "Redcar and Cleveland",
+          "Middlesbrough",
+          "Stockton-on-Tees",
+          "Hartlepool"
+        ]
       },
       "budget2026": 400000000,
       "budget10Year": 2800000000,
       "programmes": [
-        { "name": "Teesworks Freeport Development", "value": 1500000000, "type": "capex" },
-        { "name": "SeAH Wind Facility", "value": 400000000, "type": "capex" },
-        { "name": "Net Zero Teesside", "value": 500000000, "type": "capex" },
-        { "name": "Port Infrastructure", "value": 400000000, "type": "capex" }
+        {
+          "name": "Teesworks Freeport Development",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "SeAH Wind Facility",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Net Zero Teesside",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Port Infrastructure",
+          "value": 400000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["UK's largest Freeport", "SeAH offshore wind monopiles", "Net Zero Teesside CCS", "GE Vernova factory"],
+      "keyProjects": [
+        "UK's largest Freeport",
+        "SeAH offshore wind monopiles",
+        "Net Zero Teesside CCS",
+        "GE Vernova factory"
+      ],
       "notes": "Major regeneration site. Offshore wind manufacturing hub. CCS cluster.",
       "source": "Teesworks Development Plan"
     },
@@ -610,18 +1546,38 @@
       "name": "Able Marine Energy Park",
       "sector": "maritime",
       "subSector": "offshore",
-      "regions": ["yorkshire-humber"],
+      "regions": [
+        "yorkshire-humber"
+      ],
       "subdivisions": {
-        "yorkshire-humber": ["North Lincolnshire"]
+        "yorkshire-humber": [
+          "North Lincolnshire"
+        ]
       },
       "budget2026": 200000000,
       "budget10Year": 1200000000,
       "programmes": [
-        { "name": "AMEP Development", "value": 800000000, "type": "capex" },
-        { "name": "Offshore Wind Manufacturing", "value": 300000000, "type": "capex" },
-        { "name": "Quay & Infrastructure", "value": 100000000, "type": "capex" }
+        {
+          "name": "AMEP Development",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Offshore Wind Manufacturing",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Quay & Infrastructure",
+          "value": 100000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Largest offshore wind port in UK", "Component manufacturing", "Humber Freeport site"],
+      "keyProjects": [
+        "Largest offshore wind port in UK",
+        "Component manufacturing",
+        "Humber Freeport site"
+      ],
       "notes": "Purpose-built offshore wind hub. Humber South Bank.",
       "source": "Able UK Investment Plan"
     },
@@ -630,16 +1586,43 @@
       "name": "Environment Agency Coastal & Flood",
       "sector": "maritime",
       "subSector": "coastal",
-      "regions": ["eastern", "yorkshire-humber", "south-east", "south-west", "north-west"],
+      "regions": [
+        "eastern",
+        "yorkshire-humber",
+        "south-east",
+        "south-west",
+        "north-west"
+      ],
       "budget2026": 600000000,
       "budget10Year": 5200000000,
       "programmes": [
-        { "name": "Flood & Coastal Erosion Risk Management", "value": 3500000000, "type": "capex" },
-        { "name": "Thames Estuary 2100", "value": 800000000, "type": "capex" },
-        { "name": "Coastal Change Adaptation", "value": 500000000, "type": "capex" },
-        { "name": "Nature-Based Solutions", "value": 400000000, "type": "capex" }
+        {
+          "name": "Flood & Coastal Erosion Risk Management",
+          "value": 3500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Thames Estuary 2100",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Coastal Change Adaptation",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Nature-Based Solutions",
+          "value": 400000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Thames Barrier upgrades", "Boston Barrier", "Lowestoft flood defences", "Coastal realignment"],
+      "keyProjects": [
+        "Thames Barrier upgrades",
+        "Boston Barrier",
+        "Lowestoft flood defences",
+        "Coastal realignment"
+      ],
       "notes": "National flood defence programme. Climate adaptation investment.",
       "source": "EA FCERM Investment Programme"
     },
@@ -648,23 +1631,81 @@
       "name": "SP Energy Networks",
       "sector": "energy",
       "subSector": "grid-transmission",
-      "regions": ["scotland", "north-west", "wales", "midlands"],
+      "regions": [
+        "scotland",
+        "north-west",
+        "wales",
+        "midlands"
+      ],
       "subdivisions": {
-        "scotland": ["Glasgow City", "City of Edinburgh", "South Lanarkshire", "North Lanarkshire", "Fife", "Falkirk", "East Ayrshire", "South Ayrshire", "Dumfries and Galloway"],
-        "north-west": ["Liverpool", "Wirral", "Sefton", "St. Helens", "Warrington", "Cheshire West and Chester"],
-        "wales": ["Wrexham", "Flintshire", "Denbighshire", "Conwy", "Gwynedd", "Isle of Anglesey"],
-        "midlands": ["Shropshire", "Telford and Wrekin"]
+        "scotland": [
+          "Glasgow City",
+          "City of Edinburgh",
+          "South Lanarkshire",
+          "North Lanarkshire",
+          "Fife",
+          "Falkirk",
+          "East Ayrshire",
+          "South Ayrshire",
+          "Dumfries and Galloway"
+        ],
+        "north-west": [
+          "Liverpool",
+          "Wirral",
+          "Sefton",
+          "St. Helens",
+          "Warrington",
+          "Cheshire West and Chester"
+        ],
+        "wales": [
+          "Wrexham",
+          "Flintshire",
+          "Denbighshire",
+          "Conwy",
+          "Gwynedd",
+          "Isle of Anglesey"
+        ],
+        "midlands": [
+          "Shropshire",
+          "Telford and Wrekin"
+        ]
       },
       "budget2026": 2400000000,
       "budget10Year": 12000000000,
       "programmes": [
-        { "name": "ScotWind Grid Connections", "value": 4000000000, "type": "capex" },
-        { "name": "RIIO-ED2 Distribution Investment", "value": 3500000000, "type": "capex" },
-        { "name": "RIIO-T2 Transmission Investment", "value": 2500000000, "type": "capex" },
-        { "name": "Green Infrastructure", "value": 1500000000, "type": "capex" },
-        { "name": "Network Digitalisation", "value": 500000000, "type": "capex" }
+        {
+          "name": "ScotWind Grid Connections",
+          "value": 4000000000,
+          "type": "capex"
+        },
+        {
+          "name": "RIIO-ED2 Distribution Investment",
+          "value": 3500000000,
+          "type": "capex"
+        },
+        {
+          "name": "RIIO-T2 Transmission Investment",
+          "value": 2500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Green Infrastructure",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Network Digitalisation",
+          "value": 500000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["ScotWind offshore connections", "Eastern HVDC Link", "Argyll & Kintyre reinforcement", "Merseyside network upgrade", "North Wales grid reinforcement"],
+      "keyProjects": [
+        "ScotWind offshore connections",
+        "Eastern HVDC Link",
+        "Argyll & Kintyre reinforcement",
+        "Merseyside network upgrade",
+        "North Wales grid reinforcement"
+      ],
       "notes": "SP Transmission & SP Distribution. Part of Iberdrola group. Key enabler for ScotWind offshore wind. RIIO-ED2 2023-2028, RIIO-T2 2021-2026.",
       "source": "SP Energy Networks Business Plans"
     },
@@ -673,16 +1714,38 @@
       "name": "Transport Scotland Rail",
       "sector": "rail",
       "subSector": "enhancements",
-      "regions": ["scotland"],
+      "regions": [
+        "scotland"
+      ],
       "budget2026": 850000000,
       "budget10Year": 4200000000,
       "programmes": [
-        { "name": "Rail Decarbonisation", "value": 1500000000, "type": "capex" },
-        { "name": "EGIP Phase 2", "value": 800000000, "type": "capex" },
-        { "name": "Line Reopenings", "value": 600000000, "type": "capex" },
-        { "name": "Station Improvements", "value": 500000000, "type": "capex" }
+        {
+          "name": "Rail Decarbonisation",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "EGIP Phase 2",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Line Reopenings",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "Station Improvements",
+          "value": 500000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["East Kilbride enhancement", "Barrhead electrification", "Borders Railway extension study"],
+      "keyProjects": [
+        "East Kilbride enhancement",
+        "Barrhead electrification",
+        "Borders Railway extension study"
+      ],
       "notes": "Scottish Government rail investment. Separate from Network Rail Scotland.",
       "source": "Transport Scotland Rail Enhancement Programme"
     },
@@ -691,16 +1754,38 @@
       "name": "Translink NI Railways",
       "sector": "rail",
       "subSector": "mainline",
-      "regions": ["northern-ireland"],
+      "regions": [
+        "northern-ireland"
+      ],
       "budget2026": 280000000,
       "budget10Year": 1400000000,
       "programmes": [
-        { "name": "New Train Fleet", "value": 600000000, "type": "capex" },
-        { "name": "Track & Signalling", "value": 350000000, "type": "capex" },
-        { "name": "Station Upgrades", "value": 250000000, "type": "capex" },
-        { "name": "Derry-Coleraine Track", "value": 200000000, "type": "capex" }
+        {
+          "name": "New Train Fleet",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "Track & Signalling",
+          "value": 350000000,
+          "type": "capex"
+        },
+        {
+          "name": "Station Upgrades",
+          "value": 250000000,
+          "type": "capex"
+        },
+        {
+          "name": "Derry-Coleraine Track",
+          "value": 200000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["New CAF trains", "Belfast Grand Central Station", "Derry line upgrade"],
+      "keyProjects": [
+        "New CAF trains",
+        "Belfast Grand Central Station",
+        "Derry line upgrade"
+      ],
       "notes": "Northern Ireland Executive funding. All-island rail connectivity focus.",
       "source": "DfI NI Rail Investment Strategy"
     },
@@ -709,15 +1794,34 @@
       "name": "Scottish Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["scotland"],
+      "regions": [
+        "scotland"
+      ],
       "budget2026": 1360000000,
       "budget10Year": 6800000000,
       "programmes": [
-        { "name": "Capital Investment", "value": 4500000000, "type": "capex" },
-        { "name": "Net Zero Programme", "value": 1200000000, "type": "capex" },
-        { "name": "Growth & Resilience", "value": 1100000000, "type": "capex" }
+        {
+          "name": "Capital Investment",
+          "value": 4500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Net Zero Programme",
+          "value": 1200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Growth & Resilience",
+          "value": 1100000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Edinburgh growth programme", "Glasgow drainage", "Highlands resilience", "Net zero transition"],
+      "keyProjects": [
+        "Edinburgh growth programme",
+        "Glasgow drainage",
+        "Highlands resilience",
+        "Net zero transition"
+      ],
       "notes": "2021-2027 regulatory period. Publicly owned, regulated by Water Industry Commission for Scotland.",
       "source": "Scottish Water Strategic Plan 2024"
     },
@@ -726,22 +1830,63 @@
       "name": "National Highways South East",
       "sector": "highways",
       "subSector": "strategic-roads",
-      "regions": ["south-east", "london", "eastern"],
+      "regions": [
+        "south-east",
+        "london",
+        "eastern"
+      ],
       "subdivisions": {
-        "south-east": ["Kent", "East Sussex", "West Sussex", "Surrey", "Hampshire", "Berkshire"],
-        "london": ["Hillingdon", "Havering", "Bexley", "Bromley"],
-        "eastern": ["Essex", "Hertfordshire"]
+        "south-east": [
+          "Kent",
+          "East Sussex",
+          "West Sussex",
+          "Surrey",
+          "Hampshire",
+          "Berkshire"
+        ],
+        "london": [
+          "Hillingdon",
+          "Havering",
+          "Bexley",
+          "Bromley"
+        ],
+        "eastern": [
+          "Essex",
+          "Hertfordshire"
+        ]
       },
       "budget2026": 1800000000,
       "budget10Year": 9000000000,
       "programmes": [
-        { "name": "Lower Thames Crossing", "value": 11000000000, "type": "capex", "description": "UK's longest road tunnel. £3.1bn govt funding + £7.5bn private finance (RAB model). DCO granted March 2025, construction 2026, opening ~2030." },
-        { "name": "M25 Enhancements", "value": 1200000000, "type": "capex" },
-        { "name": "A2/M2 Improvements", "value": 800000000, "type": "capex" },
-        { "name": "Operations & Renewals", "value": 2500000000, "type": "opex" }
+        {
+          "name": "Lower Thames Crossing",
+          "value": 11000000000,
+          "type": "capex",
+          "description": "UK's longest road tunnel. \u00a33.1bn govt funding + \u00a37.5bn private finance (RAB model). DCO granted March 2025, construction 2026, opening ~2030."
+        },
+        {
+          "name": "M25 Enhancements",
+          "value": 1200000000,
+          "type": "capex"
+        },
+        {
+          "name": "A2/M2 Improvements",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Renewals",
+          "value": 2500000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Lower Thames Crossing", "M25 Junction 10", "A2 Bean & Ebbsfleet", "M2 J5 improvements"],
-      "notes": "RIS3 2026-2031 (£25bn settlement). Includes UK's largest road project - Lower Thames Crossing. Budget 2025 confirmed £891m additional for LTC.",
+      "keyProjects": [
+        "Lower Thames Crossing",
+        "M25 Junction 10",
+        "A2 Bean & Ebbsfleet",
+        "M2 J5 improvements"
+      ],
+      "notes": "RIS3 2026-2031 (\u00a325bn settlement). Includes UK's largest road project - Lower Thames Crossing. Budget 2025 confirmed \u00a3891m additional for LTC.",
       "source": "National Highways RIS3 Programme, HM Treasury Budget Nov 2025"
     },
     {
@@ -749,19 +1894,53 @@
       "name": "National Highways South West",
       "sector": "highways",
       "subSector": "strategic-roads",
-      "regions": ["south-west"],
+      "regions": [
+        "south-west"
+      ],
       "subdivisions": {
-        "south-west": ["Bristol, City of", "Bath and North East Somerset", "North Somerset", "South Gloucestershire", "Somerset", "Devon", "Cornwall", "Dorset", "Wiltshire", "Gloucestershire"]
+        "south-west": [
+          "Bristol, City of",
+          "Bath and North East Somerset",
+          "North Somerset",
+          "South Gloucestershire",
+          "Somerset",
+          "Devon",
+          "Cornwall",
+          "Dorset",
+          "Wiltshire",
+          "Gloucestershire"
+        ]
       },
       "budget2026": 1100000000,
       "budget10Year": 5500000000,
       "programmes": [
-        { "name": "A303 Stonehenge Tunnel", "value": 1700000000, "type": "capex" },
-        { "name": "A358 Dualling", "value": 500000000, "type": "capex" },
-        { "name": "M5 Enhancements", "value": 800000000, "type": "capex" },
-        { "name": "Operations & Renewals", "value": 2500000000, "type": "opex" }
+        {
+          "name": "A303 Stonehenge Tunnel",
+          "value": 1700000000,
+          "type": "capex"
+        },
+        {
+          "name": "A358 Dualling",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "M5 Enhancements",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Renewals",
+          "value": 2500000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["A303 Stonehenge tunnel", "A358 Taunton to Southfields", "M5 J10 Cheltenham", "A30 Chiverton to Carland Cross"],
+      "keyProjects": [
+        "A303 Stonehenge tunnel",
+        "A358 Taunton to Southfields",
+        "M5 J10 Cheltenham",
+        "A30 Chiverton to Carland Cross"
+      ],
       "notes": "RIS3 2025-2030. Key southwest connectivity improvements.",
       "source": "National Highways RIS3 Programme"
     },
@@ -770,21 +1949,71 @@
       "name": "National Highways Midlands",
       "sector": "highways",
       "subSector": "strategic-roads",
-      "regions": ["midlands", "east-midlands"],
+      "regions": [
+        "midlands",
+        "east-midlands"
+      ],
       "subdivisions": {
-        "midlands": ["Birmingham", "Wolverhampton", "Coventry", "Sandwell", "Dudley", "Walsall", "Solihull", "Staffordshire", "Shropshire", "Worcestershire", "Warwickshire", "Herefordshire"],
-        "east-midlands": ["Nottingham", "Derby", "Leicester", "Northamptonshire", "Lincolnshire", "Derbyshire", "Leicestershire", "Rutland"]
+        "midlands": [
+          "Birmingham",
+          "Wolverhampton",
+          "Coventry",
+          "Sandwell",
+          "Dudley",
+          "Walsall",
+          "Solihull",
+          "Staffordshire",
+          "Shropshire",
+          "Worcestershire",
+          "Warwickshire",
+          "Herefordshire"
+        ],
+        "east-midlands": [
+          "Nottingham",
+          "Derby",
+          "Leicester",
+          "Northamptonshire",
+          "Lincolnshire",
+          "Derbyshire",
+          "Leicestershire",
+          "Rutland"
+        ]
       },
       "budget2026": 1400000000,
       "budget10Year": 7000000000,
       "programmes": [
-        { "name": "M42 Junction 6", "value": 500000000, "type": "capex" },
-        { "name": "A46 Newark Bypass", "value": 700000000, "type": "capex" },
-        { "name": "M6 Enhancements", "value": 1500000000, "type": "capex" },
-        { "name": "A5 Improvements", "value": 800000000, "type": "capex" },
-        { "name": "Operations & Renewals", "value": 3500000000, "type": "opex" }
+        {
+          "name": "M42 Junction 6",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "A46 Newark Bypass",
+          "value": 700000000,
+          "type": "capex"
+        },
+        {
+          "name": "M6 Enhancements",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "A5 Improvements",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Renewals",
+          "value": 3500000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["M42 Junction 6 HS2 link", "A46 Newark Northern Bypass", "M6 Junction 10", "A5 Towcester relief road"],
+      "keyProjects": [
+        "M42 Junction 6 HS2 link",
+        "A46 Newark Northern Bypass",
+        "M6 Junction 10",
+        "A5 Towcester relief road"
+      ],
       "notes": "RIS3 2025-2030. Key HS2 interchange connectivity.",
       "source": "National Highways RIS3 Programme"
     },
@@ -793,19 +2022,54 @@
       "name": "National Highways North West",
       "sector": "highways",
       "subSector": "strategic-roads",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "subdivisions": {
-        "north-west": ["Manchester", "Liverpool", "Salford", "Trafford", "Bolton", "Wigan", "Warrington", "Cheshire East", "Cheshire West and Chester", "Lancashire", "Cumbria"]
+        "north-west": [
+          "Manchester",
+          "Liverpool",
+          "Salford",
+          "Trafford",
+          "Bolton",
+          "Wigan",
+          "Warrington",
+          "Cheshire East",
+          "Cheshire West and Chester",
+          "Lancashire",
+          "Cumbria"
+        ]
       },
       "budget2026": 1200000000,
       "budget10Year": 6000000000,
       "programmes": [
-        { "name": "M6 J19-J21a Smart Motorway", "value": 800000000, "type": "capex" },
-        { "name": "A66 Northern Trans-Pennine", "value": 1000000000, "type": "capex" },
-        { "name": "M56 Improvements", "value": 500000000, "type": "capex" },
-        { "name": "Operations & Renewals", "value": 3700000000, "type": "opex" }
+        {
+          "name": "M6 J19-J21a Smart Motorway",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "A66 Northern Trans-Pennine",
+          "value": 1000000000,
+          "type": "capex"
+        },
+        {
+          "name": "M56 Improvements",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Renewals",
+          "value": 3700000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["A66 Northern Trans-Pennine", "M6 Junction improvements", "M56 J6-8 upgrade", "M58 link improvements"],
+      "keyProjects": [
+        "A66 Northern Trans-Pennine",
+        "M6 Junction improvements",
+        "M56 J6-8 upgrade",
+        "M58 link improvements"
+      ],
       "notes": "RIS3 2025-2030. Trans-Pennine connectivity focus.",
       "source": "National Highways RIS3 Programme"
     },
@@ -814,21 +2078,78 @@
       "name": "Lancashire County Council Transport",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "subdivisions": {
-        "north-west": ["Preston", "Blackpool", "Blackburn with Darwen", "Lancaster", "Burnley", "Pendle", "Chorley", "South Ribble", "West Lancashire", "Fylde", "Wyre", "Rossendale", "Hyndburn", "Ribble Valley"]
+        "north-west": [
+          "Preston",
+          "Blackpool",
+          "Blackburn with Darwen",
+          "Lancaster",
+          "Burnley",
+          "Pendle",
+          "Chorley",
+          "South Ribble",
+          "West Lancashire",
+          "Fylde",
+          "Wyre",
+          "Rossendale",
+          "Hyndburn",
+          "Ribble Valley"
+        ]
       },
       "budget2026": 180000000,
       "budget10Year": 1200000000,
       "programmes": [
-        { "name": "Preston Western Distributor", "value": 200000000, "type": "capex", "description": "Major new road linking M55 to A583. Under construction." },
-        { "name": "South Lancaster Growth Catalyst", "value": 150000000, "type": "capex", "description": "Infrastructure for major housing and employment growth." },
-        { "name": "East-West Connectivity", "value": 120000000, "type": "capex", "description": "A56/M65 corridor improvements, Burnley-Pendle connectivity." },
-        { "name": "Bus Service Improvement Plan", "value": 100000000, "type": "capex", "description": "BSIP delivery - frequencies, fares, infrastructure." },
-        { "name": "Active Travel Lancashire", "value": 80000000, "type": "capex", "description": "Cycling and walking network expansion." },
-        { "name": "Rail Station Access", "value": 60000000, "type": "capex", "description": "Improvements at Preston, Lancaster, Blackpool stations." },
-        { "name": "Levelling Up Projects", "value": 180000000, "type": "capex", "description": "Town centre regeneration, transport links." },
-        { "name": "Highway Maintenance", "value": 310000000, "type": "opex", "description": "Road repairs, winter maintenance, bridge works." }
+        {
+          "name": "Preston Western Distributor",
+          "value": 200000000,
+          "type": "capex",
+          "description": "Major new road linking M55 to A583. Under construction."
+        },
+        {
+          "name": "South Lancaster Growth Catalyst",
+          "value": 150000000,
+          "type": "capex",
+          "description": "Infrastructure for major housing and employment growth."
+        },
+        {
+          "name": "East-West Connectivity",
+          "value": 120000000,
+          "type": "capex",
+          "description": "A56/M65 corridor improvements, Burnley-Pendle connectivity."
+        },
+        {
+          "name": "Bus Service Improvement Plan",
+          "value": 100000000,
+          "type": "capex",
+          "description": "BSIP delivery - frequencies, fares, infrastructure."
+        },
+        {
+          "name": "Active Travel Lancashire",
+          "value": 80000000,
+          "type": "capex",
+          "description": "Cycling and walking network expansion."
+        },
+        {
+          "name": "Rail Station Access",
+          "value": 60000000,
+          "type": "capex",
+          "description": "Improvements at Preston, Lancaster, Blackpool stations."
+        },
+        {
+          "name": "Levelling Up Projects",
+          "value": 180000000,
+          "type": "capex",
+          "description": "Town centre regeneration, transport links."
+        },
+        {
+          "name": "Highway Maintenance",
+          "value": 310000000,
+          "type": "opex",
+          "description": "Road repairs, winter maintenance, bridge works."
+        }
       ],
       "keyProjects": [
         "Preston Western Distributor (under construction)",
@@ -847,20 +2168,59 @@
       "name": "National Highways North East",
       "sector": "highways",
       "subSector": "strategic-roads",
-      "regions": ["north-east", "yorkshire-humber"],
+      "regions": [
+        "north-east",
+        "yorkshire-humber"
+      ],
       "subdivisions": {
-        "north-east": ["Newcastle upon Tyne", "Gateshead", "Sunderland", "Durham", "Northumberland"],
-        "yorkshire-humber": ["Leeds", "Bradford", "Sheffield", "Kingston upon Hull", "North Yorkshire", "South Yorkshire", "West Yorkshire", "East Riding of Yorkshire"]
+        "north-east": [
+          "Newcastle upon Tyne",
+          "Gateshead",
+          "Sunderland",
+          "Durham",
+          "Northumberland"
+        ],
+        "yorkshire-humber": [
+          "Leeds",
+          "Bradford",
+          "Sheffield",
+          "Kingston upon Hull",
+          "North Yorkshire",
+          "South Yorkshire",
+          "West Yorkshire",
+          "East Riding of Yorkshire"
+        ]
       },
       "budget2026": 900000000,
       "budget10Year": 4500000000,
       "programmes": [
-        { "name": "A1 Improvements", "value": 1200000000, "type": "capex" },
-        { "name": "A19 Tees Crossing", "value": 400000000, "type": "capex" },
-        { "name": "M62 Enhancements", "value": 600000000, "type": "capex" },
-        { "name": "Operations & Renewals", "value": 2300000000, "type": "opex" }
+        {
+          "name": "A1 Improvements",
+          "value": 1200000000,
+          "type": "capex"
+        },
+        {
+          "name": "A19 Tees Crossing",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "M62 Enhancements",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Renewals",
+          "value": 2300000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["A1 Birtley to Coal House", "A19 Tees crossing improvements", "A64 Hopgrove improvement", "M62 J32-35"],
+      "keyProjects": [
+        "A1 Birtley to Coal House",
+        "A19 Tees crossing improvements",
+        "A64 Hopgrove improvement",
+        "M62 J32-35"
+      ],
       "notes": "RIS3 2025-2030. North-South connectivity improvements.",
       "source": "National Highways RIS3 Programme"
     },
@@ -869,19 +2229,48 @@
       "name": "National Highways Eastern",
       "sector": "highways",
       "subSector": "strategic-roads",
-      "regions": ["eastern"],
+      "regions": [
+        "eastern"
+      ],
       "subdivisions": {
-        "eastern": ["Cambridgeshire", "Norfolk", "Suffolk", "Bedfordshire", "Peterborough"]
+        "eastern": [
+          "Cambridgeshire",
+          "Norfolk",
+          "Suffolk",
+          "Bedfordshire",
+          "Peterborough"
+        ]
       },
       "budget2026": 700000000,
       "budget10Year": 3500000000,
       "programmes": [
-        { "name": "A47 Improvements", "value": 800000000, "type": "capex" },
-        { "name": "A12 Chelmsford to A120", "value": 600000000, "type": "capex" },
-        { "name": "A14 Cambridge Improvements", "value": 400000000, "type": "capex" },
-        { "name": "Operations & Renewals", "value": 1700000000, "type": "opex" }
+        {
+          "name": "A47 Improvements",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "A12 Chelmsford to A120",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "A14 Cambridge Improvements",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Operations & Renewals",
+          "value": 1700000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["A47 Wansford to Sutton", "A47 Thickthorn Junction", "A12 widening", "A428 Black Cat to Caxton Gibbet"],
+      "keyProjects": [
+        "A47 Wansford to Sutton",
+        "A47 Thickthorn Junction",
+        "A12 widening",
+        "A428 Black Cat to Caxton Gibbet"
+      ],
       "notes": "RIS3 2025-2030. East-West connectivity focus.",
       "source": "National Highways RIS3 Programme"
     },
@@ -890,16 +2279,39 @@
       "name": "Transport Scotland Trunk Roads",
       "sector": "highways",
       "subSector": "trunk-roads",
-      "regions": ["scotland"],
+      "regions": [
+        "scotland"
+      ],
       "budget2026": 800000000,
       "budget10Year": 4000000000,
       "programmes": [
-        { "name": "A9 Dualling", "value": 1800000000, "type": "capex" },
-        { "name": "A96 Dualling", "value": 900000000, "type": "capex" },
-        { "name": "Trunk Road Maintenance", "value": 800000000, "type": "opex" },
-        { "name": "Safety Improvements", "value": 500000000, "type": "capex" }
+        {
+          "name": "A9 Dualling",
+          "value": 1800000000,
+          "type": "capex"
+        },
+        {
+          "name": "A96 Dualling",
+          "value": 900000000,
+          "type": "capex"
+        },
+        {
+          "name": "Trunk Road Maintenance",
+          "value": 800000000,
+          "type": "opex"
+        },
+        {
+          "name": "Safety Improvements",
+          "value": 500000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["A9 Dualling Perth to Inverness", "A96 Inverness to Aberdeen", "A82 improvements", "Queensferry Crossing maintenance"],
+      "keyProjects": [
+        "A9 Dualling Perth to Inverness",
+        "A96 Inverness to Aberdeen",
+        "A82 improvements",
+        "Queensferry Crossing maintenance"
+      ],
       "notes": "Scottish Government trunk road investment. A9 dualling priority.",
       "source": "Transport Scotland STPR2"
     },
@@ -908,16 +2320,39 @@
       "name": "Welsh Government Trunk Roads",
       "sector": "highways",
       "subSector": "trunk-roads",
-      "regions": ["wales"],
+      "regions": [
+        "wales"
+      ],
       "budget2026": 350000000,
       "budget10Year": 1750000000,
       "programmes": [
-        { "name": "A55 Improvements", "value": 400000000, "type": "capex" },
-        { "name": "A483/A5 Corridor", "value": 300000000, "type": "capex" },
-        { "name": "Network Resilience", "value": 500000000, "type": "capex" },
-        { "name": "Trunk Road Maintenance", "value": 550000000, "type": "opex" }
+        {
+          "name": "A55 Improvements",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "A483/A5 Corridor",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Network Resilience",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Trunk Road Maintenance",
+          "value": 550000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["A55 resilience improvements", "A483 Llandeilo bypass", "A487 Caernarfon-Bontnewydd", "A40 Llanddewi Velfrey to Penblewin"],
+      "keyProjects": [
+        "A55 resilience improvements",
+        "A483 Llandeilo bypass",
+        "A487 Caernarfon-Bontnewydd",
+        "A40 Llanddewi Velfrey to Penblewin"
+      ],
       "notes": "Welsh Government policy shift to road maintenance over new capacity. 2021 roads review impact.",
       "source": "Welsh Government National Transport Delivery Plan"
     },
@@ -926,16 +2361,39 @@
       "name": "DfI Northern Ireland Roads",
       "sector": "highways",
       "subSector": "trunk-roads",
-      "regions": ["northern-ireland"],
+      "regions": [
+        "northern-ireland"
+      ],
       "budget2026": 300000000,
       "budget10Year": 1500000000,
       "programmes": [
-        { "name": "A5 Western Transport Corridor", "value": 500000000, "type": "capex" },
-        { "name": "A6 Derry to Dungiven", "value": 400000000, "type": "capex" },
-        { "name": "Belfast Transport Hub Roads", "value": 200000000, "type": "capex" },
-        { "name": "Network Maintenance", "value": 400000000, "type": "opex" }
+        {
+          "name": "A5 Western Transport Corridor",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "A6 Derry to Dungiven",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Belfast Transport Hub Roads",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Network Maintenance",
+          "value": 400000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["A5 Western Transport Corridor", "A6 Londonderry to Dungiven", "York Street Interchange", "Belfast Rapid Transit"],
+      "keyProjects": [
+        "A5 Western Transport Corridor",
+        "A6 Londonderry to Dungiven",
+        "York Street Interchange",
+        "Belfast Rapid Transit"
+      ],
       "notes": "DfI Regional Strategic Transport Network. Cross-border connectivity focus.",
       "source": "DfI NI Regional Strategic Transport Network Plan"
     },
@@ -944,20 +2402,68 @@
       "name": "Greater Manchester Highways",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "subdivisions": {
-        "north-west": ["Manchester", "Salford", "Trafford", "Stockport", "Tameside", "Oldham", "Rochdale", "Bury", "Bolton", "Wigan"]
+        "north-west": [
+          "Manchester",
+          "Salford",
+          "Trafford",
+          "Stockport",
+          "Tameside",
+          "Oldham",
+          "Rochdale",
+          "Bury",
+          "Bolton",
+          "Wigan"
+        ]
       },
       "budget2026": 450000000,
       "budget10Year": 2500000000,
       "programmes": [
-        { "name": "Highway Maintenance & Renewal", "value": 800000000, "type": "opex", "description": "Pothole repairs, resurfacing, bridge maintenance across 10 districts." },
-        { "name": "Major Scheme Delivery", "value": 500000000, "type": "capex", "description": "A34 corridor, Stockport town centre, Salford Crescent." },
-        { "name": "Bus Priority Infrastructure", "value": 400000000, "type": "capex", "description": "Bee Network bus lanes, signal priority, shelter upgrades." },
-        { "name": "Traffic Management", "value": 300000000, "type": "capex", "description": "Smart traffic systems, congestion management, Clean Air Zone." },
-        { "name": "Bridge & Structure Works", "value": 250000000, "type": "capex", "description": "Mancunian Way repairs, Barton Bridge, structure maintenance." },
-        { "name": "Winter Resilience", "value": 150000000, "type": "opex", "description": "Gritting, flooding response, emergency repairs." },
-        { "name": "Electric Vehicle Infrastructure", "value": 100000000, "type": "capex", "description": "GM-wide EV charging network rollout." }
+        {
+          "name": "Highway Maintenance & Renewal",
+          "value": 800000000,
+          "type": "opex",
+          "description": "Pothole repairs, resurfacing, bridge maintenance across 10 districts."
+        },
+        {
+          "name": "Major Scheme Delivery",
+          "value": 500000000,
+          "type": "capex",
+          "description": "A34 corridor, Stockport town centre, Salford Crescent."
+        },
+        {
+          "name": "Bus Priority Infrastructure",
+          "value": 400000000,
+          "type": "capex",
+          "description": "Bee Network bus lanes, signal priority, shelter upgrades."
+        },
+        {
+          "name": "Traffic Management",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Smart traffic systems, congestion management, Clean Air Zone."
+        },
+        {
+          "name": "Bridge & Structure Works",
+          "value": 250000000,
+          "type": "capex",
+          "description": "Mancunian Way repairs, Barton Bridge, structure maintenance."
+        },
+        {
+          "name": "Winter Resilience",
+          "value": 150000000,
+          "type": "opex",
+          "description": "Gritting, flooding response, emergency repairs."
+        },
+        {
+          "name": "Electric Vehicle Infrastructure",
+          "value": 100000000,
+          "type": "capex",
+          "description": "GM-wide EV charging network rollout."
+        }
       ],
       "keyProjects": [
         "A34 corridor improvements",
@@ -976,19 +2482,50 @@
       "name": "West Midlands Highways (CRSTS)",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["midlands"],
+      "regions": [
+        "midlands"
+      ],
       "subdivisions": {
-        "midlands": ["Birmingham", "Wolverhampton", "Coventry", "Sandwell", "Dudley", "Walsall", "Solihull"]
+        "midlands": [
+          "Birmingham",
+          "Wolverhampton",
+          "Coventry",
+          "Sandwell",
+          "Dudley",
+          "Walsall",
+          "Solihull"
+        ]
       },
       "budget2026": 350000000,
       "budget10Year": 1750000000,
       "programmes": [
-        { "name": "Sprint Bus Rapid Transit", "value": 400000000, "type": "capex" },
-        { "name": "Active Travel Routes", "value": 300000000, "type": "capex" },
-        { "name": "HS2 Highway Works", "value": 450000000, "type": "capex" },
-        { "name": "Network Resilience", "value": 600000000, "type": "opex" }
+        {
+          "name": "Sprint Bus Rapid Transit",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Active Travel Routes",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "HS2 Highway Works",
+          "value": 450000000,
+          "type": "capex"
+        },
+        {
+          "name": "Network Resilience",
+          "value": 600000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Sprint A34 & A45 corridors", "Birmingham cycle routes", "HS2 Interchange roads", "Coventry Very Light Rail roads"],
+      "keyProjects": [
+        "Sprint A34 & A45 corridors",
+        "Birmingham cycle routes",
+        "HS2 Interchange roads",
+        "Coventry Very Light Rail roads"
+      ],
       "notes": "CRSTS 2022-2027. HS2 integration critical. Sprint BRT corridors.",
       "source": "WMCA CRSTS Programme"
     },
@@ -997,19 +2534,48 @@
       "name": "West Yorkshire Highways (CRSTS)",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["yorkshire-humber"],
+      "regions": [
+        "yorkshire-humber"
+      ],
       "subdivisions": {
-        "yorkshire-humber": ["Leeds", "Bradford", "Wakefield", "Kirklees", "Calderdale"]
+        "yorkshire-humber": [
+          "Leeds",
+          "Bradford",
+          "Wakefield",
+          "Kirklees",
+          "Calderdale"
+        ]
       },
       "budget2026": 280000000,
       "budget10Year": 1400000000,
       "programmes": [
-        { "name": "Mass Transit Corridors", "value": 400000000, "type": "capex" },
-        { "name": "Transforming Cities", "value": 300000000, "type": "capex" },
-        { "name": "Active Travel", "value": 200000000, "type": "capex" },
-        { "name": "Highway Maintenance", "value": 500000000, "type": "opex" }
+        {
+          "name": "Mass Transit Corridors",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Transforming Cities",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Active Travel",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Highway Maintenance",
+          "value": 500000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Leeds Mass Transit corridor prep", "Bradford-Leeds connectivity", "Castleford growth corridor", "Huddersfield bus improvements"],
+      "keyProjects": [
+        "Leeds Mass Transit corridor prep",
+        "Bradford-Leeds connectivity",
+        "Castleford growth corridor",
+        "Huddersfield bus improvements"
+      ],
       "notes": "CRSTS 2022-2027. Preparing for mass transit system.",
       "source": "WYCA CRSTS Programme"
     },
@@ -1018,18 +2584,52 @@
       "name": "Liverpool City Region Highways",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "subdivisions": {
-        "north-west": ["Liverpool", "Sefton", "Wirral", "Knowsley", "St. Helens", "Halton"]
+        "north-west": [
+          "Liverpool",
+          "Sefton",
+          "Wirral",
+          "Knowsley",
+          "St. Helens",
+          "Halton"
+        ]
       },
       "budget2026": 280000000,
       "budget10Year": 1400000000,
       "programmes": [
-        { "name": "Key Route Network Upgrades", "value": 400000000, "type": "capex", "description": "Strategic road network improvements across 6 boroughs." },
-        { "name": "Freeport Access Infrastructure", "value": 300000000, "type": "capex", "description": "Road access to Liverpool2, Wirral Waters, Parkside." },
-        { "name": "Bus Priority Corridors", "value": 200000000, "type": "capex", "description": "Bus lanes, signal priority, interchange improvements." },
-        { "name": "Silver Jubilee Bridge Maintenance", "value": 150000000, "type": "capex", "description": "Major refurbishment of Runcorn-Widnes bridge." },
-        { "name": "Highway Maintenance", "value": 350000000, "type": "opex", "description": "Pothole repair, resurfacing, winter maintenance." }
+        {
+          "name": "Key Route Network Upgrades",
+          "value": 400000000,
+          "type": "capex",
+          "description": "Strategic road network improvements across 6 boroughs."
+        },
+        {
+          "name": "Freeport Access Infrastructure",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Road access to Liverpool2, Wirral Waters, Parkside."
+        },
+        {
+          "name": "Bus Priority Corridors",
+          "value": 200000000,
+          "type": "capex",
+          "description": "Bus lanes, signal priority, interchange improvements."
+        },
+        {
+          "name": "Silver Jubilee Bridge Maintenance",
+          "value": 150000000,
+          "type": "capex",
+          "description": "Major refurbishment of Runcorn-Widnes bridge."
+        },
+        {
+          "name": "Highway Maintenance",
+          "value": 350000000,
+          "type": "opex",
+          "description": "Pothole repair, resurfacing, winter maintenance."
+        }
       ],
       "keyProjects": [
         "Freeport access roads",
@@ -1046,19 +2646,47 @@
       "name": "South Yorkshire Highways (CRSTS)",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["yorkshire-humber"],
+      "regions": [
+        "yorkshire-humber"
+      ],
       "subdivisions": {
-        "yorkshire-humber": ["Sheffield", "Rotherham", "Doncaster", "Barnsley"]
+        "yorkshire-humber": [
+          "Sheffield",
+          "Rotherham",
+          "Doncaster",
+          "Barnsley"
+        ]
       },
       "budget2026": 180000000,
       "budget10Year": 900000000,
       "programmes": [
-        { "name": "Active Travel Network", "value": 250000000, "type": "capex" },
-        { "name": "Bus Improvements", "value": 200000000, "type": "capex" },
-        { "name": "Tram-Train Highways", "value": 150000000, "type": "capex" },
-        { "name": "Maintenance", "value": 300000000, "type": "opex" }
+        {
+          "name": "Active Travel Network",
+          "value": 250000000,
+          "type": "capex"
+        },
+        {
+          "name": "Bus Improvements",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Tram-Train Highways",
+          "value": 150000000,
+          "type": "capex"
+        },
+        {
+          "name": "Maintenance",
+          "value": 300000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Sheffield-Rotherham active travel", "Doncaster interchange roads", "South Yorkshire Parkway", "A61 corridor"],
+      "keyProjects": [
+        "Sheffield-Rotherham active travel",
+        "Doncaster interchange roads",
+        "South Yorkshire Parkway",
+        "A61 corridor"
+      ],
       "notes": "CRSTS 2022-2027. Tram-train network integration.",
       "source": "SYMCA CRSTS Programme"
     },
@@ -1067,19 +2695,50 @@
       "name": "North East Highways (CRSTS)",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["north-east"],
+      "regions": [
+        "north-east"
+      ],
       "subdivisions": {
-        "north-east": ["Newcastle upon Tyne", "Gateshead", "North Tyneside", "South Tyneside", "Sunderland", "Durham", "Northumberland"]
+        "north-east": [
+          "Newcastle upon Tyne",
+          "Gateshead",
+          "North Tyneside",
+          "South Tyneside",
+          "Sunderland",
+          "Durham",
+          "Northumberland"
+        ]
       },
       "budget2026": 160000000,
       "budget10Year": 800000000,
       "programmes": [
-        { "name": "Metro Flow Roads", "value": 200000000, "type": "capex" },
-        { "name": "Active Travel", "value": 180000000, "type": "capex" },
-        { "name": "EV Infrastructure", "value": 120000000, "type": "capex" },
-        { "name": "Maintenance", "value": 300000000, "type": "opex" }
+        {
+          "name": "Metro Flow Roads",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Active Travel",
+          "value": 180000000,
+          "type": "capex"
+        },
+        {
+          "name": "EV Infrastructure",
+          "value": 120000000,
+          "type": "capex"
+        },
+        {
+          "name": "Maintenance",
+          "value": 300000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Tyneside active travel", "Sunderland central route", "Durham connectivity", "Metro integration highways"],
+      "keyProjects": [
+        "Tyneside active travel",
+        "Sunderland central route",
+        "Durham connectivity",
+        "Metro integration highways"
+      ],
       "notes": "CRSTS 2022-2027. Metro Futures highway integration.",
       "source": "NECA CRSTS Programme"
     },
@@ -1088,16 +2747,39 @@
       "name": "Transport for London Highways",
       "sector": "highways",
       "subSector": "local-major",
-      "regions": ["london"],
+      "regions": [
+        "london"
+      ],
       "budget2026": 500000000,
       "budget10Year": 2500000000,
       "programmes": [
-        { "name": "Healthy Streets", "value": 800000000, "type": "capex" },
-        { "name": "Cycleway Network", "value": 400000000, "type": "capex" },
-        { "name": "Bus Priority", "value": 300000000, "type": "capex" },
-        { "name": "TLRN Maintenance", "value": 1000000000, "type": "opex" }
+        {
+          "name": "Healthy Streets",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Cycleway Network",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Bus Priority",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "TLRN Maintenance",
+          "value": 1000000000,
+          "type": "opex"
+        }
       ],
-      "keyProjects": ["Cycleway extensions", "Silvertown Tunnel approach roads", "ULEZ expansion infrastructure", "Low Traffic Neighbourhoods"],
+      "keyProjects": [
+        "Cycleway extensions",
+        "Silvertown Tunnel approach roads",
+        "ULEZ expansion infrastructure",
+        "Low Traffic Neighbourhoods"
+      ],
       "notes": "TfL road network investment. Healthy Streets priority. Supports Mayor's Transport Strategy.",
       "source": "TfL Business Plan 2024/25"
     },
@@ -1106,22 +2788,57 @@
       "name": "Gatwick Airport",
       "sector": "aviation",
       "subSector": "major-airports",
-      "regions": ["south-east"],
+      "regions": [
+        "south-east"
+      ],
       "subdivisions": {
-        "south-east": ["Crawley", "Reigate and Banstead", "Mid Sussex"]
+        "south-east": [
+          "Crawley",
+          "Reigate and Banstead",
+          "Mid Sussex"
+        ]
       },
       "budget2026": 850000000,
       "budget10Year": 8500000000,
       "programmes": [
-        { "name": "Northern Runway Project", "value": 2200000000, "type": "capex" },
-        { "name": "Terminal Capacity", "value": 1800000000, "type": "capex" },
-        { "name": "Pier & Stand Development", "value": 1500000000, "type": "capex" },
-        { "name": "Airfield & Infrastructure", "value": 1200000000, "type": "capex" },
-        { "name": "Surface Access", "value": 800000000, "type": "capex" },
-        { "name": "Sustainability Programme", "value": 1000000000, "type": "capex" }
+        {
+          "name": "Northern Runway Project",
+          "value": 2200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Terminal Capacity",
+          "value": 1800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Pier & Stand Development",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield & Infrastructure",
+          "value": 1200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Surface Access",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability Programme",
+          "value": 1000000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Northern runway dual use", "North Terminal expansion", "Station upgrade", "Pier 7 development"],
-      "notes": "UK's second busiest. Northern runway DCO approved Sept 2025 - £2.2bn privately-financed, runway relocated 12m north for dual simultaneous use. Agreed stricter noise controls and 54% public transport target. Target 75m passengers.",
+      "keyProjects": [
+        "Northern runway dual use",
+        "North Terminal expansion",
+        "Station upgrade",
+        "Pier 7 development"
+      ],
+      "notes": "UK's second busiest. Northern runway DCO approved Sept 2025 - \u00a32.2bn privately-financed, runway relocated 12m north for dual simultaneous use. Agreed stricter noise controls and 54% public transport target. Target 75m passengers.",
       "source": "Gatwick Airport Masterplan 2024, DfT DCO Decision Sept 2025"
     },
     {
@@ -1129,22 +2846,57 @@
       "name": "Manchester Airport Group",
       "sector": "aviation",
       "subSector": "major-airports",
-      "regions": ["north-west", "east-midlands", "london"],
+      "regions": [
+        "north-west",
+        "east-midlands",
+        "london"
+      ],
       "subdivisions": {
-        "north-west": ["Manchester", "Stockport"],
-        "east-midlands": ["North West Leicestershire"],
-        "london": ["Hillingdon"]
+        "north-west": [
+          "Manchester",
+          "Stockport"
+        ],
+        "east-midlands": [
+          "North West Leicestershire"
+        ],
+        "london": [
+          "Hillingdon"
+        ]
       },
       "budget2026": 600000000,
       "budget10Year": 4500000000,
       "programmes": [
-        { "name": "Manchester T2 Transformation", "value": 1800000000, "type": "capex" },
-        { "name": "Stansted Arrivals Building", "value": 600000000, "type": "capex" },
-        { "name": "East Midlands Cargo Hub", "value": 400000000, "type": "capex" },
-        { "name": "Airfield Investment", "value": 900000000, "type": "capex" },
-        { "name": "Net Zero Programme", "value": 800000000, "type": "capex" }
+        {
+          "name": "Manchester T2 Transformation",
+          "value": 1800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Stansted Arrivals Building",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "East Midlands Cargo Hub",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Investment",
+          "value": 900000000,
+          "type": "capex"
+        },
+        {
+          "name": "Net Zero Programme",
+          "value": 800000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Manchester T2 extension complete", "Stansted transformation", "East Midlands freeport cargo"],
+      "keyProjects": [
+        "Manchester T2 extension complete",
+        "Stansted transformation",
+        "East Midlands freeport cargo"
+      ],
       "notes": "MAG operates Manchester, Stansted, East Midlands. Manchester T2 opened 2024.",
       "source": "MAG Capital Investment Plan"
     },
@@ -1153,19 +2905,44 @@
       "name": "Birmingham Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["midlands"],
+      "regions": [
+        "midlands"
+      ],
       "subdivisions": {
-        "midlands": ["Solihull", "Birmingham"]
+        "midlands": [
+          "Solihull",
+          "Birmingham"
+        ]
       },
       "budget2026": 200000000,
       "budget10Year": 1500000000,
       "programmes": [
-        { "name": "HS2 Interchange Connectivity", "value": 500000000, "type": "capex" },
-        { "name": "Terminal Extension", "value": 400000000, "type": "capex" },
-        { "name": "Airfield Development", "value": 350000000, "type": "capex" },
-        { "name": "Surface Access", "value": 250000000, "type": "capex" }
+        {
+          "name": "HS2 Interchange Connectivity",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "Terminal Extension",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Development",
+          "value": 350000000,
+          "type": "capex"
+        },
+        {
+          "name": "Surface Access",
+          "value": 250000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["HS2 Interchange station", "Terminal capacity expansion", "Runway extension study"],
+      "keyProjects": [
+        "HS2 Interchange station",
+        "Terminal capacity expansion",
+        "Runway extension study"
+      ],
       "notes": "Key HS2 connectivity. Midlands Engine growth driver.",
       "source": "Birmingham Airport Masterplan"
     },
@@ -1174,19 +2951,43 @@
       "name": "Edinburgh Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["scotland"],
+      "regions": [
+        "scotland"
+      ],
       "subdivisions": {
-        "scotland": ["City of Edinburgh"]
+        "scotland": [
+          "City of Edinburgh"
+        ]
       },
       "budget2026": 150000000,
       "budget10Year": 1000000000,
       "programmes": [
-        { "name": "Terminal Expansion", "value": 400000000, "type": "capex" },
-        { "name": "Airfield Investment", "value": 300000000, "type": "capex" },
-        { "name": "Tram Extension", "value": 200000000, "type": "capex" },
-        { "name": "Net Zero Infrastructure", "value": 100000000, "type": "capex" }
+        {
+          "name": "Terminal Expansion",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Investment",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Tram Extension",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Net Zero Infrastructure",
+          "value": 100000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["West terminal expansion", "Tram connection", "Sustainable aviation fuel"],
+      "keyProjects": [
+        "West terminal expansion",
+        "Tram connection",
+        "Sustainable aviation fuel"
+      ],
       "notes": "Scotland's busiest airport. 14m passengers. VINCI Airports owned.",
       "source": "Edinburgh Airport Masterplan 2023"
     },
@@ -1195,19 +2996,43 @@
       "name": "Glasgow Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["scotland"],
+      "regions": [
+        "scotland"
+      ],
       "subdivisions": {
-        "scotland": ["Renfrewshire"]
+        "scotland": [
+          "Renfrewshire"
+        ]
       },
       "budget2026": 80000000,
       "budget10Year": 600000000,
       "programmes": [
-        { "name": "Terminal Modernisation", "value": 250000000, "type": "capex" },
-        { "name": "Airfield Upgrades", "value": 150000000, "type": "capex" },
-        { "name": "Metro/Rail Link Study", "value": 100000000, "type": "capex" },
-        { "name": "Sustainability Programme", "value": 100000000, "type": "capex" }
+        {
+          "name": "Terminal Modernisation",
+          "value": 250000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Upgrades",
+          "value": 150000000,
+          "type": "capex"
+        },
+        {
+          "name": "Metro/Rail Link Study",
+          "value": 100000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability Programme",
+          "value": 100000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Terminal refurbishment", "City centre rail link study", "Net zero operations"],
+      "keyProjects": [
+        "Terminal refurbishment",
+        "City centre rail link study",
+        "Net zero operations"
+      ],
       "notes": "AGS Airports (Ferrovial). Glasgow Metro connectivity study ongoing.",
       "source": "Glasgow Airport Investment Plan"
     },
@@ -1216,19 +3041,43 @@
       "name": "Bristol Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["south-west"],
+      "regions": [
+        "south-west"
+      ],
       "subdivisions": {
-        "south-west": ["North Somerset"]
+        "south-west": [
+          "North Somerset"
+        ]
       },
       "budget2026": 100000000,
       "budget10Year": 800000000,
       "programmes": [
-        { "name": "Terminal Extension", "value": 350000000, "type": "capex" },
-        { "name": "Airside Development", "value": 200000000, "type": "capex" },
-        { "name": "Surface Access", "value": 150000000, "type": "capex" },
-        { "name": "Sustainability", "value": 100000000, "type": "capex" }
+        {
+          "name": "Terminal Extension",
+          "value": 350000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airside Development",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Surface Access",
+          "value": 150000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability",
+          "value": 100000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["12m passenger capacity", "A38 improvements", "Public transport hub"],
+      "keyProjects": [
+        "12m passenger capacity",
+        "A38 improvements",
+        "Public transport hub"
+      ],
       "notes": "Ontario Teachers' owned. Expansion to 12m passengers approved.",
       "source": "Bristol Airport Development Plan"
     },
@@ -1237,19 +3086,43 @@
       "name": "London Luton Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["eastern"],
+      "regions": [
+        "eastern"
+      ],
       "subdivisions": {
-        "eastern": ["Luton"]
+        "eastern": [
+          "Luton"
+        ]
       },
       "budget2026": 250000000,
       "budget10Year": 2500000000,
       "programmes": [
-        { "name": "Terminal 2 Development", "value": 1500000000, "type": "capex" },
-        { "name": "DART Extension", "value": 400000000, "type": "capex" },
-        { "name": "Airfield Capacity", "value": 350000000, "type": "capex" },
-        { "name": "Sustainability", "value": 250000000, "type": "capex" }
+        {
+          "name": "Terminal 2 Development",
+          "value": 1500000000,
+          "type": "capex"
+        },
+        {
+          "name": "DART Extension",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Capacity",
+          "value": 350000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability",
+          "value": 250000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["New Terminal 2 (DCO approved)", "DART people mover", "32m passenger capacity by 2043"],
+      "keyProjects": [
+        "New Terminal 2 (DCO approved)",
+        "DART people mover",
+        "32m passenger capacity by 2043"
+      ],
       "notes": "Luton Rising (council-owned). Major expansion DCO granted April 2025 for 32m passengers by 2043 (~double current throughput). DART automated transit operational.",
       "source": "London Luton Airport Expansion DCO, April 2025"
     },
@@ -1258,19 +3131,43 @@
       "name": "London City Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["london"],
+      "regions": [
+        "london"
+      ],
       "subdivisions": {
-        "london": ["Newham"]
+        "london": [
+          "Newham"
+        ]
       },
       "budget2026": 80000000,
       "budget10Year": 500000000,
       "programmes": [
-        { "name": "Terminal Expansion", "value": 200000000, "type": "capex" },
-        { "name": "New Stands", "value": 100000000, "type": "capex" },
-        { "name": "Digital Airport", "value": 100000000, "type": "capex" },
-        { "name": "Sustainability", "value": 100000000, "type": "capex" }
+        {
+          "name": "Terminal Expansion",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "New Stands",
+          "value": 100000000,
+          "type": "capex"
+        },
+        {
+          "name": "Digital Airport",
+          "value": 100000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sustainability",
+          "value": 100000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["9m passenger capacity", "Electric aircraft readiness", "DLR upgrade"],
+      "keyProjects": [
+        "9m passenger capacity",
+        "Electric aircraft readiness",
+        "DLR upgrade"
+      ],
       "notes": "GIP owned. Business travel focused. Electric/hybrid aircraft pioneer.",
       "source": "London City Airport CADP"
     },
@@ -1279,19 +3176,43 @@
       "name": "Newcastle International Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["north-east"],
+      "regions": [
+        "north-east"
+      ],
       "subdivisions": {
-        "north-east": ["Newcastle upon Tyne"]
+        "north-east": [
+          "Newcastle upon Tyne"
+        ]
       },
       "budget2026": 50000000,
       "budget10Year": 350000000,
       "programmes": [
-        { "name": "Terminal Enhancement", "value": 150000000, "type": "capex" },
-        { "name": "Airfield Investment", "value": 100000000, "type": "capex" },
-        { "name": "Metro Upgrade", "value": 50000000, "type": "capex" },
-        { "name": "Net Zero", "value": 50000000, "type": "capex" }
+        {
+          "name": "Terminal Enhancement",
+          "value": 150000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Investment",
+          "value": 100000000,
+          "type": "capex"
+        },
+        {
+          "name": "Metro Upgrade",
+          "value": 50000000,
+          "type": "capex"
+        },
+        {
+          "name": "Net Zero",
+          "value": 50000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Terminal modernisation", "Metro link enhancement", "Cargo development"],
+      "keyProjects": [
+        "Terminal modernisation",
+        "Metro link enhancement",
+        "Cargo development"
+      ],
       "notes": "LA consortium owned. Key North East gateway. 5m passengers.",
       "source": "Newcastle Airport Masterplan"
     },
@@ -1300,18 +3221,39 @@
       "name": "Leeds Bradford Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["yorkshire-humber"],
+      "regions": [
+        "yorkshire-humber"
+      ],
       "subdivisions": {
-        "yorkshire-humber": ["Leeds", "Bradford"]
+        "yorkshire-humber": [
+          "Leeds",
+          "Bradford"
+        ]
       },
       "budget2026": 40000000,
       "budget10Year": 300000000,
       "programmes": [
-        { "name": "Terminal Redevelopment", "value": 150000000, "type": "capex" },
-        { "name": "Surface Access", "value": 80000000, "type": "capex" },
-        { "name": "Airfield Works", "value": 70000000, "type": "capex" }
+        {
+          "name": "Terminal Redevelopment",
+          "value": 150000000,
+          "type": "capex"
+        },
+        {
+          "name": "Surface Access",
+          "value": 80000000,
+          "type": "capex"
+        },
+        {
+          "name": "Airfield Works",
+          "value": 70000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["New terminal building", "Parkway rail station", "Link road"],
+      "keyProjects": [
+        "New terminal building",
+        "Parkway rail station",
+        "Link road"
+      ],
       "notes": "AMP Capital owned. Serving Yorkshire. 4m passenger target.",
       "source": "Leeds Bradford Airport Masterplan"
     },
@@ -1320,18 +3262,39 @@
       "name": "Belfast Airports (International & City)",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["northern-ireland"],
+      "regions": [
+        "northern-ireland"
+      ],
       "subdivisions": {
-        "northern-ireland": ["Belfast", "Antrim and Newtownabbey"]
+        "northern-ireland": [
+          "Belfast",
+          "Antrim and Newtownabbey"
+        ]
       },
       "budget2026": 60000000,
       "budget10Year": 400000000,
       "programmes": [
-        { "name": "Belfast International Investment", "value": 200000000, "type": "capex" },
-        { "name": "Belfast City Development", "value": 120000000, "type": "capex" },
-        { "name": "Connectivity Improvements", "value": 80000000, "type": "capex" }
+        {
+          "name": "Belfast International Investment",
+          "value": 200000000,
+          "type": "capex"
+        },
+        {
+          "name": "Belfast City Development",
+          "value": 120000000,
+          "type": "capex"
+        },
+        {
+          "name": "Connectivity Improvements",
+          "value": 80000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["International terminal upgrade", "City airport extension", "Rapid transit links"],
+      "keyProjects": [
+        "International terminal upgrade",
+        "City airport extension",
+        "Rapid transit links"
+      ],
       "notes": "Two airports serving Belfast region. Combined 10m passengers.",
       "source": "DfI NI Aviation Strategy"
     },
@@ -1340,18 +3303,38 @@
       "name": "Cardiff Airport",
       "sector": "aviation",
       "subSector": "regional-airports",
-      "regions": ["wales"],
+      "regions": [
+        "wales"
+      ],
       "subdivisions": {
-        "wales": ["Vale of Glamorgan"]
+        "wales": [
+          "Vale of Glamorgan"
+        ]
       },
       "budget2026": 30000000,
       "budget10Year": 200000000,
       "programmes": [
-        { "name": "Terminal Improvements", "value": 80000000, "type": "capex" },
-        { "name": "Route Development", "value": 50000000, "type": "capex" },
-        { "name": "MRO Expansion", "value": 70000000, "type": "capex" }
+        {
+          "name": "Terminal Improvements",
+          "value": 80000000,
+          "type": "capex"
+        },
+        {
+          "name": "Route Development",
+          "value": 50000000,
+          "type": "capex"
+        },
+        {
+          "name": "MRO Expansion",
+          "value": 70000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Terminal upgrades", "MRO facility expansion", "South Wales Metro link"],
+      "keyProjects": [
+        "Terminal upgrades",
+        "MRO facility expansion",
+        "South Wales Metro link"
+      ],
       "notes": "Welsh Government owned. St Athan MRO hub. 1.5m passengers.",
       "source": "Cardiff Airport Business Plan"
     },
@@ -1360,16 +3343,40 @@
       "name": "NATS (Air Traffic Control)",
       "sector": "aviation",
       "subSector": "airspace",
-      "regions": ["london", "south-east", "scotland"],
+      "regions": [
+        "london",
+        "south-east",
+        "scotland"
+      ],
       "budget2026": 300000000,
       "budget10Year": 2000000000,
       "programmes": [
-        { "name": "Airspace Modernisation", "value": 800000000, "type": "capex" },
-        { "name": "Technology Refresh", "value": 600000000, "type": "capex" },
-        { "name": "Swanwick/Prestwick Centres", "value": 400000000, "type": "capex" },
-        { "name": "Remote Towers", "value": 200000000, "type": "capex" }
+        {
+          "name": "Airspace Modernisation",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Technology Refresh",
+          "value": 600000000,
+          "type": "capex"
+        },
+        {
+          "name": "Swanwick/Prestwick Centres",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Remote Towers",
+          "value": 200000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["ACOG airspace modernisation", "iTEC system deployment", "Remote tower services"],
+      "keyProjects": [
+        "ACOG airspace modernisation",
+        "iTEC system deployment",
+        "Remote tower services"
+      ],
       "notes": "UK air navigation service provider. Airspace modernisation critical for capacity.",
       "source": "NATS Technology Roadmap"
     },
@@ -1378,15 +3385,29 @@
       "name": "Southern Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["south-east"],
+      "regions": [
+        "south-east"
+      ],
       "budget2026": 1480000000,
       "budget10Year": 7400000000,
       "amp8Total": 7400000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 3100000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 4300000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 3100000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 4300000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Coastal discharge improvements", "Hampshire water resources", "Kent flooding resilience"],
+      "keyProjects": [
+        "Coastal discharge improvements",
+        "Hampshire water resources",
+        "Kent flooding resilience"
+      ],
       "notes": "AMP8 2025-2030. Serves Hampshire, Isle of Wight, Kent, Sussex, Surrey.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1395,20 +3416,56 @@
       "name": "West Midlands Combined Authority Transport",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["midlands"],
+      "regions": [
+        "midlands"
+      ],
       "subdivisions": {
-        "midlands": ["Birmingham", "Wolverhampton", "Coventry", "Sandwell", "Dudley", "Walsall", "Solihull"]
+        "midlands": [
+          "Birmingham",
+          "Wolverhampton",
+          "Coventry",
+          "Sandwell",
+          "Dudley",
+          "Walsall",
+          "Solihull"
+        ]
       },
       "budget2026": 360000000,
       "budget10Year": 1800000000,
       "programmes": [
-        { "name": "Metro Extensions", "value": 800000000, "type": "capex" },
-        { "name": "Sprint BRT Network", "value": 350000000, "type": "capex" },
-        { "name": "Rail Station Improvements", "value": 250000000, "type": "capex" },
-        { "name": "Integrated Ticketing", "value": 100000000, "type": "capex" },
-        { "name": "HS2 Connectivity", "value": 300000000, "type": "capex" }
+        {
+          "name": "Metro Extensions",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Sprint BRT Network",
+          "value": 350000000,
+          "type": "capex"
+        },
+        {
+          "name": "Rail Station Improvements",
+          "value": 250000000,
+          "type": "capex"
+        },
+        {
+          "name": "Integrated Ticketing",
+          "value": 100000000,
+          "type": "capex"
+        },
+        {
+          "name": "HS2 Connectivity",
+          "value": 300000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Wednesbury-Brierley Hill extension", "Birmingham Eastside to HS2", "Sprint A34/A45 corridors", "Perry Barr station", "University station upgrade"],
+      "keyProjects": [
+        "Wednesbury-Brierley Hill extension",
+        "Birmingham Eastside to HS2",
+        "Sprint A34/A45 corridors",
+        "Perry Barr station",
+        "University station upgrade"
+      ],
       "notes": "CRSTS 2022-2027. Integrated transport authority covering 7 metropolitan boroughs. Key HS2 interchange connectivity.",
       "source": "WMCA Local Transport Plan"
     },
@@ -1417,15 +3474,31 @@
       "name": "Severn Trent Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["midlands", "east-midlands", "wales"],
+      "regions": [
+        "midlands",
+        "east-midlands",
+        "wales"
+      ],
       "budget2026": 2580000000,
       "budget10Year": 12900000000,
       "amp8Total": 12900000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 5400000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 7500000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 5400000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 7500000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Birmingham resilience programme", "Midlands storm overflows", "Strategic grid connections"],
+      "keyProjects": [
+        "Birmingham resilience programme",
+        "Midlands storm overflows",
+        "Strategic grid connections"
+      ],
       "notes": "AMP8 2025-2030. Serves West & East Midlands, parts of Wales.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1434,37 +3507,89 @@
       "name": "Transport for Wales Rail",
       "sector": "rail",
       "subSector": "enhancements",
-      "regions": ["wales", "midlands"],
+      "regions": [
+        "wales",
+        "midlands"
+      ],
       "subdivisions": {
-        "wales": ["Cardiff", "Newport", "Swansea", "Bridgend", "Rhondda Cynon Taf", "Caerphilly", "Wrexham", "Flintshire"],
-        "midlands": ["Shrewsbury and Atcham", "Herefordshire"]
+        "wales": [
+          "Cardiff",
+          "Newport",
+          "Swansea",
+          "Bridgend",
+          "Rhondda Cynon Taf",
+          "Caerphilly",
+          "Wrexham",
+          "Flintshire"
+        ],
+        "midlands": [
+          "Shrewsbury and Atcham",
+          "Herefordshire"
+        ]
       },
       "budget2026": 640000000,
       "budget10Year": 3200000000,
       "programmes": [
-        { "name": "Core Valley Lines", "value": 1200000000, "type": "capex" },
-        { "name": "South Wales Metro", "value": 800000000, "type": "capex" },
-        { "name": "North Wales Main Line", "value": 500000000, "type": "capex" },
-        { "name": "New Rolling Stock", "value": 700000000, "type": "capex" }
+        {
+          "name": "Core Valley Lines",
+          "value": 1200000000,
+          "type": "capex"
+        },
+        {
+          "name": "South Wales Metro",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "North Wales Main Line",
+          "value": 500000000,
+          "type": "capex"
+        },
+        {
+          "name": "New Rolling Stock",
+          "value": 700000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Core Valley Lines electrification (complete)", "South Wales Metro tram-trains (H2 2026)", "Network North Wales vision", "Llandudno-Liverpool direct service (May 2026)", "Class 197 introduction"],
-      "notes": "South Wales Metro £1.54bn (incl rolling stock) - 170km electrified, tram-trains H2 2026, full Metro 2027. Network North Wales multi-billion pound vision. Stadler trains operational 2024. 4 trains/hr Valleys, 12 trains/hr through Pontypridd.",
+      "keyProjects": [
+        "Core Valley Lines electrification (complete)",
+        "South Wales Metro tram-trains (H2 2026)",
+        "Network North Wales vision",
+        "Llandudno-Liverpool direct service (May 2026)",
+        "Class 197 introduction"
+      ],
+      "notes": "South Wales Metro \u00a31.54bn (incl rolling stock) - 170km electrified, tram-trains H2 2026, full Metro 2027. Network North Wales multi-billion pound vision. Stadler trains operational 2024. 4 trains/hr Valleys, 12 trains/hr through Pontypridd.",
       "source": "Transport for Wales Corporate Plan, Network North Wales Launch 2025"
     },
     {
       "id": "welsh-water",
-      "name": "Dŵr Cymru Welsh Water",
+      "name": "D\u0175r Cymru Welsh Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["wales", "midlands"],
+      "regions": [
+        "wales",
+        "midlands"
+      ],
       "budget2026": 1020000000,
       "budget10Year": 5100000000,
       "amp8Total": 5100000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 2200000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 2900000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 2200000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 2900000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Valleys sewerage improvements", "Cardiff Bay resilience", "North Wales water resources"],
+      "keyProjects": [
+        "Valleys sewerage improvements",
+        "Cardiff Bay resilience",
+        "North Wales water resources"
+      ],
       "notes": "AMP8 2025-2030. Not-for-profit company serving Wales and parts of Herefordshire.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1473,20 +3598,56 @@
       "name": "North East Combined Authority Transport",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["north-east"],
+      "regions": [
+        "north-east"
+      ],
       "subdivisions": {
-        "north-east": ["Newcastle upon Tyne", "Gateshead", "North Tyneside", "South Tyneside", "Sunderland", "Durham", "Northumberland"]
+        "north-east": [
+          "Newcastle upon Tyne",
+          "Gateshead",
+          "North Tyneside",
+          "South Tyneside",
+          "Sunderland",
+          "Durham",
+          "Northumberland"
+        ]
       },
       "budget2026": 380000000,
       "budget10Year": 1900000000,
       "programmes": [
-        { "name": "Metro Futures", "value": 800000000, "type": "capex" },
-        { "name": "Metro Extensions", "value": 400000000, "type": "capex" },
-        { "name": "Rail Improvements", "value": 300000000, "type": "capex" },
-        { "name": "Bus Network Enhancement", "value": 250000000, "type": "capex" },
-        { "name": "Active Travel", "value": 150000000, "type": "capex" }
+        {
+          "name": "Metro Futures",
+          "value": 800000000,
+          "type": "capex"
+        },
+        {
+          "name": "Metro Extensions",
+          "value": 400000000,
+          "type": "capex"
+        },
+        {
+          "name": "Rail Improvements",
+          "value": 300000000,
+          "type": "capex"
+        },
+        {
+          "name": "Bus Network Enhancement",
+          "value": 250000000,
+          "type": "capex"
+        },
+        {
+          "name": "Active Travel",
+          "value": 150000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["New Metro fleet", "Metro Flow South Shields", "Washington extension", "Leamside Line study", "Central Station upgrade"],
+      "keyProjects": [
+        "New Metro fleet",
+        "Metro Flow South Shields",
+        "Washington extension",
+        "Leamside Line study",
+        "Central Station upgrade"
+      ],
       "notes": "CRSTS 2022-2027. North of Tyne & North East combined authorities. Metro Futures transformation programme.",
       "source": "NECA Transport Plan"
     },
@@ -1495,15 +3656,30 @@
       "name": "Northumbrian Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["north-east", "eastern"],
+      "regions": [
+        "north-east",
+        "eastern"
+      ],
       "budget2026": 900000000,
       "budget10Year": 4500000000,
       "amp8Total": 4500000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 1900000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 2600000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 1900000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 2600000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Tyneside drainage improvements", "Kielder resilience", "Essex & Suffolk coastal"],
+      "keyProjects": [
+        "Tyneside drainage improvements",
+        "Kielder resilience",
+        "Essex & Suffolk coastal"
+      ],
       "notes": "AMP8 2025-2030. Operates as Northumbrian Water in NE and Essex & Suffolk Water in East.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1512,21 +3688,54 @@
       "name": "Hinkley Point C (EDF Energy)",
       "sector": "energy",
       "subSector": "nuclear",
-      "regions": ["south-west"],
+      "regions": [
+        "south-west"
+      ],
       "subdivisions": {
-        "south-west": ["Sedgemoor", "West Somerset", "Taunton Deane"]
+        "south-west": [
+          "Sedgemoor",
+          "West Somerset",
+          "Taunton Deane"
+        ]
       },
       "budget2026": 5600000000,
       "budget10Year": 28000000000,
       "programmes": [
-        { "name": "Nuclear Island Construction", "value": 12000000000, "type": "capex" },
-        { "name": "Conventional Island", "value": 5000000000, "type": "capex" },
-        { "name": "Mechanical & Electrical", "value": 6000000000, "type": "capex" },
-        { "name": "Balance of Plant", "value": 3000000000, "type": "capex" },
-        { "name": "Site Infrastructure & Civils", "value": 2000000000, "type": "capex" }
+        {
+          "name": "Nuclear Island Construction",
+          "value": 12000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Conventional Island",
+          "value": 5000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Mechanical & Electrical",
+          "value": 6000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Balance of Plant",
+          "value": 3000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Site Infrastructure & Civils",
+          "value": 2000000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Unit 1 reactor building", "Unit 2 reactor building", "Turbine hall", "Cooling water systems", "Grid connection", "Marine works"],
-      "notes": "Europe's largest construction site. 3.2GW capacity (7% UK electricity, 6m homes). EDF/CGN JV. £5bn Apollo debt financing close to completion. £13bn boost to UK economy. Target 2029-2031.",
+      "keyProjects": [
+        "Unit 1 reactor building",
+        "Unit 2 reactor building",
+        "Turbine hall",
+        "Cooling water systems",
+        "Grid connection",
+        "Marine works"
+      ],
+      "notes": "Europe's largest construction site. 3.2GW capacity (7% UK electricity, 6m homes). EDF/CGN JV. \u00a35bn Apollo debt financing close to completion. \u00a313bn boost to UK economy. Target 2029-2031.",
       "source": "EDF HPC Project Updates 2025"
     },
     {
@@ -1534,15 +3743,29 @@
       "name": "South West Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["south-west"],
+      "regions": [
+        "south-west"
+      ],
       "budget2026": 640000000,
       "budget10Year": 3200000000,
       "amp8Total": 3200000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 1400000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 1800000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 1400000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 1800000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Cornwall bathing waters", "Devon storm overflows", "Plymouth resilience"],
+      "keyProjects": [
+        "Cornwall bathing waters",
+        "Devon storm overflows",
+        "Plymouth resilience"
+      ],
       "notes": "AMP8 2025-2030. Pennon Group. Serves Devon, Cornwall, parts of Dorset & Somerset.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1551,15 +3774,29 @@
       "name": "Yorkshire Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["yorkshire-humber"],
+      "regions": [
+        "yorkshire-humber"
+      ],
       "budget2026": 1560000000,
       "budget10Year": 7800000000,
       "amp8Total": 7800000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 3200000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 4600000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 3200000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 4600000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Sheffield flood resilience", "Leeds water quality", "Humber estuary protection"],
+      "keyProjects": [
+        "Sheffield flood resilience",
+        "Leeds water quality",
+        "Humber estuary protection"
+      ],
       "notes": "AMP8 2025-2030. Serves Yorkshire and Humber region.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1568,15 +3805,30 @@
       "name": "Anglian Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["eastern", "east-midlands"],
+      "regions": [
+        "eastern",
+        "east-midlands"
+      ],
       "budget2026": 1900000000,
       "budget10Year": 9500000000,
       "amp8Total": 9500000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 3800000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 5700000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 3800000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 5700000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Lincolnshire reservoir", "Cambridge growth", "Norfolk nutrient removal"],
+      "keyProjects": [
+        "Lincolnshire reservoir",
+        "Cambridge growth",
+        "Norfolk nutrient removal"
+      ],
       "notes": "AMP8 2025-2030. Driest region in UK - major water resource challenges.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1585,15 +3837,29 @@
       "name": "Wessex Water",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["south-west"],
+      "regions": [
+        "south-west"
+      ],
       "budget2026": 560000000,
       "budget10Year": 2800000000,
       "amp8Total": 2800000000,
       "programmes": [
-        { "name": "Base Expenditure", "value": 1200000000, "type": "opex-capex" },
-        { "name": "Enhancement", "value": 1600000000, "type": "capex" }
+        {
+          "name": "Base Expenditure",
+          "value": 1200000000,
+          "type": "opex-capex"
+        },
+        {
+          "name": "Enhancement",
+          "value": 1600000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Bristol storm overflows", "Bath network resilience", "Wiltshire growth"],
+      "keyProjects": [
+        "Bristol storm overflows",
+        "Bath network resilience",
+        "Wiltshire growth"
+      ],
       "notes": "AMP8 2025-2030. Serves Bristol, Somerset, Dorset, Wiltshire, parts of Gloucestershire.",
       "source": "Ofwat PR24 Final Determination Dec 2024"
     },
@@ -1602,21 +3868,54 @@
       "name": "Sizewell C (EDF Energy)",
       "sector": "energy",
       "subSector": "nuclear",
-      "regions": ["eastern"],
+      "regions": [
+        "eastern"
+      ],
       "subdivisions": {
-        "eastern": ["Suffolk Coastal", "East Suffolk"]
+        "eastern": [
+          "Suffolk Coastal",
+          "East Suffolk"
+        ]
       },
       "budget2026": 4000000000,
       "budget10Year": 40000000000,
       "programmes": [
-        { "name": "Nuclear Island Construction", "value": 16000000000, "type": "capex", "description": "Twin EPR reactors replicating Hinkley Point C design." },
-        { "name": "Conventional Island", "value": 8000000000, "type": "capex" },
-        { "name": "Mechanical & Electrical", "value": 8000000000, "type": "capex" },
-        { "name": "Balance of Plant", "value": 5000000000, "type": "capex" },
-        { "name": "Site Infrastructure & Marine Works", "value": 3000000000, "type": "capex" }
+        {
+          "name": "Nuclear Island Construction",
+          "value": 16000000000,
+          "type": "capex",
+          "description": "Twin EPR reactors replicating Hinkley Point C design."
+        },
+        {
+          "name": "Conventional Island",
+          "value": 8000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Mechanical & Electrical",
+          "value": 8000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Balance of Plant",
+          "value": 5000000000,
+          "type": "capex"
+        },
+        {
+          "name": "Site Infrastructure & Marine Works",
+          "value": 3000000000,
+          "type": "capex"
+        }
       ],
-      "keyProjects": ["Unit 1 EPR reactor", "Unit 2 EPR reactor", "Turbine hall", "Cooling water intake", "Grid connection", "Suffolk coast protection"],
-      "notes": "3.2GW nuclear plant approved June 2025. £14.2bn government funding + private investment under RAB model. Total cost estimated £40bn. Replicates Hinkley Point C twin EPR design with efficiencies. Powers 6 million homes.",
+      "keyProjects": [
+        "Unit 1 EPR reactor",
+        "Unit 2 EPR reactor",
+        "Turbine hall",
+        "Cooling water intake",
+        "Grid connection",
+        "Suffolk coast protection"
+      ],
+      "notes": "3.2GW nuclear plant approved June 2025. \u00a314.2bn government funding + private investment under RAB model. Total cost estimated \u00a340bn. Replicates Hinkley Point C twin EPR design with efficiencies. Powers 6 million homes.",
       "source": "EDF Sizewell C Project Updates, HM Treasury June 2025"
     },
     {
@@ -1624,71 +3923,206 @@
       "name": "East West Rail",
       "sector": "rail",
       "subSector": "enhancements",
-      "regions": ["eastern", "south-east", "midlands"],
+      "regions": [
+        "eastern",
+        "south-east",
+        "midlands"
+      ],
       "subdivisions": {
-        "eastern": ["Central Bedfordshire", "Bedford"],
-        "south-east": ["Milton Keynes", "Buckinghamshire", "Aylesbury Vale"],
-        "midlands": ["Cherwell", "Oxford"]
+        "eastern": [
+          "Central Bedfordshire",
+          "Bedford"
+        ],
+        "south-east": [
+          "Milton Keynes",
+          "Buckinghamshire",
+          "Aylesbury Vale"
+        ],
+        "midlands": [
+          "Cherwell",
+          "Oxford"
+        ]
       },
       "budget2026": 800000000,
       "budget10Year": 5000000000,
       "programmes": [
-        { "name": "Western Section (Oxford-Bletchley)", "value": 1800000000, "type": "capex", "description": "Reopening Varsity Line. Services started 2024." },
-        { "name": "Central Section (Bletchley-Bedford)", "value": 2000000000, "type": "capex", "description": "New stations at Wixams and Marston Vale." },
-        { "name": "Eastern Section (Bedford-Cambridge)", "value": 1200000000, "type": "capex", "description": "New twin-track railway. Connects to Cambridge South." }
+        {
+          "name": "Western Section (Oxford-Bletchley)",
+          "value": 1800000000,
+          "type": "capex",
+          "description": "Reopening Varsity Line. Services started 2024."
+        },
+        {
+          "name": "Central Section (Bletchley-Bedford)",
+          "value": 2000000000,
+          "type": "capex",
+          "description": "New stations at Wixams and Marston Vale."
+        },
+        {
+          "name": "Eastern Section (Bedford-Cambridge)",
+          "value": 1200000000,
+          "type": "capex",
+          "description": "New twin-track railway. Connects to Cambridge South."
+        }
       ],
-      "keyProjects": ["Oxford-Bicester-Bletchley line (complete)", "Bletchley-Bedford connection", "Bedford-Cambridge new build", "Cambridge South station link"],
+      "keyProjects": [
+        "Oxford-Bicester-Bletchley line (complete)",
+        "Bletchley-Bedford connection",
+        "Bedford-Cambridge new build",
+        "Cambridge South station link"
+      ],
       "notes": "Strategic east-west corridor connecting Oxford, Milton Keynes, Bedford and Cambridge. Government confirmed continued funding Nov 2025. Western section operational. Central and Eastern sections in development.",
       "source": "East West Railway Company, HM Treasury Budget Nov 2025"
     },
     {
       "id": "northern-powerhouse-rail",
-      "name": "Northern Powerhouse Rail (DfT/TfN)",
+      "name": "TransPennine Route Upgrade & Network North Rail (DfT/TfN)",
       "sector": "rail",
       "subSector": "high-speed",
-      "regions": ["north-west", "yorkshire-humber", "north-east"],
-      "subdivisions": {
-        "north-west": ["Liverpool", "Warrington", "Manchester"],
-        "yorkshire-humber": ["Leeds", "Bradford", "Sheffield", "York"],
-        "north-east": ["Newcastle upon Tyne", "Durham"]
-      },
-      "budget2026": 1100000000,
-      "budget10Year": 45000000000,
-      "programmes": [
-        { "name": "Phase 1: Yorkshire Upgrades", "value": 15000000000, "type": "capex", "description": "Leeds-Sheffield, Leeds-York, Leeds-Bradford electrification & upgrades. Delivery 2030s." },
-        { "name": "Phase 2: Liverpool-Manchester", "value": 20000000000, "type": "capex", "description": "New line via Manchester Airport and Warrington. 3 new stations. Delivery 2030s." },
-        { "name": "Phase 3: TransPennine", "value": 10000000000, "type": "capex", "description": "Enhanced Manchester-Leeds-Sheffield-York connectivity." },
-        { "name": "Planning & Development", "value": 1100000000, "type": "capex", "description": "£1.1bn allocated for design and preparatory stages." }
+      "regions": [
+        "north-west",
+        "yorkshire-humber",
+        "north-east"
       ],
-      "keyProjects": ["Liverpool-Manchester new line", "Manchester Airport station (platforms extended, £115m)", "Bradford Station redevelopment", "Leeds Station Gateway", "Sheffield Station improvements", "Warrington Bank Quay Low Level station"],
-      "notes": "£45bn programme announced Jan 2026. Turn-up-and-go railway along Northern Growth Corridor. Unlocks £40bn economic potential. Phase 1 prioritises Yorkshire. Separate from cancelled HS2 Phase 2.",
-      "source": "DfT Northern Powerhouse Rail Announcement Jan 2026, Transport for the North"
+      "subdivisions": {
+        "north-west": [
+          "Liverpool",
+          "Warrington",
+          "Manchester"
+        ],
+        "yorkshire-humber": [
+          "Leeds",
+          "Bradford",
+          "Sheffield",
+          "York"
+        ],
+        "north-east": [
+          "Newcastle upon Tyne",
+          "Durham"
+        ]
+      },
+      "budget2026": 1800000000,
+      "budget10Year": 14000000000,
+      "programmes": [
+        {
+          "name": "Phase 1: Yorkshire Upgrades",
+          "value": 15000000000,
+          "type": "capex",
+          "description": "Leeds-Sheffield, Leeds-York, Leeds-Bradford electrification & upgrades. Delivery 2030s."
+        },
+        {
+          "name": "Phase 2: Liverpool-Manchester",
+          "value": 20000000000,
+          "type": "capex",
+          "description": "New line via Manchester Airport and Warrington. 3 new stations. Delivery 2030s."
+        },
+        {
+          "name": "Phase 3: TransPennine",
+          "value": 10000000000,
+          "type": "capex",
+          "description": "Enhanced Manchester-Leeds-Sheffield-York connectivity."
+        },
+        {
+          "name": "Planning & Development",
+          "value": 1100000000,
+          "type": "capex",
+          "description": "\u00a31.1bn allocated for design and preparatory stages."
+        }
+      ],
+      "keyProjects": [
+        "Liverpool-Manchester new line",
+        "Manchester Airport station (platforms extended, \u00a3115m)",
+        "Bradford Station redevelopment",
+        "Leeds Station Gateway",
+        "Sheffield Station improvements",
+        "Warrington Bank Quay Low Level station"
+      ],
+      "notes": "\u00a345bn programme announced Jan 2026. Turn-up-and-go railway along Northern Growth Corridor. Unlocks \u00a340bn economic potential. Phase 1 prioritises Yorkshire. Separate from cancelled HS2 Phase 2.",
+      "source": "TransPennine Route Upgrade Programme, DfT Integrated Rail Plan Update 2025, CRSTS2 Settlement",
+      "description": "TransPennine Route Upgrade (Manchester\u2013York\u2013Leeds, \u00a311.5bn) and Network North rail commitments replacing cancelled NPR. Active construction and procurement across trans-Pennine corridor."
     },
     {
       "id": "great-british-energy",
       "name": "Great British Energy (GBE)",
       "sector": "energy",
       "subSector": "offshore-wind",
-      "regions": ["scotland", "north-east", "yorkshire-humber", "eastern", "wales"],
+      "regions": [
+        "scotland",
+        "north-east",
+        "yorkshire-humber",
+        "eastern",
+        "wales"
+      ],
       "subdivisions": {
-        "scotland": ["Aberdeen City", "Dundee City", "Fife"],
-        "north-east": ["Redcar and Cleveland", "Hartlepool"],
-        "yorkshire-humber": ["East Riding of Yorkshire"],
-        "eastern": ["East Suffolk", "Great Yarmouth"],
-        "wales": ["Pembrokeshire", "Anglesey"]
+        "scotland": [
+          "Aberdeen City",
+          "Dundee City",
+          "Fife"
+        ],
+        "north-east": [
+          "Redcar and Cleveland",
+          "Hartlepool"
+        ],
+        "yorkshire-humber": [
+          "East Riding of Yorkshire"
+        ],
+        "eastern": [
+          "East Suffolk",
+          "Great Yarmouth"
+        ],
+        "wales": [
+          "Pembrokeshire",
+          "Anglesey"
+        ]
       },
       "budget2026": 1660000000,
       "budget10Year": 8300000000,
       "programmes": [
-        { "name": "Offshore Wind Investment", "value": 3000000000, "type": "capex", "description": "Developer, investor and owner stakes in offshore wind projects." },
-        { "name": "Supply Chain Fund", "value": 300000000, "type": "capex", "description": "Grants for domestic manufacturing of wind components." },
-        { "name": "Energy Engineered in UK Programme", "value": 1000000000, "type": "capex", "description": "Clean energy supply chain growth initiative." },
-        { "name": "Community Energy", "value": 500000000, "type": "capex", "description": "Local energy partnerships, rooftop solar, community ownership." },
-        { "name": "Grid & Storage", "value": 2500000000, "type": "capex", "description": "Battery storage, grid reinforcement, smart grid tech." },
-        { "name": "Investment Fund", "value": 1000000000, "type": "capex", "description": "Commercial stakes across clean energy supply chains. Launch summer 2026." }
+        {
+          "name": "Offshore Wind Investment",
+          "value": 3000000000,
+          "type": "capex",
+          "description": "Developer, investor and owner stakes in offshore wind projects."
+        },
+        {
+          "name": "Supply Chain Fund",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Grants for domestic manufacturing of wind components."
+        },
+        {
+          "name": "Energy Engineered in UK Programme",
+          "value": 1000000000,
+          "type": "capex",
+          "description": "Clean energy supply chain growth initiative."
+        },
+        {
+          "name": "Community Energy",
+          "value": 500000000,
+          "type": "capex",
+          "description": "Local energy partnerships, rooftop solar, community ownership."
+        },
+        {
+          "name": "Grid & Storage",
+          "value": 2500000000,
+          "type": "capex",
+          "description": "Battery storage, grid reinforcement, smart grid tech."
+        },
+        {
+          "name": "Investment Fund",
+          "value": 1000000000,
+          "type": "capex",
+          "description": "Commercial stakes across clean energy supply chains. Launch summer 2026."
+        }
       ],
-      "keyProjects": ["Aberdeen HQ establishment", "ScotWind project partnerships", "Floating offshore wind development", "Port infrastructure investment", "Domestic supply chain growth"],
-      "notes": "Publicly-owned clean energy company. £8.3bn capitalised 2025. HQ in Aberdeen. Target 15GW clean energy by 2030, 10,000+ jobs. Sister organisation GBE Nuclear for nuclear projects.",
+      "keyProjects": [
+        "Aberdeen HQ establishment",
+        "ScotWind project partnerships",
+        "Floating offshore wind development",
+        "Port infrastructure investment",
+        "Domestic supply chain growth"
+      ],
+      "notes": "Publicly-owned clean energy company. \u00a38.3bn capitalised 2025. HQ in Aberdeen. Target 15GW clean energy by 2030, 10,000+ jobs. Sister organisation GBE Nuclear for nuclear projects.",
       "source": "GBE Strategic Plan 2025, HM Treasury Budget Nov 2025"
     },
     {
@@ -1696,22 +4130,65 @@
       "name": "East Midlands Combined County Authority Transport",
       "sector": "rail",
       "subSector": "integrated-transport",
-      "regions": ["east-midlands"],
+      "regions": [
+        "east-midlands"
+      ],
       "subdivisions": {
-        "east-midlands": ["Nottingham", "Derby", "Derbyshire", "Nottinghamshire"]
+        "east-midlands": [
+          "Nottingham",
+          "Derby",
+          "Derbyshire",
+          "Nottinghamshire"
+        ]
       },
       "budget2026": 400000000,
       "budget10Year": 2000000000,
       "programmes": [
-        { "name": "CRSTS2 Transport", "value": 2000000000, "type": "capex", "description": "£2bn 5-year settlement for Derby, Derbyshire, Nottingham, Nottinghamshire." },
-        { "name": "Bus Network Improvements", "value": 400000000, "type": "capex", "description": "Enhanced services, bus priority, zero emission fleet." },
-        { "name": "Active Travel", "value": 200000000, "type": "capex", "description": "Cycling and walking infrastructure." },
-        { "name": "Rail Station Upgrades", "value": 300000000, "type": "capex", "description": "Derby, Nottingham, Leicester station improvements." },
-        { "name": "Trent Arc Corridor", "value": 600000000, "type": "capex", "description": "Derby-Nottingham connectivity. Supports 40,000 jobs, 30,000 homes." },
-        { "name": "Road Maintenance (£120m/yr)", "value": 500000000, "type": "capex", "description": "Highways authority allocation for local roads." }
+        {
+          "name": "CRSTS2 Transport",
+          "value": 2000000000,
+          "type": "capex",
+          "description": "\u00a32bn 5-year settlement for Derby, Derbyshire, Nottingham, Nottinghamshire."
+        },
+        {
+          "name": "Bus Network Improvements",
+          "value": 400000000,
+          "type": "capex",
+          "description": "Enhanced services, bus priority, zero emission fleet."
+        },
+        {
+          "name": "Active Travel",
+          "value": 200000000,
+          "type": "capex",
+          "description": "Cycling and walking infrastructure."
+        },
+        {
+          "name": "Rail Station Upgrades",
+          "value": 300000000,
+          "type": "capex",
+          "description": "Derby, Nottingham, Leicester station improvements."
+        },
+        {
+          "name": "Trent Arc Corridor",
+          "value": 600000000,
+          "type": "capex",
+          "description": "Derby-Nottingham connectivity. Supports 40,000 jobs, 30,000 homes."
+        },
+        {
+          "name": "Road Maintenance (\u00a3120m/yr)",
+          "value": 500000000,
+          "type": "capex",
+          "description": "Highways authority allocation for local roads."
+        }
       ],
-      "keyProjects": ["Derby-Nottingham connectivity", "Trent Arc development", "East Midlands Freeport access", "Toton/HS2 legacy site", "Investment Zone infrastructure"],
-      "notes": "New mayoral combined authority. £500m budget 2026/27, 70%+ on transport. CRSTS2 £2bn (2026-2032). Investment Zone £160m over 10 years. STEP Fusion (£2.5bn) at West Burton.",
+      "keyProjects": [
+        "Derby-Nottingham connectivity",
+        "Trent Arc development",
+        "East Midlands Freeport access",
+        "Toton/HS2 legacy site",
+        "Investment Zone infrastructure"
+      ],
+      "notes": "New mayoral combined authority. \u00a3500m budget 2026/27, 70%+ on transport. CRSTS2 \u00a32bn (2026-2032). Investment Zone \u00a3160m over 10 years. STEP Fusion (\u00a32.5bn) at West Burton.",
       "source": "EMCCA Budget 2026/27, CRSTS2 Settlement"
     },
     {
@@ -1719,19 +4196,290 @@
       "name": "Haweswater Aqueduct Resilience Programme",
       "sector": "utilities",
       "subSector": "water",
-      "regions": ["north-west"],
+      "regions": [
+        "north-west"
+      ],
       "subdivisions": {
-        "north-west": ["South Lakeland", "Eden", "Lancaster", "Ribble Valley", "Rossendale", "Bury"]
+        "north-west": [
+          "South Lakeland",
+          "Eden",
+          "Lancaster",
+          "Ribble Valley",
+          "Rossendale",
+          "Bury"
+        ]
       },
       "budget2026": 500000000,
       "budget10Year": 3000000000,
       "programmes": [
-        { "name": "Tunnel Section Upgrades", "value": 2500000000, "type": "capex", "description": "Six critical tunnel sections of 110km pipeline serving 2.5m people." },
-        { "name": "Haslingden & Walmersley Section", "value": 500000000, "type": "capex", "description": "Largest section, construction 2026." }
+        {
+          "name": "Tunnel Section Upgrades",
+          "value": 2500000000,
+          "type": "capex",
+          "description": "Six critical tunnel sections of 110km pipeline serving 2.5m people."
+        },
+        {
+          "name": "Haslingden & Walmersley Section",
+          "value": 500000000,
+          "type": "capex",
+          "description": "Largest section, construction 2026."
+        }
       ],
-      "keyProjects": ["Haslingden & Walmersley tunnel", "Docker tunnel", "Borrowdale tunnel", "Bretherdale tunnel"],
-      "notes": "£3bn programme to upgrade 1930s-era aqueduct. STRABAG UK construction. £300m National Wealth Fund support. 9-year programme. Creates 1,200 jobs at peak.",
+      "keyProjects": [
+        "Haslingden & Walmersley tunnel",
+        "Docker tunnel",
+        "Borrowdale tunnel",
+        "Bretherdale tunnel"
+      ],
+      "notes": "\u00a33bn programme to upgrade 1930s-era aqueduct. STRABAG UK construction. \u00a3300m National Wealth Fund support. 9-year programme. Creates 1,200 jobs at peak.",
       "source": "United Utilities HARP Programme, National Wealth Fund Jan 2026"
+    },
+    {
+      "id": "national-grid-et",
+      "name": "National Grid Electricity Transmission (NGET)",
+      "sector": "energy",
+      "subSector": "electricity-transmission",
+      "regions": [
+        "eastern",
+        "south-east",
+        "south-west",
+        "midlands",
+        "yorkshire-humber",
+        "north-west",
+        "north-east",
+        "scotland",
+        "wales"
+      ],
+      "budget2026": 4500000000,
+      "budget5Year": 22000000000,
+      "budget10Year": 35000000000,
+      "source": "National Grid RIIO-T2 & T3 Business Plan, NESO Connections Programme 2025",
+      "description": "National Grid Electricity Transmission \u2014 owns and operates England & Wales 400kV/275kV grid. RIIO-T2 (2021-2026) plus RIIO-T3 start. Massive investment to connect offshore wind, including HVDC links and new substations nationwide.",
+      "programmes": [
+        {
+          "name": "RIIO-T2 Programme (2021-2026)",
+          "value": 15000000000
+        },
+        {
+          "name": "RIIO-T3 Offshore Wind Connections (2026-2031)",
+          "value": 20000000000
+        }
+      ]
+    },
+    {
+      "id": "uk-power-networks",
+      "name": "UK Power Networks (RIIO-ED2)",
+      "sector": "energy",
+      "subSector": "electricity-distribution",
+      "regions": [
+        "london",
+        "south-east",
+        "eastern"
+      ],
+      "budget2026": 1650000000,
+      "budget5Year": 8000000000,
+      "budget10Year": 12000000000,
+      "source": "Ofgem RIIO-ED2 Final Determination 2022, UKPN Business Plan 2023-2028",
+      "description": "UK Power Networks \u2014 electricity distribution for London, South East and Eastern England. RIIO-ED2 (2023-2028) \u00a38bn programme covering network reinforcement, EV charging infrastructure, smart grid, and decarbonisation.",
+      "programmes": [
+        {
+          "name": "RIIO-ED2 London",
+          "value": 4500000000
+        },
+        {
+          "name": "RIIO-ED2 South East",
+          "value": 2000000000
+        },
+        {
+          "name": "RIIO-ED2 Eastern",
+          "value": 1500000000
+        }
+      ]
+    },
+    {
+      "id": "electricity-north-west",
+      "name": "Electricity North West (RIIO-ED2)",
+      "sector": "energy",
+      "subSector": "electricity-distribution",
+      "regions": [
+        "north-west"
+      ],
+      "budget2026": 450000000,
+      "budget5Year": 2200000000,
+      "budget10Year": 3800000000,
+      "source": "Ofgem RIIO-ED2 Final Determination 2022, ENW Business Plan 2023-2028",
+      "description": "Electricity North West \u2014 distribution network operator for North West England. RIIO-ED2 (2023-2028) \u00a31.8bn programme. Network reinforcement for EV and heat pump demand growth, renewable connections.",
+      "programmes": [
+        {
+          "name": "RIIO-ED2 North West",
+          "value": 1800000000
+        }
+      ]
+    },
+    {
+      "id": "northern-powergrid",
+      "name": "Northern Powergrid (RIIO-ED2)",
+      "sector": "energy",
+      "subSector": "electricity-distribution",
+      "regions": [
+        "north-east",
+        "yorkshire-humber",
+        "east-midlands"
+      ],
+      "budget2026": 600000000,
+      "budget5Year": 3000000000,
+      "budget10Year": 5000000000,
+      "source": "Ofgem RIIO-ED2 Final Determination 2022, Northern Powergrid Business Plan 2023-2028",
+      "description": "Northern Powergrid \u2014 distribution network operator for NE England and Yorkshire. RIIO-ED2 (2023-2028) \u00a32.4bn programme. Network reinforcement for offshore wind connections, EV infrastructure, and industrial decarbonisation.",
+      "programmes": [
+        {
+          "name": "RIIO-ED2 Yorkshire",
+          "value": 1400000000
+        },
+        {
+          "name": "RIIO-ED2 North East",
+          "value": 1000000000
+        }
+      ]
+    },
+    {
+      "id": "national-grid-ed",
+      "name": "National Grid Electricity Distribution (RIIO-ED2)",
+      "sector": "energy",
+      "subSector": "electricity-distribution",
+      "regions": [
+        "midlands",
+        "south-west",
+        "wales",
+        "east-midlands"
+      ],
+      "budget2026": 1500000000,
+      "budget5Year": 7500000000,
+      "budget10Year": 12000000000,
+      "source": "Ofgem RIIO-ED2 Final Determination 2022, National Grid ED (formerly WPD) Business Plan 2023-2028",
+      "description": "National Grid Electricity Distribution (formerly Western Power Distribution) \u2014 distribution network operator for Midlands, South West and Wales. RIIO-ED2 (2023-2028) \u00a36bn programme.",
+      "programmes": [
+        {
+          "name": "RIIO-ED2 West Midlands",
+          "value": 2000000000
+        },
+        {
+          "name": "RIIO-ED2 East Midlands",
+          "value": 1500000000
+        },
+        {
+          "name": "RIIO-ED2 South West",
+          "value": 1500000000
+        },
+        {
+          "name": "RIIO-ED2 South Wales",
+          "value": 1000000000
+        }
+      ]
+    },
+    {
+      "id": "nda-sellafield",
+      "name": "Nuclear Decommissioning Authority / Sellafield Ltd",
+      "sector": "energy",
+      "subSector": "nuclear-decommissioning",
+      "regions": [
+        "north-west",
+        "scotland",
+        "south-west"
+      ],
+      "budget2026": 2200000000,
+      "budget5Year": 11000000000,
+      "budget10Year": 22000000000,
+      "source": "NDA Annual Report 2024/25, Sellafield Ltd Programme Plan, HM Treasury Spending Review 2025",
+      "description": "Nuclear Decommissioning Authority / Sellafield Ltd \u2014 responsible for decommissioning UK's 17 nuclear sites. Annual spend ~\u00a32bn+. Sellafield (Cumbria) is the largest and most complex. Magnox sites in Scotland and South West. Multi-decade programme.",
+      "programmes": [
+        {
+          "name": "Sellafield Decommissioning (Cumbria)",
+          "value": 15000000000
+        },
+        {
+          "name": "Magnox Scotland (Hunterston, Chapelcross)",
+          "value": 3000000000
+        },
+        {
+          "name": "NDA South West (Berkeley, Oldbury)",
+          "value": 2000000000
+        }
+      ]
+    },
+    {
+      "id": "mod-dio",
+      "name": "MOD Defence Infrastructure Organisation (DIO)",
+      "sector": "defence",
+      "subSector": "defence-estate",
+      "regions": [
+        "south-west",
+        "south-east",
+        "eastern",
+        "midlands",
+        "north-west",
+        "scotland",
+        "wales",
+        "north-east",
+        "yorkshire-humber"
+      ],
+      "budget2026": 1800000000,
+      "budget5Year": 9000000000,
+      "budget10Year": 15000000000,
+      "source": "MOD Defence Estate Optimisation (DEO) Programme, MOD Annual Report 2024/25, AUKUS Submarine Programme",
+      "description": "MOD Defence Infrastructure Organisation \u2014 manages and invests in the UK defence estate across 900+ sites. Defence Estate Optimisation portfolio, AUKUS submarine infrastructure at Barrow and HMNB Clyde, RAF base upgrades, and accommodation programmes.",
+      "programmes": [
+        {
+          "name": "AUKUS Submarine Infrastructure (Barrow/Clyde)",
+          "value": 5000000000
+        },
+        {
+          "name": "Defence Estate Optimisation Programme",
+          "value": 4000000000
+        },
+        {
+          "name": "RAF Infrastructure Programme",
+          "value": 3000000000
+        },
+        {
+          "name": "Accommodation & Living Infrastructure",
+          "value": 3000000000
+        }
+      ]
+    },
+    {
+      "id": "crown-estate-offshore",
+      "name": "Crown Estate \u2014 Offshore Wind Leasing Programme",
+      "sector": "energy",
+      "subSector": "offshore-wind",
+      "regions": [
+        "eastern",
+        "south-east",
+        "south-west",
+        "yorkshire-humber",
+        "north-east",
+        "scotland",
+        "wales"
+      ],
+      "budget2026": 800000000,
+      "budget5Year": 4000000000,
+      "budget10Year": 8000000000,
+      "source": "Crown Estate Annual Report 2024/25, ScotWind Leasing Programme, Celtic Sea FLOW",
+      "description": "Crown Estate \u2014 leases seabed rights to offshore wind developers. Revenue funds developer connections and port infrastructure grants. Manages Round 4 (England/Wales) and Celtic Sea floating wind leasing. Indirect budget driver for UK offshore wind supply chain.",
+      "programmes": [
+        {
+          "name": "Round 4 Offshore Wind (England/Wales)",
+          "value": 3000000000
+        },
+        {
+          "name": "ScotWind (Scotland)",
+          "value": 3000000000
+        },
+        {
+          "name": "Celtic Sea FLOW (Wales/SW)",
+          "value": 2000000000
+        }
+      ]
     }
   ]
 }
