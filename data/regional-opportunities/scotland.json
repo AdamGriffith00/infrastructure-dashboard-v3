@@ -5,100 +5,89 @@
     "scotland"
   ],
   "sectorTrends": {
-    "utilities": {
-      "outlook": "Scottish Water delivering \u00a36.8bn investment programme. SP Energy Networks major ScotWind grid connection investment. SSEN Transmission \u00a320bn+ for north Scotland renewables. Green hydrogen emerging at scale.",
+    "energy": {
+      "outlook": "Scotland's energy investment is transformational. SSEN Transmission Pathway to 2030 (\u00a320bn) is the dominant programme \u2014 new HVDC links and substations connecting ScotWind. SP Energy Networks ScotWind grid connection \u00a34bn active. Acorn CCS (Track-2 approved) starting development at St Fergus. Nigg Energy Park expanding as fabrication hub. Green Hydrogen projects in Orkney and Shetland.",
       "keyDrivers": [
-        "ScotWind connections",
-        "Scottish Water investment",
-        "Green hydrogen",
-        "Net Zero Scotland 2045"
-      ],
-      "investmentDrivers": [
-        "Ofwat/WICS",
-        "RIIO-T2/ED2",
-        "ScotWind leasing",
-        "Hydrogen strategy"
+        "SSEN \u00a320bn transmission",
+        "ScotWind port infrastructure",
+        "Acorn CCS St Fergus",
+        "Nigg fabrication hub"
       ],
       "risks": [
-        "Grid connection timelines",
-        "Supply chain",
-        "Consenting"
+        "Grid connection lead times",
+        "CCS policy certainty",
+        "Supply chain development",
+        "Grid reinforcement complexity"
       ]
     },
     "real-estate": {
-      "outlook": "Edinburgh and Glasgow city centres seeing significant investment. Edinburgh St James complete, Glasgow Barras and Buchanan Wharf progressing. Dundee waterfront transformation continuing. Aberdeen diversifying from oil & gas.",
+      "outlook": "Edinburgh and Glasgow city centre investment robust. Edinburgh Granton Waterfront \u00a31.5bn emerging as major delivery programme. Glasgow Buchanan Quarter and Clyde Waterfront progressing. Dundee Waterfront Phase 2 active. Inverness and Highland Growth Deal programmes starting delivery.",
       "keyDrivers": [
-        "City centre renewal",
-        "Student accommodation",
-        "Housing delivery",
-        "Tourism"
-      ],
-      "investmentDrivers": [
-        "City Deal funding",
-        "Scottish Government",
-        "Private developers"
+        "Edinburgh Granton Waterfront",
+        "Glasgow Buchanan Quarter",
+        "Highland Growth Deal",
+        "Dundee Waterfront Phase 2"
       ],
       "risks": [
-        "Market depth",
-        "Construction costs",
-        "Planning system"
+        "Construction cost inflation in Scotland",
+        "Planning system delays",
+        "Skills availability"
       ]
     },
     "rail": {
-      "outlook": "Transport Scotland major investment in rail decarbonisation and electrification. Edinburgh-Glasgow Improvement Programme complete. Highland Main Line and Aberdeen-Central Belt improvements.",
+      "outlook": "Transport Scotland Rail Decarbonisation programme \u00a32bn active \u2014 electrification and fleet replacement. Edinburgh-Glasgow Improvement Programme completing. Clyde Metro in feasibility \u2014 Scottish Government committed to development. Edinburgh Trams Newhaven extension open. Transport Scotland trunk road investment continuing across A9 and A96.",
       "keyDrivers": [
-        "Decarbonisation",
-        "Electrification",
-        "Highland connectivity",
-        "Metro aspirations"
-      ],
-      "investmentDrivers": [
-        "Transport Scotland budget",
-        "Network Rail Scotland CP7",
-        "City Region Deals"
+        "Rail decarbonisation",
+        "Clyde Metro feasibility",
+        "A9 dualling continuing",
+        "Edinburgh-Glasgow improvements"
       ],
       "risks": [
-        "Budget pressures",
-        "Remote location challenges",
-        "Weather"
+        "Clyde Metro funding gap",
+        "A9 programme delivery",
+        "Electrification supply chain"
       ]
     },
     "defence": {
-      "outlook": "HMNB Clyde (Faslane) major nuclear deterrent investment. RAF Lossiemouth Typhoon/P-8 capability. DIO estate modernisation across Scottish bases.",
+      "outlook": "HMNB Clyde (Faslane) AUKUS submarine programme is one of Scotland's largest capital investment programmes. RAF Lossiemouth P-8 and Typhoon infrastructure active. Scotland accounts for a disproportionate share of UK defence infrastructure spend due to nuclear deterrent.",
       "keyDrivers": [
-        "Nuclear deterrent",
-        "NATO commitments",
-        "P-8 Poseidon",
-        "Submarine base"
-      ],
-      "investmentDrivers": [
-        "MOD budget",
-        "AUKUS",
-        "Defence Command Paper"
+        "AUKUS submarine programme",
+        "HMNB Clyde",
+        "RAF Lossiemouth",
+        "DIO Scotland estate"
       ],
       "risks": [
-        "Programme timelines",
-        "Remote locations",
-        "Skills"
+        "Defence budget pressures",
+        "Specialist contractor availability",
+        "Security constraints"
       ]
     },
     "maritime": {
-      "outlook": "ScotWind driving massive port investment for floating offshore wind. Nigg, Ardersier, and Methil as fabrication ports. Firth of Forth and Cromarty Firth clusters emerging.",
+      "outlook": "Scottish Green Freeports driving port investment at Grangemouth (Forth Ports/INEOS) and Dundee. Nigg Energy Park and Methil expanding for ScotWind fabrication. Aberdeen South Harbour operational and driving energy transition work. FLOW pilot arrays requiring new port infrastructure in Shetland and Orkney.",
       "keyDrivers": [
-        "ScotWind 25GW",
-        "Floating offshore wind",
-        "Oil & gas transition",
-        "Port infrastructure"
-      ],
-      "investmentDrivers": [
-        "Crown Estate Scotland",
-        "Green Freeport incentives",
-        "Private sector"
+        "Green Freeports (Grangemouth/Dundee)",
+        "ScotWind fabrication",
+        "FLOW port infrastructure",
+        "Aberdeen energy transition"
       ],
       "risks": [
-        "Floating wind technology maturity",
-        "Supply chain readiness",
-        "Grid connections"
+        "Fabrication supply chain skills",
+        "Remote logistics costs",
+        "Floating wind technology maturity"
+      ]
+    },
+    "utilities": {
+      "outlook": "Scottish Water \u00a36.8bn investment programme delivering across wastewater, resilience, and climate adaptation. SP Energy Networks RIIO-ED2 active in Central Scotland and Merseyside. Aberdeen Energy Transition Zone infrastructure investment. Highland water resilience projects progressing.",
+      "keyDrivers": [
+        "Scottish Water \u00a36.8bn",
+        "SP Energy Networks ED2",
+        "Aberdeen ETZ",
+        "Climate adaptation investment"
+      ],
+      "risks": [
+        "Remote access costs",
+        "Supply chain availability",
+        "Scottish Water regulatory targets"
       ]
     }
   },

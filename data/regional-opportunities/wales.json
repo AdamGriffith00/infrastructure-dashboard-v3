@@ -5,96 +5,88 @@
     "wales"
   ],
   "sectorTrends": {
-    "real-estate": {
-      "outlook": "Cardiff Central regeneration driving investment. Swansea city centre transformation well advanced. Newport growing with semiconductor investment. North Wales growth deal bringing regional investment.",
+    "energy": {
+      "outlook": "Celtic Freeport (Port Talbot and Milford Haven) is Wales's most significant energy investment driver \u2014 floating offshore wind assembly, green hydrogen, and Tata Steel transition. SP Energy Networks RIIO-ED2 and National Grid ED active. Welsh Government seeking Wylfa Newydd developer. Celtic Sea FLOW leasing driving port investment in Pembroke Dock and Holyhead.",
       "keyDrivers": [
-        "Cardiff Metro",
-        "City Deals",
-        "Town centre renewal",
-        "Tourism"
-      ],
-      "investmentDrivers": [
-        "Welsh Government",
-        "City Deals",
-        "Town Deals",
-        "Private sector"
+        "Celtic Freeport",
+        "Tata Steel green transition",
+        "Wylfa Newydd developer search",
+        "Celtic Sea FLOW"
       ],
       "risks": [
-        "Market depth",
-        "Planning complexity",
+        "Wylfa developer timeline",
+        "Celtic Sea technology maturity",
+        "Grid connection in West Wales"
+      ]
+    },
+    "real-estate": {
+      "outlook": "Cardiff Central leads Welsh regeneration with Dumballs Road \u00a32bn scheme active. Swansea Copr Bay and Central delivering. Cardiff Atlantic Wharf in planning. Bridgend Ford site in development. Wrexham Gateway progressing as North Wales investment anchor.",
+      "keyDrivers": [
+        "Cardiff Dumballs Road",
+        "Swansea Copr Bay",
+        "Cardiff Atlantic Wharf",
+        "Wrexham Gateway"
+      ],
+      "risks": [
+        "Welsh market depth",
+        "Viability outside Cardiff",
         "Construction costs"
       ]
     },
     "rail": {
-      "outlook": "Transport for Wales Rail transformation with South Wales Metro and Core Valley Lines electrification. North Wales Main Line improvements. TfW managing rail network modernisation.",
+      "outlook": "Transport for Wales Core Valley Lines (South Wales Metro) in active delivery. TfW network improvements \u00a3800m programme progressing. North Wales Metro in development through Growth Deal. Rail electrification extensions planned under TfW corporate plan.",
       "keyDrivers": [
-        "South Wales Metro",
-        "Core Valley Lines",
-        "North Wales connectivity"
-      ],
-      "investmentDrivers": [
-        "Welsh Government",
-        "UK Government",
-        "TfW budget"
+        "Core Valley Lines delivery",
+        "TfW network improvements",
+        "North Wales Metro",
+        "Electrification extension"
       ],
       "risks": [
-        "Budget pressures",
-        "CVL delivery complexity",
-        "Rural routes viability"
-      ]
-    },
-    "utilities": {
-      "outlook": "Welsh Water (Dwr Cymru) delivering \u00a35.1bn AMP8. Western Power Distribution and SP Energy Networks grid investment. Tidal energy and floating wind potential in Celtic Sea.",
-      "keyDrivers": [
-        "AMP8 investment",
-        "Grid reinforcement",
-        "Celtic Sea energy",
-        "Net Zero Wales"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8",
-        "RIIO-ED2",
-        "Marine energy"
-      ],
-      "risks": [
-        "Rural delivery",
-        "Grid capacity",
-        "Technology maturity"
+        "TfW funding constraints",
+        "North Wales Metro timeline",
+        "Supply chain capacity"
       ]
     },
     "infrastructure": {
-      "outlook": "Major investment in flood defence across Welsh valleys and coast. NHS Wales estate modernisation. 21st Century Schools programme. A55 resilience investment.",
+      "outlook": "Tata Steel Port Talbot transition \u00a31.25bn is the defining industrial infrastructure programme \u2014 EAF electric arc furnace and site remediation. Velindre Cancer Centre new build in development. Welsh Valleys Flood Programme active. 21st Century Schools Band C rolling out.",
       "keyDrivers": [
-        "Climate adaptation",
-        "NHS capacity",
-        "Education",
-        "Transport resilience"
-      ],
-      "investmentDrivers": [
-        "Welsh Government capital",
-        "NRW flood programme",
-        "NHS Wales"
+        "Tata Steel EAF transition",
+        "Velindre Cancer Centre",
+        "Welsh Valleys flood",
+        "21st Century Schools Band C"
       ],
       "risks": [
-        "Welsh Government budget",
-        "Rural accessibility",
-        "Skills"
+        "Tata job losses impacting community",
+        "NHS Wales funding pressures",
+        "Flood event disruption"
       ]
     },
-    "defence": {
-      "outlook": "MOD St Athan super-garrison development. RAF Valley training capability. Defence training estate investment in Wales.",
+    "highways": {
+      "outlook": "A465 Heads of the Valleys remaining sections in active construction. A55 North Wales resilience programme progressing. Welsh Government road investment plan under review \u2014 some schemes paused for carbon assessment. HyNet pipeline investment entering Wales through North East.",
       "keyDrivers": [
-        "Army basing",
-        "Training capability",
-        "Estate modernisation"
-      ],
-      "investmentDrivers": [
-        "MOD budget",
-        "DIO programmes"
+        "A465 construction active",
+        "A55 resilience",
+        "HyNet Welsh connection",
+        "Growth Deal roads"
       ],
       "risks": [
-        "Programme timelines",
-        "Remote locations"
+        "Welsh Government carbon assessment delays",
+        "Cost inflation",
+        "Rural road complexity"
+      ]
+    },
+    "maritime": {
+      "outlook": "Celtic Freeport driving investment at Port Talbot and Milford Haven. Pembroke Dock Marine emerging as floating offshore wind hub. Holyhead Port DP World/Stena investment active. ABP Welsh ports investment programme ongoing.",
+      "keyDrivers": [
+        "Celtic Freeport ports",
+        "Pembroke Dock Marine FLOW hub",
+        "Holyhead DP World/Stena",
+        "ABP Wales"
+      ],
+      "risks": [
+        "FLOW technology timeline",
+        "Port capacity constraints",
+        "Welsh energy planning system"
       ]
     }
   },

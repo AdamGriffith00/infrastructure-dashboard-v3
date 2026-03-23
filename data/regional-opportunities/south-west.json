@@ -5,97 +5,88 @@
     "south-west"
   ],
   "sectorTrends": {
+    "energy": {
+      "outlook": "Hinkley Point C construction approaching peak \u2014 completion targeting 2030-2031. Gravity Enterprise Zone Somerset adjacent to Hinkley establishing EV and clean energy manufacturing. NDA Berkeley and Oldbury decommissioning active. National Grid ED RIIO-ED2 South West \u00a31.5bn. South West Water renewable energy infrastructure.",
+      "keyDrivers": [
+        "HPC peak construction",
+        "Gravity EZ Somerset",
+        "NDA Berkeley/Oldbury",
+        "NG-ED RIIO-ED2 SW"
+      ],
+      "risks": [
+        "HPC cost overruns",
+        "Gravity EZ occupier pipeline",
+        "Decommissioning programme complexity"
+      ]
+    },
     "real-estate": {
-      "outlook": "Bristol leading South West regeneration with Temple Quarter and Western Harbour. Plymouth and Exeter growing city centres. Bath and Bournemouth attracting institutional investment. Housing delivery pressure across region.",
+      "outlook": "Bristol Temple Quarter remains the South West's largest regeneration scheme \u2014 10m sqft masterplan with arena, housing, and employment. Bristol Western Harbour planning progressing. Exeter St Davids Gateway in development. Bournemouth and Bath city centre investment active.",
       "keyDrivers": [
         "Bristol Temple Quarter",
-        "City centre renewal",
-        "Housing delivery",
-        "Tourism"
-      ],
-      "investmentDrivers": [
-        "WECA funding",
-        "Homes England",
-        "Town Deals",
-        "Private developers"
+        "Bristol Western Harbour",
+        "Exeter Gateway",
+        "Bath Quays"
       ],
       "risks": [
-        "Planning sensitivity",
-        "Heritage constraints",
-        "Construction costs"
-      ]
-    },
-    "utilities": {
-      "outlook": "South West Water and Wessex Water AMP8 programmes. National Grid upgrading for Hinkley Point C grid connection. Western Power Distribution major investment. Severn Trent covering parts of region.",
-      "keyDrivers": [
-        "AMP8 investment",
-        "Hinkley grid",
-        "Bathing water quality",
-        "Storm overflows"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8",
-        "RIIO-T2/ED2",
-        "Nuclear connection"
-      ],
-      "risks": [
-        "Water company financial health",
-        "Rural delivery challenges"
-      ]
-    },
-    "defence": {
-      "outlook": "HMNB Devonport largest naval base in Western Europe. Babcock major submarine refit programme. RNAS Yeovilton investment. MOD Boscombe Down testing capability.",
-      "keyDrivers": [
-        "Type 31 frigate",
-        "Submarine refit",
-        "Operational capability"
-      ],
-      "investmentDrivers": [
-        "MOD Shipbuilding Strategy",
-        "Defence Command Paper",
-        "DIO"
-      ],
-      "risks": [
-        "Programme timelines",
-        "Skills shortages",
-        "Budget pressures"
-      ]
-    },
-    "infrastructure": {
-      "outlook": "Hinkley Point C transformational for Somerset. South West flood and coastal defence investment significant. NHS hospital programmes. School rebuilding active.",
-      "keyDrivers": [
-        "Hinkley C",
-        "Coastal flood risk",
-        "NHS capacity",
-        "Tourism economy"
-      ],
-      "investmentDrivers": [
-        "Nuclear new build",
-        "EA programme",
-        "NHP"
-      ],
-      "risks": [
-        "Hinkley timeline",
-        "Remote locations",
-        "Contractor availability"
+        "Bristol planning timescales",
+        "Construction costs",
+        "Market absorption"
       ]
     },
     "rail": {
-      "outlook": "A303 Stonehenge tunnel progressing. Network Rail CP7 Great Western programme. MetroWest Bristol suburban rail. South West mainline resilience at Dawlish.",
+      "outlook": "Network Rail Dawlish Resilience Programme delivering sea wall and track protection \u2014 critical national infrastructure. MetroWest Bristol suburban rail Phase 2 in OBC development. MetroWest Phase 1 operational with service improvements ongoing. Network Rail CP7 Wales & Western \u00a31.7bn South West element active.",
       "keyDrivers": [
-        "South West connectivity",
-        "Resilience",
-        "Suburban rail",
-        "GWR electrification"
-      ],
-      "investmentDrivers": [
-        "Network Rail CP7",
-        "DfT",
-        "WECA"
+        "Dawlish resilience",
+        "MetroWest Phase 2 OBC",
+        "CP7 Wales & Western",
+        "Bristol rail frequency"
       ],
       "risks": [
-        "Dawlish resilience costs",
-        "Funding gaps"
+        "MetroWest funding",
+        "Dawlish geological complexity",
+        "CP7 contractor capacity"
+      ]
+    },
+    "maritime": {
+      "outlook": "Plymouth Freeport and Marine Enterprise Zone progressing with manufacturing and maritime investment. HMNB Devonport infrastructure programme active. Bristol Port Avonmouth industrial investment ongoing. Falmouth Fal Estuary marine energy hub in development for tidal and offshore wind O&M.",
+      "keyDrivers": [
+        "Plymouth Freeport",
+        "HMNB Devonport",
+        "Falmouth Marine Energy Hub",
+        "Avonmouth industrial"
+      ],
+      "risks": [
+        "Plymouth Freeport investor pipeline",
+        "Devonport security constraints",
+        "Marine energy technology maturity"
+      ]
+    },
+    "utilities": {
+      "outlook": "South West Water and Wessex Water delivering combined \u00a36bn AMP8 programmes. South West Water facing Ofwat scrutiny following pollution incidents \u2014 accelerated investment in storm overflows. Somerset Levels Flood Resilience Programme ongoing. South West Coastal Flood Programme active.",
+      "keyDrivers": [
+        "South West Water AMP8",
+        "Wessex Water AMP8",
+        "Somerset Levels flood",
+        "Coastal flood programme"
+      ],
+      "risks": [
+        "SWW regulatory penalties",
+        "Supply chain in remote SW",
+        "Coastal erosion acceleration"
+      ]
+    },
+    "highways": {
+      "outlook": "A303 Stonehenge Tunnel in active construction \u2014 transformational for SW connectivity. A358 Taunton to Southfields dualling in procurement. A30 and A38 improvement schemes delivering across Cornwall and Devon. M5 connectivity improvements associated with Gravity EZ.",
+      "keyDrivers": [
+        "A303 Stonehenge construction",
+        "A358 Taunton procurement",
+        "A30/A38 Cornwall/Devon",
+        "Gravity EZ access"
+      ],
+      "risks": [
+        "A303 cost inflation",
+        "Heritage sensitivities",
+        "Remote SW construction logistics"
       ]
     }
   },

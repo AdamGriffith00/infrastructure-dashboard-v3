@@ -6,98 +6,73 @@
   ],
   "sectorTrends": {
     "real-estate": {
-      "outlook": "Nottingham and Leicester city centres seeing significant investment. East Midlands Development Corporation unlocking strategic sites. East Midlands Freeport catalysing logistics and manufacturing investment.",
+      "outlook": "East Midlands Freeport Toton Hub emerging as the region's transformational development. Nottingham Island Quarter delivering Phase 1 with Phases 2-4 following. Derby City Centre West masterplan in development. Northampton and Corby growth programmes active. East Midlands Investment Zone sites being prepared.",
       "keyDrivers": [
-        "Development Corporation",
-        "Freeport status",
-        "Housing targets",
-        "City centre renewal"
-      ],
-      "investmentDrivers": [
-        "EMDC powers",
-        "Freeport incentives",
-        "Homes England",
-        "Levelling Up"
+        "EM Freeport Toton Hub",
+        "Nottingham Island Quarter",
+        "Derby City Centre West",
+        "Investment Zone sites"
       ],
       "risks": [
-        "Market depth",
-        "Infrastructure constraints",
-        "Developer confidence"
+        "Toton Hub funding timeline",
+        "HS2 uncertainty affecting Toton",
+        "Construction costs in East Midlands"
+      ]
+    },
+    "energy": {
+      "outlook": "Ratcliffe-on-Soar Energy Park \u2014 UK's last coal plant site now being masterplanned for green hydrogen, BESS, and data centres. STEP Fusion (West Burton C) the most significant long-term energy project. Rolls-Royce Derby SMR programme progressing. NG-ED RIIO-ED2 East Midlands \u00a31.5bn active.",
+      "keyDrivers": [
+        "Ratcliffe Energy Park",
+        "STEP Fusion West Burton C",
+        "Rolls-Royce SMR Derby",
+        "NG-ED RIIO-ED2"
+      ],
+      "risks": [
+        "Fusion timeline uncertainty",
+        "SMR regulatory approval",
+        "Energy park developer procurement"
       ]
     },
     "rail": {
-      "outlook": "Midland Main Line electrification completed to Market Harborough. HS2 Eastern Leg cancellation redirected to Network North. East Midlands Parkway and Hub station investment.",
+      "outlook": "Midland Main Line Phase 2 electrification remains the significant unfunded gap. HS2 Toton site development linked to EM Freeport. Chesterfield Staveley HS2 infrastructure progressing. Network Rail Eastern CP7 programme covering East Midlands active. East Midlands Rail Hub business case progressing.",
       "keyDrivers": [
-        "MML electrification",
-        "Network North legacy",
-        "EMCRP connectivity"
-      ],
-      "investmentDrivers": [
-        "Network Rail CP7",
-        "DfT",
-        "EMDC transport budget"
+        "EM Rail Hub / Toton",
+        "Midland Main Line electrification",
+        "CP7 East Midlands investment",
+        "Chesterfield Staveley"
       ],
       "risks": [
-        "Post-HS2 uncertainty",
-        "Funding gaps",
-        "Delivery timelines"
+        "MML electrification funding gap",
+        "Toton Hub timeline",
+        "HS2 eastern connectivity loss"
       ]
     },
     "utilities": {
-      "outlook": "Severn Trent AMP8 covering western East Midlands. Anglian Water AMP8 covering eastern areas. National Grid and Western Power Distribution major grid investment.",
+      "outlook": "Severn Trent and Anglian Water both delivering significant AMP8 programmes in the region. Trent Catchment Flood Programme active. Hinckley NRFI drainage and utilities infrastructure in development. East Midlands water quality investment driven by Ofwat PR24.",
       "keyDrivers": [
-        "AMP8 cycles",
-        "Grid reinforcement",
-        "Freeport power needs",
-        "Data centre demand"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8",
-        "RIIO-ED2",
-        "Connection charges"
+        "Severn Trent AMP8 EM",
+        "Anglian Water AMP8 EM",
+        "Trent flood programme",
+        "Hinckley NRFI utilities"
       ],
       "risks": [
-        "Split regulatory areas",
-        "Grid capacity",
-        "Labour shortages"
+        "Supply chain capacity",
+        "Competing demands from Midlands",
+        "Flood risk escalation"
       ]
     },
-    "infrastructure": {
-      "outlook": "East Midlands Freeport driving logistics infrastructure. NHS estate investment at key hospitals. School rebuilding active. Flood defence along Trent catchment.",
+    "highways": {
+      "outlook": "A46 Newark Bypass in delivery \u2014 strategic link improving East-West connectivity. Grantham Southern Relief Road in procurement. Lincoln Eastern Bypass progressing. A1 Peterborough to Blyth missing links under National Highways review for RIS3.",
       "keyDrivers": [
-        "Freeport infrastructure",
-        "NHS capacity",
-        "Flood risk",
-        "Logistics growth"
-      ],
-      "investmentDrivers": [
-        "Freeport retained rates",
-        "NHP",
-        "EA programme",
-        "DfE"
+        "A46 Newark delivery",
+        "Grantham Relief Road",
+        "Lincoln Eastern Bypass",
+        "A1 missing links"
       ],
       "risks": [
-        "Public funding constraints",
-        "Contractor availability",
-        "Inflation"
-      ]
-    },
-    "data-centres": {
-      "outlook": "East Midlands emerging as data centre location due to power availability and central UK position. M1 corridor attracting interest from hyperscale operators.",
-      "keyDrivers": [
-        "Grid capacity",
-        "Central UK location",
-        "M1 connectivity",
-        "Lower costs"
-      ],
-      "investmentDrivers": [
-        "Tech company capex",
-        "Infrastructure funds"
-      ],
-      "risks": [
-        "Power connections timeline",
-        "Planning",
-        "Skills availability"
+        "RIS3 scheme confirmation",
+        "Cost inflation",
+        "Environmental mitigation"
       ]
     }
   },

@@ -5,98 +5,88 @@
     "north-east"
   ],
   "sectorTrends": {
-    "utilities": {
-      "outlook": "Northumbrian Water delivering \u00a34.5bn AMP8 programme with focus on bathing water quality and storm overflows. Northern Powergrid major investment for offshore wind connections and industrial electrification. Great British Energy HQ bringing investment focus.",
-      "keyDrivers": [
-        "AMP8 investment cycle",
-        "Offshore wind grid connections",
-        "Industrial decarbonisation",
-        "Great British Energy"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8 determination",
-        "RIIO-ED2 allowances",
-        "GBE headquarters investment"
-      ],
-      "risks": [
-        "Regulatory uncertainty",
-        "Supply chain constraints",
-        "Workforce availability"
-      ]
-    },
-    "maritime": {
-      "outlook": "Teesworks Freeport driving transformational investment in offshore wind manufacturing. PD Ports and Port of Tyne expanding for energy transition. South Bank becoming UK's largest industrial zone.",
-      "keyDrivers": [
-        "Freeport status",
-        "Offshore wind manufacturing",
-        "Green hydrogen",
-        "Carbon capture"
-      ],
-      "investmentDrivers": [
-        "Freeport tax incentives",
-        "BEIS funding",
-        "Private sector energy investment"
-      ],
-      "risks": [
-        "Market competition",
-        "Supply chain development",
-        "Skills availability"
-      ]
-    },
     "real-estate": {
-      "outlook": "Newcastle and Sunderland city centres seeing significant regeneration. Gateshead Quays cultural destination. IAMP industrial growth at Sunderland. Student and BTR markets growing in Newcastle.",
+      "outlook": "Sunderland Riverside, Forth Yards Newcastle, and Gateshead Quays anchor the regeneration pipeline. IAMP advanced manufacturing park Phase 2 active. Newcastle Helix innovation district maturing with new occupiers. County Durham housing growth programme progressing. North Tyneside coastal regeneration underway.",
       "keyDrivers": [
-        "Devolution deals",
-        "City centre renewal",
-        "University growth",
-        "Housing delivery"
-      ],
-      "investmentDrivers": [
-        "Combined Authority funding",
-        "Levelling Up",
-        "Private sector confidence"
+        "Sunderland Riverside",
+        "Forth Yards Newcastle",
+        "Gateshead Quays",
+        "County Durham housing"
       ],
       "risks": [
-        "Market depth",
-        "Construction costs",
-        "Demand risk"
+        "Market depth outside Newcastle",
+        "Viability in post-industrial locations",
+        "Infrastructure costs"
       ]
     },
-    "infrastructure": {
-      "outlook": "Significant public sector investment in education, health, and flood defence. School rebuilding programme active. NHS estate under pressure. Coastal flood risk increasing.",
+    "energy": {
+      "outlook": "Teesworks is the UK's most significant energy transition site \u2014 SeAH Wind XXXL monopile factory operational, Net Zero Teesside CCS progressing, and AI data centre campus planned. Cambois data centre campus (\u00a310bn, Northumberland) is the region's most significant new investment. Northern Powergrid RIIO-ED2 \u00a31bn active. Blyth offshore wind hub expanding.",
       "keyDrivers": [
-        "Levelling Up",
-        "Climate adaptation",
-        "NHS capacity",
-        "Education standards"
-      ],
-      "investmentDrivers": [
-        "Government capital programmes",
-        "Levelling Up Fund",
-        "Town Deals"
+        "SeAH Wind Teesworks",
+        "Net Zero Teesside CCS",
+        "Cambois AI DC \u00a310bn",
+        "Northern Powergrid ED2"
       ],
       "risks": [
-        "Public funding constraints",
-        "Contractor capacity",
-        "Inflation"
+        "CCS Track-2 timeline",
+        "Grid connection lead times",
+        "Data centre power demand"
       ]
     },
-    "defence": {
-      "outlook": "Catterick Garrison continuing as UK's largest military base. RAF Leeming investment. DIO estate improvements across North East sites.",
+    "rail": {
+      "outlook": "Tyne & Wear Metro New Fleet (46 Stadler trains) in delivery \u2014 transformational fleet replacement. Metro extensions to Washington and Cobalt in feasibility. Northumberland Line opened December 2024 with extension to Newbiggin proposed. Leamside Line feasibility contractor appointed. Darlington Station redevelopment active.",
       "keyDrivers": [
-        "Army basing programme",
-        "Estate modernisation",
-        "Training capability"
-      ],
-      "investmentDrivers": [
-        "MOD budget settlements",
-        "DIO frameworks",
-        "SLA improvement programme"
+        "Metro new fleet delivery",
+        "Northumberland Line extensions",
+        "Leamside Line feasibility",
+        "Darlington redevelopment"
       ],
       "risks": [
-        "Budget pressures",
-        "Planning complexity",
-        "Delivery capacity"
+        "Metro extension funding",
+        "Leamside cost uncertainty",
+        "ECML capacity constraints"
+      ]
+    },
+    "data-centres": {
+      "outlook": "North East has emerged as a major UK data centre location. Cambois (Northumberland) \u2014 QTS/Blackstone 720MW campus is the UK's largest planned data centre development. Teesworks AI data centre campus under discussion. Stellium Newcastle Cobalt Park expanding. AI Growth Zone designation driving further investment.",
+      "keyDrivers": [
+        "Cambois 720MW campus",
+        "AI Growth Zone",
+        "Stellium expansion",
+        "Teesworks AI campus"
+      ],
+      "risks": [
+        "Power grid capacity",
+        "Subsea cable availability",
+        "Planning timeline"
+      ]
+    },
+    "utilities": {
+      "outlook": "Northumbrian Water AMP8 \u00a34.5bn programme in full delivery. Tees Barrage flood defence programme underway. Cadent Gas NE network modernisation active under RIIO-GD2. Environment Agency coastal and flood programme active on North Sea coast.",
+      "keyDrivers": [
+        "Northumbrian Water AMP8",
+        "Tees Barrage",
+        "Cadent Gas NE",
+        "Coastal flood defences"
+      ],
+      "risks": [
+        "Supply chain capacity",
+        "Ofwat delivery commitments",
+        "Coastal erosion acceleration"
+      ]
+    },
+    "highways": {
+      "outlook": "A1 Birtley to Coal House nearing completion. A19 junction upgrades under pressure from data centre traffic growth. A66 Trans-Pennine dualling \u2014 major procurement active, spanning NE/NW boundary. A1 Morpeth to Felton dualling in construction. Seaton Burn roundabout upgrade lobbying intensifying.",
+      "keyDrivers": [
+        "A66 Trans-Pennine procurement",
+        "A19 junction upgrades",
+        "A1 Morpeth-Felton",
+        "Data centre traffic"
+      ],
+      "risks": [
+        "A19 funding gap",
+        "RIS3 prioritisation",
+        "Data centre traffic modelling"
       ]
     }
   },

@@ -7,100 +7,89 @@
   ],
   "sectorTrends": {
     "real-estate": {
-      "outlook": "Strong growth driven by housing crisis and institutional investment in Build-to-Rent. Office market recovering with flight to quality. Mixed-use regeneration schemes active around transport hubs.",
+      "outlook": "London remains the UK's most active real estate market. Build-to-Rent continues to dominate new delivery with institutional capital sustaining activity despite elevated build costs. Old Oak Common HS2 quarter emerging as the next major opportunity zone. Canary Wharf pivoting to life sciences and mixed-use. South East towns \u2014 Croydon, Reading, Ebbsfleet \u2014 seeing renewed investment.",
       "keyDrivers": [
-        "Housing shortage",
-        "Build-to-rent demand",
-        "Transport-oriented development",
-        "Net Zero retrofitting"
-      ],
-      "investmentDrivers": [
-        "Institutional capital",
-        "PRS funds",
-        "Overseas investment",
-        "LGPS allocations"
+        "HS2 Old Oak Common",
+        "BTR institutional capital",
+        "Ebbsfleet Garden City",
+        "Brownfield regeneration"
       ],
       "risks": [
-        "Planning delays",
         "Construction cost inflation",
-        "Interest rate sensitivity",
-        "Labour shortages"
+        "Planning delays",
+        "Affordability constraints",
+        "Interest rate sensitivity"
       ]
     },
     "energy": {
-      "outlook": "Major grid reinforcement needed to support electrification and data centre growth. London Power Tunnels 2 progressing. Offshore wind connections landing in South East.",
+      "outlook": "UK Power Networks RIIO-ED2 driving \u00a38bn of distribution investment across London, South East, and Eastern England to 2028. Data centre power demand in Thames Valley and East London creating grid reinforcement urgency. National Grid RIIO-T2/T3 transmission investment connecting offshore wind via SE corridors. Battersea Power Station redevelopment approaching completion.",
       "keyDrivers": [
-        "Net Zero 2050",
-        "EV infrastructure",
-        "Heat pump rollout",
-        "Data centre power demand"
-      ],
-      "investmentDrivers": [
-        "RIIO-ED2 allowances",
-        "Connection charges",
-        "Green financing"
+        "UKPN RIIO-ED2",
+        "Data centre power demand",
+        "EV charging infrastructure",
+        "NGET T3 offshore wind"
       ],
       "risks": [
         "Grid capacity constraints",
-        "Consenting timelines",
-        "Supply chain"
+        "Planning opposition to overhead lines",
+        "Supply chain pressure"
       ]
     },
-    "defence": {
-      "outlook": "Estate optimisation continuing with investment in key strategic sites. RAF Northolt modernisation, Aldershot regeneration. Focus on sustainability and operational efficiency.",
+    "rail": {
+      "outlook": "Piccadilly Line Upgrade in peak delivery \u2014 94 new Siemens Inspiro trains and CBTC signalling through to 2030. HS2 Old Oak Common station construction the dominant rail project in London. DLR expansion progressing. Bakerloo Line Extension remains safeguarded but unfunded. Network Rail CP7 Brighton Main Line and Thameslink enhancements active.",
       "keyDrivers": [
-        "Defence estate strategy",
-        "Net Zero commitments",
-        "Operational readiness"
-      ],
-      "investmentDrivers": [
-        "MOD budget settlements",
-        "Private finance initiatives",
-        "DIO frameworks"
+        "Piccadilly Line Upgrade",
+        "HS2 Old Oak Common",
+        "DLR extensions",
+        "Brighton Main Line CP7"
       ],
       "risks": [
-        "Budget pressures",
-        "Security requirements",
-        "Planning complexity"
+        "HS2 cost overruns",
+        "TfL funding constraints",
+        "Bakerloo extension funding gap"
       ]
     },
     "data-centres": {
-      "outlook": "Explosive growth with London as Europe's largest market. Slough corridor expansion continuing. New hyperscale developments in West London and Thames Valley. Power availability becoming critical constraint.",
+      "outlook": "London is Europe's largest data centre market with Slough-Thames Valley corridor growing at pace. AI workloads driving unprecedented demand for hyperscale capacity. Microsoft, AWS, CyrusOne, and Vantage all expanding. Power constraints and planning reform are the binding constraints. New sites opening in East London, King's Cross, and Kent/Sussex.",
       "keyDrivers": [
-        "Cloud computing growth",
         "AI compute demand",
-        "Digital sovereignty",
-        "Edge computing"
-      ],
-      "investmentDrivers": [
-        "Tech company capex",
-        "REIT investment",
-        "Infrastructure funds"
+        "Thames Valley hyperscale corridor",
+        "London edge density",
+        "Subsea cable connectivity"
       ],
       "risks": [
         "Power availability",
-        "Planning restrictions",
-        "Water cooling capacity",
-        "Grid connections"
+        "Planning opposition",
+        "Cooling water constraints",
+        "Grid reinforcement lead times"
+      ]
+    },
+    "highways": {
+      "outlook": "Lower Thames Crossing is the defining scheme \u2014 \u00a39bn National Highways project with DCO decision expected 2026. Southern approach road package active. M25 Junction 10 Wisley improvements in procurement. A21 Tonbridge-Pembury dualling underway. Gatwick Northern Runway construction driving local road network investment.",
+      "keyDrivers": [
+        "Lower Thames Crossing",
+        "M25 improvements",
+        "Gatwick access",
+        "RIS3 schemes"
+      ],
+      "risks": [
+        "LTC DCO delays",
+        "Cost inflation",
+        "Planning objections"
       ]
     },
     "infrastructure": {
-      "outlook": "Significant flood defence investment in Thames Estuary. School rebuilding programme active. NHS estate modernisation. Waste infrastructure for circular economy.",
+      "outlook": "Thames Estuary TE2100 flood defence programme proceeding. NHS London estate transformation and New Hospital Programme schemes in development. School Rebuilding Programme London batch active. Southern Water AMP8 driving major investment in South East water quality. Kent & Medway NHP in OBC development.",
       "keyDrivers": [
-        "Climate adaptation",
-        "School condition",
-        "NHS capacity",
-        "Circular economy targets"
-      ],
-      "investmentDrivers": [
-        "Government capital programmes",
-        "Local authority budgets",
-        "Levelling Up Fund"
+        "TE2100 flood defence",
+        "NHS NHP South East",
+        "School Rebuilding Programme",
+        "Southern Water AMP8"
       ],
       "risks": [
-        "Public sector funding constraints",
-        "Inflation",
-        "Contractor capacity"
+        "NHP funding confirmation",
+        "Contractor capacity",
+        "Planning timescales"
       ]
     }
   },

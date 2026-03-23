@@ -6,100 +6,87 @@
   ],
   "sectorTrends": {
     "real-estate": {
-      "outlook": "Strong regeneration pipeline across Greater Manchester and Liverpool City Region. Manchester leading UK regional office market. Significant BTR and residential delivery around transport hubs. Stockport, Salford, and Wirral seeing major mixed-use schemes.",
+      "outlook": "Greater Manchester dominates the North West development pipeline. Manchester Northern Gateway the largest regeneration project outside London. Salford Crescent, MediaCity Phase 2, and Piccadilly SRF schemes all progressing. Liverpool Waters and Wirral Waters represent longer-term opportunities. Stockport and Warrington town centre investments active.",
       "keyDrivers": [
-        "Northern Powerhouse",
-        "Devolution deals",
-        "Transport investment",
-        "Housing targets"
-      ],
-      "investmentDrivers": [
-        "Institutional BTR capital",
-        "Combined Authority funding",
-        "Levelling Up Fund",
-        "Town Deal allocations"
+        "Manchester Northern Gateway",
+        "Salford Crescent",
+        "Liverpool Waters",
+        "Stockport Town Centre West"
       ],
       "risks": [
-        "Construction cost inflation",
-        "Planning delays",
-        "Labour shortages",
-        "Economic uncertainty"
+        "Viability at scale",
+        "Infrastructure first costs",
+        "Office market depth outside Manchester"
       ]
     },
     "rail": {
-      "outlook": "Transformational investment in Bee Network integration. Metrolink extensions to Stockport and Airport Western Link progressing. HS2 Crewe Hub remains committed. Northern Powerhouse Rail connecting Manchester-Liverpool under development.",
+      "outlook": "Bee Network integration is the defining programme \u2014 first bus franchising outside London plus Metrolink expansion. HS2 Crewe Hub station in design development. Network Rail CP7 North West programme \u00a33bn active. Liverpool City Region bus franchising infrastructure procurement progressing. TransPennine Route Upgrade progressing across the corridor.",
       "keyDrivers": [
         "Bee Network integration",
-        "HS2 Phase 2a",
-        "CRSTS2 settlement",
-        "Decarbonisation"
-      ],
-      "investmentDrivers": [
-        "CRSTS2 \u00a31.6bn allocation",
-        "Network Rail CP7",
-        "TfGM Business Plan"
+        "TPU active construction",
+        "HS2 Crewe Hub",
+        "Liverpool bus franchising"
       ],
       "risks": [
-        "HS2 programme uncertainty",
-        "Funding gaps",
-        "Construction complexity"
+        "Crewe Hub funding timeline",
+        "Bee Network delivery complexity",
+        "TPU programme risks"
+      ]
+    },
+    "energy": {
+      "outlook": "Sellafield decommissioning is the region's largest single programme at \u00a32bn/year \u2014 multiple active NEC contracts. Electricity North West RIIO-ED2 \u00a31.8bn grid modernisation active. Copeland nuclear legacy programme ongoing. Mersey Tidal Power project in feasibility. Barrow offshore wind supply chain linked to AUKUS investment.",
+      "keyDrivers": [
+        "Sellafield NDA \u00a32bn/yr",
+        "ENW RIIO-ED2",
+        "Copeland legacy nuclear",
+        "Barrow AUKUS energy"
+      ],
+      "risks": [
+        "Nuclear programme complexity",
+        "Specialist supply chain",
+        "Regulatory requirements"
       ]
     },
     "utilities": {
-      "outlook": "United Utilities delivering largest ever AMP8 programme at \u00a313.7bn. SP Energy Networks major investment in ScotWind connections and RIIO-ED2. Electricity North West grid reinforcement for data centres and EV.",
+      "outlook": "United Utilities delivering the largest AMP8 programme in the North West at \u00a313.7bn \u2014 peak spend 2026-2028. Haweswater Aqueduct Resilience Programme \u00a3750m in procurement. SP Energy Networks RIIO-ED2 active in Merseyside and North Wales. Major investment in storm overflow and leakage reduction.",
       "keyDrivers": [
-        "AMP8 regulatory settlement",
-        "Storm overflow targets",
-        "Net Zero",
-        "EV infrastructure"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8 determination",
-        "RIIO-ED2 allowances",
-        "Connection charges"
+        "United Utilities AMP8 \u00a313.7bn",
+        "HARP \u00a3750m",
+        "SP Energy Networks",
+        "Storm overflow targets"
       ],
       "risks": [
-        "Regulatory uncertainty",
-        "Supply chain constraints",
-        "Weather events"
+        "Supply chain capacity",
+        "Ofwat delivery commitments",
+        "Material cost inflation"
       ]
     },
     "data-centres": {
-      "outlook": "Manchester emerging as major UK data centre market outside London. Multiple hyperscale developments in planning around M62 corridor. Power availability and fibre connectivity driving location decisions.",
+      "outlook": "Manchester emerging as the primary UK data centre market outside London. Kao Data and Trafford Park campuses expanding. Warrington Waterfront data centre development planned. Strong power infrastructure and connectivity driving investment. AI Growth Zone aspirations in Salford.",
       "keyDrivers": [
-        "Digital economy growth",
-        "AI compute demand",
-        "Manchester tech ecosystem",
-        "Fibre connectivity"
-      ],
-      "investmentDrivers": [
-        "Tech company capex",
-        "Infrastructure funds",
-        "REIT investment"
+        "Manchester hyperscale demand",
+        "AI Growth Zone",
+        "Power infrastructure",
+        "Connectivity via Manchester"
       ],
       "risks": [
-        "Power grid capacity",
-        "Planning restrictions",
-        "Water cooling availability"
+        "Power availability",
+        "Competition from London",
+        "Planning timescales"
       ]
     },
     "infrastructure": {
-      "outlook": "Significant flood defence investment across Lancashire and Cumbria. NHS estate transformation with new hospitals. School rebuilding programme active. Waste infrastructure for circular economy targets.",
+      "outlook": "Cumbria Flood Resilience Programme active following Storm Babet. NHS New Hospital Programme North West batch in development. School Rebuilding Programme active. Eden Project North Morecambe construction starting 2026. Lancashire flood programme ongoing.",
       "keyDrivers": [
-        "Climate adaptation",
-        "NHS capacity",
-        "School condition",
-        "Circular economy"
-      ],
-      "investmentDrivers": [
-        "Government capital programmes",
-        "EA flood programme",
-        "New Hospital Programme"
+        "Eden Project North",
+        "NHS NHP North West",
+        "Cumbria flood resilience",
+        "School Rebuilding"
       ],
       "risks": [
-        "Public sector funding constraints",
-        "Inflation",
-        "Contractor capacity"
+        "NHP funding confirmation",
+        "Eden Project commercial complexity",
+        "Contractor availability"
       ]
     }
   },

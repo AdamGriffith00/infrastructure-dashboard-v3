@@ -42,7 +42,8 @@
         "Midland Main Line electrification"
       ],
       "notes": "CP7 2024-2029. Covers East Anglia, East Midlands, North & East routes.",
-      "source": "Network Rail CP7 Delivery Plan"
+      "source": "Network Rail CP7 Delivery Plan",
+      "budget5Year": 7200000000
     },
     {
       "id": "network-rail-nwc",
@@ -104,7 +105,8 @@
         "Manchester rail hub"
       ],
       "notes": "CP7 2024-2029. Major HS2 interface works.",
-      "source": "Network Rail CP7 Delivery Plan"
+      "source": "Network Rail CP7 Delivery Plan",
+      "budget5Year": 8800000000
     },
     {
       "id": "network-rail-scotland",
@@ -144,7 +146,8 @@
         "Inverness-Aberdeen improvements"
       ],
       "notes": "CP7 2024-2029. Devolved funding via Transport Scotland.",
-      "source": "Network Rail Scotland Route Strategic Plan"
+      "source": "Network Rail Scotland Route Strategic Plan",
+      "budget5Year": 4400000000
     },
     {
       "id": "network-rail-southern",
@@ -214,7 +217,8 @@
         "Southampton capacity"
       ],
       "notes": "CP7 2024-2029. Dense commuter network.",
-      "source": "Network Rail CP7 Delivery Plan"
+      "source": "Network Rail CP7 Delivery Plan",
+      "budget5Year": 8000000000
     },
     {
       "id": "network-rail-ww",
@@ -280,7 +284,8 @@
         "Devon resilience"
       ],
       "notes": "CP7 2024-2029. Key GWR franchise interface.",
-      "source": "Network Rail CP7 Delivery Plan"
+      "source": "Network Rail CP7 Delivery Plan",
+      "budget5Year": 6800000000
     },
     {
       "id": "hs2",
@@ -356,7 +361,8 @@
       ],
       "notes": "Phase 1 only (London-Birmingham). All 23 miles deep-bore tunnels excavated. 70% earthworks complete. 350 active worksites. \u00a33bn rail systems contracts awarded Nov 2024. Civil engineering completing 2026, then track/signalling. \u00a310bn economic impact to West Midlands over 10 years.",
       "source": "HS2 Ltd Phase 1 Spending Review Settlement 2025, DfT Jan 2026 \u2013 Phase 1 only (London\u2013Old Oak Common\u2013Birmingham Curzon Street\u2013Birmingham Interchange). Phase 2 Eastern Leg and Manchester cancelled Nov 2023.",
-      "description": "HS2 Phase 1 only. Active construction from Euston/Old Oak Common to Birmingham Curzon Street and Birmingham Interchange. Peak construction spend 2025-2028."
+      "description": "HS2 Phase 1 only. Active construction from Euston/Old Oak Common to Birmingham Curzon Street and Birmingham Interchange. Peak construction spend 2025-2028.",
+      "budget5Year": 27750000000
     },
     {
       "id": "tfl",
@@ -409,7 +415,8 @@
         "Silvertown Tunnel (opened 2025)"
       ],
       "notes": "\u00a32.2bn capital settlement 2026-2030 (largest multi-year settlement in decade). Piccadilly Line trains entering service H2 2026. DLR Thamesmead construction from 2027. New signalling on 40% of Tube network.",
-      "source": "TfL Mayor's Budget 2026/27, DfT Spending Review 2025"
+      "source": "TfL Mayor's Budget 2026/27, DfT Spending Review 2025",
+      "budget5Year": 6400000000
     },
     {
       "id": "thames-water",
@@ -442,7 +449,8 @@
         "Storm overflow improvements"
       ],
       "notes": "AMP8 2025-2030. Largest water company by customer base.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 16240000000
     },
     {
       "id": "heathrow",
@@ -490,7 +498,8 @@
         "Multi-storey car park T4"
       ],
       "notes": "UK's largest airport. \u00a32.3bn accelerated investment 2025-2026 (\u00a31.05bn 2025, \u00a31.29bn 2026) - largest private sector capital investment in UK transport. Third runway confirmed Nov 2025. Draft ANPS summer 2026. DCO 2027-29. New runway 2035. 80m pax target.",
-      "source": "Heathrow Investment Plan Jan 2026, DfT ANPS Update Nov 2025"
+      "source": "Heathrow Investment Plan Jan 2026, DfT ANPS Update Nov 2025",
+      "budget5Year": 6300000000
     },
     {
       "id": "tfgm",
@@ -595,7 +604,8 @@
         "Oldham Metrolink town centre extension"
       ],
       "notes": "UK's largest integrated transport network outside London. Bee Network launched 2024 - first bus franchising since 1986. CRSTS1 \u00a31.07bn (2022-2027), CRSTS2 \u00a32.5bn (2027-2032). NPR Liverpool-Manchester new line will pass through GM with 3 new stations. \u00a3115m Manchester Airport station expansion confirmed.",
-      "source": "GMCA Bee Network Delivery Plan 2024, DfT NPR Announcement Jan 2026"
+      "source": "GMCA Bee Network Delivery Plan 2024, DfT NPR Announcement Jan 2026",
+      "budget5Year": 3770000000
     },
     {
       "id": "west-midlands-metro",
@@ -645,7 +655,8 @@
         "Network electrification"
       ],
       "notes": "CRSTS funding. Key HS2 interchange connectivity.",
-      "source": "WMCA Transport Delivery Plan"
+      "source": "WMCA Transport Delivery Plan",
+      "budget5Year": 1100000000
     },
     {
       "id": "nexus-metro",
@@ -747,7 +758,8 @@
         "Bus franchising assessment"
       ],
       "notes": "Mayor Kim McGuinness. Metro Futures transformation. CRSTS1 \u00a3563m (2022-2027), CRSTS2 \u00a31.85bn (2027-2032) - includes first new Metro line in 30 years (Washington extension). 46 new Stadler trains delivered. \u00a314bn investment prospectus unveiled May 2025.",
-      "source": "NECA Transport Plan 2024, CRSTS2 Settlement Jan 2026, Mayor's Investment Prospectus"
+      "source": "NECA Transport Plan 2024, CRSTS2 Settlement Jan 2026, Mayor's Investment Prospectus",
+      "budget5Year": 1860000000
     },
     {
       "id": "merseyrail",
@@ -854,7 +866,8 @@
         "Mersey Ferries decarbonisation"
       ],
       "notes": "Second city region to approve bus franchising (after GM). CRSTS1 \u00a3710m (2022-2027), CRSTS2 \u00a3880m (2027-2032). New Merseyrail trains operational. Mayor Steve Rotheram.",
-      "source": "LCRCA Transport Plan 2024, CRSTS2 Settlement"
+      "source": "LCRCA Transport Plan 2024, CRSTS2 Settlement",
+      "budget5Year": 2440000000
     },
     {
       "id": "wyca-mass-transit",
@@ -948,7 +961,8 @@
         "White Rose station"
       ],
       "notes": "Mayor Tracy Brabin. \u00a32.5bn Mass Transit FULLY FUNDED (Jan 2026) - up to 7 lines, Leeds will no longer be largest European city without mass transit. CRSTS1 \u00a3830m (2022-2027), CRSTS2 \u00a31.2bn (2027-2032). Bradford Southern Gateway \u00a34.5bn regeneration.",
-      "source": "WYCA Transport Strategy 2040, DfT NPR Announcement Jan 2026"
+      "source": "WYCA Transport Strategy 2040, DfT NPR Announcement Jan 2026",
+      "budget5Year": 3360000000
     },
     {
       "id": "south-yorkshire-supertram",
@@ -1028,7 +1042,8 @@
         "Dearne Valley improvements"
       ],
       "notes": "Mayor Oliver Coppard. CRSTS1 \u00a3570m (2022-2027), CRSTS2 \u00a31.5bn (2027-2032) - new tram fleet by 2032, bus/tram modernisation. UK's first tram-train system. Supertram publicly owned since 2024.",
-      "source": "SYMCA Transport Strategy 2024, CRSTS2 Settlement Jan 2026"
+      "source": "SYMCA Transport Strategy 2024, CRSTS2 Settlement Jan 2026",
+      "budget5Year": 1280000000
     },
     {
       "id": "nottingham-net",
@@ -1069,7 +1084,8 @@
         "Network expansion studies"
       ],
       "notes": "Tramlink Nottingham. Potential HS2 eastern leg connection.",
-      "source": "Nottingham City Council Transport Plan"
+      "source": "Nottingham City Council Transport Plan",
+      "budget5Year": 170000000
     },
     {
       "id": "edinburgh-trams",
@@ -1108,7 +1124,8 @@
         "Granton extension study"
       ],
       "notes": "City of Edinburgh Council. Newhaven extension operational 2023.",
-      "source": "Edinburgh Tram Strategic Plan"
+      "source": "Edinburgh Tram Strategic Plan",
+      "budget5Year": 230000000
     },
     {
       "id": "united-utilities",
@@ -1139,7 +1156,8 @@
         "Combined sewer overflows"
       ],
       "notes": "AMP8 2025-2030. Serves North West England including Manchester, Liverpool, Cumbria.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 11230000000
     },
     {
       "id": "peel-ports",
@@ -1208,7 +1226,8 @@
         "Great Yarmouth expansion"
       ],
       "notes": "UK's second largest port group. \u00a31.5bn invested over past decade. Further \u00a31bn planned over 5 years. \u00a3300m announced for Liverpool, Hunterston, Great Yarmouth (2025). Key offshore wind base for ScottishPower East Anglia TWO.",
-      "source": "Peel Ports Investment Strategy 2025"
+      "source": "Peel Ports Investment Strategy 2025",
+      "budget5Year": 1820000000
     },
     {
       "id": "dp-world-london-gateway",
@@ -1265,7 +1284,8 @@
         "Southampton cruise terminal"
       ],
       "notes": "UK's largest container port operator. \u00a31bn expansion underway - 2 new berths, Europe's tallest quay cranes, capacity for 6 of world's largest container ships. Thames Freeport anchor. 1,000 construction jobs + 400 permanent.",
-      "source": "DP World UK Investment Plan, LISW Sept 2025"
+      "source": "DP World UK Investment Plan, LISW Sept 2025",
+      "budget5Year": 2080000000
     },
     {
       "id": "felixstowe",
@@ -1316,7 +1336,8 @@
         "Freeport East"
       ],
       "notes": "UK's busiest container port. 4m TEU capacity. Freeport East anchor.",
-      "source": "Port of Felixstowe Masterplan"
+      "source": "Port of Felixstowe Masterplan",
+      "budget5Year": 940000000
     },
     {
       "id": "abp",
@@ -1387,7 +1408,8 @@
         "Humber Freeport"
       ],
       "notes": "UK's largest port operator by locations. 21 ports. Humber Freeport anchor.",
-      "source": "ABP Strategic Investment Plan"
+      "source": "ABP Strategic Investment Plan",
+      "budget5Year": 1560000000
     },
     {
       "id": "forth-ports",
@@ -1444,7 +1466,8 @@
         "Forth Green Freeport"
       ],
       "notes": "Major East Coast operator. Thames & Forth Freeport anchor. Offshore wind focus.",
-      "source": "Forth Ports Investment Plan"
+      "source": "Forth Ports Investment Plan",
+      "budget5Year": 1300000000
     },
     {
       "id": "bristol-port",
@@ -1490,7 +1513,8 @@
         "Renewable energy imports"
       ],
       "notes": "Key South West gateway. Automotive and energy focus.",
-      "source": "Bristol Port Masterplan"
+      "source": "Bristol Port Masterplan",
+      "budget5Year": 360000000
     },
     {
       "id": "teesworks",
@@ -1539,7 +1563,8 @@
         "GE Vernova factory"
       ],
       "notes": "Major regeneration site. Offshore wind manufacturing hub. CCS cluster.",
-      "source": "Teesworks Development Plan"
+      "source": "Teesworks Development Plan",
+      "budget5Year": 1460000000
     },
     {
       "id": "able-marine",
@@ -1579,7 +1604,8 @@
         "Humber Freeport site"
       ],
       "notes": "Purpose-built offshore wind hub. Humber South Bank.",
-      "source": "Able UK Investment Plan"
+      "source": "Able UK Investment Plan",
+      "budget5Year": 620000000
     },
     {
       "id": "environment-agency-coastal",
@@ -1624,7 +1650,8 @@
         "Coastal realignment"
       ],
       "notes": "National flood defence programme. Climate adaptation investment.",
-      "source": "EA FCERM Investment Programme"
+      "source": "EA FCERM Investment Programme",
+      "budget5Year": 2700000000
     },
     {
       "id": "scottish-power",
@@ -1707,7 +1734,8 @@
         "North Wales grid reinforcement"
       ],
       "notes": "SP Transmission & SP Distribution. Part of Iberdrola group. Key enabler for ScotWind offshore wind. RIIO-ED2 2023-2028, RIIO-T2 2021-2026.",
-      "source": "SP Energy Networks Business Plans"
+      "source": "SP Energy Networks Business Plans",
+      "budget5Year": 6600000000
     },
     {
       "id": "transport-scotland",
@@ -1747,7 +1775,8 @@
         "Borders Railway extension study"
       ],
       "notes": "Scottish Government rail investment. Separate from Network Rail Scotland.",
-      "source": "Transport Scotland Rail Enhancement Programme"
+      "source": "Transport Scotland Rail Enhancement Programme",
+      "budget5Year": 2440000000
     },
     {
       "id": "translink-ni",
@@ -1787,7 +1816,8 @@
         "Derry line upgrade"
       ],
       "notes": "Northern Ireland Executive funding. All-island rail connectivity focus.",
-      "source": "DfI NI Rail Investment Strategy"
+      "source": "DfI NI Rail Investment Strategy",
+      "budget5Year": 810000000
     },
     {
       "id": "scottish-water",
@@ -1823,7 +1853,8 @@
         "Net zero transition"
       ],
       "notes": "2021-2027 regulatory period. Publicly owned, regulated by Water Industry Commission for Scotland.",
-      "source": "Scottish Water Strategic Plan 2024"
+      "source": "Scottish Water Strategic Plan 2024",
+      "budget5Year": 5580000000
     },
     {
       "id": "nh-south-east",
@@ -1887,7 +1918,8 @@
         "M2 J5 improvements"
       ],
       "notes": "RIS3 2026-2031 (\u00a325bn settlement). Includes UK's largest road project - Lower Thames Crossing. Budget 2025 confirmed \u00a3891m additional for LTC.",
-      "source": "National Highways RIS3 Programme, HM Treasury Budget Nov 2025"
+      "source": "National Highways RIS3 Programme, HM Treasury Budget Nov 2025",
+      "budget5Year": 7020000000
     },
     {
       "id": "nh-south-west",
@@ -1942,7 +1974,8 @@
         "A30 Chiverton to Carland Cross"
       ],
       "notes": "RIS3 2025-2030. Key southwest connectivity improvements.",
-      "source": "National Highways RIS3 Programme"
+      "source": "National Highways RIS3 Programme",
+      "budget5Year": 4290000000
     },
     {
       "id": "nh-midlands",
@@ -2015,7 +2048,8 @@
         "A5 Towcester relief road"
       ],
       "notes": "RIS3 2025-2030. Key HS2 interchange connectivity.",
-      "source": "National Highways RIS3 Programme"
+      "source": "National Highways RIS3 Programme",
+      "budget5Year": 5460000000
     },
     {
       "id": "nh-north-west",
@@ -2071,7 +2105,8 @@
         "M58 link improvements"
       ],
       "notes": "RIS3 2025-2030. Trans-Pennine connectivity focus.",
-      "source": "National Highways RIS3 Programme"
+      "source": "National Highways RIS3 Programme",
+      "budget5Year": 4680000000
     },
     {
       "id": "lancashire-cc",
@@ -2161,7 +2196,8 @@
         "Blackpool Tramway upgrades"
       ],
       "notes": "Largest shire county by population not in a combined authority. Working with Blackpool and Blackburn as separate unitaries. Potential future Lancashire Combined Authority.",
-      "source": "Lancashire County Council Local Transport Plan 4"
+      "source": "Lancashire County Council Local Transport Plan 4",
+      "budget5Year": 720000000
     },
     {
       "id": "nh-north-east",
@@ -2222,7 +2258,8 @@
         "M62 J32-35"
       ],
       "notes": "RIS3 2025-2030. North-South connectivity improvements.",
-      "source": "National Highways RIS3 Programme"
+      "source": "National Highways RIS3 Programme",
+      "budget5Year": 3510000000
     },
     {
       "id": "nh-eastern",
@@ -2272,7 +2309,8 @@
         "A428 Black Cat to Caxton Gibbet"
       ],
       "notes": "RIS3 2025-2030. East-West connectivity focus.",
-      "source": "National Highways RIS3 Programme"
+      "source": "National Highways RIS3 Programme",
+      "budget5Year": 2730000000
     },
     {
       "id": "transport-scotland-roads",
@@ -2313,7 +2351,8 @@
         "Queensferry Crossing maintenance"
       ],
       "notes": "Scottish Government trunk road investment. A9 dualling priority.",
-      "source": "Transport Scotland STPR2"
+      "source": "Transport Scotland STPR2",
+      "budget5Year": 2400000000
     },
     {
       "id": "welsh-government-roads",
@@ -2354,7 +2393,8 @@
         "A40 Llanddewi Velfrey to Penblewin"
       ],
       "notes": "Welsh Government policy shift to road maintenance over new capacity. 2021 roads review impact.",
-      "source": "Welsh Government National Transport Delivery Plan"
+      "source": "Welsh Government National Transport Delivery Plan",
+      "budget5Year": 1050000000
     },
     {
       "id": "dfi-ni-roads",
@@ -2395,7 +2435,8 @@
         "Belfast Rapid Transit"
       ],
       "notes": "DfI Regional Strategic Transport Network. Cross-border connectivity focus.",
-      "source": "DfI NI Regional Strategic Transport Network Plan"
+      "source": "DfI NI Regional Strategic Transport Network Plan",
+      "budget5Year": 900000000
     },
     {
       "id": "gmca-highways",
@@ -2475,7 +2516,8 @@
         "GM EV charging network"
       ],
       "notes": "Highways delivered by 10 district councils with GMCA coordination. Integrated with Bee Network. See TfGM for public transport elements.",
-      "source": "GMCA Highway Asset Management Plan"
+      "source": "GMCA Highway Asset Management Plan",
+      "budget5Year": 1500000000
     },
     {
       "id": "wmca-highways",
@@ -2527,7 +2569,8 @@
         "Coventry Very Light Rail roads"
       ],
       "notes": "CRSTS 2022-2027. HS2 integration critical. Sprint BRT corridors.",
-      "source": "WMCA CRSTS Programme"
+      "source": "WMCA CRSTS Programme",
+      "budget5Year": 1050000000
     },
     {
       "id": "wyca-highways",
@@ -2577,7 +2620,8 @@
         "Huddersfield bus improvements"
       ],
       "notes": "CRSTS 2022-2027. Preparing for mass transit system.",
-      "source": "WYCA CRSTS Programme"
+      "source": "WYCA CRSTS Programme",
+      "budget5Year": 840000000
     },
     {
       "id": "lcrca-highways",
@@ -2639,7 +2683,8 @@
         "Wirral Waters access"
       ],
       "notes": "Integrated with LCR Transport Plan. Freeport connectivity is priority. CRSTS highways allocation.",
-      "source": "LCRCA CRSTS Programme 2024"
+      "source": "LCRCA CRSTS Programme 2024",
+      "budget5Year": 840000000
     },
     {
       "id": "symca-highways",
@@ -2688,7 +2733,8 @@
         "A61 corridor"
       ],
       "notes": "CRSTS 2022-2027. Tram-train network integration.",
-      "source": "SYMCA CRSTS Programme"
+      "source": "SYMCA CRSTS Programme",
+      "budget5Year": 540000000
     },
     {
       "id": "neca-highways",
@@ -2740,7 +2786,8 @@
         "Metro integration highways"
       ],
       "notes": "CRSTS 2022-2027. Metro Futures highway integration.",
-      "source": "NECA CRSTS Programme"
+      "source": "NECA CRSTS Programme",
+      "budget5Year": 480000000
     },
     {
       "id": "tfl-highways",
@@ -2781,7 +2828,8 @@
         "Low Traffic Neighbourhoods"
       ],
       "notes": "TfL road network investment. Healthy Streets priority. Supports Mayor's Transport Strategy.",
-      "source": "TfL Business Plan 2024/25"
+      "source": "TfL Business Plan 2024/25",
+      "budget5Year": 1250000000
     },
     {
       "id": "gatwick",
@@ -2839,7 +2887,8 @@
         "Pier 7 development"
       ],
       "notes": "UK's second busiest. Northern runway DCO approved Sept 2025 - \u00a32.2bn privately-financed, runway relocated 12m north for dual simultaneous use. Agreed stricter noise controls and 54% public transport target. Target 75m passengers.",
-      "source": "Gatwick Airport Masterplan 2024, DfT DCO Decision Sept 2025"
+      "source": "Gatwick Airport Masterplan 2024, DfT DCO Decision Sept 2025",
+      "budget5Year": 4680000000
     },
     {
       "id": "manchester-airport",
@@ -2898,7 +2947,8 @@
         "East Midlands freeport cargo"
       ],
       "notes": "MAG operates Manchester, Stansted, East Midlands. Manchester T2 opened 2024.",
-      "source": "MAG Capital Investment Plan"
+      "source": "MAG Capital Investment Plan",
+      "budget5Year": 2700000000
     },
     {
       "id": "birmingham-airport",
@@ -2944,7 +2994,8 @@
         "Runway extension study"
       ],
       "notes": "Key HS2 connectivity. Midlands Engine growth driver.",
-      "source": "Birmingham Airport Masterplan"
+      "source": "Birmingham Airport Masterplan",
+      "budget5Year": 750000000
     },
     {
       "id": "edinburgh-airport",
@@ -2989,7 +3040,8 @@
         "Sustainable aviation fuel"
       ],
       "notes": "Scotland's busiest airport. 14m passengers. VINCI Airports owned.",
-      "source": "Edinburgh Airport Masterplan 2023"
+      "source": "Edinburgh Airport Masterplan 2023",
+      "budget5Year": 500000000
     },
     {
       "id": "glasgow-airport",
@@ -3034,7 +3086,8 @@
         "Net zero operations"
       ],
       "notes": "AGS Airports (Ferrovial). Glasgow Metro connectivity study ongoing.",
-      "source": "Glasgow Airport Investment Plan"
+      "source": "Glasgow Airport Investment Plan",
+      "budget5Year": 300000000
     },
     {
       "id": "bristol-airport",
@@ -3079,7 +3132,8 @@
         "Public transport hub"
       ],
       "notes": "Ontario Teachers' owned. Expansion to 12m passengers approved.",
-      "source": "Bristol Airport Development Plan"
+      "source": "Bristol Airport Development Plan",
+      "budget5Year": 400000000
     },
     {
       "id": "luton-airport",
@@ -3124,7 +3178,8 @@
         "32m passenger capacity by 2043"
       ],
       "notes": "Luton Rising (council-owned). Major expansion DCO granted April 2025 for 32m passengers by 2043 (~double current throughput). DART automated transit operational.",
-      "source": "London Luton Airport Expansion DCO, April 2025"
+      "source": "London Luton Airport Expansion DCO, April 2025",
+      "budget5Year": 1620000000
     },
     {
       "id": "london-city",
@@ -3169,7 +3224,8 @@
         "DLR upgrade"
       ],
       "notes": "GIP owned. Business travel focused. Electric/hybrid aircraft pioneer.",
-      "source": "London City Airport CADP"
+      "source": "London City Airport CADP",
+      "budget5Year": 250000000
     },
     {
       "id": "newcastle-airport",
@@ -3214,7 +3270,8 @@
         "Cargo development"
       ],
       "notes": "LA consortium owned. Key North East gateway. 5m passengers.",
-      "source": "Newcastle Airport Masterplan"
+      "source": "Newcastle Airport Masterplan",
+      "budget5Year": 180000000
     },
     {
       "id": "leeds-bradford",
@@ -3255,7 +3312,8 @@
         "Link road"
       ],
       "notes": "AMP Capital owned. Serving Yorkshire. 4m passenger target.",
-      "source": "Leeds Bradford Airport Masterplan"
+      "source": "Leeds Bradford Airport Masterplan",
+      "budget5Year": 150000000
     },
     {
       "id": "belfast-airports",
@@ -3296,7 +3354,8 @@
         "Rapid transit links"
       ],
       "notes": "Two airports serving Belfast region. Combined 10m passengers.",
-      "source": "DfI NI Aviation Strategy"
+      "source": "DfI NI Aviation Strategy",
+      "budget5Year": 200000000
     },
     {
       "id": "cardiff-airport",
@@ -3336,7 +3395,8 @@
         "South Wales Metro link"
       ],
       "notes": "Welsh Government owned. St Athan MRO hub. 1.5m passengers.",
-      "source": "Cardiff Airport Business Plan"
+      "source": "Cardiff Airport Business Plan",
+      "budget5Year": 100000000
     },
     {
       "id": "nats",
@@ -3378,7 +3438,8 @@
         "Remote tower services"
       ],
       "notes": "UK air navigation service provider. Airspace modernisation critical for capacity.",
-      "source": "NATS Technology Roadmap"
+      "source": "NATS Technology Roadmap",
+      "budget5Year": 1000000000
     },
     {
       "id": "southern-water",
@@ -3409,7 +3470,8 @@
         "Kent flooding resilience"
       ],
       "notes": "AMP8 2025-2030. Serves Hampshire, Isle of Wight, Kent, Sussex, Surrey.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 6070000000
     },
     {
       "id": "west-midlands-ca",
@@ -3467,7 +3529,8 @@
         "University station upgrade"
       ],
       "notes": "CRSTS 2022-2027. Integrated transport authority covering 7 metropolitan boroughs. Key HS2 interchange connectivity.",
-      "source": "WMCA Local Transport Plan"
+      "source": "WMCA Local Transport Plan",
+      "budget5Year": 1040000000
     },
     {
       "id": "severn-trent",
@@ -3500,7 +3563,8 @@
         "Strategic grid connections"
       ],
       "notes": "AMP8 2025-2030. Serves West & East Midlands, parts of Wales.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 10580000000
     },
     {
       "id": "tfw",
@@ -3559,7 +3623,8 @@
         "Class 197 introduction"
       ],
       "notes": "South Wales Metro \u00a31.54bn (incl rolling stock) - 170km electrified, tram-trains H2 2026, full Metro 2027. Network North Wales multi-billion pound vision. Stadler trains operational 2024. 4 trains/hr Valleys, 12 trains/hr through Pontypridd.",
-      "source": "Transport for Wales Corporate Plan, Network North Wales Launch 2025"
+      "source": "Transport for Wales Corporate Plan, Network North Wales Launch 2025",
+      "budget5Year": 1860000000
     },
     {
       "id": "welsh-water",
@@ -3591,7 +3656,8 @@
         "North Wales water resources"
       ],
       "notes": "AMP8 2025-2030. Not-for-profit company serving Wales and parts of Herefordshire.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 4180000000
     },
     {
       "id": "north-east-ca",
@@ -3649,7 +3715,8 @@
         "Central Station upgrade"
       ],
       "notes": "CRSTS 2022-2027. North of Tyne & North East combined authorities. Metro Futures transformation programme.",
-      "source": "NECA Transport Plan"
+      "source": "NECA Transport Plan",
+      "budget5Year": 1100000000
     },
     {
       "id": "northumbrian-water",
@@ -3681,7 +3748,8 @@
         "Essex & Suffolk coastal"
       ],
       "notes": "AMP8 2025-2030. Operates as Northumbrian Water in NE and Essex & Suffolk Water in East.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 3690000000
     },
     {
       "id": "hinkley",
@@ -3736,7 +3804,8 @@
         "Marine works"
       ],
       "notes": "Europe's largest construction site. 3.2GW capacity (7% UK electricity, 6m homes). EDF/CGN JV. \u00a35bn Apollo debt financing close to completion. \u00a313bn boost to UK economy. Target 2029-2031.",
-      "source": "EDF HPC Project Updates 2025"
+      "source": "EDF HPC Project Updates 2025",
+      "budget5Year": 20160000000
     },
     {
       "id": "south-west-water",
@@ -3767,7 +3836,8 @@
         "Plymouth resilience"
       ],
       "notes": "AMP8 2025-2030. Pennon Group. Serves Devon, Cornwall, parts of Dorset & Somerset.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 2620000000
     },
     {
       "id": "yorkshire-water",
@@ -3798,7 +3868,8 @@
         "Humber estuary protection"
       ],
       "notes": "AMP8 2025-2030. Serves Yorkshire and Humber region.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 6400000000
     },
     {
       "id": "anglian-water",
@@ -3830,7 +3901,8 @@
         "Norfolk nutrient removal"
       ],
       "notes": "AMP8 2025-2030. Driest region in UK - major water resource challenges.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 7790000000
     },
     {
       "id": "wessex-water",
@@ -3861,7 +3933,8 @@
         "Wiltshire growth"
       ],
       "notes": "AMP8 2025-2030. Serves Bristol, Somerset, Dorset, Wiltshire, parts of Gloucestershire.",
-      "source": "Ofwat PR24 Final Determination Dec 2024"
+      "source": "Ofwat PR24 Final Determination Dec 2024",
+      "budget5Year": 2300000000
     },
     {
       "id": "sizewell-c",
@@ -3916,7 +3989,8 @@
         "Suffolk coast protection"
       ],
       "notes": "3.2GW nuclear plant approved June 2025. \u00a314.2bn government funding + private investment under RAB model. Total cost estimated \u00a340bn. Replicates Hinkley Point C twin EPR design with efficiencies. Powers 6 million homes.",
-      "source": "EDF Sizewell C Project Updates, HM Treasury June 2025"
+      "source": "EDF Sizewell C Project Updates, HM Treasury June 2025",
+      "budget5Year": 14000000000
     },
     {
       "id": "east-west-rail",
@@ -3972,7 +4046,8 @@
         "Cambridge South station link"
       ],
       "notes": "Strategic east-west corridor connecting Oxford, Milton Keynes, Bedford and Cambridge. Government confirmed continued funding Nov 2025. Western section operational. Central and Eastern sections in development.",
-      "source": "East West Railway Company, HM Treasury Budget Nov 2025"
+      "source": "East West Railway Company, HM Treasury Budget Nov 2025",
+      "budget5Year": 3500000000
     },
     {
       "id": "northern-powerhouse-rail",
@@ -4039,7 +4114,8 @@
       ],
       "notes": "\u00a345bn programme announced Jan 2026. Turn-up-and-go railway along Northern Growth Corridor. Unlocks \u00a340bn economic potential. Phase 1 prioritises Yorkshire. Separate from cancelled HS2 Phase 2.",
       "source": "TransPennine Route Upgrade Programme, DfT Integrated Rail Plan Update 2025, CRSTS2 Settlement",
-      "description": "TransPennine Route Upgrade (Manchester\u2013York\u2013Leeds, \u00a311.5bn) and Network North rail commitments replacing cancelled NPR. Active construction and procurement across trans-Pennine corridor."
+      "description": "TransPennine Route Upgrade (Manchester\u2013York\u2013Leeds, \u00a311.5bn) and Network North rail commitments replacing cancelled NPR. Active construction and procurement across trans-Pennine corridor.",
+      "budget5Year": 9800000000
     },
     {
       "id": "great-british-energy",
@@ -4123,7 +4199,8 @@
         "Domestic supply chain growth"
       ],
       "notes": "Publicly-owned clean energy company. \u00a38.3bn capitalised 2025. HQ in Aberdeen. Target 15GW clean energy by 2030, 10,000+ jobs. Sister organisation GBE Nuclear for nuclear projects.",
-      "source": "GBE Strategic Plan 2025, HM Treasury Budget Nov 2025"
+      "source": "GBE Strategic Plan 2025, HM Treasury Budget Nov 2025",
+      "budget5Year": 4150000000
     },
     {
       "id": "emcca-transport",
@@ -4189,7 +4266,8 @@
         "Investment Zone infrastructure"
       ],
       "notes": "New mayoral combined authority. \u00a3500m budget 2026/27, 70%+ on transport. CRSTS2 \u00a32bn (2026-2032). Investment Zone \u00a3160m over 10 years. STEP Fusion (\u00a32.5bn) at West Burton.",
-      "source": "EMCCA Budget 2026/27, CRSTS2 Settlement"
+      "source": "EMCCA Budget 2026/27, CRSTS2 Settlement",
+      "budget5Year": 1160000000
     },
     {
       "id": "haweswater-aqueduct",
@@ -4232,7 +4310,8 @@
         "Bretherdale tunnel"
       ],
       "notes": "\u00a33bn programme to upgrade 1930s-era aqueduct. STRABAG UK construction. \u00a3300m National Wealth Fund support. 9-year programme. Creates 1,200 jobs at peak.",
-      "source": "United Utilities HARP Programme, National Wealth Fund Jan 2026"
+      "source": "United Utilities HARP Programme, National Wealth Fund Jan 2026",
+      "budget5Year": 2460000000
     },
     {
       "id": "national-grid-et",

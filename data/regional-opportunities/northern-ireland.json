@@ -6,90 +6,73 @@
   ],
   "sectorTrends": {
     "real-estate": {
-      "outlook": "Belfast city centre transformation with Belfast Stories, Weavers Cross, and Titanic Quarter expansion. Londonderry/Derry waterside regeneration. Growing student accommodation and BTR markets.",
+      "outlook": "Belfast Grand Central Station (opened September 2024) is transforming the Weavers Cross quarter \u2014 major mixed-use development following. Titanic Quarter Phase 2 progressing. Belfast Stories visitor attraction in procurement. Derry/Londonderry City Deal driving investment across retail, hospitality, and cultural infrastructure.",
       "keyDrivers": [
-        "Belfast Region City Deal",
-        "City centre regeneration",
-        "Housing delivery",
-        "Tourism"
-      ],
-      "investmentDrivers": [
-        "City Deal funding",
-        "NI Executive capital",
-        "Private developers"
+        "Weavers Cross post-GCS development",
+        "Titanic Quarter Phase 2",
+        "Derry City Deal",
+        "Magee University campus"
       ],
       "risks": [
-        "Political uncertainty",
-        "Market depth",
-        "Construction costs"
+        "Political instability risk",
+        "Construction cost inflation NI",
+        "Supply chain constraints"
       ]
     },
-    "utilities": {
-      "outlook": "NI Water significant investment programme. NIE Networks grid modernisation. North-South Interconnector electricity link. Potential hydrogen economy development.",
+    "rail": {
+      "outlook": "Translink NI Railways fleet and infrastructure investment active \u2014 new CAF trains delivering. Belfast Grand Central Station in final completion. Glider rapid transit Phase 2 in planning. Cross-border connectivity investment linked to Shared Island Fund.",
       "keyDrivers": [
-        "NI Water investment",
-        "Grid interconnection",
-        "Renewable integration"
-      ],
-      "investmentDrivers": [
-        "NI Water PC21",
-        "UR regulatory allowances",
-        "ISEM"
+        "Translink CAF fleet",
+        "Grand Central completion",
+        "Glider Phase 2",
+        "Cross-border connectivity"
       ],
       "risks": [
-        "Political landscape",
-        "Regulatory framework",
-        "Budget constraints"
-      ]
-    },
-    "infrastructure": {
-      "outlook": "NHS estate modernisation with new facilities. Education Authority school investment. Flood defence. Belfast Rapid Transit phase 2.",
-      "keyDrivers": [
-        "NHS capacity",
-        "Education estate",
-        "Climate adaptation",
-        "Transport"
-      ],
-      "investmentDrivers": [
-        "NI Executive budget",
-        "UK Government",
-        "City Deals"
-      ],
-      "risks": [
-        "Political stability",
-        "Budget allocation",
-        "Capacity"
-      ]
-    },
-    "defence": {
-      "outlook": "MOD Palace Barracks and other NI estate. Security infrastructure investment. Limited but ongoing.",
-      "keyDrivers": [
-        "Security requirements",
-        "Estate modernisation"
-      ],
-      "investmentDrivers": [
-        "MOD budget",
-        "DIO"
-      ],
-      "risks": [
-        "Political sensitivity",
-        "Security environment"
+        "DfI NI budget constraints",
+        "Cross-border political complexity",
+        "NI transport funding model"
       ]
     },
     "highways": {
-      "outlook": "A5 Western Transport Corridor and A6 Londonderry dualling progressing. Belfast Transport Hub completed. DfI roads programme continuing.",
+      "outlook": "A6 Dungiven to Drumahoe dualling delivering. A5 Western Transport Corridor still in planning \u2014 funding discussions ongoing with Irish Government. Newry Southern Relief Road in development. DfI Roads NI programme delivering safety and maintenance works across network.",
       "keyDrivers": [
-        "Strategic corridor completion",
-        "Safety",
-        "Economic connectivity"
-      ],
-      "investmentDrivers": [
-        "DfI budget",
-        "UK Government"
+        "A6 delivery",
+        "A5 co-funding discussions",
+        "Newry Relief Road",
+        "DfI roads maintenance"
       ],
       "risks": [
-        "Budget constraints",
-        "Planning and environmental"
+        "A5 funding model complexity",
+        "Cross-border procurement",
+        "Planning consents"
+      ]
+    },
+    "energy": {
+      "outlook": "NIE Networks delivering grid modernisation for renewable energy targets. North-South Interconnector progressing \u2014 critical for island of Ireland energy security. Belfast Harbour energy hub in development. NI Green Hydrogen aspirations linked to offshore wind and Lough Neagh.",
+      "keyDrivers": [
+        "NIE Networks grid modernisation",
+        "North-South Interconnector",
+        "Belfast Harbour energy hub",
+        "Green hydrogen"
+      ],
+      "risks": [
+        "North-South Interconnector planning",
+        "NI renewable targets ambition",
+        "Grid balancing complexity"
+      ]
+    },
+    "infrastructure": {
+      "outlook": "Casement Park stadium rebuild in procurement \u2014 UEFA Euro 2028 host venue. Lough Neagh water treatment emergency infrastructure being developed. South West Acute Hospital (Enniskillen) in OBC. NI Schools Investment Programme active. Magee University expansion starting.",
+      "keyDrivers": [
+        "Casement Park UEFA 2028",
+        "Lough Neagh water treatment",
+        "SWAH Enniskillen OBC",
+        "Schools investment"
+      ],
+      "risks": [
+        "Casement Park timeline for Euro 2028",
+        "Lough Neagh funding urgency",
+        "NI Executive budget pressures"
       ]
     }
   },

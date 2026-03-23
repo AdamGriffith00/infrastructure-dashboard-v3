@@ -6,97 +6,86 @@
   ],
   "sectorTrends": {
     "real-estate": {
-      "outlook": "Birmingham and Coventry leading West Midlands regeneration. HS2 Curzon Street quarter driving major development. Wolverhampton and Stoke-on-Trent town centre transformations underway. Strong BTR and student accommodation markets.",
+      "outlook": "Birmingham Smithfield is the landmark regeneration scheme \u2014 1.5bn mixed use anchored by new market. HS2 Curzon Street quarter and Solihull UK Central generating development momentum. Perry Barr housing programme progressing post-Games. Wolverhampton and Coventry city centres active.",
       "keyDrivers": [
-        "HS2 arrival",
-        "Commonwealth Games legacy",
-        "Devolution",
-        "Housing targets"
-      ],
-      "investmentDrivers": [
-        "WMCA funding",
-        "Levelling Up",
-        "Institutional BTR",
-        "Town Deals"
+        "Birmingham Smithfield",
+        "HS2 Curzon Street quarter",
+        "UK Central Solihull",
+        "Perry Barr housing"
       ],
       "risks": [
-        "Construction cost inflation",
-        "Market depth outside Birmingham",
-        "HS2 programme risk"
+        "HS2 programme delays affecting development",
+        "Construction costs",
+        "Market absorption rate"
       ]
     },
     "rail": {
-      "outlook": "HS2 Phase 1 construction driving massive investment. West Midlands Metro extensions progressing. Sprint BRT network expanding. Midlands Rail Hub capacity improvements planned.",
+      "outlook": "HS2 Phase 1 Birmingham construction is the dominant programme \u2014 Curzon Street station, Birmingham Interchange, and tunnels. West Midlands Metro extensions to Digbeth and Brierley Hill in procurement. Sprint BRT Network delivering. Network Rail CP7 West Midlands Programme \u00a32.5bn active.",
       "keyDrivers": [
-        "HS2 Phase 1 delivery",
-        "Metro extensions",
+        "HS2 Birmingham Curzon Street",
+        "Metro Eastside extension",
         "Sprint BRT",
-        "Midlands Connect"
-      ],
-      "investmentDrivers": [
-        "HS2 budget",
-        "CRSTS2",
-        "Network Rail CP7",
-        "DfT major schemes"
+        "CP7 West Midlands"
       ],
       "risks": [
-        "HS2 cost pressures",
-        "Construction disruption",
-        "Funding gaps"
+        "HS2 cost overruns",
+        "Metro procurement complexity",
+        "Utility diversions"
+      ]
+    },
+    "energy": {
+      "outlook": "JLR / Tata Motors EV transformation is the region's most significant industrial energy story \u2014 factory retooling, gigafactory supply chain, and grid reinforcement. National Grid ED RIIO-ED2 \u00a32bn West Midlands active. Coventry Gigafactory site development in progress. Western Power Distribution (now NG-ED) driving distribution investment.",
+      "keyDrivers": [
+        "JLR EV transformation",
+        "NG-ED RIIO-ED2 Midlands",
+        "Coventry Gigafactory",
+        "Industrial electrification"
+      ],
+      "risks": [
+        "EV supply chain uncertainty",
+        "Grid capacity for gigafactories",
+        "Steel and materials costs"
       ]
     },
     "utilities": {
-      "outlook": "Severn Trent delivering \u00a312.9bn AMP8. Western Power Distribution major grid reinforcement for EV and heat pumps. Significant investment in water quality and storm overflows.",
+      "outlook": "Severn Trent Water delivering \u00a312.9bn AMP8 programme \u2014 one of the largest in the country. Focus on storm overflows, leakage reduction, and river water quality. Midlands Flood Defence Programme active on River Trent and Severn catchments.",
       "keyDrivers": [
-        "AMP8 investment",
-        "Grid reinforcement",
-        "Net Zero",
-        "Storm overflow targets"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8",
-        "RIIO-ED2",
-        "Connection charges"
+        "Severn Trent AMP8 \u00a312.9bn",
+        "Storm overflow programme",
+        "Trent and Severn flood defences",
+        "Leakage targets"
       ],
       "risks": [
-        "Regulatory uncertainty",
-        "Supply chain",
-        "Labour availability"
+        "Ofwat delivery scrutiny",
+        "Supply chain capacity",
+        "Regulatory penalties"
+      ]
+    },
+    "highways": {
+      "outlook": "M54-M6 Link Road under construction \u2014 critical gap in the national network. West Midlands CRSTS highways programme active. A46 Newark Bypass in delivery. Hereford Transport Package in development. M6 Smart Motorway conversion works ongoing.",
+      "keyDrivers": [
+        "M54-M6 Link Road",
+        "WMCA CRSTS highways",
+        "A46 Newark",
+        "M6 improvements"
+      ],
+      "risks": [
+        "Smart motorway policy uncertainty",
+        "CRSTS prioritisation",
+        "Land acquisition"
       ]
     },
     "defence": {
-      "outlook": "MOD Donnington and defence logistics hub investment. RAF Cosford training capability. DIO estate improvements across Midlands bases.",
+      "outlook": "MOD Donnington and Stafford logistics modernisation active. RAF Cosford training infrastructure investment progressing. DIO West Midlands estate rationalisation ongoing. Birmingham's strategic central position supporting defence logistics.",
       "keyDrivers": [
-        "Defence logistics modernisation",
-        "Training capability",
-        "Estate rationalisation"
-      ],
-      "investmentDrivers": [
-        "MOD budget settlements",
-        "DIO frameworks"
+        "MOD Donnington logistics",
+        "RAF Cosford",
+        "DIO estate programme",
+        "Defence supply chain"
       ],
       "risks": [
-        "Budget pressures",
-        "Programme delays"
-      ]
-    },
-    "infrastructure": {
-      "outlook": "Major hospital rebuilds and NHS estate investment. School rebuilding programme active. Flood defence along Severn and Trent catchments. Waste and circular economy programmes.",
-      "keyDrivers": [
-        "NHS capacity",
-        "RAAC schools",
-        "Climate adaptation",
-        "Circular economy"
-      ],
-      "investmentDrivers": [
-        "NHP allocation",
-        "DfE capital",
-        "EA flood programme"
-      ],
-      "risks": [
-        "Public funding constraints",
-        "Contractor capacity",
-        "Inflation"
+        "Defence budget pressures",
+        "MoD procurement timescales"
       ]
     }
   },

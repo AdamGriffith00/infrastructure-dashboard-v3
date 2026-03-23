@@ -5,98 +5,88 @@
     "yorkshire-humber"
   ],
   "sectorTrends": {
-    "rail": {
-      "outlook": "West Yorkshire Mass Transit is UK's largest unfunded transport scheme at \u00a32.5bn. Supertram renewal in Sheffield. TransPennine Route Upgrade transforming Manchester-York-Leeds corridor. Doncaster emerging as national rail hub.",
+    "real-estate": {
+      "outlook": "Leeds South Bank remains the largest city centre regeneration scheme outside London. York Central Phase 1C submitted for planning. Bradford transformation accelerating as City of Culture 2025 legacy. Sheffield Heart of City II and Midland Station quarter active. Riverside Sunderland and Wakefield Waterfront progressing.",
       "keyDrivers": [
-        "Mass Transit programme",
-        "TransPennine Route Upgrade",
-        "HS2 Eastern Leg legacy",
-        "CRSTS2"
+        "Leeds South Bank",
+        "York Central Phase 1C",
+        "Bradford City of Culture legacy",
+        "Sheffield Heart of City"
       ],
-      "investmentDrivers": [
-        "CRSTS2 allocation",
-        "Network Rail CP7",
-        "DfT major scheme funding"
+      "risks": [
+        "Leeds market depth",
+        "Bradford viability",
+        "Construction cost escalation"
+      ]
+    },
+    "energy": {
+      "outlook": "Yorkshire and Humber is the UK's battery storage capital \u2014 Thorpe Marsh (1.45GW), Eggborough (500MW), and Ryedale (100MW) projects progressing. Humber offshore wind supply chain anchored by Dogger Bank. H2H Saltend and Humber Hydrogen Hub progressing through development. Drax BECCS remains the region's largest single energy project.",
+      "keyDrivers": [
+        "BESS cluster (2GW+)",
+        "Dogger Bank supply chain",
+        "H2H Saltend hydrogen",
+        "Drax BECCS"
+      ],
+      "risks": [
+        "H2H FID timeline",
+        "BESS grid connection queues",
+        "Hydrogen policy uncertainty"
+      ]
+    },
+    "rail": {
+      "outlook": "West Yorkshire Mass Transit remains the UK's largest unfunded transport scheme at \u00a32.5bn \u2014 business case development ongoing. TransPennine Route Upgrade active construction across the corridor. Sheffield Supertram renewal procurement active. LNER Hull Paragon enhancements in delivery. Leeds Station capacity improvements progressing.",
+      "keyDrivers": [
+        "West Yorkshire Mass Transit",
+        "TransPennine Route Upgrade",
+        "Sheffield Supertram renewal",
+        "Leeds Station"
       ],
       "risks": [
         "Mass Transit funding gap",
-        "HS2 uncertainty",
-        "Construction complexity"
+        "TPU programme risks",
+        "Supertram disruption during works"
       ]
     },
     "maritime": {
-      "outlook": "Humber ports driving offshore wind supply chain development. Able Marine Energy Park purpose-built for wind. ABP Humber investing across Hull, Immingham, and Grimsby. Green Port Hull established.",
+      "outlook": "Humber ports driving the UK's offshore wind manufacturing supply chain. Immingham Container Terminal \u2014 Stena/ABP \u00a3200m construction commenced. Grimsby offshore wind O&M hub (RWE) operational. Able Marine Energy Park progressing. Goole Port Humber Freeport investment active.",
       "keyDrivers": [
-        "Offshore wind manufacturing",
-        "Freeport East status",
-        "Green hydrogen",
-        "Bulk cargo"
-      ],
-      "investmentDrivers": [
-        "Freeport tax incentives",
-        "Crown Estate leasing rounds",
-        "Private sector energy investment"
+        "Immingham construction active",
+        "Grimsby O&M hub",
+        "Able Marine Energy Park",
+        "Humber Freeport"
       ],
       "risks": [
-        "International competition",
-        "Supply chain development",
-        "Skills gaps"
+        "Global competition for offshore wind contracts",
+        "Supply chain skills gap",
+        "Port capacity constraints"
       ]
     },
-    "real-estate": {
-      "outlook": "Leeds South Bank is largest city centre regeneration outside London. Sheffield Heart of City II progressing. Bradford One City Park and city centre transformation. York Central development at former railway lands.",
+    "highways": {
+      "outlook": "A66 Trans-Pennine Dualling is the defining regional highway scheme \u2014 \u00a31.5bn National Highways procurement active. M62 J20-25 capacity programme in procurement. A629 Halifax-Huddersfield WYCA corridor in pre-construction. A1(M) J42 and A64 York-Scarborough in development.",
       "keyDrivers": [
-        "Devolution",
-        "City centre living",
-        "University growth",
-        "Transport investment"
-      ],
-      "investmentDrivers": [
-        "Combined Authority funding",
-        "Levelling Up",
-        "Institutional BTR capital"
+        "A66 Trans-Pennine \u00a31.5bn",
+        "M62 J20-25",
+        "A629 WYCA corridor",
+        "CRSTS2 highway programmes"
       ],
       "risks": [
-        "Market depth in smaller centres",
-        "Construction costs",
-        "Demand risk"
+        "RIS3 scheme confirmation",
+        "A64 funding gap",
+        "Construction inflation"
       ]
     },
     "utilities": {
-      "outlook": "Yorkshire Water delivering \u00a37.8bn AMP8 programme with major focus on storm overflows. Northern Powergrid grid reinforcement for industrial electrification. Drax BECCS project significant.",
+      "outlook": "Yorkshire Water delivering \u00a37.8bn AMP8 programme with major focus on storm overflows and leakage. Cadent Gas Yorkshire network modernisation under RIIO-GD2. Leeds Flood Alleviation Phase 2 in procurement. Humber Flood Risk Management Programme ongoing.",
       "keyDrivers": [
-        "AMP8 investment cycle",
-        "Storm overflow targets",
-        "Industrial decarbonisation"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8 determination",
-        "RIIO-ED2",
-        "CCUS cluster funding"
+        "Yorkshire Water AMP8 \u00a37.8bn",
+        "Leeds Flood Alleviation Phase 2",
+        "Cadent Gas Yorkshire",
+        "Humber flood programme"
       ],
       "risks": [
-        "Regulatory uncertainty",
-        "Supply chain",
-        "Weather events"
-      ]
-    },
-    "infrastructure": {
-      "outlook": "Significant flood defence investment in Humber estuary and Yorkshire rivers. NHS estate modernisation. School rebuilding programme active. Waste and circular economy investment.",
-      "keyDrivers": [
-        "Climate adaptation",
-        "Humber flood risk",
-        "NHS capacity",
-        "Education"
-      ],
-      "investmentDrivers": [
-        "EA flood programme",
-        "New Hospital Programme",
-        "DfE capital"
-      ],
-      "risks": [
-        "Public funding constraints",
-        "Contractor capacity",
-        "Inflation"
+        "Ofwat delivery scrutiny",
+        "Supply chain capacity Yorkshire",
+        "Flood event disruption"
       ]
     }
   },

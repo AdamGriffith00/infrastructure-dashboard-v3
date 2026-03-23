@@ -5,100 +5,74 @@
     "eastern"
   ],
   "sectorTrends": {
-    "real-estate": {
-      "outlook": "Cambridge life sciences cluster driving premium commercial development. Luton and Stevenage town centre transformations. Major housing delivery sites across Hertfordshire and Essex. Ipswich and Norwich waterfront regeneration.",
+    "energy": {
+      "outlook": "Eastern England is the UK's offshore wind capital. East Anglia FOUR (3.1GW, Vattenfall) DCO granted \u2014 major onshore construction programme starting. Sizewell C advancing with planning consent. National Grid SETR transmission reinforcement connecting offshore wind via Eastern corridor. UK Power Networks RIIO-ED2 Eastern \u00a31.5bn active.",
       "keyDrivers": [
-        "Cambridge Biomedical Campus",
-        "Stansted corridor growth",
-        "Housing delivery",
-        "Town centre renewal"
-      ],
-      "investmentDrivers": [
-        "Life sciences investment",
-        "Homes England",
-        "Town Deals",
-        "Institutional capital"
+        "EA FOUR construction start",
+        "Sizewell C development",
+        "NGET Eastern transmission",
+        "UKPN RIIO-ED2 Eastern"
       ],
       "risks": [
-        "Planning constraints",
-        "Green Belt sensitivity",
-        "Water scarcity",
-        "Construction costs"
+        "Sizewell C funding model",
+        "EA FOUR community opposition",
+        "Grid congestion in East Anglia"
+      ]
+    },
+    "real-estate": {
+      "outlook": "Cambridge Biomedical Campus Phase 3 is Europe's largest science investment. Cambridge South station opening unlocking further development. Harlow Gilston Garden Town progressing. Stevenage and Peterborough regeneration active. East West Rail corridor driving growth at multiple stations.",
+      "keyDrivers": [
+        "Cambridge Biomedical Campus",
+        "Cambridge South station",
+        "East West Rail corridor",
+        "Harlow Gilston Garden Town"
+      ],
+      "risks": [
+        "Cambridge planning constraints",
+        "Affordability pressures",
+        "Infrastructure delivery ahead of homes"
+      ]
+    },
+    "maritime": {
+      "outlook": "Freeport East (Harwich and Felixstowe) active with tax site investment. Port of Felixstowe capacity enhancement progressing. Thurrock Thames Freeport operational. Haven Gateway ports seeing port infrastructure investment driven by post-Brexit freight patterns.",
+      "keyDrivers": [
+        "Freeport East active investment",
+        "Felixstowe capacity",
+        "Thames Freeport",
+        "EA FOUR port supply chain"
+      ],
+      "risks": [
+        "Port labour market pressures",
+        "Global shipping patterns",
+        "Supply chain development"
+      ]
+    },
+    "highways": {
+      "outlook": "A428 Black Cat to Caxton Gibbet dualling in active construction \u2014 key East West Rail enabler. A47 improvement programme delivering multiple schemes. A12 Chelmsford widening in procurement. East West Rail corridor driving road investment at Cambridge, Bedford, and Milton Keynes.",
+      "keyDrivers": [
+        "A428 construction active",
+        "A47 programme",
+        "A12 widening",
+        "East West Rail enabling roads"
+      ],
+      "risks": [
+        "Construction cost inflation",
+        "Archaeological finds on A428",
+        "Environmental mitigation"
       ]
     },
     "utilities": {
-      "outlook": "Anglian Water delivering \u00a39.5bn AMP8 with major focus on water resources and storm overflows. UK Power Networks ED2 investment. Sizewell C nuclear construction bringing massive infrastructure investment.",
+      "outlook": "Anglian Water AMP8 \u00a39.5bn programme in full delivery \u2014 largest in Anglian Water's history. Focus on storm overflow, water recycling, and supply resilience. National Grid ET HNDP offshore wind transmission reinforcement active. Sizewell C grid connection preparation underway.",
       "keyDrivers": [
-        "AMP8 investment",
-        "Sizewell C",
-        "Water resources",
-        "Grid reinforcement"
-      ],
-      "investmentDrivers": [
-        "Ofwat AMP8",
-        "RIIO-ED2",
-        "Nuclear new build"
+        "Anglian Water AMP8 \u00a39.5bn",
+        "HNDP offshore wind grid",
+        "Sizewell C grid prep",
+        "Water recycling schemes"
       ],
       "risks": [
-        "Water stress",
-        "Grid capacity",
-        "Sizewell C programme risk"
-      ]
-    },
-    "data-centres": {
-      "outlook": "Hertfordshire and Essex corridor expanding from London data centre market. Luton and Harlow emerging locations. Power and connectivity driving site selection.",
-      "keyDrivers": [
-        "London overflow",
-        "Power availability",
-        "Fibre connectivity"
-      ],
-      "investmentDrivers": [
-        "Tech capex",
-        "Infrastructure funds",
-        "REIT investment"
-      ],
-      "risks": [
-        "Power grid constraints",
-        "Planning",
-        "Water cooling"
-      ]
-    },
-    "infrastructure": {
-      "outlook": "Sizewell C bringing generational investment to Suffolk. Major flood defence along East Anglian coast. School rebuilding active. NHS estate investment.",
-      "keyDrivers": [
-        "Sizewell C",
-        "Coastal flood risk",
-        "NHS capacity",
-        "Education"
-      ],
-      "investmentDrivers": [
-        "Nuclear new build",
-        "EA programme",
-        "NHP",
-        "DfE"
-      ],
-      "risks": [
-        "Sizewell programme timeline",
-        "Contractor capacity",
-        "Inflation"
-      ]
-    },
-    "rail": {
-      "outlook": "East West Rail progressing from Oxford to Cambridge. ECML digital signalling. Stansted Airport accessibility improvements. Greater Anglia network enhancements.",
-      "keyDrivers": [
-        "East West Rail",
-        "ECML upgrades",
-        "Airport connectivity"
-      ],
-      "investmentDrivers": [
-        "DfT major schemes",
-        "Network Rail CP7",
-        "MAG investment"
-      ],
-      "risks": [
-        "East West Rail cost",
-        "Funding uncertainty",
-        "Construction complexity"
+        "Anglian Water delivery capacity",
+        "EA FOUR grid congestion",
+        "Ofwat scrutiny"
       ]
     }
   },
